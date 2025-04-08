@@ -1,0 +1,13 @@
+#LaTeX
+*.aux
+*.fls
+*.log
+*.fdb_latexmk
+*.run.xml
+*.bcf
+*.toc
+*.bbl
+*.blg
+
+#irgendwas
+.DS_Store
