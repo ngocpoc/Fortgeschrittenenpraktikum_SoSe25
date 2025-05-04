@@ -1,9 +1,54 @@
 \section{Zielsetzung}
 \label{sec:Zielsetzung}
-Das Ziel dieses Versuchs ist die Bestimmung der Lebensdauer von Myonen. Hierfür wird ein Szintillatortank verwendet.
-
+Ziel dieses Versuchs ist die Bestimmung der Lebensdauer von Myonen aus einer Messreihe von Indiviuallebensdauern einzelner Myonen.
 \section{Theorie}
 \label{sec:Theorie}
+\subsection{Standardmodell der Elementarteilchen}
+Das Standardmodell der Teilchenphysik, wie es z.B. in \cite{Astroteilchenphysik} dargestellt wird, unterteilt die Elementarteilchen in Quarks, Leptonen und Eichbosonen.
+Quarks und Leptonen gehören zur Gruppe der Fermionen und lassen sich jeweils in drei Generationen einteilen, 
+die sich insbesondere in ihrer Masse und Lebensdauer unterscheiden.\\
+Quarks tragen eine sogenannte Farbladung und nehmen an der starken Wechselwirkung teil. 
+Leptonen hingegen unterliegen nicht der starken, sondern der schwachen Wechselwirkung. 
+Zu den geladenen Leptonen zählen das Elektron, das Myon und das Tauon, die jeweils eine elektrische Ladung von $-\symup{e}$ besitzen und zudem der elektromagnetischen Wechselwirkung 
+unterliegen. 
+Die zugehörigen Neutrinos ($\nu_{\symup{e}},\, \nu_\mu,\, \nu_\tau$) sind elektrisch neutral. Im Gegensatz zu Elektronen sind Myonen und Tauonen instabil und zerfallen mit charakteristischen Lebensdauern $\tau$.
 
+\subsubsection{Myonen}
+\label{sec:Myonen}
+Myonen entstehen in der Erdatmosphäre in Höhen von etwa $15{-}20\,\unit{\kilo\meter}$ durch den Zerfall von Pionen. 
+Diese Pionen entstehen zuvor bei der Wechselwirkung hochenergetischer kosmischer Protonen mit den Atomkernen der Luftmoleküle. 
+Aufgrund ihrer kurzen Lebensdauer zerfallen die Pionen wie folgt:
+\begin{align*}
+	\pi^+ &\rightarrow \mu^+ + \nu_\mu \\
+	\pi^- &\rightarrow \mu^- + \bar{\nu}_\mu\,.
+\end{align*}
+
+Die dabei entstehenden Myonen besitzen eine mittlere Lebensdauer von $2,2\,\unit{\micro\second}$ und zerfallen in Elektronen, Neutrinos und Antineutrinos:
+\begin{align*}
+	\mu^- &\rightarrow \text{e}^- + \bar{\nu}_\text{e} + \nu_\mu \\
+	\mu^+ &\rightarrow \text{e}^+ + \nu_\text{e} + \bar{\nu}_\mu\,.
+\end{align*}
+
+Da sich Myonen mit Geschwindigkeiten nahe der Lichtgeschwindigkeit bewegen, erreichen sie trotz ihrer kurzen Lebensdauer die Erdoberfläche 
+und können die Erdoberfläche bis in Tiefen von etwa $400\,\unit{\kilo\meter}$ durchdringen.
+
+\subsection{Mittlere Lebensdauer von Elementarteilchen}
+Die Herleitung der mittleren Lebensdauer $\tau$ wird ausführlich in \cite{Techniques} behandelt. Die Zerfallsgeschwindigkeit eines Teilchens 
+ist proportional zur Anzahl der verbleibenden Teilchen $N(t)$ zu einem bestimmten Zeitpunkt $t$. Diese Beziehung wird durch die folgende 
+Differentialgleichung beschrieben:
+\begin{align}
+\symup{d}N = -\lambda N(t),\symup{d}t,, \label{eqn:dN}
+\end{align}
+wobei $\lambda$ die Zerfallskonstante ist, die die Wahrscheinlichkeit für den Zerfall eines Teilchens pro Zeiteinheit beschreibt. 
+Die Lösung dieser Gleichung ergibt das exponentielle Zerfallsgesetz:
+\begin{align}
+N(t) = N_0 \symup{e}^{-\lambda t},, \label{eqn:Zerfallsgesetz}
+\end{align}
+wobei $N_0$ die Anfangszahl der Teilchen darstellt. Die mittlere Lebensdauer $\tau$ ist definiert als die Zeit, nach der die Zahl der 
+verbleibenden Teilchen auf den Wert $\frac{1}{\symup{e}}$ des ursprünglichen Werts abgefallen ist. Sie ist mit der Zerfallskonstanten $\lambda$ durch die Beziehung
+\begin{align}
+\tau = \frac{1}{\lambda},, \label{eqn:tau}
+\end{align}
+verknüpft.
 % \subsection{Vorbereitungsaufgaben}
-% \label{sec:Vorbereitungsaufgaben}
+% \label{sec:Vorbereitungsaufgaben}\

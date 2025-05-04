@@ -1,3 +1,15 @@
+	\symup{d}N = -\lambda N(t)\,\symup{d}t\,, 
+\label{eqn:dN}
+
+
+	N(t) = N_0 \symup{e}^{-\lambda t}\,.
+\label{eqn:Zerfallsgesetz}
+
+	\tau = \frac{1}{\lambda} 
+\label{eqn:tau}
+
+
+
 Statistische Formeln zum copy & pasten:
 
 Mittelwert:
