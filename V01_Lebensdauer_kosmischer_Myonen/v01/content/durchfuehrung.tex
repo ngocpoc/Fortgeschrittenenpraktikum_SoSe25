@@ -3,17 +3,24 @@ Der folgende Versuchsaufbau sowie die Durchführung basieren im Wesentlichen auf
 \subsection{Aufbau}
 \label{Aufbau}
 Der Versuchsaufbau zur Bestimmung der Lebensdauer von Myonen ist in der \autoref{AufbauV01} abgebildet.
-Der Aufbau umfasst einen Szintillatortank mit einem Volumen von ca. $50\,\unit{\litre}$, an dessen beiden Enden je ein Photomultiplier (PMT) montiert ist. Die Signale der PMTs werden über
-Verzögerungsleitungen an Diskriminatoren mit einstellbarer Schwelle weitergeleitet. Die Pulsdauer am Ausgang dieser Diskriminatoren lässt sich ebenfalls
-variieren. Die Ausgangssignale werden anschließen einer Koinzidenzschaltung zugeführt, die nur dann ein Signal erzeugt, wenn beide Pulse gleichzeitig anliegen.
-Dieses Signal dient als Startimpuls für die nachfolgende Zeitmessung.\\
+Er besteht aus einem Szintillatortank mit einem Volumen von ca. $50,\unit{\litre}$, an dessen beiden Enden jeweils ein Photomultiplier (PMT) angebracht ist.
+Der Szintillator erzeugt Lichtblitze (Szintillationen), wenn ein Myon hindurchtritt, welche von den PMTs in elektrische Signale umgewandelt werden \cite{Teilchendetektoren}.
+Diese Signale werden über Verzögerungsleitungen an Diskriminatoren mit einstellbarer Schwelle weitergeleitet. Diese unterdrücken Rauschsignale, indem sie nur Pulse oberhalb eines definierten Spannungswerts durchlassen \cite{Techniques}.
+Die Pulsdauer am Ausgang dieser Diskriminatoren lässt sich ebenfalls variieren.\\
+Die Ausgangssignale werden anschließend einer Koinzidenzschaltung zugeführt, 
+die nur dann ein Signal erzeugt, wenn beide Pulse gleichzeitig auftreten. 
+Durch diese Koinzidenzbedingung werden echte Myonensignale von zufälligen Hintergrundereignissen unterschieden.
+Das daraus resultierende Signal dient als Startimpuls für die nachfolgende Zeitmessung.\\
 Das Koinzidenzsignal wird sowohl über zwei AND-Gattern als auch über eine zusätzliche Verzögerungsleitung von $30\,\unit{\nano\second}$ an ein Monoflop
-weitergeleitet, das die maximale Suchzeit $T_S$ definiert. Die beiden AND-Gatter sind mit einem Time-Amplitude-Converter (TAC) verbunden, sodass eines die 
-Zeitmessung beginnt, während das andere diese beendet. Über zusätzliche Leitungen, die mit einem Impulszähler verbunden sind, sit es möglich, die Anzahl der
-Start- und Stoppimpulse zu erfassen. Durch eine geeignete Anordnung der Bauteile wird erreicht, dass die Zeitmessung startet, sobald ein Myon in das Detektionsvolumen
-eintritt. Wenn das Myon zerfällt, wird die Zeitmessung gestoppt.\\
-Das Signal des TAC wird anschließend an einen Vielkanalanalysator (MCA) weitergeleit, der über einen PC mit entsprechender Messsoftware ausgelesen wird. Außerdem steh 
-für die Kalibrierung ein Doppelimpulsgenerator zur Verfügung, der bei $1\,\unit{\kilo\hertz}$ Doppelimpulse mit variablen Zeitabständen erzeugt.
+weitergeleitet. Dieser erzeugt ein Zeitfenster, die sogenannte Suchzeit $T_S$, innerhalb derer ein Zerfallssignal erwartet wird. 
+Die beiden AND-Gatter sind mit einem Time-Amplitude-Converter (TAC) verbunden. Eines der Gatter startet die Zeitmessnung beim Eintritt
+des Myons, das andere beendet sie beim Zerfall.
+Über zusätzliche Leitungen, die mit einem Impulszähler verbunden sind, ist es möglich, die Anzahl der
+Start- und Stoppimpulse getrennt zu erfassen. Durch diese Anordnung wird erreicht, dass die Zeitmessung startet, sobald ein Myon in das Detektor eintritt, und stoppt, wenn dieses zerfällt. 
+Der TAC wandelt den Zeitabstand zwischen Start- und Stoppimpuls in eine analoge Spannung um, die proportional zur gemessenen Zeitdifferenz ist \cite{Techniques}.\\
+Das Signal des TAC wird anschließend an einen Vielkanalanalysator (MCA) übergeben, der über einen PC mit entsprechender Messsoftware ausgelesen wird. Der MCA digitalisiert diese Spannungen und 
+ordnet sie entsprechend ihrer Höhe diskreten Kanälen zu, wodurch ein Histogramm der Zerfallszeiten erzeugt wird \cite{Teilchendetektoren}. Zur Kalibrierung steht zudem ein Doppelimpulsgenerator zur Verfügung, 
+der bei $1,\unit{\kilo\hertz}$ Doppelimpulse mit variablen Zeitabständen erzeugt.
 \begin{figure}[H]
     \centering
     \includegraphics[width = 0.6\linewidth]{bilder/AufbauV01.png}
