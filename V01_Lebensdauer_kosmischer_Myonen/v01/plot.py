@@ -32,6 +32,10 @@ halbwerts_rechts = ((max(Anzahl_Delay_pro_1_s)/2) - yAchsenabschnitt_2)/Steigung
 
 params, covariance_matrix = np.polyfit(delay_Ausgleichskonstante, Anzahl_Delay_pro_1_s_Ausgleichskonstante, deg=0, cov=True)
 
+uncertainties = np.sqrt(np.diag(covariance_matrix))
+print("uncertenty 1. Plot", uncertainties)
+
+
 Halbwertsbreite_gesamt = abs(halbwerts_links) + abs(halbwerts_rechts)
 aufloesezeit = abs(20 - Halbwertsbreite_gesamt)
 print("halbwerts_links: ", halbwerts_links)
@@ -75,6 +79,11 @@ print("m ist: ", params1[0])
 #n ist:  0.09696833488281219
 #m ist:  0.02171211931450518
 
+uncertainties1 = np.sqrt(np.diag(covariance_matrix1))
+
+for name, value, uncertainty in zip("mn", params1, uncertainties1):
+    print(f"{name} = {value:8.4f} ± {uncertainty:.4f}")
+
 x_plot = np.linspace(0,400) 
 
 fig1,ax1 = plt.subplots(figsize = (6,5))
@@ -113,10 +122,10 @@ def exp(x,a,b,U):
 #scipy.optimize.curve_fit lambda x,a,b,U: a*np.exp(-b*x) + U
 params2, covariance_matrix2 = curve_fit(exp,  Lebensdauer_Messwerte_fit,  Counts_pro_Channel_fit, p0 = (2,2,2))
 
-uncertainties = np.sqrt(np.diag(covariance_matrix2))
+uncertainties2 = np.sqrt(np.diag(covariance_matrix2))
 
-for name, value, uncertainty in zip("abc", params2, uncertainties):
-    print(f"{name} = {value:8.3f} ± {uncertainty:.3f}")
+for name, value, uncertainty in zip("abc", params2, uncertainties2):
+    print(f"{name} = {value:8.4f} ± {uncertainty:.4f}")
 
 #a =  306.815 ± 43.820
 #b =    2.762 ± 0.221
@@ -135,6 +144,28 @@ ax2.set_ylabel("Anzahl")
 ax2.legend(loc = "best")
 #plt.margins(0.075)
 fig2.savefig("Lebensdauer_der_Myonen.pdf")
+
+
+
+#uncertenty 1. Plot [0.20682789]
+#halbwerts_links:  -4.638888888888888
+#halbwerts_rechts:  6.804878048780487
+#Halbwertsbreite_gesamt:  11.443766937669375
+#aufloesezeit:  8.556233062330625
+#n ist:  0.09650695845298125
+#m ist:  0.021712827103746585
+#m =   0.0217 ± 0.0000
+#n =   0.0965 ± 0.0033
+#396 396
+#a = 306.8146 ± 43.8197
+#b =   2.7618 ± 0.2214
+#c =   3.7704 ± 0.5308
+
+
+
+
+
+
 
 #params, covariance_matrix = np.polyfit(x, y, deg=0, cov=True)
 
