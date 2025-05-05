@@ -32,9 +32,12 @@ halbwerts_rechts = ((max(Anzahl_Delay_pro_1_s)/2) - yAchsenabschnitt_2)/Steigung
 params, covariance_matrix = np.polyfit(delay_Ausgleichskonstante, Anzahl_Delay_pro_1_s_Ausgleichskonstante, deg=0, cov=True)
 
 Halbwertsbreite_gesamt = abs(halbwerts_links) + abs(halbwerts_rechts)
+aufloesezeit = abs(20 - Halbwertsbreite_gesamt)
 print("halbwerts_links: ", halbwerts_links)
 print("halbwerts_rechts: ", halbwerts_rechts)
 print("Halbwertsbreite_gesamt: ", Halbwertsbreite_gesamt)
+print("aufloesezeit: ", aufloesezeit)
+
 fig,ax = plt.subplots(figsize = (6,5))
 ax.errorbar(delay,Anzahl_Delay_pro_1_s, yerr=Fehler_bei_N(Anzahl_Delay_pro_1_s), fmt="o", alpha = 0.4, capsize = 3.3, label = "Messwerte")
 ax.plot(delay,Anzahl_Delay_pro_1_s, "o", mfc='none', color='steelblue')
@@ -56,7 +59,40 @@ ax.set_ylabel("Counts per s")
 ax.legend(loc = "best")
 #plt.margins(0.075)
 fig.savefig("Verzoegerung.pdf")
-#Auflösungszeit ist apparently Betrag(2 * Breite der Pulse (10 ns bei uns) - Halbwertsbreite)
+#Auflösungszeit ist apparently Betrag(2 * Breite der Pulse (10 ns bei uns) - Halbwertsbreite (die ist 11.443766937669375)) = 8.556233062330625
+
+
+#Kalibrierung des Multichannel-Analyzers
+
+Kanalnummer, Zeitdifferenz_in_mikrosek = np.genfromtxt("Messdaten/Kalibrierung_Multichannel_Auswertung.txt", unpack=True)
+
+params1, covariance_matrix1 = np.polyfit(Kanalnummer, Zeitdifferenz_in_mikrosek, deg=1, cov=True)
+
+print("n ist: ", params1[1])
+print("m ist: ", params1[0])
+
+#n ist:  0.09696833488281219
+#m ist:  0.02171211931450518
+
+x_plot = np.linspace(0,400) 
+
+fig1,ax1 = plt.subplots(figsize = (6,5))
+ax1.plot(Kanalnummer,Zeitdifferenz_in_mikrosek, "x", mfc='none')
+plt.plot(
+    x_plot,
+    params1[0] * x_plot + params1[1],
+    label ="Lineare Regression",
+    linewidth=1,
+)
+ax1.set_xlabel("Kanalnummer")
+ax1.set_ylabel("Zeitdifferenz in mikrosek")
+ax1.legend(loc = "best")
+#plt.margins(0.075)
+fig1.savefig("Kalibrierung_MUltichannel.pdf")
+
+
+
+
 
 #params, covariance_matrix = np.polyfit(x, y, deg=0, cov=True)
 
