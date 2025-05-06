@@ -1,7 +1,33 @@
 \section{Diskussion}
 \label{sec:Diskussion}
-\subsection{Verzögerungszeit vor der Koinzidenzschaltung}
+\subsection{Allgemein}
+Beim Aufbau des Versuches traten große Probleme bei der Verkabelung auf. Die Weiterleitung von Signal war oftmals gestört aus 
+offensichtlichen Grund. Daher ist ein Fehler in den Messwerten aufgrund der Messelektronik nicht auszuschließen. Außerdem war 
+der Umgang mit dem Computerprogramm zur Messaufzeichnung problematisch, da es bei einigen Messversuchen nichts aufzeichnete. 
 
-\subsection{Kalibrierung des Multichannel-Analyzers}
+\subsection{Verzögerungszeit vor der Koinzidenzschaltung}
+Bereits vor der Koinzidenzschaltung sollte das Signal aus beiden Photomultipliern auf $30 \,\frac{\text{Pulse}}{\unit{\second}}$ gesenkt 
+werden. Dies war allerdings nicht möglich, da ein Photomultiplier grundsätzlich eine viel höhere Pulsrate lieferte, als der andere. 
+Daher konnte das eine Signal nur auf ungefähr $100 \,\frac{\text{Pulse}}{\unit{\second}}$ heruntergeregelt werden und das andere 
+auf $30 \,\frac{\text{Pulse}}{\unit{\second}}$. Dies könnte zu Fehlern in den Messdaten führen. Außerdem ist in den für 
+Verzögerungszeit aufgenommene Messwerte kein klares Plateau zu erkennen, was eine Folge der unterschiedlichen Pulsraten sein könnte. 
+Demnach könnte die Einstellung der Verzögerung als $2 \, \unit{\nano\second}$ nicht ideal gewesen sein und Einfluss auf den Rest des 
+Versuches gehabt haben. 
+
+\subsection{Kalibrierung des MCAs}
+Die Messwerte der Kalibrierung des MCAs liegen allesamt augenscheinlich sehr nah an der Ausgleichsgerade, was für eine hohe 
+Genauigkeit spricht. Diese Messwerte konnten nicht durch die Photomultiplier verfälscht werden, da die Pulse für die Messung 
+vom Doppelpulsgenerator erzeugt wurden. Dies kann ein Grund für die Genauigkeit sein. Zusätzlich erfolgte die Messung computergestützt,
+was den Einfluss der menschlichen Reaktionszeit nebensächlich macht. 
+
 \subsection{Bestimmung der Lebendauer von Myonen und der Untergrundrate}
-\subsection{}
+Die Problematik, die sich bei der Langzeitmessung ergab, war, dass das Computerprogramm die Messwerte nicht aufgezeichnet hatte, als
+die Messung nach $2$ Tagen gestoppt werden sollte. Allerdings konnten die Daten dann doch nach $4$ Tagen auf dem Computer von einer 
+anderen Gruppe gefunden werden, die den Versuch an diesem Tag durchführen sollte. Aus diesem Grund ist die genaue Messdauer nicht
+bekannt und die Anzahl der Start- und Stoppsignale ebenso. Daher konnte die Untergrundrate nur durch die Ausgleichsfunktion und 
+mit einer theoretischen Einfallrate bestimmt werden. Die Abweichung zwischen 
+$$U_{\text{theo}} = 3,5 \,\, \frac{\text{Counts}}{\text{Kanal}}\,\, \text{und} U = (3,77 \pm 0,53) \,\, \frac{\text{Counts}}{\text{Kanal}}$$
+liegt bei $7,71 \, \%$. Die Abweichung zwischen der theoretischen Lebensdauer $2,2 \, \unit{\mu\second}$ und der gemessenen Lebensdauer 
+$0,362 \pm 0,029 \, \unit{\mu\second}$ beträgt $507,73 \, \%$. Diese Abweichung ist sehr hoch, allerdings bei den vielen aufgetretenen 
+Problemen auch nicht volkommen überraschend.  
+
