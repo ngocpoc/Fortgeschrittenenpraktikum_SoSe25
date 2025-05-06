@@ -142,16 +142,20 @@ a = params2[0]
 b = params2[1]
 U = params2[2]
 
+lamdba = ufloat(b,uncertainties2[1])
+tau = 1/lamdba
+
 fig2,ax2 = plt.subplots(figsize = (6,5))
 ax2.plot(Lebensdauer_Messwerte_fit,Counts_pro_Channel_fit, ".", mfc='none', color = "mediumpurple", label = "inkludierte Messwerte")
 ax2.plot(Lebensdauer_Messwerte_ex,Counts_pro_Channel_ex, ".", mfc='none', color = "hotpink", label = "exkludierte Messwerte")
 ax2.plot(x_plot2, a*np.exp(-b*x_plot2) + U, color = "darkorange", label = "Ausgleichsfunktion" )
-ax2.set_xlabel(r"t in $\mu\mathrm{s}$")
+ax2.set_xlabel(r"Zeit $t$ in $\mu\mathrm{s}$")
 ax2.set_ylabel("Counts")
 ax2.legend(loc = "best")
 #plt.margins(0.075)
 fig2.savefig("Lebensdauer_der_Myonen.pdf")
 
+print("Tau is equal to: ",tau )
 
 
 #uncertenty 1. Plot [0.20682789]
