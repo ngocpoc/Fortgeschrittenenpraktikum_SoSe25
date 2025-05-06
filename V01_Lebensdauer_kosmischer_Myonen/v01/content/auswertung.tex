@@ -13,15 +13,15 @@ Die Verzögerung $\Delta t $ vor der Koinzidenzschaltung wird für
 den weiteren Versuch so gewählt, dass die 
 Anzahl der Pulse nach der Schaltung (im Folgenden Counts genannt)
  maximal ist. Um diese Verzögerung 
-zu finden, werden bei Verzögerungen von $-30 \unit{\nano\second}$ bis 
-$30 \unit{\nano\second}$ die Counts in einem 
-Zeitraum von $30 \unit{\second}$ gemessen. 
-Die Counts$N$ haben eine zugehörige 
+zu finden, werden bei Verzögerungen von $-30 \,\, \unit{\nano\second}$ bis 
+$30 \,\, \unit{\nano\second}$ die Counts in einem 
+Zeitraum von $30 \,\, \unit{\second}$ gemessen. 
+Die Counts $N$ haben eine zugehörige 
 Unsicherheit von $\sqrt{N}$. 
 Die Messwerte sind in Tabelle (\ref{tab:Verzoegerung}) aufgeführt. In
 der Abbildung (\ref{fig:Verzoegerung}) sind neben den Messwerten die
 Ausgleichskonstante durch das in dem Bereich 
-$\Delta t = \pm 10 \unit{\nano\second}$ vermutete Plateau und die 
+$\Delta t = \pm 10 \,\, \unit{\nano\second}$ vermutete Plateau und die 
 Halbwertsbreite der Funktion dargestellt.     
 
 \begin{table}
@@ -30,7 +30,7 @@ Halbwertsbreite der Funktion dargestellt.
   \label{tab:Verzoegerung}
   \begin{tblr}{colspec={c c | c c}}
       \toprule
-      Verzögerung $\Delta t \,\, [ \unit{\nano\second}]$ & Counts $N \,\,[1/\unit{\second}]$ & Verzögerung $\Delta t \,\, [ \unit{\nano\second}]$ & Counts $N \,\, [1/ \unit{\second}]$\\
+      Verzögerung $\Delta t \,\, [ \unit{\nano\second}]$ & Counts $N \,\,[\unit{\second}^{-1}]$ & Verzögerung $\Delta t \,\, [ \unit{\nano\second}]$ & Counts $N \,\, [\unit{\second}^{-1}]$\\
       \midrule
       -30 &  0,00 \pm \,\, 0,00 &  1 & 10,67 \pm \,\, 3,27 \\
       -28 &  0,00 \pm \,\, 0,00 &  2 & 11,80 \pm \,\, 3,44 \\ 
@@ -57,15 +57,17 @@ Halbwertsbreite der Funktion dargestellt.
   \end{tblr}
 \end{table}
 
-Die Höhe des Plateaus beträgt $11,27 \frac{\text{Counts}}{\unit{\second}}$.
-Zur Bestimmtung der Halbwertsbreite $\Delta t_{HWB}$ wird der Abstand 
+Die Höhe des Plateaus beträgt $11,27 \,\, \frac{\text{Counts}}{\unit{\second}}$.
+Zur Bestimmtung der Halbwertsbreite $\Delta t_{\text{HWB}}$ wird der Abstand 
 beider Flanken auf halber Höhe der Ausgleichkonstanten berechnet.
-Daraus ergibt sich $\Delta t_{HWB} = 11,44 \unit{\nano\second}$. 
+Daraus ergibt sich $\Delta t_{\text{HWB}} = 11,44 \,\, \unit{\nano\second}$. 
 
-Die Auflösungszeit $t_{AZ}$ wird durch  
-$t_{AZ} = |2 \cdot 10 \,\, \unit{\nano\second}-\Delta t_{HWB}|$ berechnet.
-Daraus ergibt sich $t_{AZ} = 8,56 \unit{\nano\second}$.
+Die Auflösungszeit $t_{\text{AZ}}$ wird durch  
+$t_{\text{AZ}} = |2 \cdot 10 \,\, \unit{\nano\second}-\Delta t_{\text{HWB}}|$ berechnet.
+Daraus ergibt sich $t_{\text{AZ}} = 8,56 \,\, \unit{\nano\second}$.
 
+Für den weiteren Verlauf des Versuches wird eine Verzögerungszeit von $2 \,\,\unit{\nano\second}$ verwendet, da diese die 
+größte Anzahl an Pulsen verursacht.
 \begin{figure}
   \centering
   \includegraphics[width=0.75\textwidth]{Verzoegerung.pdf}
@@ -85,11 +87,14 @@ In Tabelle (\ref{tab:Kalibrierung_MCA}) sind die Nummern der
  von der Höhe der Counts in den verschiedenen Kanälen für 
  die Kanalnummer verwendet. Die Messwerte und eine lineare Regression 
  sind in Abbildung (\ref{fig:Kalibrierung_MCA}) graphisch dargestellt. 
- Die Ausgleichsgerade der Form $\Delta t_{\text{K}} = m \cdot \text{Kanalnummer} + n$
+ Die Ausgleichsgerade der Form $\Delta t_{\text{K}} = m \, \cdot \,\text{Kanalnummer} + n$
  stellt einen Zusammenhang zwischen Zeitdifferenz und Kanalnummer her, 
  sodass diese in einander umgerechnet werden können. 
- Aus der Augleichsrechnung ergibt sich $m = 0,0217 \pm \, 0,0000$ und $n = 0,0965 \pm \, 0,0033 $. 
-
+ Aus der Augleichsrechnung ergibt sich 
+ \begin{align}
+ m &= (0,0217 \pm \, 0,0000) \, \frac{\text{Counts}}{\unit{\mu\second}}\, \, \text{und} \\
+ n &= (0,0965 \pm \, 0,0033) \, \unit{\mu\second} \,. 
+ \end{align}
 
 \begin{table}
   \centering 
@@ -124,11 +129,11 @@ mehrere Tage bestimmt.
 Die aufgenommenen Messwerte sind graphisch in Abbildung (\ref{fig:Lebensdauer_Myonen})
 mit einer Ausgleichsfunktion dargestellt. Die Ausgleichsfunktion 
 hat nach der Gleichung (\ref{eqn:Zerfallsgesetz}) die Form 
-$$ N(t) = N_0 \symup{e}^{-\lambda t} + U \,.$$
+$$ N(t) = N_0 \,\symup{e}^{-\lambda t} + U \,.$$
 Für die Werte ergeben sich aus der Ausgleichsrechnung 
 \begin{align*}
-  N_0 &= 306,8 \pm 43,8 \\
-  \lambda &= (2,7618 \pm 0,2214) \frac{1}{\unit{\mu\second}} \\
+  N_0 &= 306,8 \pm 43,8 \, ,\\
+  \lambda &= (2,7618 \pm 0,2214) \frac{1}{\unit{\mu\second}} \,\, \text{und}\\
   U &= 3,77 \pm 0,53 \, .
 \end{align*}
 
@@ -138,9 +143,9 @@ Messwerte sind ungewöhnlich niedrig für eine exponentielle Verteilung
 und die letzten 100 Kanäle enthalten keinen von 0 verschiedenen Wert. 
 
 Die Untergrundrate entspricht dem Paramter $U$ aus der Ausgleichsfunktion 
-und ist dementsprechend $$U = (3,77 \pm 0,53) \,\, \frac{\text{Counts}}{\text{Kanal}}.$$
+und ist dementsprechend $$U = (3,77 \pm 0,53) \,\, \frac{\text{Counts}}{\text{Kanal}}\,.$$
 Die Lebensdauer $\tau$ wird mithilfe von Gleichung (\ref{eqn:tau}) zu 
-$\tau = (0,362 \pm 0,029) \,\, \unit{\mu\second} $.
+$\tau = (0,362 \pm 0,029) \,\, \unit{\mu\second} $ berechnet.
 
 \begin{figure}
   \centering

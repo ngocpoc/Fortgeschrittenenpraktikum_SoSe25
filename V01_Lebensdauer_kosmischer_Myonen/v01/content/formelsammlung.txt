@@ -8,6 +8,8 @@
 	\tau = \frac{1}{\lambda} 
 \label{eqn:tau}
 
+	\text{P}(k) = \frac{(T_{\text{S}} \cdot N_{\text{Myon}})^k}{k!} \exp{- T_{\text{S}} \cdot N_{\text{Myon}}}
+\label{eqn:Poisson}
 
 
 Statistische Formeln zum copy & pasten:
