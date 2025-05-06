@@ -8,13 +8,14 @@ delay, Anzahl_Delay_pro_30_s = np.genfromtxt("Messdaten/Variation_Verzoegerungsl
 
 Anzahl_Delay_pro_1_s = Anzahl_Delay_pro_30_s/30
 
+print("Anzahl_Delay_pro_1_s: " , Anzahl_Delay_pro_1_s)
 def Fehler_bei_N(N):
     return np.sqrt(N)
 
 Anzahl_Delay_pro_1_s_mit_Fehler = unp.uarray(Anzahl_Delay_pro_1_s,Fehler_bei_N(Anzahl_Delay_pro_1_s)) 
 
 #print(max(Anzahl_Delay_pro_1_s)/2)
-
+print("Fehler bei N: ",Fehler_bei_N(Anzahl_Delay_pro_1_s))
 
 # Slice from index 1 to index 5
 Anzahl_Delay_pro_1_s_Ausgleichskonstante = Anzahl_Delay_pro_1_s[19:24]
@@ -42,6 +43,7 @@ print("halbwerts_links: ", halbwerts_links)
 print("halbwerts_rechts: ", halbwerts_rechts)
 print("Halbwertsbreite_gesamt: ", Halbwertsbreite_gesamt)
 print("aufloesezeit: ", aufloesezeit)
+print("Höhe Ausgleichskonstante: ", params[0]) #11.266666666666666
 
 fig,ax = plt.subplots(figsize = (6,5))
 ax.errorbar(delay,Anzahl_Delay_pro_1_s, yerr=Fehler_bei_N(Anzahl_Delay_pro_1_s), fmt="o", alpha = 0.4, capsize = 3.3, label = "Messwerte")
@@ -59,8 +61,8 @@ ax.hlines(y=params[0], xmin=-1.5, xmax=3.5, linewidth=2, color='r', linestyle = 
 ax.axvline(x=halbwerts_links,ymin = 0, ymax = 0.8, linestyle = "dashed", color="violet")
 ax.axvline(x=halbwerts_rechts,ymin = 0, ymax = 0.8, linestyle = "dashed", color="violet")
 #plt.axhline(y=, color='r', linestyle='-')
-ax.set_xlabel("Verzögerung in ns")
-ax.set_ylabel(r"Anzahl in $1 / \mathrm{s}$")
+ax.set_xlabel(r"Verzögerung $\Delta t$ in $\unit{\nano\second}$")
+ax.set_ylabel(r"Counts $N$ in $1 / \mathrm{s}$")
 ax.legend(loc = "best")
 #plt.margins(0.075)
 fig.savefig("Verzoegerung.pdf")
@@ -106,15 +108,18 @@ fig1.savefig("Kalibrierung_MUltichannel.pdf")
 #Berechnung der Lebensdauer der Myonen 
 
 Counts_pro_Channel = np.genfromtxt("Messdaten/Lebendauer_Berechnung.txt", unpack=True)
-channelnumber = np.array(range(1,413))
+channelnumber = np.array(range(1,513)) #beeinhaltet die Zahlen 1 bis inklusive 512
 
 #print(channelnumber)
 Lebensdauer_Messwerte = params1[0] * channelnumber + params1[1]
 
 
 #print(Lebensdauer_Messwerte)
-Counts_pro_Channel_fit = Counts_pro_Channel[16:]
-Lebensdauer_Messwerte_fit = Lebensdauer_Messwerte[16:]
+Counts_pro_Channel_fit = Counts_pro_Channel[16:412]
+Lebensdauer_Messwerte_fit = Lebensdauer_Messwerte[16:412]
+
+Counts_pro_Channel_ex = np.append(Counts_pro_Channel[:16], Counts_pro_Channel[412:])
+Lebensdauer_Messwerte_ex = np.append(Lebensdauer_Messwerte[:16], Lebensdauer_Messwerte[412:])
 print(len(Counts_pro_Channel_fit), len(Lebensdauer_Messwerte_fit))
 def exp(x,a,b,U):
     return a*np.exp(-b*x) + U
@@ -127,20 +132,22 @@ uncertainties2 = np.sqrt(np.diag(covariance_matrix2))
 for name, value, uncertainty in zip("abc", params2, uncertainties2):
     print(f"{name} = {value:8.4f} ± {uncertainty:.4f}")
 
-#a =  306.815 ± 43.820
-#b =    2.762 ± 0.221
-#U =    3.770 ± 0.531
 
-x_plot2 = np.linspace(0.1,9)
+#N_0 = 306.8146 ± 43.8197
+#lambda =   2.7618 ± 0.2214
+#U =   3.7704 ± 0.5308
+
+x_plot2 = np.linspace(0.1,11.5)
 a = params2[0]
 b = params2[1]
 U = params2[2]
 
 fig2,ax2 = plt.subplots(figsize = (6,5))
-ax2.plot(Lebensdauer_Messwerte,Counts_pro_Channel, ".", mfc='none', label = "Messwerte")
-ax2.plot(x_plot2, a*np.exp(-b*x_plot2) + U, label = "Ausgleichskurve" )
+ax2.plot(Lebensdauer_Messwerte_fit,Counts_pro_Channel_fit, ".", mfc='none', color = "mediumpurple", label = "inkludierte Messwerte")
+ax2.plot(Lebensdauer_Messwerte_ex,Counts_pro_Channel_ex, ".", mfc='none', color = "hotpink", label = "exkludierte Messwerte")
+ax2.plot(x_plot2, a*np.exp(-b*x_plot2) + U, color = "darkorange", label = "Ausgleichsfunktion" )
 ax2.set_xlabel(r"t in $\mu\mathrm{s}$")
-ax2.set_ylabel("Anzahl")
+ax2.set_ylabel("Counts")
 ax2.legend(loc = "best")
 #plt.margins(0.075)
 fig2.savefig("Lebensdauer_der_Myonen.pdf")
