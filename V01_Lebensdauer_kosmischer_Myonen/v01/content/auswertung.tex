@@ -4,24 +4,21 @@ Bevor die Langzeitmessung durchgeführt wird, werden verschieden
 Bestandteile des Aufbaus kalibriert. Dazu wird die Verzögerung 
 zwischen den eingehenden Signalen an der Koinzidenzschaltung 
 systematisch variiert und die Impulsrate nach dieser gemessen. 
-Außerdem werden Messdaten zur Kalibrierung des Multichannel-Analyzers 
-(MCA) aufgenommen, um einen Zusammenhang zwischen der Channelzahl und 
+Außerdem werden Messdaten zur Kalibrierung des MCAs
+aufgenommen, um einen Zusammenhang zwischen der Channelzahl und 
 der Zeit zwischen Start- und Stoppsignal herstellen zu können.
 \FloatBarrier
 \subsection{Verzögerungszeit vor der Koinzidenzschaltung}
 Die Verzögerung $\Delta t $ vor der Koinzidenzschaltung wird für 
 den weiteren Versuch so gewählt, dass die 
 Anzahl der Pulse nach der Schaltung (im Folgenden Counts genannt)
- maximal ist. Um diese Verzögerung 
-zu finden, werden bei Verzögerungen von $-30 \,\, \unit{\nano\second}$ bis 
-$30 \,\, \unit{\nano\second}$ die Counts in einem 
-Zeitraum von $30 \,\, \unit{\second}$ gemessen. 
-Die Counts $N$ haben eine zugehörige 
+ maximal ist.
+Die gemessenen Counts $N$ haben eine zugehörige 
 Unsicherheit von $\sqrt{N}$. 
-Die Messwerte sind in Tabelle (\ref{tab:Verzoegerung}) aufgeführt. In
-der Abbildung (\ref{fig:Verzoegerung}) sind neben den Messwerten die
+Die Messwerte sind in \autoref{tab:Verzoegerung} aufgeführt. In
+der \autoref{fig:Verzoegerung} sind neben den Messwerten die
 Ausgleichskonstante durch das in dem Bereich 
-$\Delta t = \pm 10 \,\, \unit{\nano\second}$ vermutete Plateau und die 
+$\Delta t = \pm 10 \, \unit{\nano\second}$ vermutete Plateau und die 
 Halbwertsbreite der Funktion dargestellt.     
 
 \begin{table}
@@ -30,43 +27,43 @@ Halbwertsbreite der Funktion dargestellt.
   \label{tab:Verzoegerung}
   \begin{tblr}{colspec={c c | c c}}
       \toprule
-      Verzögerung $\Delta t \,\, [ \unit{\nano\second}]$ & Counts $N \,\,[\unit{\second}^{-1}]$ & Verzögerung $\Delta t \,\, [ \unit{\nano\second}]$ & Counts $N \,\, [\unit{\second}^{-1}]$\\
+      Verzögerung $\Delta t \, [ \unit{\nano\second}]$ & Counts $N \,[\unit{\second}^{-1}]$ & Verzögerung $\Delta t \, [ \unit{\nano\second}]$ & Counts $N \, [\unit{\second}^{-1}]$\\
       \midrule
-      -30 &  0,00 \pm \,\, 0,00 &  1 & 10,67 \pm \,\, 3,27 \\
-      -28 &  0,00 \pm \,\, 0,00 &  2 & 11,80 \pm \,\, 3,44 \\ 
-      -26 &  0,03 \pm \,\, 0,18 &  3 & 11,37 \pm \,\, 3,37 \\
-      -24 &  0,00 \pm \,\, 0,00 &  4 &  9,30 \pm \,\, 3,05 \\
-      -22 &  0,00 \pm \,\, 0,00 &  5 &  8,77 \pm \,\, 2,96 \\
-      -20 &  0,00 \pm \,\, 0,00 &  6 &  7,00 \pm \,\, 2,65 \\
-      -18 &  0,00 \pm \,\, 0,00 &  7 &  5,63 \pm \,\, 2,37 \\
-      -16 &  0,03 \pm \,\, 0,18 &  8 &  4,03 \pm \,\, 2,01 \\
-      -14 &  0,03 \pm \,\, 0,18 &  9 &  3,60 \pm \,\, 1,90 \\
-      -12 &  0,00 \pm \,\, 0,00 & 10 &  2,30 \pm \,\, 1,52 \\
-      -10 &  0,10 \pm \,\, 0,32 & 12 &  0,70 \pm \,\, 0,84 \\
-      -9  &  0,23 \pm \,\, 0,48 & 14 &  0,23 \pm \,\, 0,48 \\
-      -8  &  0,87 \pm \,\, 0,93 & 16 &  0,03 \pm \,\, 0,18 \\
-      -7  &  1,57 \pm \,\, 1,25 & 18 &  0,07 \pm \,\, 0,26 \\
-      -6  &  3,23 \pm \,\, 1,80 & 20 &  0,07 \pm \,\, 0,26 \\
-      -5  &  5,03 \pm \,\, 2,24 & 22 &  0,03 \pm \,\, 0,18 \\
-      -4  &  7,43 \pm \,\, 2,73 & 24 &  0,00 \pm \,\, 0,00 \\
-      -3  &  8,27 \pm \,\, 2,88 & 26 &  0,00 \pm \,\, 0,00 \\
-      -2  &  9,40 \pm \,\, 3,07 & 28 &  0,00 \pm \,\, 0,00 \\
-      -1  & 10,93 \pm \,\, 3,31 & 30 &  0,00 \pm \,\, 0,00 \\
-      0   & 11,57 \pm \,\, 3,40 &    &       \\
+      -30 &  0,00 \pm \, 0,00 &  1 & 10,67 \pm \, 3,27 \\
+      -28 &  0,00 \pm \, 0,00 &  2 & 11,80 \pm \, 3,44 \\ 
+      -26 &  0,03 \pm \, 0,18 &  3 & 11,37 \pm \, 3,37 \\
+      -24 &  0,00 \pm \, 0,00 &  4 &  9,30 \pm \, 3,05 \\
+      -22 &  0,00 \pm \, 0,00 &  5 &  8,77 \pm \, 2,96 \\
+      -20 &  0,00 \pm \, 0,00 &  6 &  7,00 \pm \, 2,65 \\
+      -18 &  0,00 \pm \, 0,00 &  7 &  5,63 \pm \, 2,37 \\
+      -16 &  0,03 \pm \, 0,18 &  8 &  4,03 \pm \, 2,01 \\
+      -14 &  0,03 \pm \, 0,18 &  9 &  3,60 \pm \, 1,90 \\
+      -12 &  0,00 \pm \, 0,00 & 10 &  2,30 \pm \, 1,52 \\
+      -10 &  0,10 \pm \, 0,32 & 12 &  0,70 \pm \, 0,84 \\
+      -9  &  0,23 \pm \, 0,48 & 14 &  0,23 \pm \, 0,48 \\
+      -8  &  0,87 \pm \, 0,93 & 16 &  0,03 \pm \, 0,18 \\
+      -7  &  1,57 \pm \, 1,25 & 18 &  0,07 \pm \, 0,26 \\
+      -6  &  3,23 \pm \, 1,80 & 20 &  0,07 \pm \, 0,26 \\
+      -5  &  5,03 \pm \, 2,24 & 22 &  0,03 \pm \, 0,18 \\
+      -4  &  7,43 \pm \, 2,73 & 24 &  0,00 \pm \, 0,00 \\
+      -3  &  8,27 \pm \, 2,88 & 26 &  0,00 \pm \, 0,00 \\
+      -2  &  9,40 \pm \, 3,07 & 28 &  0,00 \pm \, 0,00 \\
+      -1  & 10,93 \pm \, 3,31 & 30 &  0,00 \pm \, 0,00 \\
+      0   & 11,57 \pm \, 3,40 &    &       \\
       \bottomrule
   \end{tblr}
 \end{table}
 
-Die Höhe des Plateaus beträgt $11,27 \,\, \frac{\text{Counts}}{\unit{\second}}$.
+Die Höhe des Plateaus beträgt $11,27 \, \frac{\text{Counts}}{\unit{\second}}$.
 Zur Bestimmtung der Halbwertsbreite $\Delta t_{\text{HWB}}$ wird der Abstand 
 beider Flanken auf halber Höhe der Ausgleichkonstanten berechnet.
-Daraus ergibt sich $\Delta t_{\text{HWB}} = 11,44 \,\, \unit{\nano\second}$. 
+Daraus ergibt sich $\Delta t_{\text{HWB}} = 11,44 \, \unit{\nano\second}$. 
 
 Die Auflösungszeit $t_{\text{AZ}}$ wird durch  
-$t_{\text{AZ}} = |2 \cdot 10 \,\, \unit{\nano\second}-\Delta t_{\text{HWB}}|$ berechnet.
-Daraus ergibt sich $t_{\text{AZ}} = 8,56 \,\, \unit{\nano\second}$.
+$t_{\text{AZ}} = |2 \cdot 10 \, \unit{\nano\second}-\Delta t_{\text{HWB}}|$ berechnet.
+Daraus ergibt sich $t_{\text{AZ}} = 8,56 \, \unit{\nano\second}$.
 
-Für den weiteren Verlauf des Versuches wird eine Verzögerungszeit von $2 \,\,\unit{\nano\second}$ verwendet, da diese die 
+Für den weiteren Verlauf des Versuches wird eine Verzögerungszeit von $2 \,\unit{\nano\second}$ verwendet, da diese die 
 größte Anzahl an Pulsen verursacht.
 \begin{figure}
   \centering
@@ -80,21 +77,21 @@ größte Anzahl an Pulsen verursacht.
 
 Zur Kalibrierung des Multichannel-Analyzers werden die Kanäle 
 gemessen, die bei verschiedenen Zeitdifferenzen befüllt werden. 
-In Tabelle (\ref{tab:Kalibrierung_MCA}) sind die Nummern der
+In \autoref{tab:Kalibrierung_MCA} sind die Nummern der
  gefüllten Kanäle mit der zugehörigen Zeitdifferenz 
  $\Delta t_{\text{K}}$ aufgeführt. Falls bei der gleichen Zeitdifferenz 
  mehr als ein Kanal befüllt wird, wird ein Mittelwert abhängig 
  von der Höhe der Counts in den verschiedenen Kanälen für 
  die Kanalnummer verwendet. Die Messwerte und eine lineare Regression 
- sind in Abbildung (\ref{fig:Kalibrierung_MCA}) graphisch dargestellt. 
+ sind in \autoref{fig:Kalibrierung_MCA} graphisch dargestellt. 
  Die Ausgleichsgerade der Form $\Delta t_{\text{K}} = m \, \cdot \,\text{Kanalnummer} + n$
  stellt einen Zusammenhang zwischen Zeitdifferenz und Kanalnummer her, 
  sodass diese in einander umgerechnet werden können. 
  Aus der Augleichsrechnung ergibt sich 
- \begin{align}
+ \begin{align*}
  m &= (0,0217 \pm \, 0,0000) \, \frac{\text{Counts}}{\unit{\mu\second}}\, \, \text{und} \\
  n &= (0,0965 \pm \, 0,0033) \, \unit{\mu\second} \,. 
- \end{align}
+ \end{align*}
 
 \begin{table}
   \centering 
@@ -102,7 +99,7 @@ In Tabelle (\ref{tab:Kalibrierung_MCA}) sind die Nummern der
   \label{tab:Kalibrierung_MCA}
   \begin{tblr}{colspec={c c | c c}}
       \toprule
-      Kanalnummer & Zeitdifferenz $\Delta t_{\text{K}} \,\, [\unit{\mu\second}]$  & Kanalnummer & Zeitdifferenz $\Delta t_{K} \,\, [\unit{\mu\second}]$\\
+      Kanalnummer & Zeitdifferenz $\Delta t_{\text{K}} \, [\unit{\mu\second}]$  & Kanalnummer & Zeitdifferenz $\Delta t_{K} \, [\unit{\mu\second}]$\\
       \midrule
       9           & 0,3 & 235         & 5,2\\
       42          & 1,0 & 267         & 5,9\\
@@ -126,7 +123,7 @@ In Tabelle (\ref{tab:Kalibrierung_MCA}) sind die Nummern der
 \subsection{Bestimmung der Lebendauer von Myonen und der Untergrundrate}
 Die Lebensdauer von Myonen wird aus einer Langzeitmessung über
 mehrere Tage bestimmt. 
-Die aufgenommenen Messwerte sind graphisch in Abbildung (\ref{fig:Lebensdauer_Myonen})
+Die aufgenommenen Messwerte sind graphisch in \autoref{fig:Lebensdauer_Myonen}
 mit einer Ausgleichsfunktion dargestellt. Die Ausgleichsfunktion 
 hat nach der Gleichung (\ref{eqn:Zerfallsgesetz}) die Form 
 $$ N(t) = N_0 \,\symup{e}^{-\lambda t} + U \,.$$
@@ -143,13 +140,13 @@ Messwerte sind ungewöhnlich niedrig für eine exponentielle Verteilung
 und die letzten 100 Kanäle enthalten keinen von 0 verschiedenen Wert. 
 
 Die Untergrundrate entspricht dem Paramter $U$ aus der Ausgleichsfunktion 
-und ist dementsprechend $$U = (3,77 \pm 0,53) \,\, \frac{\text{Counts}}{\text{Kanal}}\,.$$
+und ist dementsprechend $$U = (3,77 \pm 0,53) \, \frac{\text{Counts}}{\text{Kanal}}\,.$$
 Die Lebensdauer $\tau$ wird mithilfe von Gleichung (\ref{eqn:tau}) zu 
-$\tau = (0,362 \pm 0,029) \,\, \unit{\mu\second} $ berechnet.
+$\tau = (0,362 \pm 0,029) \, \unit{\mu\second} $ berechnet.
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.75\textwidth]{Lebensdauer_der_Myonen.pdf}
+  \includegraphics[width=0.70\textwidth]{Lebensdauer_der_Myonen.pdf}
   \caption{Darstellung der Messwerte zur Berechnung der Lebensdauer von Myonen mit Ausgleichsfunktion.}
   \label{fig:Lebensdauer_Myonen}
 \end{figure}
@@ -162,7 +159,7 @@ $\tau = (0,362 \pm 0,029) \,\, \unit{\mu\second} $ berechnet.
 %  \label{tab:Verzoegerung}
 %  \begin{tblr}{colspec={c c | c c}}
 %      \toprule
-%      Verzögerung $[\Delta t \,\, \unit{\nano\second}]$ & Pulsanzahl $N [1/\unit{\second}]$ & Verzögerung $[\Delta t \,\, \unit{\nano\second}]$ & Pulsanzahl $N [1/ \unit{\second}]$\\
+%      Verzögerung $[\Delta t \, \unit{\nano\second}]$ & Pulsanzahl $N [1/\unit{\second}]$ & Verzögerung $[\Delta t \, \unit{\nano\second}]$ & Pulsanzahl $N [1/ \unit{\second}]$\\
 %      \midrule
 %      -30 &   0 0. &  1 & 320 \\
 %      -28 &   0 0. &  2 & 354 \\ 

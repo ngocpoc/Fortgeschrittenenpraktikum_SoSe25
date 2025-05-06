@@ -3,7 +3,7 @@ Der folgende Versuchsaufbau sowie die Durchführung basieren im Wesentlichen auf
 \subsection{Aufbau}
 \label{Aufbau}
 Der Versuchsaufbau zur Bestimmung der Lebensdauer von Myonen ist in der \autoref{AufbauV01} abgebildet.
-Er besteht aus einem Szintillatortank mit einem Volumen von ca. $50,\unit{\litre}$, an dessen beiden Enden jeweils ein Photomultiplier (PMT) angebracht ist.
+Er besteht aus einem Szintillatortank mit einem Volumen von ca. $50\,\unit{\litre}$, an dessen beiden Enden jeweils ein Photomultiplier (PMT) angebracht ist.
 Der Szintillator erzeugt Lichtblitze (Szintillationen), wenn ein Myon hindurchtritt, welche von den PMTs in elektrische Signale umgewandelt werden \cite{Teilchendetektoren}.
 Diese Signale werden über Verzögerungsleitungen an Diskriminatoren mit einstellbarer Schwelle weitergeleitet. Diese unterdrücken Rauschsignale, indem sie nur Pulse oberhalb eines definierten Spannungswerts durchlassen \cite{Techniques}.
 Die Pulsdauer am Ausgang dieser Diskriminatoren lässt sich ebenfalls variieren.\\
@@ -20,7 +20,7 @@ Start- und Stoppimpulse getrennt zu erfassen. Durch diese Anordnung wird erreich
 Der TAC wandelt den Zeitabstand zwischen Start- und Stoppimpuls in eine analoge Spannung um, die proportional zur gemessenen Zeitdifferenz ist \cite{Techniques}.\\
 Das Signal des TAC wird anschließend an einen Vielkanalanalysator (MCA) übergeben, der über einen PC mit entsprechender Messsoftware ausgelesen wird. Der MCA digitalisiert diese Spannungen und 
 ordnet sie entsprechend ihrer Höhe diskreten Kanälen zu, wodurch ein Histogramm der Zerfallszeiten erzeugt wird \cite{Teilchendetektoren}. Zur Kalibrierung steht zudem ein Doppelimpulsgenerator zur Verfügung, 
-der bei $1,\unit{\kilo\hertz}$ Doppelimpulse mit variablen Zeitabständen erzeugt.
+der bei $1\,\unit{\kilo\hertz}$ Doppelimpulse mit variablen Zeitabständen erzeugt.
 \begin{figure}[H]
     \centering
     \includegraphics[width = 0.6\linewidth]{bilder/AufbauV01.png}
@@ -31,12 +31,12 @@ der bei $1,\unit{\kilo\hertz}$ Doppelimpulse mit variablen Zeitabständen erzeug
 \label{sec:Durchführung}
 Zunächst wird zur Kalibrierung des MCA ein Doppelimpulsgenerator angeschlossen. Mit diesem wird gemessen, welcher zeitliche Abstand zwischen zwei Impulsen welchem Kanal im 
 MCA zugeordnet wird. Die Kalibrierung sollte mit mindestens zehn Messpunkten im Bereich von $0,3 - 9,9 \,\unit{\micro\second}$ durchgeführt werden. 
-Um die Messgenauigkeit über den gesamten Bereich zu gewährleisten, sollte für alle Messpunkte die gleiche Messdauer einghalten werden. Hier wird die Messdauer von $30\,\unit{\second}$ gewählt.
+Um die Messgenauigkeit über den gesamten Bereich zu gewährleisten, sollte für alle Messpunkte die gleiche Messdauer einghalten werden. Hier wird die Messdauer von $60\,\unit{\second}$ gewählt.
 Die Zählerraten können anschließend miteinander verglichen werden. Für den weitern Verlauf ist der Doppelimpulsgenerator nicht angeschlossen.\\
 Sobald die Photomultiplier mit Hochspannung versorgt sind, sollten an ihren Ausgängen Spanungssingale mit unterschiedlichen Amplituden zu erkennen sein.
 Dies kann mithilfe eines Oszilloskops überprüft werden.
 Anschließend werden die Schwellenwerte der Diskriminatoren so eingestellt, dass an beiden Ausgängen etwa 30 Impulse pro Sekunde erzeugt werden. Dabei sollte eine
 Pulsdauer von etwa $\Delta t = 10\,\unit{\nano\second}$ gewählt werden. Der Impulszähler hilft dabei, die Anzahl der Signale zu kontrollieren. Um die Koinzidenzschaltung richtig abzustimmen,
-verändert man die Verzögerungsleitungen systematisch an beiden Pulse in dem Bereich $0-30\,\unit{\nano\second}$ und beobachtet die Veränderung der Impulsrate. Der gewählte Messbereich
+verändert man die Verzögerungsleitungen systematisch von $-30 \, \unit{\nano\second}$ bis $30 \, \unit{\nano\second}$ und misst die Anzahl der Pulse in einem Zeitraum von $30 \, \unit{\second}$. Der gewählte Messbereich
 ist dabei so groß, dass sich die Halbwertsbreite später zuverlässig bestimmen lässt. Nachdem eine geeignete Verzögerung gefunden wurde, bleibt diese für den gesamten Versuch unverändert.\\
 Nach abgeschlossener Kalibrierung wird die Langzeitmessung zur Bestimmung der Lebensdauer gestartet, welche für mindestens $24\,\unit{\hour}$ durchgeführt wird.
