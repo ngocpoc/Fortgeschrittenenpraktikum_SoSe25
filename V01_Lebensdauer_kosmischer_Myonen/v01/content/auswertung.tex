@@ -120,12 +120,20 @@ In \autoref{tab:Kalibrierung_MCA} sind die Nummern der
 \end{figure}
 \FloatBarrier
 
-\subsection{Bestimmung der Lebendauer von Myonen und der Untergrundrate}
+\subsection{Experimentelle Bestimmung der Lebendauer von Myonen und der Untergrundrate}
 Die Lebensdauer von Myonen wird aus einer Langzeitmessung über
 mehrere Tage bestimmt. 
 Die aufgenommenen Messwerte sind graphisch in \autoref{fig:Lebensdauer_Myonen}
-mit einer Ausgleichsfunktion dargestellt. Die Ausgleichsfunktion 
-hat nach der Gleichung (\ref{eqn:Zerfallsgesetz}) die Form 
+mit einer Ausgleichsfunktion dargestellt. 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.70\textwidth]{Lebensdauer_der_Myonen.pdf}
+  \caption{Darstellung der Messwerte zur Berechnung der Lebensdauer von Myonen mit Ausgleichsfunktion.}
+  \label{fig:Lebensdauer_Myonen}
+\end{figure}
+
+Die Ausgleichsfunktion hat nach der Gleichung (\ref{eqn:Zerfallsgesetz}) die Form 
 $$ N(t) = N_0 \,\symup{e}^{-\lambda t} + U \,.$$
 Für die Werte ergeben sich aus der Ausgleichsrechnung 
 \begin{align*}
@@ -144,12 +152,23 @@ und ist dementsprechend $$U = (3,77 \pm 0,53) \, \frac{\text{Counts}}{\text{Kana
 Die Lebensdauer $\tau$ wird mithilfe von Gleichung (\ref{eqn:tau}) zu 
 $\tau = (0,362 \pm 0,029) \, \unit{\mu\second} $ berechnet.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=0.70\textwidth]{Lebensdauer_der_Myonen.pdf}
-  \caption{Darstellung der Messwerte zur Berechnung der Lebensdauer von Myonen mit Ausgleichsfunktion.}
-  \label{fig:Lebensdauer_Myonen}
-\end{figure}
+
+\FloatBarrier
+
+\subsection{Berechnung der theoretischen Untergrundrate}
+Zur Berechnung der theoretischen Unterdrundrate wird die durchschnittliche Ereignisrate $N_{\text{Myon}}$ im Szintillatortank von 
+$20,7\,\unit{\second}^{-1}$ verwendet. Die Wahrscheinlichkeit, dass ein weiteres Myon während der Suchzeit $T_{\text{S}} = 20 \,\unit{\mu\second}$
+in den Szintillatortank eintritt ist poissonverteilt. Die verwendete Poissonverteilung wird durch die Gleichung 
+\begin{equation}
+	\text{P}(k) = \frac{(T_{\text{S}} \cdot N_{\text{Myon}})^k}{k!} e^{- T_{\text{S}} \cdot N_{\text{Myon}}}
+	\label{eqn:Poisson}
+\end{equation}
+beschrieben. Daraus ergibt sich für die Wahrscheinlichkeit, dass ein weiteres Myon einfällt zu $\text{P}(1) = 4,1383 \cdot 10^{-4}$.
+Bei einer Langzeitmessung von $\Delta t_{\text{L}} = 2 \, \text{Tage} $ ergibt sich eine durchschnittliche Startanzahl von 
+$N_{\text{Start}} = \Delta t_{\text{L}} \,\cdot \, N_{\text{Myon}} - \Delta t_{\text{L}} \, \cdot \, N_{\text{Myon}} \, \cdot \, \text{P}(1)$. 
+$N_{\text{Start}}$ ergibt sich zu $3575480$. Die fehlerhafte Stoppanzahl ergibt sich durch 
+$N_{\text{f,Stopp}} = N_{\text{Start}} \, \cdot \, P(1)$ zu $1480$. Diese Verteilen sich auf die ersten 412 Kanäle. Daher kommt es 
+zu der Untergrundrate pro Kanal von $$U_{\text{theo}} = 3,5 \, \frac{\text{Counts}}{\text{Kanal}}\,.$$
 
 %Siehe \autoref{fig:plot}!
 
