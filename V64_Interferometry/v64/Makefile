@@ -9,6 +9,7 @@ build/contrast.pdf: plot.py ../matplotlibrc ../header-matplotlib.tex | build
 
 # hier weitere Abhängigkeiten für build/vXXX.pdf deklarieren:
 build/v64.pdf: build/contrast.pdf
+build/v64.pdf: build/fit.pdf
 
 build/v64.pdf: FORCE | build
 	# to find header and bib files in the main directory
