@@ -1,6 +1,6 @@
 # Background Voltage: 0.0 V
-# phi[] U_max1 [V] U_max2 [V] U_max3 [V] U_min1 [V] U_min2 [V] U_min3 [V]
-# deviation phi: /pm 1 and V: \pm 0.02V
+# phi[°] U_max1 [V] U_max2 [V] U_max3 [V] U_min1 [V] U_min2 [V] U_min3 [V]
+# deviation phi: /pm 2 and V: \pm 0.01V
 0.0 1.69 1.58 1.57 1.38 1.41 1.43
 10.0 1.35 1.36 1.37 0.89 0.90 0.91
 20.0 1.22 1.23 1.21 0.56 0.56 0.57
