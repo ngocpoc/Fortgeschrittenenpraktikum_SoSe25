@@ -117,29 +117,76 @@ Lebensdauer_Messwerte = params1[0] * channelnumber + params1[1]
 
 
 #print(Lebensdauer_Messwerte)
-Counts_pro_Channel_fit = Counts_pro_Channel[16:412]
-Lebensdauer_Messwerte_fit = Lebensdauer_Messwerte[16:412]
+Counts_pro_Channel_fit = Counts_pro_Channel[17:412]
+Lebensdauer_Messwerte_fit = Lebensdauer_Messwerte[17:412]
+Counts_pro_Channel_ex_begin = Counts_pro_Channel[:17]
+Lebensdauer_Messwerte_ex_begin = Lebensdauer_Messwerte[:17]
 
-Counts_pro_Channel_ex = np.append(Counts_pro_Channel[:16], Counts_pro_Channel[412:])
-Lebensdauer_Messwerte_ex = np.append(Lebensdauer_Messwerte[:16], Lebensdauer_Messwerte[412:])
-print(len(Counts_pro_Channel_fit), len(Lebensdauer_Messwerte_fit))
+#print("Messwerte vorher: ",len(Lebensdauer_Messwerte_fit) )
+#i = 1
+#while(i < (len(Counts_pro_Channel_fit))):
+#    if Counts_pro_Channel_fit[i] == 0:
+#        np.append(Counts_pro_Channel_ex_begin, Counts_pro_Channel_fit[i])
+#        np.append(Lebensdauer_Messwerte_ex_begin, Lebensdauer_Messwerte_fit[i])
+#        np.delete(Counts_pro_Channel_fit, i, axis = None)
+#        np.delete(Lebensdauer_Messwerte_fit, i, axis = None)
+#        #print("wurde entfernt")
+#    i = i + 1
+#    #print("Hat funktioniert")
+
+#print("Messwerte nachher: ", Counts_pro_Channel_fit )
+
+Counts_pro_Channel_ex = np.append(Counts_pro_Channel_ex_begin, Counts_pro_Channel[412:])
+Lebensdauer_Messwerte_ex = np.append(Lebensdauer_Messwerte_ex_begin, Lebensdauer_Messwerte[412:])
+
+no_zero_counts = np.copy(Counts_pro_Channel_fit[Counts_pro_Channel_fit>0])
+no_zero_messwerte = np.copy(Lebensdauer_Messwerte_fit[Counts_pro_Channel_fit>0])
+
+#print(Counts_pro_Channel_fit>0)
+
+
+#print(len(Counts_pro_Channel_fit), len(Lebensdauer_Messwerte_fit))
+
 def exp(x,a,b,U):
     return a*np.exp(-b*x) + U
 
+x_plot12 = np.linspace(-0.5,2)
+
+params_linear, covariance_matrix_linear = np.polyfit(np.log(no_zero_messwerte), np.log(no_zero_counts), deg=1, cov=True)
+
+fig12,ax12 = plt.subplots(figsize = (6,5))
+ax12.plot(np.log(no_zero_messwerte), np.log(no_zero_counts), "x")
+ax12.plot(x_plot12, -1.3707 * x_plot12 + 3.2112)
+plt.grid()
+fig12.savefig("Linearisierung.pdf")
+
+
+#print("params_linear[0](m)",params_linear[0])
+#print("params_linear[1]",params_linear[1])
+uncertainties_linear = np.sqrt(np.diag(covariance_matrix_linear))
+for name, value, uncertainty in zip("ln", params_linear, uncertainties_linear):
+    print(f"{name} = {value:8.4f} ± {uncertainty:.4f}")
+
 #scipy.optimize.curve_fit lambda x,a,b,U: a*np.exp(-b*x) + U
-params2, covariance_matrix2 = curve_fit(exp,  Lebensdauer_Messwerte_fit,  Counts_pro_Channel_fit, p0 = (2,2,2))
+params2, covariance_matrix2 = curve_fit(exp,  Lebensdauer_Messwerte_fit,  Counts_pro_Channel_fit, p0 = (1000,2,4))
 
 uncertainties2 = np.sqrt(np.diag(covariance_matrix2))
 
-for name, value, uncertainty in zip("abc", params2, uncertainties2):
+for name, value, uncertainty in zip("abU", params2, uncertainties2):
     print(f"{name} = {value:8.4f} ± {uncertainty:.4f}")
 
+#l =  -1.3707 ± 0.0381
+#n =   3.2112 ± 0.0557
 
 #N_0 = 306.8146 ± 43.8197
 #lambda =   2.7618 ± 0.2214
 #U =   3.7704 ± 0.5308
 
-x_plot2 = np.linspace(0.1,11.5)
+#a = 2153.7204 ± 387.5688
+#b =   5.5514 ± 0.3042
+#U =   4.5081 ± 0.3879
+
+x_plot2 = np.linspace(0,11.5, 1000)
 a = params2[0]
 b = params2[1]
 U = params2[2]
@@ -150,9 +197,14 @@ tau = 1/lamdba
 fig2,ax2 = plt.subplots(figsize = (6,5))
 ax2.plot(Lebensdauer_Messwerte_fit,Counts_pro_Channel_fit, ".", mfc='none', color = "mediumpurple", label = "inkludierte Messwerte")
 ax2.plot(Lebensdauer_Messwerte_ex,Counts_pro_Channel_ex, ".", mfc='none', color = "hotpink", label = "exkludierte Messwerte")
-ax2.plot(x_plot2, a*np.exp(-b*x_plot2) + U, color = "darkorange", label = "Ausgleichsfunktion" )
-ax2.set_xlabel(r"Zeit $t$ in $\mu\mathrm{s}$")
-ax2.set_ylabel("Counts")
+# ax2.plot(x_plot2, a*np.exp(-b*x_plot2) + U, color = "darkorange", label = "Ausgleichsfunktion" )
+ax2.plot(x_plot2, exp(x_plot2,*params2), color = "darkorange", label = "Ausgleichsfunktion")
+ax2.plot(x_plot2, exp(x_plot2, np.exp(3.2112),1.3707,4.5081), label = "andere Ausgleichsfunktion")
+ax2.set(
+    xlabel=r"Zeit $t$ in $\mu\mathrm{s}$",
+    ylabel="Counts",
+    ylim =[-5, 200],
+)
 ax2.legend(loc = "best")
 #plt.margins(0.075)
 plt.grid()
