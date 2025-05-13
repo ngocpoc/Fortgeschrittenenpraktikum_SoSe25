@@ -1,4 +1,10 @@
 Statistische Formeln zum copy & pasten:
+\nu = \frac{I_{\text{max}}- I_{\text{min}}}{I_{\text{max}}+ I_{\text{min}}}\, .
+    \label{eqn:contrast}
+
+\nu(\phi) = 2 \, |\sin(\phi)\cos(\phi)| 
+    \label{eqn:contrast_Sagnac}
+
 
 Mittelwert:
 $$\bar{x} = \frac{1}{n} \cdot \sum_{i = 1}^{n}x_i$$ 
