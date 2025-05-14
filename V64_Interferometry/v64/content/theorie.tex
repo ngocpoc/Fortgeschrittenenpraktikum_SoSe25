@@ -16,16 +16,10 @@ For two beams to interfere with each other they both must be coherant, overlappi
 compounts in the same direction. Therefor beams with polarisation that is perpendicular to each other cannot interfere. 
 
 \subsection{Sagnac-Interferometer}
+\label{subsec:Sagnac_Interferometer}
 The Sagnac-Interferometer is a type of interferometer where the initial light beam is split into two by using an polarizing beam-splitter 
-cube (PBSC). The two beams propagate along the same paths just in opposite directions and are recombined afterwards. 
-The topology of the Sagnac-Interferometer can be seen in \autoref{pic:Sagnac-Interferometer}.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.70\textwidth]{content/Bilder/Sagnac_Interferometer.jpeg}
-    \caption{Topology of the Sagnac-Interferometer}
-    \label{pic:Sagnac-Interferometer}
-  \end{figure}
+cube (PBSC). The two beams propagate along the same paths just in opposite directions and are recombined afterwards. They are polarized 
+perpendicular to each other because of the PBSC.
 
   \subsection{Contrast}
   To be able to take optimal measurements the contrast, also called visibility, of the interferometer should be high. The contrast is defined
@@ -41,18 +35,18 @@ The topology of the Sagnac-Interferometer can be seen in \autoref{pic:Sagnac-Int
  intensity is therefor dependent on the two beams and their electric field. The electric fields oscillate with a frequency $\omega$. 
  At the point where the two beams are recombined the waves have a phase difference in comparison to each other. This phase difference
  is labeled $\delta$. Therefor the dependency of the intensity can be expressed through
- \begin{equation}
+ \begin{equation*}
     I \propto \langle |E_1 \cos(\omega t) + E_2 \cos(\omega t + \delta)|²\rangle \, .
- \end{equation}
+ \end{equation*}
  The maximal intensity is measured when $\delta$ is $\delta_{\text{max}} = 0$ and the minimal intensity is
  measured when $\delta$ is $\delta_{\text{min}} = \pi$. 
  %cos(x + \pi) = - cos(x)
  This leads to the maximal and minimal intensity being 
- \begin{align}
-    I_{\text{max/min}} &\propto \langle |(E_1 \pm E_2) \cos(\omega t)|²\rangle 
-    &= |(E_1 \pm E_2)|² \langle |\cos(\omega t)|²\rangle 
+ \begin{align*}
+    I_{\text{max/min}} &\propto \langle |(E_1 \pm E_2) \cos(\omega t)|²\rangle \\
+    &= |(E_1 \pm E_2)|² \langle |\cos(\omega t)|²\rangle \\
     &= \frac{1}{2} |(E_1 \pm E_2)|² \, .
- \end{align}
+ \end{align*}
  The two beams have a linear polarisation perpendicular to each other after passing through the PBSC. 
  Therefor the amplitudes $E_1$ and $E_2$ of the beams can be expressed as 
  \begin{equation}
