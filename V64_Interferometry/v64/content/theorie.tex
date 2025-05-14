@@ -81,7 +81,7 @@ The topology of the Sagnac-Interferometer can be seen in \autoref{pic:Sagnac-Int
  Lightwaves travel at a different velocity $v_{\text{medium}}$ dependent on the material they propagate through. 
  The refractive index $n$ is defined as 
  \begin{equation}
-    n = \frac{\symup{c}}{v_{\text{medium}}} \, .
+    n = \frac{\symup{c}}{v_{\text{medium}}} \label{n_generell} \, .
  \end{equation}
  $\symup{c}$ is the velocity of light in vacuum. 
  The refractive index of gases can be measured by using an interferometer because a changing refractive 
@@ -115,5 +115,11 @@ The topology of the Sagnac-Interferometer can be seen in \autoref{pic:Sagnac-Int
  \end{align*}
  Solving for $n_{\text{glas}}$ yields 
  \begin{equation}
-    n_{\text{glas}} = \frac{2d \Theta \Theta_0}{2d \Theta \Theta_0 - \lambda_{\text{vac}}M} \, .
+    n_{\text{glas}} = \frac{2d \Theta \Theta_0}{2d \Theta \Theta_0 - \lambda_{\text{vac}}M} \label{eqn:n_glass_umgestellt}\, .
+ \end{equation}
+ The refractive index is also dependent on the polarizability $\alpha$, the temperature $T$ and the pressure $p$ which is shown in the 
+ Lorentz-Lorenz equation 
+ \begin{equation}
+   \frac{n²-1}{n²+2} = \frac{\alpha p}{3 \varepsilon_0 k_b T} 
+   \label{eqn:Lorentz_Lorenz}
  \end{equation}

@@ -5,6 +5,24 @@ Statistische Formeln zum copy & pasten:
 \nu(\phi) = 2 \, |\sin(\phi)\cos(\phi)| 
     \label{eqn:contrast_Sagnac}
 
+n = \frac{\symup{c}}{v_{\text{medium}}} 
+    \label{n_generell} 
+
+M = \frac{\delta_{\text{glas}}}{2\pi} 
+    \label{eqn:M}
+
+\delta_{\text{glas}}(\Theta) = \frac{2 \pi}{\lambda_{\text{vac}}} d \left( \frac{n_{\text{glas}}-1}{2n_{\text{glas}}} \Theta² + \mathcal{O}(\Theta⁴)\right) 
+    \label{eqn:delta_glass_vontheta}
+
+\delta_{\text{diff}} = \delta(\Theta + \Theta_0) - \delta(\Theta - \Theta_0) 
+    \label{eqn:delta_diff}
+
+n_{\text{glas}} = \frac{2d \Theta \Theta_0}{2d \Theta \Theta_0 - \lambda_{\text{vac}}M} 
+    \label{eqn:n_glass_umgestellt}
+
+\frac{n²-1}{n²+2} = \frac{\alpha p}{3 \varepsilon_0 k_b T} 
+   \label{eqn:Lorentz_Lorenz}
+
 
 Mittelwert:
 $$\bar{x} = \frac{1}{n} \cdot \sum_{i = 1}^{n}x_i$$ 
