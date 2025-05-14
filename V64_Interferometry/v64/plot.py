@@ -72,8 +72,8 @@ ax.errorbar(
     color="indigo"
 )
 ax.plot(x * 180 / np.pi, contrast_theo(x), "-", label="Theoretical curve", color="darkturquoise")
-ax.axvline(x=135, color='red', linestyle='--', label=r"$\Theta = 135^\circ$")
-ax.set_xlabel(r"$\Theta\,[\unit{\degree}$]")
+ax.axvline(x=135, color='red', linestyle='--', label=r"$\phi = 135^\circ$")
+ax.set_xlabel(r"$\phi\,[\unit{\degree}$]")
 ax.set_ylabel(r"Contrast $\nu$")
 ax.set_xlim([-5, 185])
 ax.set_ylim([0, 1.05])

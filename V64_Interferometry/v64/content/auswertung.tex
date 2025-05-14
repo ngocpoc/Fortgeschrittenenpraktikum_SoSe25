@@ -3,13 +3,13 @@
 
 \subsection{Contrast of the interferometer}
 \label{sec:Contrast}
-\begin{table}[h]
+\begin{table}[t]
     \centering
-    \caption{Measured voltages $U_{\text{max/min}}$ and their arithmetic means $\bar{U}_{\text{max/min}}$ at various polarization angles $\Theta$ used to determine the interferometer contrast.}
+    \caption{Measured voltages $U_{\text{max/min}}$ and their arithmetic means $\bar{U}_{\text{max/min}}$ at various polarization angles $\phi$ used to determine the interferometer contrast.}
     \label{tab:contrast}
     \begin{tblr}{colspec={c| c c c |c c c| c c }}
         \toprule
-        $\Theta\,[\unit{\degree}]$ & $U_{\text{max}}^{(1)}\,[\unit{\volt}]$ & $U_{\text{max}}^{(2)}\,[\unit{\volt}]$ & $U_{\text{max}}^{(3)}\,[\unit{\volt}]$ & $U_{\text{min}}^{(1)}\,[\unit{\volt}]$ & $U_{\text{min}}^{(2)}\,[\unit{\volt}]$ & $U_{\text{min}}^{(3)}\,[\unit{\volt}]$ & $\bar{U}_{\text{max}}\,[\unit{\volt}]$ & $\bar{U}_{\text{min}}\,[\unit{\volt}]$ \\
+        $\phi\,[\unit{\degree}]$ & $U_{\text{max}}^{(1)}\,[\unit{\volt}]$ & $U_{\text{max}}^{(2)}\,[\unit{\volt}]$ & $U_{\text{max}}^{(3)}\,[\unit{\volt}]$ & $U_{\text{min}}^{(1)}\,[\unit{\volt}]$ & $U_{\text{min}}^{(2)}\,[\unit{\volt}]$ & $U_{\text{min}}^{(3)}\,[\unit{\volt}]$ & $\bar{U}_{\text{max}}\,[\unit{\volt}]$ & $\bar{U}_{\text{min}}\,[\unit{\volt}]$ \\
         \midrule
         0   & 1.69 & 1.58 & 1.57 & 1.38 & 1.41 & 1.43 & $1.61\pm0.07$ & $1.41\pm0.03$ \\
         10  & 1.35 & 1.36 & 1.37 & 0.89 & 0.90 & 0.91 & $1.36\pm0.01$ & $0.90\pm0.01$ \\
@@ -34,38 +34,38 @@
         \bottomrule
     \end{tblr}
 \end{table}
-The measured maximum and minimum voltages corresponding to the polarization angle $\Theta$ in the range \SI{0}{\degree}–\SI{180}{\degree} are listed in \autoref{tab:contrast}.
-Each angle $\Theta$ has a reading uncertainty of $\pm\SI{2}{\degree}$, and each individual voltage measurement has an instrumental uncertainty of $\pm\SI{0.01}{\volt}$.
+The measured maximum and minimum voltages corresponding to the polarization angle $\phi$ in the range \SI{0}{\degree}–\SI{180}{\degree} are listed in \autoref{tab:contrast}.
+Each angle $\phi$ has a reading uncertainty of $\pm\SI{2}{\degree}$, and each individual voltage measurement has an instrumental uncertainty of $\pm\SI{0.01}{\volt}$.
 The uncertainties reported for $\bar{U}_{\text{max/min}}$ are the sample standard deviations from the three measurements.
 In addition, a background noise level of \SI{0}{\volt} was measured, indicating that no offset needed to be subtracted from the recorded voltages.
 Therefore, the values listed in \autoref{tab:contrast} were used directly in the contrast calculations.\\
 Since the photodiode output voltage is proportional to the light intensity $I \sim U$, the mean voltages $U_{\text{max/min}}$ can be used directly in place of intensity values for determining the interferometer contrast. 
-The calculated contrast using the equation ref{eqn:} are plotted in \autoref{fig:contrast} as well as the theoretical curve described by the equation ref{eqn:}.
+The calculated contrast using the equation \ref{eqn:contrast} are plotted in \autoref{fig:contrast} as well as the theoretical curve described by the equation \ref{eqn:contrast_Sagnac}.
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.9\linewidth]{build/contrast.pdf}
-  \caption{Interferometer contrast as a function of polarization angle $\Theta$, showing measured values and the corresponding theoretical curve.}
+  \caption{Interferometer contrast as a function of polarization angle $\phi$, showing measured values and the corresponding theoretical curve.}
   \label{fig:contrast}
 \end{figure}
 Based on the measured values and the theoretical contrast curve, a polarization angle of \SI{135}{\degree} was chosen for the subsequent measurements. This setting yields a contrast close to the theoretical maximum. More importantly, this setting provides a significantly higher signal amplitude compared to \SI{45}{\degree} which has similar contrast but a much lower voltage swing. The increased signal amplitude at \SI{135}{\degree} improves the signal-to-noise ratio, allowing for more precise detection of interference fringes and phase shifts.
 
 \subsection{Refraction index of glass}
 \label{sec:glass_index}
-To determine the refractive index $n$ of the glass plates, we measured the number of interference fringes $M$ that appeared while rotating the mounted double-glass holder by an additional angle of $\phi = \SI{10 \pm 2}{\degree}$. 
-Since both glass plates have an initial tilt of $\phi_0 = \pm\SI{10}{\degree}$, the equation ref{eqn:} has to be modified. When using the relation ref{eqn:}, this leads to
+To determine the refractive index $n$ of the glass plates, we measured the number of interference fringes $M$ that appeared while rotating the mounted double-glass holder by an additional angle of $\Theta = \SI{10 \pm 2}{\degree}$. 
+Since both glass plates have an initial tilt of $\Theta_0 = \pm\SI{10}{\degree}$, the equation \ref{eqn:delta_glass_vontheta} has to be modified. When using the relation ref{eqn:M}, this leads to
 \begin{align}
-    M &= \frac{T}{\lambda_{\text{vac}}} \cdot \frac{n - 1}{2n} \left[ (\phi_0 + \phi)^2 - (\phi_0 - \phi)^2 \right] \nonumber \\
-      &= \frac{T}{\lambda_{\text{vac}}} \cdot \frac{n - 1}{2n} (4 \phi_0 \phi) \nonumber \\
+    M &= \frac{d}{\lambda_{\text{vac}}} \cdot \frac{n - 1}{2n} \left[ (\Theta_0 + \Theta)^2 - (\Theta_0 - \Theta)^2 \right] \nonumber \\
+      &= \frac{d}{\lambda_{\text{vac}}} \cdot \frac{n - 1}{2n} (4 \Theta_0 \Theta) \nonumber \\
 \Leftrightarrow\quad 
-    n &= \frac{2T \phi_0 \phi}{2T \phi_0 \phi - M \lambda_{\text{vac}}} \,. \label{eqn:fraction_glass}
+    n &= \frac{2d \Theta_0 \Theta}{2d \Theta_0 \Theta - M \lambda_{\text{vac}}} \,. \label{eqn:fraction_glass}
 \end{align}
-Using the equation \ref{eqn:fraction_glass} and the arithmetic mean of the measured interference maxima from \autoref{tab:glass_counts}, the refractive index of the glass plates is calculated. This results in a refractive index of 
+Using the equation \ref{eqn:fraction_glass} with $d=\SI{1}{\milli\meter}$ and the arithmetic mean of the measured interference maxima from \autoref{tab:glass_counts}, the refractive index of the glass plates is calculated. This results in a refractive index of 
 $$
     n_{\text{glass, exp}} = \SI{1.49\pm0.21}\,.
 $$
 \begin{table}[h]
     \centering
-    \caption{Measured numbers $M$ of interference maxima while rotating a glass plate by $\phi=\SI{10\pm2}{\degree}$ and the resulting arithmetic mean $\bar{M}$.}
+    \caption{Measured numbers $M$ of interference maxima while rotating a glass plate by $\Theta=\SI{10\pm2}{\degree}$ and the resulting arithmetic mean $\bar{M}$.}
     \label{tab:glass_counts}
     \begin{tblr}{colspec= c|c c c c c c c c c c || c}
         \toprule
@@ -110,7 +110,7 @@ For each pressure, the arithmetic mean $\bar{M}$ and the corresponding refractiv
         \bottomrule
     \end{tblr}
 \end{table}
-The calculation of the refractive index was done by using the equations ref{eqn:} and ref{eqn:} and the relation
+The calculation of the refractive index was done by using the equations \ref{eqn:delta_gas} and \ref{eqn:M} and the relation
 $$
     \symup{\Delta}n = n(p)-n(p_0)\,,
 $$
