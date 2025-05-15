@@ -1,41 +1,42 @@
 \section{Objective}
 \label{sec:Objective}
-The goal of the experiment is to familiarize oneself with the workings of interferometry and a sagnac 
-inferometer. Using this knowledge and inferometer the refractorary index of glass and air is determinated. 
+The goal of the experiment is to familiarize oneself with the workings of interferometry and a Sagnac-Interferometer. 
+Using this knowledge the contrast of the interferometer and the refractory index of glass and air is determined. 
+
 \section{Theoratical Background}
 \label{sec:Theorie}
-The theoratical background is based on \cite{Optik} and \cite{anleitungV64}.
-\subsection{Coherance, polarisation  and interference of light}
-The coherance of a wave describes how well the phase is mantained throughout the propagation. The temporal coherance measures how long a 
-wave holds the same shape periodically and the spatial coherance measures the phase unity across different points in the wavefront.
-The coherance is linked to the spectral bandwidth the lightsource has. In general a narrow bandwidth leads to a long coherance time.
-The degree of coherance a wave can have is ranging from 0 (fully incoherant) to 1 (fully coherant). 
-Another property of light is its polarisation. Light can be linear polarized, circular or eliptically polarized or unpolarized. 
-In case of a linear polarized light the electric field osciallates in a fixed plane. If it is circular or eliptically polarized the 
+The theoretical background is based on \cite{Optik} and \cite{anleitungV64}.
+\subsection{Coherence, polarization and interference of light}
+The coherence of a wave describes how well the phase is maintained throughout the propagation. The temporal coherence measures how long a 
+wave holds the same shape periodically and the spatial coherence measures the phase unity across different points in the wavefront.
+The coherence is linked to the spectral bandwidth the light source has. In general, a narrow bandwidth leads to a long coherence time.
+The degree of coherence a wave can have is ranging from 0 (fully incoherent) to 1 (fully coherent). 
+Another property of light is its polarization. Light can be linearly polarized, circularly or elliptically polarized or unpolarized. 
+In case of a linearly polarized light the electric field osciallates in a fixed plane. If it is circularly or elliptically polarized the 
 electric field rotates over time around the direction of propagation. 
-For two beams to interfere with each other they both must be coherant, overlapping spatially and have the same polarisation direction or
-compounts in the same direction. Therefor beams with polarisation that is perpendicular to each other cannot interfere. 
+For two beams to interfere with each other they both must be coherant, overlapping spatially and have the same polarization direction or
+compounds in the same direction. Therefore beams with polarization that is perpendicular to each other cannot interfere. 
 
 \subsection{Sagnac-Interferometer}
 \label{subsec:Sagnac_Interferometer}
-The Sagnac-Interferometer is a type of interferometer where the initial light beam is split into two by using an polarizing beam-splitter 
+The Sagnac-Interferometer is a type of interferometer where the initial light beam is split into two by using a polarizing beam-splitter 
 cube (PBSC). The two beams propagate along the same paths just in opposite directions and are recombined afterwards. They are polarized 
 perpendicular to each other because of the PBSC.
 
   \subsection{Contrast}
-  To be able to take optimal measurements the contrast, also called visibility, of the interferometer should be high. The contrast is defined
+  To be able to take optimal measurements, the contrast, also called visibility, of the interferometer should be high. The contrast is defined
    as 
   \begin{equation}
     \nu = \frac{I_{\text{max}}- I_{\text{min}}}{I_{\text{max}}+ I_{\text{min}}}\, .
     \label{eqn:contrast}
   \end{equation}
- $I_{\text{max}}$ is the maximum intensity and $I_{\text{min}}$ is the minimu intensity. The ideal contrast is therefor equal to $1$ because
+ $I_{\text{max}}$ is the maximum intensity and $I_{\text{min}}$ is the minimum intensity. The ideal contrast is therefore equal to $1$ because
  $I_{\text{min}}$ is equal to $0$ in this case. The maximal and minimal intensity is dependent on the electric field of the beams taking 
- part in the interference. The relation between the electric field $E$ and the correspnding intensity $I$ is $I = \langle |E|² \rangle$. \\
- In case of the Sagnac-Interferometer the initial linear polarized laser beam is split into two beams by the PBSC. The measured 
- intensity is therefor dependent on the two beams and their electric field. The electric fields oscillate with a frequency $\omega$. 
- At the point where the two beams are recombined the waves have a phase difference in comparison to each other. This phase difference
- is labeled $\delta$. Therefor the dependency of the intensity can be expressed through
+ part in the interference. The relation between the electric field $E$ and the corresponding intensity $I$ is $I = \langle |E|² \rangle$. \\
+ In case of the Sagnac-Interferometer the initially linearly polarized laser beam is split into two beams by the PBSC. The measured 
+ intensity is therefore dependent on the two beams and their electric field. The electric fields oscillate with a frequency $\omega$. 
+ At the point where the two beams are recombined, the waves have a phase difference in comparison to each other. This phase difference
+ is labeled $\delta$. Therefore the dependency of the intensity can be expressed through
  \begin{equation*}
     I \propto \langle |E_1 \cos(\omega t) + E_2 \cos(\omega t + \delta)|²\rangle \, .
  \end{equation*}
@@ -48,14 +49,14 @@ perpendicular to each other because of the PBSC.
     &= |(E_1 \pm E_2)|² \langle |\cos(\omega t)|²\rangle \\
     &= \frac{1}{2} |(E_1 \pm E_2)|² \, .
  \end{align*}
- The two beams have a linear polarisation perpendicular to each other after passing through the PBSC. 
- Therefor the amplitudes $E_1$ and $E_2$ of the beams can be expressed as 
+ The two beams have a linear polarization perpendicular to each other after passing through the PBSC. 
+ Therefore the amplitudes $E_1$ and $E_2$ of the beams can be expressed as 
  \begin{equation}
     E_1 = E_0 \cdot \cos(\phi) \,\, \text{and} \,\, E_2 = E_0 \cdot \sin(\phi) \, .
     \label{eqn:E_Felder}
  \end{equation}
- $E_0$ is the amplitude of electric field of the initial beam and $\phi$ is the angle between the initial beam and the PBSC. 
- The electric field of the initial beam is assumed to be $E = E_0 \cdot \cos(\omega t)$. Therefor the initial intensity is
+ $E_0$ is the amplitude of the electric field of the initial beam and $\phi$ is the angle between the initial beam and the PBSC. 
+ The electric field of the initial beam is assumed to be $E = E_0 \cdot \cos(\omega t)$. Therefore the initial intensity is
  $I_{\text{Laser}} = \langle |E_0 \cdot \cos(\omega t)|² \rangle = \frac{1}{2} |E_0|²$.
  The intensity can be expressed as 
  \begin{align*}
@@ -65,7 +66,7 @@ perpendicular to each other because of the PBSC.
     &= I_{\text{Laser}}  \cdot |1 \pm 2\sin(\phi)\cos(\phi)|
  \end{align*}
  by using the established definitions of $E_1$ and $E_2$. 
- These intensities can be used to calculate the contrast if the Sagnac-Interferometer as following 
+ These intensities can be used to calculate the contrast of the Sagnac-Interferometer as following 
  \begin{align}
     \nu(\phi) &= \frac{I_{\text{Laser}}  \cdot |1 + 2\sin(\phi)\cos(\phi)|- I_{\text{Laser}}  \cdot |1 - 2\sin(\phi)\cos(\phi)|}{I_{\text{Laser}}  \cdot |1 + 2\sin(\phi)\cos(\phi)|+ I_{\text{Laser}}  \cdot |1 - 2\sin(\phi)\cos(\phi)|} \\
     &= \frac{|4 \sin(\phi)\cos(\phi)|}{2} = 2 \, |\sin(\phi)\cos(\phi)| \, .
@@ -73,7 +74,7 @@ perpendicular to each other because of the PBSC.
  \end{align}
 
  \subsection{Refractive index}
- Lightwaves travel at a different velocity $v_{\text{medium}}$ dependent on the material they propagate through. 
+ Light waves travel at a different velocity $v_{\text{medium}}$ dependent on the material they propagate through. 
  The refractive index $n$ is defined as 
  \begin{equation}
     n = \frac{\symup{c}}{v_{\text{medium}}} \label{n_generell} \, .
@@ -96,21 +97,21 @@ perpendicular to each other because of the PBSC.
     \label{eqn:delta_glass_vontheta}
  \end{equation}
  for small angles of rotation. 
- $d$ is the thickness of the glasplate and $n_{\text{glas}}$ is the refractive index of the glas. 
+ $d$ is the thickness of the glass plate and $n_{\text{glass}}$ is the refractive index of the glass. 
  Because both beams of light propagate along the same path in different directions the phase difference between the two waves is 
  \begin{equation}
     \delta_{\text{diff}} = \delta(\Theta + \Theta_0) - \delta(\Theta - \Theta_0) \label{eqn:delta_diff} \, .
  \end{equation}
- $\Theta_0 = 10°$ is the tilt that both glass pannels have at the beginning. The refractive index can be calculated using 
+ $\Theta_0 = 10°$ is the tilt that both glass panels have at the beginning. The refractive index can be calculated using 
  the formulas (\ref{eqn:M}), (\ref{eqn:delta_glass_vontheta}) and (\ref{eqn:delta_diff}) as following 
  \begin{align*}
-    M &= \frac{d}{\lambda_{\text{vac}}} \frac{n_{\text{glas}}-1}{2n_{\text{glas}}} \left( (\Theta + \Theta_0)² - (\Theta - \Theta_0)²\right) \\
-    &= \frac{d}{\lambda_{\text{vac}}} \frac{n_{\text{glas}}-1}{2n_{\text{glas}}} \Theta \Theta_0    
+    M &= \frac{d}{\lambda_{\text{vac}}} \frac{n_{\text{glass}}-1}{2n_{\text{glass}}} \left( (\Theta + \Theta_0)² - (\Theta - \Theta_0)²\right) \\
+    &= \frac{d}{\lambda_{\text{vac}}} \frac{n_{\text{glass}}-1}{2n_{\text{glass}}} \Theta \Theta_0    
     \, . 
  \end{align*}
- Solving for $n_{\text{glas}}$ yields 
+ Solving for $n_{\text{glass}}$ yields 
  \begin{equation}
-    n_{\text{glas}} = \frac{2d \Theta \Theta_0}{2d \Theta \Theta_0 - \lambda_{\text{vac}}M} \label{eqn:n_glass_umgestellt}\, .
+    n_{\text{glass}} = \frac{2d \Theta \Theta_0}{2d \Theta \Theta_0 - \lambda_{\text{vac}}M} \label{eqn:n_glass_umgestellt}\, .
  \end{equation}
  The refractive index is also dependent on the polarizability $\alpha$, the temperature $T$ and the pressure $p$ which is shown in the 
  Lorentz-Lorenz equation 
