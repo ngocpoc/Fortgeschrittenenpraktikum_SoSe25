@@ -77,8 +77,8 @@ $$
 \subsection{Refraction index of air}
 \label{sec:air}
 In this part of the experiment, the change in the refractive index of air with respect to pressure was investigated using an interferometric method. The numbers of observed interference fringes $M$ was recorded for various pressures, with an instrumental uncertainty in pressure of \SI{\pm1}{\milli\bar}. 
-For each pressure, the arithmetic mean $\bar{M}$ and the corresponding refractive index $n_{\text{air, 1}}$ were calculated. The results are summarized in \autoref{tab:air}.
-\begin{table}[h]
+For each pressure, the arithmetic mean $\bar{M}$ and the corresponding refractive index $n_{\text{air}}$ were calculated. The results are summarized in \autoref{tab:air}.
+\begin{table}[t]
     \centering
     \caption{Measured numbers $M$ of interference maxima at different air pressure $p$ with the resulting arithmetic mean $\bar{M}$ and calculated refraction index $n$. The three measurements were conducted at the temperatures $T_1=\SI{21.5}{\celsius},\,\,T_2=\SI{21.6}{\celsius}$ and $T_3=\SI{21.7}{\celsius}$.}
     \label{tab:air}
@@ -118,18 +118,19 @@ where $n(p_0)\approx 1$ is the refractive index at standard atmospheric pressure
 \begin{equation}
     n(p)= 1 + \frac{M\cdot \lambda_{\text{vac}}}{L}\,,\label{eqn:refraction_air}
 \end{equation}
-with $\lambda_{\text{vac}} = \SI{632.990}{\nano\meter}$ and $L=\SI{100.0\pm0.1}{\milli\meter}$ representing the vacuum wavelength of the laser and the effective path length. All values of $ n_{\text{air}}$ are  listed in \autoref{tab:air} were obtained using this formula. Calculating the mean of these refractive indices yields 
-$$
-    \bar{n}_{\text{air, 1}} = 1.00013363\pm0.00000031\,.
-$$
-\subsubsection{Standard Atmosphere}
+with $\lambda_{\text{vac}} = \SI{632.990}{\nano\meter}$ and $L=\SI{100.0\pm0.1}{\milli\meter}$ representing the vacuum wavelength of the laser and the effective path length. All values of $ n_{\text{air}}$ are  listed in \autoref{tab:air} were obtained using this formula.
+%  Calculating the mean of these refractive indices yields 
+% $$
+%     \bar{n}_{\text{air, 1}} = 1.00013363\pm0.00000031\,.
+% $$
+\subsubsection{Standard atmosphere}
 \label{sec:LorentzLorenzLaw}
-In order to determine the refrective index of air at standard atmosphere, the Lorentz-Lorenz Law ref{eqn:} is used.
+In order to determine the refrective index of air at standard atmosphere, the Lorentz-Lorenz Law \ref{eqn:Lorentz_Lorenz} is used.
 Under standard conditions, the refractive index of air is very close to 1 (specifically, $n_{\text{air, theo}}=1.00027653$ at $\lambda=\SI{632.990}{\nano\meter}$ \cite{refractiveIndex}). Given how close $n$ is to $1$, it is physically reasonable to approximate the left-hand side of the Lorentz-Lorenz equation using a Taylor expansion around n=1: This leads to 
 \begin{align}
-    \frac{n^2 -1}{n^2 +2} \approx n-1 \nonumber\\
-    \Rightarrow n-1 &= \frac{\alpha}{3 \epsilon _0 k_B} \frac{p}{T} \nonumber\\
-    \Leftrightarrow n &= 1  + \underbrace{\frac{\alpha}{3 \epsilon _0 k_B}}_{=:\beta} \frac{p}{T} \label{eqn:LLLair}\,.
+    \frac{n^2 -1}{n^2 +2} &\approx n-1  + \mathcal{O} (n^2)\nonumber\\
+    &\Rightarrow n-1 = \frac{\alpha}{3 \epsilon _0 k_B} \frac{p}{T} \nonumber\\
+    &\Leftrightarrow n = 1  + \underbrace{\frac{\alpha}{3 \epsilon _0 k_B}}_{=:\beta} \frac{p}{T} \label{eqn:LLLair}\,.
 \end{align}
 The different measurements listed in \autoref{tab:air} were taken under slightly fluctuating temperatures. Therefore, the mean temperature is calculted as $\bar{T}=\SI{21.60\pm0.08}{\celsius}$ and used to plot the calculated values of $\bar{M}$ against $\sfrac{p}{\bar{T}}$, as shown in \autoref{fig:fit}.
 To model the relationship, the equations \ref{eqn:refraction_air} and \ref{eqn:LLLair} are set equal, yielding a linear relation
@@ -151,4 +152,4 @@ This linear equation is fitted to the measured data, resulting in the following 
 Combining the equations \ref{eqn:refraction_air} and \ref{eqn:linearfit} with the calculated parameters as well as $\lambda_{\text{vac}},\,\,p_0 =\SI{1013}{\milli\bar}$ and $T_0 = \SI{15}{\degree}$ at normal condition to
 $$
 n(p_0, T_0) = \frac{\lambda_{\text{vac}}}{L} \hat{M} +1$$ 
-leads to the refractive indes of air $n_{\text{air, 2}} = 1.0002770\pm0.0000013$.
+leads to the refractive index of air $n_{\text{air, exp}} = 1.0002770\pm0.0000013$.

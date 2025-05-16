@@ -20,3 +20,10 @@ n = 1.5151
 n = 1.6671
 n = 1.8449
 n \in [1.4570, 1.8449]
+
+rel. Abweichungen
+Air:
+n_air_exp1 mit n_air= 1.00027653: $\Delta n_air_1= 0.014285927290310864\,\%$
+n_air_exp2 mit n_air= 1.00027653: $\Delta n_air_2= 5.015081606804556e-05\%$
+Glass:
+n_glas_exp mit n_glass=[1.457, 1.8449]: $\Delta n_glass= [2.341376418836785, 19.176440217765077],\%$

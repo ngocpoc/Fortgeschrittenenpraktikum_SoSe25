@@ -9,7 +9,7 @@ import os
 os.makedirs("build", exist_ok=True)
 
 def rel_Abweichung(exp, theo):
-    return (np.abs(exp-theo)/(theo)*100) #ist schon in Prozent
+    return (np.abs((exp-theo)/(theo))*100) #ist schon in Prozent
 
 def contrast(U_max, U_min):
     return (U_max - U_min)/(U_max + U_min)
@@ -113,7 +113,7 @@ M_gas = uarray(M_mean, M_std)
 L = ufloat(100.0, 0.1) * 10e-3 # length of the gas cell
 
 n_gas = refraction_gas(M_gas, L, lambda_HeNe)
-# print(f"n_gas: {n_gas}")
+print(f"n_gas: {n_gas}")
 # print(f"n_gas mean: {np.mean(n_gas)}")
 
 
@@ -145,15 +145,15 @@ err_b = np.sqrt(cov[1, 1])
 a = ufloat(params[0][0], err_a)
 b = ufloat(params[0][1], err_b)
 
-print(f"a: {a}")
-print(f"b: {b}")
+# print(f"a: {a}")
+# print(f"b: {b}")
 
 p_0 = 1013
 T_0 = 15 + 273.15
 
 # n_theo = n_taylor(p_0/T_0, lambda_HeNe/L , 1)
-n_theo = lambda_HeNe/L * n_taylor(p_0/T_0,a, b) + 1
-print(f"n_theo: {n_theo}")
+n_2 = lambda_HeNe/L * n_taylor(p_0/T_0,a, b) + 1
+print(f"n_theo: {n_2}")
 
 fig2, ax2 = plt.subplots(1, 1, layout="constrained")
 # ax2.plot(unp.nominal_values(x_plot), unp.nominal_values(M_gas), "x", label="Measured Values")
@@ -176,3 +176,21 @@ ax2.set_ylim([-1, 45])
 ax2.legend(loc="best")
 plt.grid()
 fig2.savefig("build/fit.pdf")
+
+
+# Abweichungen bestimmen mit n_gas und n_2 fuer n_theo_air
+n_theo_air = 1.00027653 
+
+n_theo_glas_min = 1.4570
+n_theo_glas_max = 1.8449
+
+n_rel_air_1 = unp.nominal_values(rel_Abweichung(np.mean(n_gas), n_theo_air))
+n_rel_air_2 = unp.nominal_values(rel_Abweichung(n_2, n_theo_air))
+n_rel_glas_min = unp.nominal_values(rel_Abweichung(n_glass_mean, n_theo_glas_min))
+n_rel_glas_max = unp.nominal_values(rel_Abweichung(n_glass_mean, n_theo_glas_max))
+# print("rel. Abweichungen")
+# print("Air:")
+# print(f"n_air_exp1 mit n_air= {n_theo_air}: $\Delta n_air_1= {n_rel_air_1}\,\%$")
+print(f"n_air_exp2 mit n_air= {n_theo_air}: $\Delta n_air_2= {n_rel_air_2}\%$")
+# print("Glass:")
+# print(f"n_glas_exp mit n_glass=[{n_theo_glas_min}, {n_theo_glas_max}]: $\Delta n_glass= [{n_rel_glas_min}, {n_rel_glas_max}],\%$")
