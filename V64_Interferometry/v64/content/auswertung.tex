@@ -52,7 +52,7 @@ Based on the measured values and the theoretical contrast curve, a polarization 
 \subsection{Refraction index of glass}
 \label{sec:glass_index}
 To determine the refractive index $n$ of the glass plates, we measured the number of interference fringes $M$ that appeared while rotating the mounted double-glass holder by an additional angle of $\Theta = \SI{10 \pm 2}{\degree}$. 
-Since both glass plates have an initial tilt of $\Theta_0 = \pm\SI{10}{\degree}$, the equation \ref{eqn:delta_glass_vontheta} has to be modified. When using the relation \ref{eqn:M}, this leads to
+Since both glass plates have an initial tilt of $\Theta_0 = \pm\SI{10}{\degree}$, the equation \ref{eqn:delta_glass_vontheta} has to be modified by using equation \ref{eqn:delta_diff}. When using the relation \ref{eqn:M}, this leads to
 \begin{align}
     M &= \frac{d}{\lambda_{\text{vac}}} \cdot \frac{n - 1}{2n} \left[ (\Theta_0 + \Theta)^2 - (\Theta_0 - \Theta)^2 \right] \nonumber \\
       &= \frac{d}{\lambda_{\text{vac}}} \cdot \frac{n - 1}{2n} (4 \Theta_0 \Theta) \nonumber \\
@@ -129,8 +129,8 @@ In order to determine the refrective index of air at standard atmosphere, the Lo
 Under standard conditions, the refractive index of air is very close to 1 (specifically, $n_{\text{air, theo}}=1.00027653$ at $\lambda=\SI{632.990}{\nano\meter}$ \cite{refractiveIndex}). Given how close $n$ is to $1$, it is physically reasonable to approximate the left-hand side of the Lorentz-Lorenz equation using a Taylor expansion around n=1: This leads to 
 \begin{align}
     \frac{n^2 -1}{n^2 +2} &\approx n-1  + \mathcal{O} (n^2)\nonumber\\
-    &\Rightarrow n-1 = \frac{\alpha}{3 \epsilon _0 k_B} \frac{p}{T} \nonumber\\
-    &\Leftrightarrow n = 1  + \underbrace{\frac{\alpha}{3 \epsilon _0 k_B}}_{=:\beta} \frac{p}{T} \label{eqn:LLLair}\,.
+    &\Rightarrow n-1 = \frac{\alpha}{3 \varepsilon _0 k_B} \frac{p}{T} \nonumber\\
+    &\Leftrightarrow n = 1  + \underbrace{\frac{\alpha}{3 \varepsilon _0 k_B}}_{=:\beta} \frac{p}{T} \label{eqn:LLLair}\,.
 \end{align}
 The different measurements listed in \autoref{tab:air} were taken under slightly fluctuating temperatures. Therefore, the mean temperature is calculted as $\bar{T}=\SI{21.60\pm0.08}{\celsius}$ and used to plot the calculated values of $\bar{M}$ against $\sfrac{p}{\bar{T}}$, as shown in \autoref{fig:fit}.
 To model the relationship, the equations \ref{eqn:refraction_air} and \ref{eqn:LLLair} are set equal, yielding a linear relation
