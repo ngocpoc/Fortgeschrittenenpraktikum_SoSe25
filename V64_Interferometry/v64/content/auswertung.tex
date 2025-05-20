@@ -52,7 +52,7 @@ Based on the measured values and the theoretical contrast curve, a polarization 
 \subsection{Refraction index of glass}
 \label{sec:glass_index}
 To determine the refractive index $n$ of the glass plates, we measured the number of interference fringes $M$ that appeared while rotating the mounted double-glass holder by an additional angle of $\Theta = \SI{10 \pm 2}{\degree}$. 
-Since both glass plates have an initial tilt of $\Theta_0 = \pm\SI{10}{\degree}$, the equation \ref{eqn:delta_glass_vontheta} has to be modified. When using the relation ref{eqn:M}, this leads to
+Since both glass plates have an initial tilt of $\Theta_0 = \pm\SI{10}{\degree}$, the equation \ref{eqn:delta_glass_vontheta} has to be modified. When using the relation \ref{eqn:M}, this leads to
 \begin{align}
     M &= \frac{d}{\lambda_{\text{vac}}} \cdot \frac{n - 1}{2n} \left[ (\Theta_0 + \Theta)^2 - (\Theta_0 - \Theta)^2 \right] \nonumber \\
       &= \frac{d}{\lambda_{\text{vac}}} \cdot \frac{n - 1}{2n} (4 \Theta_0 \Theta) \nonumber \\
@@ -84,7 +84,7 @@ For each pressure, the arithmetic mean $\bar{M}$ and the corresponding refractiv
     \label{tab:air}
     \begin{tblr}{colspec= c|c c c ||c c}
         \toprule
-        $p\,[\unit{\milli\bar}]$ & $M_1$ & $M_2$ & $M_3$ & $\bar{M}$ & $n_{\text{air}}$\\
+        $p\,[\unit{\milli\bar}]$ & $M_1$ & $M_2$ & $M_3$ & $\bar{M}$ & $n_{\text{air}}(p)$\\
         \midrule
         7   &0 &  0  &   0 & $0.00\pm0.00$  & $1.000000000 \pm 0.00 \cdot 10^{0}$ \\
         50  &2 &  2  &   2 & $2.00\pm0.00$  & $1.000012660 \pm 1.27 \cdot 10^{-8}$ \\
@@ -118,7 +118,7 @@ where $n(p_0)\approx 1$ is the refractive index at standard atmospheric pressure
 \begin{equation}
     n(p)= 1 + \frac{M\cdot \lambda_{\text{vac}}}{L}\,,\label{eqn:refraction_air}
 \end{equation}
-with $\lambda_{\text{vac}} = \SI{632.990}{\nano\meter}$ and $L=\SI{100.0\pm0.1}{\milli\meter}$ representing the vacuum wavelength of the laser and the effective path length. All values of $ n_{\text{air}}$ are  listed in \autoref{tab:air} were obtained using this formula.
+with $\lambda_{\text{vac}} = \SI{632.990}{\nano\meter}$ and $L=\SI{100.0\pm0.1}{\milli\meter}$ representing the vacuum wavelength of the laser and the effective path length. All values of $ n_{\text{air}}(p)$ are  listed in \autoref{tab:air} were obtained using this formula.
 %  Calculating the mean of these refractive indices yields 
 % $$
 %     \bar{n}_{\text{air, 1}} = 1.00013363\pm0.00000031\,.
