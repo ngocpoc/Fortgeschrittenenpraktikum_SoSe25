@@ -69,8 +69,8 @@ perpendicular to each other because of the PBSC.
  by using the established definitions of $E_1$ and $E_2$. 
  These intensities can be used to calculate the contrast of the Sagnac-Interferometer as following 
  \begin{align}
-    \nu(\phi) &= \frac{I_{\text{Laser}}  \cdot |1 + 2\sin(\phi)\cos(\phi)|- I_{\text{Laser}}  \cdot |1 - 2\sin(\phi)\cos(\phi)|}{I_{\text{Laser}}  \cdot |1 + 2\sin(\phi)\cos(\phi)|+ I_{\text{Laser}}  \cdot |1 - 2\sin(\phi)\cos(\phi)|} \\
-    &= \frac{|4 \sin(\phi)\cos(\phi)|}{2} = 2 \, |\sin(\phi)\cos(\phi)| \, .
+    \nu(\phi) &= \frac{I_{\text{Laser}}  \cdot |1 + 2\sin(\phi)\cos(\phi)|- I_{\text{Laser}}  \cdot |1 - 2\sin(\phi)\cos(\phi)|}{I_{\text{Laser}}  \cdot |1 + 2\sin(\phi)\cos(\phi)|+ I_{\text{Laser}}  \cdot |1 - 2\sin(\phi)\cos(\phi)|} \nonumber \\
+    &= \frac{|4 \sin(\phi)\cos(\phi)|}{2} = 2 \, |\sin(\phi)\cos(\phi)| \, . 
     \label{eqn:contrast_Sagnac}
  \end{align}
 
@@ -103,17 +103,18 @@ perpendicular to each other because of the PBSC.
  \begin{equation}
     \delta_{\text{diff}} = \delta(\Theta + \Theta_0) - \delta(\Theta - \Theta_0) \label{eqn:delta_diff} \, .
  \end{equation}
- $\Theta_0 = 10°$ is the tilt that both glass panels have at the beginning. The refractive index can be calculated using 
- the formulas (\ref{eqn:M}), (\ref{eqn:delta_glass_vontheta}) and (\ref{eqn:delta_diff}) as following 
- \begin{align*}
-    M &= \frac{d}{\lambda_{\text{vac}}} \frac{n_{\text{glass}}-1}{2n_{\text{glass}}} \left( (\Theta + \Theta_0)² - (\Theta - \Theta_0)²\right) \\
-    &= \frac{d}{\lambda_{\text{vac}}} \frac{n_{\text{glass}}-1}{2n_{\text{glass}}} \Theta \Theta_0    
-    \, . 
- \end{align*}
- Solving for $n_{\text{glass}}$ yields 
- \begin{equation}
-    n_{\text{glass}} = \frac{2d \Theta \Theta_0}{2d \Theta \Theta_0 - \lambda_{\text{vac}}M} \label{eqn:n_glass_umgestellt}\, .
- \end{equation}
+ $\Theta_0 = 10°$ is the tilt that both glass panels have at the beginning. 
+ %The refractive index can be calculated using 
+ %the formulas (\ref{eqn:M}), (\ref{eqn:delta_glass_vontheta}) and (\ref{eqn:delta_diff}) as following 
+ %\begin{align*}
+ %   M &= \frac{d}{\lambda_{\text{vac}}} \frac{n_{\text{glass}}-1}{2n_{\text{glass}}} \left( (\Theta + \Theta_0)² - (\Theta - \Theta_0)²\right) \\
+ %   &= \frac{d}{\lambda_{\text{vac}}} \frac{n_{\text{glass}}-1}{2n_{\text{glass}}} \Theta \Theta_0    
+ %   \, . 
+ %\end{align*}
+ %Solving for $n_{\text{glass}}$ yields 
+ %\begin{equation}
+ %   n_{\text{glass}} = \frac{2d \Theta \Theta_0}{2d \Theta \Theta_0 - \lambda_{\text{vac}}M} \label{eqn:n_glass_umgestellt}\, .
+ %\end{equation}
  The refractive index is also dependent on the polarizability $\alpha$, the temperature $T$ and the pressure $p$ which is shown in the 
  Lorentz-Lorenz equation 
  \begin{equation}
