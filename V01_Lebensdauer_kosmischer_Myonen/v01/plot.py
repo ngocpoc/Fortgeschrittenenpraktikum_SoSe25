@@ -117,10 +117,18 @@ Lebensdauer_Messwerte = params1[0] * channelnumber + params1[1]
 
 
 #print(Lebensdauer_Messwerte)
-Counts_pro_Channel_fit = Counts_pro_Channel[17:412]
-Lebensdauer_Messwerte_fit = Lebensdauer_Messwerte[17:412]
-Counts_pro_Channel_ex_begin = Counts_pro_Channel[:17]
-Lebensdauer_Messwerte_ex_begin = Lebensdauer_Messwerte[:17]
+
+#Sachen mit falschem Peak drin
+#Counts_pro_Channel_fit = Counts_pro_Channel[17:412]
+#Lebensdauer_Messwerte_fit = Lebensdauer_Messwerte[17:412]
+#Counts_pro_Channel_ex_begin = Counts_pro_Channel[:17]
+#Lebensdauer_Messwerte_ex_begin = Lebensdauer_Messwerte[:17]
+
+#Sachen ohne falschen Peak
+Counts_pro_Channel_fit = np.append(Counts_pro_Channel[4:18], Counts_pro_Channel[27:412])
+Lebensdauer_Messwerte_fit = np.append(Lebensdauer_Messwerte[4:18], Lebensdauer_Messwerte[27:412])
+Counts_pro_Channel_ex = np.append(np.append(Counts_pro_Channel[:4],Counts_pro_Channel[18:27]),Counts_pro_Channel[412:])
+Lebensdauer_Messwerte_ex = np.append(np.append(Lebensdauer_Messwerte[:4],Lebensdauer_Messwerte[18:27]),Lebensdauer_Messwerte[412:])
 
 #print("Messwerte vorher: ",len(Lebensdauer_Messwerte_fit) )
 #i = 1
@@ -136,11 +144,13 @@ Lebensdauer_Messwerte_ex_begin = Lebensdauer_Messwerte[:17]
 
 #print("Messwerte nachher: ", Counts_pro_Channel_fit )
 
-Counts_pro_Channel_ex = np.append(Counts_pro_Channel_ex_begin, Counts_pro_Channel[412:])
-Lebensdauer_Messwerte_ex = np.append(Lebensdauer_Messwerte_ex_begin, Lebensdauer_Messwerte[412:])
+#Counts_pro_Channel_ex = np.append(Counts_pro_Channel_ex_begin, Counts_pro_Channel[412:])
+#Lebensdauer_Messwerte_ex = np.append(Lebensdauer_Messwerte_ex_begin, Lebensdauer_Messwerte[412:])
 
 no_zero_counts = np.copy(Counts_pro_Channel_fit[Counts_pro_Channel_fit>0])
+no_zero_counts = no_zero_counts[14:]
 no_zero_messwerte = np.copy(Lebensdauer_Messwerte_fit[Counts_pro_Channel_fit>0])
+no_zero_messwerte = no_zero_messwerte[14:]
 
 #print(Counts_pro_Channel_fit>0)
 
@@ -156,16 +166,16 @@ params_linear, covariance_matrix_linear = np.polyfit(np.log(no_zero_messwerte), 
 
 fig12,ax12 = plt.subplots(figsize = (6,5))
 ax12.plot(np.log(no_zero_messwerte), np.log(no_zero_counts), "x")
-ax12.plot(x_plot12, -1.3707 * x_plot12 + 3.2112)
+ax12.plot(x_plot12, params_linear[0] * x_plot12 + params_linear[1])
 plt.grid()
 fig12.savefig("Linearisierung.pdf")
 
 
 #print("params_linear[0](m)",params_linear[0])
 #print("params_linear[1]",params_linear[1])
-uncertainties_linear = np.sqrt(np.diag(covariance_matrix_linear))
-for name, value, uncertainty in zip("ln", params_linear, uncertainties_linear):
-    print(f"{name} = {value:8.4f} ± {uncertainty:.4f}")
+#uncertainties_linear = np.sqrt(np.diag(covariance_matrix_linear))
+#for name, value, uncertainty in zip("ln", params_linear, uncertainties_linear):
+#    print(f"{name} = {value:8.4f} ± {uncertainty:.4f}")
 
 #scipy.optimize.curve_fit lambda x,a,b,U: a*np.exp(-b*x) + U
 params2, covariance_matrix2 = curve_fit(exp,  Lebensdauer_Messwerte_fit,  Counts_pro_Channel_fit, p0 = (1000,2,4))
@@ -199,7 +209,7 @@ ax2.plot(Lebensdauer_Messwerte_fit,Counts_pro_Channel_fit, ".", mfc='none', colo
 ax2.plot(Lebensdauer_Messwerte_ex,Counts_pro_Channel_ex, ".", mfc='none', color = "hotpink", label = "exkludierte Messwerte")
 # ax2.plot(x_plot2, a*np.exp(-b*x_plot2) + U, color = "darkorange", label = "Ausgleichsfunktion" )
 ax2.plot(x_plot2, exp(x_plot2,*params2), color = "darkorange", label = "Ausgleichsfunktion")
-ax2.plot(x_plot2, exp(x_plot2, np.exp(3.2112),1.3707,4.5081), label = "andere Ausgleichsfunktion")
+#ax2.plot(x_plot2, exp(x_plot2, np.exp(3.2112),1.3707,4.5081), label = "andere Ausgleichsfunktion")
 ax2.set(
     xlabel=r"Zeit $t$ in $\mu\mathrm{s}$",
     ylabel="Counts",
