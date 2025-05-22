@@ -208,7 +208,7 @@ fig2,ax2 = plt.subplots(figsize = (6,5))
 ax2.plot(Lebensdauer_Messwerte_fit,Counts_pro_Channel_fit, ".", mfc='none', color = "mediumpurple", label = "inkludierte Messwerte")
 ax2.plot(Lebensdauer_Messwerte_ex,Counts_pro_Channel_ex, ".", mfc='none', color = "hotpink", label = "exkludierte Messwerte")
 # ax2.plot(x_plot2, a*np.exp(-b*x_plot2) + U, color = "darkorange", label = "Ausgleichsfunktion" )
-ax2.plot(x_plot2, exp(x_plot2,*params2), color = "darkorange", label = "Ausgleichsfunktion")
+ax2.plot(x_plot2, exp(x_plot2,*params2), color = "darkblue", label = "Ausgleichsfunktion")
 #ax2.plot(x_plot2, exp(x_plot2, np.exp(3.2112),1.3707,4.5081), label = "andere Ausgleichsfunktion")
 ax2.set(
     xlabel=r"Zeit $t$ in $\mu\mathrm{s}$",
