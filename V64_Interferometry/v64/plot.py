@@ -94,7 +94,7 @@ theta_0 = uarray(10, 2) * np.pi / 180
 n_glass = refraction_glass(d,theta, theta_0, M_glass, lambda_HeNe)
 n_glass_mean = np.mean(n_glass)
 
-# print(f"M_glass mean: {M_glass}")
+print(f"M_glass mean: {M_glass}")
 print(f"n_glass: {n_glass}")
 print(f"n_glass mean: {n_glass_mean}") 
 

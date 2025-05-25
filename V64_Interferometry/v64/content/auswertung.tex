@@ -52,7 +52,9 @@ Based on the measured values and the theoretical contrast curve, a polarization 
 \subsection{Refraction index of glass}
 \label{sec:glass_index}
 To determine the refractive index $n$ of the glass plates, we measured the number of interference fringes $M$ that appeared while rotating the mounted double-glass holder by an additional angle of $\Theta = \SI{10 \pm 2}{\degree}$. 
-Since both glass plates have an initial tilt of $\Theta_0 = \pm\SI{10}{\degree}$, the equation \ref{eqn:delta_glass_vontheta} has to be modified. When using the relation \ref{eqn:M}, this leads to
+Since both glass plates have an initial tilt of $\Theta_0 = \pm\SI{10}{\degree}$, the equation \ref{eqn:delta_glass_vontheta} has to be modified. 
+For use in the theoretical model, both angles were converted to radians before substitution into the formula.
+When using the relation \ref{eqn:M}, this leads to
 \begin{align}
     M &= \frac{d}{\lambda_{\text{vac}}} \cdot \frac{n - 1}{2n} \left[ (\Theta_0 + \Theta)^2 - (\Theta_0 - \Theta)^2 \right] \nonumber \\
       &= \frac{d}{\lambda_{\text{vac}}} \cdot \frac{n - 1}{2n} (4 \Theta_0 \Theta) \nonumber \\
@@ -61,15 +63,16 @@ Since both glass plates have an initial tilt of $\Theta_0 = \pm\SI{10}{\degree}$
 \end{align}
 Using the equation \ref{eqn:fraction_glass} with $d=\SI{1}{\milli\meter}$ and the arithmetic mean of the measured interference maxima from \autoref{tab:glass_counts}, the refractive index of the glass plates is calculated. This results in a refractive index of 
 $$
-    n_{\text{glass, exp}} = \SI{1.49\pm0.21}\,.
+    n_{\text{glass, exp}} = \SI{1.52\pm0.22}\,.
 $$
+In this evaluation, the first two fringe counts were excluded from the average, as they deviated significantly form the remaining values. These values likely represent early misalignments or transient instability in the setup before the system stabilized. Their exclusion ensures a more reliable and consistent estimation of the refractive index.
 \begin{table}[h]
     \centering
-    \caption{Measured numbers $M$ of interference maxima while rotating a glass plate by $\Theta=\SI{10\pm2}{\degree}$ and the resulting arithmetic mean $\bar{M}$.}
+    \caption{Measured numbers $M$ of interference maxima while rotating a glass plate by $\Theta=\SI{10\pm2}{\degree}$ and the resulting arithmetic mean $\bar{M}$ (excluding the first two values).}
     \label{tab:glass_counts}
     \begin{tblr}{colspec= c|c c c c c c c c c c || c}
         \toprule
-        $M$ & 28 & 27 & 33 & 33 & 33 & 33 & 33 & 33 & 32 & 32 & $\bar{M} = 31.7\pm2.1$\\
+        $M$ & 28 & 27 & 33 & 33 & 33 & 33 & 33 & 33 & 32 & 32 & $\bar{M} = 32.8\pm0.4$\\
         \bottomrule
     \end{tblr}
 \end{table}
