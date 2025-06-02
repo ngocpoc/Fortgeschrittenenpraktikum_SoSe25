@@ -3,8 +3,35 @@
 
 \section{Theorie}
 \label{sec:Theorie}
+\subsection{Grundlagen der Rastertunnelmikroskopie}
+\label{sec:GrundlagenSTM}
+Die beschriebenen Grundprinzipien eines Rastertunnelmikroskops (STM) basieren auf den Beschreibungen in \cite{Surfaces}.
+Ein STM ermöglicht die Abbildung von Oberflächen fester Körper mit atomaren Auflösung. 
+Seine Funktionsweise basiert auf dem quantenmechnanischen Tunneleffekt. Dabei 
+durchqueren Elektronen eine im klassischen Sinne unüberwindbare Potentialbarriere. Diese Potentialbarriere befindet sich zwischen der metallischen Spitze des STMs und der leitfähigen Probe und besteht in der Regel aus Vakuum.
+Wird eine Spannung $U$ zwischen der Spitze und der Probe angelegt, können Elektronen durch die Vakuumlücke tunneln, wodurch ein Tunnelstrom entsteht
+Der entstehende Tunnelstrom $I_{\text{T}}$ hängt exponentiell vom Abstand $d$ zwischen der Spitze und der Probe ab. Es gilt die folgende Relation:
+\begin{align}
+    I_{\text{T}} \propto \frac{U}{d}\exp\left(-K d \sqrt{\varphi}\right)\,, \label{eqn:Tunnelstrom}
+\end{align}
+wobei $\varphi$ die mittlere Austrittsarbeit und $U$ die angelegte Spannung bezeichnen. 
+Für das Vakkum gilt dabei $K = \SI{1.025}{\angstrom^{-1} (\eV)^{-1/2}}$.
+Durch die exponentielle Abhängigkeit des Tunnelstroms vom Abstand $d$ ergibt sich eine hohe vertikale Auflösung des STM im Bereich von Bruchteilen eines {\AA}ngstroms. 
+Bereits eine Änderung des Abstands um etwa $\SI{1}{\angstrom}$ kann den Tunnelstrom um eine Größenordnung verändern. Dies macht das STM besonders empfindlich für kleinste topographische Veränderungen an der Probenoberfläche.
+
+Die Bewegung der Spitze über die Probe verläuft rasterförmig, wobei der Tunnelstrom im Modus konstanten Stroms aufgezeichnet wird. Hierfür wird der Abstand zur Probe durchgänging angepasst, sodass sich ein konstanter Tunnelstrom $I_0$ ergibt. Die Steuerung des Spitzenabstands wird über Piezokristalle geregelt, welche eine Bewegung der Spitze in $x$-, $y$- und $z$-Richtung mit subatomarer Präzision erlauben (siehe Abschnitt \ref{sec:Piezokristalle}). 
+
+\subsection{Funktionsweise der Positionierung mit Piezokristallen}
+\label{sec:Piezokristalle}
+
+\subsection{Fehlerquellen bei Piezo-Positionierung}
+\label{Fehlerquellen}
+
+\subsection{Eigenschaften der Proben}
+\label{EigenschaftenProben}
+
+
 % \cite{anleitungV42}
-% \cite{Surfaces}
 % \cite{GuidesScanningProbeMicroscope}
 % \cite{ScanningTunnelingMicroscopy}
 
