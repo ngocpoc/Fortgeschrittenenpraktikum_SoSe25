@@ -1,0 +1,780 @@
+[DataSet]
+Version=2
+GroupCount=2
+Gr0-Name=Scan forward
+Gr0-ID=0
+Gr0-Count=8
+Gr1-Name=Scan backward
+Gr1-ID=0
+Gr1-Count=8
+Gr0-Ch0=DataSet-0:0
+Gr0-Ch1=DataSet-0:1
+Gr1-Ch0=DataSet-1:0
+Gr1-Ch1=DataSet-1:1
+SetInfos=DataSet-Info
+InfoSetCount=3
+InfoSet0=DataSetInfos
+InfoSet1=Calibration
+InfoSet2=Parameters
+
+[DataSet-Info]
+-- Scan --=--------
+Image size=2,31nm
+Scan direction=Up
+Time/Line=59,9ms
+Points=128 
+Lines=128 
+X-Slope=87,2m¬∞
+Y-Slope=3,19 ¬∞
+Rotation=0 ¬∞
+X-Pos=-117nm
+Y-Pos=136nm
+Z-Plane=7,48nm
+Line mode=Standard
+Date=02-06-2025
+Time=12:47:44
+-- Feedback --=--------
+Setpoint=1nA
+P-Gain=2000 
+I-Gain=3000 
+D-Gain=0 
+P-Gain2=0 
+I-Gain2=0 
+D-Gain2=0 
+Tip voltage=50,1mV
+Feedback mode=Free
+Feedback algo.=Adaptive PID
+Error range=200nA
+Ampl. Ctrl. mode=Const. Drive
+-- Global --=--------
+Op. mode=STM
+Head type=STM
+Scan head=Uncal_STM.hed
+Software ver.=3.10.0.39
+Firmware ver.=3.8.1.0
+Controller S/N=061-14-086
+-- Module --=--------
+Controller Board=2
+USB Module=4
+
+[DataSet\DataSetInfos]
+SubSectionCount=4
+SubSection0=Scan
+SubSection1=Feedback
+SubSection2=Global
+SubSection3=Module
+
+[DataSet\DataSetInfos\Scan]
+SubSectionCount=0
+Image size=2,31nm
+Scan direction=Up
+Time/Line=59,9ms
+Points=128 
+Lines=128 
+X-Slope=87,2m¬∞
+Y-Slope=3,19 ¬∞
+Rotation=0 ¬∞
+X-Pos=-117nm
+Y-Pos=136nm
+Z-Plane=7,48nm
+Line mode=Standard
+Date=02-06-2025
+Time=12:47:44
+
+[DataSet\DataSetInfos\Feedback]
+SubSectionCount=0
+Setpoint=1nA
+P-Gain=2000 
+I-Gain=3000 
+D-Gain=0 
+P-Gain2=0 
+I-Gain2=0 
+D-Gain2=0 
+Tip voltage=50,1mV
+Feedback mode=Free
+Feedback algo.=Adaptive PID
+Error range=200nA
+Ampl. Ctrl. mode=Const. Drive
+
+[DataSet\DataSetInfos\Global]
+SubSectionCount=0
+Op. mode=STM
+Head type=STM
+Scan head=Uncal_STM.hed
+Software ver.=3.10.0.39
+Firmware ver.=3.8.1.0
+Controller S/N=061-14-086
+
+[DataSet\DataSetInfos\Module]
+SubSectionCount=0
+Controller Board=2
+USB Module=4
+
+[DataSet\Calibration]
+SubSectionCount=2
+SubSection0=Scanhead
+SubSection1=Cantilever
+
+[DataSet\Calibration\Scanhead]
+SubSectionCount=0
+Version=6
+HeadTyp=STM
+SerialNo=uncal STM
+RevisionNo=1
+ScanFit=None
+CtrlInPol=Positiv
+Main1InPol=Positiv
+Main2InPol=Positiv
+SignalUserADC0Pol=Positiv
+SignalUserADC1Pol=Positiv
+SignalUserADC2Pol=Positiv
+AnalogOut2Pol=Positiv
+AnalogOut3Pol=Positiv
+XAxisPol=Positiv
+YAxisPol=Positiv
+ZAxisPol=Positiv
+ZAxisAnalogOut2Pol=Positiv
+ZAxisAnalogOut3Pol=Positiv
+Ch0Corr=Sub
+SetPointCheck=Equal
+InCount=24
+In0=0,Channel0,Tip Current,A,1e-07,0
+In1=1,Channel1,Z-Axis,m,1e-07,0
+In2=2,Channel2,Not defined,V,35,0
+In3=3,Channel3,Not defined 1,V,10,0
+In4=4,Channel4,Not defined,V,10,0
+In5=5,TipSignalDC,Tip Current,A,1e-07,0
+In6=6,TipSignalAC,Not defined,V,10,0
+In7=7,TipPhase,Not defined,V,90,0
+In8=8,Lever Current,Not defined,V,10,0
+In9=9,User Input0,User input 1,V,10,0
+In10=10,User Input1,User input 2,V,10,0
+In11=11,HeadSig2,Not defined 1,V,10,0
+In12=12,Channel5,User input 1,V,10,0
+In13=13,Channel6,User input 2,V,10,0
+In14=15,Dissipation,Dissipation,V,5,0
+In15=16,TipSignalDC1,Deflection,V,10,0
+In16=17,TipSignalDC2,Deflection,N,1,0
+In17=18,SensorSignal1,SensorSignal,W,0.005,0
+In18=19,SensorSignal2,SensorSignal,A,0.0005,0
+In19=20,Channel7,Z-Axis,m,1e-07,0
+In20=21,XAxisSensor,X-Axis Sensor,m,0.0001,0
+In21=22,YAxisSensor,Y-Axis Sensor,m,0.0001,0
+In22=23,ZAxisSensor,Z-Axis Sensor,m,1e-05,0
+In23=24,User Input2,User In A,V,10,0
+OutCount=9
+Out0=0,ScanAxis0,X-Axis,m,2.5e-07,0
+Out1=1,ScanAxis1,Y-Axis,m,2.5e-07,0
+Out2=2,ScanAxis2,Z-Axis,m,1e-07,0
+Out3=4,AnalogOut0,Tip voltage,V,10,0
+Out4=5,AnalogOut1,Not defined,V,10,0
+Out5=6,AnalogOut2,User Output 1,V,10,0
+Out6=7,AnalogOut3,User Output 2,V,10,0
+Out7=8,DriveAmp,Not defined,V,1,0
+Out8=9,MixedOut4,User Output C,V,10,0
+ScanCorrCount=1
+ScanCorrA=0
+ScanCorrB=0
+ScanCorrC=0
+ScanCorrD=0
+ScanCorrE=0
+ScanCorrF=0
+ScanCorrG=0
+ScanCorrH=0
+ScanCorrI=0
+ScanCorrJ=0
+ScanCorrK=0
+ScanCorrL=0
+ScanCorrM=0
+ScanCorrN=0
+ScanCorrO=0
+ScanCorrTableRot=0
+ScanCorrRotX=0
+ScanCorrRotY=0
+ScanScaleZ=3276.8
+ScanScaleXY=256
+ZRangeFit=None
+ZRangeCorrCount=1
+ZRangeCorrA=1
+ZRangeCorrB=0
+ZRangeCorrC=0
+ZRangeCorrD=0
+ApproachStartPos=-1
+MaxApproachSpeed=0.8
+ManualMoveSpeed=1
+DefaultDynRefAmp=0.05
+DefaultDynRefAmpLiquid=0.2
+DefaultDynRefAmpVacuum=0.005
+DefaultForceModRefAmp=1
+DetectorABGainAC=3.5
+CompDcSourceWithX=0
+CompDcWithX=0
+CompDcSourceWithY=0
+CompDcWithY=0
+CompDcSourceWithZ=0
+CompDcWithZ=0
+VideoSupport=1
+HasLaserOnOffCtrl=0
+XYCLPIDGainsX=1.000000;1.000000;1.000000
+XYCLPIDGainsY=1.000000;1.000000;1.000000
+XZeroVoltage=0
+YZeroVoltage=0
+ZZeroVoltage=0
+ScanAxis0FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+HasXPositionSensor=0
+XPositionSensorPol=Negativ
+HasYPositionSensor=0
+YPositionSensorPol=Negativ
+HasZPositionSensor=0
+ZPositionSensorPol=Negativ
+ApproachStatusMode=1
+ApproachStatusPol=Positiv
+ApproachStatusMeterRange=-1;-0.9;0.9;1
+SensorStatusMode=1
+SensorStatusPol=Negativ
+SensorStatusMeterRange=0.0866142;0.102362;0.102362;0.811024;0.811024;0.913386
+LaserWavelength=0
+
+[DataSet\Calibration\Cantilever]
+SubSectionCount=0
+Version=2
+GUID={7C725C17-AB98-465d-AADA-D6D453C769DA}
+Manufacturer=STM Tip
+PropCount=14
+Prop0=D[0]*[N/m]
+Prop1=D[0]*[Hz]
+Prop2=D[0]*[m]
+Prop3=D[0]*[m]
+Prop4=D[0]*[]
+Prop5=D[0]*[Hz]
+Prop6=D[0]*[]
+Prop7=D[0]*[]
+Prop8=D[0]*[¬∞]
+Prop9=D[0]*[m]
+Prop10=D[0]*[]
+Prop11=D[0]*[Hz]
+Prop12=D[0.3]*[]
+Prop13=D[1]*[]
+
+[DataSet\Parameters]
+SubSectionCount=8
+SubSection0=Approach
+SubSection1=ZFeedback
+SubSection2=Lithography
+SubSection3=Imaging
+SubSection4=SignalIO
+SubSection5=Spectroscopy
+SubSection6=SPMSystem
+SubSection7=Stage
+
+[DataSet\Parameters\Approach]
+SubSectionCount=0
+ApproachSteps=L[10000]*[]
+WithdrawSteps=L[20]*[]
+AutoPeriode=D[0]*[s]
+MovePeriode=D[0]*[s]
+StepSlope=L[6]*[]
+AutoStartScan=B[1]*[]
+ApproachSpeed=D[0.700122]*[%]
+AFMApproachMode=L[0]*[]
+AFMMotorSource=L[0]*[]
+AFMStepByStepSpeed=D[1]*[]
+AFMStepByStepSlope=D[1e-06]*[m/s]
+AFMStepByStepFineStepSizePercentage=D[5]*[%]
+AFMStepByStepCoarseStepSizePercentage=D[90]*[%]
+AFMStepByStepMode=D[0]*[]
+
+[DataSet\Parameters\ZFeedback]
+SubSectionCount=0
+PGain=L[2000]*[]
+IGain=L[3000]*[]
+DGain=L[0]*[]
+PGain2=L[0]*[]
+IGain2=L[0]*[]
+DGain2=L[0]*[]
+SetPoint=D[1.00101e-09]*[A]
+SetPointForce=D[2e-08]*[N]
+SetPointDC=D[1.00101e-09]*[A]
+SetPointAmp=D[50]*[%]
+SetPointPhase=D[1]*[V]
+SetPointForceUnitMode=L[2]*[]
+SetPointForce_V=D[2e-07]*[]
+SetPointForce_m=D[2e-15]*[]
+SetPointForce_N=D[2e-08]*[]
+SetPointDeltaF_Hz=D[0]*[Hz]
+SetPointUserDefined=D[0]*[A]
+ChGainRegError=L[0]*[]
+FeedbackMode=L[0]*[]
+Algorithm=L[1]*[]
+RefFrq=D[170000]*[Hz]
+RefAmplitude=D[0.0499893]*[V]
+RefPhase=D[90.022]*[¬∞]
+CoarseSweepStartFrq=D[350]*[Hz]
+CoarseSweepEndFrq=D[650]*[Hz]
+CoarseSweepStepFrq=D[100.002]*[Hz]
+FineSweepStartFrq=D[130000]*[Hz]
+FineSweepEndFrq=D[210000]*[Hz]
+FineSweepStepFrq=D[100]*[Hz]
+ManualSweepStartFrq=D[130000]*[Hz]
+ManualSweepEndFrq=D[210000]*[Hz]
+ManualSweepStepFrq=D[100]*[Hz]
+AutoCalFrqPeak=B[1]*[]
+AutoCalPhase=B[1]*[]
+DynamicAmp=D[0.199744]*[V]
+CalRefPlotGraph=B[0]*[]
+ForceModFrq=D[20000]*[Hz]
+ForceModAmp=D[0.800012]*[V]
+AutoFrqSweepRange=B[1]*[]
+AmpCtrlMode=L[0]*[]
+FrqPeakReduceAir=D[20]*[%]
+FrqPeakUpperSideAir=B[1]*[]
+FrqPeakReduceLiquid=D[5]*[%]
+FrqPeakUpperSideLiquid=B[0]*[]
+FrqPeakReduceVacuum=D[20]*[%]
+FrqPeakUpperSideVacuum=B[1]*[]
+RegMoveMode=L[0]*[]
+DynamicMeasureBW=L[9]*[]
+RegOutputSel=L[0]*[]
+FrequencyLockRange=L[1]*[]
+PhaseCtrlPGain=D[0.3]*[]
+PhaseCtrlIGain=D[2.5]*[]
+AmplCtrlPGain=D[2.5]*[]
+AmplCtrlIGain=D[20]*[]
+UserOpModeInputSel=L[3]*[]
+UserOpModeInputPol=L[0]*[]
+UserOpModePIDGainCorr=D[1]*[]
+UserOpModeDCOffsetMode=L[0]*[]
+UserOpModeDCOffsetAutoGain=D[10000]*[]
+CantileverExcitationMode=L[0]*[]
+
+[DataSet\Parameters\Lithography]
+SubSectionCount=0
+ModuleLevel=L[0]*[]
+OpMode=L[1]*[]
+InactivePenMode=L[0]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+XYMoveSpeed=D[1e-05]*[m/s]
+ZMoveSpeed=D[1e-06]*[m/s]
+LiftTipAbsZPos=D[0]*[m]
+
+[DataSet\Parameters\Imaging]
+SubSectionCount=0
+ModuleLevel=L[1]*[]
+ScanRange=V[2.31145e-09,2.31145e-09,0]*[m,m,m]
+ScanOffset=V[-1.16768e-07,1.35958e-07,7.48465e-09]*[m,m,m]
+ScanRotation=V[3.19394,0.0872321,0]*[¬∞,¬∞,¬∞]
+ScanTime=V[0.059944,0.059944,0]*[s,s,s]
+Datapoints=V[128,128,0]*[,,]
+ScanMode=L[0]*[]
+OverScanSize=D[0]*[%]
+FirstScanlineRep=L[1]*[]
+SyncOutMode=L[0]*[]
+LineScanning=L[0]*[]
+RelTipPos=D[5e-09]*[m]
+ContourEnabled=B[0]*[]
+AutoReadjustProbeEnabled=B[0]*[]
+ReadjustLiftHeight=D[0]*[m]
+SndScanDynamicAmplitude=D[0]*[V]
+SndScanDynamicAmplitudeEnabled=B[0]*[]
+SndScanForceModulationAmplitude=D[0]*[V]
+SndScanForceModulationAmplitudeEnabled=B[0]*[]
+SndScanEnableDarkMode=B[0]*[]
+SndScanEnableKPFM=B[0]*[]
+SndScanSndLockInExcitationAmplitude=D[0]*[]
+SndScanSndLockInExcitationAmplitudeEnabled=B[0]*[]
+XYMoveSpeed=D[5e-05]*[m/s]
+AutoSlopeCorrection=B[0]*[]
+AutoDeleteBuffer=B[1]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+SpikeGuardEnable=B[0]*[]
+PrescanSpeedup=L[0]*[]
+
+[DataSet\Parameters\SignalIO]
+SubSectionCount=0
+UserDAC0=D[0]*[V]
+UserDAC1=D[0]*[V]
+EnableUserADC0=B[0]*[]
+EnableUserADC1=B[0]*[]
+EnableUserADC2=B[0]*[]
+TipSignalMode=L[0]*[]
+ExcitationMode=L[0]*[]
+MonitorOut0=L[0]*[]
+MonitorOut1=L[0]*[]
+EnableUserADC1ZSensor=B[0]*[]
+User0CtrlMode=L[0]*[]
+User0InputPol=L[0]*[]
+User0OutputFlag=L[0]*[]
+User0SetPoint=D[0]*[V]
+User0IGain=L[1000]*[]
+
+[DataSet\Parameters\Spectroscopy]
+SubSectionCount=0
+ModuleLevel=L[0]*[]
+OutputType=L[0]*[]
+Repetition=L[1]*[]
+RepetitionMode=L[0]*[]
+FwModTime=D[12.7996]*[s]
+BwModTime=D[6.5532]*[s]
+ModRelValue=B[1]*[]
+FwModDatapoints=L[32767]*[]
+BwModDatapoints=L[256]*[]
+SyncOutMode=L[0]*[]
+FeedbackActive=B[0]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+SpecEndMode=L[1]*[]
+FwModRange=D[1.27996e-07]*[m]
+BwModRange=D[-1e-08]*[m]
+XYMoveSpeed=D[2.5e-07]*[m/s]
+StartOffset=D[-1e-08]*[m]
+StartOffsetMoveSpeed=D[2e-08]*[m/s]
+FwModMode=L[0]*[]
+BwModMode=L[0]*[]
+FwModStopValue=D[5.00504e-09]*[A]
+BwModStopValue=D[0]*[A]
+FwModStopMode=L[1]*[]
+BwModStopMode=L[1]*[]
+FwPauseTime=D[0]*[s]
+BwPauseTime=D[0]*[s]
+FwPauseDatapoints=L[0]*[]
+BwPauseDatapoints=L[0]*[]
+FwPauseMode=L[0]*[]
+BwPauseMode=L[0]*[]
+AutoRecalibrateProbeInterval=L[0]*[]
+PressurePulseValue=D[0]*[bar]
+PressurePulseDuration=D[0]*[s]
+PressurePulseRelative=B[0]*[]
+PressurePulseActive=B[0]*[]
+PressureActionId=L[0]*[]
+ModulationStopValueBandwidth=L[0]*[]
+
+[DataSet\Parameters\SPMSystem]
+SubSectionCount=0
+AOut0=D[0.0500504]*[V]
+AOut1=D[0]*[V]
+SPMMode=L[1]*[]
+VideoFPSControlValueMin=D[1.5]*[]
+VideoFPSControlWindowSize=L[5]*[]
+VideoTopLight=D[100]*[%]
+VideoSideLight=D[100]*[%]
+VideoTopBrightness=D[80]*[]
+VideoSideBrightness=D[80]*[]
+VideoTopContrast=D[70]*[]
+VideoSideContrast=D[70]*[]
+FlexVideoTopExpTime=L[60]*[]
+FlexVideoSideExpTime=L[60]*[]
+FlexVideoTopGain=L[8]*[]
+FlexVideoSideGain=L[8]*[]
+FlexVideoTopADCLevel=L[2]*[]
+FlexVideoSideADCLevel=L[2]*[]
+FlexVideoTopRatioR=D[1]*[]
+FlexVideoSideRatioR=D[1]*[]
+FlexVideoTopRatioG=D[1]*[]
+FlexVideoSideRatioG=D[1]*[]
+FlexVideoTopRatioB=D[1]*[]
+FlexVideoSideRatioB=D[1]*[]
+FlexVideoTopRatioGamma=D[1]*[]
+FlexVideoSideRatioGamma=D[1]*[]
+FlexVideoTopAutoLevels=B[1]*[]
+FlexVideoSideAutoLevels=B[1]*[]
+FlexVideoTopPositionMarkerX=D[0]*[]
+FlexVideoSidePositionMarkerX=D[0]*[]
+FlexVideoTopPositionMarkerY=D[0]*[]
+FlexVideoSidePositionMarkerY=D[0]*[]
+HighResVideoTopExpTime=L[60]*[]
+HighResVideoSideExpTime=L[60]*[]
+HighResVideoTopGain=L[25]*[]
+HighResVideoSideGain=L[8]*[]
+HighResVideoSideADCLevel=L[2]*[]
+HighResVideoTopRatioR=D[1]*[]
+HighResVideoSideRatioR=D[1]*[]
+HighResVideoTopRatioG=D[0.8]*[]
+HighResVideoSideRatioG=D[1]*[]
+HighResVideoTopRatioB=D[0.8]*[]
+HighResVideoSideRatioB=D[1]*[]
+HighResVideoTopRatioGamma=D[0.9]*[]
+HighResVideoSideRatioGamma=D[1]*[]
+HighResVideoTopAutoLevels=B[1]*[]
+HighResVideoSideAutoLevels=B[1]*[]
+HighResVideoTopADCLevel=L[2]*[]
+HighResVideoTopPositionMarkerX=D[0]*[]
+HighResVideoSidePositionMarkerX=D[0]*[]
+HighResVideoTopPositionMarkerY=D[0]*[]
+HighResVideoSidePositionMarkerY=D[0]*[]
+ImSoVideoTVConfiguration=S[]*[]
+ImSoVideoSVConfiguration=S[]*[]
+ActiveSensorByGUID=S[{7C725C17-AB98-465d-AADA-D6D453C769DA}]*[]
+MeasEnv=L[0]*[]
+SystemStateIdleZAxisMode=L[0]*[]
+SystemStateIdleMixOut4Mode=L[3]*[]
+SystemStateIdleXYAxisMode=L[0]*[]
+SystemStateIdleZAxisValue=D[0]*[m]
+SndOpModeEnabled=B[0]*[]
+SndOpMode=L[0]*[]
+ZClosedLoopMode=L[0]*[]
+ZClosedLoopSpeed=D[1000]*[]
+XYClosedLoopEnabled=B[0]*[]
+XYClosedLoopSpeed=D[1000]*[]
+
+[DataSet\Parameters\Stage]
+SubSectionCount=0
+
+[DataSet-0:0]
+Version=2
+Points=128
+Lines=128
+Frame=Scan forward
+CurLine=127
+Dim0Name=X*
+Dim0Unit=m
+Dim0Range=2.31145e-09
+Dim0Min=0
+Dim1Name=Y*
+Dim1Unit=m
+Dim1Range=2.31145e-09
+Dim1Min=0
+Dim2Name=Tip Current
+Dim2Unit=A
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-0:1]
+Version=2
+Points=128
+Lines=128
+Frame=Scan forward
+CurLine=127
+Dim0Name=X*
+Dim0Unit=m
+Dim0Range=2.31145e-09
+Dim0Min=0
+Dim1Name=Y*
+Dim1Unit=m
+Dim1Range=2.31145e-09
+Dim1Min=0
+Dim2Name=Z-Axis
+Dim2Unit=m
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-1:0]
+Version=2
+Points=128
+Lines=128
+Frame=Scan backward
+CurLine=127
+Dim0Unit=m
+Dim0Range=2.31145e-09
+Dim0Min=0
+Dim1Unit=m
+Dim1Range=2.31145e-09
+Dim1Min=0
+Dim2Name=Tip Current
+Dim2Unit=A
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-1:1]
+Version=2
+Points=128
+Lines=128
+Frame=Scan backward
+CurLine=127
+Dim0Unit=m
+Dim0Range=2.31145e-09
+Dim0Min=0
+Dim1Unit=m
+Dim1Range=2.31145e-09
+Dim1Min=0
+Dim2Name=Z-Axis
+Dim2Unit=m
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[SetView]
+ViewWidth=1288
+ViewHeight=526
+ViewCount=8
+View0=SetView-View0
+View1=SetView-View1
+View2=SetView-View2
+View3=SetView-View3
+View4=SetView-View4
+View5=SetView-View5
+View6=SetView-View6
+View7=SetView-View7
+
+[SetView-View0]
+ViewTyp=1
+LineOp=2
+Channel=1
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-33,25
+ParCount=6
+Par0=1,Shading,0
+Par1=1,DeltaGain,5
+Par2=1,Smooth,0
+Par3=1,DriverInstanceNo,0
+Par4=1,RangeMin,0
+Par5=1,RangeMax,95
+
+[SetView-View1]
+ViewTyp=0
+LineOp=1
+Channel=1
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-33,27
+ParCount=3
+Par0=0,ReverseLine,1
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,2.31145e-09
+
+[SetView-View2]
+ViewTyp=1
+LineOp=2
+Channel=0
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-47,63
+ParCount=6
+Par0=1,Shading,0
+Par1=1,DeltaGain,5
+Par2=1,Smooth,0
+Par3=1,DriverInstanceNo,0
+Par4=1,RangeMin,0
+Par5=1,RangeMax,95
+
+[SetView-View3]
+ViewTyp=0
+LineOp=1
+Channel=0
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-44,61
+ParCount=3
+Par0=0,ReverseLine,1
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,2.31145e-09
+
+[SetView-View4]
+ViewTyp=1
+LineOp=2
+Channel=1
+Frame=1
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-33,23
+ParCount=6
+Par0=1,Shading,0
+Par1=1,DeltaGain,5
+Par2=1,Smooth,0
+Par3=1,DriverInstanceNo,0
+Par4=1,RangeMin,0
+Par5=1,RangeMax,95
+
+[SetView-View5]
+ViewTyp=0
+LineOp=1
+Channel=1
+Frame=1
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-33,27
+ParCount=3
+Par0=0,ReverseLine,1
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,2.31145e-09
+
+[SetView-View6]
+ViewTyp=1
+LineOp=2
+Channel=0
+Frame=1
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-47,41
+ParCount=6
+Par0=1,Shading,0
+Par1=1,DeltaGain,5
+Par2=1,Smooth,0
+Par3=1,DriverInstanceNo,0
+Par4=1,RangeMin,0
+Par5=1,RangeMax,95
+
+[SetView-View7]
+ViewTyp=0
+LineOp=1
+Channel=0
+Frame=1
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-44,61
+ParCount=3
+Par0=0,ReverseLine,1
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,2.31145e-09
+
+[ProcessorSet]
+ProcessorCount=0
+
+
+#!6NUShlja]HB5633*98<MJ`prgTF387876?ITSObVXNXG>C=87;RO;?>BI8@DRWZ_XB@>Q.,56?ESMV]rlRB9+<=FI3C`WW^gSC9526=FHGNCDJLOOMOH?FOULG?@77>GM>UX`UNNIHAB5.;ECGUTYMY_XJC=9;:4HG<CEIKPVXcQ>6?DH=BKF>BGKD@KJLFDIHLBZO+3/=F@Ae`YVZL<65=?F?GLP]r]DD?3H;=8?GDJNS`XQB=85@AKMGKDD:AL@APXO\\VPJ@@03:6>@GHZVg]]REF;4C>:7?9CXY_P]^T<.13CLHFNOHHNJSP?5+:KLOOMH?;C7OWNa`LMH=7057KADZnkreK6618,3AEQZi]bgQ<7--18FGLWPNLCCAN4;U`g\KNG>:9<16-62G[nlnk[CAF311:3DJ\^bi`Y6=:0038GKLJRONHUZSTD@?ACGFJA6>?4/8NS^ib[GJA/31.3>L`srfT<9,131DHRW`a`XV?*5::>>IEMJFQNOTT[X]XXQPPCB48=3,4><Kfbk\UWGD=>53)?CDVcSTf[ZM@62;>@DFDEPNNX\[S<>:=GFNGE@>8;LOLEMOORMH>1:333>]g^`bQD;::0,9;GXdlpfM31+1@DNMGWaZZXXG<AEWUTQPSFFBBB9=/:6:CRimfTSDD675357Q]]en^XOBB>25ABEJLJP]VPNK?>98CBGAC(XB;?=FM_Z_^IEB<75769DKR_heJ@D75=41>P`lm^RD>76<6>@H__W^]ZME;HNXPMOAQFIJ,D:4@HG=OJa`\RDAC?;:07==JWT`meZN<A74)>CLKOW@JW[PG=D37CADITQJGKPMRLAAPWO<>9552A@PW^d\PNMB/1.7:HL\bbjXM;9.87?ESGNY[aaOELKMFGFEJMJFD;7@54MNHR[KQ[PMP@85/04<=VioeYWEGC9=3A8<NURUj_C@F:;BEFIKKPQTWCVI????;KGKE65<HJUTFRTJ@EAD6<3A:OIbon`CA=4<27ACKZ\^[VYAGPQAA9CJGHFD+=3>DK>RReQKHMJOPC8D<;6DLc^tc[GA4/5+7@>McY`d_]E;4.67?DD]BPRePOOEB?>>;5?jPGLD]OUSBBAHH>EIA38@?<WZcMTOLM?;--+=N_nl`_TC@GI;;EFDHJ=@<QRIKHFLBJE:KKQWJ<A805I8EOPdddTLCB;1,7;GW]jhoR>?93.1:ELVV\`aTJ>096>=PFEF@MNKVeWHH;<MC;??<GI@JL[TbWNSP8;G6?1=B\c[q[OF3GH8;=DDCGBZUBGMWROIAC7G;@KFA>HG>DKHIQR8?ZRQZ:CF%+,DU]bhaQD=620/<7HE___t^RD82;GC0BOJVXX[VSMEOA7>LEEF@?>CBGIQORYURACB756<1;EXqvrK<IL8?9ABGHRQPPO[OLFE>BC>/7<@M[SLB=DIDC?PORRNND>716<HR]\aSSH76@>733=MY`^_\PE?+0347KONU[ZWVQE>6AJ:BDFJJKJIMRIRCID@HHJ>J@@27HN_dVKXLGG=6:HLEKGNFNQLXONOCGF?AB>?8;INIGOMRQOKFPEH@7@:06>9MT]]fhWA/"3.<FWXgfbZH?6:1+26AFM[nkfUCC642@EIJLPGKPQUVK@AGHRDAH,@<0.1NP\SYTOICJF<CF8AJPOLDNSHJRVPH5<AEOFD@BEAALHJRSPUJEJBHJ::B<;EW_TW^Z9A=63<5<KLZdlbTFH?-#73ACN]Éc^XH@=>0;;CLSSHCS[VTK>?36JAABIFAG78QHG_fVGD@DE<A7+4:DSO`a]]_O7>>.4<;BGILVU[OUMSA6:FGGJJJE@B45CGP__]JHJN<75-19N^umi[P8<85/65<BRXd[`VTCA72=G4BDhKQUVVTL;5A>@C_H;>HAFFCIO@L\UMF>?2::5>@@@XclZa[M=B@+3>5;N\XIVWWSMSC>=DCEHLGJFPNIKEB<>B@EENA@I?13.HR\[eREDC;92'1=TkegoWGI9<46@NNCTS[caRH72B?>;BHGCGVD\cK@?9;HRPIDF@B028=;OfesibQD=@;03;2.8WWarnbZ;5331>FNPMROCOSRTW@<<7A@KBEH@9F@=LFNRWWKBAA;228EDOcfeZMI@:6*9;>GTf\h_TB1*A<D;ADBJHJMQ\XNI415>CMIK882:9?=EMcfnXTBDA<2206>HHZc]dgVNKA8+6GJONS[VTMKBA:@:>AGDK*28GH^RRTQHFAK_Q8536AOLIdkcJFG:=62/;AGKU_`khP1334F?4AGLLOMPUYSB@CD@GCGN/<176AFJU`aeXQNG;?B745>EKKOW`njV@88B;FQHLNRWUWPVD3<7=EABILHUMNVJLIH@>AHCIIKB1;,JSd^ZYB<=/166MQ^Vh`SHEB777<?BGQ\\WUZJ:20:@CA;@JHIBA6<@COITXMUQOIH?>8;614NhZae`SA4:64;43DLGdn`g`K?944<=JJHG6QHU\JNME>;BDIML7>:=8FLC_YU^LED?231=5LehjVNP@?;467KMX[SfYL@>>32=FHMKR@KDB=<PUROSEIBFLLGNDA:706GBTX\b_^GF;;;$77FPVjp_QG@>7>7LHDCNRJUY]JDF@:8@HIIKB@PMNMIHAA:JEJVE::0;-REdhj_P251-?DAIK_Sz]OB2AB@79?PP_?=DDF@JGHINMNBJSPIBH>=;>9=A_pqXSPC8651(>@CN[ma_]FG;32@11=NRQXORnGE<4<A;DLJDANQQ@JCEHGGQPPHD;;H=GSVZKPQKLB=.-5>P^edaXOA:6:208;EWXHIKJIWNMMMC@8:BGEHKGF=A:5@FNQ]icTGC7:8,4AKGm{bTLE@?/582<@GNSfjjF@BD45DAKbUTN\_^JC?6<CJMJGHGHK7COQJNMKJCD<7A@5;7PNenhIE>69,5HJN\Q?@@FHKUINE;,2CGPGGHFC>CBEFEPQQPTJC=;93454<CZajzbSC373,@FMV[Zp`ZKD6>8;=?8AHTYLOVSJ@@0:@KIMHGJ=9@KXTLN\Q;?E;2--6EiahcULH:135<;KX^I6>LX\JOBD6:A<?ADHGIGJGGKX\TC>JGCF?GA878@?E[YZ_YHF=3.82<==TWn]mX@767@>?JROTJa`WH;8@?B>LKJEG>FWj\LQ=8)<jWMD>><A?TLVSXT@@J33446FRn>EW[mbO?F90@<@9GP[F\XOQ\O<<69>AEFIPG7@C@DJJRSNTSFE?66<;98K\ks^NG@H>6/66CUb\h\WFFA588;FHGKUVLQTM@J84<DMLEHH:8=E@MOTOOMWL?0/72/NWb6EWMG[NGD@28<8@HIOZZ^ZXPPCF=C7B=CFEFNMEILFMIKMFPJLB/<</BATTopfTBBD>981&6<Qh}z_N=74A64C?MUUW_S>PIH>?;?GNHMHKH;HGQQHHUDHOB@98;=FUbOKVWQMKFF>8?-=>BFJ[PSS`\WBG>2>BAHDG>FDRPMUVQ@HVV:5A7@C@=?D=abjXN14<7>5/@GU_mc`QM6CE;::>HHLD`^dQG<:<GK@<>>ANJCLH[PMRHFA>GB>24>6?MLMd[RG8<:?@B67NEeGHMUXWUO=@F45LJIGJNNFJ=CNLF6=A@FQKU>959IFOUaP[UG?70A74;;HhukRCC;=5.)9>ZXVflGMLQD57?N>FKDJ1?JW_NHB??FGQLB<88A>S\>HTQNHFBJ?70<84;GUhl^_XHG885>5C>MUNLNQPUJKFD7MHIHEF=:9==VOVcVKEMPF0.859LUji_NKGB>AF216=BMQdrg[CC6+&8VB\QRXa_SH<<54?NHDDEIH::M\WJIKMJHKGCA<0==<EAQOSaWZXZMB7CA52?<DUO^W^^ZOB;3GAFCFKFGI>I_PP6I;PKMA=4650:<GUpg`LJ<3;850+?bXzulSA44<9>SLVPOM]bR7B87?562?NR8EEPQL;@CGMRKDFD=?7=3=>GTb[XaWOHA1940;BHKWc]aPPP>71;6H?@HJFRPMRARH?;GDHCHAF?8;8HMQSS[UXDC@:,1CMU\N`^XKE;6?;7>FKKIM^bXS@<78;=RW;IHGMJNGOHDIBKKIDA9B8C:,72>HYhkq`W=672-/69CChsx_aGC:4:.IIHGST`fKFLH=49IC>BFLACEHKHMPGKH7<UK4B44,1EFXowb]KI0>.49@YOYasjV?A/78;?OVA@AVDKVPJ9B5<A8FDIDNAB=4@@GWc_bePKK888+01<RWgfaTTUE9>4*7<BJPUEIQ\hcCEA6BJHJPMJJOIPXDD<JM@FCB:C;72IDRVihZMB;57436EPZzneJB@64<?BGLOH\G_VRB5=IHQLNO?BDI;89;5@Bls[PPLMK?;@3,20>T_iwaZMIF<4-8<AM\T_ZTdWG;75308?HPF\UDPd`GJ;H=NPJ?>;E;=@PMaT\UMG8=2/7.@U|kWdQEC<86/E?KKS`SIK_^G?GQJ?AKH@BEFA?F?HHNHWQNQRD<29GF:APXP[^WPNF<>37-<^TP\[TdRC=4;/@JDLJ[POQ]TH<57?BFKHHE:5DRRKVOMKGJIFD56(.>ITudjHM9997<@>CFSThc]M@969FGFFMD?A9:EDFDGLNQ\QOKL=K5?G>;;11;NuxfSCGD@>:154PQQonaTEJ:93=AFD07SXSWa]MF97EDAHGEK>KAG2DZW]LMCN856=?;C]caea=AA=</5=OGRaegaYG=/-K[G*FK^ZIPF1.EGUDB5`SL?CTQKMDC7;HH`^UQTNJ=<<306DZP^op`G@<03(50MZMNalcbB;?8>BBKNJTP=>LOQE>EE7<=GHNDOCADFPVX]SV7=4?B825KFdllvZC422@F6J>ECNOKW]\TU6/,5=A>CHNIINEE=N=OWQTT?XBAE:?76?PWOjc]SOA<48,>>XBLU[d\PE85508AEEPST[]YOD5@@AI7AHC=LMMGI\kZ;C$WDD<35?DSUgheQA;17+MAA>G?@GGMMSSYZKDA7DC?=BDDA>?HETPRNOP;JRV@=>&796AOwp_TG</9=5;+<7jlrhcJ@<<9522>UJaZ^d^JA<?973BPeZVHGOCNE6>@C;GRB3'B>:9FNc``UJF930(H>NJDFF_[PPRVSFOD8;<@AHBKNNMHJIOGFGAPRJBFD><<A@CLK\eULG928827/>_qXllQPF775:7DLQ[\^cTJ;@8D05YFRVUPO]VLGC<:DCK<FH;C<BDPOW_MSPD>.,OQMA7MLT[XoZUPH881;7;B@^RKMPTRXHG6<86?AHNJKLKA;D=HWQ]QLB4T=A7CBBI\a\MF<M=64/52D^_ejwXH+3>/2<BJSVV[P]XQ>05:@GGZWS\AO?HDKF@BMGH9>BHJB<6WafVRcXT6B>;<::4AHNKWZV^]aJ>/6;84GHLAALHL=RKgZMCHDC;51@AHS<?W\jWPKFB1/.8EIOkfmVFC/64?>5>KJGo^ZZXOE304;@DJAINBJLVUQGKJJAE@><FL;<>=U\c_gRMALEH7/15@BCRUNQ[Yb]KB68A5>LJLQIFJIOSIGD@DBGPC?>957CSZbhcI?@8=77+/?BM[jÇ]>7C?178?FLNUP\bUD=@?DCH>BCQFIQ^aNK?FB>EG@F@NE5:?=HNLU]X`cX=05;6<=PF@H`sUUYB<8.<MOGLL2;=JIJ\dZMKAJJB@EB<5;FLQ[HZUQF>6/760=K_Rh\TPFDC5101ANQZgp_W>?B369KQIKHIVPg^L>;438@IKFPICAPBHE@gmfn^LBA7(=83/?U^z`YXZLH=8525C@?NgcX^jL?5+F6LQSKCFIFHQJYND86=JJ0=BBA:)4EThacqTB3=5=076XT\vrcL?76!16;MV`eYReT9B33=ZRHJFJLOHT>?BMgR_e_UI;>@?1048CLNH^bac`M8?89<4?8BHORUVV\OTAE5FGCGHGBGHJLQPK8D@KD=;F?8=>GCNclq;CA7=(E9>=ANpzk^CA?:+B-=JZDYTX[ZJFG.C9J=>47FWE-GCF?GWftmWKGA54687>4GZ^osjKB44@;>8CNLWVcmXD=:/;28SLHTIVOWUWNKAB:DJME5A>BB@AHS[ZRKEC:396,=H[FmjX\G@?--84:GSUpqgSAB25>CEHKJMHNGD@B?@SKUmd]UELE>?8).55<DsnclfP:;2265E@c]YKZ^VL=B<9>EQRIQTVQRDG;;<BDE@HKBDEBAELMO@KHAPFB>8:487W<^lo[KN<3)'6NN`_fpZK;<45>HDKKTW\NPXE?3?RNGkhc]MGC7:5.28:@Cporu[F=24+33:GL\fljYC5-5-+37PSWaXncM>GGF7<GMOKHIPSEPKI;9>BKGJE?=7-'<AHLUpleA>1;+@2ABMPsihcO@2;>;DGOSWb^OHHXTQTPV<K?CBK::;)(,6ACSkoh`TF?6<=%,9NSDetrPKG/:3:3<NIPL]jq\>?=:2<DGGQI[W][M=8>:CGEF>>OHOCHXNKHMCLAUT4<+-<8Ccmo]SM<J*47<=?DGJQZ@KOQWKQ=?EF<I?DBGQMF=>MNO?<NNZPGGK<;**;=A`hy_QD:<45*-=F\VvvjQ>@A66.3QO5]Tdc]YE56:=@7>FHKTGJ>EVQRQHFDBBB397,1BOjkfR<>?/9--7M[dernPCM>;9@B8@>FCKWLGJHJZJSRDEAJFGGG??2234;>QhkvhKJ3C;-67=NZ]okdM<856<4<NIDXUWd_X;@,5EE;QUIGIJL;GAOQHIKH?O7>>>8FHR]oXJ;KA2C42/LMrooPO=KDFA<:BBCGFNEJOPQbRQA@C@1=DDDB@TSA8ZNMTJNFHJI1/4[E9-.KdÅfTRCDC44?;CBXd`[YZJ<8<#8JSJYGRe]WL?4/<8DFHIID5J;H<C_a[FGKFC>CB,!AB[[fgKHKLEG4*D97JA\WU^\LOQPG356LC:EQKMQNKPBQ75O7ICNMFAAA-,5AJQfe[\NNG52D:+AQljkf[K35>8<B8CTF??MP_M[II0?7O=AC?QcUTQ\S>C>KOOBG5=C8;9S]h<EHKK;4?5=2BH[[VSZYNEK;4=/HEIIGVQR=FM<OLGA:KFMLCDJ;>BAOKUXWUDYG@463@C:aNZhZ^H;,:,2:A]feOdaR@HA1A09BDCWJPR\[WJCA6FLJUCDCG:FE?MITL2MHDJ</2B-0?@BP]`efb[RA;I4;;=<MGEPBT[[LDA9=;:EIEAHN@=ACDQJXVQFOF<'1/08jthkPM?:4;7-4KGT^fmn[@?.4?ANNHLHP;E=KRU3B<<EE8[SPD;B8EP[WH<NZNDA?77?13@LYrgbZBPGJ@</590EMROLRSNHOMMM@5>;DaZI@@8=<GL\MMSC@BUD7AA@I[QacJE>;;@7+5G_bgeb>A?957=MOBFSWaaWP>:J5=;RA6NMKA8?D?MTPUBHFMBHI,C<+=?GOhQ]XaBGD;>:;BG6EJS^hU]H@;>@?5F9FLUQJSKZPD@=A>HHIL;F09A9ESRa_ZK.JDC9079D`h`ZcG>84:.77HR\\l_UJF?6;7=HTDVKHSNNQCG@IHKAHJAKAB?40.2;NZlktiZ@7/53282DT`bmh\E>-4847ETJSXTXUQIE879AC?GMK@:7@(-7MQoe^H@A44.0?7ENWqrcc:E0+2,2;Ob`[ad_H31.8:HIUE\\a\[G59?BCGNG?LJH7:6<,?;CIK`_]\XUM<?5.:<CMQXZZYXB50CDQBHHMNJPOXVKB65:IJHDIJB<>A>=FO[]ZNAD04:ED56?Q^bfdXJA;3,<CHVZ]ggZK<31:ASGSR\SXVI>6N6ABJJHIEF&+8IA>7<HPVo|aNI5280104Bgdlg^HAG1692=6B5BOPfpcXVA@ =??BEJNH@I_YKIEI>GAD:21\GC<MZTc_NQGH7792;+BJR\ktZH0/@58:CQUebaVKB:<77?EFJCKKKDA>5==5=9S^`^aTSG5?52265BTkhlQTH64;514ARab[_RPPB>917BFMZJXX[ZOA=73<8NP@E6;>6AAGIJZSNTIDB620.037js{wVB@?85456>KXfqdSP55:;<CIFJHHI;G774C9>4MZQf[V^J964>6%4=Vwáo`[I97-0-7;EOd]`v^M:=;>-8:PM^]Pe`PE=9?8A@LKH?JDACF_[IFGFEB=?B6.*00`MjtqYKA;115.BGc]XdhVL;<K==?IA=FDI;BM?KPH\SOTGGMRH;BDB5>96;4ftnXNLO>;=<+,ANdovbP=I?>8,38MPbT^ebOC75=7>@LRSOXVXLFD84BEGC>0WJK?A4>=LDWdRIE.I>833+:XnhsZO>,+66DGDGIPEGFDNOR\OFCI?5BCBDAF=:I;MGMTLPJHBK<6B>459R^dkXRCFE@:*<DKGGV\ugKMN@7<2AFSNOLTRBPHQ?<<E<P=H?HECJPPO@@MHJFC:614)9AQÖpbN8A><500HH;C?GDKHIL\XZUC>8D;C?8=J@0AfNXoN@=C?HF@\O>:CDHPKLLKM@D@@34@HLSQlkTOC;/9=7AFMT[ZgfUH?7;><GCHKGIJMLSWH=GBA?EHBMGB4=8@EUIW\SEJ?3@8?OHEFHQ=_ZYXG@M87=@?<KSLRRUQVFKC@>6AGVG9;873?DNOTZXM@7=H?64.8GTdmdkJA>6A529PPjh\WSMF29:5;BBERSOGV\TO=?>D67CQK@CEELHES^PNHEE;1'!0HG4MQORFJ_S\N??.;<EN>QHLQ^`[TA><;5FHARLPEEO6MPKJ8@H<@CJEE;<24?Yc~iSD@>>?;6A>OY\c{^J>?;8;EB19OP\^[[GDD;;;=RPNSJF2KQRTCBCCGHLB=>66HONREHW`OZ\SJDA653.0:?BMLNLlk^QJCB930IGLDDOJXd\J8;BE;KEIEBG@:CLI^XX[JA=?7=825<CgkomMA<><2.<=BZ@>S_[lX?5468GFH9<KVET\QIBA@@E;@?AAFJ;DFPOT[ZgXPP?.772:GHVSZ_YbKB>;@><CFB<BKBHOQXWU?EC@4>M[HB:=:?FZa]XILI;?<095Ebb_^ZOIE?;56<CFIHUWac[LA5368>DHNR?NQeXAW>GD=GGH@A>ANDC?PXTa`[`QDDB46.02>EJU_abeP@HE6:DA@EOLI[T[QUD2;6;95EJHDSAKM[QCDCKK?9==:E<2O_fjf]N?A877<;7OMSXfn_KE<?4,?D1IZNPPUaVK==ACDL=BB.=HEEW^]RXYXHMGAC=.;8CF8CN]cie^NM5=:87<CBNOLSL_`^I>8061CKJR?FRCQMVN<EJDNH<B@@67AD\lbVKAB451>AKXUXfk[R?<=4341>@[SXkx]LD75=H1BUSLFOX_UJCNLdabXPGQGCK24494GFUajgSH?9B3222>?NUWSSVh_MB4638=IGNE74GS]S[RE?HS;D7GB?26;XbgaQROB>8654=J[XfaQPB>B=@0/9KP_mdWHH=@<3<E=IL:8IPMFH?GDSTrjg[RJ@>79+/8<EMZ]mf]NJD83438AMX_aYfYEBI8;<>@NRDCX]YNGGD@7;IJ;BGOEBHJZDMEOGB8OLFDC8EHOUUPQNJCFCE065<?OdXjMFIPC4:6>IMAQKHNIIMWROXXWTOGECH=:5?:9;MK[ÅlRNJC<55&74BGM]cg]WD>C05'8>GT^S[RU^TA?I<?IEBGECIDDCMSZDCKHED@;?A8?=BSVmeQNE></31,:KapprSE623<=C?:HFUOdHFSZ_PQOK?2LGDA;=C;84<OWfagUD=G@/*3=8EFV[jgaS@1*4379@IOQVoU]P7:>.KBDEDHCZERSUM?=<CDHD@=AB?DBFWdd]YFE8/2;82AHQ_nx\H;6:.;2;@QISYagOLJ^>PODBID@JH<674A7<BL]eb[XKGFF1,**6?S^aqnaN>90;>:0>La]ap]H?>>>/5<=E8JWUWWjS@BC@/14ADEFTUUXSW<OAKIEB=<48C:KWhcbPCAAA590:BQZekbBMI\QMF@CG??DCAQH>CKEK;BGMTGOZMEBA>65<<FMRZ[]ZQD?0109DHM`bmcL?A63(=:Ei[MNNRa]?7==:5=EKEDJFCOOXXZR>JF?68H872;CQlou^E>?*-/24@LU^ljlLEQXG<>C67@DGFBJLKDKCP?HENMNHN;7<AC=9>PU\tdXD3=<G895>BQ^okZVE4+:971BIH[UWRRXP237A7DCA@;OTFR\]_NK>;AO<=DF@8AGRZ\cWKG8:/C>0CKQD`doCEJONF<7852=>BGJIOYbo^JBD@8B4;;AMAHM]X_UMRADC:=,44PSSZ^fWOFG81-F/8>A:AVWlhNGN=8B1@3CA=CEXR[gaL;87HTEGJ>?FHOMZ\EIKJOHA4>375>I_dcl>3CXM95:=6EFDDJGHcTINCKKKC@KMDBHGEJ>3<WJSegKUEH<51235HJNkÇqN=A8>58,4@?ddqrQDD85384@HHOXZde\P<.?7DLD<MGAOCDOFHEBVDD>E@;@5:HGEF\^hFG9AB928<88FHJ-[^`\^QE=03<C?CDBFJLWS]\C=F=;HICG<A45<?OVcMe\JFB>=6653IC[asfTC=82<.=BB[]NbcbK8@.97=:ABRDSPPRZSF@>?;?@FDE38FVQ[\UEJEDHJFB7+@?GDFGOT7IW\i_IG?4BF<>CICMMT[TQJHFAAHGD8?48=BDJSfc_WHH87-+8<HJa]am]LI//0;CFABGN_ke^R9@<7?5CIJCILHNSLBG2?CYFEH;J;;CPPSZbPFD>>E>>7;:88GCH[[hbjRB;+,90B?<<HRL^UQYTJG@A<F@CEMRIDBTRX[VI@KM?CA<>DCNec^UI>>8;7.5:BGOeckn`3@-.2&86LMNQUkZSNH8=3A?6BHEDJVLW\[>GKIFA?EE>57/.ADDTS\na_TG?,=0;CACFPFIWXaaA8=GJE?KAJGJMXTUD57DFEG:><CBM+KPe_\\LKC;3<07:CP]eheRJA5:6?48=Q]e]OQUN=<0B3<AGEGHJPQKPRN@J=H<76MKBH,%2=?HQ[_nnTIC8/=39<>=NWWZ^^^LC@>=BGEB 1eQWcnRD/.+:A>JLE?HRZZaUNFLHFA4>A<3;?U{`fVFA?>E<116>JWb^j[J4:@142BA?FJSQP][SZH;;8@DE8BO=9<<:BOW`_SNCEBDC8740>PRPRga]HB@85?4=JJOTMBFH]_WC@A?A;BK@D<A<GQT]^WIB?@B>;7<A@NSZh\XNG745?59?CZ[bjcRD68187@AE;\e]l^P8<AAAH@H?9LFEAD>>8DMNZ\WSSKMG446;<;BMSYcZXNCB?,?5;>FVPN^_aYE9><==G@FB@+?OHWTUSGG7B[GF?7BAC]X`XSLA<>8840+TP`j^\VFB?;79,BPOMNr^^HE:473<AGG?AD@;;=>?CPUPW]XPJBDC;911:HHARidefVF?4-13EKFRN]gdUMH<=2B<>LFJPNRUJOZ>C>;<HIF?@?F?QObRTMHCCC<8<5CHSWc]QHJ<:M#+;=GOnjeTOH=6&2;CMNJEIB;>=@=?BST^[QUN@L?<6<50;>GZded_EC?=5</8?EOMT^d_PB8;521EIAI=RIc]`ZA@A;;8;>=K;RQJc[KHE?>ABB<=F@EWPQQAJHSO1=;10@LSdkjQHG;7==>H6GGBG=>JBNENDN\XIFIA?CRF@5,0?@OWTp_RQHF891;4<=O^fscZB>?=<87E?QQZXX\[MA=5<?HOCKCGJPGNQKEDB?CAC<<:??@FZU[ROOME;=63-;<\ceg\WC58<%7ETFIJ4.ASSRU\ZTKG?<DKHBD87>>D?K[\NQMFOLG>=>=<;@DU\cn\C485<451>GW]SSfgU=45=95QCG8GL]Y[MN;8CAD?HK;PG]TSXL=:>CL@5B@CMPXZ_gGBAX>1U==DCEDJLJLPABGKSWSNL*3BHJQMN?IDBHGFGGJGKELBPY@<@8FQ^WZ\E4H6;7FLXLVTRSPF>==;DA?Z]ZUWONIA5C8;7HHQM=678;:@KHSTUQNNVB=A>>AKQTTQ\C?9BC8NFGHHJPTPSCHE>7?JCBAEAFDHBKMMQQQF(4<aSORI=<A47CDATTRKVTJ>5=@?BUgshO@A<=:2@ECfo`dM@>@A66;5AQ\UQC?KPRLFGE=AACGCBFGAGE>IMJT>>\Q??/8:AU@DCIde[JHJFC;;(5?XQTMKNSY^UH@=5>@JIHJGBCEJRRO1/8AWQSPHB?37E@QS\[OKJFAL29O5>j]haK@D>>8=4EEINISXX^R@5<6@HLHOLNA=BJKNK=LGHLGDBC5/,CCPPWQl_WUFL;1/>::GFCMKVQRWbUJA:=J>AH@KFCG>;EWUPMKO<47=>923DNWk_kZM$KA+78:<FVcifaXIA915BBBKZPQU[]NPB6@1-3BDJZNOQ[ZX?B>?FI<;;:H158RNKYk_bKHCGG:9476PJX[cWSSKM>?A@>AGLNBNKKKLHQOGJ<ACDBFAA37;EGUXY[OL?:=62?BHSMec`XRH<91(@Gdnba==6A9JB@C@G8DWcb]XMD24?%7IXLHA83<AKBUQaROKK8AA>AM6<?AVZV`c\GN67>:5*9IUSMRPUTHYG<;64@?GMPM@6?<DNH?QFQWETA* +9`[_f]RSHG4#?*3<;\czgeTGLD2;H>16RQ_IU`\V=?8<47EQE@LG<=UKFc^e_L?FBG@7:@&@R@JRJcclKQM8=6143<CMDaXM\[cS?44<2HJDEDEJEMYe_LA=?=CA0<E@DIQab]Q@;CA8946:BQ`WcdXUF;+-/@;:@BVTSWZeWO913<@HEGECGKJGRLMQai\PNRG><@/,26<HQajigUG?=7@33DXV[_\KLON?C;<;>BRGJJ@JTV]TD:?;@EFEC??<=CALCZaNcT:/,=378CbRkd]XSB;0.;2=JJHMUTjYMJ97279A?CDOMONADV[_`VK<STD?8F572<EJ]gch\HB<:<276AERJ_ceZUJ><;;?5AGOFRRT^^UM17?;FKECD:IB:W_\QPBAJG?32956AGSckbTK@H5336;CK[\_l`Y?75<9292H]ZWEQ]]HS]XYOUSDNA=:;:.4;2KTeqlSRWI=8;;4(46?Wkccf_VC243,8=GDFGRegf`G6*.,3BEGJI[BGJS\SIJEEEC;6>>=HM^`YRJDBC@7:<65FUeykTME<<>//AHTK\\\>TNKBGQIOHKJGI?=:=8<;KHFMteURKL<5218<ATUW]q\VKE?8.0=@JOUPa_aPD859@N8CGKNHLMUXV<EA@:@GH;B>C@CF<WQ@GgONBA701/BHccukJG=869>3;MEHUjXa_QXQACFK??AEDFBC>@HD_[PHDIIKNH?@<<5;8JYNXV_]SI=;02=56LRXdan]Q=9<<>4@HHJRUTY\XC<57;?GLD<IHC=@KRQJ5\MGA>95;@FMdRfaZNB89852?CLT`ldZB2VSB<B69:<HIPC<@A>SQkXJ,ABMLRXB=;99@a]GNNK\QD?A?4B?BPX`afJCN;86-@IJS^LaZBS@;48MF?<GOHKKBFKKYVH,<CFOJD7F;B<EcMQWRPBM<B==KBJ^km\G5?G?CAF5<GQKLHINHLBCASLNORGH?LGAEC4<?6Mfj]R=GKF615DKE`[hbQH@/8@>?BFLUhbVTDH>=6=;A:LRJOZOFBOPJMBA?FHBE?B;7:DXRQCOTXA3K4GF98ORal_RJ>DH;;A+@FDOF@IFDHNP^]WDDED?<;B?==<>KOTPdXMQGKPQN<&0>N]cllQ>>H?06>49HMIPfoaO?;68<0G]STGKT[SS??5BM57D>8DGIH<NXUT]<71B?<76CJ]aYb^XL8DH6;;<=5E>DEGKKR`Z\SKB9@F>BG>>CDBEEMPRTXSLKE>A>67.4HS]m^^[E<380<5DBOaa`f[KE8>79A?ATOMUc[VHA;>;BE>G@CFLGRSTKNGGEF?<>E41BNWUV_gRFAQC@7<8<AHNUOMVKOWQGB@@?=CECAIFBKBRXU[SB@@4DI@<6>>;FIOQ`_ZSL67,,=;D2Rjnh_[C98C.5;<QTXRebRTA=2?=7FI47IM^[\ZNF?:<>A<J@HHHOHWMZPPHEIDN8;426AGAJYb_[XPIC4?>786BALRSPXS^MGBD;:EJFC=;D?7LCZaF<Ae[OD<7150COj`]ZKOD>9:018KQgM]iRHBC?1C>EHU6=:Q[WdcC:==?HI=GM@L\9MGK@G=7RJQKC;C*8<JCEQeTXUHOJK@486=HLMZP\VMHGBA=;CKLPSOND@@DGMWSUKOBG:9?<4456NSTe^gYCK0083D[Vb\^\RGH@3:7BCBB3AHUNebCGCPRID;:PMA<><TIMCJXQFDF=59147DMPSaWYcXPM<=4-19;?>GLNGZfZVF78'=@CHIDAMQBLCOFD=CaXACA?=HKQ`aYZMH<A%+<?HOT]e`[QA>1@8>=@?ROT_V[OJJA*11CLGJJGOOHIPJI?JGG?DGC4.A8<9D5TZ{mZYGKB<1:506?EPp_RVWSK?B>=?EBGBFPTKSSN>CF<=<ABE;76=4DDJRUg[oV87856.?ENbaloFOH%3H4DAPYcHTh]HAC22=?ACHMU^PfZL?<2@?AGOK6LI1<:1>=<c[l[UEGQ1C36@JPMKTJP\aE;A:><<LPOBOUa^TD=9;6ABJMIBNI=EP65CDAH[]QGB?8=MTJQ]VVKD@D>3:?HJWPalTPC56B?@HERFe^XTGDAA:=<EII,>@IB:46;BH?GRTYc`XO@8@;3;AKMVhfRWGE8:,)0?NYW_jSKMG?@988BDLQWM?;SOHBJA<EELCZ?@Q@3>F>IMSbm\J;645'-;GU_àsW@6045?6ST[VNVXRGE;6:<FCNQPFH8==E67;8HTqimaFE<0B$18B;8DXkmejNF04427JSRN\ZU^O=2G@EDA8<>^TAKR]ZFB9BDAGGFKCAHFNaAOSQJA:?B@;>=HKW[hPEGF;<>2<DDHOPSV[UT@;86=>HJQDMA=CK:*><>KZooVKRED@E8,?:L>i[j\PB>D:B7D@PQWdaXMJ8715?TRPYORXDMK>AE;7BDIKQHCAJ9;87NGZPMGQSN7347EAM^uYTG<AC6<=?PX`QabY=;5603MPMPTCEA9JFFA<GMNEJGXONMDD8@:107OTfjfMR?@;853HMVTUW`KA:757@CEKVWaWLOFJ@;<7@KNWRLFGOKHJCM=DLJNKIB<<.-?TRGVTZPSQG=<12C<:LTfqÖQ2,AB2HIGLOGEH@DW>HCKFHDDJFMHM8>F3039EWgo^OILHLC%37CB\eWdYO8<8>A?@H]`Z[SPG=97?CINROVGCLUNM?B43?HJQJ?DPS5.0@TJ`XRJPED?BB/:DZÄgW?<D>EB><AEM[LJG>=MWWXDQ4<J<1<f_IG?8:<bS8EHHKTTSBG;0F857J[ZbXVQ@<;=8B@AL\_d]SLCB;?,EQKLDL`[TNG6;7;GGMMGA<566:?@M[_a[J@HEH,*8?Wb\fUK>C?:4;@=<V7=ZSIE=;8@D@>BBGCOOmUKFNPED>2@BIMKOIG@504=KKQ`d]WKF:4=CE8Gen`WLKA?D;8?CQFY]h\LD@3@D2DMMKN9]ZLDN>.<B;FMHMUND;Q<BCG\VELPSOA@79@FU\OT\PRM?@H=?A>4@FKPDTDCMRMLJ<:C@;DIMJGJ<49>?@HO[[][N;<B18<CMUaSV\T8>>=A4HNVPRO\RTDD=./I^PQLOQLNONAC2@@HODL;G>;BGRB@JSqKVF0K3E0?ALQJM@NL<C4>><7;GLJWLQNJZ\PDA8?5A;GGPOHB>DB7=?GFPMK[]6CA429>GQ]aaRYGB?7<7B?QWmdWLS@F21@=?UW<EOeVUQJ:>4CEEONNE9CHQPH78GVJOKB9B7??HXB_[^ES8?4=:L-3IDT[LSZaSRF<5?6B&CMGJWRJK@MP=E8W@8LB@>IF?C8:;AlQNXWgC?238?=`\e_T\D<5>33D\FoW_VP>;B6A=GD5HSC@GBJPOZXTAD<;=@ME79<BUcFENWTNCIBB@=84OFNDMUTSdYN?B;>?BEKIPMNMJKGLCFAG=EIMFB@;;27=5IPV[XVaG5C<;>HFNW\^_MK8===>GFPPXZMSLE@7AJHHFNODEG'LTNJCCCBPQLBA<+/?DQM@=MNABPO58C91>KDNJuh]NA;=@V?=71HAS]m[QTOA>713<BOOJ]jJG8=OPF4E5=H=AF<E:HCXFcXJL@TG>A:@@?@bohaVD6<4:=4ACPQ\m_H?MC6/:?KAOKNJMHQ\N@?GUZPNFF=C1::4==VXcd__NEJ5A9+0.;=NZOYllYJ71-:A>AGQ=BHa]KSC:6JU;D<GBGLH?F@F[QVEIKEFO;?BANdic\H7G4=E?/=<O\DhYX[S/69-5?DG6B<QXPP]^XZŒFŒGŒJŒOŒWŒ_ŒhŒoŒtŒsŒpŒjŒfŒ`ŒYŒSŒMŒIŒFŒFŒGŒOŒ]ŒkŒrŒuŒtŒoŒjŒfŒbŒ^ŒYŒVŒYŒ\Œ_Œ_ŒcŒfŒiŒjŒnŒmŒlŒjŒgŒcŒ^ŒZŒ]Œ_Œ\ŒZŒXŒWŒWŒSŒQŒPŒRŒWŒ\ŒcŒfŒcŒbŒ`Œ_ŒWŒRŒLŒDŒAŒAŒAŒBŒFŒNŒZŒbŒeŒcŒ_ŒVŒRŒOŒNŒNŒJŒJŒOŒUŒYŒ`ŒhŒkŒiŒfŒ`ŒYŒTŒQŒRŒRŒSŒTŒRŒQŒQŒSŒRŒUŒWŒYŒXŒVŒVŒXŒZŒZŒZŒXŒUŒOŒKŒHŒbŒTŒRŒTŒYŒ^ŒbŒdŒeŒeŒdŒbŒ_ŒYŒSŒNŒMŒLŒLŒPŒTŒWŒ[ŒbŒgŒmŒmŒlŒiŒcŒ`Œ\ŒWŒVŒVŒTŒRŒSŒUŒVŒXŒ^ŒdŒjŒkŒhŒdŒaŒ`Œ`Œ]Œ[Œ[Œ[ŒWŒUŒVŒWŒVŒVŒXŒYŒZŒZŒYŒYŒZŒ\Œ[Œ`ŒaŒYŒQŒLŒHŒHŒFŒEŒMŒTŒXŒ]ŒcŒbŒ^ŒXŒTŒPŒOŒNŒKŒNŒNŒQŒXŒeŒiŒiŒhŒfŒ`Œ^Œ\ŒWŒRŒPŒPŒOŒPŒRŒWŒ]ŒbŒeŒcŒ`ŒZŒUŒRŒRŒSŒTŒUŒVŒTŒSŒQŒNŒ]ŒLŒLŒOŒSŒUŒ[ŒaŒdŒfŒfŒdŒbŒ[ŒVŒPŒKŒHŒHŒGŒIŒNŒSŒ\ŒaŒgŒkŒjŒhŒfŒaŒ_Œ[ŒWŒTŒQŒMŒKŒPŒUŒ[Œ_ŒeŒkŒmŒiŒbŒ]ŒXŒUŒWŒWŒVŒYŒYŒXŒZŒ[Œ\Œ`ŒbŒ`ŒZŒUŒQŒSŒTŒWŒZŒZŒZŒXŒTŒSŒOŒRŒUŒWŒ]ŒdŒdŒfŒeŒaŒ[ŒTŒPŒJŒHŒEŒEŒKŒUŒ^ŒjŒsŒrŒnŒhŒaŒ\ŒTŒOŒKŒJŒNŒQŒZŒaŒiŒqŒtŒqŒlŒdŒ\ŒUŒOŒMŒMŒOŒSŒVŒWŒYŒWŒVŒUŒaŒNŒKŒOŒXŒ`ŒeŒgŒhŒfŒdŒaŒ]ŒYŒTŒNŒGŒAŒ<Œ:Œ>ŒGŒSŒ^ŒfŒlŒlŒjŒiŒdŒ\ŒVŒQŒKŒJŒLŒQŒWŒaŒjŒpŒuŒqŒmŒiŒaŒZŒUŒOŒMŒNŒOŒPŒSŒUŒWŒXŒ[ŒaŒeŒgŒeŒbŒ`Œ^Œ]Œ]Œ\Œ]Œ[ŒWŒTŒQŒKŒEŒ@ŒBŒFŒMŒWŒ_ŒdŒdŒcŒaŒZŒTŒOŒFŒBŒ?ŒBŒJŒVŒcŒmŒpŒmŒhŒaŒZŒTŒOŒMŒNŒRŒUŒ]ŒeŒkŒpŒuŒsŒlŒeŒaŒ]ŒZŒXŒYŒXŒZŒ[Œ[Œ]Œ_ŒbŒfŒ`ŒRŒWŒ\ŒaŒdŒgŒiŒkŒjŒhŒdŒ`Œ\ŒWŒOŒIŒFŒCŒEŒLŒSŒ^ŒeŒgŒkŒkŒjŒfŒbŒ]ŒWŒNŒKŒKŒKŒOŒUŒWŒ[ŒaŒgŒlŒkŒjŒdŒ^ŒZŒVŒTŒSŒTŒSŒUŒWŒYŒZŒ_ŒdŒjŒlŒiŒfŒbŒ^Œ^Œ^Œ`Œ_Œ_Œ]Œ[ŒVŒSŒUŒXŒZŒZŒ\Œ^Œ`ŒcŒdŒcŒaŒYŒVŒOŒGŒCŒBŒJŒQŒXŒ`ŒgŒiŒgŒbŒ_Œ[ŒTŒNŒIŒDŒGŒKŒSŒ^ŒiŒrŒsŒmŒfŒ]ŒXŒUŒUŒWŒXŒXŒ\ŒbŒgŒkŒnŒrŒrŒ\ŒQŒSŒWŒ[Œ]Œ`ŒcŒeŒeŒcŒbŒ`Œ_Œ[ŒXŒQŒKŒGŒCŒAŒEŒPŒ\ŒdŒgŒjŒhŒfŒaŒ\ŒWŒOŒJŒFŒIŒNŒRŒ[ŒeŒjŒoŒpŒnŒlŒjŒdŒ`Œ]Œ[ŒZŒZŒ\Œ]Œ_ŒdŒhŒjŒlŒlŒjŒgŒcŒ`Œ^Œ\Œ]Œ[ŒXŒPŒTŒQŒOŒLŒIŒHŒLŒRŒXŒ`ŒcŒbŒaŒ`Œ\ŒWŒRŒMŒGŒDŒCŒFŒJŒQŒ[ŒcŒdŒbŒ`Œ\ŒUŒQŒLŒFŒCŒGŒMŒXŒcŒgŒiŒhŒfŒbŒ\ŒXŒSŒOŒLŒNŒUŒ\Œ`ŒgŒnŒrŒsŒqŒZŒYŒ[Œ_Œ`ŒaŒdŒcŒeŒeŒfŒeŒ^ŒZŒXŒRŒOŒNŒNŒMŒQŒRŒYŒ`ŒeŒhŒgŒfŒcŒ`Œ]ŒYŒPŒLŒHŒFŒGŒJŒOŒWŒ`ŒhŒnŒnŒkŒgŒcŒ^ŒUŒRŒQŒRŒSŒUŒXŒVŒYŒ]ŒbŒeŒcŒ`Œ^ŒYŒSŒRŒQŒPŒQŒSŒUŒVŒVŒXŒ[Œ\Œ_Œ_Œ^Œ]Œ_ŒcŒcŒaŒ]ŒWŒSŒNŒIŒFŒDŒHŒMŒSŒ[ŒaŒcŒcŒcŒaŒYŒSŒLŒGŒBŒBŒCŒJŒRŒYŒdŒjŒjŒgŒaŒZŒUŒPŒMŒNŒQŒPŒSŒWŒ]ŒdŒkŒnŒ\Œ]Œ_Œ_Œ_Œ_Œ^Œ]Œ_Œ`ŒaŒ_Œ^Œ[ŒWŒSŒOŒJŒLŒNŒMŒQŒWŒWŒZŒ`ŒbŒbŒdŒaŒ]ŒWŒOŒJŒEŒ@Œ>ŒAŒKŒVŒ\ŒbŒgŒeŒeŒcŒ_Œ\ŒUŒQŒNŒJŒLŒQŒUŒ[ŒgŒlŒjŒhŒhŒeŒaŒ_Œ\Œ[Œ]Œ^Œ^ŒaŒcŒfŒjŒiŒmŒlŒjŒgŒdŒbŒ_Œ`Œ`ŒaŒ`Œ[ŒWŒSŒRŒTŒYŒ\Œ[Œ_ŒcŒdŒbŒaŒ_Œ^ŒYŒTŒPŒLŒHŒJŒJŒQŒ]ŒfŒlŒjŒiŒgŒaŒ]ŒWŒRŒOŒOŒPŒUŒ[ŒaŒhŒkŒoŒmŒ[ŒcŒfŒcŒaŒ^Œ[Œ\ŒZŒ\Œ\ŒZŒTŒPŒLŒIŒIŒIŒFŒHŒJŒPŒSŒTŒUŒVŒWŒYŒ[ŒYŒVŒUŒQŒLŒGŒEŒGŒLŒTŒ`ŒgŒkŒkŒiŒdŒ\ŒUŒNŒIŒEŒDŒGŒMŒUŒZŒcŒiŒnŒlŒhŒbŒ\ŒVŒQŒMŒLŒMŒQŒOŒSŒVŒ^Œ`ŒbŒcŒbŒaŒ_Œ]ŒZŒVŒQŒQŒXŒ[ŒZŒ[ŒZŒaŒcŒgŒjŒhŒfŒdŒdŒcŒbŒcŒbŒ_ŒXŒTŒQŒMŒMŒPŒVŒ]Œ^ŒaŒdŒeŒeŒbŒ_ŒUŒLŒFŒCŒCŒIŒRŒ]ŒeŒjŒlŒjŒcŒhŒgŒeŒbŒ`Œ`Œ`Œ_Œ`Œ]Œ[ŒYŒ\Œ_Œ`ŒaŒ`Œ_Œ`Œ_Œ_Œ\ŒYŒZŒZŒ]Œ`Œ_Œ]Œ[ŒWŒPŒKŒIŒEŒDŒFŒKŒRŒYŒbŒeŒdŒbŒ`Œ\ŒUŒNŒHŒBŒCŒGŒNŒVŒ`ŒiŒlŒiŒgŒcŒZŒRŒMŒGŒFŒHŒKŒPŒVŒ^ŒgŒkŒkŒhŒaŒ]ŒWŒTŒRŒTŒTŒSŒSŒPŒQŒTŒUŒYŒ_ŒdŒdŒcŒaŒ\Œ]Œ[ŒYŒVŒTŒPŒOŒNŒLŒKŒLŒPŒSŒ[Œ_ŒaŒdŒeŒ`Œ]Œ\ŒWŒSŒMŒJŒHŒMŒSŒ[ŒfŒjŒmŒkŒgŒmŒjŒgŒcŒ`Œ^Œ_Œ^Œ\ŒYŒ^ŒcŒbŒaŒcŒfŒiŒlŒlŒjŒiŒeŒeŒbŒ_Œ_Œ^Œ\ŒZŒZŒYŒVŒTŒUŒVŒVŒXŒ[ŒWŒWŒ]Œ`ŒcŒhŒbŒaŒ_ŒYŒQŒJŒIŒLŒRŒYŒcŒjŒlŒkŒiŒcŒ[ŒSŒNŒIŒDŒEŒDŒLŒTŒZŒgŒmŒpŒmŒgŒaŒ\Œ\ŒYŒRŒPŒRŒSŒVŒZŒ]ŒbŒgŒiŒjŒiŒjŒgŒbŒ_ŒaŒ`Œ^Œ]Œ[ŒYŒWŒUŒSŒSŒSŒVŒXŒ[Œ`ŒdŒeŒcŒ`Œ_ŒYŒSŒNŒKŒEŒAŒ@ŒGŒTŒ`ŒlŒnŒiŒhŒgŒcŒ`Œ\ŒYŒYŒYŒZŒ]Œ`ŒcŒeŒhŒnŒpŒpŒoŒnŒlŒjŒhŒdŒ^ŒYŒUŒTŒXŒ_ŒcŒcŒbŒ^Œ]Œ\Œ[ŒYŒXŒ[Œ\Œ`ŒdŒgŒfŒdŒaŒ\ŒUŒPŒMŒNŒQŒWŒ\ŒdŒhŒiŒgŒbŒ^Œ[ŒWŒTŒNŒHŒDŒGŒLŒUŒZŒaŒhŒjŒhŒfŒ_ŒXŒRŒMŒJŒKŒNŒOŒSŒWŒ\Œ`ŒdŒfŒdŒbŒ]ŒZŒ[ŒWŒUŒTŒRŒSŒTŒUŒVŒVŒXŒ[Œ[Œ^Œ\Œ]Œ\ŒZŒYŒ[Œ[ŒXŒXŒVŒTŒOŒIŒIŒKŒRŒZŒ^Œ_ŒdŒdŒcŒdŒbŒ^Œ[ŒYŒZŒYŒYŒZŒ[ŒYŒ\Œ_ŒaŒeŒhŒiŒjŒiŒhŒgŒeŒcŒaŒ^Œ\ŒYŒVŒWŒXŒXŒXŒZŒZŒ]Œ_ŒaŒbŒbŒdŒbŒbŒ`Œ\ŒYŒVŒOŒIŒGŒBŒDŒHŒMŒTŒ^ŒeŒjŒgŒaŒVŒOŒIŒDŒEŒIŒOŒXŒaŒgŒmŒnŒkŒfŒaŒ[ŒRŒKŒFŒEŒGŒIŒOŒ[ŒeŒlŒrŒqŒoŒhŒcŒ^Œ\ŒZŒZŒ[Œ]Œ`Œ`Œ`ŒbŒcŒgŒjŒjŒgŒeŒeŒeŒfŒdŒcŒcŒ]ŒZŒWŒPŒJŒEŒFŒHŒLŒPŒUŒXŒZŒZŒXŒ^Œ]Œ[ŒXŒWŒTŒSŒTŒUŒWŒXŒVŒXŒ[ŒZŒ]ŒaŒeŒgŒfŒbŒ^Œ[ŒZŒ[ŒXŒWŒUŒSŒSŒPŒOŒPŒPŒQŒSŒWŒYŒ\Œ^Œ\Œ]Œ[Œ^Œ]ŒZŒVŒTŒPŒKŒIŒNŒUŒXŒ\ŒcŒgŒcŒaŒ^ŒZŒTŒNŒJŒEŒEŒGŒLŒUŒ_ŒeŒlŒlŒkŒiŒaŒYŒTŒNŒKŒIŒLŒTŒ_ŒfŒmŒqŒqŒpŒmŒiŒbŒ]ŒZŒXŒYŒ[Œ^Œ_Œ`ŒdŒkŒmŒpŒpŒmŒlŒfŒaŒ`Œ^Œ]Œ]Œ\ŒZŒXŒXŒRŒMŒPŒQŒSŒXŒaŒdŒcŒcŒ\ŒaŒ`Œ^Œ[ŒWŒPŒJŒFŒEŒIŒKŒPŒXŒ_ŒdŒkŒlŒgŒeŒbŒ\ŒWŒTŒPŒMŒNŒNŒPŒTŒXŒ]Œ_ŒcŒdŒfŒeŒ_Œ\Œ\Œ[Œ\Œ\Œ]Œ\Œ[ŒXŒWŒRŒMŒJŒJŒMŒTŒYŒ`Œ_Œ_Œ`ŒaŒ^ŒZŒSŒJŒEŒ@ŒAŒFŒRŒ\ŒfŒjŒmŒiŒgŒbŒ[ŒVŒRŒKŒHŒFŒJŒQŒWŒ^ŒfŒiŒmŒkŒjŒcŒ\ŒYŒYŒSŒPŒOŒVŒWŒZŒ^ŒbŒeŒiŒjŒeŒ`Œ\ŒZŒXŒXŒ^Œ_Œ\ŒXŒZŒXŒWŒVŒTŒUŒWŒUŒWŒ_ŒbŒcŒbŒgŒfŒaŒ\ŒXŒUŒPŒMŒLŒIŒOŒTŒ^ŒdŒjŒoŒoŒlŒiŒfŒ_Œ[ŒUŒOŒLŒOŒTŒXŒYŒ]ŒbŒeŒjŒmŒoŒmŒkŒhŒfŒeŒeŒeŒfŒfŒgŒfŒhŒjŒkŒjŒiŒgŒdŒaŒ`Œ^Œ_Œ^Œ`Œ]Œ[Œ[ŒXŒRŒNŒHŒHŒKŒRŒYŒaŒdŒcŒcŒaŒ]ŒZŒRŒHŒCŒ@ŒCŒLŒSŒ\ŒfŒiŒjŒiŒfŒaŒZŒUŒRŒTŒUŒSŒWŒ[Œ`ŒhŒoŒrŒpŒlŒgŒdŒaŒ_Œ\ŒZŒ[Œ[ŒYŒZŒ]Œ\ŒaŒhŒiŒfŒcŒ_Œ[Œ[Œ]Œ`Œ[Œ]Œ]Œ[ŒXŒQŒKŒFŒBŒ?Œ>ŒFŒMŒ[ŒeŒkŒnŒkŒhŒgŒcŒ\ŒXŒSŒLŒGŒBŒFŒJŒQŒ^ŒjŒqŒuŒrŒmŒgŒaŒ[ŒXŒXŒYŒ[Œ\Œ`ŒbŒaŒcŒfŒiŒlŒnŒkŒhŒfŒaŒ^Œ\Œ^Œ\Œ\Œ\ŒZŒWŒVŒSŒQŒSŒSŒUŒYŒ]ŒbŒcŒbŒ`Œ]ŒYŒQŒLŒGŒFŒDŒIŒOŒZŒcŒgŒiŒgŒeŒ`Œ[ŒTŒPŒJŒFŒFŒIŒSŒYŒbŒiŒlŒkŒeŒ_Œ]ŒYŒWŒUŒRŒQŒPŒQŒRŒRŒSŒUŒ[Œ_Œ`Œ^ŒYŒRŒLŒIŒHŒTŒ]Œ\ŒYŒTŒOŒJŒFŒCŒ?Œ@ŒCŒIŒSŒ^ŒcŒgŒfŒdŒbŒ_ŒZŒQŒKŒGŒDŒDŒEŒIŒQŒWŒ^ŒfŒkŒmŒlŒjŒbŒ]ŒXŒWŒWŒYŒ[Œ]ŒcŒgŒlŒmŒoŒnŒlŒhŒeŒbŒ_Œ\Œ[ŒZŒZŒRŒLŒHŒHŒGŒLŒPŒRŒVŒYŒYŒZŒWŒZŒ_ŒaŒ^ŒYŒSŒMŒKŒMŒOŒPŒXŒcŒkŒjŒiŒhŒfŒbŒ\ŒWŒOŒKŒIŒGŒIŒMŒTŒ\ŒfŒmŒnŒiŒdŒ^ŒXŒWŒTŒNŒKŒKŒMŒNŒOŒQŒTŒXŒ\Œ_Œ]ŒZŒXŒWŒVŒVŒUŒ\Œ]ŒWŒSŒOŒIŒCŒAŒ?ŒAŒEŒMŒVŒ]ŒaŒdŒdŒcŒ`Œ\ŒZŒVŒOŒJŒFŒFŒGŒHŒJŒNŒSŒ_ŒiŒlŒjŒeŒbŒ_Œ[ŒZŒ]Œ_Œ`ŒaŒcŒfŒiŒnŒqŒsŒqŒmŒhŒdŒcŒaŒ`Œ]Œ^Œ_Œ`ŒdŒfŒgŒkŒiŒkŒlŒkŒhŒdŒaŒaŒ_Œ_Œ`Œ_Œ\ŒWŒSŒKŒLŒOŒWŒ^ŒcŒgŒeŒbŒ^ŒWŒPŒKŒEŒFŒJŒPŒVŒ]ŒdŒhŒiŒhŒfŒ`Œ\ŒWŒSŒQŒMŒNŒQŒVŒ\ŒaŒgŒlŒkŒhŒaŒZŒWŒUŒSŒRŒNŒKŒXŒ\Œ[ŒZŒXŒUŒQŒNŒMŒOŒQŒTŒWŒXŒ[Œ_ŒaŒ`Œ`Œ^Œ\ŒXŒTŒNŒIŒCŒEŒKŒQŒXŒaŒfŒiŒgŒcŒ_ŒZŒVŒPŒJŒEŒDŒEŒGŒLŒTŒ]ŒdŒlŒmŒjŒgŒaŒ[ŒWŒTŒUŒVŒVŒUŒQŒTŒUŒYŒ_ŒaŒaŒcŒcŒ_Œ\ŒZŒYŒZŒZŒYŒVŒSŒOŒKŒHŒFŒHŒGŒNŒTŒXŒ]Œ]Œ]Œ[ŒXŒRŒMŒEŒBŒ>Œ=ŒHŒPŒZŒ^ŒaŒbŒ`Œ]ŒZŒTŒOŒKŒKŒLŒPŒXŒ^ŒfŒkŒkŒiŒfŒdŒ`Œ[ŒWŒWŒXŒXŒYŒYŒ]Œ\Œ\ŒZŒWŒUŒWŒWŒ[Œ^Œ`Œ_Œ]Œ\Œ\Œ^Œ_Œ_Œ^Œ_Œ\ŒWŒQŒKŒFŒDŒBŒEŒJŒPŒVŒ]ŒcŒbŒaŒ^Œ[ŒVŒLŒHŒCŒDŒHŒMŒVŒbŒgŒjŒhŒfŒcŒ`Œ]ŒYŒYŒXŒWŒWŒZŒ\Œ_ŒaŒeŒkŒmŒkŒkŒhŒdŒ`Œ^Œ^Œ^Œ^Œ^Œ\ŒZŒ[Œ^Œ`ŒcŒbŒbŒaŒ`Œ]Œ]Œ]Œ]Œ`Œ_Œ\ŒWŒOŒJŒDŒEŒGŒNŒXŒcŒhŒjŒeŒ_ŒZŒRŒNŒMŒKŒLŒLŒTŒZŒfŒmŒoŒmŒhŒeŒcŒaŒ\ŒWŒTŒWŒZŒZŒYŒUŒTŒUŒSŒTŒTŒSŒTŒVŒWŒYŒZŒYŒZŒ]Œ_Œ_Œ]Œ]Œ[ŒWŒRŒOŒJŒGŒGŒNŒYŒcŒgŒjŒlŒjŒfŒaŒ\ŒUŒMŒKŒHŒFŒJŒNŒYŒ`ŒfŒkŒjŒiŒfŒbŒ\ŒYŒRŒLŒJŒMŒPŒTŒXŒ\Œ`ŒhŒgŒdŒ`ŒZŒUŒTŒPŒNŒPŒQŒOŒNŒPŒSŒTŒSŒTŒSŒSŒSŒRŒSŒVŒXŒZŒXŒWŒSŒPŒOŒKŒKŒLŒQŒUŒXŒ\Œ^Œ_Œ_Œ]ŒZŒSŒJŒFŒBŒDŒIŒSŒ[ŒbŒgŒiŒfŒcŒ]ŒYŒSŒMŒHŒDŒDŒHŒTŒ\Œ]Œ^Œ_Œ^ŒbŒcŒdŒfŒgŒgŒdŒ`Œ]Œ[Œ[Œ\Œ[Œ[ŒZŒYŒWŒTŒPŒJŒGŒHŒIŒKŒQŒZŒaŒeŒdŒcŒ^Œ[ŒUŒMŒHŒEŒDŒHŒQŒ`ŒgŒjŒlŒkŒiŒeŒ_ŒYŒUŒOŒJŒJŒIŒKŒOŒXŒdŒkŒkŒiŒgŒeŒ^ŒSŒNŒMŒKŒLŒRŒTŒWŒXŒ^ŒdŒiŒiŒhŒfŒbŒ^Œ]Œ^Œ^Œ_Œ_Œ^Œ]Œ\Œ[ŒXŒXŒZŒ\Œ\Œ]Œ^Œ_Œ_Œ`Œ^Œ[ŒWŒTŒQŒKŒGŒCŒCŒGŒOŒ[ŒcŒeŒcŒ`ŒZŒVŒNŒHŒIŒKŒNŒaŒlŒjŒhŒfŒeŒdŒfŒhŒiŒkŒjŒgŒaŒ\ŒZŒYŒ\Œ[ŒZŒ[ŒZŒXŒUŒTŒRŒQŒPŒQŒTŒVŒYŒ\Œ`ŒaŒ`Œ]ŒZŒUŒPŒLŒEŒ@Œ=Œ;Œ?ŒFŒOŒ]ŒeŒgŒeŒ`Œ\ŒTŒLŒGŒHŒJŒNŒRŒXŒaŒhŒmŒnŒjŒfŒbŒ^Œ[ŒWŒTŒQŒOŒQŒTŒYŒZŒ\Œ`ŒcŒdŒbŒ_ŒXŒUŒSŒTŒTŒUŒUŒVŒVŒTŒPŒNŒOŒSŒVŒXŒ[Œ_ŒbŒ^Œ[ŒYŒVŒPŒIŒ@Œ;Œ;ŒEŒMŒUŒ]ŒbŒcŒbŒ_ŒXŒRŒLŒHŒEŒFŒKŒ]ŒaŒ\ŒZŒ\Œ_ŒeŒiŒjŒiŒhŒdŒ_Œ\ŒYŒXŒUŒTŒUŒTŒUŒUŒTŒUŒVŒYŒ^ŒcŒeŒcŒ`ŒaŒ`Œ]Œ\Œ\Œ]Œ[ŒUŒQŒMŒIŒDŒGŒJŒNŒTŒZŒ_Œ_Œ^Œ[ŒWŒPŒLŒFŒBŒ@Œ>ŒBŒEŒPŒYŒbŒfŒdŒ^ŒZŒUŒRŒPŒNŒPŒRŒTŒVŒWŒ_ŒfŒiŒiŒfŒaŒ^Œ[ŒXŒWŒXŒXŒYŒXŒXŒUŒUŒXŒ_ŒcŒdŒeŒbŒ\ŒRŒPŒYŒ^Œ]Œ]ŒZŒVŒSŒQŒOŒQŒPŒTŒVŒ[Œ_Œ]ŒZŒ[ŒVŒPŒKŒCŒ?Œ?ŒBŒfŒTŒQŒVŒ]ŒfŒmŒoŒmŒlŒgŒcŒ_Œ]ŒZŒVŒUŒYŒ]Œ]ŒbŒeŒhŒlŒpŒqŒnŒkŒfŒbŒ_Œ]Œ\Œ[Œ]Œ_Œ]ŒYŒWŒTŒSŒPŒRŒRŒUŒXŒZŒ\Œ_Œ_Œ^Œ\ŒVŒRŒNŒIŒCŒ?Œ?ŒEŒNŒYŒ`ŒaŒ_Œ^Œ]ŒZŒUŒOŒKŒGŒFŒIŒRŒXŒ_ŒeŒjŒiŒhŒeŒbŒ]ŒXŒSŒTŒTŒUŒVŒYŒ]Œ[Œ]ŒaŒdŒbŒbŒ^ŒZŒVŒVŒWŒXŒXŒXŒWŒTŒOŒLŒKŒKŒLŒNŒRŒSŒUŒYŒ]Œ\Œ[ŒUŒOŒIŒBŒ=Œ@ŒFŒlŒ_Œ_ŒcŒaŒ`ŒeŒgŒgŒfŒcŒ^ŒYŒTŒPŒMŒNŒMŒPŒUŒYŒ^ŒdŒiŒkŒkŒiŒjŒgŒeŒaŒ`Œ\ŒYŒXŒWŒWŒWŒXŒVŒUŒUŒUŒWŒVŒWŒXŒXŒZŒYŒZŒXŒQŒMŒHŒAŒ>Œ<Œ>ŒBŒLŒXŒaŒcŒaŒ`Œ^Œ\ŒXŒSŒNŒCŒ>Œ<Œ=ŒFŒRŒ`ŒhŒiŒgŒcŒ]ŒZŒUŒPŒNŒKŒMŒPŒUŒYŒ`ŒaŒ`ŒcŒbŒaŒ^Œ\ŒWŒTŒTŒUŒUŒVŒVŒUŒSŒPŒQŒQŒTŒWŒVŒWŒZŒXŒXŒYŒWŒUŒRŒNŒIŒGŒFŒLŒ_ŒZŒ\Œ`ŒdŒfŒfŒeŒfŒeŒbŒ^ŒZŒSŒPŒMŒJŒKŒLŒPŒSŒUŒXŒ`ŒdŒjŒhŒgŒbŒ^ŒZŒYŒVŒXŒVŒVŒTŒSŒSŒVŒXŒYŒ]Œ`ŒaŒ_Œ`ŒcŒeŒbŒ_Œ\ŒYŒVŒTŒRŒOŒLŒKŒLŒQŒXŒaŒfŒhŒeŒ_Œ]ŒXŒTŒNŒEŒCŒCŒFŒNŒXŒbŒiŒjŒjŒdŒbŒaŒ\ŒXŒTŒPŒPŒOŒRŒSŒZŒ`ŒhŒkŒjŒgŒbŒ^Œ]Œ\Œ[ŒWŒTŒRŒPŒRŒSŒRŒTŒUŒXŒZŒ[Œ]Œ^Œ]ŒZŒXŒWŒVŒTŒOŒIŒEŒ@Œ<ŒbŒ]Œ_ŒgŒkŒmŒkŒiŒfŒbŒ]Œ[ŒXŒSŒOŒPŒPŒTŒSŒTŒVŒYŒ_ŒcŒfŒiŒfŒdŒdŒ_ŒZŒ[Œ[Œ[ŒZŒ[Œ]Œ_Œ_Œ_Œ\ŒYŒ[Œ]Œ\ŒXŒTŒSŒRŒRŒTŒTŒYŒUŒRŒMŒIŒJŒJŒLŒPŒUŒXŒ]ŒaŒ`Œ]ŒYŒSŒPŒMŒHŒDŒAŒBŒNŒYŒcŒfŒeŒcŒ`Œ\ŒVŒNŒEŒCŒBŒHŒKŒQŒZŒ`Œ`ŒbŒdŒfŒdŒ`Œ\ŒWŒYŒVŒVŒUŒVŒWŒRŒNŒPŒTŒYŒZŒ[ŒXŒVŒSŒRŒTŒVŒVŒTŒRŒOŒIŒGŒDŒFŒgŒXŒYŒ\Œ]Œ^Œ_Œ_Œ]Œ]ŒZŒWŒOŒKŒHŒCŒ?Œ@ŒDŒMŒYŒ^ŒdŒiŒhŒhŒeŒaŒ\ŒYŒTŒRŒPŒQŒTŒVŒWŒYŒ\Œ_ŒaŒbŒbŒbŒaŒ]Œ]Œ]Œ]Œ\Œ[ŒZŒVŒPŒLŒHŒGŒJŒKŒOŒTŒYŒZŒZŒ\Œ_Œ]ŒXŒQŒKŒFŒBŒCŒFŒPŒYŒ^Œ`Œ`ŒbŒ`Œ]Œ[ŒYŒQŒKŒGŒDŒBŒDŒGŒPŒ]ŒdŒiŒiŒgŒaŒVŒNŒJŒMŒMŒSŒVŒ[Œ^ŒfŒlŒoŒoŒmŒjŒdŒ^Œ[Œ\Œ\Œ[ŒZŒYŒYŒYŒVŒRŒSŒZŒ_ŒgŒ\Œ\Œ^Œ]Œ^Œ^Œ]Œ[ŒYŒUŒPŒLŒGŒEŒCŒBŒDŒFŒJŒPŒRŒXŒ]ŒaŒcŒaŒ_Œ^Œ[ŒUŒPŒLŒIŒHŒLŒOŒSŒWŒ\ŒaŒgŒhŒfŒcŒ]ŒZŒXŒWŒUŒVŒUŒUŒVŒUŒRŒUŒZŒ]Œ_Œ\Œ\ŒZŒ\Œ[Œ\ŒZŒWŒPŒLŒGŒAŒ=Œ<Œ=ŒDŒMŒXŒ`ŒbŒaŒ^ŒXŒTŒOŒHŒBŒ9Œ7Œ>ŒDŒQŒ^ŒfŒiŒfŒbŒ\ŒVŒRŒNŒPŒRŒVŒYŒ[Œ]ŒcŒkŒnŒjŒhŒdŒ`Œ]ŒYŒSŒNŒNŒMŒQŒMŒKŒKŒNŒPŒNŒJŒ_ŒZŒ[Œ[Œ_Œ`Œ_Œ^Œ]Œ\ŒYŒUŒQŒKŒHŒEŒDŒIŒOŒUŒZŒ`ŒeŒgŒfŒdŒ`Œ[ŒUŒNŒJŒIŒKŒLŒPŒXŒ^ŒdŒgŒjŒlŒiŒdŒ^Œ[ŒWŒWŒTŒRŒSŒSŒSŒVŒYŒZŒ[ŒZŒ]Œ]Œ[ŒXŒXŒWŒXŒVŒUŒSŒRŒPŒNŒJŒFŒFŒHŒJŒNŒPŒUŒZŒ^Œ\ŒZŒXŒTŒLŒFŒEŒFŒJŒOŒQŒYŒ_ŒcŒcŒbŒ_ŒZŒUŒQŒLŒIŒJŒKŒLŒMŒOŒVŒ]ŒbŒeŒbŒ_ŒZŒWŒTŒOŒRŒVŒSŒRŒRŒRŒSŒTŒVŒVŒXŒjŒcŒcŒaŒaŒcŒbŒaŒ`Œ]Œ[ŒWŒUŒPŒHŒCŒ=Œ9Œ;Œ@ŒIŒQŒ]ŒeŒiŒfŒaŒ]ŒVŒNŒIŒEŒ@Œ>Œ>ŒEŒTŒ_ŒgŒmŒnŒlŒgŒbŒ^ŒWŒXŒYŒXŒZŒ\Œ_ŒfŒoŒnŒnŒoŒmŒjŒdŒaŒ`Œ^Œ]ŒZŒ[ŒZŒYŒWŒXŒXŒYŒYŒ[Œ]Œ\Œ\Œ\ŒXŒVŒYŒXŒUŒSŒKŒEŒ?Œ9Œ8Œ8Œ>ŒIŒUŒ[Œ`ŒaŒaŒ[ŒWŒPŒJŒDŒCŒGŒIŒMŒTŒ_ŒhŒkŒhŒeŒ_ŒZŒTŒQŒNŒQŒRŒRŒQŒQŒSŒRŒUŒXŒZŒZŒeŒ^ŒYŒVŒTŒQŒPŒNŒPŒPŒQŒPŒNŒIŒDŒ@Œ=Œ<Œ@ŒGŒOŒVŒ_ŒaŒbŒaŒ^ŒZŒVŒNŒGŒBŒ>ŒBŒFŒNŒXŒ]Œ`ŒcŒfŒdŒaŒ]ŒXŒQŒKŒGŒEŒGŒIŒLŒKŒKŒNŒSŒ]ŒcŒbŒ`Œ_ŒZŒWŒXŒYŒYŒ[Œ[Œ[Œ[ŒZŒZŒ\Œ_Œ^Œ[ŒZŒZŒ\ŒZŒYŒWŒUŒRŒOŒKŒGŒ@Œ@ŒAŒDŒIŒSŒZŒ_Œ_Œ^Œ[ŒUŒPŒIŒDŒ@Œ=Œ@ŒGŒRŒ]ŒeŒeŒcŒ`Œ\ŒVŒRŒOŒMŒOŒPŒQŒQŒVŒUŒ\ŒcŒdŒbŒ]ŒYŒRŒSŒUŒVŒWŒYŒWŒVŒUŒTŒQŒLŒHŒEŒ@Œ<Œ=ŒEŒQŒWŒYŒ\Œ]Œ^Œ^Œ\ŒXŒTŒMŒFŒAŒ:Œ7Œ;ŒAŒIŒTŒ^ŒcŒeŒdŒcŒ_Œ[ŒTŒOŒKŒGŒIŒNŒRŒXŒ^ŒaŒiŒlŒkŒgŒbŒ]ŒWŒQŒLŒIŒJŒLŒMŒRŒTŒRŒUŒ]ŒbŒaŒaŒ\ŒZŒYŒ[Œ]Œ^Œ[ŒWŒSŒPŒMŒHŒFŒHŒJŒRŒVŒZŒ^Œ`Œ_Œ[ŒVŒQŒHŒCŒ<Œ:Œ>ŒNŒUŒZŒbŒcŒbŒ`Œ]ŒXŒRŒLŒHŒGŒGŒGŒKŒQŒRŒRŒSŒXŒ^Œ]ŒaŒ`ŒaŒaŒ_Œ]Œ_Œ^Œ\ŒZŒYŒXŒVŒUŒSŒPŒOŒPŒRŒSŒVŒXŒZŒ[Œ^Œ]Œ[ŒUŒQŒOŒMŒJŒGŒIŒLŒPŒUŒZŒ^ŒaŒcŒ`Œ\ŒXŒTŒNŒGŒDŒIŒLŒNŒTŒZŒ^ŒfŒhŒeŒaŒ\ŒXŒTŒPŒPŒNŒPŒQŒVŒXŒZŒ^ŒcŒgŒfŒcŒ\ŒYŒVŒUŒUŒWŒVŒVŒUŒRŒLŒIŒLŒNŒOŒQŒTŒVŒVŒUŒXŒXŒWŒVŒRŒNŒCŒ;Œ9Œ8Œ>ŒKŒRŒ\Œ\Œ^ŒZŒVŒRŒMŒIŒGŒDŒBŒDŒFŒJŒRŒYŒ_ŒaŒ^Œ[ŒUŒ[Œ^Œ]Œ\Œ\Œ]Œ[ŒZŒYŒUŒPŒPŒOŒMŒLŒLŒMŒOŒQŒVŒYŒZŒ\Œ\Œ[Œ[ŒTŒRŒRŒOŒLŒIŒ@Œ;Œ9Œ;ŒIŒTŒ]ŒaŒaŒ`Œ_Œ\ŒYŒRŒLŒGŒ@ŒCŒEŒJŒUŒ_ŒeŒhŒfŒfŒcŒ_ŒZŒWŒUŒTŒSŒMŒLŒOŒSŒWŒZŒbŒgŒfŒeŒbŒ^Œ\ŒZŒ[ŒZŒYŒWŒWŒTŒTŒRŒQŒKŒKŒQŒVŒ\Œ]Œ\Œ[Œ\ŒWŒRŒKŒGŒCŒAŒ@ŒFŒOŒTŒ]ŒbŒ_Œ[ŒXŒVŒSŒLŒFŒBŒDŒDŒGŒOŒWŒ_ŒfŒjŒjŒgŒaŒSŒWŒ[Œ[ŒUŒUŒVŒ[Œ_Œ_ŒaŒ_ŒZŒTŒRŒRŒRŒPŒQŒKŒPŒRŒSŒQŒOŒQŒRŒSŒUŒSŒRŒNŒJŒLŒMŒSŒWŒZŒ]Œ`ŒaŒ_Œ\ŒXŒSŒMŒFŒAŒ?ŒCŒEŒLŒWŒbŒgŒfŒdŒbŒ\ŒTŒMŒHŒAŒBŒEŒFŒKŒRŒ\ŒdŒjŒiŒfŒcŒ^ŒZŒXŒVŒWŒXŒYŒ\Œ_Œ\ŒXŒ[Œ\Œ^Œ^Œ[ŒWŒWŒRŒPŒLŒJŒKŒLŒLŒKŒHŒGŒGŒFŒFŒIŒOŒVŒYŒ\ŒXŒTŒPŒMŒKŒGŒAŒ;Œ9Œ8ŒAŒLŒTŒaŒfŒdŒ_ŒYŒ\Œ]Œ[ŒXŒWŒUŒSŒRŒTŒUŒXŒ[ŒbŒhŒkŒoŒiŒbŒ[ŒUŒPŒNŒLŒLŒLŒNŒNŒOŒPŒNŒNŒLŒMŒIŒLŒPŒSŒUŒXŒUŒYŒYŒWŒTŒPŒMŒHŒEŒDŒEŒIŒMŒWŒ^ŒcŒeŒgŒeŒaŒ\ŒWŒNŒJŒKŒPŒPŒSŒVŒ]ŒeŒiŒlŒiŒfŒ^ŒXŒSŒMŒKŒKŒKŒNŒPŒTŒYŒ`ŒcŒeŒbŒ^Œ[ŒYŒXŒWŒQŒNŒOŒNŒJŒKŒLŒLŒKŒNŒSŒ\ŒaŒ_Œ\ŒTŒXŒVŒVŒTŒNŒJŒFŒFŒJŒMŒWŒaŒhŒjŒhŒeŒ_ŒYŒ_Œ_Œ^Œ\ŒZŒYŒWŒVŒUŒVŒWŒYŒ\ŒaŒeŒkŒnŒnŒlŒgŒgŒeŒbŒ_Œ^Œ]Œ\ŒZŒXŒTŒTŒUŒYŒZŒ^Œ`ŒbŒcŒ`Œ`ŒcŒfŒeŒ_Œ]ŒSŒMŒIŒEŒDŒFŒTŒaŒfŒiŒhŒdŒ_ŒXŒTŒOŒJŒAŒ>Œ9ŒCŒNŒXŒcŒiŒjŒhŒdŒaŒ]ŒWŒRŒLŒIŒLŒOŒWŒ\ŒbŒkŒqŒpŒmŒjŒgŒbŒ]ŒWŒVŒYŒcŒgŒkŒlŒnŒpŒoŒqŒoŒkŒhŒfŒbŒ`ŒaŒdŒcŒ^ŒUŒRŒPŒMŒHŒHŒKŒTŒ[Œ`ŒeŒfŒeŒ`ŒZŒVŒPŒPŒNŒPŒPŒOŒOŒPŒUŒ[Œ]Œ`ŒcŒfŒiŒhŒiŒhŒdŒ_Œ\ŒZŒXŒXŒVŒXŒYŒZŒ[Œ\Œ]Œ^Œ`Œ_Œ^Œ]Œ\Œ^ŒaŒbŒ`Œ`Œ^Œ\ŒXŒUŒSŒPŒMŒNŒOŒTŒ]Œ`ŒaŒ_Œ]ŒWŒRŒNŒGŒBŒ<Œ9Œ@ŒIŒOŒYŒdŒfŒfŒfŒbŒZŒUŒQŒKŒJŒKŒMŒSŒYŒ`ŒhŒkŒjŒfŒdŒ`Œ\ŒVŒQŒTŒRŒUŒXŒ[Œ]Œ_ŒeŒjŒkŒiŒhŒdŒbŒaŒ^Œ_Œ\ŒYŒZŒWŒTŒRŒRŒQŒTŒVŒZŒ_ŒaŒdŒfŒdŒaŒZŒPŒLŒOŒPŒNŒJŒLŒMŒPŒTŒZŒbŒiŒmŒoŒnŒjŒeŒ`Œ\ŒVŒSŒQŒOŒTŒXŒYŒZŒ]ŒaŒdŒhŒhŒhŒdŒ`Œ\ŒXŒUŒSŒTŒVŒWŒWŒXŒXŒUŒRŒRŒOŒPŒUŒVŒZŒ\Œ^Œ]ŒWŒYŒVŒTŒOŒMŒKŒLŒLŒUŒ\ŒbŒeŒdŒaŒbŒ^ŒVŒPŒKŒDŒ>Œ>ŒAŒGŒQŒ[ŒhŒmŒlŒdŒ]ŒZŒRŒLŒHŒFŒIŒLŒPŒTŒYŒ[ŒaŒdŒeŒbŒ[ŒUŒRŒOŒNŒNŒSŒWŒYŒ^Œ[Œ]ŒZŒXŒVŒXŒWŒUŒUŒWŒUŒUŒRŒNŒVŒNŒMŒKŒGŒDŒGŒMŒTŒYŒ\ŒbŒgŒjŒgŒdŒaŒ\ŒYŒUŒPŒLŒIŒIŒKŒMŒPŒSŒYŒ_ŒfŒkŒkŒhŒbŒ]ŒZŒVŒPŒPŒPŒQŒOŒLŒNŒNŒNŒLŒNŒPŒWŒ\Œ\Œ[ŒZŒYŒWŒUŒPŒIŒEŒDŒCŒEŒAŒ>ŒCŒHŒRŒWŒYŒ[ŒZŒXŒRŒKŒDŒ?Œ<Œ>Œ@ŒKŒVŒ^ŒdŒdŒcŒ^ŒYŒTŒPŒKŒEŒBŒDŒDŒDŒMŒTŒYŒ`ŒeŒeŒeŒ`ŒYŒUŒRŒOŒNŒPŒNŒOŒRŒPŒRŒTŒWŒZŒ[Œ[Œ\Œ]Œ\ŒYŒXŒVŒRŒGŒNŒMŒIŒFŒBŒ?ŒCŒIŒQŒYŒ_ŒcŒdŒdŒdŒcŒdŒ`ŒYŒRŒLŒJŒGŒGŒJŒNŒPŒSŒXŒ^ŒcŒjŒjŒgŒcŒ^Œ\ŒWŒVŒWŒXŒYŒ[Œ[ŒZŒZŒ[Œ^Œ`ŒaŒ`Œ^Œ\Œ[ŒXŒYŒ[ŒYŒWŒTŒPŒJŒFŒDŒHŒNŒVŒ`ŒgŒfŒdŒaŒ^ŒZŒUŒPŒGŒ@Œ>Œ<Œ?ŒDŒNŒ_ŒdŒaŒ\Œ\ŒYŒRŒNŒJŒGŒFŒHŒJŒMŒQŒWŒ_ŒcŒbŒaŒ^Œ[Œ[ŒYŒYŒWŒTŒRŒTŒTŒUŒXŒ_ŒfŒfŒfŒcŒbŒaŒ^Œ^Œ]ŒZŒXŒOŒNŒLŒHŒEŒBŒ>Œ>Œ@ŒAŒEŒJŒPŒWŒ^ŒcŒ`ŒXŒTŒQŒKŒIŒHŒIŒIŒGŒGŒNŒYŒ]ŒbŒfŒdŒaŒ]ŒVŒRŒTŒVŒWŒXŒXŒQŒMŒJŒJŒJŒLŒSŒ[Œ_Œ`ŒaŒ_Œ`Œ`Œ^Œ[ŒZŒXŒVŒPŒLŒKŒMŒPŒUŒVŒ\ŒaŒcŒbŒ_Œ[ŒSŒMŒJŒDŒAŒ@ŒFŒLŒTŒYŒ]Œ`Œ_Œ]Œ[ŒWŒOŒHŒCŒBŒCŒFŒJŒSŒ]ŒcŒhŒeŒcŒ`ŒYŒTŒPŒRŒTŒSŒUŒTŒUŒXŒ\ŒbŒhŒiŒhŒeŒ_ŒXŒUŒRŒRŒRŒSŒUŒ@Œ@Œ?Œ@Œ=Œ<Œ<Œ:ŒBŒMŒVŒ^ŒdŒeŒcŒ`Œ[ŒSŒOŒLŒDŒ?Œ=ŒAŒFŒQŒXŒ]ŒcŒiŒhŒhŒdŒ_ŒZŒSŒNŒLŒJŒGŒIŒQŒYŒ]ŒcŒlŒmŒkŒeŒ^Œ^ŒXŒYŒ\Œ_ŒaŒ^Œ]Œ\Œ]Œ]Œ`ŒcŒgŒiŒfŒbŒ]ŒZŒ[ŒYŒUŒSŒQŒOŒMŒIŒ?Œ:Œ9Œ<ŒDŒLŒSŒ^ŒaŒ`ŒZŒUŒOŒJŒAŒ<Œ8Œ9Œ<ŒBŒPŒ]ŒbŒbŒ`Œ]ŒWŒKŒFŒAŒ<Œ>ŒBŒKŒSŒWŒYŒbŒdŒaŒ^ŒWŒSŒOŒTŒVŒWŒXŒWŒWŒYŒAŒEŒGŒEŒCŒBŒEŒMŒOŒUŒ_ŒcŒgŒfŒdŒbŒ_Œ[ŒTŒNŒHŒEŒBŒBŒDŒDŒJŒPŒXŒ`ŒeŒfŒbŒ_Œ[ŒVŒRŒNŒKŒGŒEŒFŒIŒKŒOŒTŒXŒ]Œ`ŒcŒaŒ_ŒYŒXŒWŒUŒTŒTŒSŒSŒSŒSŒUŒVŒZŒ]Œ[ŒXŒXŒWŒXŒWŒTŒPŒNŒKŒGŒDŒAŒAŒ?ŒBŒJŒTŒ_Œ]Œ[ŒYŒTŒRŒHŒEŒCŒ@Œ<Œ:Œ=ŒHŒWŒ_ŒdŒcŒaŒ^ŒYŒOŒMŒFŒCŒEŒJŒJŒOŒSŒYŒ^ŒcŒcŒbŒaŒYŒVŒTŒVŒSŒPŒIŒEŒ?ŒIŒFŒ9Œ7Œ6Œ4Œ3Œ1Œ1Œ6Œ>ŒKŒWŒZŒ[Œ[ŒZŒUŒOŒKŒGŒBŒ@Œ<Œ:Œ?ŒCŒNŒ\ŒbŒcŒ_ŒYŒSŒOŒKŒHŒCŒ@ŒCŒEŒJŒRŒZŒdŒhŒgŒdŒ`ŒYŒSŒNŒLŒNŒNŒPŒSŒSŒWŒYŒ\Œ_ŒcŒeŒdŒaŒ_Œ[ŒZŒ[Œ\ŒZŒXŒUŒRŒPŒLŒIŒHŒJŒNŒSŒWŒZŒYŒYŒXŒUŒPŒKŒFŒ=Œ;Œ;Œ>Œ?ŒHŒRŒVŒ\Œ\ŒZŒWŒNŒFŒCŒ;Œ7Œ8Œ;ŒAŒKŒXŒaŒdŒbŒaŒ[ŒVŒSŒQŒPŒPŒRŒSŒTŒSŒ9Œ;Œ;Œ9Œ9Œ7Œ5Œ6Œ6Œ;ŒFŒNŒUŒYŒYŒYŒXŒUŒSŒOŒFŒ@Œ;Œ6Œ2Œ0Œ;ŒDŒMŒVŒ]Œ]Œ[ŒWŒPŒJŒAŒ=Œ;Œ:Œ?ŒHŒNŒQŒUŒ^ŒbŒaŒ^ŒYŒVŒRŒPŒQŒSŒWŒXŒ[Œ`ŒeŒgŒiŒiŒhŒdŒaŒ]Œ\Œ\Œ\ŒZŒZŒ[ŒYŒYŒXŒVŒVŒTŒVŒVŒWŒUŒVŒWŒUŒXŒVŒTŒRŒNŒJŒBŒ<Œ8Œ;Œ8Œ?ŒKŒTŒZŒYŒ[ŒWŒPŒIŒ@Œ;Œ;Œ=ŒCŒKŒSŒ_ŒdŒdŒ`Œ[ŒVŒQŒMŒLŒMŒNŒPŒSŒXŒ^Œ1ŒAŒDŒDŒ?Œ;Œ;Œ>Œ=Œ>ŒGŒNŒVŒ\Œ]Œ\ŒZŒVŒRŒKŒEŒ>Œ9Œ4Œ1Œ2Œ<ŒCŒPŒ]ŒbŒaŒ]ŒVŒRŒHŒCŒ>Œ8Œ:Œ<ŒBŒKŒWŒ`ŒfŒeŒaŒXŒPŒJŒAŒ;Œ9Œ;Œ>ŒCŒJŒQŒ\ŒcŒeŒbŒbŒ`Œ_Œ[ŒXŒXŒYŒ[ŒZŒ[Œ\Œ^ŒaŒ`ŒcŒeŒdŒaŒ\ŒXŒWŒWŒWŒWŒVŒTŒRŒLŒCŒ;Œ8Œ6Œ7Œ7Œ<ŒHŒRŒ[ŒZŒWŒPŒKŒDŒBŒ=Œ;Œ9Œ:Œ?ŒIŒRŒ\ŒaŒbŒ`ŒYŒUŒQŒMŒMŒNŒQŒTŒZŒbŒIŒSŒSŒUŒZŒ]Œ`ŒcŒeŒgŒcŒbŒ`Œ`Œ]Œ^ŒZŒUŒQŒIŒ?Œ:Œ5Œ3Œ1Œ5Œ=ŒFŒQŒYŒ\Œ[ŒWŒQŒNŒJŒ?Œ:Œ6Œ7Œ9Œ9ŒCŒPŒYŒ]Œ_Œ^ŒYŒTŒOŒIŒCŒ@ŒBŒCŒEŒGŒNŒYŒcŒiŒgŒeŒbŒ]ŒWŒSŒSŒRŒSŒVŒYŒ_ŒdŒiŒmŒlŒjŒeŒbŒ]Œ\Œ[ŒYŒYŒVŒSŒUŒVŒUŒTŒTŒVŒVŒVŒUŒWŒUŒVŒVŒZŒ\ŒXŒTŒIŒCŒ=Œ8Œ8Œ@ŒMŒVŒ\ŒaŒaŒ_Œ^ŒTŒOŒIŒGŒEŒBŒAŒBŒCŒFŒYŒWŒYŒ\Œ`ŒbŒcŒfŒdŒaŒ`Œ_Œ[ŒZŒXŒVŒVŒXŒZŒZŒXŒVŒTŒUŒXŒZŒVŒTŒUŒVŒ[Œ\Œ[ŒZŒZŒWŒRŒJŒAŒ=Œ:Œ9Œ@ŒJŒVŒ]Œ`Œ^ŒZŒUŒOŒGŒ?Œ:Œ7Œ6Œ<ŒAŒOŒ\ŒdŒgŒeŒbŒ_Œ[ŒUŒOŒIŒLŒLŒIŒOŒRŒ[ŒcŒiŒmŒlŒgŒcŒ_ŒZŒXŒUŒQŒQŒPŒSŒUŒVŒTŒQŒRŒVŒZŒ\Œ_Œ^Œ]Œ]Œ[ŒZŒWŒTŒOŒKŒDŒ>Œ=Œ?ŒJŒSŒ\Œ^Œ[ŒWŒTŒOŒJŒBŒ;Œ7Œ8Œ=ŒDŒNŒ[ŒeŒnŒmŒmŒjŒfŒaŒ_Œ^ŒZŒVŒUŒSŒRŒRŒUŒWŒVŒWŒUŒWŒZŒ[Œ_ŒaŒ_Œ^Œ\Œ]Œ^Œ\Œ\ŒZŒXŒUŒOŒHŒCŒ>Œ:Œ7Œ9Œ@ŒJŒTŒ^Œ_Œ^ŒXŒUŒQŒGŒCŒ>Œ;Œ>ŒDŒIŒUŒ_ŒeŒgŒcŒ^ŒYŒUŒQŒMŒHŒIŒHŒIŒMŒPŒUŒ^ŒcŒhŒfŒbŒ\ŒUŒUŒSŒNŒOŒRŒRŒRŒRŒTŒSŒOŒPŒOŒQŒRŒQŒQŒQŒPŒNŒQŒNŒJŒHŒEŒBŒ@ŒBŒFŒNŒWŒ[Œ]ŒYŒXŒUŒPŒNŒIŒCŒ>Œ>ŒBŒLŒYŒeŒdŒhŒfŒfŒeŒdŒaŒ^Œ\ŒZŒWŒUŒTŒUŒWŒWŒWŒYŒ[Œ^ŒfŒiŒlŒjŒgŒeŒbŒ^ŒZŒYŒZŒYŒXŒVŒZŒZŒXŒTŒWŒXŒYŒ\Œ\Œ]Œ]Œ]Œ_Œ]ŒVŒOŒIŒMŒLŒGŒAŒ:Œ=ŒFŒVŒ^ŒaŒbŒ`Œ_Œ\ŒXŒRŒNŒJŒGŒEŒJŒSŒZŒaŒfŒkŒjŒhŒdŒ`ŒXŒSŒTŒUŒWŒ[ŒZŒ]ŒcŒjŒoŒoŒlŒhŒaŒ^ŒZŒXŒWŒWŒXŒXŒWŒSŒRŒPŒMŒJŒKŒQŒXŒ[Œ]Œ]Œ^Œ\ŒZŒWŒUŒRŒIŒAŒ?Œ>ŒBŒHŒPŒjŒgŒgŒiŒjŒhŒfŒ_ŒXŒWŒRŒOŒNŒMŒRŒVŒZŒbŒfŒhŒjŒlŒnŒmŒiŒcŒ]Œ]Œ[ŒYŒWŒZŒ[Œ\Œ]Œ_ŒaŒbŒbŒeŒ_Œ\Œ\ŒZŒZŒYŒ[ŒZŒYŒXŒVŒTŒMŒEŒ@Œ>Œ?ŒBŒJŒTŒXŒ\Œ^Œ_Œ\ŒTŒOŒOŒJŒAŒ?ŒBŒLŒTŒ_ŒgŒjŒjŒfŒbŒ_ŒZŒVŒTŒPŒMŒOŒNŒKŒHŒKŒNŒTŒVŒ]Œ^Œ]ŒWŒSŒPŒQŒNŒMŒKŒIŒNŒTŒWŒYŒ[Œ`ŒbŒ`Œ^Œ[Œ]Œ^Œ]Œ[ŒYŒTŒPŒOŒJŒEŒBŒFŒOŒmŒbŒbŒbŒbŒaŒ^ŒYŒVŒQŒNŒIŒGŒJŒOŒXŒ\Œ_ŒcŒhŒkŒiŒgŒdŒ_Œ[ŒUŒTŒTŒTŒUŒUŒXŒZŒ\ŒZŒYŒYŒVŒWŒXŒWŒUŒQŒRŒOŒOŒOŒMŒNŒMŒJŒFŒDŒCŒDŒHŒKŒQŒUŒWŒXŒ\Œ[ŒXŒSŒNŒHŒEŒDŒBŒHŒJŒOŒXŒ_ŒdŒcŒ`ŒZŒUŒLŒGŒCŒAŒGŒOŒWŒZŒaŒhŒjŒiŒgŒdŒ^Œ[ŒWŒSŒRŒQŒQŒUŒUŒXŒ\ŒaŒgŒjŒjŒgŒeŒaŒ^Œ^Œ]Œ`Œ_Œ]Œ[Œ[ŒYŒXŒXŒWŒWŒXŒ[ŒfŒ]Œ]Œ]Œ\Œ\ŒYŒSŒOŒLŒDŒ?Œ;Œ9Œ8Œ;Œ@ŒIŒQŒZŒbŒfŒiŒfŒdŒcŒ_Œ\ŒYŒVŒUŒVŒVŒUŒXŒVŒZŒ]ŒcŒeŒdŒaŒ\ŒZŒXŒUŒVŒUŒTŒQŒRŒTŒRŒOŒMŒKŒJŒLŒNŒSŒVŒVŒWŒYŒXŒTŒKŒFŒ?Œ8Œ5Œ@ŒLŒUŒ`ŒcŒdŒaŒ^ŒYŒUŒOŒHŒBŒCŒBŒFŒLŒUŒ]ŒhŒmŒiŒfŒ^ŒXŒVŒTŒVŒXŒZŒ[Œ\Œ\ŒWŒUŒSŒTŒXŒ[ŒXŒTŒSŒQŒPŒPŒKŒQŒUŒUŒTŒRŒPŒNŒOŒRŒUŒZŒdŒYŒYŒ^Œ_Œ^Œ[ŒYŒUŒPŒLŒFŒ@Œ=Œ?ŒDŒLŒVŒ]ŒcŒcŒdŒeŒeŒcŒaŒZŒUŒPŒIŒJŒKŒOŒQŒRŒTŒUŒVŒWŒYŒZŒZŒ[ŒXŒTŒRŒOŒMŒSŒXŒWŒUŒSŒMŒJŒFŒFŒGŒMŒQŒSŒUŒTŒPŒNŒQŒOŒKŒGŒDŒCŒCŒGŒIŒSŒ[Œ\Œ[ŒYŒVŒQŒNŒJŒCŒ=Œ>ŒBŒJŒSŒ\ŒcŒaŒ`Œ]ŒYŒTŒPŒMŒOŒNŒNŒNŒQŒVŒ\ŒaŒdŒgŒeŒbŒbŒ]ŒZŒVŒYŒVŒTŒVŒVŒVŒTŒPŒMŒLŒIŒKŒOŒSŒ]ŒWŒVŒUŒVŒTŒTŒTŒOŒMŒJŒCŒ?Œ=Œ>ŒBŒKŒPŒUŒ[ŒcŒaŒbŒaŒ^Œ[ŒWŒTŒRŒRŒMŒNŒOŒSŒYŒcŒiŒmŒkŒjŒfŒbŒ`Œ]ŒYŒVŒTŒSŒVŒYŒ[Œ\Œ`ŒbŒfŒiŒgŒdŒ_Œ\ŒZŒZŒXŒYŒYŒUŒSŒNŒJŒGŒCŒAŒEŒHŒOŒVŒ[Œ[ŒUŒUŒUŒTŒPŒIŒDŒ?Œ?ŒEŒPŒWŒ^ŒdŒcŒ`Œ[ŒVŒRŒLŒFŒBŒBŒEŒJŒRŒ]ŒcŒgŒfŒeŒcŒ^ŒZŒWŒTŒTŒWŒVŒZŒ[Œ\Œ^ŒaŒbŒeŒdŒcŒ_Œ_ŒdŒ]Œ\Œ]Œ]Œ[ŒZŒXŒVŒRŒNŒFŒ>Œ8Œ5Œ8Œ=ŒEŒOŒ[ŒdŒgŒfŒbŒ]ŒWŒQŒLŒGŒ@Œ@ŒCŒJŒSŒ[ŒeŒjŒhŒfŒ^ŒZŒUŒOŒLŒKŒOŒRŒUŒ[Œ`ŒcŒfŒhŒhŒfŒbŒ]ŒYŒYŒWŒTŒUŒWŒXŒUŒQŒLŒJŒAŒ:Œ6Œ7Œ<ŒHŒRŒXŒYŒVŒTŒPŒJŒDŒ=Œ:Œ5Œ5Œ6Œ:ŒGŒRŒ[ŒbŒ_Œ^ŒWŒPŒKŒAŒ;Œ8Œ<ŒBŒHŒPŒYŒ`ŒeŒfŒaŒ[ŒRŒMŒIŒIŒJŒMŒNŒTŒ[Œ`ŒeŒjŒiŒeŒ`Œ^Œ\Œ[Œ_ŒZŒYŒVŒXŒWŒWŒTŒQŒLŒFŒ@Œ<Œ7Œ7Œ6Œ8Œ@ŒEŒLŒRŒVŒZŒ\ŒZŒVŒTŒNŒJŒEŒGŒHŒKŒPŒTŒXŒ]ŒaŒ`ŒZŒUŒSŒRŒTŒRŒSŒSŒUŒWŒXŒZŒ]ŒaŒdŒeŒbŒ\ŒWŒRŒSŒSŒTŒTŒSŒTŒRŒOŒLŒIŒEŒBŒBŒDŒIŒPŒUŒVŒTŒSŒOŒHŒEŒEŒBŒ;Œ5Œ4Œ7Œ<ŒDŒPŒ[Œ`Œ`Œ]ŒZŒUŒIŒAŒ>Œ;Œ<Œ?ŒEŒLŒWŒ_ŒdŒdŒ`ŒXŒQŒMŒJŒMŒMŒPŒTŒYŒ]ŒaŒfŒeŒaŒ\Œ\ŒWŒSŒcŒYŒZŒ[ŒZŒZŒXŒOŒJŒFŒFŒEŒBŒ=Œ9Œ9Œ<ŒAŒJŒZŒaŒcŒbŒ]ŒXŒSŒLŒFŒ@Œ;Œ<ŒDŒMŒWŒ^ŒeŒeŒdŒcŒ_Œ\ŒWŒPŒLŒGŒFŒBŒ?ŒBŒEŒLŒWŒ`ŒdŒiŒfŒ^ŒTŒPŒMŒKŒJŒHŒHŒJŒJŒKŒKŒPŒUŒUŒVŒVŒUŒSŒUŒSŒRŒOŒKŒFŒIŒHŒGŒDŒEŒIŒMŒUŒZŒ]Œ`Œ_Œ^ŒYŒVŒRŒLŒFŒ@Œ@ŒCŒEŒMŒYŒeŒhŒfŒaŒ[ŒYŒRŒNŒJŒGŒJŒNŒXŒaŒgŒjŒiŒhŒeŒ`Œ\ŒUŒRŒ]ŒZŒZŒYŒ[ŒZŒZŒYŒWŒSŒMŒJŒFŒ@Œ>Œ<Œ?ŒCŒIŒPŒWŒZŒ\ŒZŒVŒRŒNŒIŒCŒ>Œ9Œ9Œ?ŒHŒQŒ\ŒaŒcŒbŒ^ŒZŒTŒOŒHŒBŒAŒDŒJŒPŒVŒ\Œ`ŒdŒdŒcŒ`ŒZŒUŒNŒMŒKŒNŒSŒUŒZŒ_ŒeŒjŒkŒiŒgŒbŒ\ŒYŒUŒWŒYŒXŒWŒSŒPŒLŒHŒEŒCŒEŒDŒFŒKŒNŒPŒSŒRŒRŒPŒKŒGŒ?Œ7Œ2Œ-Œ*Œ1Œ?ŒPŒ\Œ_Œ]Œ[ŒXŒTŒOŒJŒCŒ>Œ;Œ=ŒBŒKŒVŒaŒfŒgŒbŒ\ŒXŒQŒMŒYŒYŒWŒXŒXŒWŒXŒUŒUŒPŒKŒGŒEŒ@Œ>Œ:Œ;Œ?ŒAŒIŒOŒRŒXŒXŒUŒPŒJŒGŒ@Œ6Œ.Œ.Œ2Œ@ŒMŒWŒ]ŒbŒbŒ^Œ[ŒQŒKŒEŒAŒ=Œ<Œ>ŒDŒJŒPŒ]ŒeŒeŒaŒ]ŒYŒVŒNŒIŒEŒGŒJŒOŒUŒYŒaŒfŒiŒhŒfŒbŒ^Œ[ŒXŒUŒVŒWŒVŒSŒSŒQŒPŒQŒQŒWŒ[ŒZŒZŒYŒXŒXŒWŒUŒPŒNŒIŒBŒ;Œ6Œ/Œ2Œ3Œ?ŒMŒXŒ\Œ\ŒZŒWŒPŒIŒBŒ:Œ6Œ7Œ?ŒEŒIŒQŒYŒ^Œ_Œ[ŒYŒYŒVŒRŒ_Œ^ŒZŒUŒVŒSŒSŒPŒNŒOŒLŒNŒQŒRŒVŒZŒ]Œ_Œ_Œ_Œ`ŒbŒaŒ]Œ\Œ[ŒYŒRŒOŒJŒCŒAŒ<ŒDŒNŒXŒ\Œ]Œ_Œ`Œ^ŒXŒTŒOŒIŒ@Œ>Œ?ŒGŒRŒ]ŒdŒgŒcŒaŒ_Œ[ŒWŒNŒIŒEŒEŒIŒOŒUŒ\ŒdŒkŒlŒjŒgŒaŒ^ŒYŒVŒTŒVŒYŒ\Œ_ŒcŒhŒmŒnŒlŒkŒhŒcŒbŒaŒ`Œ^Œ[ŒVŒZŒ[Œ\ŒZŒXŒTŒQŒPŒPŒQŒVŒ]Œ_Œ`Œ_ŒXŒVŒSŒPŒJŒCŒ<Œ:ŒBŒLŒTŒ`ŒfŒgŒdŒYŒRŒLŒFŒ\Œ[ŒZŒZŒ[Œ]Œ[ŒZŒYŒYŒ\Œ]Œ`ŒgŒiŒgŒeŒeŒcŒ_Œ\Œ[Œ[ŒZŒZŒYŒWŒSŒSŒQŒPŒQŒSŒWŒWŒXŒXŒYŒYŒYŒSŒNŒLŒIŒCŒ>Œ:Œ=ŒEŒNŒWŒ\Œ^Œ]Œ\Œ[ŒWŒTŒLŒGŒFŒGŒGŒFŒIŒOŒ[ŒbŒcŒeŒeŒbŒ]ŒZŒUŒSŒTŒXŒZŒ\Œ]ŒbŒeŒbŒeŒhŒhŒfŒbŒ`Œ^Œ]Œ_Œ\Œ\ŒYŒZŒYŒZŒZŒ]ŒaŒbŒ`Œ^Œ^Œ]Œ]Œ]Œ\ŒXŒSŒNŒFŒ>Œ:Œ9Œ=ŒOŒZŒbŒdŒaŒ_Œ\ŒXŒRŒLŒYŒ[ŒZŒXŒVŒTŒTŒSŒUŒTŒVŒWŒ\ŒaŒeŒiŒgŒdŒaŒ_Œ\ŒZŒWŒTŒQŒRŒPŒKŒJŒQŒQŒVŒaŒcŒ`Œ\ŒZŒWŒXŒWŒYŒ^Œ^Œ[ŒVŒSŒRŒRŒVŒXŒYŒ[Œ]Œ_Œ\Œ]ŒYŒWŒRŒLŒJŒHŒIŒKŒMŒWŒaŒdŒfŒdŒaŒYŒTŒRŒMŒJŒIŒLŒOŒSŒWŒaŒiŒmŒmŒjŒfŒbŒ]ŒZŒXŒXŒXŒYŒXŒZŒYŒ\Œ^Œ`ŒeŒfŒdŒbŒ_Œ]Œ[ŒZŒ[ŒZŒ\ŒZŒYŒTŒPŒLŒIŒKŒNŒOŒUŒZŒ\Œ[Œ[ŒXŒRŒNŒWŒWŒXŒWŒVŒVŒVŒXŒWŒ`ŒeŒiŒlŒkŒiŒhŒdŒ_Œ\ŒYŒWŒUŒUŒXŒYŒ\Œ`ŒcŒfŒiŒjŒiŒgŒdŒbŒ]ŒZŒ[Œ^Œ^ŒZŒWŒTŒPŒMŒIŒHŒJŒNŒRŒVŒ[Œ\ŒYŒVŒSŒQŒOŒJŒBŒ=Œ8Œ9Œ>ŒGŒPŒ]ŒcŒdŒbŒ_ŒZŒWŒRŒLŒHŒKŒMŒWŒ_ŒdŒhŒkŒlŒjŒeŒbŒ^ŒXŒUŒRŒQŒSŒVŒZŒ\Œ[Œ_ŒgŒiŒkŒhŒfŒbŒaŒ\ŒXŒWŒYŒZŒWŒUŒTŒRŒRŒTŒTŒXŒ\Œ]Œ_Œ_Œ^Œ]ŒZŒUŒKŒ?ŒUŒTŒQŒMŒPŒRŒTŒVŒWŒXŒ_ŒbŒhŒjŒgŒeŒ^ŒZŒXŒWŒXŒVŒWŒXŒYŒZŒ`ŒeŒjŒnŒlŒiŒdŒ`Œ]Œ\Œ[ŒYŒ[Œ]Œ_Œ]Œ^Œ_Œ[Œ]Œ`ŒaŒaŒ^Œ\Œ[ŒXŒVŒTŒVŒTŒSŒOŒKŒEŒ?Œ:Œ>ŒHŒXŒ_ŒbŒ`Œ^Œ[ŒXŒUŒQŒKŒGŒDŒDŒGŒMŒUŒdŒkŒjŒgŒcŒ`Œ[ŒXŒWŒTŒNŒIŒIŒJŒQŒVŒ\Œ^Œ^Œ]Œ\ŒYŒUŒQŒRŒSŒUŒWŒYŒ[ŒZŒWŒXŒ\Œ_Œ`Œ^Œ]Œ[ŒYŒYŒYŒ[ŒYŒVŒRŒKŒNŒEŒFŒHŒJŒJŒKŒPŒUŒYŒ_ŒdŒgŒhŒfŒeŒaŒ[ŒWŒNŒHŒEŒBŒAŒBŒCŒGŒKŒVŒ`ŒfŒgŒfŒeŒcŒ_ŒWŒQŒRŒQŒSŒRŒQŒQŒRŒVŒ_ŒdŒdŒ`Œ\ŒZŒXŒTŒTŒSŒSŒRŒPŒOŒMŒHŒFŒHŒKŒQŒWŒ[ŒaŒcŒaŒ]Œ[ŒWŒRŒMŒHŒAŒ=Œ=ŒEŒPŒ[ŒcŒdŒcŒ`Œ[ŒXŒSŒJŒFŒCŒBŒFŒDŒBŒFŒNŒSŒ^ŒcŒbŒ]ŒWŒQŒNŒNŒNŒNŒKŒGŒHŒMŒMŒQŒXŒ\Œ[ŒYŒVŒTŒTŒRŒNŒKŒIŒFŒFŒIŒHŒFŒDŒEŒFŒHŒKŒPŒVŒ\Œ`ŒcŒcŒaŒZŒUŒQŒKŒFŒGŒHŒLŒOŒTŒ[Œ`ŒhŒiŒgŒeŒaŒ]Œ[ŒXŒXŒWŒVŒSŒQŒPŒQŒQŒRŒSŒWŒ[Œ^Œ\Œ[ŒXŒVŒQŒNŒPŒUŒTŒRŒNŒKŒFŒDŒDŒHŒOŒTŒWŒWŒYŒXŒUŒRŒNŒEŒAŒ=Œ>ŒDŒMŒSŒZŒ_Œ`Œ`Œ_Œ\ŒXŒRŒNŒIŒGŒFŒGŒGŒJŒNŒUŒ^ŒbŒcŒ`Œ\ŒWŒQŒMŒJŒJŒKŒMŒOŒMŒNŒQŒWŒ[ŒZŒ_Œ\ŒZŒYŒVŒVŒWŒXŒVŒSŒPŒAŒ;Œ9Œ8Œ8Œ<Œ@ŒDŒJŒSŒXŒ^ŒbŒbŒaŒ_ŒZŒVŒOŒHŒCŒ@Œ@ŒBŒEŒKŒSŒZŒbŒeŒdŒbŒaŒ\ŒXŒWŒUŒTŒSŒTŒVŒXŒ^ŒaŒeŒjŒmŒlŒgŒcŒ_ŒYŒVŒRŒPŒQŒPŒOŒRŒPŒQŒSŒWŒZŒYŒXŒXŒWŒYŒWŒTŒPŒLŒHŒEŒAŒ<Œ=ŒAŒJŒSŒ\ŒcŒcŒ`Œ]ŒZŒTŒOŒLŒHŒCŒFŒGŒJŒPŒXŒcŒhŒgŒeŒbŒ_ŒWŒQŒNŒMŒHŒJŒNŒPŒRŒUŒXŒ_ŒbŒbŒ`Œ^Œ]Œ[ŒZŒZŒWŒTŒSŒLŒIŒ@Œ;Œ<Œ@ŒFŒJŒOŒTŒYŒ]Œ\Œ^Œ_Œ]Œ]ŒZŒSŒOŒKŒGŒDŒBŒ@ŒCŒFŒMŒUŒ]ŒcŒeŒeŒbŒ\ŒXŒTŒOŒLŒJŒHŒJŒKŒMŒQŒTŒZŒ`ŒfŒeŒbŒ\ŒVŒNŒIŒHŒIŒIŒLŒIŒKŒOŒMŒPŒQŒUŒUŒSŒQŒSŒRŒTŒTŒQŒPŒNŒKŒFŒCŒAŒ=ŒCŒMŒUŒYŒXŒWŒUŒQŒKŒDŒAŒ>Œ?ŒCŒFŒKŒTŒ]ŒbŒcŒaŒ\ŒYŒUŒMŒGŒAŒ?Œ=ŒBŒEŒKŒVŒaŒhŒjŒgŒcŒ]ŒZŒXŒRŒOŒRŒUŒUŒVŒXŒ]ŒAŒ;Œ<Œ;Œ=Œ>ŒFŒMŒTŒYŒ\Œ]Œ_Œ_Œ^Œ]ŒWŒPŒKŒFŒ@ŒAŒCŒHŒNŒYŒaŒeŒfŒeŒaŒ_ŒYŒSŒNŒFŒCŒAŒCŒGŒJŒNŒRŒXŒ_ŒhŒiŒgŒaŒZŒWŒRŒNŒPŒOŒRŒPŒMŒIŒHŒKŒQŒTŒXŒZŒYŒWŒXŒZŒUŒSŒOŒOŒMŒJŒDŒ@Œ=ŒAŒGŒOŒVŒYŒZŒZŒWŒTŒPŒKŒFŒ@Œ>ŒAŒFŒMŒVŒ[Œ_Œ`Œ^Œ[ŒYŒVŒTŒNŒHŒEŒFŒIŒOŒYŒbŒeŒeŒeŒdŒaŒ]ŒWŒTŒSŒQŒSŒRŒLŒIŒHŒKŒ?Œ8Œ9Œ7Œ8Œ7Œ9Œ>ŒFŒPŒZŒ^Œ`ŒaŒ_Œ\ŒWŒSŒLŒCŒ>Œ;Œ9Œ;Œ>ŒDŒOŒUŒ[Œ^Œ^Œ]ŒYŒSŒMŒGŒCŒAŒBŒEŒKŒTŒ[ŒbŒfŒeŒcŒbŒ]ŒYŒWŒSŒRŒTŒWŒVŒUŒZŒ`ŒdŒeŒfŒeŒdŒbŒ]ŒZŒ[Œ[ŒVŒUŒVŒWŒVŒUŒTŒUŒZŒXŒYŒXŒZŒYŒWŒTŒVŒVŒWŒUŒTŒOŒNŒOŒRŒVŒYŒ[Œ^Œ`Œ_Œ]Œ[ŒZŒXŒSŒLŒHŒEŒDŒFŒMŒSŒ[Œ\Œ\Œ\Œ^Œ[ŒUŒPŒLŒIŒJŒLŒJŒNŒNŒNŒCŒAŒBŒDŒGŒKŒOŒSŒVŒ[Œ_Œ`Œ_Œ]Œ\ŒZŒWŒTŒOŒKŒHŒEŒAŒAŒBŒGŒVŒ^ŒbŒdŒdŒcŒ`ŒZŒUŒLŒHŒEŒCŒCŒEŒMŒUŒ^ŒcŒgŒfŒcŒaŒZŒUŒIŒEŒBŒBŒDŒHŒKŒPŒSŒWŒ^ŒbŒ`Œ]Œ]ŒYŒVŒUŒTŒRŒRŒQŒQŒRŒQŒRŒPŒSŒWŒ[ŒZŒXŒZŒYŒYŒXŒVŒRŒPŒNŒKŒGŒEŒBŒFŒKŒVŒ_ŒbŒdŒbŒ`Œ\ŒUŒMŒHŒ@Œ;Œ=ŒEŒPŒYŒeŒjŒhŒdŒ]ŒWŒSŒPŒMŒLŒGŒGŒHŒMŒQŒOŒKŒLŒOŒTŒYŒ]Œ_ŒaŒaŒ_ŒZŒZŒYŒXŒVŒSŒOŒNŒJŒGŒBŒ>ŒAŒDŒMŒUŒ\ŒaŒ`Œ^Œ]Œ[ŒSŒKŒFŒCŒ@Œ>Œ@ŒEŒKŒVŒ`ŒeŒhŒfŒ^ŒWŒQŒLŒGŒCŒ@ŒAŒCŒFŒIŒTŒYŒ^Œ`Œ[ŒWŒTŒNŒOŒMŒLŒKŒJŒJŒIŒNŒMŒPŒSŒWŒYŒWŒTŒPŒQŒPŒOŒNŒMŒKŒHŒGŒCŒAŒ?Œ@ŒDŒLŒQŒYŒ^Œ\ŒZŒVŒQŒIŒEŒ@Œ;Œ9Œ;Œ>ŒEŒQŒ\ŒcŒbŒ_Œ[ŒWŒQŒKŒEŒ@Œ?ŒAŒBŒEŒLŒSŒVŒYŒ\Œ\Œ`Œ^Œ_Œ`Œ`Œ_Œ_Œ]Œ[Œ[Œ[ŒWŒRŒNŒJŒHŒDŒAŒ@ŒAŒFŒNŒTŒZŒ^Œ^Œ^Œ\Œ[ŒUŒNŒGŒ>Œ;Œ8Œ<Œ@ŒHŒTŒ^ŒdŒgŒdŒ`ŒXŒVŒTŒOŒHŒEŒEŒKŒRŒYŒeŒkŒkŒhŒeŒbŒ^ŒXŒSŒPŒNŒLŒIŒIŒMŒPŒTŒXŒ`ŒcŒbŒ_Œ^Œ\ŒVŒQŒKŒHŒIŒGŒEŒIŒMŒQŒWŒZŒ^Œ[Œ]Œ[Œ[Œ[ŒZŒXŒUŒQŒKŒGŒEŒBŒCŒHŒSŒ[ŒaŒdŒcŒ`Œ]Œ\ŒWŒRŒJŒFŒDŒDŒJŒSŒ_ŒfŒUŒYŒZŒ_ŒbŒbŒ`Œ^Œ^Œ\ŒZŒXŒXŒXŒXŒYŒWŒUŒSŒSŒRŒRŒNŒLŒMŒPŒSŒRŒUŒYŒXŒWŒVŒTŒRŒMŒGŒDŒ@ŒAŒBŒFŒKŒPŒVŒ[Œ_Œ]ŒZŒRŒNŒGŒBŒBŒAŒCŒJŒRŒ^ŒhŒhŒfŒcŒ]ŒVŒOŒIŒFŒEŒLŒQŒTŒWŒYŒ\ŒeŒhŒeŒ_Œ\ŒXŒTŒOŒLŒKŒLŒKŒIŒJŒHŒIŒJŒMŒQŒVŒZŒ\ŒZŒZŒXŒVŒRŒNŒNŒIŒDŒ?Œ:Œ9Œ<ŒHŒSŒ]ŒbŒbŒ_Œ]ŒTŒMŒFŒ@Œ;Œ8Œ;Œ@ŒFŒQŒ\ŒWŒ\Œ[Œ_ŒcŒbŒ`Œ]Œ\ŒYŒSŒQŒPŒQŒPŒNŒOŒPŒRŒPŒQŒRŒUŒSŒTŒRŒSŒSŒTŒVŒWŒTŒOŒLŒIŒGŒCŒ?Œ;Œ=ŒAŒGŒSŒZŒ]Œ[ŒUŒRŒNŒLŒHŒBŒ=Œ:Œ8Œ<ŒEŒOŒ[Œ`ŒcŒbŒ\ŒVŒRŒMŒHŒCŒ?Œ@ŒAŒEŒJŒOŒTŒXŒ\Œ]ŒWŒRŒMŒJŒEŒCŒAŒ?Œ=Œ:Œ;Œ=Œ>Œ@ŒEŒJŒQŒSŒTŒQŒMŒLŒMŒJŒHŒGŒGŒDŒ@Œ?ŒAŒCŒHŒPŒVŒ\Œ^Œ\ŒXŒTŒMŒKŒHŒAŒ@ŒBŒEŒEŒMŒUŒ]ŒaŒbŒaŒbŒbŒaŒ_Œ\ŒVŒPŒLŒGŒDŒCŒBŒBŒCŒFŒKŒRŒ\Œ`ŒaŒ_Œ^Œ\ŒYŒWŒRŒOŒKŒHŒJŒHŒIŒJŒOŒVŒ\Œ_Œ_ŒbŒ_Œ_Œ^Œ[ŒXŒPŒKŒFŒGŒHŒJŒOŒWŒ`ŒdŒfŒfŒeŒbŒ[ŒVŒSŒMŒIŒGŒDŒ@Œ?ŒCŒGŒQŒ\Œ^Œ`Œ`Œ^Œ[ŒYŒSŒOŒJŒJŒJŒGŒEŒFŒIŒMŒSŒZŒ_Œ`Œ\ŒXŒRŒQŒRŒOŒMŒMŒJŒHŒIŒIŒKŒNŒSŒYŒYŒYŒZŒ[Œ]Œ\ŒZŒVŒSŒMŒGŒBŒ=Œ?ŒEŒOŒXŒbŒYŒUŒTŒXŒZŒVŒQŒMŒHŒCŒAŒ@Œ?Œ>Œ?Œ=Œ?ŒFŒJŒIŒKŒLŒKŒMŒLŒKŒJŒJŒLŒIŒHŒHŒIŒGŒFŒEŒ@Œ<Œ?Œ@ŒCŒKŒSŒUŒYŒXŒXŒUŒOŒJŒCŒ=Œ7Œ6Œ5Œ:ŒCŒUŒ`ŒaŒ^Œ[ŒXŒTŒNŒHŒAŒ;Œ8Œ7Œ?ŒHŒTŒaŒcŒcŒaŒ\ŒXŒRŒNŒHŒFŒFŒEŒHŒLŒRŒYŒaŒgŒiŒeŒ\ŒZŒVŒVŒVŒTŒQŒQŒQŒQŒSŒQŒPŒSŒRŒSŒQŒQŒTŒSŒRŒOŒOŒMŒJŒHŒBŒ>Œ=Œ<Œ=Œ=ŒBŒIŒdŒeŒeŒaŒ`Œ^ŒYŒTŒPŒLŒIŒEŒEŒDŒEŒ@ŒFŒLŒRŒYŒ_ŒaŒ_Œ]ŒYŒSŒPŒNŒLŒKŒJŒHŒGŒIŒJŒOŒSŒXŒ^Œ]ŒZŒZŒWŒTŒSŒSŒQŒPŒMŒKŒFŒ@Œ<Œ;Œ=ŒAŒFŒIŒQŒWŒVŒWŒUŒRŒOŒIŒDŒ>Œ7Œ6Œ7Œ=ŒGŒQŒZŒ^Œ\ŒXŒTŒPŒLŒEŒAŒ?Œ?ŒDŒIŒMŒSŒ[ŒcŒeŒbŒ_ŒYŒUŒQŒNŒKŒJŒJŒMŒKŒOŒPŒTŒXŒ^ŒaŒ`Œ\ŒZŒXŒSŒQŒOŒNŒLŒKŒFŒBŒBŒDŒGŒMŒRŒVŒUŒcŒ\Œ[Œ\Œ[ŒZŒXŒRŒKŒGŒCŒDŒCŒCŒAŒDŒFŒAŒBŒFŒKŒTŒ\Œ[Œ[ŒXŒSŒQŒPŒMŒJŒHŒGŒGŒHŒJŒMŒQŒUŒWŒXŒVŒUŒTŒRŒSŒRŒPŒLŒIŒDŒ@Œ<Œ:Œ9Œ;Œ@ŒHŒQŒXŒZŒ[ŒZŒVŒQŒIŒBŒ=Œ8Œ8Œ9Œ?ŒEŒLŒWŒ^Œ^Œ^ŒYŒRŒLŒHŒFŒEŒBŒ@Œ@ŒCŒKŒSŒ[ŒbŒdŒ_Œ\ŒXŒTŒPŒKŒJŒJŒJŒIŒKŒLŒNŒPŒSŒSŒSŒRŒMŒJŒIŒNŒMŒLŒKŒHŒGŒCŒ?Œ=Œ?ŒBŒDŒKŒRŒeŒ`Œ^Œ\ŒZŒXŒVŒTŒPŒJŒEŒAŒ=Œ=Œ;Œ;Œ@ŒFŒNŒWŒbŒbŒaŒ\ŒUŒMŒIŒCŒ@Œ<Œ:Œ8Œ8Œ;Œ<ŒAŒDŒGŒMŒPŒOŒOŒMŒJŒGŒGŒEŒCŒCŒDŒFŒDŒBŒBŒEŒHŒMŒQŒUŒUŒTŒSŒSŒPŒMŒKŒGŒEŒEŒDŒFŒNŒVŒ\Œ`Œ`Œ]ŒYŒVŒRŒLŒEŒ@Œ=Œ<Œ;Œ=ŒFŒNŒUŒ`ŒfŒ`Œ^ŒTŒMŒHŒ>Œ:Œ5Œ6Œ8Œ;Œ?ŒDŒLŒQŒUŒVŒUŒQŒNŒIŒFŒCŒ@Œ>Œ>Œ>Œ>Œ>ŒAŒBŒGŒLŒQŒOŒOŒ]Œ^Œ]Œ\ŒZŒYŒXŒUŒQŒLŒCŒ?Œ<Œ:Œ;Œ>ŒAŒGŒOŒXŒ_ŒaŒ`Œ^ŒXŒTŒNŒKŒIŒGŒEŒFŒHŒHŒIŒLŒPŒVŒ\ŒZŒVŒRŒQŒRŒQŒOŒPŒNŒOŒOŒNŒPŒRŒWŒYŒWŒUŒQŒRŒRŒQŒPŒMŒJŒFŒDŒBŒCŒ<Œ<Œ?ŒGŒOŒUŒ[Œ\Œ]ŒZŒVŒPŒMŒEŒAŒ=Œ<Œ?ŒEŒPŒZŒaŒdŒdŒaŒ]ŒXŒSŒQŒLŒGŒDŒGŒLŒVŒ[Œ^ŒaŒdŒeŒcŒ_ŒXŒUŒPŒLŒKŒKŒJŒKŒJŒJŒLŒNŒPŒRŒUŒVŒSŒSŒdŒ_Œ\ŒWŒRŒTŒUŒTŒUŒLŒBŒ>Œ:Œ7Œ8Œ:Œ?ŒGŒQŒ]ŒaŒaŒ_ŒZŒSŒNŒIŒEŒAŒ>Œ=Œ@ŒDŒIŒMŒSŒ[Œ^Œ`Œ^Œ\ŒXŒVŒSŒSŒTŒRŒHŒBŒHŒJŒOŒWŒbŒdŒbŒYŒRŒLŒHŒFŒCŒEŒEŒDŒBŒDŒGŒLŒRŒXŒ]Œ^Œ\Œ]Œ]Œ\Œ[ŒWŒSŒPŒNŒGŒDŒBŒHŒSŒ[ŒcŒgŒfŒdŒaŒ_Œ\ŒZŒUŒMŒHŒFŒHŒLŒSŒZŒeŒiŒjŒfŒaŒ_ŒXŒQŒMŒJŒHŒFŒEŒFŒHŒKŒMŒSŒWŒ[Œ`Œ_Œ[ŒWŒ^Œ[ŒYŒXŒUŒSŒSŒPŒMŒIŒEŒBŒCŒFŒJŒQŒXŒZŒ\ŒZŒYŒXŒVŒTŒQŒKŒFŒ@Œ<Œ>ŒBŒDŒHŒQŒVŒ\Œ\Œ[ŒYŒTŒPŒMŒHŒFŒGŒHŒJŒKŒLŒJŒKŒLŒQŒWŒZŒXŒUŒSŒPŒMŒKŒIŒJŒGŒFŒDŒ@Œ=Œ=Œ@ŒDŒJŒPŒTŒTŒSŒQŒNŒMŒIŒFŒAŒ>Œ;Œ;Œ=Œ?ŒEŒOŒSŒXŒYŒXŒSŒMŒGŒEŒ@Œ;Œ9Œ8Œ>ŒCŒLŒWŒ^Œ`Œ_Œ[ŒWŒPŒJŒGŒDŒBŒAŒ>ŒCŒKŒPŒZŒ`ŒbŒ]ŒYŒWŒUŒRŒVŒTŒTŒQŒOŒOŒNŒMŒLŒKŒGŒEŒ@Œ?ŒAŒDŒHŒNŒQŒUŒXŒXŒXŒXŒTŒOŒKŒGŒDŒ@Œ@ŒBŒGŒLŒSŒZŒ`Œ`Œ^Œ]Œ[ŒQŒOŒIŒFŒBŒBŒFŒHŒLŒPŒWŒ_ŒcŒbŒ]ŒXŒUŒQŒNŒLŒKŒJŒHŒFŒ?Œ=Œ>Œ?ŒDŒGŒJŒNŒMŒKŒHŒFŒKŒKŒJŒHŒDŒBŒAŒ?ŒFŒJŒOŒVŒXŒXŒVŒSŒQŒMŒEŒBŒ<Œ5Œ9Œ=ŒDŒLŒSŒYŒ\Œ[ŒYŒWŒSŒMŒGŒ@Œ>ŒAŒCŒEŒIŒUŒZŒ`ŒaŒ_Œ\ŒVŒQŒLŒHŒ]ŒWŒVŒUŒSŒQŒOŒLŒJŒGŒDŒAŒ?ŒBŒEŒHŒLŒRŒUŒXŒXŒWŒVŒTŒQŒMŒGŒBŒ=Œ:Œ9Œ8Œ<ŒEŒKŒSŒ[Œ]Œ\ŒYŒUŒLŒGŒBŒAŒCŒDŒGŒIŒNŒVŒ]ŒaŒ`Œ_Œ^ŒZŒUŒSŒNŒLŒLŒMŒNŒPŒPŒUŒVŒVŒYŒ\ŒYŒUŒRŒNŒJŒLŒLŒKŒHŒFŒCŒBŒAŒDŒEŒJŒNŒRŒRŒSŒRŒQŒPŒMŒIŒFŒ@Œ>Œ@ŒDŒJŒPŒVŒYŒZŒZŒVŒQŒQŒGŒ@Œ>Œ;Œ;Œ>ŒIŒRŒYŒ\Œ_Œ]Œ[ŒVŒLŒGŒCŒAŒXŒVŒVŒTŒTŒRŒNŒKŒIŒFŒBŒ@Œ@ŒDŒGŒMŒRŒUŒWŒYŒXŒYŒVŒTŒPŒLŒGŒBŒ=Œ:Œ;Œ@ŒIŒSŒZŒ`Œ`Œ_Œ\ŒYŒUŒQŒJŒEŒCŒAŒBŒCŒHŒNŒUŒ]ŒaŒ^Œ\ŒWŒQŒLŒEŒDŒEŒCŒBŒ@ŒDŒGŒOŒTŒ\Œ`Œ^Œ[ŒYŒVŒRŒMŒJŒGŒEŒGŒDŒFŒIŒLŒVŒ]Œ^Œ^Œ\Œ[ŒVŒTŒQŒOŒKŒGŒGŒFŒHŒLŒPŒRŒTŒSŒSŒUŒXŒZŒSŒOŒJŒDŒ?Œ;Œ;Œ@ŒHŒSŒ\Œ^Œ_Œ_Œ[ŒVŒQŒMŒJŒHŒRŒQŒRŒPŒOŒMŒKŒLŒJŒLŒKŒLŒKŒLŒQŒVŒUŒTŒUŒRŒOŒNŒQŒOŒMŒHŒAŒ;Œ8Œ6Œ6Œ<ŒAŒMŒRŒVŒYŒXŒWŒSŒNŒGŒDŒ=Œ:Œ7Œ8Œ=ŒHŒTŒZŒ_Œ]Œ[ŒXŒTŒPŒLŒGŒEŒCŒGŒJŒNŒRŒWŒ]ŒbŒaŒ_Œ\ŒWŒSŒPŒPŒPŒPŒQŒOŒQŒQŒUŒUŒWŒZŒ[ŒZŒXŒWŒVŒUŒSŒRŒOŒLŒGŒEŒBŒ@ŒAŒFŒKŒOŒRŒTŒUŒVŒUŒRŒOŒIŒCŒ=Œ9Œ7Œ<ŒDŒKŒTŒYŒ_Œ]ŒYŒSŒNŒDŒ>Œ>ŒUŒTŒRŒSŒKŒFŒDŒHŒKŒNŒRŒWŒ\Œ_Œ_Œ_Œ[ŒXŒXŒWŒXŒVŒTŒOŒLŒIŒFŒEŒDŒFŒKŒOŒQŒTŒVŒUŒXŒYŒXŒVŒSŒOŒKŒGŒDŒAŒAŒFŒMŒVŒ^ŒdŒbŒ^ŒYŒSŒOŒJŒEŒ>Œ;Œ:Œ>ŒAŒFŒKŒTŒ[Œ_Œ\ŒXŒSŒMŒJŒDŒFŒDŒDŒ?Œ@ŒBŒHŒNŒSŒUŒWŒTŒOŒNŒLŒJŒFŒGŒGŒDŒFŒEŒLŒPŒSŒXŒYŒWŒRŒOŒPŒOŒLŒHŒEŒBŒ@Œ@ŒDŒIŒNŒUŒ]Œ_Œ]Œ[Œ`Œ^ŒWŒXŒVŒRŒQŒLŒMŒMŒMŒNŒOŒQŒQŒNŒMŒMŒNŒQŒUŒXŒXŒYŒQŒMŒJŒJŒKŒNŒPŒQŒOŒNŒLŒJŒIŒHŒGŒGŒFŒFŒGŒGŒFŒGŒEŒGŒJŒHŒEŒCŒ?Œ>ŒAŒFŒKŒPŒVŒVŒRŒQŒMŒIŒEŒDŒGŒKŒMŒQŒTŒXŒ[Œ]Œ\ŒYŒUŒRŒMŒKŒHŒFŒKŒRŒWŒ\Œ`ŒbŒdŒeŒbŒ[ŒXŒUŒQŒMŒNŒOŒQŒSŒPŒJŒEŒAŒ<Œ9Œ7Œ8Œ9Œ<ŒAŒDŒFŒGŒJŒMŒKŒIŒGŒDŒ@Œ?ŒAŒDŒHŒKŒNŒRŒRŒPŒLŒLŒJŒDŒDŒWŒXŒXŒXŒYŒ[Œ^ŒaŒcŒbŒbŒaŒ^ŒYŒWŒVŒTŒSŒRŒSŒPŒPŒOŒOŒPŒQŒRŒRŒUŒXŒZŒYŒPŒKŒHŒNŒRŒTŒWŒWŒTŒPŒOŒHŒCŒAŒAŒ@ŒDŒFŒHŒJŒMŒQŒPŒNŒIŒFŒBŒ?Œ>ŒAŒLŒUŒ^Œ`Œ^Œ\ŒYŒVŒSŒMŒIŒJŒIŒQŒZŒcŒlŒkŒhŒeŒbŒ`Œ[ŒUŒRŒLŒJŒMŒTŒXŒZŒYŒWŒZŒ\Œ_Œ`Œ^Œ^Œ\ŒZŒXŒVŒUŒSŒSŒQŒPŒOŒLŒKŒJŒIŒIŒLŒMŒPŒNŒLŒSŒUŒSŒPŒIŒEŒ@ŒLŒRŒNŒLŒLŒLŒTŒ]ŒaŒaŒbŒbŒ`Œ^Œ\ŒWŒNŒJŒHŒLŒPŒSŒTŒUŒWŒZŒ_ŒcŒgŒgŒdŒbŒ]ŒZŒWŒWŒWŒVŒWŒWŒUŒTŒSŒVŒYŒZŒ[ŒUŒNŒIŒGŒKŒMŒQŒRŒRŒOŒMŒGŒCŒCŒAŒDŒHŒMŒRŒTŒUŒUŒTŒRŒSŒOŒKŒHŒCŒBŒNŒUŒ^ŒcŒeŒcŒaŒ^Œ[ŒXŒUŒNŒMŒMŒMŒOŒPŒRŒVŒ[ŒaŒdŒbŒ[ŒWŒSŒPŒPŒRŒSŒUŒVŒWŒUŒRŒPŒQŒSŒUŒUŒRŒTŒSŒRŒTŒSŒRŒPŒMŒFŒ?ŒRŒ=Œ<Œ>ŒBŒEŒKŒTŒYŒ^ŒaŒ`Œ`Œ\ŒVŒNŒKŒHŒEŒDŒCŒCŒFŒGŒKŒNŒQŒUŒ^ŒbŒaŒ`Œ[ŒWŒWŒTŒRŒQŒOŒPŒPŒNŒNŒLŒIŒIŒMŒPŒSŒUŒUŒXŒUŒOŒLŒIŒFŒBŒ<Œ6Œ6Œ7Œ<ŒEŒNŒWŒ\Œ[ŒTŒRŒPŒHŒCŒ@Œ=Œ:Œ:Œ>ŒEŒNŒUŒ]ŒbŒ`Œ]ŒXŒRŒLŒIŒHŒFŒGŒKŒNŒQŒUŒZŒ_ŒbŒdŒaŒ\ŒYŒQŒJŒDŒBŒAŒDŒIŒKŒMŒOŒTŒYŒ\ŒZŒXŒTŒRŒRŒRŒOŒLŒHŒEŒBŒ;ŒPŒ:Œ?ŒAŒCŒHŒSŒYŒ^Œ`Œ`Œ^Œ]Œ[ŒYŒTŒNŒIŒEŒGŒHŒLŒQŒXŒ[Œ^ŒaŒbŒbŒ_Œ]Œ\ŒWŒTŒRŒQŒQŒRŒPŒRŒSŒSŒTŒVŒWŒYŒ[ŒZŒZŒVŒTŒRŒPŒOŒNŒLŒIŒDŒ?Œ<Œ<Œ=ŒBŒFŒLŒRŒTŒTŒQŒOŒKŒBŒ<Œ:Œ8Œ8Œ;Œ=ŒEŒLŒRŒVŒXŒWŒUŒPŒKŒAŒ=Œ>ŒFŒRŒ_ŒdŒiŒeŒcŒ]ŒYŒWŒVŒTŒSŒQŒNŒOŒIŒIŒOŒUŒ\ŒbŒeŒdŒeŒ`Œ[ŒVŒKŒHŒJŒOŒPŒNŒLŒIŒCŒ@ŒOŒFŒFŒJŒNŒSŒWŒYŒZŒZŒVŒTŒRŒNŒLŒMŒHŒDŒBŒ@ŒEŒJŒOŒVŒ^ŒdŒeŒfŒaŒ\ŒZŒXŒRŒHŒEŒFŒJŒMŒNŒRŒTŒYŒ^Œ`ŒdŒbŒ`Œ[ŒUŒPŒNŒKŒIŒKŒNŒOŒKŒHŒGŒEŒEŒDŒBŒBŒDŒCŒEŒJŒKŒOŒMŒEŒ9Œ2Œ.Œ6Œ<ŒFŒPŒUŒXŒ\Œ^Œ\ŒVŒLŒIŒAŒ8Œ4Œ2Œ7Œ@ŒLŒVŒ\Œ^Œ\Œ]Œ[ŒVŒRŒRŒNŒGŒEŒGŒKŒPŒQŒUŒ]ŒaŒfŒdŒbŒ\ŒXŒSŒNŒNŒOŒMŒKŒMŒLŒIŒHŒOŒ@ŒBŒJŒPŒVŒ\Œ^Œ\Œ[ŒZŒYŒVŒRŒOŒKŒDŒ@ŒCŒAŒ@ŒBŒFŒNŒTŒ]Œ`ŒbŒbŒ]ŒZŒVŒMŒGŒAŒ=Œ<Œ=Œ<ŒBŒEŒGŒMŒTŒZŒ\ŒYŒVŒPŒKŒFŒEŒCŒCŒBŒAŒAŒ@ŒAŒBŒGŒQŒXŒYŒWŒSŒQŒOŒMŒLŒGŒCŒCŒAŒ@ŒAŒDŒMŒVŒ]Œ_Œ\ŒYŒVŒTŒPŒLŒEŒ?Œ<Œ;Œ>ŒCŒIŒRŒ[Œ^ŒbŒaŒ]ŒSŒKŒEŒBŒ>Œ:Œ9Œ8Œ<Œ?ŒCŒHŒLŒTŒZŒ[ŒVŒPŒJŒGŒDŒEŒCŒBŒAŒAŒAŒCŒHŒ3Œ5Œ6Œ7Œ;ŒDŒNŒRŒVŒXŒZŒYŒVŒSŒPŒGŒBŒ<Œ6Œ2Œ4Œ7Œ>ŒFŒOŒZŒ]Œ\ŒZŒWŒSŒNŒHŒCŒAŒDŒGŒMŒUŒZŒZŒ\Œ_Œ`Œ]Œ[ŒYŒTŒPŒNŒLŒOŒOŒPŒPŒOŒPŒSŒWŒ\Œ`Œ_Œ\ŒYŒVŒTŒUŒTŒRŒQŒNŒKŒHŒEŒCŒBŒDŒBŒJŒNŒPŒXŒYŒVŒLŒGŒEŒ?Œ;Œ7Œ5Œ<Œ?ŒIŒQŒUŒZŒ]Œ\ŒXŒQŒKŒEŒ?Œ=Œ=Œ?ŒAŒDŒHŒKŒRŒWŒXŒYŒVŒPŒIŒEŒAŒ>Œ=Œ<Œ:Œ<Œ>Œ@ŒGŒ<Œ<Œ?ŒEŒKŒRŒVŒVŒRŒSŒUŒRŒOŒLŒJŒEŒ?Œ9Œ4Œ3Œ5Œ;ŒEŒMŒVŒ[ŒZŒXŒUŒRŒPŒHŒCŒ?Œ=Œ:Œ=Œ@ŒGŒLŒUŒ[Œ^Œ_Œ[ŒWŒSŒNŒKŒGŒDŒCŒEŒFŒIŒKŒNŒVŒ]Œ_Œ_ŒYŒUŒQŒNŒMŒOŒNŒMŒLŒIŒIŒHŒFŒIŒMŒSŒVŒYŒWŒUŒUŒUŒRŒMŒIŒEŒ?Œ;Œ8Œ7Œ;ŒCŒMŒTŒWŒXŒWŒVŒPŒIŒDŒ>Œ:Œ9Œ:Œ?ŒFŒJŒUŒ\Œ`Œ]ŒYŒUŒOŒJŒDŒ@Œ:Œ:Œ>ŒDŒJŒKŒNŒSŒIŒ;Œ?ŒDŒIŒMŒQŒUŒWŒWŒXŒVŒTŒPŒMŒIŒ@Œ;Œ7Œ1Œ0Œ3Œ;ŒHŒQŒUŒXŒ[Œ[ŒXŒTŒQŒLŒDŒ<Œ6Œ1Œ0Œ5Œ=ŒCŒLŒUŒ\Œ_Œ\ŒWŒPŒJŒAŒ>Œ;Œ:Œ9Œ8Œ:Œ>ŒFŒNŒVŒ[Œ[ŒVŒOŒGŒAŒ;Œ9Œ7Œ8Œ9Œ<ŒAŒ?Œ@Œ@ŒCŒHŒLŒMŒNŒLŒKŒJŒIŒFŒBŒ>Œ;Œ8Œ9Œ<ŒAŒHŒNŒRŒQŒRŒPŒNŒLŒGŒDŒ>Œ9Œ5Œ5Œ;ŒDŒOŒYŒ]Œ^Œ]ŒYŒVŒRŒJŒEŒCŒEŒHŒJŒOŒUŒZŒZŒ^ŒUŒTŒRŒSŒSŒTŒUŒVŒWŒVŒUŒUŒSŒPŒMŒJŒFŒAŒ?Œ>Œ=Œ>Œ@ŒJŒQŒVŒXŒZŒ[ŒXŒQŒLŒCŒ?Œ;Œ9Œ<Œ?ŒDŒIŒTŒZŒ`ŒaŒ_Œ\ŒWŒOŒHŒCŒAŒCŒFŒIŒKŒTŒ\ŒbŒeŒcŒ`Œ[ŒVŒRŒRŒOŒNŒNŒMŒOŒNŒPŒQŒVŒ[Œ^Œ[ŒZŒXŒUŒRŒOŒOŒNŒLŒJŒIŒGŒDŒAŒAŒ>ŒCŒEŒCŒEŒMŒRŒTŒSŒQŒMŒFŒAŒ9Œ5Œ6Œ;ŒEŒOŒZŒZŒ[ŒWŒSŒPŒLŒFŒ@Œ<Œ=Œ<Œ;Œ@ŒJŒNŒVŒ]ŒRŒYŒ\ŒZŒ[ŒYŒ[ŒXŒVŒTŒSŒRŒQŒPŒNŒKŒHŒGŒHŒMŒSŒUŒUŒSŒUŒTŒUŒWŒVŒTŒRŒOŒKŒFŒBŒ>Œ=Œ@ŒCŒGŒJŒQŒXŒZŒ[ŒWŒTŒOŒGŒCŒ=Œ8Œ8Œ<Œ@ŒIŒQŒYŒ_ŒaŒ^ŒYŒUŒQŒMŒHŒGŒGŒGŒHŒJŒOŒSŒVŒ[ŒaŒ`Œ\ŒWŒRŒNŒKŒKŒKŒJŒGŒGŒGŒFŒDŒDŒGŒIŒKŒLŒJŒOŒRŒQŒOŒLŒFŒAŒ;Œ:Œ8Œ:ŒAŒDŒLŒTŒZŒ[ŒXŒTŒPŒKŒDŒ>Œ;Œ;Œ=Œ@ŒHŒTŒ[Œ`Œ_ŒTŒbŒcŒaŒ_Œ^ŒYŒUŒQŒMŒNŒMŒNŒMŒIŒFŒDŒDŒGŒHŒPŒSŒSŒMŒKŒHŒIŒKŒMŒOŒMŒJŒEŒAŒ=Œ;Œ@ŒCŒFŒIŒKŒMŒRŒRŒRŒPŒMŒLŒHŒEŒCŒBŒDŒJŒPŒWŒ^Œ^Œ\Œ]ŒZŒTŒNŒHŒDŒCŒFŒHŒOŒPŒWŒ\Œ\Œ_Œ]ŒXŒTŒOŒPŒOŒMŒHŒIŒKŒKŒMŒMŒKŒMŒMŒMŒQŒVŒTŒKŒGŒFŒGŒHŒGŒEŒBŒAŒ<Œ9Œ8Œ9Œ?ŒAŒDŒGŒIŒLŒKŒKŒHŒFŒCŒ@Œ?Œ>Œ?ŒDŒMŒWŒ[Œ[ŒVŒOŒPŒMŒMŒLŒJŒDŒ@Œ?ŒBŒDŒDŒDŒEŒFŒGŒGŒDŒBŒAŒEŒFŒFŒGŒIŒHŒHŒEŒGŒFŒDŒBŒ@Œ<Œ9Œ6Œ1Œ1Œ;ŒFŒJŒMŒJŒJŒJŒIŒEŒ@Œ:Œ8Œ8Œ8Œ=ŒEŒNŒUŒUŒUŒSŒLŒHŒFŒCŒ@Œ>Œ>ŒAŒEŒMŒUŒ[Œ_Œ]Œ\ŒXŒUŒQŒKŒGŒFŒDŒEŒGŒHŒKŒOŒPŒSŒQŒSŒVŒWŒWŒVŒSŒQŒPŒPŒNŒMŒJŒHŒEŒAŒ=Œ=ŒAŒEŒHŒGŒJŒLŒPŒOŒJŒIŒEŒDŒBŒ?Œ;Œ=Œ?ŒFŒQŒUŒXŒYŒbŒcŒaŒ_Œ[ŒXŒPŒMŒLŒJŒMŒMŒLŒLŒLŒIŒIŒJŒLŒSŒYŒ\ŒZŒYŒWŒVŒQŒPŒMŒKŒJŒGŒBŒ>Œ;Œ9Œ:Œ=Œ?ŒHŒKŒLŒNŒKŒMŒOŒPŒPŒIŒ?Œ8Œ5Œ7Œ>ŒFŒRŒ\Œ]ŒZŒWŒYŒWŒPŒLŒGŒBŒ>Œ>Œ?Œ@ŒBŒJŒWŒ\Œ^Œ[ŒXŒSŒOŒKŒEŒFŒJŒNŒRŒRŒSŒWŒ\Œ_ŒaŒ^ŒZŒUŒSŒUŒQŒKŒJŒHŒDŒCŒBŒCŒ@Œ?Œ@ŒDŒIŒMŒRŒPŒLŒFŒDŒBŒ?Œ9Œ4Œ3Œ3Œ9Œ>ŒCŒKŒOŒTŒTŒWŒ\Œ[ŒXŒTŒQŒLŒJŒFŒFŒCŒAŒ@Œ@ŒBŒEŒHŒMŒQŒWŒZŒYŒXŒRŒOŒNŒLŒKŒJŒHŒFŒDŒCŒBŒAŒ@ŒBŒDŒGŒKŒNŒQŒRŒSŒQŒNŒLŒIŒDŒ>Œ8Œ2Œ1Œ4Œ:ŒFŒMŒSŒXŒWŒTŒNŒHŒCŒ>Œ9Œ7Œ7Œ9ŒAŒFŒNŒWŒ\Œ\ŒZŒXŒSŒNŒJŒHŒEŒDŒGŒIŒKŒNŒUŒ[Œ^Œ^Œ\ŒYŒVŒQŒOŒMŒKŒLŒJŒHŒIŒHŒIŒJŒLŒOŒQŒRŒQŒPŒQŒOŒMŒJŒGŒDŒ>Œ8Œ6Œ8Œ<Œ?ŒEŒMŒSŒVŒUŒTŒ\ŒZŒXŒTŒQŒMŒJŒIŒHŒIŒLŒOŒRŒUŒWŒZŒ^Œ`Œ`Œ^Œ\ŒYŒUŒSŒRŒQŒQŒQŒRŒPŒPŒPŒOŒQŒUŒXŒ\Œ_Œ]Œ[ŒXŒSŒQŒQŒNŒKŒGŒCŒ@Œ<Œ<Œ<Œ<Œ?ŒGŒNŒSŒVŒUŒRŒNŒGŒAŒ=Œ9Œ6Œ1Œ4Œ>ŒFŒPŒWŒZŒXŒTŒPŒMŒDŒ?Œ;Œ9Œ<Œ?ŒDŒHŒPŒWŒ[Œ^Œ[ŒWŒRŒOŒKŒGŒFŒGŒ@Œ=Œ>Œ?ŒDŒJŒPŒUŒVŒUŒRŒOŒKŒGŒEŒCŒBŒ?Œ?Œ?Œ=Œ?Œ@ŒEŒFŒLŒOŒPŒPŒOŒRŒUŒVŒRŒOŒIŒBŒ=Œ<Œ<Œ9Œ=ŒDŒLŒSŒYŒ^Œ`Œ`Œ^ŒYŒWŒSŒNŒJŒEŒCŒBŒCŒFŒJŒNŒTŒXŒ]Œ_Œ_Œ^Œ\ŒYŒWŒUŒVŒTŒSŒPŒKŒJŒHŒDŒCŒAŒDŒIŒHŒFŒFŒMŒRŒRŒQŒLŒGŒ@Œ;Œ4Œ3Œ5Œ?ŒHŒMŒSŒUŒWŒXŒUŒQŒLŒEŒ?Œ;Œ;Œ?ŒJŒNŒUŒ\Œ_Œ^Œ\ŒZŒVŒPŒNŒIŒGŒIŒMŒJŒHŒFŒIŒMŒSŒ[ŒaŒ`Œ\ŒWŒTŒQŒQŒPŒNŒMŒOŒMŒOŒSŒRŒSŒTŒTŒTŒRŒPŒLŒOŒOŒWŒXŒVŒTŒRŒHŒDŒAŒAŒ?Œ>ŒAŒIŒLŒQŒUŒVŒVŒWŒWŒVŒPŒKŒGŒCŒAŒCŒEŒIŒKŒPŒTŒVŒVŒUŒSŒRŒNŒJŒHŒIŒJŒLŒNŒPŒQŒPŒNŒKŒJŒJŒLŒOŒSŒVŒXŒYŒXŒWŒSŒOŒLŒHŒ?Œ:Œ5Œ2Œ1Œ5Œ8Œ@ŒGŒNŒSŒSŒSŒKŒDŒ@Œ;Œ;ŒAŒEŒLŒQŒUŒ\Œ]Œ\Œ[ŒXŒRŒNŒHŒGŒDŒBŒAŒ=Œ;Œ<Œ>ŒBŒJŒMŒLŒKŒIŒLŒNŒOŒMŒJŒGŒIŒKŒJŒFŒDŒBŒFŒGŒIŒGŒGŒLŒNŒIŒ^Œ]Œ[ŒVŒQŒHŒCŒ@Œ=Œ?ŒAŒDŒKŒNŒTŒ\Œ`ŒbŒaŒ^Œ[ŒUŒKŒGŒBŒ?Œ=Œ:Œ:Œ;Œ=Œ?ŒEŒLŒQŒVŒUŒRŒNŒCŒ@Œ=Œ>Œ?Œ?Œ>Œ=Œ?ŒAŒ?Œ@Œ?ŒAŒ@Œ?Œ<Œ?ŒHŒLŒJŒJŒHŒEŒ@Œ>Œ?ŒBŒIŒOŒTŒXŒXŒWŒTŒQŒHŒ?Œ;Œ8Œ7Œ;Œ>ŒEŒMŒUŒYŒ\Œ[ŒXŒRŒOŒKŒHŒDŒBŒAŒCŒEŒHŒNŒRŒVŒYŒZŒYŒXŒPŒIŒDŒCŒEŒEŒFŒEŒDŒFŒGŒGŒHŒJŒKŒJŒHŒIŒHŒGŒEŒQŒWŒUŒPŒKŒHŒCŒ?Œ<Œ9Œ3Œ5Œ:ŒIŒQŒXŒ]Œ\Œ\ŒZŒXŒSŒNŒGŒAŒ<Œ9Œ8Œ=ŒIŒOŒQŒVŒ[Œ]Œ]Œ[ŒZŒVŒRŒPŒOŒMŒKŒJŒIŒMŒPŒRŒUŒWŒZŒYŒWŒVŒRŒNŒKŒIŒGŒFŒBŒ>Œ:Œ6Œ1Œ0Œ/Œ0Œ3Œ7Œ?ŒEŒNŒRŒNŒKŒDŒ?Œ9Œ4Œ1Œ0Œ2Œ9ŒBŒKŒUŒVŒVŒUŒJŒEŒDŒ>Œ<Œ<Œ?ŒEŒJŒJŒPŒXŒ^Œ^Œ[ŒYŒTŒOŒLŒHŒFŒFŒGŒIŒLŒRŒUŒ^ŒbŒbŒ_Œ]ŒXŒTŒQŒOŒPŒKŒWŒRŒRŒPŒKŒFŒCŒ>Œ:Œ8Œ5Œ<ŒBŒKŒSŒWŒYŒWŒXŒSŒPŒIŒCŒBŒBŒDŒFŒGŒKŒJŒMŒUŒ[ŒZŒWŒTŒQŒMŒIŒGŒGŒIŒHŒIŒKŒNŒTŒZŒ]Œ\ŒZŒVŒRŒMŒLŒIŒKŒLŒKŒKŒKŒKŒIŒHŒJŒEŒAŒAŒ@Œ>Œ>ŒCŒIŒKŒJŒGŒDŒAŒ=Œ=Œ@Œ@ŒDŒJŒOŒQŒSŒPŒNŒMŒJŒEŒAŒ=Œ=Œ=Œ@ŒDŒKŒUŒZŒ\ŒZŒTŒOŒMŒJŒGŒGŒFŒJŒKŒTŒ[Œ^Œ`Œ_Œ^Œ\ŒZŒVŒSŒOŒMŒNŒLŒDŒJŒKŒKŒIŒDŒ?Œ:Œ6Œ4Œ5Œ4Œ4Œ8Œ=ŒAŒJŒQŒUŒWŒTŒPŒNŒIŒDŒAŒ?Œ?Œ@ŒEŒOŒVŒYŒ]Œ]Œ\ŒXŒVŒNŒFŒ@Œ>Œ@ŒEŒJŒOŒVŒ[Œ[Œ]Œ[ŒYŒWŒRŒMŒJŒGŒGŒHŒKŒOŒPŒNŒJŒLŒOŒNŒLŒKŒHŒDŒCŒBŒBŒBŒEŒAŒBŒCŒAŒ<Œ9Œ:Œ8Œ:Œ;Œ@ŒFŒPŒUŒVŒSŒMŒGŒBŒ6Œ/Œ-Œ.Œ3Œ;ŒNŒZŒ]Œ[ŒVŒPŒKŒEŒBŒ>ŒAŒDŒHŒLŒNŒRŒWŒYŒZŒYŒUŒPŒMŒJŒHŒGŒJŒLŒIŒKŒJŒFŒEŒBŒ?Œ<Œ9Œ6Œ2Œ2Œ7ŒCŒJŒUŒ]Œ[Œ[ŒVŒOŒLŒCŒ=Œ:Œ7Œ2Œ.Œ.Œ4Œ>ŒGŒRŒ[Œ[Œ[ŒUŒPŒIŒDŒ@ŒAŒEŒHŒIŒNŒSŒVŒ\Œ]ŒYŒRŒQŒNŒLŒKŒIŒEŒ@Œ<ŒBŒDŒBŒBŒEŒKŒOŒNŒMŒIŒGŒFŒDŒEŒDŒEŒFŒDŒAŒBŒCŒEŒIŒGŒJŒMŒOŒNŒNŒKŒHŒGŒEŒBŒ?Œ<Œ;Œ>ŒCŒIŒQŒSŒTŒUŒTŒPŒMŒJŒDŒ@Œ?Œ?Œ@ŒBŒDŒGŒLŒQŒUŒWŒVŒRŒOŒKŒFŒDŒDŒFŒ@ŒFŒFŒDŒAŒ?Œ=Œ9Œ1Œ.Œ*Œ(Œ*Œ0Œ9ŒDŒIŒJŒLŒKŒIŒGŒEŒBŒ;Œ7Œ5Œ6Œ3Œ<ŒDŒLŒRŒUŒSŒPŒOŒLŒJŒEŒCŒ@ŒAŒCŒFŒNŒXŒ\Œ\Œ]ŒYŒTŒMŒHŒHŒKŒOŒPŒUŒWŒZŒ]Œ]Œ_Œ_Œ[ŒYŒWŒSŒOŒMŒKŒLŒNŒQŒRŒPŒNŒMŒIŒEŒAŒ<Œ?Œ>ŒCŒEŒGŒGŒIŒLŒMŒHŒBŒ=Œ9Œ7Œ4Œ6Œ<ŒIŒPŒSŒSŒPŒMŒLŒGŒCŒ@Œ=Œ@ŒDŒJŒNŒTŒ\Œ`Œ]ŒYŒTŒPŒKŒFŒHŒJŒLŒOŒKŒRŒQŒOŒKŒKŒJŒIŒGŒDŒDŒEŒFŒDŒEŒDŒHŒKŒMŒNŒLŒKŒGŒCŒ@Œ8Œ1Œ-Œ-Œ0Œ;ŒDŒNŒOŒQŒOŒMŒJŒEŒ@Œ<Œ;Œ=ŒBŒFŒLŒRŒWŒYŒXŒUŒQŒLŒHŒFŒFŒDŒFŒKŒOŒUŒZŒZŒ\Œ[ŒZŒXŒUŒQŒKŒIŒJŒLŒOŒRŒSŒRŒRŒSŒRŒQŒRŒOŒPŒMŒLŒMŒNŒOŒPŒPŒMŒJŒFŒ=Œ6Œ4Œ7Œ9Œ9Œ=ŒAŒDŒGŒJŒLŒMŒJŒEŒ?Œ9Œ6Œ3Œ/Œ/Œ4Œ>ŒJŒXŒXŒRŒJŒIŒGŒAŒAŒ@ŒAŒ>ŒSŒRŒPŒQŒNŒNŒQŒOŒNŒKŒKŒKŒKŒIŒHŒIŒIŒJŒIŒJŒFŒDŒCŒ>Œ5Œ/Œ+Œ)Œ-Œ8ŒAŒGŒIŒIŒJŒIŒKŒIŒ?Œ;Œ5Œ3Œ4Œ:ŒBŒGŒNŒSŒTŒPŒLŒIŒEŒCŒ@Œ>Œ@ŒFŒNŒSŒYŒ[Œ[Œ[ŒXŒSŒOŒLŒJŒKŒLŒNŒQŒUŒUŒTŒVŒYŒZŒZŒXŒVŒRŒKŒHŒHŒHŒKŒKŒIŒHŒGŒGŒAŒ9Œ4Œ1Œ4Œ6Œ=ŒCŒEŒFŒHŒFŒEŒDŒAŒ>Œ6Œ2Œ1Œ8ŒIŒPŒUŒSŒPŒOŒLŒJŒIŒGŒCŒAŒ@ŒAŒMŒUŒUŒTŒPŒOŒQŒUŒXŒ\Œ[Œ]ŒWŒRŒRŒNŒHŒEŒMŒRŒSŒRŒPŒLŒJŒFŒLŒLŒGŒGŒGŒGŒIŒLŒNŒRŒRŒRŒNŒGŒEŒBŒ;Œ7Œ9Œ>ŒCŒJŒOŒSŒUŒSŒPŒKŒIŒEŒBŒ@Œ<Œ?ŒCŒJŒQŒVŒYŒZŒWŒUŒRŒOŒJŒIŒKŒKŒLŒJŒKŒSŒYŒ\Œ^Œ]ŒXŒUŒPŒMŒLŒLŒMŒOŒNŒLŒIŒEŒ?Œ:Œ6Œ4Œ1Œ3Œ9ŒAŒHŒLŒMŒLŒKŒJŒIŒAŒ8Œ2Œ1Œ5Œ<ŒCŒMŒQŒQŒOŒMŒKŒHŒCŒ>Œ;Œ7Œ4ŒIŒZŒXŒ\Œ^Œ^Œ]Œ[ŒXŒUŒRŒPŒMŒJŒHŒFŒFŒFŒGŒJŒSŒVŒVŒWŒXŒWŒWŒWŒTŒNŒKŒIŒJŒKŒLŒNŒNŒOŒLŒFŒ?Œ:Œ6Œ7Œ9Œ;ŒBŒHŒNŒQŒQŒPŒLŒFŒCŒAŒ?Œ<Œ=ŒFŒNŒUŒYŒYŒYŒWŒUŒSŒPŒLŒIŒFŒIŒJŒPŒWŒ_ŒdŒdŒbŒ`ŒZŒVŒUŒOŒMŒOŒPŒPŒRŒOŒUŒXŒYŒYŒZŒTŒLŒHŒFŒCŒBŒCŒBŒDŒGŒIŒHŒEŒEŒAŒ>Œ;Œ=ŒBŒDŒDŒFŒIŒJŒKŒIŒGŒCŒ>Œ<Œ>ŒAŒ^ŒQŒUŒZŒ]Œ_Œ_Œ]Œ]Œ\ŒZŒXŒUŒRŒNŒKŒKŒMŒOŒNŒRŒQŒPŒRŒTŒVŒXŒWŒUŒQŒOŒLŒIŒHŒIŒJŒJŒIŒIŒFŒAŒ;Œ8Œ6Œ4Œ4Œ7Œ<ŒBŒHŒMŒPŒMŒJŒHŒBŒ=Œ9Œ7Œ9Œ=ŒEŒIŒMŒSŒWŒSŒPŒMŒIŒGŒAŒ@ŒBŒFŒIŒLŒOŒTŒWŒYŒWŒUŒRŒKŒCŒEŒKŒNŒPŒQŒSŒUŒVŒWŒYŒ[ŒZŒWŒRŒNŒLŒLŒNŒMŒNŒKŒIŒFŒDŒBŒBŒDŒBŒ?ŒAŒDŒNŒPŒRŒPŒJŒIŒEŒBŒ>Œ9Œ6Œ]ŒXŒYŒZŒXŒ[Œ\Œ[ŒYŒTŒQŒOŒJŒFŒDŒCŒDŒEŒIŒKŒMŒOŒPŒUŒZŒ]Œ\ŒZŒVŒTŒOŒMŒHŒHŒHŒIŒKŒLŒLŒIŒEŒDŒAŒ=Œ:Œ<Œ=Œ@ŒBŒAŒGŒLŒHŒFŒDŒ?Œ9Œ5Œ1Œ2Œ4Œ;ŒCŒHŒKŒPŒNŒKŒIŒDŒ@Œ:Œ7Œ6Œ9Œ?ŒHŒQŒUŒVŒXŒVŒUŒOŒHŒEŒDŒBŒFŒJŒHŒHŒLŒRŒVŒ[Œ[Œ\ŒWŒTŒNŒLŒKŒIŒLŒMŒNŒMŒJŒHŒJŒMŒOŒQŒNŒJŒJŒNŒMŒOŒNŒMŒIŒFŒDŒ@Œ>Œ?Œ^ŒJŒPŒUŒ[ŒZŒ[ŒXŒVŒRŒNŒKŒKŒBŒ>Œ?Œ?ŒCŒGŒJŒMŒRŒZŒ_ŒaŒ`Œ\ŒXŒUŒQŒNŒFŒEŒFŒFŒHŒMŒOŒPŒPŒPŒRŒUŒRŒPŒNŒRŒPŒKŒJŒIŒFŒDŒCŒBŒ?Œ<Œ8Œ4Œ/Œ.Œ6Œ:Œ<ŒAŒFŒMŒKŒHŒCŒ>Œ8Œ5Œ4Œ;ŒAŒJŒQŒVŒ[ŒYŒTŒOŒLŒFŒAŒ@ŒEŒFŒOŒVŒ]ŒaŒbŒ`Œ\ŒZŒVŒRŒNŒLŒJŒFŒCŒGŒEŒCŒCŒCŒDŒFŒIŒMŒRŒVŒTŒQŒNŒJŒHŒGŒIŒHŒCŒ?Œ<Œ<Œ@ŒSŒIŒHŒKŒOŒRŒTŒSŒSŒRŒOŒNŒJŒFŒBŒBŒAŒBŒBŒDŒGŒIŒMŒUŒYŒ[ŒXŒWŒSŒPŒMŒJŒIŒJŒKŒMŒNŒPŒQŒQŒSŒSŒSŒSŒRŒPŒNŒMŒLŒKŒNŒNŒLŒJŒGŒBŒ:Œ6Œ2Œ-Œ.Œ1Œ5Œ9Œ=ŒBŒHŒGŒBŒAŒ>Œ:Œ6Œ5Œ5Œ8Œ=ŒEŒLŒPŒRŒQŒNŒKŒHŒDŒBŒ@ŒAŒCŒGŒLŒPŒRŒVŒVŒUŒSŒNŒKŒJŒHŒHŒIŒLŒNŒMŒLŒKŒCŒCŒFŒHŒHŒFŒFŒDŒCŒFŒHŒIŒFŒDŒAŒ8Œ3Œ/Œ.Œ[ŒWŒUŒRŒTŒTŒQŒPŒSŒUŒOŒKŒIŒEŒ@Œ<Œ=Œ;Œ>Œ@ŒKŒSŒYŒ[ŒXŒUŒQŒPŒSŒPŒMŒIŒCŒBŒBŒEŒLŒTŒXŒ[Œ\Œ^Œ\Œ\ŒVŒNŒIŒEŒBŒDŒEŒEŒLŒUŒVŒVŒSŒRŒTŒVŒUŒOŒLŒIŒEŒEŒBŒAŒAŒ>Œ=Œ:Œ:Œ9Œ<Œ=ŒCŒHŒJŒIŒGŒLŒLŒJŒGŒCŒ@Œ=Œ;Œ;ŒBŒLŒUŒZŒ^Œ\ŒXŒTŒNŒJŒFŒ@Œ@Œ>ŒAŒEŒKŒTŒ[Œ\ŒYŒ\ŒZŒUŒOŒKŒHŒHŒGŒHŒHŒKŒKŒLŒKŒOŒTŒUŒYŒNŒNŒQŒVŒWŒXŒWŒWŒUŒSŒOŒLŒFŒBŒ=Œ;Œ=Œ@ŒGŒQŒVŒ\Œ_Œ^Œ`Œ[ŒYŒVŒNŒJŒEŒ@Œ>Œ?ŒCŒDŒGŒSŒ^ŒbŒ`Œ]ŒTŒMŒIŒFŒDŒBŒAŒDŒBŒ>ŒAŒGŒLŒPŒRŒQŒMŒIŒIŒMŒIŒGŒDŒCŒBŒAŒBŒAŒ>Œ>Œ>Œ?ŒEŒHŒKŒHŒJŒIŒJŒJŒKŒFŒBŒ@Œ=Œ?ŒFŒPŒXŒ[Œ\ŒYŒXŒTŒOŒMŒKŒCŒ@Œ?ŒBŒEŒHŒOŒUŒ[Œ`ŒcŒ]ŒYŒSŒMŒHŒDŒCŒBŒ?Œ>Œ:Œ=Œ@ŒCŒEŒKŒQŒ5FCMDJRWVXRDI<:4B@BANTNXILMPU:PZQJ>>C?CHE@>KLW^eSNC2,47?@ERU^YQUG;:/,58>ITSXb^OGPB45.7BDMTTUNPL>IPK@PLK>KM:I>E?OS@SPOULTNQLJBAOH4G;DOVQOTMRPLK3409:IKMOTMPHB>PPMSQT@7?DCEF8JUg`hZM;2-22<>?QZa[r^RH83+",7JN[ZYbZMMGD86/11BLETOVUPXHEERRGD=C@BKKIHJIJJNUSS\WLEA<GJ*67>XfX\_PGG6.4-@PFGMQTX\>=PIPFJXNN:0GDIGDEP]U^`SN34146DJPKOX\e]ZA1+6=FIFMUd\fNN?9'.2;=JKSSV^\FIHL<BD5?FHOTRML8<OQSMKHVQDJC@B=Q4<<FQ[WflURF40257N@JTVMbUTJA=>9<C>DKLMOBJNM@PW`aVNE6;62,57S^eZ_cNA5'23AGSZW_gV5@9;.5>?EKUN^`TTPUD?B:3/9BNUQRWLFKFGJNHHNH<9BAN?;;5ADEOalnO[;/&125DRONOY^UO;@7671FCHRXLXRJMHQIHLPAESHJFFB?DHRTY[Z?6=;?C>EETZb_]LD@/#0FB@KIPPfWSWMF9104<DGTTO_VUGNH;0A>/==>PVJNPC=8?@EFU\hhNH8(-3A7ERPNQUXSJA:BI];F=DHPRPOH>/LMFGOE;D?MJJLCFGPS\]aM;2/<?B=?ZRT`Z`<6.63?AJHPON[_VZHB/42288JMPWQR\MLHGHSX8>7?::QRQJB?=<HHS`fd]RE5()17EHMOTX`RMD7=42;?EMKNQaPSHDC7=5ABOFNNHPOEINVRRSH@J9?GGEDHGP\_faJ?-22B>E@BLR_]^jJE0"9=<ODMXRWZTOJE;72?<?;FUVROEBEDA?DJUV^YeU:(-,488LKWY_^^XJ?(*.=KDRUSVZSTG6*F6;DHNQJQOHONRlB>LG==>@H?JBMHZS\aXQN/&*<<=?WX][bN^RKC81*35ADPY_[\QIHD6784<>FNJHNMKBJJAKPTY\aLQ<A118<BJPZa__^NC%%/;E<IGYW_YTR?+6%;;AJQV[TMTXHJC@=P?EFGOGIIBNFNZNV^TF=7@3C9DHKXTbYV^SD.=(17HGKV^]RXFOB=#8/8<@LJLSOXGBRLKJIHP_dUF>82>HF>HOKMZ[aX?( 9A=FKL[^XK^JK510-=DVWS[PT[RLNHI<B6=KIKETPR^=AJT]WSJ>=5+0E9HBG[[SR`\O?*23<3@JT[aW`Q=A82:=<<>DPKHVVAMLFKQQJPRcJNF?@=66HGNPS]cdhS<++0/5@?Od\dPPSHB$7DCJKEI\^\PKROB95637OMJHJZEG^ZUOK@;9C@FEI8S^I;KFJZTF?@24=9AIL[Z[hX\QF..0-6*IKKMKRKSMHXRIFFKOJBFHHJ?K=8:HY]foaE02,@2><=R]db^`OA2-,45CKPX]j\[C6./2EAWM^^lJOKCI4HKPCJOLMOBE<>HQHSPSXG@=D8?:@<LTWZcfU^K?4,/,4=NLOMKR;>MJ<S>D?EHFAHMTLOF@@EFKEXXUA9B3EC;C@Lb[bRT7<?>5859KIQ]_jdR=3'95>MRTV]KEONG<?9;ALOG[QVJNEC<LPPU]OO:<E;;?7FFUX`eRTOH6.3;;;KDCNMKBWWZMC1-:0FJPUQROVKFGCGR_nM;:<8>AA<EPO^dm];01,87HJCU`ZghWE*1/;A?0FJZKS`VYRR;:75>MNRZRVPFKD@?GKH=fF6NJNHIAK<=RRchaLM95@3?JGDEMQ4PKDhYKC&(7=E;AOXV^RVN@BJMGGBHCHQJBCBEOTYW_SO>)</==GGHTBc^`eR0)-4@2<GRVd_UTF2,5=>6FFJVRJOWOLM?DGC7?=IKLULGKCFIKVZ`]KJB29;=?G=AMZWQABe[=>'188AHOPc]TOC37DHPJGHBKHMCJPGFJHXZWjYF7/1;7CACUZ`XTX5&.+BCBMIOXj`DH4,5A@-8>UUZVU_PHQH744:<DLMQTMRFBLGBNOSZP>KIIBBCA<IMGLOHIEmTHI &0CDFILSSSSJJJAAFA?@DDGKHMBICIT[X^VM;8=>>A;CFWS]]gWJ+0(:>CCEZPXgZYXF8-/2>:LRUL_TPORI<F==35FCKPWQKJRLFQOTR>>BC:DFDFD@CPXhPPK^]QN4(.(1DGLNR[ZTOSGGB$8<FHHJFT]MIMGFBRSQ>D@<I=K>=PXdXcW@653*58CJNU_f`[P<3$%+>QRSa_jESOPID;8427:6KKKMPPMKMHMUMDBADIODCKDGEIKWQGP`_W3..3=8IJIX[gcU:,*&2@HGLMUXURHEDA=;FBLDJIPSQNH@EMOZVXAAG?I8@8<BRL^d\L@63:DD?CJQ^de^OH5,.==6GCJKUUSQNJHB>A<;87FKJMKQUaUQJ@ADelUbXM4:48<?CKLU]beGC:-,,@KGNQTRUZJKE37B9>DKLRPRLJJEHTUTJDDD@GF@GBCDJG[o_WD:+<7=>JCMX[cRWFD70+<=EMLTV^VXIUF;2-4?HMQWZPSSRHN@8@4.AOK[JM@>67.@GHHP[^`TN@51/==CLDReUVKLBGB<=?@CEMMXOOPHEJHLRLJ?=G<AC=AKHMUX^gQ4+5516>OKUfq\WC6(-0<CMJGQ^ekWH>5,39=7C?NUXWSLLCFI=?AFGNOTHG1=KHG;3AZT_aaPC"?773=DILXf_YQ7032<>A?PRWXWQKD?;8>D=AEPMROXHCAFVLTVYEC4@=?CKHHPSYf`SK6&(6=AEDPOZ`pt_H3*+%;AG@KLTYk`TLHEA=<<>IUVUWJ><=>9DDGN\`cePA3(,13DCQTSgfYL=*(4=MIMT^bUKYK5/632DAFQTQ]_YE@MHCJD47HGJMIB?FHT\fjX^J--.3>HIJRXgZZRJ@//(.4CHBOY^^eVOL<AP47<;OQ(?METRMK@BKUWb_iKF522?=>AEQUX_Z[J<614>DDKKTV^WOQL'@<;?HJMRPTJOGGIFL@HL@GFIHRGHCMMYY^RWK@+,=5?HSR_S`j\OQ=/+*3:<GFQX[ZVZNJA32=CCNTBGHDTNLJLBGJMR]bXE<19;==@@NV[VgZK2258:?HK\fTcRG70*&?FIKQO\UU\SA8+7<5:KCGQTW?RKQHOP]]R><6>;FEGDHNW_Vl^M<8+5::?<BKPP`bg_HB<<4+:;GaNBCJSZOCQLKNUVTUDBDC9?E>DKM`T[TULQ?)*46DHN[ZdZ[LJ;445:<HMMPZTNFRIMCJ49APSX_OH6>JRQH?4NFCKBGFPL@HS]]_cRB02155<>DGRT^_]ZH>6"-8>CMV=EGIRJBNKNNQUH^WH>@C<6A?FIDMU^d\PVC.26*4<N__aP`_:/?,2:?>LNXehDW850/56GCLPUZROJFFIGCCAFGBCLMJLCGMPO\`XU7954B?8AGKP[\d]VXA6=+85=ES8<]STaMQ[NHRF@:94%<Q^PRGKN5@NWKIA;=MFDHYWINX\aXH12:3:A@KK\`k\QDJA2575?=MS\ZSV]LNK478ADE:MLNGCPKPHTTTQKMB;B;6B<KGGPV[SKN]QLDMT<NODCIUYVTOQH?4/8>B@LWSTWSOIDJPGRIDD@?HEADGGLVe\_WJ50<3@@LKDT\_SD<63@W48@EQUZb]]NI6118AG9LGLVLTPSUSNG=C?C7E9JPJGLOJNRSVRTD60.CIHDRQ=JOT[\W]_B3-"49CLQTPRSPQIGHKQODNE@PPKCGDGLQVb]V@,:<8B@FQSW]`OH73,2@=JLQPXUOOIBD;85>@=JLRN^PSIEIEA>AB>=AJCWZKJNJNJMTKVMH<58MBRJB=IMMSSPXRVNB+/;7;EMXW]RMCLKGFHF>HKGHOGGD@MAV]\XMA3<B=6EP>RP[[OHHB2872G@M[^`\RHMB41(;BKRQ]UQQJMSFBB26<?HKPZWKP@AANPNDDQP5CBF@PNRNRDPLYT[\\TF>66/@:CNMQX_WJ?MGA>@DFFAFJHJJ<BLMMe[TN=;;8;:@EXZPb`OC7/8??;ACMU^`hVUK#'22=>PZV[_PSG4@AE@/><KM]WRHIUQNEAM??HLO=EJPLECH?DNVlfc[SH3-,.<?MHU[]OWWPOE@//8EDP9JQRJNDSM=BAEDHGK?GDKEL:TOXYGKF2<HA<>7GT_Q_]SJ@254<ACLX[^XS<1<,:IH<D>EKUZ\NRLGG=A:5>;HFUMOYX[SC@CL[abTRN3,?7;BGQRXRUSC@A?3??9FAJFOOSTLKJDALFPIHBHDOQDCIRLV__aT=6=3;<GJVTclYXM-6 0A?BKP]ZcQFM??7.3?>JKTRWQUZLG@HBADA>=JLNIQOJPJFFMNX\f\ZP=*)0>EFGPZVbXIB475<=3@FHRUVRHJNCCC9DDKKNOOIEHOGONVd_RMB60431>?HR`eg`UJ;/ /<?BKUXTY\MTNF68+61HML\aZVOGG?AE@7NGBACIVPNMJ<IGJV^_d\W63;@45<MV]ZO]NQHH827-1EOWTQPRQO,?8??KHTPROLILKTJIJN<FMDLA7<CFPX_deUC<5*=6AAD?UZfU[BCB5-815DHMXa\\[TK;34>2;<HOGMOU]QOMJCDO0Yb_ON535G6>KH\KOhl:E9)56A@6IP^haXWO@/##<@BFDWUW\ZQ]PHGFB?><FLE?E5HMFQQUcc\4!(;;@BKKeV[UOFF@63'59EHOcOYUOOQG7EB788AKNMSVa\HKALHNQVRQKIH7?AB;@HHW[glND1'+445ECQ[ahdbQA*#"85>P\HRUXRMB9;54>BPSHSNZVNFDOIDLRX>KCD=HJATCJRYW^P=:42DEDADWaDVfbVG/)>):5CNINSY[ZR]O>MEF>91>8AEKZb[EHLSXOaSK1,7EDGNKBQ\``OM@M56@D85?LNRO[\MWG7/00==<FYTU`\TCA8456?LO]MZWLH'=FV]NV@D7<HHBI>BPTlSjn\M0;87BCFHGA=QQZXNK>?OE?70KXUM4DLODDYXEOSdfN;3F:6FDK_TRQcbL?.#)3:@DQRcbaPHD990+OL>ULE[PED?585HDCNNNQOKB=IIQS[b\RVG;797<;SHVX^R]XXK@#7?:CFOZQTckZPG>?KFD8./EQELVKEA=G[]S^hUIB35327ELZU^]^[R2-/F>FGRUUe_[M31*2<BHCMNUYR[TIA71'-BHMW^PQ?BGKOCXbZREB3<=G=9;BDMO\dq`UH5(1,A86HRVL^acMFCPIO@8:00=TSTPGKcNHIVOURJM;9ADF<AGB\gef\80.>;AEHKV\[dLG8+,1>DKEJJU_ZWJKH??>?G9JUcXTVHB@=?]TG@;D;DLJJGHIMRRTaYL;=>?K?ELEKHT[[ZRKBN>0&<0=>?LTNUMIKCA>E@>GMSWPRNLUJTKVNNOL>:1@;@?@OX^abL=02::@DEETS_[OSMCC<'11>MORKQWMUJUPK@>4&@CHROQPQJJRNVJOSPC4C9AMDEBINTRX^YHECHM;:35:7FUXSNNMOAE7>:2=IQW[SJJCHMbV^UcD;/<EE?B?ELWlqdQ>'34>93DHI`_WRFBF68).<M@PYT\RMAD@=;8<@HAFXXVJGFJENLSWSA?A>BBKD;IKPU8RNMNNMD/5,>516BLRXeYJM62'>GDHQ\P9OMFECWWTOFG132LAIKJCCQdrra<2517C4CDGH\i\VX<3-12FDSWXVXMLFF;:188GDHNUebUMF?)GK@KHG?8IQSMQMFGHLOSNEH@@F/+,$9>@TWXjUccRL;9(-:9RMTSUQNNOQRZ\FA"6LNOQLH=IOT=ROA32CACHLMQNUWb]X49-3-<@@Z]Zg\SR:7;3?9?FCKJTpTHPMG3><JNHJ8HRIMLNNTLJD?;NX?<;XA021?JFUc[]OQN?0++=4>RQTPMRMNS`6-BGG=AIKXEHEHN[`WUST85/-<9<OPVZdYfRC?324,:@IX][^SUG@11)1<FDNRX_LRKMI?>D5?<2?KPRNRO@OJ@R?BXWCLGB2/38;>CFI\WaXWI>54-01I;N_^`EKCG3/5AECHLUTUSPLMHEPaQRKFCC?@EDCMRY_h_X86,764AHMUV^o]U<)#'02?HLS]Y`UHCBF651>3AJHQVNTOKIPJ=KH@FJFHE)##756?BHP\\kgS?2&'67.DO^cY\dS8.$27?7TWFTWXLGXFMNHRR:E4BILIIHMIS]TD4-4?E?DAGOUUa_eVT@;.%(4;@LVbklaUQG>82,/#9PWTT\ZRHJA@D>37AM>DKJH;8=?CEGR[ffOQ?;+-04AG`WX`RYL;41,.?>LKMS\SCGBLJNA@?CBGHMKLPSLOWDZY_[E3443>KJKOWdf[VG3- ,C;FMV_ZgXXRH?2*-;9CQRRQLVXPOKKH703-2?EG7AOJMHFBMUZ^^dX;3./<C9ABRdb`kP=3((;BJQVXX[NWFBB;39DRMUGFPCXLHHHJQJFB<@DCKKBGKT\\hJ;0*2=ECH@BQj^`VXHG6+(4AFBJJPMT][]UOLID;97=?HMLXVIPK?DJGTelfNL6,28A7DFP[`\eh66;$>?>JSV__TJ?AC/*87EST\Q[KWNIE::D=>7OGOPFMLMLRadhOB6=<6=@FBEDRXdcbc=#B-<CHFUUah`XK::&*.3CEGKFAV?>HALM?IKUWZe\I,G@6<=<MFVbbbZA<+*66=CBFXggOgS0!$9<B@OTP^NXSKCOO236=>WMWNGR\XBKNJ>/GHFDMFJTVMHRT[Q:734>A<<JGI`q^]bK9M;/)-?DB@RIGTMTNJNVDLSDE*?CAONPTIGA@HR]fkaE<B,<<8=<AR]lfTF1,*342?JTac`UVE45#4<@?OI\KRUQOCCE17<MI\^PHIFFAPTITXT?P;@E?H=8GLIZW^d_UN<).2D;D@FNMZW_VGQM>;IF<>BKHXXLDLGEJQYJ_WhJ?/77A;8FMNS`^cNC*62<3;EUaIWXJHH?*3;D?PPSSISUJMBCK>6<>HLKQRSHJFXJIQKUYMMAC7?=SGHD.]bdccK7+1518AFALP]TZOK:>?54C>EDZMONROM@GR@_YTOA9>@A?B@HKZ^da`M1*2<=?>MO_qlVD6--09;<FHNXSZ[SK;1*12A<LKLHN\LMINUOKZQ;90JLROF<?L@LXUhbPNA459GBIH@ANGQ\]PGUNWD@A87=EQRTVOTOHLJCPHKC8;3E=C>@LTD^g_GD92@::6CJPngSPVL9."/@D[K`]PXOGAJO454B?DXJSSQFMREMHG.DHDDM:OBHDDADJSLKQ<JMNLKLDAM?F8Ud^PNGBA??/8LF4OOSXYS3HZEFLH@BIIJ?M>LR:YR`QL[1%?<X8DS[^QQKEMDL.76>8NRVZXlN>* 1=F>5>bghe;SJ=<D4,,,FUPT_F]ELORMEGQRP<@;E:TLTNTNFJRegmV]QD6%%:ERZ_mh[G1/'#0@UTL>\Y`PCJ@JOSdYNK5%?KG?EION_a_[bV.7.%*<FJT_`cYPK@&'-0<E?O^Wn[JH=?5!)52FMRR_RaD?A;IJCEH>A6EMVFNOQRHLPIS[jccK1-.!/-AKYV\gRTS<//7@:>8IXcN[VNGPNDDQ.<8CJNV;PGVW_TWN?=/0B7;IKQ\jda]B3+0-6<;JW\cKIGMXEHE@@<6<=EJWPNOVFDIP^rUI75=9JDEG4DGKNTM[eceHB;4("0DCP_R\WQXRH@5.$.CJRNOOMLMJKUNMPB4@GEG9QTJFdd_PG;4/09?D=T\]ZZXXE086<?(3EIJU^\^bQ87=5<?AFHJUUNLOPCIIDBBA@A?GHMMMMOVNHCT^ck]<5/%-;?@CKXZg_dNA+,(78BOSRRWWQOL>C;2;@CLNQKUHH?MSK^]ZPK41:???B@NHTdroJ:812;AHIRVb^WOQ;,!8%7EHHT[TcLBOP-/;67@ABTTaOMKPL=HNFW^qhXJ@(*:*7@DQVcn[WM4 + 3KLQTTMWXOH?;7-5?HLFRTNLKCLJFNXXTQO;H=@HC=?LMZhh`[8&)05AHDJOS\aeaU(&)-+<AOTTi[cWHC2*&5<CHOJWXZYWQZOOEFHI[`^_QNH5+2,:NRTYgaod4(/7EKJUUhhXRH+%+02>Q_PCUIFPU;-<3"HHEPVSNNFBRRZe^P@:56BGGEDDLMUmagS24,(/?CGNb=f`|B</(%=17;CAEUQ>U[^MBSUBHMM^RNK>,>>JJ;HDN_a`QM0H6-8@D<NLTsxZI53>(256>FWbRfY`<=6;21>CGUSSPW\\@7<STCAHADRIGFI?OQW[_g[C6).9!33IQYc[lQS?5<9;4*=C@EQU\]b\VPOR\\\JCE439CIK?GNWWZWOMA652;=BAGRSca[PN?6?/4>6ANhbiNGW[KN60,)7;JXUUDCEIIQPTHXC73EJEJ@LDLX`oajD98*5,;@LKR\`rKF?2,5<;F@@<ORXZd`fRESPSEHOFJK<3QOFH9LXXbdS]C1'2-CBNHPDGegQZV78%#?C?SCTZk[O?4,(52@DHUPI_DPRM?NQEDB@O?KNOR:H?J_]UbP>?B,=6A>JDFTWdVL@7;=/97HAIKLSdbbgbJH:hA2%B9FOTOPUGHRTS\bXT@6*:;8>DMQ^Wah]V;13#+1FGHSeRqjD;8%18D?FTQRQNSO@A3@6+DJKRNQTGDHBIN@?A>JIYQGGBGMKZeJIf][E67<A29?KLPKT\b\kYM@K14/6IGGLGPeNFMFIW=JCOFM>ICKE@@JOUjlMGC<.3;8ACITaUdVQH62.24:GTaGYWSKKB6+/G8?JOSSORTMNFJLGC25AMNMZMGGFRFZU^TM@=6CF<FBDI@TPN`S^QVNHE?>;.3>SENVRTEEHHGGH8<CFQGNHJGMQ?`^\Q@76;G@>AORQ_bXSD;15723BPKajjZJB<8*-A;@LXQPHVQKE7>C;=,HPHKIRKJQHMaUS^JIC7?EBGCCGFGDWTTTXQPNF<-,25<@INXZTJLHDK]T6587IR<KPPNKJW\YVRE,6@>F@:MJY_nd_6+&+>4CDNPWXZYNC/"0?;FHLOU]MMMJJCGG9AC7EMTTMJGPHASVJRBJG=6HCIAJEHSDKHRXVRNKDB6-/16@SNQZOUKB51<=<<KKWUURAHKLSS\]UEA=C8<ADNAPQ\^UNC:#5?B?EDU^[dUGBA0+:9?FADPUX^ZD74+A45AAMBSSXVNH=IPJHO-8B5HPLVKHDEOFQEIOOFJNZ>,/1;??GKW]WebG=(/4BJEQdaZQKJCFC?@<F?ARHG?KKBZfK?]WQ?40:>6@?PebrSH@'12:78DMQNcZX]:,-'7<@GHOQQ\]^KC?;H?K=FFANOJPUXMUVRB:56;9GJNG-*74<EHNGXb\XO@0.2=@DBHSOQLS[KDC<<9>?DMUKOKJBRTaKTIJC98?DG>KHGgKeedR>.(285@AN\W]_WO>5-0*5RIHPPWQQGJC<:786ANFQORQRQLGIMFBLN@H@<JU2+(8L<DROIb^]TN;,%36A@IWWQYZNOK?>74;:HMJNTQIFKMRNC;5?HIJOCFHK:STXPLHF?::=?@=COaap\A(+%6EHTEKSZ\_\OBH81*?AN@AGQVUUON?D;MFA0?JRBOO2<7CGQKNJX`f[VD4,#748@G]VTcOGNA7429<??J[g\M\@J?OF;?FA<VL@?@LCPWXNRXRL4)7@>CFIRTN^]\I71$0=BCNHL_d`LNDB<<78AEEELPURQVOMG=D=6@3AHHI9CABL8GFUXpnGQ:3&-,AHHI]ahXPLI:6+3-DI@HJOZWUYNKBKD&2JUOOIIIQHLLaQQE>9<?:DB@LGXXcfdNA=/,*FKC?>@^bzHNG:&';4VJ4MPUaVSOMNBD885<2;FKO8=UHFCJMPEb[`V<?++1@?CNQ_cb`PF=(.,,DKCHVV]eZVB2-38=HMENPISOKHI\UT=7H5S><SEHNBERLZ[MA12<@<=<DKT]`f]SA3,)>9@EEN]\\_`TD=-.,-7B;KRK@4HNONFBER_A]_[?B+83;DLJQTWZTfW?/0&2A?GU^WST^TL<<"39=HPVMMUELCUORNGA9:>LMRHBHHHHL^VNC?<:@?78OIRhodQG;,*124ABMPa^VkXRMB95''2=7CBDGFKMRIZQEVXNI?81=;H@<MDETcXdSF8*%/<?GFI]b[i[T;9&#0?CGVVadSX[OM141-7DEMTKMXDLUSHJKE@<:AFJFOIP<RTebVOG;4(&;CFGSTWQR`h\TC2,079BHGJJEK_TVWLHIGGKPXH6C=;DHGGMCGU^[T[F<-$*1;EPQ[ch^R< 2GAHAS]eUTNOC322:DPMSNJXOHOMHHODJG?M?K6CHFJLBOZT_`PE@95@3AADFRXW[`\[F-#'457AIKDGVMXSDAMORP_WOH>=?F:G4GFNNRY`ef;0007>:?JWX`a^oQ/')=AITWaXZKNV@0169FMOSWUMMHIHNHJK?@:5=LFFHIKJFOP\`PG?497DD8<LFTq_jaZL5-0=D?8IJHER]X^Q9HXLAHF<GJHRQOOLXIIPMERH@2>BC6GA@FUX^b\B6689:<?QURYT_RU9,4-;DONP`^KF@SHC=;46;BMUMVTVMFOFHE>?/58KPTHTNTHAW]WHOG?CA@@BAGEJNPQb[hXXcXNH4-)+0MJf[KOPLKDRVKGJ=9O@;5;JAHNSaiSUA6!1BA=?BWWbg[\J95(1?@LU^`[XP?<955E<BKZQKNTIJLPGJ?;9PFBPTED@GXJWe\DPREC;B?;AAJ5FCEKEUSeUQ8536==EJG^SXPQPRGKFDK?C@FKIHFEGJK^ac]B428@3=BIDOU^kaFN-618:BFFOY[SRXSCG14@4>KLUbZJTNPOC;<77?<JFMDJJNQPRLRDG<H<C=@UFALOQQBQP[\WZUFD32258BMQT[ocQ0LPHC<D=AGINJDDNNU[VU]>3:D<@C?BO]RR^YME-2278HFREVUe\AI;;'A0=HLXb^PTLRAC?699:TJNKL`QFBST\RZJF84=HBGAGGCHMJMX_XeGF<.0A7;?NL\S]\cEGFI596@CAS[_EXFMNKTQLC/;<=LIH@CBWUSNRD:D6MH<8AHEN[_cWA3<3>5=HBFPS]]]ZN@020,5RUeWODRWCJLNN=:74=DTFHRUPPPOKNBKVtSZS4--71HDENOY^hWK<82077@KJQSIVWMJSIEC87;ADLWJFKFP]UQMOV@78DFI@C>OTa\WcF/6=0A>FRBC\`dWRI.-6767FGU^kLRP840?<6A?>DOHMQRQPTWV[1JQb_uQJ;+243?>ELV\h_TPEA58027<<GMNUU]XNFGD=448JQMJMNKPRPWSMD1>?BFB?GHWQ]`ZZV-,%B=>>JRP^aVS]7(;32+@FQTXS]WYHD;61477CNIRVXT[THNHGMNW_c^eO@10,;;BMZOHJn`\G,B-+:><Q`kZUUBGKHA6</DE;PPOMORNOLKI>35=BMEDITkMM^XPH94?G=H;3BNJ_^\YOH;7*,=BRPW\LX_[HFJ61:5;7GNQI`XSXRNDLAJG`^TUB94527B8KZr]eSTCC4/.9<B?KU^Z^_KBAC(25FJKQUXUQJPHCFG;:6AJRIPHHNJMX[XLJF<2=<>=CNHN_ckTD8341,DE<EZZ[c\^HI?($:D:>KNWJMQ\WTPOMKH[TUOJ7:EAHM@MH@FFddW@<4+9A6KJTU_RIRNDKMB1?8@D>PUNUJMKHB@CLL[<CJDDLLTTVUO@?4=;4MDD@JNJ\ceOIB.A=-?@FMN\\lU[PD:.145?@DOLRUSRQTLGGACMPTQJEF@AAEFDDFPaSJC<4>?7@<AGL[`ScdG>@24/8>HL`]`X\MCA3-6C>OMIHSRWVMQL9<D28>DPUP_]KBHDMMC;525EKKDDQGUU`_TV?3065<CEDNNCFN^^VWRBKR@KLRQGOQIG15GAFHSWZ^YA@@;<<:AH=W]e^eS.$08>A6HKTVa^`W8>(/38HLLMUXX]ULDA:1;;3LPSMFMAXbINYIOMF>?:C>GJASIgSHTWH@845:?IJKKIST_`G<AHHDMCJFOOFOHQJE?<>BEMS^]E6EBEKL;@IKOQg]GC204=@5EPXgpRQ61"7;62WW\`k\VJ?<757?TNMPTRWTSFB<?PP?G=>DHENJ?;GMQPNTRQO?:2*DALLDIM^OMXREPFCPJ338BJKMRROLIRLMPNZPM>3D=F:HL-SXdoai?:;4.;?<FN[OHiTK;.2:5:?PHX\]TRB=0:+2IMOD]j=HHFMHDACAIJJENMLJDKLETV[ZVZHE7,1C?=AEFO]SZd_]_MNHG238FMMGTXNZNNIJE7@@=BCOPHLFJKO?Y`NWO8H/;>6CEScFk`\K7-67-5AKNUZW\LC.-/R<>FGIFXTTHHMBMHH6?CGMJQR?OPJDK[UV[QBAED/D>GADU^Q[WPQTXI>@J+7GEANM_WZWH3(3(H@GPV[NgXTF>EGIOOI<>=>=B@=@?LXpgd[6.+I35H>H^jiFBHDS3352??DMW[GVKIE=9K8@=;?JSWSTTLKNRSIH5>AQOMUE->DHL-S[P^SPOSPMA1:>APZWVLJREMH537>NAFHXQLONDJKJWR^Q>B=4AFE4?NT[]N8*4;?8>@Dce[\SF>2@#0;>F[bbXZDKRF-%45>@AMPWSXMTEJ@CK<EDLFKXTUFL?HMGBJRSMA4?ACFEGPACTPNWQHWTED-*(6GWLPSPQQKLEEBEA@AIH=LBH@LUZ\[b\D53,;8CBNNQWe[TK7<*3(@HCOYdS[SB97,628>OZb[KFOLOUVP5/?D<JPHIIGFDOMMKRV_THA=<7FL';5>AGWTW]`RO?4-447>RRSPULUOOK:D;28;@RJRGOGOVRSLF<C<AKKCGFN@T[^foE6)+64?<AJU^c`aXW042*6;H@@HKPX^ZZG`e@32+36BTPKPVSP]HEOOKGCI6GKK59AG3HPdt[KMR/=38<2FHFRcdrM7:127JKAIJHNJNOPSRLFMK=0HGUQRGK=CY[^XPB@6;?:A<I?RO^ih\N.&.58AFHQVWD_]X=4:5@9ABKPT^SOOOXKBBA?9.>B?HAIKFD@LOY]rL>M14C>3>ADIFL[^eRO<058=>:9GMIS``qUTRM>=24ABGRTRVEPE=JPLE76>CDDDIRXVeTMO?16>9B@BDMUiDZ_ZTK:7(1,6INRXlmJ?HRBEG0@;7>@NNPDF<AALT^NXbZ_XEB'+>48FNLPda[\]O>571-?;QSIR]^UKTKA85-CNSJKIEIBLZVTWBD70=B<ECKOTYabVK3%58:BJFHFS\`aRJ6B?15@?MLLTV]_SGI;B168;IIN]QTG;N!FJCMTcdOKI/>.6C]C@IWT`SG@96@84GGBOTZ[RKFJC:<8>LP;EN_cE8RGPTSIG4<G>CBEDI]DCjpTRJ#+=6AHLGLT\S[hXE3:'8GMHFJX^c`NKG@2&,2<BMIQSPKKIKMLHLTSMYPKH=,?4HNCPOTVJOLAF7344FB>FMXrhT>?A,,*?LNFNX\KKFE@JD::8BGS^R=OHNJOPZZOFEHJ8OJ8;LBYdNN[G:64+73AOOV>XcgDUD61&=IKCOQRNPNMEMNOLajOAGJJN4.HBGE?@IRXaWhT:6576=G>R\acURB14..:<DJRXU[THEA>EKH3A5S[VZTJP??OKPOJB>DD<LMLHMSM_XRTE,<-5DIGKME_\]c\:5:?582EIDHHRKEJHMSPPJJHUQQBF>?GE>IIAFbW^dSS@'2/-66;HN]^ZZdP;%6>HHOV`UOKFTFJA/15<FNUYNNQKPMLVVQI>=;$H=IGIHERYbibM,:12?MLDEHPXj[Q2A;577CPLQTOTS?G@RPGENLM>4>IBHMJNa]03DO[ZnR:)0@C@>BLIW]lWX=-133=BCKQR^blVI>506;=DH@@XRROMLCGF??>EGNMRJPHJSQ\[OIE=6C8B@LRDAQUSe`TC<8'AAHMA9@IITT``^MHA>F5ND;:CNDFHJOGSZ^UaXE6&648DH:OLMd_^_G2%+32>CURU^X]dX>260568AIW]`JPSKEC=228>CNPTSMHQUcNRQF<378DKBIKJGK[YVGB4>E<CGOHGGH]HF?CXNLADJ@>8F?QJLUaRQA=8JRUKTOKF:9=GDM;PQOUUZW1'9<6ENKFONac;A9+-FG>JPTXQkKSB%+HINHFVU[UXVUIOHINMH@DGR41SVgNGFCOMUQDC0';HMJ5HIIMUBAbRIOGD5*'5LRPLMJL^]JNME<??ACDBIWLWVW;T[RDB@74AAAKI]RRRKVRZA(&06>5BIX\kf[NF:*-23BDERWWhRA,NSP>9JGD@KB;eN:5?RYa_\QMOCI?6;4*FFOOTPH_g_M/$-56=PKSQSVXWRSH:2149@GMM[UM`N\TSFM55248J8@PIBSbVmhC8*&'4ADGHQ`fZ[OH=62268CARVaiLLHK\OEA<NJAEGCHGGEHHMUUQQOK?<8=<BDGG;FQMGLOTgW3,''8@<>@Kfb^aWB6,%;<CMSXWSQFHOKROLG@?CCIBFDLGVePIUSDD=<+?G=?JQZadT[B3"05==BGTVS`\UOED?1:;1;=NLZMHRPVGVA935>AANNQISRNKJOVQJJUUXJ/*/-2?HJ[_WXPWJ9( 8AGNDNWPJDMHREPTMSPDCJ:L@>CBJRSWV`J==<;A:6?KUZQZcG642=8GJKDV[VXRJ@7/*5:DMRT]XWPA=?>LHGCIG\TJGPQ:KDCBDHKKWcT[a^H71 '5:ASUTYZDE?<B-=+4FPKWX[G=D?EF><SP\NJKHAEJKQSXSW=?;@;:,E\XKNWT\QA=:998?0FPRddj^K/(%+7DOMR_XSOOB=4?DL97LPQPSPMKHHLKJOHM>>TPTWO/66@B>FJSX]LAHD,.3IGEKNM\\Q>?;6;?EDEJOTSZGC?L[dHGJL?KDMF?BA?DNWUZ\U;D1/;DAFAPTVZWJN5=<<?:/RVVU_YKI6B=<967LORWPTROHH@CFBBJGGh[PB5:E6<G@CPQX\UF<2/8<FDLM\eSTNC>:<+-?IPPXUORNF85DKR]ZNHH=DJINJFGN[]ZRE/=76KBEIPRZ`P]WJ9,99DCMMQNLU[PHB9<;6>9ELRKTRHGGBA>>D@DKMcRU8*44<G6Z?PP`eQGC0:5AG>JEPUVXMGGM?$.A=LV_RRHB@DHKRHFHESGQQMGGFHGG?UsmdA,*5;6>OQLFIScbTF823=FE?HJRTTXNKC6047=FHHGX[PULGMJO>FDGLf\cY@:337:?IGJ]YVPD;+%54EHQ>UrUXPXP708/;HIHSXUMA?><LG4@ELLPOMLH8CFOIZ`YKLK@PLMB>7GOXgfMO763>8A>OINQ_aUBF5;28CBEGOOXaTUMKK?93EI8W_]M:>@8AGAHFDNZa`OH0#*@HC@HRIUV\KNA2->99CIPTUX\[QA70:+7IQTRNV^LE<BEGFAFOJQaGHICAAJKN\U[G;4<ACBAJGKPXXVP4&EEBA<GCNKQ[Q[HLD5C34;HXG@OVTRRPF=BZSXUQQRC:<@F=AHCHHU_TMMJ1600>JHRWWVXa@=++6J=?CJ`mKO0<?@B@66KOPMEcSRTVIHAD[MZVB48ACHACHJW\RaXM:4>=KCJ=OVS[SNFC6DECIQP?STRWJGMTFLKNCLQBSIO?8;KFHGSQe`cGM:/26/6KSU`cl[O4#$0>AA<ALWcQSHME>2.<DDHP]]QLEB@BDMTJ[PMJF==S=<@IM]YUX[U>2(<<:??@JNOUWJHRQTF@?DS:PMS]^UNFABA=MA:BJBSEkLGOJHOX^[QA.09@FACDG_X^T\R831'>CAFJXS_bTQL=/64-CAGGSRSYJ@IF2?1D:DDZ\X_IBCMHPNPUHM<>IPMT@:<LKNQSQMJF@9?7W]_@GAHQWU[\;==73;KHVZ\OGGHMDCFKZUI@:<>HABAKJMTTlW`N41'3;><EJT`bgX^H3907<=@DR]gCGKONF3513.>LOR[YQ<REIHNB5=>>MNNLFOFTFUIPWVLEA?DHFN?BNS[^\^TN62825;2J`ZKJMOPLGHPTTY^WDB;9?@@DGGPMOWeUG1/155=HHSV[_TNP:348@5=OWXYNSPDC=::@@KQVUQNJB?DHLWZ`XHAQFGAEACBIPEMF[STXP?49?BJ5;H\\`c\P>KF1).1BWgQ[]IHMCCGMTTIDO@5TSEFACBOVNDFC8I>DFGAFOPaRJ>:95<C<@FFJic`UOD0)806D@V`QJN^GFHC<@?=;EJAYUZ_KNQ@GDOQEC@;BHP>2H;H=EIQY`ma]B1",.4:GR\UZXOWNAA@JA=DHABQJ?KGGKSUX_ab>=%0?C<JXXVRnULP126(2B>MYfTbQQ@0@2K8:<NHEWNRMLQNNXeW=>2:AHBIIKFISX_RUC@8729<C@AQgŒfŒiŒhŒiŒhŒeŒbŒ]ŒZŒWŒWŒXŒ[Œ_ŒdŒfŒgŒhŒjŒiŒfŒdŒaŒ`Œ_Œ^Œ\Œ[Œ_Œ^ŒYŒUŒUŒXŒZŒ\Œ]Œ_Œ_ŒaŒcŒfŒeŒdŒ_ŒZŒPŒMŒJŒJŒOŒXŒ^ŒbŒdŒfŒhŒeŒbŒ[ŒVŒRŒOŒOŒRŒUŒ[ŒcŒhŒmŒnŒoŒmŒiŒdŒ^ŒYŒVŒUŒSŒVŒYŒ`ŒhŒnŒoŒqŒoŒmŒiŒdŒbŒ^Œ]Œ`ŒaŒ_Œ_ŒbŒ`Œ^Œ]Œ_Œ]Œ]Œ`Œ^Œ_Œ`ŒbŒ`Œ^Œ_Œ\ŒZŒWŒSŒRŒOŒLŒIŒHŒGŒIŒKŒIŒFŒbŒdŒhŒhŒhŒdŒ`Œ^Œ\ŒZŒXŒVŒTŒRŒWŒ\ŒdŒhŒkŒlŒlŒiŒgŒdŒaŒ`Œ_Œ`ŒcŒ_Œ\Œ\ŒZŒYŒUŒXŒ[Œ_Œ`ŒaŒcŒeŒiŒiŒeŒ\ŒWŒMŒGŒFŒHŒOŒWŒ\ŒcŒfŒiŒlŒjŒeŒ_ŒZŒPŒIŒFŒEŒIŒPŒYŒbŒkŒoŒpŒnŒhŒcŒ]ŒWŒRŒPŒNŒMŒNŒSŒXŒ]ŒeŒjŒmŒlŒmŒjŒgŒcŒ_Œ]ŒZŒZŒZŒ[ŒYŒVŒWŒXŒ\Œ]Œ_ŒaŒ`Œ_Œ_Œ^Œ_Œ_Œ]Œ^Œ]ŒXŒUŒRŒKŒGŒEŒGŒIŒLŒKŒOŒjŒnŒrŒtŒpŒiŒdŒ^ŒXŒUŒUŒTŒYŒaŒgŒoŒqŒnŒpŒpŒnŒlŒhŒdŒ]ŒaŒdŒaŒbŒ`ŒbŒaŒ]Œ[ŒZŒ^ŒdŒdŒeŒeŒeŒfŒgŒgŒbŒ^ŒXŒSŒOŒNŒPŒVŒ]ŒaŒfŒgŒhŒhŒgŒeŒaŒZŒSŒLŒFŒHŒLŒUŒaŒgŒjŒjŒkŒlŒjŒgŒ`ŒZŒQŒOŒLŒNŒQŒ[ŒdŒiŒnŒpŒqŒpŒmŒjŒfŒ_ŒYŒYŒ[ŒZŒXŒZŒ]Œ^ŒbŒdŒdŒdŒaŒ^Œ[ŒYŒXŒ\Œ`Œ^Œ\ŒZŒYŒWŒVŒSŒPŒPŒQŒRŒUŒWŒZŒWŒhŒlŒoŒoŒmŒhŒdŒ^ŒTŒRŒOŒNŒTŒ[Œ`ŒfŒiŒiŒlŒkŒiŒdŒaŒ[ŒWŒTŒRŒTŒXŒ\Œ_ŒbŒeŒgŒgŒfŒeŒdŒbŒdŒbŒbŒaŒcŒaŒ\ŒWŒOŒKŒIŒIŒMŒPŒTŒZŒbŒfŒiŒfŒaŒ[ŒVŒOŒHŒDŒGŒJŒSŒ`ŒeŒkŒnŒoŒmŒhŒdŒ\ŒTŒOŒRŒTŒYŒ]ŒcŒiŒkŒoŒpŒoŒlŒjŒcŒ]ŒZŒWŒVŒRŒSŒUŒXŒ\Œ`ŒiŒlŒnŒmŒiŒfŒcŒ_Œ]Œ]Œ[Œ[Œ]Œ\ŒZŒZŒ[ŒYŒXŒ[Œ_ŒaŒcŒ`ŒcŒiŒaŒfŒiŒjŒjŒhŒaŒXŒNŒJŒFŒIŒPŒZŒ_ŒeŒkŒmŒjŒhŒgŒfŒaŒ\ŒWŒUŒVŒYŒ]ŒbŒgŒmŒoŒpŒoŒlŒhŒgŒdŒaŒ`Œ`Œ_Œ^Œ]Œ]Œ\ŒZŒ\Œ]Œ\Œ]Œ\Œ\Œ\Œ^Œ`ŒbŒbŒ`Œ]ŒWŒQŒLŒOŒTŒXŒ]Œ_ŒaŒdŒeŒeŒbŒ\ŒWŒNŒHŒEŒFŒIŒOŒYŒaŒcŒdŒgŒhŒgŒeŒbŒYŒUŒRŒNŒMŒOŒTŒYŒbŒgŒkŒlŒmŒiŒeŒdŒ\ŒYŒUŒTŒRŒQŒUŒ\Œ^ŒaŒhŒkŒoŒrŒpŒkŒiŒgŒcŒeŒpŒ`ŒbŒdŒeŒfŒcŒ]ŒVŒMŒKŒJŒNŒWŒ_ŒdŒgŒkŒmŒkŒiŒgŒdŒ`Œ]ŒYŒXŒZŒ]Œ_Œ^ŒZŒ_Œ`ŒcŒbŒbŒ_Œ[ŒYŒWŒUŒZŒaŒ`Œ^Œ^Œ_Œ]Œ_ŒaŒaŒaŒ`Œ_Œ^Œ_Œ`Œ`ŒbŒ`Œ]ŒXŒQŒKŒIŒMŒSŒYŒ\Œ^ŒbŒfŒhŒeŒbŒ_ŒWŒQŒKŒNŒSŒ]ŒbŒgŒiŒjŒkŒkŒiŒhŒeŒ_ŒXŒSŒMŒNŒPŒWŒ]ŒdŒhŒmŒpŒqŒpŒnŒjŒgŒeŒ`Œ^Œ^Œ]Œ^Œ]Œ[ŒWŒZŒ^ŒcŒfŒiŒlŒjŒiŒhŒfŒoŒ^ŒaŒcŒdŒdŒ`ŒZŒRŒJŒDŒAŒAŒFŒOŒWŒ^ŒaŒbŒcŒcŒbŒ^ŒWŒRŒNŒNŒOŒRŒWŒ^ŒcŒgŒkŒlŒlŒkŒjŒgŒaŒ^Œ[ŒZŒ[Œ\Œ`ŒdŒgŒiŒkŒjŒjŒiŒgŒgŒdŒaŒaŒbŒ`Œ]Œ[ŒWŒUŒTŒWŒYŒ]Œ_Œ_Œ`ŒbŒcŒdŒeŒcŒ_ŒYŒOŒGŒEŒHŒOŒUŒ[Œ^Œ`ŒbŒdŒeŒfŒbŒ[ŒVŒMŒDŒCŒEŒLŒUŒbŒgŒkŒnŒlŒmŒkŒgŒcŒ_ŒYŒUŒRŒRŒTŒXŒ]ŒcŒfŒiŒmŒpŒqŒmŒiŒgŒdŒeŒmŒ\Œ]Œ_ŒaŒcŒcŒ^Œ[ŒUŒPŒHŒAŒEŒMŒRŒ[ŒaŒeŒjŒiŒjŒfŒaŒ\ŒTŒNŒIŒGŒJŒTŒ[ŒcŒhŒfŒgŒdŒbŒ^ŒZŒTŒQŒNŒOŒSŒ[Œ^ŒbŒfŒgŒiŒgŒeŒdŒbŒ`Œ`Œ]Œ\ŒXŒOŒOŒSŒTŒRŒUŒYŒ\Œ^Œ_ŒaŒbŒdŒcŒdŒ_Œ\ŒVŒPŒJŒGŒFŒMŒSŒ\Œ_ŒbŒfŒiŒgŒcŒ]ŒYŒRŒOŒKŒHŒGŒHŒLŒRŒ[ŒcŒgŒiŒlŒjŒeŒ_Œ\ŒVŒSŒQŒRŒTŒYŒ]ŒbŒiŒlŒnŒoŒnŒlŒlŒjŒhŒgŒlŒdŒcŒeŒeŒcŒ`Œ[ŒUŒOŒMŒKŒNŒOŒWŒ\Œ`ŒdŒgŒfŒdŒ`ŒZŒRŒLŒEŒCŒEŒLŒWŒ_ŒcŒdŒhŒfŒgŒcŒ`ŒYŒUŒRŒOŒQŒYŒ]ŒfŒlŒnŒpŒoŒmŒiŒdŒaŒ`Œ\ŒYŒXŒXŒZŒ[Œ_Œ]Œ`ŒbŒcŒdŒbŒcŒaŒbŒdŒcŒcŒaŒ\ŒZŒVŒOŒLŒLŒPŒVŒXŒ]Œ`ŒcŒeŒfŒfŒbŒ_ŒXŒSŒNŒHŒFŒHŒOŒSŒ[ŒbŒeŒgŒgŒfŒcŒ[ŒTŒQŒMŒLŒKŒKŒOŒYŒ]ŒdŒhŒlŒoŒnŒmŒkŒgŒeŒaŒ_ŒhŒcŒbŒaŒ`Œ`ŒaŒ^ŒYŒRŒLŒKŒLŒRŒYŒ[Œ]Œ^Œ`ŒaŒ_Œ_Œ\ŒVŒRŒJŒFŒJŒQŒ\ŒaŒdŒgŒiŒiŒhŒcŒ^ŒXŒVŒPŒOŒPŒVŒ\ŒcŒkŒnŒqŒlŒhŒeŒ`Œ^ŒZŒUŒRŒQŒOŒNŒPŒRŒSŒZŒ^Œ^Œ_Œ`Œ_Œ[ŒZŒVŒOŒRŒTŒTŒRŒLŒHŒEŒCŒFŒIŒMŒUŒ]Œ_ŒcŒcŒdŒeŒ`ŒYŒUŒPŒIŒEŒCŒGŒOŒUŒ[Œ`ŒeŒhŒgŒdŒ_ŒVŒQŒKŒHŒIŒLŒQŒWŒ]Œ`ŒdŒhŒjŒkŒiŒgŒgŒbŒ_Œ_ŒgŒgŒiŒhŒfŒdŒbŒaŒ^ŒXŒWŒUŒUŒXŒZŒ]ŒcŒgŒiŒjŒhŒfŒcŒ]ŒVŒNŒGŒCŒEŒNŒVŒ]ŒdŒiŒkŒmŒkŒeŒ`ŒXŒWŒUŒRŒRŒTŒ_ŒdŒeŒfŒfŒdŒfŒeŒ`Œ\ŒVŒTŒRŒQŒNŒOŒTŒYŒ^ŒdŒhŒfŒeŒdŒcŒcŒ_Œ_Œ_ŒZŒUŒRŒNŒLŒNŒQŒVŒXŒZŒ[Œ[Œ\Œ`Œ^ŒYŒUŒWŒVŒVŒTŒNŒJŒJŒNŒQŒWŒ]ŒbŒfŒiŒiŒhŒcŒ^ŒYŒQŒKŒFŒCŒEŒKŒRŒ[ŒbŒgŒnŒnŒmŒkŒjŒiŒfŒdŒkŒbŒbŒ_Œ]Œ\Œ]Œ^Œ^Œ^Œ\Œ^Œ]Œ^Œ^Œ]Œ`Œ_ŒbŒgŒiŒjŒeŒ_ŒXŒMŒEŒDŒIŒQŒZŒ]ŒbŒfŒhŒkŒhŒdŒ]ŒUŒNŒIŒGŒLŒPŒYŒaŒgŒlŒoŒnŒlŒgŒ`ŒXŒQŒKŒKŒOŒWŒaŒjŒqŒsŒsŒpŒoŒjŒbŒYŒZŒZŒZŒ[Œ]ŒaŒcŒbŒ_Œ_Œ^Œ^Œ]Œ[ŒYŒYŒZŒ]Œ`Œ`Œ]Œ\ŒYŒWŒSŒOŒOŒQŒSŒUŒYŒ]ŒaŒcŒgŒeŒbŒ]ŒXŒQŒJŒEŒAŒ>ŒBŒGŒNŒVŒ`ŒeŒgŒgŒfŒcŒbŒ`Œ]Œ_ŒdŒVŒUŒYŒXŒ[Œ[Œ]Œ_Œ^Œ]Œ^Œ\Œ[ŒYŒXŒUŒTŒUŒWŒXŒYŒYŒXŒUŒPŒKŒMŒPŒSŒXŒYŒ\Œ`ŒbŒcŒcŒ]ŒVŒMŒIŒFŒLŒOŒQŒVŒ\Œ`ŒfŒjŒkŒiŒfŒ_ŒZŒPŒHŒEŒIŒPŒXŒcŒiŒmŒpŒoŒlŒhŒcŒ\ŒZŒ[ŒYŒWŒWŒZŒ]Œ`ŒeŒhŒgŒeŒfŒcŒ`Œ\Œ[ŒYŒZŒ\Œ`Œ_Œ\ŒZŒUŒOŒNŒLŒQŒTŒVŒZŒ^ŒaŒfŒgŒgŒdŒ_ŒYŒQŒNŒKŒHŒIŒNŒSŒYŒ]ŒaŒdŒeŒeŒfŒeŒdŒcŒdŒYŒXŒUŒQŒTŒXŒbŒfŒpŒsŒrŒoŒlŒjŒgŒeŒbŒaŒbŒaŒbŒcŒaŒZŒOŒLŒQŒUŒWŒ[Œ]Œ_ŒaŒdŒfŒdŒaŒZŒTŒIŒCŒFŒPŒWŒ_ŒdŒhŒhŒiŒjŒeŒ`Œ[ŒQŒIŒEŒFŒLŒTŒ\ŒaŒdŒhŒmŒnŒlŒgŒeŒdŒ_ŒZŒWŒSŒPŒTŒXŒ^ŒbŒdŒbŒbŒbŒ_Œ\ŒYŒVŒVŒVŒWŒWŒYŒZŒZŒ\Œ_ŒWŒVŒZŒYŒYŒWŒXŒYŒ[Œ[Œ_ŒaŒaŒ]ŒVŒNŒEŒCŒDŒIŒOŒRŒXŒ[Œ[Œ\Œ]Œ_Œ]Œ[Œ^Œ]Œ\Œ`ŒWŒTŒSŒUŒ_ŒgŒmŒpŒqŒtŒvŒuŒrŒnŒiŒeŒ`Œ]Œ_ŒaŒ`Œ_Œ_Œ_ŒaŒcŒdŒdŒdŒbŒcŒeŒfŒgŒeŒbŒ\ŒWŒQŒLŒJŒMŒVŒ[Œ`ŒbŒeŒfŒfŒfŒdŒdŒ]ŒVŒPŒIŒFŒKŒUŒ^ŒcŒeŒkŒnŒoŒmŒhŒaŒZŒUŒRŒRŒXŒ`ŒeŒiŒkŒpŒpŒrŒqŒnŒjŒjŒgŒbŒ`Œ_Œ]Œ_ŒaŒbŒdŒgŒjŒmŒlŒlŒkŒhŒfŒfŒeŒgŒgŒgŒfŒcŒ]ŒXŒQŒPŒNŒQŒWŒZŒ^ŒaŒeŒeŒhŒjŒjŒeŒaŒ_Œ_ŒbŒSŒNŒRŒVŒ_ŒfŒkŒoŒpŒrŒpŒnŒfŒ_Œ\ŒYŒZŒ_ŒcŒdŒcŒbŒ`ŒbŒbŒdŒbŒaŒbŒbŒcŒaŒ`ŒbŒaŒbŒ\ŒXŒTŒIŒDŒDŒIŒOŒUŒYŒ^Œ`ŒbŒdŒaŒ\ŒSŒPŒKŒGŒKŒSŒ[ŒdŒfŒhŒjŒjŒiŒfŒ_ŒXŒQŒPŒPŒVŒ^ŒdŒgŒkŒpŒuŒwŒsŒoŒkŒeŒaŒ[ŒYŒXŒUŒTŒXŒ^ŒeŒiŒmŒnŒmŒjŒgŒcŒbŒ`Œ_ŒaŒaŒaŒcŒaŒ_Œ\ŒXŒTŒXŒWŒUŒXŒZŒ\Œ^ŒaŒdŒdŒbŒcŒaŒ_Œ_Œ_Œ`ŒKŒHŒEŒHŒTŒ\ŒcŒfŒgŒgŒgŒfŒcŒ`Œ]ŒZŒXŒWŒVŒXŒZŒZŒ]Œ`ŒbŒdŒeŒfŒfŒfŒdŒeŒfŒiŒiŒeŒ^ŒZŒTŒPŒNŒQŒVŒYŒ\Œ^ŒaŒdŒeŒeŒbŒ^ŒXŒRŒJŒEŒDŒKŒSŒ^ŒaŒdŒeŒfŒhŒdŒbŒ^ŒTŒNŒIŒEŒFŒJŒQŒ[ŒaŒfŒiŒiŒgŒdŒaŒ\ŒWŒUŒSŒQŒPŒSŒTŒWŒ[Œ_ŒcŒdŒfŒfŒcŒ_Œ^Œ]Œ\ŒZŒXŒYŒXŒUŒRŒPŒPŒSŒTŒVŒYŒZŒZŒ[Œ\Œ^Œ_ŒaŒ`Œ[ŒQŒOŒMŒJŒPŒJŒFŒDŒIŒQŒZŒbŒhŒjŒkŒiŒhŒfŒaŒ]ŒZŒXŒUŒUŒUŒWŒaŒeŒiŒjŒiŒjŒiŒjŒhŒbŒ`ŒaŒ`Œ_Œ`ŒbŒ_Œ\ŒZŒ^Œ`ŒbŒdŒdŒgŒfŒjŒmŒkŒfŒ^ŒXŒNŒHŒIŒOŒUŒZŒaŒfŒjŒmŒlŒkŒgŒ`ŒVŒOŒJŒGŒJŒPŒZŒcŒlŒoŒnŒkŒhŒ`Œ[ŒRŒQŒNŒLŒIŒGŒHŒLŒPŒVŒ]ŒcŒgŒkŒjŒiŒgŒeŒdŒcŒbŒ`Œ`Œ_Œ]ŒZŒYŒ[Œ\Œ]Œ_Œ_Œ]Œ_ŒaŒ`Œ`ŒaŒbŒdŒcŒ_Œ\ŒZŒUŒPŒKŒHŒLŒRŒ\ŒbŒeŒhŒhŒiŒhŒeŒ^ŒWŒNŒJŒNŒTŒ_ŒhŒoŒqŒsŒrŒqŒoŒlŒfŒbŒ_Œ^Œ^Œ^ŒaŒeŒhŒgŒiŒjŒjŒkŒjŒhŒeŒbŒaŒaŒcŒcŒcŒaŒ[ŒWŒSŒTŒUŒWŒZŒ[Œ^ŒaŒdŒgŒhŒeŒcŒ\ŒUŒQŒPŒSŒWŒ^ŒcŒdŒeŒiŒkŒjŒfŒ_ŒYŒPŒJŒHŒGŒNŒUŒ[Œ`ŒdŒgŒhŒjŒjŒhŒdŒaŒ^Œ[ŒXŒYŒXŒ[Œ^ŒaŒeŒhŒlŒoŒqŒoŒnŒlŒlŒhŒdŒ^ŒZŒWŒVŒYŒ\Œ^ŒWŒNŒMŒRŒMŒLŒQŒUŒ\Œ`ŒcŒdŒfŒeŒcŒ`Œ[ŒTŒLŒJŒKŒOŒYŒ_ŒgŒkŒjŒkŒiŒgŒdŒ`Œ[ŒXŒWŒVŒXŒ^ŒcŒeŒkŒmŒmŒmŒnŒkŒiŒfŒdŒcŒaŒbŒbŒ_Œ[ŒXŒVŒWŒYŒZŒ\Œ^Œ^Œ`ŒaŒbŒcŒeŒcŒbŒ\ŒRŒLŒGŒHŒKŒSŒXŒ\Œ`ŒcŒcŒdŒbŒ]ŒYŒQŒMŒJŒIŒLŒPŒXŒ`ŒdŒgŒiŒgŒfŒdŒ`ŒYŒTŒPŒNŒLŒLŒQŒVŒ]ŒbŒeŒfŒdŒbŒ^ŒZŒVŒSŒPŒMŒLŒIŒLŒPŒTŒYŒ`ŒcŒbŒ[ŒSŒSŒQŒRŒUŒZŒ_ŒfŒhŒhŒiŒhŒeŒ^ŒYŒRŒMŒJŒMŒSŒYŒ`ŒeŒgŒiŒhŒiŒgŒ^ŒYŒVŒSŒRŒTŒVŒYŒ\Œ_ŒbŒdŒfŒhŒgŒeŒ`Œ\Œ[ŒYŒZŒ[ŒZŒZŒXŒVŒUŒSŒVŒXŒYŒ\Œ\Œ]Œ`ŒbŒcŒbŒaŒ]ŒXŒTŒKŒHŒKŒSŒZŒ`ŒfŒiŒlŒkŒjŒfŒ_ŒSŒKŒHŒIŒOŒXŒ_ŒfŒjŒlŒiŒjŒkŒhŒaŒZŒQŒKŒIŒLŒPŒXŒ_ŒeŒjŒmŒoŒqŒoŒkŒfŒaŒ\Œ\ŒZŒ[Œ]Œ]Œ`ŒdŒfŒhŒjŒjŒ_ŒQŒPŒSŒXŒ[ŒZŒZŒZŒ^ŒdŒgŒcŒ^ŒXŒRŒJŒFŒFŒQŒWŒ[ŒaŒfŒhŒiŒiŒhŒdŒ\ŒTŒPŒMŒSŒYŒ`ŒgŒjŒlŒnŒqŒpŒlŒfŒbŒ^Œ\Œ[Œ[Œ_ŒcŒgŒjŒkŒmŒpŒpŒnŒlŒhŒhŒcŒcŒbŒeŒeŒaŒaŒ]ŒXŒUŒTŒWŒ\Œ_ŒcŒfŒhŒfŒgŒfŒdŒ_ŒZŒRŒJŒHŒHŒMŒUŒ_ŒeŒiŒkŒkŒmŒjŒjŒeŒ`ŒUŒIŒBŒ?ŒDŒMŒSŒ_ŒeŒfŒgŒhŒiŒhŒeŒaŒXŒSŒOŒLŒLŒKŒMŒQŒUŒYŒ[Œ[ŒLŒ^Œ[ŒWŒUŒXŒ\Œ`ŒcŒgŒiŒiŒkŒhŒaŒ\ŒSŒKŒHŒJŒPŒWŒ_ŒgŒmŒpŒpŒnŒkŒeŒ]ŒWŒRŒPŒRŒ\ŒfŒjŒpŒoŒoŒnŒiŒbŒ\ŒWŒUŒRŒPŒTŒ\ŒcŒiŒpŒrŒtŒuŒtŒpŒnŒjŒeŒ`Œ_ŒaŒ^Œ^Œ_Œ^Œ_ŒcŒgŒhŒgŒfŒdŒcŒeŒhŒjŒkŒfŒaŒZŒPŒHŒCŒEŒMŒUŒ[ŒbŒdŒeŒgŒfŒdŒ_ŒXŒQŒKŒGŒEŒHŒOŒUŒ\ŒeŒiŒkŒkŒmŒkŒgŒaŒ[ŒSŒOŒMŒLŒPŒRŒQŒWŒ\Œ`ŒcŒcŒSŒfŒhŒgŒiŒgŒcŒaŒ`ŒbŒdŒdŒaŒ\ŒUŒNŒFŒEŒDŒIŒRŒXŒ[Œ^Œ`ŒcŒeŒbŒ^ŒXŒQŒLŒFŒFŒIŒPŒXŒ]ŒaŒcŒdŒeŒeŒbŒ_ŒYŒUŒTŒRŒQŒYŒaŒdŒhŒjŒjŒkŒjŒfŒdŒbŒaŒ`Œ_Œ_Œ_ŒaŒ_Œ`ŒaŒ`ŒaŒbŒcŒcŒcŒaŒ_Œ`ŒbŒaŒ`Œ[ŒWŒPŒKŒGŒEŒHŒQŒVŒZŒ_Œ`ŒaŒ_Œ\ŒWŒVŒPŒIŒAŒ>Œ<Œ>ŒEŒLŒUŒ^Œ`ŒbŒdŒeŒcŒ_ŒYŒUŒQŒMŒKŒKŒOŒTŒZŒ^Œ_ŒbŒ`ŒQŒgŒhŒfŒhŒfŒbŒaŒ_Œ_ŒaŒbŒaŒ`Œ]ŒXŒPŒJŒIŒLŒTŒXŒ\Œ_ŒbŒeŒhŒfŒcŒ\ŒVŒOŒIŒHŒNŒUŒ[Œ^ŒbŒdŒeŒfŒ_ŒVŒSŒLŒHŒIŒNŒUŒ\ŒhŒkŒmŒmŒlŒiŒhŒbŒ\ŒYŒUŒRŒRŒWŒ^ŒdŒgŒlŒpŒoŒoŒmŒjŒfŒcŒeŒcŒcŒ`ŒaŒ_Œ]ŒXŒRŒNŒPŒSŒWŒZŒ^Œ^Œ`Œ`ŒaŒbŒbŒ]ŒWŒRŒIŒAŒ>ŒBŒGŒNŒTŒYŒ]Œ_ŒbŒeŒeŒcŒ_ŒYŒRŒIŒDŒBŒDŒHŒKŒRŒZŒ]Œ`ŒaŒJŒkŒkŒlŒlŒjŒeŒbŒdŒbŒ`ŒaŒaŒ^ŒYŒVŒQŒSŒTŒVŒXŒ[Œ^Œ`ŒbŒdŒdŒbŒ[ŒVŒQŒNŒJŒHŒFŒJŒTŒ\ŒcŒgŒiŒjŒhŒcŒ`ŒWŒQŒMŒKŒIŒMŒSŒYŒ`ŒdŒgŒhŒgŒfŒdŒ`Œ\Œ[Œ\Œ[ŒYŒYŒYŒYŒ_ŒbŒdŒbŒ_ŒYŒTŒRŒPŒVŒXŒYŒVŒSŒQŒUŒZŒYŒZŒ[Œ\Œ]Œ]Œ]Œ]Œ\Œ^Œ_Œ[ŒUŒOŒHŒ@Œ<Œ=ŒDŒJŒRŒXŒ]Œ`ŒaŒbŒdŒaŒ]ŒVŒQŒKŒEŒCŒDŒHŒQŒZŒ_ŒaŒcŒaŒLŒbŒdŒdŒdŒbŒ`ŒaŒaŒ_Œ^Œ\ŒYŒVŒTŒPŒLŒJŒLŒNŒQŒTŒXŒ\Œ^Œ]Œ]Œ_Œ]ŒYŒRŒLŒEŒAŒ?ŒAŒIŒNŒSŒ[Œ`ŒcŒbŒ[ŒUŒNŒIŒCŒ=ŒAŒFŒLŒSŒZŒ^ŒbŒeŒdŒbŒ]ŒVŒKŒIŒDŒJŒQŒWŒ]ŒdŒjŒkŒmŒkŒiŒfŒ`Œ]ŒYŒXŒYŒZŒWŒXŒYŒZŒ\Œ]Œ^Œ_ŒaŒ_Œ^Œ]Œ\Œ]Œ^Œ^Œ\ŒYŒUŒLŒEŒAŒEŒJŒQŒVŒYŒ\Œ`ŒbŒcŒcŒ`ŒZŒTŒLŒEŒ@Œ;Œ>ŒBŒEŒLŒRŒWŒZŒ[ŒQŒfŒhŒdŒ_Œ[ŒVŒUŒSŒOŒLŒMŒKŒKŒOŒRŒWŒ[ŒcŒgŒdŒ`Œ\ŒYŒZŒZŒYŒ]Œ`Œ]ŒYŒWŒWŒZŒ]ŒaŒ`ŒaŒcŒcŒ`Œ^Œ_Œ]ŒYŒTŒLŒHŒIŒQŒVŒ[ŒbŒfŒiŒkŒjŒiŒcŒ\ŒSŒNŒKŒMŒKŒMŒSŒXŒ^ŒcŒeŒhŒhŒeŒ`Œ[ŒXŒSŒOŒLŒJŒJŒNŒRŒWŒZŒ[Œ^Œ`Œ`Œ_Œ]Œ\Œ^Œ]Œ\ŒZŒYŒUŒRŒOŒMŒKŒJŒMŒQŒSŒVŒZŒ\Œ_Œ_Œ`Œ`Œ`Œ\ŒXŒVŒSŒQŒLŒIŒFŒHŒFŒDŒDŒBŒ=ŒiŒkŒjŒeŒaŒ]ŒYŒXŒUŒVŒYŒ^ŒeŒjŒmŒpŒsŒsŒoŒkŒgŒdŒaŒ_Œ^Œ_Œ^Œ\Œ]Œ[ŒYŒZŒ\Œ]Œ`Œ`ŒaŒcŒdŒcŒdŒdŒaŒ[ŒUŒNŒJŒHŒNŒUŒYŒ_ŒbŒdŒdŒcŒdŒ`ŒZŒUŒNŒMŒQŒUŒ\Œ`Œ^ŒbŒgŒiŒkŒhŒdŒ`ŒYŒQŒLŒJŒIŒMŒSŒ[Œ`ŒbŒdŒfŒeŒeŒdŒaŒ_Œ\ŒYŒVŒRŒPŒNŒNŒPŒSŒUŒXŒ[Œ^ŒaŒaŒ_Œ^Œ^Œ]Œ\Œ\Œ[ŒWŒTŒPŒMŒJŒJŒPŒWŒ]Œ`Œ`ŒaŒaŒ^ŒKŒjŒkŒhŒeŒ`Œ[ŒVŒPŒJŒJŒPŒUŒaŒiŒlŒnŒnŒlŒhŒeŒbŒ_Œ]Œ\Œ[ŒZŒ[ŒZŒWŒVŒXŒWŒYŒ\ŒZŒYŒXŒXŒXŒYŒYŒZŒWŒVŒOŒGŒCŒEŒMŒSŒVŒZŒ\Œ^Œ_Œ]Œ[ŒVŒPŒIŒEŒEŒIŒNŒUŒ]Œ`ŒcŒbŒcŒ`Œ]ŒYŒVŒSŒQŒOŒRŒTŒWŒ\Œ`ŒcŒfŒiŒhŒiŒfŒcŒ_Œ[ŒXŒWŒXŒXŒWŒYŒ\Œ^Œ`ŒbŒeŒgŒfŒhŒeŒaŒ`Œ_Œ^Œ]Œ\Œ[ŒYŒVŒUŒQŒOŒNŒRŒXŒ\Œ\Œ]ŒZŒYŒ\Œ`Œ`Œ`Œ^Œ[ŒXŒVŒQŒNŒKŒIŒKŒRŒYŒ_ŒbŒfŒhŒfŒcŒ]ŒXŒUŒSŒUŒTŒRŒSŒUŒTŒUŒWŒXŒXŒXŒWŒWŒWŒXŒYŒ[ŒZŒ\ŒXŒTŒNŒIŒGŒHŒNŒSŒUŒYŒ]Œ_Œ]Œ_Œ\ŒZŒSŒOŒKŒJŒHŒJŒQŒVŒ[ŒaŒcŒfŒeŒ_ŒYŒTŒNŒKŒJŒJŒMŒQŒXŒbŒeŒfŒgŒeŒaŒ\ŒXŒVŒTŒSŒRŒOŒOŒPŒSŒXŒ]ŒaŒcŒeŒdŒaŒ\ŒXŒWŒTŒVŒXŒ[ŒZŒYŒWŒWŒYŒVŒTŒXŒXŒYŒYŒ\ŒZŒXŒUŒTŒGŒkŒiŒgŒbŒ^ŒXŒQŒNŒJŒJŒMŒRŒWŒ_ŒaŒeŒhŒgŒeŒbŒ^ŒXŒUŒUŒUŒSŒTŒUŒYŒ[Œ]Œ[Œ\Œ]Œ^Œ]Œ^Œ\Œ]Œ`ŒaŒbŒ`Œ_ŒWŒSŒPŒNŒRŒUŒXŒ]ŒaŒeŒgŒgŒcŒ^ŒZŒSŒNŒJŒKŒOŒWŒ[Œ]Œ_ŒbŒdŒfŒdŒaŒ]ŒVŒNŒJŒHŒHŒOŒXŒaŒfŒiŒlŒjŒeŒaŒ[ŒVŒTŒQŒQŒVŒXŒYŒ[Œ^ŒcŒfŒiŒiŒhŒbŒ\ŒYŒZŒYŒVŒSŒRŒRŒTŒTŒUŒXŒXŒWŒUŒWŒWŒWŒVŒUŒUŒWŒWŒXŒeŒdŒ`ŒVŒOŒIŒCŒ?ŒAŒGŒNŒWŒ`ŒcŒeŒdŒdŒaŒ[ŒVŒTŒPŒLŒJŒHŒHŒKŒQŒWŒ[Œ]Œ^Œ\Œ]Œ^Œ[ŒXŒWŒUŒUŒRŒQŒSŒTŒWŒXŒZŒZŒZŒZŒ[Œ[Œ\Œ]Œ^Œ^ŒaŒ]ŒYŒUŒQŒQŒQŒRŒXŒ[Œ[Œ]Œ`ŒbŒfŒgŒdŒ^Œ[ŒUŒOŒLŒKŒNŒUŒ\ŒaŒdŒgŒhŒhŒcŒ]ŒXŒSŒOŒQŒVŒYŒ_ŒcŒcŒcŒgŒgŒjŒkŒjŒfŒaŒ\ŒZŒXŒWŒVŒWŒZŒ\Œ`ŒdŒgŒjŒkŒkŒhŒgŒeŒ`Œ\ŒVŒUŒWŒ\Œ]Œ\ŒWŒQŒIŒDŒBŒBŒHŒPŒTŒYŒ]Œ_Œ`Œ_Œ\ŒXŒVŒSŒPŒQŒRŒUŒXŒ]Œ_ŒcŒfŒgŒiŒgŒhŒhŒfŒbŒ^Œ]Œ\Œ[Œ]Œ_Œ_ŒaŒ`ŒaŒbŒdŒcŒcŒaŒ^Œ^Œ`ŒaŒ_Œ^ŒZŒVŒOŒHŒCŒFŒLŒPŒUŒZŒ]Œ_Œ]ŒZŒVŒOŒFŒ?Œ<Œ:ŒAŒEŒPŒXŒ[Œ^Œ_Œ`Œ]ŒWŒQŒLŒJŒIŒGŒHŒMŒRŒYŒ_ŒbŒfŒgŒeŒbŒ_Œ[ŒYŒUŒQŒOŒPŒRŒRŒTŒVŒWŒYŒ\Œ`ŒaŒ_Œ]Œ^Œ\ŒZŒYŒWŒWŒZŒcŒbŒaŒ]ŒYŒOŒHŒDŒBŒFŒNŒVŒ_ŒbŒbŒcŒcŒaŒ\ŒWŒQŒKŒIŒIŒOŒTŒ[Œ^ŒbŒgŒiŒiŒiŒgŒdŒ^Œ[ŒZŒZŒXŒYŒ[Œ]Œ`ŒaŒbŒaŒ`Œ^Œ\ŒYŒYŒ[Œ[ŒXŒZŒYŒXŒTŒMŒGŒBŒ@ŒBŒGŒOŒTŒZŒ_ŒbŒdŒeŒcŒ]ŒSŒKŒCŒ?Œ=Œ@ŒHŒSŒYŒ^ŒaŒcŒbŒ_Œ[ŒWŒRŒMŒJŒGŒFŒFŒKŒPŒWŒ^ŒcŒeŒcŒcŒ^ŒYŒSŒNŒMŒLŒMŒPŒRŒTŒVŒYŒXŒYŒZŒ]Œ_Œ^Œ[ŒYŒWŒUŒTŒ[Œ[Œ\Œ[ŒWŒRŒJŒCŒ?Œ>ŒDŒHŒPŒSŒXŒ]Œ`Œ_ŒZŒTŒOŒMŒIŒEŒCŒBŒBŒGŒNŒTŒ[ŒbŒcŒ`Œ\ŒXŒVŒSŒPŒMŒKŒOŒ\Œ`ŒcŒfŒiŒhŒgŒdŒcŒ_Œ]Œ[Œ[ŒZŒYŒWŒVŒUŒVŒTŒVŒWŒUŒVŒTŒWŒ\Œ_Œ`ŒaŒ^ŒZŒTŒKŒEŒ>Œ?ŒCŒGŒQŒTŒWŒZŒ[Œ]ŒaŒ]ŒWŒOŒJŒDŒCŒEŒHŒLŒTŒWŒ]ŒdŒeŒeŒdŒ_ŒXŒSŒMŒIŒFŒGŒLŒQŒYŒ]ŒdŒgŒjŒjŒhŒhŒfŒdŒ`ŒZŒXŒUŒSŒQŒTŒVŒUŒYŒVŒOŒGŒEŒDŒJŒOŒTŒVŒ[Œ]Œ\Œ\ŒXŒVŒRŒKŒCŒCŒDŒHŒRŒZŒ^ŒaŒcŒfŒgŒeŒ`ŒWŒPŒKŒGŒEŒFŒLŒWŒbŒeŒhŒiŒjŒkŒgŒdŒ`Œ[ŒWŒTŒNŒLŒKŒLŒLŒMŒQŒTŒWŒYŒXŒWŒYŒ[Œ_Œ_Œ^Œ_Œ]ŒZŒUŒOŒEŒ@ŒEŒNŒWŒ[Œ^Œ`ŒaŒaŒbŒZŒVŒOŒJŒGŒEŒDŒHŒLŒRŒ\ŒaŒdŒeŒfŒeŒ_Œ\Œ[ŒXŒUŒTŒRŒRŒUŒVŒZŒ_ŒcŒhŒiŒjŒiŒhŒgŒbŒ\ŒVŒUŒSŒZŒ\Œ[ŒYŒWŒSŒSŒQŒOŒQŒSŒUŒWŒYŒ[Œ^Œ`ŒbŒaŒ\ŒWŒOŒDŒ@Œ@ŒEŒNŒXŒ\ŒcŒgŒhŒjŒgŒbŒ[ŒQŒKŒAŒ?Œ@ŒGŒRŒ^ŒbŒhŒkŒiŒdŒbŒ_Œ[ŒVŒSŒTŒUŒ[Œ_ŒdŒjŒmŒnŒmŒjŒiŒfŒeŒaŒ]ŒYŒXŒZŒWŒVŒXŒWŒUŒPŒRŒSŒUŒXŒZŒ[Œ[Œ^Œ\Œ\Œ\ŒYŒTŒOŒIŒFŒJŒPŒUŒZŒ\Œ]Œ_ŒaŒcŒ`ŒXŒXŒSŒJŒAŒ=Œ?ŒEŒMŒSŒ[Œ`ŒdŒgŒeŒfŒeŒcŒ_ŒZŒUŒQŒKŒIŒTŒ\Œ^Œ]Œ`ŒeŒkŒmŒpŒrŒrŒsŒnŒgŒbŒbŒcŒcŒaŒ\ŒXŒRŒOŒOŒTŒ\ŒaŒbŒcŒdŒdŒdŒfŒbŒ]ŒWŒPŒMŒKŒMŒMŒQŒWŒYŒ[Œ_ŒdŒfŒdŒbŒ_Œ\ŒWŒQŒOŒKŒLŒOŒXŒ`ŒfŒkŒnŒqŒrŒnŒjŒgŒ`ŒYŒVŒXŒYŒ]ŒcŒhŒoŒrŒpŒnŒiŒhŒeŒbŒ`ŒaŒhŒjŒlŒfŒaŒ]ŒWŒZŒ[Œ_ŒbŒbŒbŒdŒfŒjŒkŒjŒeŒ\Œ[ŒQŒFŒAŒAŒHŒMŒQŒUŒWŒVŒXŒXŒYŒ[Œ]Œ\ŒZŒUŒRŒPŒNŒRŒYŒZŒXŒ[Œ`ŒeŒfŒcŒ_Œ]ŒbŒdŒdŒcŒcŒcŒaŒ^Œ]Œ[ŒYŒRŒJŒHŒJŒRŒUŒXŒ^Œ`ŒbŒaŒ[ŒVŒRŒOŒGŒAŒ>ŒAŒFŒQŒZŒ_ŒcŒeŒeŒcŒ_ŒXŒRŒJŒJŒIŒLŒQŒUŒZŒbŒaŒ`ŒcŒ^Œ]Œ]ŒXŒVŒVŒVŒYŒ`ŒgŒkŒmŒmŒmŒkŒhŒfŒdŒbŒbŒdŒhŒhŒiŒhŒcŒ]ŒWŒRŒOŒLŒLŒOŒSŒXŒ\Œ`ŒdŒbŒbŒ_ŒZŒUŒQŒKŒFŒAŒ>ŒAŒKŒYŒ`ŒcŒeŒgŒiŒhŒdŒaŒ^ŒVŒLŒEŒCŒCŒTŒRŒSŒRŒTŒWŒ^ŒgŒhŒfŒfŒeŒbŒ`Œ_Œ`ŒdŒdŒ`Œ[ŒVŒQŒHŒCŒAŒDŒJŒRŒWŒ_ŒaŒcŒbŒ]ŒYŒTŒNŒHŒCŒ@ŒFŒPŒYŒaŒbŒeŒeŒfŒdŒ`Œ\ŒVŒNŒHŒGŒMŒTŒ\ŒcŒhŒjŒhŒjŒhŒfŒbŒ\ŒYŒRŒNŒNŒQŒVŒ[ŒfŒmŒoŒoŒmŒiŒdŒ`Œ]Œ^Œ_Œ_Œ]Œ]Œ^ŒYŒSŒLŒHŒHŒKŒPŒRŒTŒUŒXŒ]Œ`ŒcŒcŒbŒ`Œ[ŒRŒGŒBŒ>Œ>ŒBŒLŒTŒ]Œ_ŒcŒhŒjŒfŒaŒ_ŒWŒQŒKŒJŒIŒSŒSŒSŒPŒSŒWŒ[ŒcŒhŒjŒgŒeŒaŒ_Œ^Œ]ŒVŒTŒUŒTŒPŒPŒNŒKŒLŒIŒLŒQŒRŒTŒUŒYŒZŒ[Œ\ŒWŒNŒFŒ<Œ5Œ9Œ?ŒKŒTŒWŒ[Œ]Œ^Œ]Œ^Œ[ŒUŒOŒFŒDŒDŒIŒPŒYŒaŒdŒfŒfŒfŒhŒhŒdŒ^ŒXŒUŒTŒUŒVŒYŒ^ŒaŒdŒeŒjŒjŒgŒ_ŒYŒUŒRŒPŒRŒSŒWŒYŒUŒQŒOŒQŒUŒYŒ\Œ^Œ^Œ^Œ_Œ_Œ_Œ`Œ]Œ\ŒYŒUŒNŒJŒHŒNŒRŒUŒVŒXŒYŒZŒZŒ[Œ[Œ[ŒXŒSŒMŒIŒFŒDŒMŒDŒHŒOŒZŒ]ŒcŒgŒjŒmŒkŒhŒeŒaŒ_Œ_Œ^Œ_ŒaŒcŒeŒgŒkŒlŒjŒhŒcŒaŒ_Œ\Œ[ŒWŒVŒSŒSŒOŒMŒJŒGŒFŒJŒNŒUŒWŒZŒ]Œ`ŒcŒaŒ\ŒWŒOŒHŒFŒJŒRŒXŒ\Œ`ŒdŒfŒgŒhŒfŒaŒ[ŒTŒQŒNŒLŒMŒOŒTŒ[ŒaŒgŒjŒjŒgŒcŒbŒ^ŒZŒXŒUŒSŒPŒNŒMŒOŒSŒXŒbŒdŒgŒgŒfŒdŒ`Œ^Œ\ŒZŒZŒXŒUŒSŒRŒQŒMŒLŒOŒUŒWŒ[Œ^Œ\Œ]Œ]Œ_Œ^Œ\ŒXŒVŒRŒKŒGŒFŒGŒNŒMŒKŒNŒSŒXŒ]ŒbŒfŒfŒdŒaŒ]Œ[ŒXŒWŒUŒVŒXŒ]ŒaŒdŒjŒmŒmŒkŒgŒbŒ`Œ_Œ_Œ`ŒbŒ_ŒZŒVŒOŒLŒEŒFŒIŒPŒTŒUŒVŒXŒ[Œ]Œ_Œ]ŒZŒQŒDŒ:Œ7Œ:ŒDŒJŒRŒUŒXŒ^Œ_Œ_ŒaŒ[ŒTŒNŒIŒJŒLŒMŒSŒWŒ^ŒeŒhŒfŒhŒeŒ`ŒZŒVŒSŒQŒRŒTŒXŒ\ŒaŒeŒgŒjŒjŒlŒmŒjŒeŒaŒ`Œ^Œ^Œ_Œ`Œ^Œ\ŒZŒWŒTŒTŒWŒYŒ[Œ\Œ^Œ]Œ]Œ_Œ`Œ_Œ]Œ[Œ^Œ\ŒZŒXŒUŒSŒVŒAŒFŒMŒVŒXŒ\ŒbŒfŒiŒfŒcŒ_ŒVŒQŒQŒPŒUŒYŒcŒfŒgŒiŒhŒfŒ`Œ^ŒbŒ`Œ_Œ_Œ`Œ`Œ\ŒXŒUŒQŒQŒPŒUŒ[Œ_Œ_Œ`Œ_Œ_Œ_Œ_ŒaŒ^ŒXŒKŒ@Œ8Œ;ŒBŒHŒNŒUŒWŒ\Œ]Œ_Œ`ŒaŒ]ŒRŒKŒFŒAŒDŒJŒSŒYŒ_ŒbŒdŒbŒ^ŒYŒUŒOŒMŒMŒMŒOŒRŒVŒ\ŒaŒdŒgŒiŒjŒhŒeŒ_ŒXŒSŒRŒQŒTŒ[Œ\Œ[Œ\Œ[ŒZŒ[Œ\Œ`ŒbŒaŒ]Œ[ŒYŒXŒXŒWŒXŒXŒVŒTŒQŒRŒQŒSŒTŒUŒIŒPŒYŒbŒfŒiŒkŒiŒdŒ_ŒXŒSŒLŒDŒBŒBŒFŒIŒSŒ\Œ_ŒcŒbŒaŒ^Œ]ŒYŒWŒUŒTŒRŒOŒLŒHŒBŒCŒDŒLŒYŒ^Œ_Œ]Œ[ŒYŒWŒVŒXŒWŒUŒRŒSŒQŒOŒQŒXŒ^Œ_Œ`ŒbŒbŒaŒ_Œ\Œ[ŒWŒSŒKŒEŒ@ŒEŒJŒSŒWŒ_ŒcŒeŒhŒdŒ_ŒZŒPŒIŒEŒAŒDŒIŒMŒTŒYŒ]Œ_Œ`Œ`Œ^Œ_Œ\ŒSŒPŒOŒMŒMŒOŒTŒXŒ\Œ\Œ\Œ\Œ]ŒaŒaŒ^Œ^Œ\Œ[ŒZŒXŒSŒPŒPŒOŒQŒTŒRŒMŒOŒSŒZŒ:Œ<ŒDŒPŒVŒ]Œ`Œ_Œ`Œ[ŒVŒOŒHŒCŒBŒ@ŒDŒHŒRŒZŒ]Œ`ŒcŒaŒ`Œ^Œ[ŒYŒVŒVŒTŒPŒIŒMŒUŒWŒWŒVŒYŒ\Œ[Œ[ŒWŒYŒXŒYŒZŒXŒTŒOŒJŒEŒ@Œ=ŒAŒFŒLŒRŒVŒYŒ]Œ\ŒYŒUŒQŒJŒDŒ<Œ8Œ7Œ:ŒBŒGŒMŒVŒ\Œ^Œ]ŒWŒRŒKŒEŒBŒ>Œ>Œ@ŒFŒMŒVŒ^ŒaŒcŒeŒcŒaŒ]ŒXŒWŒSŒQŒQŒOŒQŒTŒVŒ[Œ]Œ`ŒeŒhŒgŒeŒaŒ^Œ[ŒYŒ[ŒWŒTŒVŒRŒUŒVŒRŒMŒNŒMŒEŒ:Œ@ŒGŒMŒSŒUŒXŒZŒ[Œ\ŒXŒRŒJŒEŒBŒBŒGŒKŒQŒYŒ`ŒdŒcŒfŒdŒ^ŒWŒRŒQŒPŒRŒRŒWŒ^ŒbŒeŒfŒiŒiŒhŒfŒbŒ]Œ[ŒYŒWŒWŒXŒYŒXŒRŒNŒKŒKŒKŒMŒNŒQŒUŒVŒVŒWŒXŒVŒPŒJŒAŒ9Œ4Œ7Œ<ŒEŒKŒRŒXŒZŒ\Œ[ŒWŒSŒJŒ>Œ8Œ6Œ9Œ>ŒIŒSŒXŒ_ŒbŒcŒbŒ^ŒYŒTŒNŒKŒIŒIŒKŒLŒPŒTŒ\Œ^ŒcŒeŒfŒeŒbŒ_Œ]ŒXŒUŒTŒTŒQŒQŒTŒTŒSŒUŒUŒTŒVŒUŒUŒ9ŒBŒMŒQŒUŒZŒ[Œ]Œ_Œ]ŒYŒRŒHŒ?Œ=Œ?ŒEŒMŒVŒ]Œ`ŒdŒfŒeŒ`ŒYŒSŒNŒFŒCŒGŒNŒYŒ^ŒcŒfŒjŒhŒcŒaŒ^ŒZŒUŒTŒTŒPŒPŒQŒOŒOŒNŒJŒMŒNŒRŒSŒSŒRŒQŒQŒQŒPŒQŒOŒIŒFŒEŒJŒQŒWŒZŒ\Œ^Œ_Œ`ŒaŒ`Œ^Œ[ŒVŒNŒEŒ@Œ<Œ>ŒBŒGŒRŒ]ŒbŒfŒgŒhŒdŒ]ŒUŒKŒCŒ@Œ=Œ<Œ>ŒBŒHŒPŒVŒbŒhŒhŒdŒaŒ]ŒXŒSŒPŒPŒPŒQŒSŒTŒXŒ]ŒbŒeŒfŒfŒgŒaŒGŒHŒLŒRŒUŒWŒZŒ[Œ[ŒXŒSŒKŒDŒBŒ?ŒAŒEŒLŒUŒ[Œ`ŒbŒbŒ]ŒYŒUŒNŒKŒEŒDŒGŒLŒTŒ[ŒaŒcŒdŒeŒdŒbŒ_ŒYŒVŒXŒZŒ[Œ[Œ[ŒXŒZŒ]Œ_ŒaŒbŒdŒcŒcŒbŒaŒ`Œ]Œ]Œ\ŒWŒXŒSŒOŒHŒBŒBŒHŒNŒRŒXŒ\Œ\Œ[Œ[ŒYŒUŒLŒCŒ?Œ;Œ:Œ>ŒHŒSŒ[Œ^ŒaŒbŒaŒ\ŒVŒRŒKŒFŒCŒ?Œ@ŒBŒGŒQŒZŒ^ŒbŒbŒaŒ^Œ[ŒYŒWŒSŒNŒLŒKŒJŒHŒJŒOŒSŒ[ŒbŒhŒkŒlŒfŒ]Œ_Œ]Œ^Œ]Œ\Œ]Œ^Œ]ŒZŒUŒOŒHŒ>Œ:Œ?ŒDŒKŒTŒXŒZŒ]Œ_ŒaŒ_ŒXŒOŒHŒ>Œ;Œ>ŒDŒQŒXŒaŒdŒfŒhŒeŒ_Œ[ŒWŒQŒPŒKŒLŒMŒPŒUŒZŒ_Œ`Œ^Œ\ŒYŒZŒYŒWŒVŒRŒRŒQŒRŒSŒRŒOŒNŒMŒMŒPŒSŒTŒUŒTŒTŒUŒVŒVŒRŒLŒEŒ<Œ:Œ>ŒFŒNŒTŒWŒXŒZŒZŒ[Œ]Œ[ŒRŒMŒFŒBŒ?Œ=Œ=ŒAŒHŒSŒYŒ[Œ]Œ_Œ_Œ_Œ\ŒZŒVŒPŒLŒFŒDŒBŒ@Œ@ŒBŒEŒJŒOŒRŒUŒUŒJŒeŒbŒ^Œ[ŒXŒVŒYŒZŒZŒ[ŒYŒRŒGŒ?Œ<Œ;Œ@ŒGŒOŒVŒWŒ[Œ\Œ]Œ\ŒWŒPŒJŒ@Œ7Œ;Œ@ŒEŒLŒXŒ\Œ]ŒaŒbŒ_Œ[ŒUŒNŒKŒJŒMŒOŒQŒZŒbŒiŒmŒmŒkŒgŒbŒ`Œ[ŒZŒWŒUŒRŒSŒVŒYŒ\Œ^ŒbŒgŒfŒfŒdŒbŒbŒ`Œ_Œ^Œ]ŒYŒTŒLŒBŒ?ŒBŒFŒIŒNŒRŒUŒWŒYŒ[Œ\Œ]ŒZŒVŒMŒDŒ<Œ6Œ8ŒFŒOŒRŒ[Œ^Œ_Œ`ŒaŒ^ŒXŒRŒIŒBŒ<Œ9Œ=ŒAŒHŒQŒXŒ]Œ_Œ_ŒaŒ_Œ`ŒcŒ`Œ`ŒaŒ_ŒaŒ`Œ^Œ_Œ_Œ_Œ[ŒYŒSŒLŒHŒHŒOŒPŒPŒWŒ[Œ_ŒbŒaŒ`Œ]ŒVŒNŒEŒ?Œ>ŒBŒLŒTŒZŒ^ŒbŒdŒeŒdŒaŒWŒNŒLŒFŒBŒFŒQŒ[ŒbŒeŒfŒhŒhŒdŒaŒ\ŒZŒUŒRŒSŒSŒRŒRŒWŒ]ŒaŒeŒhŒeŒbŒ^Œ[Œ[ŒWŒQŒQŒPŒRŒRŒQŒUŒ[Œ]Œ^Œ_Œ_Œ^Œ_Œ_Œ[ŒWŒUŒSŒPŒMŒHŒFŒHŒNŒSŒZŒ\Œ^ŒaŒdŒcŒcŒcŒ]ŒRŒLŒFŒ@Œ?ŒBŒAŒGŒOŒWŒaŒcŒcŒdŒgŒeŒfŒgŒhŒgŒcŒ_Œ_Œ]ŒZŒ[ŒZŒWŒUŒVŒ^ŒbŒdŒfŒdŒdŒaŒ^Œ]Œ\Œ^ŒaŒbŒ^ŒWŒOŒEŒ?Œ>ŒBŒEŒKŒOŒQŒTŒYŒ]Œ_Œ]ŒWŒNŒFŒ@Œ@ŒEŒLŒUŒZŒ^ŒfŒhŒjŒeŒ_ŒXŒRŒNŒKŒKŒPŒVŒ^ŒeŒhŒjŒmŒlŒkŒeŒcŒcŒaŒ^Œ\Œ\Œ_ŒbŒfŒlŒpŒnŒmŒhŒcŒaŒ`Œ^Œ^Œ`ŒbŒ`Œ]Œ\ŒYŒSŒOŒOŒPŒSŒVŒWŒZŒ\Œ_ŒbŒcŒcŒaŒ\ŒWŒQŒJŒBŒ>Œ=ŒAŒHŒOŒVŒWŒZŒ[Œ\Œ^Œ]ŒWŒgŒcŒ^Œ[Œ[ŒZŒYŒ\Œ^Œ_Œ`ŒcŒfŒiŒhŒfŒcŒ^Œ[Œ^Œ_Œ_ŒaŒaŒaŒ]ŒZŒUŒOŒGŒDŒGŒMŒQŒVŒXŒ[Œ_Œ`Œ_Œ^ŒZŒRŒMŒGŒDŒEŒNŒTŒYŒ^ŒdŒfŒgŒcŒ[ŒYŒVŒSŒRŒPŒPŒSŒYŒ_ŒdŒeŒgŒfŒeŒcŒ_Œ_Œ]ŒXŒWŒUŒWŒYŒYŒ]ŒcŒfŒiŒiŒhŒgŒdŒaŒ_Œ]Œ\Œ]ŒZŒYŒZŒXŒWŒTŒOŒNŒMŒOŒQŒVŒYŒ\ŒZŒZŒ[Œ\ŒaŒ[ŒSŒIŒDŒ=Œ;Œ?ŒGŒOŒTŒZŒ_Œ`ŒaŒcŒWŒdŒ`Œ\ŒWŒUŒTŒWŒZŒ]ŒcŒiŒkŒmŒnŒnŒkŒiŒfŒdŒbŒ_Œ]Œ_Œ_Œ[Œ\ŒWŒSŒNŒJŒLŒPŒTŒUŒXŒ[Œ]Œ_Œ`Œ_Œ[ŒTŒKŒFŒ@Œ@ŒEŒNŒUŒYŒ\Œ^ŒbŒaŒ_ŒXŒNŒDŒ@Œ@ŒGŒNŒUŒ\Œ_ŒcŒeŒfŒfŒeŒ_Œ[ŒXŒQŒMŒLŒNŒTŒ]ŒcŒjŒlŒpŒnŒkŒjŒiŒgŒcŒaŒ^Œ`Œ_Œ\ŒZŒYŒTŒRŒUŒYŒ`ŒaŒ`Œ]ŒZŒZŒ\Œ_Œ_Œ`Œ^Œ[ŒWŒOŒIŒFŒEŒGŒLŒRŒXŒYŒZŒYŒ[Œ]Œ_Œ\ŒdŒbŒ\ŒVŒSŒQŒMŒLŒGŒIŒKŒNŒSŒZŒ]Œ_Œ\ŒZŒUŒQŒOŒMŒKŒJŒIŒIŒKŒIŒGŒEŒGŒJŒOŒSŒTŒXŒZŒ\Œ^Œ]ŒZŒYŒTŒNŒFŒDŒCŒIŒNŒPŒTŒYŒ`ŒaŒcŒ`ŒWŒMŒHŒFŒBŒDŒGŒOŒZŒbŒdŒfŒcŒbŒ\ŒVŒTŒQŒNŒNŒOŒOŒNŒRŒXŒ^Œ_ŒbŒbŒ^Œ]ŒZŒWŒUŒTŒRŒOŒPŒOŒPŒRŒYŒZŒZŒ[Œ\Œ[Œ`Œ^Œ]Œ^Œ^Œ`ŒaŒaŒbŒ^Œ\Œ]Œ[Œ^Œ_Œ^Œ]Œ\Œ]ŒZŒZŒZŒXŒZŒYŒ`Œ_ŒXŒRŒPŒNŒNŒNŒRŒUŒWŒ\ŒaŒ`Œ`ŒfŒfŒdŒaŒ\ŒXŒVŒ\Œ\ŒZŒZŒ[Œ[Œ[Œ]Œ_Œ`Œ_Œ^Œ`Œ_Œ`Œ_Œ\Œ_Œ[ŒVŒOŒLŒKŒEŒIŒTŒ[Œ^Œ[Œ]Œ`Œ`ŒZŒTŒRŒOŒNŒMŒMŒOŒNŒSŒWŒ[Œ]ŒbŒbŒ`Œ[ŒUŒQŒGŒCŒEŒLŒVŒ_ŒaŒcŒfŒkŒlŒeŒ]ŒUŒLŒOŒKŒJŒMŒQŒRŒXŒ`ŒgŒpŒpŒoŒkŒhŒbŒaŒ]Œ^Œ]Œ[ŒYŒXŒXŒXŒWŒTŒSŒWŒXŒ\Œ^ŒbŒ_Œ]Œ[ŒZŒXŒZŒZŒVŒbŒ\ŒTŒIŒEŒ>Œ;Œ<ŒBŒOŒXŒdŒhŒiŒhŒbŒZŒQŒGŒAŒCŒIŒOŒWŒcŒiŒlŒjŒfŒfŒiŒfŒaŒ\Œ[Œ\Œ]Œ_Œ_Œ\ŒXŒPŒJŒHŒIŒOŒWŒZŒ[ŒZŒ^Œ_Œ_Œ^Œ\ŒUŒPŒHŒ@Œ;Œ8Œ?ŒCŒKŒVŒ_ŒdŒdŒcŒ`ŒZŒQŒJŒCŒ@Œ>ŒBŒJŒTŒ\ŒcŒfŒfŒhŒeŒ`ŒYŒOŒHŒFŒDŒGŒIŒNŒZŒbŒhŒmŒmŒlŒiŒeŒ_Œ[ŒVŒUŒXŒ[Œ_Œ^Œ]Œ]Œ^Œ`ŒcŒeŒiŒjŒjŒgŒfŒdŒcŒ`Œ\Œ_Œ^Œ_Œ_Œ]ŒVŒKŒCŒ;Œ:Œ?ŒFŒNŒVŒ^ŒdŒfŒgŒbŒ]ŒWŒOŒJŒGŒCŒGŒLŒTŒZŒ]ŒaŒdŒgŒhŒdŒZŒXŒRŒOŒNŒMŒKŒJŒKŒLŒHŒNŒSŒWŒZŒZŒYŒUŒ[ŒZŒYŒVŒRŒLŒIŒDŒBŒDŒIŒPŒXŒZŒ_ŒaŒ`Œ`Œ\ŒWŒNŒDŒ>Œ:Œ:Œ?ŒIŒOŒVŒ]Œ`ŒcŒeŒaŒ[ŒVŒRŒRŒSŒSŒNŒNŒOŒOŒQŒSŒXŒ^ŒbŒdŒeŒdŒaŒ_Œ^Œ\ŒYŒZŒZŒXŒTŒPŒDŒ@Œ?ŒCŒHŒLŒPŒQŒSŒSŒUŒZŒ\Œ\Œ[Œ\Œ_Œ^ŒYŒQŒJŒAŒ?ŒAŒEŒKŒRŒ\ŒdŒeŒgŒfŒ`Œ\ŒVŒQŒNŒHŒEŒDŒFŒLŒSŒ\ŒdŒeŒeŒcŒaŒ`Œ^Œ]Œ\ŒZŒZŒXŒUŒTŒRŒOŒQŒWŒYŒZŒ[Œ[Œ^Œ[ŒXŒVŒUŒNŒFŒ@Œ=Œ=ŒAŒFŒNŒTŒYŒ\Œ]Œ`Œ]ŒXŒRŒKŒGŒBŒ=Œ=ŒCŒHŒNŒRŒVŒ_ŒeŒfŒgŒfŒcŒ]ŒVŒPŒJŒHŒKŒQŒUŒZŒ]Œ^Œ`Œ`ŒaŒbŒ_Œ[ŒYŒXŒUŒSŒTŒSŒSŒTŒTŒUŒWŒZŒ]Œ_Œ`Œ_Œ]Œ\ŒYŒYŒXŒUŒTŒQŒ^Œ\ŒUŒMŒCŒ<Œ=ŒAŒJŒTŒ\Œ_ŒbŒdŒfŒeŒ`Œ\ŒTŒKŒDŒBŒDŒIŒRŒ\ŒaŒdŒfŒeŒbŒ`Œ\ŒYŒTŒQŒPŒNŒQŒUŒXŒ^ŒbŒcŒeŒeŒdŒ`Œ^Œ[ŒZŒYŒ\Œ]ŒZŒXŒSŒLŒFŒDŒ@ŒEŒJŒOŒRŒTŒWŒYŒ[ŒYŒYŒTŒNŒCŒ8Œ7Œ;Œ?ŒLŒSŒZŒ\Œ^Œ^Œ^Œ\ŒWŒPŒHŒEŒBŒ=ŒAŒHŒTŒXŒ`ŒdŒfŒeŒeŒaŒ]ŒWŒQŒNŒQŒOŒMŒTŒZŒ]ŒbŒfŒhŒjŒmŒjŒfŒ_Œ\Œ[ŒYŒWŒUŒWŒYŒQŒZŒWŒOŒCŒ<Œ6Œ5Œ6Œ?ŒIŒNŒWŒ\Œ^Œ_Œ]ŒXŒRŒGŒ?Œ;Œ9Œ>ŒHŒRŒ]ŒbŒcŒbŒ_Œ\ŒXŒVŒRŒNŒLŒLŒPŒUŒYŒ`ŒeŒgŒhŒgŒgŒeŒbŒ_Œ_Œ^Œ^Œ^Œ]Œ_Œ]ŒYŒTŒQŒNŒNŒPŒQŒSŒTŒUŒWŒ[Œ]Œ\Œ[ŒUŒMŒEŒ<Œ5Œ8ŒBŒLŒTŒZŒ]Œ\Œ^Œ]Œ[ŒWŒRŒLŒBŒ:Œ6Œ=ŒHŒRŒXŒ`ŒcŒfŒdŒ`Œ[ŒSŒMŒEŒAŒAŒEŒIŒTŒ_ŒdŒhŒiŒjŒjŒhŒdŒ`Œ]ŒXŒUŒRŒMŒKŒIŒIŒKŒ_Œ_ŒZŒSŒMŒGŒDŒAŒCŒIŒQŒWŒ_ŒeŒdŒaŒ^ŒYŒPŒEŒ<Œ4Œ7ŒAŒOŒZŒbŒfŒgŒfŒfŒbŒ]ŒWŒNŒIŒGŒEŒMŒTŒ[ŒcŒiŒlŒjŒdŒbŒbŒ^Œ]Œ\ŒZŒUŒUŒ\ŒaŒfŒnŒoŒoŒpŒnŒkŒhŒfŒdŒeŒfŒdŒbŒ[ŒSŒLŒIŒKŒPŒUŒZŒ\Œ]Œ^Œ_Œ_Œ_Œ_Œ^Œ[ŒQŒGŒ?Œ;Œ?ŒDŒLŒXŒ]ŒaŒbŒdŒbŒ[ŒZŒUŒKŒ?Œ?ŒCŒIŒQŒZŒ_ŒdŒiŒjŒmŒnŒpŒlŒiŒjŒeŒaŒYŒWŒXŒVŒSŒPŒ[ŒZŒXŒQŒNŒKŒLŒNŒUŒWŒXŒXŒWŒ[ŒZŒ\Œ[ŒVŒMŒEŒBŒBŒHŒHŒOŒUŒ[Œ]Œ_ŒcŒdŒcŒ_ŒVŒHŒBŒ?ŒEŒLŒPŒYŒ_ŒdŒhŒkŒkŒhŒaŒ\ŒUŒPŒJŒNŒQŒVŒ\ŒaŒiŒlŒmŒmŒiŒgŒdŒaŒ^ŒYŒTŒXŒ\Œ_Œ[ŒXŒXŒYŒYŒ[Œ[Œ[ŒZŒ[Œ]Œ^Œ`Œ]Œ[ŒVŒOŒIŒ@Œ;Œ=Œ@ŒJŒQŒTŒ_ŒeŒiŒjŒgŒbŒ[ŒTŒJŒGŒCŒGŒKŒNŒTŒWŒ]ŒdŒgŒhŒjŒkŒiŒfŒ`ŒZŒTŒNŒJŒIŒHŒEŒTŒOŒJŒHŒIŒLŒQŒWŒ[Œ]Œ^Œ]Œ^Œ^Œ_ŒZŒVŒRŒMŒKŒJŒLŒQŒUŒ[Œ`ŒbŒdŒeŒgŒfŒaŒYŒTŒOŒLŒJŒMŒQŒTŒYŒ`ŒcŒfŒhŒhŒbŒ[ŒSŒNŒOŒKŒFŒGŒGŒLŒQŒYŒcŒhŒkŒkŒgŒcŒ_Œ`ŒaŒaŒ`ŒbŒ`Œ^Œ[ŒXŒTŒUŒYŒ_Œ`ŒaŒaŒ_ŒbŒ`ŒbŒ`Œ[ŒTŒIŒCŒ<Œ=Œ@ŒEŒNŒSŒ[Œ_ŒbŒ`Œ_Œ[ŒVŒNŒCŒ@Œ@ŒDŒIŒRŒZŒ^ŒbŒaŒdŒfŒiŒgŒeŒ_ŒXŒRŒJŒCŒ?ŒAŒ>ŒEŒUŒWŒWŒUŒUŒVŒVŒZŒ^Œ\ŒZŒZŒZŒ_Œ_Œ\ŒWŒRŒJŒDŒ?Œ?ŒCŒKŒSŒWŒYŒ[ŒYŒZŒXŒZŒWŒRŒIŒEŒAŒ;Œ@ŒDŒMŒYŒ\Œ^ŒaŒ^Œ_Œ[ŒUŒLŒCŒ@ŒDŒHŒRŒZŒ_ŒeŒhŒiŒjŒgŒfŒfŒ`ŒaŒ_Œ\ŒZŒ[ŒXŒVŒWŒXŒ[Œ\Œ\Œ\Œ[ŒYŒVŒTŒWŒXŒZŒYŒRŒLŒIŒCŒ@ŒAŒDŒGŒLŒOŒSŒUŒXŒWŒXŒYŒTŒPŒJŒFŒBŒDŒGŒLŒPŒVŒ[Œ^Œ^Œ`ŒaŒaŒ_Œ[ŒSŒMŒFŒ=Œ6Œ7Œ7ŒJŒLŒNŒSŒ^Œ_ŒeŒhŒgŒfŒcŒaŒ^Œ`Œ^Œ[ŒXŒTŒPŒIŒDŒAŒCŒIŒRŒUŒYŒ^ŒaŒdŒcŒaŒ[ŒUŒPŒEŒ?Œ:Œ=ŒDŒLŒUŒ^ŒcŒeŒcŒcŒaŒXŒTŒJŒBŒCŒHŒLŒVŒ^ŒaŒaŒdŒeŒbŒaŒ^Œ\ŒZŒWŒTŒTŒWŒ[Œ^ŒcŒlŒnŒnŒlŒiŒgŒcŒaŒ^Œ]Œ^Œ_Œ`Œ_ŒbŒfŒjŒmŒlŒkŒgŒcŒbŒbŒbŒdŒcŒcŒ_ŒWŒVŒUŒMŒHŒBŒCŒHŒMŒRŒUŒZŒ_ŒbŒcŒcŒaŒ`Œ\ŒVŒPŒHŒ>Œ8Œ6Œ9Œ;ŒTŒXŒaŒeŒfŒgŒgŒfŒeŒbŒ\ŒYŒYŒXŒXŒYŒVŒXŒWŒYŒWŒVŒUŒVŒWŒXŒXŒYŒ[Œ^Œ^Œ[ŒUŒNŒDŒBŒ@ŒBŒFŒNŒTŒYŒ]Œ_Œ`Œ`Œ^ŒWŒQŒIŒDŒAŒAŒFŒMŒUŒZŒ`ŒdŒeŒbŒ[ŒXŒTŒOŒLŒJŒIŒKŒOŒVŒ_ŒaŒfŒiŒhŒgŒdŒ`Œ^ŒZŒVŒUŒTŒUŒSŒTŒSŒUŒZŒ`ŒbŒcŒbŒ`Œ]ŒYŒZŒZŒ[ŒYŒZŒVŒQŒKŒHŒFŒIŒLŒPŒQŒRŒUŒVŒWŒXŒYŒ[ŒXŒWŒUŒPŒJŒDŒAŒ=Œ<ŒFŒGŒIŒLŒPŒXŒ^ŒbŒ`Œ`Œ]ŒZŒWŒSŒTŒTŒTŒTŒUŒTŒUŒXŒ[Œ]Œ_Œ]Œ]Œ\Œ[ŒZŒZŒYŒWŒXŒUŒOŒJŒHŒIŒOŒVŒYŒ[Œ^Œ_ŒaŒ_Œ]ŒZŒSŒMŒGŒEŒEŒIŒNŒTŒXŒ]ŒbŒcŒcŒaŒ\ŒSŒKŒFŒDŒDŒGŒJŒTŒ]Œ`ŒfŒhŒfŒbŒ_Œ\Œ[ŒVŒTŒSŒTŒYŒ\Œ\Œ^Œ`ŒeŒeŒaŒcŒbŒbŒ`Œ]Œ]Œ[Œ]Œ[ŒUŒRŒNŒHŒGŒGŒHŒLŒOŒQŒSŒUŒTŒTŒUŒUŒVŒXŒUŒQŒNŒKŒFŒDŒBŒ@ŒDŒEŒJŒTŒ[Œ_ŒcŒfŒeŒdŒ`Œ\ŒXŒVŒUŒSŒTŒRŒNŒJŒNŒRŒVŒ\Œ]Œ[Œ\Œ\Œ[ŒYŒYŒYŒYŒVŒRŒLŒGŒEŒEŒKŒPŒSŒUŒUŒWŒ[ŒZŒYŒSŒLŒCŒ;Œ5Œ9Œ?ŒKŒSŒVŒ[Œ\Œ]Œ\ŒXŒTŒOŒJŒFŒCŒFŒLŒUŒ^ŒbŒdŒfŒeŒdŒbŒ^ŒYŒWŒWŒUŒTŒSŒUŒVŒWŒ[Œ[Œ]ŒaŒcŒcŒ`Œ^Œ[Œ[Œ\ŒZŒWŒYŒUŒRŒPŒMŒOŒOŒOŒRŒVŒWŒXŒWŒZŒYŒXŒXŒUŒWŒVŒUŒSŒNŒJŒFŒEŒDŒOŒBŒEŒMŒVŒ\Œ_ŒaŒ^Œ\ŒYŒUŒSŒPŒNŒPŒUŒ[Œ_ŒcŒfŒhŒiŒgŒdŒ`Œ\ŒXŒYŒZŒZŒXŒTŒQŒMŒHŒDŒEŒFŒJŒNŒQŒTŒWŒWŒXŒZŒXŒVŒPŒJŒFŒDŒDŒGŒPŒUŒUŒWŒZŒ\Œ]ŒYŒTŒPŒGŒCŒ@ŒBŒEŒJŒQŒVŒ[Œ_Œ`ŒaŒbŒ`Œ[ŒWŒOŒJŒJŒOŒUŒZŒ_ŒdŒiŒhŒjŒhŒjŒgŒcŒ_ŒZŒYŒXŒZŒYŒWŒVŒVŒSŒYŒ]Œ_ŒcŒbŒ_Œ^ŒZŒYŒWŒXŒXŒVŒWŒTŒSŒTŒRŒPŒPŒPŒNŒHŒDŒLŒRŒWŒZŒ]Œ^Œ_Œ^ŒYŒTŒOŒFŒ=Œ=ŒAŒJŒUŒ^ŒcŒeŒeŒfŒdŒ]ŒWŒSŒQŒPŒOŒQŒQŒQŒTŒVŒZŒ[Œ^Œ`Œ\ŒYŒYŒ\Œ[ŒYŒ\ŒXŒOŒNŒNŒHŒCŒ@ŒBŒJŒQŒTŒXŒZŒ\Œ^Œ\ŒUŒMŒCŒ?Œ<Œ>ŒGŒNŒTŒZŒ^ŒaŒbŒ`Œ^Œ\ŒUŒQŒJŒDŒGŒNŒWŒ^ŒdŒgŒhŒiŒjŒiŒfŒaŒ\ŒXŒRŒPŒQŒTŒWŒXŒZŒ[Œ^Œ`Œ`ŒaŒaŒ^Œ\ŒYŒUŒQŒNŒKŒIŒFŒGŒKŒQŒVŒZŒ]Œ^Œ^Œ^ŒaŒGŒMŒRŒWŒZŒ\ŒZŒZŒZŒVŒPŒKŒEŒCŒEŒMŒUŒYŒ]Œ`ŒaŒbŒcŒaŒ^Œ[ŒYŒVŒQŒQŒRŒTŒWŒZŒ^ŒaŒbŒdŒbŒ_Œ^Œ\ŒZŒZŒ\ŒYŒWŒPŒNŒLŒKŒJŒKŒOŒSŒUŒVŒWŒZŒYŒYŒYŒRŒPŒKŒBŒ;Œ7Œ;ŒAŒKŒRŒWŒ\Œ_Œ`Œ`ŒYŒSŒNŒFŒBŒ@ŒCŒHŒOŒXŒ^ŒdŒbŒaŒaŒ^Œ[ŒUŒUŒQŒRŒPŒQŒUŒYŒ\ŒbŒeŒgŒfŒfŒeŒbŒ_Œ\ŒYŒWŒVŒVŒVŒTŒUŒVŒUŒSŒUŒVŒYŒ\Œ\ŒNŒIŒPŒZŒ^Œ_ŒaŒbŒ_Œ^ŒZŒTŒNŒGŒCŒBŒFŒMŒUŒ^ŒbŒdŒfŒeŒbŒ_Œ\ŒWŒTŒRŒPŒNŒPŒSŒWŒ]ŒbŒeŒfŒeŒcŒaŒ^Œ[ŒZŒZŒYŒWŒUŒSŒTŒXŒ]Œ`Œ_Œ`Œ_Œ]Œ\Œ]Œ]Œ[Œ]ŒZŒXŒSŒPŒNŒNŒNŒNŒQŒVŒYŒ[Œ^ŒaŒbŒ`ŒXŒRŒFŒ?Œ@ŒIŒSŒYŒaŒcŒcŒaŒbŒbŒ`Œ[ŒVŒQŒNŒKŒJŒKŒPŒWŒ^ŒcŒfŒdŒeŒfŒhŒeŒ`Œ[ŒWŒUŒSŒUŒWŒYŒWŒXŒ[ŒaŒdŒcŒaŒ`Œ]ŒNŒVŒZŒ_ŒaŒ`Œ^Œ^Œ]Œ]ŒWŒRŒHŒCŒ>Œ=ŒCŒMŒVŒ^ŒcŒgŒhŒiŒeŒ_ŒZŒRŒOŒNŒLŒNŒRŒYŒ]ŒbŒeŒgŒjŒiŒdŒ\ŒXŒVŒRŒRŒQŒSŒQŒQŒUŒXŒYŒ[Œ^ŒYŒUŒWŒYŒ\ŒZŒ\ŒYŒVŒRŒNŒKŒFŒCŒBŒFŒOŒUŒWŒZŒ\Œ]Œ]Œ[ŒWŒUŒNŒGŒBŒAŒFŒKŒVŒ\Œ`ŒaŒcŒbŒaŒ^ŒXŒRŒKŒIŒHŒHŒJŒMŒPŒUŒXŒZŒ[Œ\Œ\Œ[ŒXŒUŒRŒOŒLŒJŒHŒJŒMŒOŒRŒVŒYŒ_ŒaŒaŒaŒWŒZŒ\Œ`ŒbŒ`ŒdŒdŒdŒbŒ[ŒQŒEŒBŒ@ŒCŒIŒTŒ\ŒdŒfŒhŒgŒfŒaŒZŒQŒJŒGŒFŒEŒHŒMŒVŒ[ŒcŒfŒfŒgŒgŒgŒeŒ`Œ\ŒZŒUŒSŒRŒTŒRŒQŒ[ŒbŒcŒaŒ^Œ]Œ\Œ\Œ[ŒXŒYŒXŒXŒRŒNŒKŒKŒNŒRŒUŒWŒ[Œ\Œ\Œ_Œ]Œ_Œ[ŒVŒNŒFŒ=Œ:Œ=ŒBŒFŒPŒXŒZŒZŒ\Œ^Œ`ŒbŒ\ŒVŒIŒFŒDŒBŒFŒPŒYŒ^ŒaŒ_Œ_ŒcŒcŒ`Œ\ŒUŒQŒMŒKŒIŒHŒHŒIŒNŒSŒXŒ\ŒcŒeŒgŒfŒZŒYŒ\ŒZŒYŒZŒ[ŒYŒYŒWŒWŒQŒJŒBŒ=Œ@ŒCŒLŒTŒZŒ]Œ_ŒaŒ`Œ^ŒXŒQŒHŒBŒ>Œ=Œ?ŒJŒTŒZŒaŒbŒaŒcŒdŒ`Œ\ŒVŒMŒIŒEŒEŒJŒRŒYŒ^ŒaŒaŒ_Œ^Œ]ŒYŒZŒVŒTŒSŒRŒRŒMŒJŒFŒIŒLŒMŒQŒPŒQŒUŒTŒUŒUŒUŒUŒVŒSŒPŒIŒEŒCŒFŒLŒQŒWŒXŒ[Œ^ŒbŒdŒcŒ`ŒZŒTŒLŒDŒ>Œ@ŒEŒOŒWŒ\Œ`ŒbŒcŒdŒcŒ]ŒVŒQŒKŒEŒAŒ@ŒEŒNŒSŒ[ŒdŒgŒiŒmŒmŒkŒjŒeŒ]Œ]Œ\ŒZŒXŒYŒZŒ[ŒXŒSŒQŒJŒEŒ@Œ@ŒCŒLŒQŒWŒ[Œ\Œ\Œ\ŒYŒVŒQŒKŒHŒ?Œ;Œ>ŒFŒPŒXŒ_ŒbŒdŒeŒaŒ[ŒWŒRŒMŒJŒFŒAŒDŒFŒQŒXŒ\Œ_Œ`Œ^Œ[ŒWŒWŒSŒSŒTŒSŒPŒMŒKŒIŒKŒMŒRŒVŒYŒXŒWŒSŒTŒUŒTŒSŒRŒRŒRŒMŒHŒFŒGŒJŒPŒSŒVŒYŒ]ŒbŒaŒ`Œ]ŒSŒJŒ@Œ=Œ;Œ>ŒFŒNŒTŒ[Œ`ŒbŒeŒcŒbŒ\ŒTŒNŒFŒAŒ>Œ<Œ=ŒAŒEŒOŒYŒ_ŒaŒeŒfŒhŒiŒdŒ^Œ_Œ^Œ[Œ\ŒWŒUŒUŒPŒLŒKŒJŒKŒOŒTŒWŒYŒZŒ\Œ_Œ_Œ`Œ`Œ^ŒWŒRŒJŒGŒFŒJŒPŒ\ŒcŒfŒhŒiŒhŒhŒcŒ[ŒVŒMŒGŒDŒGŒKŒSŒ_ŒhŒjŒlŒlŒhŒdŒ]ŒUŒRŒLŒEŒDŒDŒJŒNŒTŒ]ŒbŒdŒdŒaŒ]Œ\ŒYŒUŒWŒUŒQŒLŒMŒLŒKŒLŒPŒSŒVŒYŒZŒZŒZŒWŒUŒSŒXŒWŒSŒKŒFŒBŒ@ŒAŒEŒJŒTŒ]Œ`ŒbŒcŒdŒbŒ^ŒZŒWŒTŒOŒFŒ?Œ<Œ@ŒFŒMŒUŒ[Œ^Œ`Œ`Œ`ŒaŒ`Œ^ŒaŒ[ŒVŒRŒOŒMŒLŒMŒLŒMŒLŒJŒEŒFŒIŒLŒNŒQŒRŒSŒSŒTŒSŒUŒTŒPŒIŒEŒ@Œ;Œ:Œ>ŒFŒMŒVŒ]Œ`ŒaŒ`Œ]ŒZŒRŒIŒDŒAŒCŒMŒZŒ`ŒaŒdŒcŒeŒcŒ]ŒUŒRŒNŒKŒIŒKŒRŒWŒ^ŒbŒdŒcŒbŒ_Œ\Œ[ŒWŒUŒUŒTŒRŒOŒPŒPŒPŒPŒOŒQŒQŒSŒSŒWŒYŒYŒZŒZŒYŒ[ŒXŒSŒPŒIŒAŒ>Œ@ŒCŒIŒMŒPŒUŒXŒZŒ\Œ]ŒYŒTŒPŒJŒCŒ<Œ8Œ9Œ@ŒHŒQŒWŒ\Œ`ŒbŒaŒbŒbŒaŒ`Œ^ŒYŒUŒUŒWŒXŒWŒTŒRŒLŒHŒEŒDŒGŒJŒMŒNŒRŒUŒYŒZŒ\ŒZŒXŒUŒOŒJŒAŒ8Œ;ŒAŒIŒOŒVŒYŒ\Œ^Œ_Œ[ŒWŒOŒHŒEŒ:Œ8Œ=ŒIŒUŒ]ŒaŒcŒdŒbŒ\ŒVŒRŒMŒLŒJŒGŒIŒOŒUŒYŒ]Œ_Œ^Œ]Œ[ŒVŒQŒOŒLŒLŒIŒIŒFŒEŒDŒCŒFŒHŒLŒQŒSŒSŒSŒRŒRŒQŒPŒOŒOŒMŒMŒGŒBŒ?Œ?ŒCŒIŒMŒRŒSŒUŒYŒ]Œ]Œ^Œ[ŒRŒLŒEŒ=Œ8Œ7Œ>ŒEŒMŒRŒTŒXŒ\Œ]Œ[ŒZŒQŒaŒ\ŒWŒQŒOŒSŒTŒPŒOŒQŒRŒSŒVŒWŒXŒXŒUŒSŒQŒOŒMŒIŒIŒIŒFŒEŒCŒAŒ@ŒCŒIŒLŒMŒOŒRŒSŒTŒWŒVŒRŒNŒHŒ@Œ;Œ>ŒCŒHŒMŒRŒVŒYŒ\ŒZŒVŒRŒNŒJŒDŒ@Œ=ŒAŒKŒPŒZŒ^Œ`Œ^Œ]ŒZŒTŒOŒMŒMŒPŒMŒLŒMŒQŒUŒZŒ`ŒbŒdŒbŒ_Œ_Œ\ŒYŒTŒQŒRŒPŒQŒPŒRŒUŒYŒ^ŒcŒgŒfŒcŒ`Œ^Œ[ŒZŒWŒTŒWŒTŒNŒKŒJŒHŒJŒKŒOŒQŒSŒUŒWŒXŒYŒXŒYŒXŒUŒUŒ]ŒXŒQŒMŒIŒBŒ=Œ;Œ;ŒAŒHŒRŒZŒcŒcŒbŒZŒUŒSŒRŒPŒNŒMŒNŒKŒGŒDŒDŒCŒFŒJŒKŒMŒPŒUŒYŒYŒYŒZŒWŒSŒMŒCŒ@Œ=Œ?ŒCŒNŒVŒWŒZŒ]Œ`ŒbŒ]ŒYŒSŒKŒBŒ=Œ>ŒCŒGŒOŒ[ŒaŒdŒgŒgŒeŒ_ŒXŒSŒNŒJŒLŒPŒTŒ[Œ`ŒdŒfŒhŒgŒbŒ`Œ]Œ[ŒWŒUŒUŒSŒQŒPŒPŒRŒVŒZŒXŒVŒYŒWŒUŒTŒVŒXŒWŒSŒSŒNŒFŒ@ŒBŒ?Œ<Œ=Œ@ŒCŒEŒIŒMŒOŒQŒQŒUŒVŒXŒUŒ]Œ]ŒYŒUŒNŒIŒFŒJŒPŒWŒ\Œ_ŒaŒcŒdŒeŒ_Œ\ŒWŒUŒSŒQŒOŒPŒNŒOŒQŒPŒTŒVŒXŒYŒXŒWŒVŒXŒZŒYŒYŒXŒSŒLŒCŒ>Œ@ŒDŒIŒNŒSŒXŒ[Œ]Œ]Œ]Œ[ŒWŒSŒHŒ@ŒAŒ@ŒIŒNŒVŒ[Œ_ŒaŒbŒbŒ`Œ[ŒUŒRŒOŒJŒGŒFŒIŒQŒUŒZŒ^ŒaŒ`Œ`Œ]ŒUŒOŒMŒHŒEŒCŒAŒAŒEŒGŒKŒOŒRŒUŒUŒUŒSŒUŒSŒRŒQŒNŒLŒIŒGŒEŒDŒFŒIŒJŒLŒOŒRŒTŒRŒQŒTŒUŒTŒPŒMŒPŒbŒ_ŒYŒSŒPŒKŒGŒEŒHŒNŒSŒZŒ_ŒcŒfŒdŒaŒ^ŒYŒNŒHŒFŒLŒMŒMŒMŒOŒRŒTŒWŒYŒYŒYŒXŒWŒVŒWŒVŒTŒPŒKŒGŒCŒ>ŒAŒGŒLŒOŒRŒTŒUŒXŒZŒZŒTŒOŒMŒGŒAŒ?ŒAŒHŒNŒVŒ\Œ_Œ`Œ`Œ]Œ]ŒYŒSŒLŒDŒEŒEŒJŒMŒVŒZŒaŒeŒdŒcŒ_ŒZŒSŒQŒOŒMŒKŒKŒMŒOŒSŒWŒ[Œ]Œ]Œ\ŒZŒYŒXŒSŒQŒQŒSŒQŒMŒIŒDŒ@Œ?Œ?ŒCŒJŒNŒNŒPŒOŒQŒQŒPŒPŒQŒOŒNŒPŒYŒTŒOŒHŒHŒIŒLŒRŒYŒ\ŒaŒfŒiŒiŒgŒcŒ_ŒZŒTŒKŒKŒLŒMŒMŒRŒVŒ[Œ^Œ`ŒbŒ]ŒWŒPŒRŒOŒPŒOŒOŒMŒJŒGŒFŒIŒNŒRŒTŒWŒVŒVŒTŒWŒXŒZŒXŒSŒPŒOŒLŒKŒMŒPŒTŒTŒSŒWŒ\Œ]Œ]Œ_Œ^ŒXŒQŒKŒGŒHŒMŒPŒXŒ\ŒaŒfŒeŒfŒgŒdŒbŒ\ŒUŒOŒJŒGŒJŒQŒXŒ`ŒfŒkŒkŒhŒ_ŒZŒXŒXŒVŒRŒRŒRŒPŒOŒMŒOŒRŒWŒ\Œ_Œ`Œ]Œ]Œ^Œ\ŒYŒVŒTŒRŒOŒNŒKŒSŒUŒRŒEŒ@Œ=Œ;Œ@ŒFŒNŒTŒZŒ[Œ[Œ]Œ]Œ[ŒWŒRŒIŒDŒBŒFŒKŒOŒWŒ]ŒaŒdŒdŒcŒaŒ^Œ]ŒZŒWŒTŒSŒQŒOŒPŒQŒVŒ[Œ]Œ_Œ_Œ`Œ\Œ[Œ[Œ[Œ[ŒXŒTŒPŒMŒMŒKŒHŒJŒOŒSŒUŒVŒVŒXŒYŒ\ŒZŒWŒQŒIŒEŒ?Œ?ŒFŒJŒMŒTŒVŒYŒZŒXŒXŒZŒWŒPŒIŒEŒBŒCŒJŒPŒWŒ\Œ_ŒcŒcŒdŒ`ŒYŒMŒIŒFŒCŒFŒKŒQŒSŒWŒ\Œ^ŒaŒcŒeŒcŒdŒbŒ`Œ]ŒZŒXŒTŒPŒMŒGŒNŒSŒ[ŒUŒOŒCŒ?Œ?ŒBŒIŒPŒVŒ[Œ^Œ`ŒbŒbŒ]ŒWŒOŒGŒBŒ?ŒAŒDŒHŒNŒTŒZŒ^ŒbŒdŒdŒbŒ`Œ]ŒXŒRŒNŒLŒKŒMŒMŒQŒWŒ[Œ_Œ_Œ\ŒZŒYŒXŒWŒWŒUŒRŒPŒLŒIŒGŒJŒOŒSŒUŒWŒWŒYŒ[Œ]Œ\ŒXŒVŒPŒIŒDŒ@Œ;ŒBŒHŒRŒUŒXŒ[Œ^Œ^Œ\ŒXŒSŒKŒFŒAŒ<Œ?ŒIŒLŒTŒYŒ^ŒaŒbŒaŒ]ŒYŒTŒNŒJŒFŒEŒGŒLŒPŒWŒ\ŒcŒgŒiŒhŒgŒdŒ`Œ]ŒYŒTŒQŒQŒOŒNŒNŒLŒGŒTŒPŒIŒCŒ=Œ9Œ<ŒAŒIŒRŒVŒZŒ\Œ\ŒXŒTŒSŒSŒHŒ@Œ=Œ=ŒEŒHŒMŒVŒZŒ]Œ_Œ\ŒVŒLŒHŒFŒBŒEŒEŒDŒDŒGŒKŒOŒWŒYŒZŒ]Œ]ŒZŒWŒVŒUŒRŒPŒOŒLŒMŒLŒNŒTŒWŒYŒ\Œ[Œ[Œ[ŒZŒWŒNŒLŒJŒEŒ?Œ=Œ<ŒAŒEŒKŒMŒOŒPŒUŒ[Œ]Œ\ŒZŒUŒMŒGŒCŒ@ŒAŒEŒIŒQŒYŒ[Œ\ŒZŒWŒTŒOŒMŒJŒDŒ>Œ<Œ>Œ?ŒDŒJŒOŒTŒYŒ[Œ\Œ[ŒYŒXŒRŒLŒHŒDŒBŒ@Œ?Œ?ŒBŒCŒQŒKŒGŒAŒ=Œ?ŒCŒGŒMŒSŒWŒZŒ^Œ]ŒYŒMŒFŒ?Œ<Œ:Œ;Œ>ŒDŒKŒRŒXŒ\Œ^Œ`Œ`Œ]ŒWŒQŒNŒIŒGŒIŒLŒNŒWŒ\ŒbŒdŒeŒcŒ`Œ]ŒYŒUŒRŒPŒOŒMŒOŒPŒPŒSŒWŒ]Œ_Œ_Œ[Œ\ŒZŒ[Œ[ŒZŒYŒWŒTŒNŒHŒGŒFŒDŒHŒOŒRŒUŒYŒ\Œ^Œ]Œ[ŒXŒRŒKŒ@Œ=Œ=ŒBŒHŒMŒTŒ\Œ\Œ^ŒaŒcŒ_ŒZŒVŒNŒGŒBŒBŒAŒEŒKŒUŒ[Œ]ŒbŒeŒfŒeŒbŒ_Œ]ŒZŒTŒQŒMŒLŒJŒHŒGŒEŒOŒLŒHŒFŒEŒKŒOŒPŒQŒRŒQŒTŒTŒSŒUŒUŒSŒNŒDŒ@ŒAŒDŒIŒQŒWŒZŒ^Œ^Œ^Œ[ŒWŒQŒMŒLŒMŒKŒJŒJŒHŒKŒPŒTŒYŒ[Œ\Œ_Œ^Œ[ŒXŒVŒTŒRŒPŒOŒQŒTŒVŒUŒTŒPŒRŒSŒRŒUŒUŒUŒTŒQŒMŒIŒFŒCŒCŒGŒLŒNŒQŒTŒQŒSŒTŒVŒVŒTŒSŒOŒHŒBŒ?Œ@ŒCŒIŒLŒQŒWŒYŒ[Œ[Œ\ŒZŒTŒMŒFŒBŒ?Œ<Œ=ŒBŒJŒQŒWŒ[Œ^Œ`Œ`Œ_Œ^ŒZŒWŒRŒOŒLŒIŒHŒGŒIŒJŒAŒKŒJŒGŒEŒDŒDŒFŒHŒJŒKŒMŒNŒOŒQŒQŒNŒFŒCŒBŒDŒGŒMŒQŒTŒYŒ\Œ_ŒbŒaŒ`Œ\ŒTŒPŒIŒBŒBŒDŒGŒNŒUŒ\Œ`ŒaŒbŒ`ŒYŒTŒMŒHŒCŒ?ŒAŒDŒHŒQŒVŒWŒZŒZŒWŒXŒXŒUŒSŒMŒJŒHŒEŒDŒHŒKŒPŒUŒYŒ\Œ]Œ[ŒWŒUŒRŒKŒIŒKŒKŒMŒLŒJŒLŒOŒSŒYŒ]Œ_Œ_Œ^Œ_Œ`Œ^Œ^Œ\ŒXŒQŒJŒFŒDŒFŒLŒUŒZŒ_ŒbŒdŒeŒgŒfŒdŒeŒfŒdŒ^ŒWŒSŒOŒMŒMŒMŒKŒPŒWŒVŒSŒPŒOŒMŒJŒHŒKŒRŒWŒXŒZŒ[ŒZŒWŒSŒOŒHŒCŒDŒGŒJŒMŒQŒUŒXŒZŒZŒ]ŒYŒSŒKŒFŒ>Œ;Œ@ŒHŒOŒSŒVŒYŒ]Œ^Œ]ŒZŒWŒPŒKŒFŒ@ŒEŒHŒNŒWŒ_ŒcŒcŒbŒaŒ_Œ\ŒWŒSŒMŒIŒGŒGŒHŒLŒSŒXŒ[Œ`Œ`Œ_Œ\Œ[Œ[ŒZŒZŒUŒOŒNŒLŒIŒHŒFŒDŒDŒFŒJŒMŒOŒQŒRŒSŒUŒSŒSŒKŒGŒFŒCŒ@Œ@ŒCŒHŒLŒRŒVŒYŒZŒZŒYŒWŒXŒUŒQŒJŒCŒAŒDŒGŒFŒFŒHŒEŒNŒMŒMŒKŒHŒJŒIŒHŒFŒFŒEŒHŒKŒMŒOŒQŒPŒNŒGŒBŒBŒFŒHŒIŒJŒIŒIŒKŒNŒNŒNŒLŒIŒBŒ=Œ<Œ;ŒAŒHŒOŒRŒUŒ[Œ]Œ[ŒUŒNŒDŒAŒ?ŒDŒJŒVŒ\Œ`ŒdŒkŒiŒdŒ^ŒVŒLŒHŒDŒCŒFŒIŒOŒTŒXŒYŒZŒZŒXŒVŒRŒOŒJŒFŒCŒAŒCŒFŒHŒFŒDŒDŒEŒHŒJŒKŒKŒMŒKŒJŒLŒNŒNŒNŒKŒHŒFŒCŒ@Œ>Œ=Œ>ŒBŒHŒPŒRŒSŒSŒTŒVŒUŒSŒMŒJŒHŒDŒAŒCŒ@Œ@ŒBŒ@Œ?ŒXŒ]ŒaŒcŒcŒcŒaŒ_Œ\ŒZŒYŒXŒUŒSŒRŒQŒNŒJŒFŒCŒFŒKŒNŒQŒRŒUŒVŒVŒ\ŒYŒVŒNŒCŒ?Œ6Œ:Œ=ŒAŒHŒPŒSŒVŒXŒZŒYŒSŒPŒOŒDŒ?Œ;Œ?ŒGŒKŒQŒWŒZŒ]Œ]Œ^ŒYŒTŒNŒKŒIŒKŒNŒUŒ[ŒaŒeŒeŒfŒcŒcŒ^ŒVŒWŒYŒYŒXŒWŒVŒVŒWŒYŒ[Œ[Œ[Œ\Œ[ŒZŒYŒXŒWŒYŒXŒXŒYŒVŒPŒKŒGŒBŒ>Œ>Œ@ŒDŒJŒOŒQŒTŒWŒXŒYŒZŒXŒTŒPŒKŒDŒ?Œ9Œ4Œ2Œ0Œ0Œ9ŒYŒ^ŒcŒdŒcŒbŒaŒ^Œ[Œ[ŒWŒSŒQŒQŒQŒQŒWŒYŒ[Œ]Œ`Œ`Œ^Œ[ŒZŒWŒXŒWŒVŒTŒVŒQŒIŒHŒDŒAŒDŒEŒLŒQŒUŒYŒ[Œ\ŒXŒPŒPŒEŒ=Œ8Œ6Œ<ŒBŒFŒMŒVŒ[Œ]Œ\Œ[ŒWŒRŒNŒIŒGŒHŒMŒTŒ\Œ\Œ_ŒbŒcŒcŒcŒcŒ^Œ[ŒXŒWŒVŒTŒVŒUŒTŒUŒ[Œ]Œ^Œ`Œ^Œ]ŒZŒUŒXŒWŒUŒUŒVŒUŒQŒMŒIŒDŒ@ŒCŒEŒGŒGŒLŒOŒQŒSŒTŒVŒTŒNŒLŒGŒCŒ@Œ<Œ9Œ5Œ4Œ7Œ:Œ8ŒYŒ\Œ]Œ_ŒaŒ]Œ]ŒXŒRŒLŒHŒGŒMŒUŒ[ŒcŒdŒfŒeŒbŒ^ŒXŒUŒMŒIŒEŒDŒFŒHŒGŒGŒDŒAŒBŒGŒLŒOŒRŒTŒUŒVŒYŒ[Œ^Œ\ŒWŒNŒGŒ@Œ<Œ<ŒDŒMŒMŒRŒWŒXŒZŒXŒSŒIŒ?Œ<Œ>Œ=Œ?Œ=ŒBŒIŒOŒTŒWŒYŒZŒZŒVŒQŒQŒMŒMŒLŒLŒPŒUŒUŒYŒ]Œ_ŒdŒfŒeŒaŒ]ŒYŒUŒSŒRŒRŒQŒOŒLŒJŒJŒNŒQŒSŒRŒOŒLŒHŒJŒPŒTŒUŒUŒTŒXŒUŒPŒMŒEŒCŒ@Œ>Œ;Œ:Œ:Œ>ŒWŒZŒ]Œ^Œ\ŒXŒRŒNŒLŒKŒGŒHŒGŒGŒKŒQŒVŒYŒZŒ]Œ_Œ^ŒZŒWŒVŒUŒSŒSŒRŒQŒPŒLŒHŒCŒ>ŒAŒDŒGŒKŒMŒNŒOŒUŒWŒVŒQŒMŒ>Œ7Œ6Œ:ŒBŒHŒLŒOŒSŒVŒXŒWŒRŒHŒBŒ;Œ7Œ8Œ<ŒDŒGŒOŒVŒXŒ[Œ]ŒYŒQŒIŒEŒAŒBŒAŒ>Œ?ŒGŒQŒYŒ]ŒaŒbŒeŒdŒaŒ]ŒYŒTŒSŒQŒPŒNŒPŒRŒRŒUŒVŒWŒUŒUŒVŒQŒNŒJŒIŒIŒKŒJŒHŒIŒKŒJŒGŒEŒCŒDŒIŒMŒPŒOŒPŒJŒXŒZŒXŒXŒZŒWŒTŒTŒPŒLŒKŒHŒEŒDŒEŒMŒWŒ\ŒbŒaŒ^Œ]Œ[ŒXŒUŒSŒPŒOŒMŒMŒOŒQŒPŒQŒSŒTŒSŒSŒWŒVŒWŒXŒZŒYŒVŒPŒJŒEŒ=Œ8Œ6Œ;ŒAŒIŒMŒQŒSŒUŒTŒSŒPŒLŒBŒ>Œ:Œ8Œ;ŒAŒKŒOŒWŒYŒYŒ[ŒXŒSŒLŒHŒCŒ@Œ@ŒDŒIŒPŒXŒ]ŒbŒeŒdŒ`ŒYŒSŒQŒRŒPŒOŒLŒHŒDŒAŒGŒOŒQŒSŒUŒVŒSŒSŒSŒRŒQŒRŒUŒSŒSŒRŒQŒNŒJŒDŒAŒ?Œ@ŒCŒFŒKŒKŒCŒPŒSŒYŒ\Œ^Œ]ŒYŒVŒRŒLŒCŒ@Œ>Œ@ŒDŒLŒUŒYŒ]Œ`Œ^Œ[ŒYŒUŒQŒQŒMŒKŒHŒHŒJŒLŒRŒWŒ]Œ_ŒbŒ`Œ^Œ\Œ[ŒZŒZŒYŒUŒRŒPŒMŒMŒPŒQŒTŒWŒXŒXŒXŒZŒYŒWŒYŒXŒQŒJŒCŒ7Œ6Œ9ŒBŒKŒOŒTŒWŒZŒ]Œ^ŒZŒTŒMŒEŒ?Œ:Œ7Œ=ŒCŒKŒQŒXŒ\Œ]Œ_ŒaŒaŒ`Œ]ŒWŒRŒLŒFŒGŒAŒ<Œ@ŒDŒJŒRŒYŒ^Œ`Œ^Œ[ŒXŒVŒRŒPŒLŒGŒEŒHŒFŒDŒCŒAŒCŒDŒJŒKŒKŒBŒQŒTŒVŒWŒ\Œ^Œ\ŒVŒJŒEŒBŒCŒBŒIŒLŒRŒVŒZŒ_Œ`Œ`ŒbŒ_ŒZŒRŒGŒEŒHŒMŒUŒ[ŒaŒcŒcŒeŒfŒeŒfŒcŒaŒ_Œ]ŒZŒXŒUŒSŒSŒSŒQŒTŒZŒ[Œ[ŒYŒWŒRŒSŒRŒUŒWŒSŒNŒGŒCŒ?Œ?ŒBŒHŒMŒOŒSŒVŒYŒZŒ\ŒYŒWŒPŒGŒ>Œ7Œ7Œ<ŒGŒPŒVŒ[Œ\Œ]Œ_Œ\ŒXŒTŒRŒLŒFŒAŒEŒIŒNŒUŒXŒ\Œ^ŒaŒ`Œ]ŒYŒSŒPŒLŒJŒHŒEŒDŒCŒEŒHŒKŒPŒWŒZŒZŒ\Œ\Œ^Œ^ŒXŒVŒWŒYŒYŒXŒTŒNŒDŒBŒDŒBŒFŒMŒQŒTŒZŒ]Œ_Œ`Œ`Œ_Œ^ŒXŒSŒJŒGŒEŒGŒNŒTŒXŒ[Œ_ŒbŒeŒfŒeŒfŒcŒ]ŒWŒKŒEŒBŒ?Œ>Œ@ŒDŒKŒOŒSŒTŒUŒTŒPŒMŒJŒKŒIŒIŒKŒKŒIŒGŒHŒMŒRŒUŒWŒXŒYŒ[Œ[ŒXŒTŒPŒIŒEŒCŒAŒCŒJŒOŒSŒWŒYŒ[Œ\Œ]Œ]ŒYŒOŒNŒIŒBŒ=Œ:Œ:Œ=ŒBŒKŒSŒ[Œ^Œ_Œ^Œ[ŒVŒOŒDŒ@ŒBŒDŒCŒCŒDŒGŒOŒRŒVŒ[Œ^Œ_Œ]Œ[ŒXŒYŒ^ŒUŒWŒYŒZŒWŒRŒPŒLŒEŒ?Œ;Œ8Œ;Œ=ŒFŒOŒSŒWŒ\Œ\Œ]Œ\ŒZŒSŒLŒEŒAŒ;Œ9Œ=ŒBŒHŒOŒUŒYŒ\ŒZŒWŒWŒTŒOŒIŒFŒEŒBŒAŒCŒHŒMŒTŒWŒUŒRŒQŒPŒOŒOŒPŒPŒOŒJŒGŒDŒ@ŒBŒBŒGŒMŒQŒSŒVŒWŒYŒXŒVŒTŒOŒHŒAŒ;Œ8Œ=ŒFŒMŒRŒUŒVŒWŒVŒWŒXŒVŒPŒJŒCŒAŒBŒHŒJŒMŒSŒXŒ[Œ^Œ]Œ\Œ[ŒWŒTŒOŒGŒDŒDŒEŒGŒJŒPŒVŒ[Œ_Œ_Œ^Œ\ŒWŒUŒRŒQŒ]ŒRŒYŒ[ŒYŒZŒXŒSŒNŒGŒEŒCŒCŒJŒOŒUŒYŒ[ŒVŒUŒWŒVŒSŒNŒHŒDŒCŒEŒHŒNŒSŒXŒ]Œ^Œ^Œ`Œ^Œ[ŒVŒPŒMŒLŒLŒKŒMŒQŒWŒ[Œ]Œ]ŒZŒ]Œ_Œ]ŒWŒOŒOŒRŒPŒQŒOŒKŒHŒGŒIŒNŒPŒPŒRŒTŒUŒUŒVŒWŒQŒQŒSŒKŒ@Œ<Œ9Œ8ŒCŒKŒOŒUŒWŒWŒXŒYŒZŒWŒQŒNŒGŒAŒ>Œ@ŒFŒKŒSŒXŒYŒYŒYŒ[ŒZŒVŒOŒIŒBŒ?Œ=Œ=Œ@ŒEŒMŒUŒ[Œ]Œ`Œ_Œ_Œ\ŒZŒWŒVŒVŒ[ŒNŒMŒLŒMŒLŒHŒDŒCŒ?Œ<Œ:Œ9Œ=ŒFŒHŒLŒMŒKŒLŒJŒIŒEŒ@Œ>Œ;Œ:Œ<Œ>ŒCŒKŒPŒVŒWŒYŒ\Œ\Œ]ŒYŒMŒ@Œ:Œ=Œ@ŒCŒKŒSŒZŒ\Œ^Œ]Œ\Œ[ŒUŒPŒOŒNŒNŒNŒPŒNŒOŒRŒUŒZŒ]Œ^Œ\ŒUŒRŒTŒSŒRŒQŒSŒRŒNŒJŒDŒCŒCŒCŒDŒDŒGŒGŒFŒKŒNŒMŒOŒIŒ?Œ=Œ;Œ6Œ7Œ:Œ@ŒDŒLŒPŒWŒYŒWŒTŒQŒSŒNŒHŒAŒ?Œ:Œ:Œ@ŒGŒOŒRŒSŒTŒVŒUŒSŒPŒOŒLŒMŒKŒTŒaŒ_Œ]ŒZŒTŒKŒHŒIŒIŒIŒIŒGŒKŒSŒTŒVŒVŒWŒYŒZŒ\ŒYŒSŒMŒHŒAŒ<Œ@ŒEŒJŒNŒRŒUŒTŒWŒTŒOŒHŒ?Œ:Œ8Œ9Œ?ŒCŒLŒVŒZŒ^Œ_Œ`Œ]ŒXŒTŒOŒLŒKŒLŒOŒQŒSŒTŒRŒVŒWŒ[ŒXŒTŒPŒJŒGŒGŒEŒHŒHŒGŒFŒFŒBŒBŒCŒGŒIŒHŒMŒMŒLŒKŒLŒKŒHŒEŒ?Œ9Œ6Œ1Œ3Œ<ŒAŒIŒNŒQŒPŒQŒRŒPŒQŒJŒDŒ@Œ8Œ2Œ5Œ<ŒAŒEŒJŒNŒTŒVŒUŒWŒVŒWŒUŒTŒTŒSŒVŒVŒTŒQŒOŒPŒNŒNŒKŒHŒFŒGŒFŒIŒLŒMŒOŒRŒSŒRŒRŒRŒLŒFŒ@Œ9Œ5Œ1Œ2Œ:ŒAŒGŒPŒWŒZŒ]Œ]Œ[ŒVŒPŒIŒCŒ<Œ9Œ<ŒFŒSŒYŒ\Œ[Œ\ŒZŒVŒOŒKŒHŒFŒFŒDŒEŒEŒIŒOŒUŒ\Œ_ŒaŒ`Œ\ŒXŒWŒUŒSŒRŒOŒNŒMŒIŒEŒBŒAŒDŒFŒIŒRŒTŒVŒWŒWŒVŒVŒXŒUŒQŒJŒAŒ=Œ;ŒBŒHŒNŒUŒYŒXŒVŒWŒXŒXŒUŒQŒIŒAŒ=ŒAŒFŒKŒOŒUŒYŒ[ŒZŒXŒVŒRŒQŒMŒIŒJŒPŒUŒSŒPŒOŒQŒNŒMŒLŒNŒRŒTŒTŒVŒVŒUŒSŒPŒIŒDŒLŒQŒRŒOŒKŒGŒ;Œ7Œ:ŒDŒKŒMŒPŒRŒTŒUŒUŒUŒPŒIŒAŒ=Œ9Œ=ŒCŒIŒOŒUŒWŒYŒZŒ[ŒYŒUŒQŒIŒ@Œ:Œ9Œ>ŒBŒJŒPŒSŒVŒWŒWŒYŒ[ŒVŒSŒQŒOŒNŒMŒNŒOŒPŒTŒVŒYŒ\Œ]Œ\ŒZŒVŒVŒTŒTŒVŒSŒPŒJŒEŒBŒAŒAŒEŒKŒMŒRŒSŒVŒUŒRŒTŒVŒSŒOŒKŒCŒ;Œ8Œ7Œ:Œ@ŒHŒKŒNŒPŒNŒPŒSŒUŒTŒTŒQŒLŒRŒKŒGŒDŒFŒGŒJŒJŒNŒMŒOŒRŒVŒVŒVŒVŒVŒVŒVŒTŒSŒPŒKŒCŒAŒ:Œ4Œ4Œ8ŒBŒIŒPŒUŒWŒVŒYŒXŒWŒUŒMŒCŒ>Œ6Œ7Œ;ŒGŒPŒUŒ[Œ^Œ`Œ^ŒZŒVŒPŒIŒBŒ<Œ6Œ9Œ>ŒDŒLŒQŒVŒ[Œ]Œ^ŒZŒTŒNŒMŒLŒIŒHŒGŒHŒLŒQŒXŒ\Œ^Œ`Œ^Œ\ŒYŒWŒVŒVŒTŒQŒHŒDŒAŒ>Œ>Œ@ŒFŒLŒOŒPŒPŒSŒTŒSŒSŒRŒPŒLŒHŒEŒCŒCŒHŒKŒNŒQŒSŒTŒSŒSŒSŒTŒSŒNŒNŒMŒPŒOŒJŒIŒHŒKŒKŒKŒNŒRŒVŒXŒZŒXŒVŒTŒQŒKŒHŒFŒFŒJŒNŒOŒLŒHŒEŒDŒAŒ?Œ@ŒDŒHŒJŒLŒNŒNŒQŒNŒLŒIŒEŒAŒ<Œ:Œ?ŒHŒMŒOŒSŒUŒSŒRŒTŒRŒPŒFŒ?ŒAŒEŒJŒOŒVŒWŒXŒ[Œ\ŒYŒUŒPŒMŒEŒBŒ@ŒBŒJŒSŒ\ŒaŒaŒ`ŒaŒaŒ^Œ\ŒVŒRŒNŒIŒEŒFŒEŒDŒEŒCŒ@ŒBŒEŒFŒFŒEŒHŒOŒMŒJŒBŒAŒ@ŒAŒBŒ@Œ>Œ:Œ8Œ8Œ<ŒBŒJŒNŒNŒMŒLŒQŒRŒQŒQŒPŒLŒLŒNŒAŒ@Œ>Œ=Œ>Œ?ŒEŒKŒVŒ\Œ]Œ\ŒZŒXŒVŒVŒSŒNŒIŒIŒGŒFŒFŒJŒLŒPŒRŒTŒUŒWŒWŒSŒQŒNŒIŒEŒIŒGŒBŒ?Œ>Œ@ŒCŒGŒKŒLŒNŒOŒNŒNŒIŒEŒBŒ@Œ>Œ<Œ9Œ5Œ9Œ@ŒJŒRŒXŒ[Œ_ŒaŒbŒ]ŒUŒNŒEŒ>Œ;Œ;Œ>ŒGŒOŒUŒ[Œ]Œ`ŒaŒ_ŒZŒTŒMŒEŒIŒOŒMŒJŒHŒIŒLŒMŒNŒOŒQŒRŒRŒSŒKŒHŒMŒRŒTŒQŒLŒGŒAŒ:Œ7Œ6Œ4Œ6Œ6Œ8Œ=ŒAŒGŒPŒNŒPŒNŒLŒJŒEŒNŒKŒBŒ<Œ:Œ>ŒHŒRŒVŒYŒ\Œ\Œ[ŒXŒVŒSŒPŒKŒGŒEŒBŒCŒGŒMŒSŒXŒ\Œ^Œ`Œ_Œ]ŒYŒVŒSŒNŒJŒCŒ?Œ<Œ=Œ<ŒAŒFŒMŒRŒVŒUŒXŒZŒXŒWŒXŒUŒMŒJŒBŒ8Œ7Œ;ŒDŒLŒTŒZŒ\Œ]Œ_Œ_Œ\ŒUŒLŒHŒBŒ@Œ?ŒAŒGŒLŒTŒYŒ^ŒaŒcŒ`Œ\ŒTŒJŒIŒHŒHŒFŒAŒ>Œ>Œ>ŒBŒAŒ@ŒAŒBŒCŒEŒEŒGŒFŒFŒGŒGŒFŒBŒ?Œ;Œ7Œ5Œ5Œ8Œ;Œ?ŒBŒEŒGŒGŒGŒHŒMŒMŒHŒFŒFŒDŒIŒGŒ=Œ9Œ=ŒDŒMŒTŒWŒZŒ]Œ`ŒbŒaŒ[ŒSŒLŒFŒAŒDŒHŒPŒ[Œ_ŒcŒeŒdŒaŒ\ŒXŒTŒRŒQŒQŒPŒOŒMŒKŒHŒJŒLŒOŒQŒSŒQŒQŒRŒTŒRŒSŒOŒGŒEŒEŒBŒ>Œ?Œ@ŒDŒGŒNŒQŒSŒTŒWŒXŒWŒRŒKŒCŒ>Œ7Œ8Œ=ŒGŒOŒSŒVŒZŒ\Œ\ŒYŒVŒRŒLŒHŒDŒBŒBŒCŒFŒLŒPŒUŒ\Œ^ŒaŒ`Œ_ŒZŒWŒWŒUŒSŒPŒOŒKŒMŒQŒWŒ^Œ`ŒbŒdŒcŒaŒ_Œ]Œ[ŒXŒWŒWŒUŒSŒPŒNŒMŒPŒEŒ?Œ9Œ9Œ>ŒHŒOŒVŒZŒ\Œ]Œ\ŒWŒQŒNŒJŒFŒCŒBŒFŒMŒYŒ`ŒbŒcŒ`Œ`Œ_Œ[ŒXŒWŒXŒVŒVŒSŒSŒPŒLŒKŒGŒEŒEŒHŒGŒJŒJŒKŒNŒPŒPŒQŒOŒKŒGŒBŒ;Œ:Œ<Œ@ŒCŒFŒHŒLŒQŒSŒSŒPŒKŒHŒDŒ=Œ=ŒAŒGŒMŒPŒVŒWŒWŒVŒWŒTŒPŒJŒDŒBŒ@ŒBŒEŒLŒUŒ\Œ^Œ`Œ`Œ^Œ[ŒVŒRŒMŒJŒJŒMŒPŒRŒSŒRŒRŒSŒRŒSŒPŒMŒMŒNŒLŒJŒLŒJŒJŒMŒNŒOŒOŒOŒMŒIŒAŒEŒAŒ:Œ3Œ2Œ7Œ?ŒHŒPŒVŒXŒ[ŒXŒTŒQŒJŒEŒEŒEŒGŒJŒMŒUŒYŒ`ŒcŒdŒbŒ`Œ[ŒWŒRŒQŒTŒUŒWŒXŒYŒZŒ]Œ\ŒZŒUŒSŒSŒQŒQŒQŒSŒTŒSŒPŒLŒGŒCŒ?Œ?ŒCŒGŒHŒKŒOŒUŒZŒTŒPŒPŒNŒJŒGŒ@Œ;Œ<Œ@ŒEŒJŒOŒTŒXŒ^Œ_Œ\ŒZŒSŒKŒDŒ:Œ7Œ=ŒDŒNŒWŒ]Œ_Œ^Œ]ŒZŒTŒOŒMŒLŒIŒIŒMŒSŒVŒWŒUŒXŒ\Œ[ŒZŒWŒUŒRŒPŒMŒKŒKŒJŒJŒIŒIŒHŒIŒGŒJŒNŒ;Œ8Œ4Œ0Œ.Œ7Œ>ŒBŒDŒGŒJŒLŒKŒGŒCŒ=Œ;Œ;Œ<Œ=ŒDŒJŒRŒSŒTŒVŒVŒVŒSŒNŒJŒHŒJŒMŒPŒTŒWŒYŒ[Œ]Œ_Œ`Œ^Œ[ŒWŒRŒRŒTŒVŒUŒPŒHŒEŒDŒCŒCŒEŒGŒIŒGŒHŒHŒJŒKŒMŒOŒOŒJŒFŒAŒ=Œ8Œ:Œ<ŒCŒIŒLŒMŒOŒPŒQŒOŒLŒGŒBŒ>Œ=Œ;Œ@ŒDŒIŒLŒOŒSŒYŒWŒTŒOŒLŒFŒBŒ?Œ>ŒCŒFŒIŒMŒRŒVŒZŒ[ŒZŒVŒRŒOŒLŒIŒHŒFŒGŒJŒKŒKŒLŒNŒNŒMŒHŒBŒ=Œ9Œ=ŒAŒFŒGŒKŒOŒOŒQŒRŒRŒNŒJŒDŒ?Œ@ŒEŒLŒRŒWŒ[Œ[Œ]Œ\ŒYŒUŒMŒHŒDŒBŒCŒEŒIŒMŒTŒ[Œ^Œ_Œ]Œ[ŒVŒSŒQŒNŒKŒMŒRŒVŒXŒXŒTŒPŒKŒKŒKŒJŒNŒOŒNŒPŒNŒNŒPŒOŒNŒHŒBŒ=Œ;Œ<Œ@ŒCŒHŒMŒNŒPŒQŒPŒPŒMŒIŒCŒ?Œ;Œ7Œ8Œ<ŒDŒJŒOŒQŒSŒSŒRŒOŒOŒMŒIŒBŒ@Œ@ŒBŒHŒKŒPŒUŒWŒ[Œ[ŒZŒWŒUŒQŒNŒLŒMŒLŒLŒOŒQŒTŒUŒWŒXŒXŒRŒ6Œ3Œ0Œ5Œ<ŒCŒJŒNŒLŒPŒMŒNŒLŒIŒEŒ=Œ9Œ8Œ;ŒAŒEŒKŒMŒMŒPŒQŒRŒPŒMŒHŒDŒCŒBŒBŒBŒFŒOŒWŒZŒ^Œ]ŒYŒSŒPŒNŒMŒOŒQŒTŒTŒSŒPŒOŒOŒOŒOŒMŒNŒLŒKŒIŒJŒJŒKŒLŒMŒMŒOŒJŒ?Œ4Œ+Œ,Œ3Œ=ŒBŒFŒKŒNŒLŒJŒIŒIŒIŒFŒAŒ:Œ7Œ8Œ=ŒCŒIŒLŒMŒMŒPŒOŒOŒLŒIŒDŒ@Œ=Œ<Œ=Œ@ŒIŒOŒSŒWŒYŒXŒXŒXŒSŒOŒKŒHŒEŒEŒCŒDŒBŒEŒEŒFŒGŒBŒFŒAŒ9Œ3Œ3Œ8Œ=ŒBŒFŒKŒLŒMŒNŒMŒHŒBŒ<Œ:Œ9Œ>ŒEŒMŒTŒYŒ[ŒZŒYŒ\ŒYŒOŒLŒGŒBŒ=Œ<ŒAŒFŒLŒSŒWŒXŒYŒYŒWŒRŒNŒMŒMŒOŒPŒTŒRŒSŒWŒYŒZŒYŒXŒVŒTŒRŒQŒPŒUŒXŒXŒVŒWŒRŒMŒIŒIŒHŒGŒHŒFŒFŒEŒGŒKŒPŒQŒOŒJŒAŒ:Œ6Œ5Œ9Œ?ŒFŒIŒMŒOŒQŒOŒPŒNŒKŒFŒ>Œ:Œ<Œ>ŒFŒJŒRŒXŒXŒZŒ[Œ[ŒYŒXŒRŒMŒJŒFŒDŒDŒDŒGŒMŒRŒRŒTŒXŒEŒBŒ;Œ;Œ=Œ@ŒCŒGŒHŒIŒKŒLŒMŒNŒLŒHŒAŒ9Œ6Œ6Œ=ŒFŒMŒPŒQŒSŒVŒVŒSŒSŒOŒLŒFŒCŒAŒCŒJŒPŒSŒWŒ\Œ^Œ_Œ\ŒYŒTŒOŒKŒGŒEŒHŒMŒTŒZŒ_ŒeŒdŒbŒ^Œ[ŒZŒVŒPŒNŒNŒRŒUŒUŒVŒVŒYŒYŒXŒVŒSŒLŒLŒLŒLŒMŒOŒQŒQŒQŒMŒGŒCŒ;Œ<Œ?ŒCŒGŒJŒKŒMŒOŒPŒPŒNŒLŒHŒCŒ>Œ<ŒAŒIŒJŒKŒMŒNŒSŒSŒUŒTŒTŒQŒMŒJŒEŒCŒBŒAŒEŒGŒMŒRŒWŒWŒ9Œ`ŒbŒ`Œ\ŒXŒTŒQŒNŒOŒRŒTŒPŒMŒHŒEŒBŒ?Œ=Œ>ŒBŒFŒHŒHŒJŒMŒLŒNŒNŒNŒJŒDŒ@Œ=Œ<Œ=ŒCŒHŒOŒVŒYŒZŒYŒVŒTŒNŒIŒFŒ?Œ@ŒDŒKŒTŒXŒWŒ[Œ^Œ_Œ\ŒVŒNŒHŒGŒLŒPŒSŒVŒYŒ\ŒaŒeŒfŒcŒaŒ_Œ^ŒWŒUŒRŒNŒJŒJŒKŒNŒNŒIŒHŒCŒ?ŒBŒFŒIŒKŒMŒLŒNŒPŒOŒOŒLŒHŒDŒ=Œ9Œ7Œ<Œ@ŒLŒOŒQŒQŒQŒQŒSŒRŒNŒKŒFŒCŒ@Œ@ŒBŒFŒIŒJŒKŒMŒKŒDŒ`Œ^Œ[ŒXŒVŒUŒVŒTŒQŒQŒPŒOŒMŒNŒMŒKŒKŒIŒIŒGŒJŒLŒNŒMŒMŒNŒOŒMŒJŒBŒ=Œ4Œ2Œ3Œ8Œ@ŒGŒKŒRŒXŒXŒVŒPŒKŒDŒ9Œ5Œ4Œ9ŒAŒMŒSŒUŒWŒXŒ[Œ]Œ[ŒVŒPŒLŒJŒIŒHŒHŒKŒQŒYŒ]Œ]Œ^Œ]Œ[ŒTŒNŒKŒJŒKŒMŒOŒPŒRŒQŒMŒKŒGŒDŒCŒBŒAŒDŒGŒGŒJŒMŒPŒPŒLŒGŒ@Œ<Œ7Œ3Œ/Œ2Œ7ŒAŒDŒGŒJŒMŒOŒQŒQŒPŒOŒJŒFŒDŒCŒ@Œ>Œ:Œ;Œ=Œ@ŒBŒ8ŒaŒaŒ`Œ\ŒXŒQŒMŒKŒKŒMŒOŒQŒSŒSŒTŒWŒXŒYŒYŒWŒVŒNŒKŒKŒIŒIŒJŒHŒCŒ<Œ8Œ5Œ5Œ;ŒBŒFŒIŒJŒMŒNŒOŒNŒHŒEŒ<Œ8Œ5Œ2Œ6Œ<ŒCŒMŒQŒSŒTŒUŒUŒPŒLŒGŒ@Œ<Œ9Œ8Œ<ŒFŒLŒQŒYŒZŒ[Œ\Œ\ŒXŒUŒQŒLŒJŒLŒLŒMŒRŒUŒ\Œ_ŒaŒbŒcŒ_ŒYŒSŒOŒNŒPŒQŒQŒQŒOŒOŒMŒIŒJŒIŒKŒMŒLŒJŒIŒHŒKŒOŒQŒPŒNŒLŒIŒFŒBŒ@Œ@Œ?ŒAŒFŒJŒMŒLŒHŒAŒUŒVŒWŒYŒWŒTŒPŒKŒGŒKŒNŒQŒVŒ]Œ`Œ_Œ_Œ[ŒWŒRŒOŒNŒLŒJŒJŒKŒMŒNŒMŒIŒFŒEŒFŒIŒKŒMŒNŒQŒSŒTŒTŒTŒSŒQŒNŒCŒ=Œ7Œ5Œ9Œ?ŒHŒMŒQŒUŒWŒYŒYŒVŒQŒIŒ@Œ;Œ7Œ9Œ?ŒCŒMŒRŒUŒYŒ\Œ^Œ\ŒUŒNŒKŒIŒHŒEŒCŒDŒIŒNŒTŒXŒ^Œ`ŒaŒ^Œ[ŒTŒOŒMŒPŒPŒOŒMŒMŒKŒNŒRŒUŒXŒZŒZŒYŒXŒVŒWŒUŒWŒSŒSŒOŒNŒLŒGŒDŒBŒBŒCŒEŒFŒHŒHŒGŒFŒ^Œ]ŒYŒTŒOŒHŒAŒ>Œ;ŒAŒEŒJŒOŒVŒZŒ`Œ^ŒYŒTŒSŒRŒQŒOŒMŒMŒLŒLŒKŒGŒDŒAŒ:Œ6Œ6Œ:Œ?ŒBŒDŒFŒHŒJŒKŒKŒHŒHŒEŒAŒ:Œ6Œ5Œ;ŒAŒHŒLŒPŒSŒSŒRŒOŒLŒGŒAŒ=Œ<Œ:Œ?ŒEŒKŒPŒSŒXŒ[ŒZŒUŒPŒKŒHŒEŒCŒCŒGŒKŒOŒSŒVŒXŒYŒVŒRŒOŒMŒKŒJŒKŒMŒOŒNŒMŒJŒEŒ=Œ8Œ7Œ8Œ7Œ8Œ:Œ:Œ;Œ=Œ>Œ@Œ@Œ?Œ>Œ=Œ=Œ8Œ4Œ/Œ*Œ(Œ,Œ1Œ4Œ6Œ8Œ1Œ`ŒcŒcŒ\ŒWŒNŒGŒCŒ@ŒBŒAŒAŒGŒPŒVŒ\Œ]ŒZŒRŒNŒIŒDŒCŒBŒAŒBŒDŒEŒDŒ@Œ=Œ<Œ>Œ<Œ>ŒBŒ@Œ>Œ>Œ?Œ@ŒBŒCŒAŒ<Œ=Œ=Œ=Œ?ŒDŒCŒEŒGŒGŒGŒKŒJŒIŒEŒ@Œ;Œ9Œ;Œ@ŒDŒIŒLŒOŒSŒUŒWŒXŒXŒPŒGŒ@Œ=Œ;Œ=ŒBŒLŒRŒYŒ]Œ^Œ^ŒZŒTŒPŒPŒMŒGŒHŒHŒHŒJŒNŒRŒTŒVŒZŒ\Œ[Œ]Œ[ŒXŒRŒLŒMŒJŒGŒHŒIŒJŒHŒGŒGŒIŒKŒOŒQŒRŒOŒPŒTŒSŒSŒVŒVŒVŒWŒUŒQŒJŒ@Œ9Œ4Œ6Œ;ŒEŒNŒVŒ[Œ_ŒaŒ_ŒZŒUŒQŒMŒKŒHŒEŒFŒFŒHŒGŒJŒLŒLŒMŒNŒOŒMŒKŒOŒOŒPŒNŒNŒKŒHŒCŒ;Œ4Œ,Œ0Œ3Œ<ŒCŒEŒGŒIŒJŒGŒBŒ>Œ<Œ3Œ.Œ,Œ+Œ1Œ8Œ?ŒHŒNŒPŒSŒQŒMŒFŒCŒ=Œ:Œ8Œ;Œ@ŒDŒIŒIŒMŒRŒUŒTŒUŒUŒPŒNŒKŒIŒHŒFŒEŒCŒ>Œ7Œ2Œ5Œ:Œ>ŒAŒCŒDŒEŒDŒDŒDŒDŒCŒBŒ=Œ8Œ5Œ2Œ3Œ4Œ9Œ?ŒEŒJŒLŒMŒPŒRŒTŒ

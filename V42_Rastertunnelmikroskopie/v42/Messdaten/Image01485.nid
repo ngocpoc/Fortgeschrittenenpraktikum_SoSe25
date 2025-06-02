@@ -1,0 +1,780 @@
+[DataSet]
+Version=2
+GroupCount=2
+Gr0-Name=Scan forward
+Gr0-ID=0
+Gr0-Count=8
+Gr1-Name=Scan backward
+Gr1-ID=0
+Gr1-Count=8
+Gr0-Ch0=DataSet-0:0
+Gr0-Ch1=DataSet-0:1
+Gr1-Ch0=DataSet-1:0
+Gr1-Ch1=DataSet-1:1
+SetInfos=DataSet-Info
+InfoSetCount=3
+InfoSet0=DataSetInfos
+InfoSet1=Calibration
+InfoSet2=Parameters
+
+[DataSet-Info]
+-- Scan --=--------
+Image size=2,31nm
+Scan direction=Up
+Time/Line=59,9ms
+Points=128 
+Lines=128 
+X-Slope=87,2mยฐ
+Y-Slope=3,19 ยฐ
+Rotation=0 ยฐ
+X-Pos=-117nm
+Y-Pos=136nm
+Z-Plane=7,48nm
+Line mode=Standard
+Date=02-06-2025
+Time=12:48:49
+-- Feedback --=--------
+Setpoint=1nA
+P-Gain=2000 
+I-Gain=4000 
+D-Gain=0 
+P-Gain2=0 
+I-Gain2=0 
+D-Gain2=0 
+Tip voltage=50,1mV
+Feedback mode=Free
+Feedback algo.=Adaptive PID
+Error range=200nA
+Ampl. Ctrl. mode=Const. Drive
+-- Global --=--------
+Op. mode=STM
+Head type=STM
+Scan head=Uncal_STM.hed
+Software ver.=3.10.0.39
+Firmware ver.=3.8.1.0
+Controller S/N=061-14-086
+-- Module --=--------
+Controller Board=2
+USB Module=4
+
+[DataSet\DataSetInfos]
+SubSectionCount=4
+SubSection0=Scan
+SubSection1=Feedback
+SubSection2=Global
+SubSection3=Module
+
+[DataSet\DataSetInfos\Scan]
+SubSectionCount=0
+Image size=2,31nm
+Scan direction=Up
+Time/Line=59,9ms
+Points=128 
+Lines=128 
+X-Slope=87,2mยฐ
+Y-Slope=3,19 ยฐ
+Rotation=0 ยฐ
+X-Pos=-117nm
+Y-Pos=136nm
+Z-Plane=7,48nm
+Line mode=Standard
+Date=02-06-2025
+Time=12:48:49
+
+[DataSet\DataSetInfos\Feedback]
+SubSectionCount=0
+Setpoint=1nA
+P-Gain=2000 
+I-Gain=4000 
+D-Gain=0 
+P-Gain2=0 
+I-Gain2=0 
+D-Gain2=0 
+Tip voltage=50,1mV
+Feedback mode=Free
+Feedback algo.=Adaptive PID
+Error range=200nA
+Ampl. Ctrl. mode=Const. Drive
+
+[DataSet\DataSetInfos\Global]
+SubSectionCount=0
+Op. mode=STM
+Head type=STM
+Scan head=Uncal_STM.hed
+Software ver.=3.10.0.39
+Firmware ver.=3.8.1.0
+Controller S/N=061-14-086
+
+[DataSet\DataSetInfos\Module]
+SubSectionCount=0
+Controller Board=2
+USB Module=4
+
+[DataSet\Calibration]
+SubSectionCount=2
+SubSection0=Scanhead
+SubSection1=Cantilever
+
+[DataSet\Calibration\Scanhead]
+SubSectionCount=0
+Version=6
+HeadTyp=STM
+SerialNo=uncal STM
+RevisionNo=1
+ScanFit=None
+CtrlInPol=Positiv
+Main1InPol=Positiv
+Main2InPol=Positiv
+SignalUserADC0Pol=Positiv
+SignalUserADC1Pol=Positiv
+SignalUserADC2Pol=Positiv
+AnalogOut2Pol=Positiv
+AnalogOut3Pol=Positiv
+XAxisPol=Positiv
+YAxisPol=Positiv
+ZAxisPol=Positiv
+ZAxisAnalogOut2Pol=Positiv
+ZAxisAnalogOut3Pol=Positiv
+Ch0Corr=Sub
+SetPointCheck=Equal
+InCount=24
+In0=0,Channel0,Tip Current,A,1e-07,0
+In1=1,Channel1,Z-Axis,m,1e-07,0
+In2=2,Channel2,Not defined,V,35,0
+In3=3,Channel3,Not defined 1,V,10,0
+In4=4,Channel4,Not defined,V,10,0
+In5=5,TipSignalDC,Tip Current,A,1e-07,0
+In6=6,TipSignalAC,Not defined,V,10,0
+In7=7,TipPhase,Not defined,V,90,0
+In8=8,Lever Current,Not defined,V,10,0
+In9=9,User Input0,User input 1,V,10,0
+In10=10,User Input1,User input 2,V,10,0
+In11=11,HeadSig2,Not defined 1,V,10,0
+In12=12,Channel5,User input 1,V,10,0
+In13=13,Channel6,User input 2,V,10,0
+In14=15,Dissipation,Dissipation,V,5,0
+In15=16,TipSignalDC1,Deflection,V,10,0
+In16=17,TipSignalDC2,Deflection,N,1,0
+In17=18,SensorSignal1,SensorSignal,W,0.005,0
+In18=19,SensorSignal2,SensorSignal,A,0.0005,0
+In19=20,Channel7,Z-Axis,m,1e-07,0
+In20=21,XAxisSensor,X-Axis Sensor,m,0.0001,0
+In21=22,YAxisSensor,Y-Axis Sensor,m,0.0001,0
+In22=23,ZAxisSensor,Z-Axis Sensor,m,1e-05,0
+In23=24,User Input2,User In A,V,10,0
+OutCount=9
+Out0=0,ScanAxis0,X-Axis,m,2.5e-07,0
+Out1=1,ScanAxis1,Y-Axis,m,2.5e-07,0
+Out2=2,ScanAxis2,Z-Axis,m,1e-07,0
+Out3=4,AnalogOut0,Tip voltage,V,10,0
+Out4=5,AnalogOut1,Not defined,V,10,0
+Out5=6,AnalogOut2,User Output 1,V,10,0
+Out6=7,AnalogOut3,User Output 2,V,10,0
+Out7=8,DriveAmp,Not defined,V,1,0
+Out8=9,MixedOut4,User Output C,V,10,0
+ScanCorrCount=1
+ScanCorrA=0
+ScanCorrB=0
+ScanCorrC=0
+ScanCorrD=0
+ScanCorrE=0
+ScanCorrF=0
+ScanCorrG=0
+ScanCorrH=0
+ScanCorrI=0
+ScanCorrJ=0
+ScanCorrK=0
+ScanCorrL=0
+ScanCorrM=0
+ScanCorrN=0
+ScanCorrO=0
+ScanCorrTableRot=0
+ScanCorrRotX=0
+ScanCorrRotY=0
+ScanScaleZ=3276.8
+ScanScaleXY=256
+ZRangeFit=None
+ZRangeCorrCount=1
+ZRangeCorrA=1
+ZRangeCorrB=0
+ZRangeCorrC=0
+ZRangeCorrD=0
+ApproachStartPos=-1
+MaxApproachSpeed=0.8
+ManualMoveSpeed=1
+DefaultDynRefAmp=0.05
+DefaultDynRefAmpLiquid=0.2
+DefaultDynRefAmpVacuum=0.005
+DefaultForceModRefAmp=1
+DetectorABGainAC=3.5
+CompDcSourceWithX=0
+CompDcWithX=0
+CompDcSourceWithY=0
+CompDcWithY=0
+CompDcSourceWithZ=0
+CompDcWithZ=0
+VideoSupport=1
+HasLaserOnOffCtrl=0
+XYCLPIDGainsX=1.000000;1.000000;1.000000
+XYCLPIDGainsY=1.000000;1.000000;1.000000
+XZeroVoltage=0
+YZeroVoltage=0
+ZZeroVoltage=0
+ScanAxis0FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+HasXPositionSensor=0
+XPositionSensorPol=Negativ
+HasYPositionSensor=0
+YPositionSensorPol=Negativ
+HasZPositionSensor=0
+ZPositionSensorPol=Negativ
+ApproachStatusMode=1
+ApproachStatusPol=Positiv
+ApproachStatusMeterRange=-1;-0.9;0.9;1
+SensorStatusMode=1
+SensorStatusPol=Negativ
+SensorStatusMeterRange=0.0866142;0.102362;0.102362;0.811024;0.811024;0.913386
+LaserWavelength=0
+
+[DataSet\Calibration\Cantilever]
+SubSectionCount=0
+Version=2
+GUID={7C725C17-AB98-465d-AADA-D6D453C769DA}
+Manufacturer=STM Tip
+PropCount=14
+Prop0=D[0]*[N/m]
+Prop1=D[0]*[Hz]
+Prop2=D[0]*[m]
+Prop3=D[0]*[m]
+Prop4=D[0]*[]
+Prop5=D[0]*[Hz]
+Prop6=D[0]*[]
+Prop7=D[0]*[]
+Prop8=D[0]*[ยฐ]
+Prop9=D[0]*[m]
+Prop10=D[0]*[]
+Prop11=D[0]*[Hz]
+Prop12=D[0.3]*[]
+Prop13=D[1]*[]
+
+[DataSet\Parameters]
+SubSectionCount=8
+SubSection0=Approach
+SubSection1=ZFeedback
+SubSection2=Lithography
+SubSection3=Imaging
+SubSection4=SignalIO
+SubSection5=Spectroscopy
+SubSection6=SPMSystem
+SubSection7=Stage
+
+[DataSet\Parameters\Approach]
+SubSectionCount=0
+ApproachSteps=L[10000]*[]
+WithdrawSteps=L[20]*[]
+AutoPeriode=D[0]*[s]
+MovePeriode=D[0]*[s]
+StepSlope=L[6]*[]
+AutoStartScan=B[1]*[]
+ApproachSpeed=D[0.700122]*[%]
+AFMApproachMode=L[0]*[]
+AFMMotorSource=L[0]*[]
+AFMStepByStepSpeed=D[1]*[]
+AFMStepByStepSlope=D[1e-06]*[m/s]
+AFMStepByStepFineStepSizePercentage=D[5]*[%]
+AFMStepByStepCoarseStepSizePercentage=D[90]*[%]
+AFMStepByStepMode=D[0]*[]
+
+[DataSet\Parameters\ZFeedback]
+SubSectionCount=0
+PGain=L[2000]*[]
+IGain=L[4000]*[]
+DGain=L[0]*[]
+PGain2=L[0]*[]
+IGain2=L[0]*[]
+DGain2=L[0]*[]
+SetPoint=D[1.00101e-09]*[A]
+SetPointForce=D[2e-08]*[N]
+SetPointDC=D[1.00101e-09]*[A]
+SetPointAmp=D[50]*[%]
+SetPointPhase=D[1]*[V]
+SetPointForceUnitMode=L[2]*[]
+SetPointForce_V=D[2e-07]*[]
+SetPointForce_m=D[2e-15]*[]
+SetPointForce_N=D[2e-08]*[]
+SetPointDeltaF_Hz=D[0]*[Hz]
+SetPointUserDefined=D[0]*[A]
+ChGainRegError=L[0]*[]
+FeedbackMode=L[0]*[]
+Algorithm=L[1]*[]
+RefFrq=D[170000]*[Hz]
+RefAmplitude=D[0.0499893]*[V]
+RefPhase=D[90.022]*[ยฐ]
+CoarseSweepStartFrq=D[350]*[Hz]
+CoarseSweepEndFrq=D[650]*[Hz]
+CoarseSweepStepFrq=D[100.002]*[Hz]
+FineSweepStartFrq=D[130000]*[Hz]
+FineSweepEndFrq=D[210000]*[Hz]
+FineSweepStepFrq=D[100]*[Hz]
+ManualSweepStartFrq=D[130000]*[Hz]
+ManualSweepEndFrq=D[210000]*[Hz]
+ManualSweepStepFrq=D[100]*[Hz]
+AutoCalFrqPeak=B[1]*[]
+AutoCalPhase=B[1]*[]
+DynamicAmp=D[0.199744]*[V]
+CalRefPlotGraph=B[0]*[]
+ForceModFrq=D[20000]*[Hz]
+ForceModAmp=D[0.800012]*[V]
+AutoFrqSweepRange=B[1]*[]
+AmpCtrlMode=L[0]*[]
+FrqPeakReduceAir=D[20]*[%]
+FrqPeakUpperSideAir=B[1]*[]
+FrqPeakReduceLiquid=D[5]*[%]
+FrqPeakUpperSideLiquid=B[0]*[]
+FrqPeakReduceVacuum=D[20]*[%]
+FrqPeakUpperSideVacuum=B[1]*[]
+RegMoveMode=L[0]*[]
+DynamicMeasureBW=L[9]*[]
+RegOutputSel=L[0]*[]
+FrequencyLockRange=L[1]*[]
+PhaseCtrlPGain=D[0.3]*[]
+PhaseCtrlIGain=D[2.5]*[]
+AmplCtrlPGain=D[2.5]*[]
+AmplCtrlIGain=D[20]*[]
+UserOpModeInputSel=L[3]*[]
+UserOpModeInputPol=L[0]*[]
+UserOpModePIDGainCorr=D[1]*[]
+UserOpModeDCOffsetMode=L[0]*[]
+UserOpModeDCOffsetAutoGain=D[10000]*[]
+CantileverExcitationMode=L[0]*[]
+
+[DataSet\Parameters\Lithography]
+SubSectionCount=0
+ModuleLevel=L[0]*[]
+OpMode=L[1]*[]
+InactivePenMode=L[0]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+XYMoveSpeed=D[1e-05]*[m/s]
+ZMoveSpeed=D[1e-06]*[m/s]
+LiftTipAbsZPos=D[0]*[m]
+
+[DataSet\Parameters\Imaging]
+SubSectionCount=0
+ModuleLevel=L[1]*[]
+ScanRange=V[2.31145e-09,2.31145e-09,0]*[m,m,m]
+ScanOffset=V[-1.16768e-07,1.35958e-07,7.48465e-09]*[m,m,m]
+ScanRotation=V[3.19394,0.0872321,0]*[ยฐ,ยฐ,ยฐ]
+ScanTime=V[0.059944,0.059944,0]*[s,s,s]
+Datapoints=V[128,128,0]*[,,]
+ScanMode=L[0]*[]
+OverScanSize=D[0]*[%]
+FirstScanlineRep=L[1]*[]
+SyncOutMode=L[0]*[]
+LineScanning=L[0]*[]
+RelTipPos=D[5e-09]*[m]
+ContourEnabled=B[0]*[]
+AutoReadjustProbeEnabled=B[0]*[]
+ReadjustLiftHeight=D[0]*[m]
+SndScanDynamicAmplitude=D[0]*[V]
+SndScanDynamicAmplitudeEnabled=B[0]*[]
+SndScanForceModulationAmplitude=D[0]*[V]
+SndScanForceModulationAmplitudeEnabled=B[0]*[]
+SndScanEnableDarkMode=B[0]*[]
+SndScanEnableKPFM=B[0]*[]
+SndScanSndLockInExcitationAmplitude=D[0]*[]
+SndScanSndLockInExcitationAmplitudeEnabled=B[0]*[]
+XYMoveSpeed=D[5e-05]*[m/s]
+AutoSlopeCorrection=B[0]*[]
+AutoDeleteBuffer=B[1]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+SpikeGuardEnable=B[0]*[]
+PrescanSpeedup=L[0]*[]
+
+[DataSet\Parameters\SignalIO]
+SubSectionCount=0
+UserDAC0=D[0]*[V]
+UserDAC1=D[0]*[V]
+EnableUserADC0=B[0]*[]
+EnableUserADC1=B[0]*[]
+EnableUserADC2=B[0]*[]
+TipSignalMode=L[0]*[]
+ExcitationMode=L[0]*[]
+MonitorOut0=L[0]*[]
+MonitorOut1=L[0]*[]
+EnableUserADC1ZSensor=B[0]*[]
+User0CtrlMode=L[0]*[]
+User0InputPol=L[0]*[]
+User0OutputFlag=L[0]*[]
+User0SetPoint=D[0]*[V]
+User0IGain=L[1000]*[]
+
+[DataSet\Parameters\Spectroscopy]
+SubSectionCount=0
+ModuleLevel=L[0]*[]
+OutputType=L[0]*[]
+Repetition=L[1]*[]
+RepetitionMode=L[0]*[]
+FwModTime=D[12.7996]*[s]
+BwModTime=D[6.5532]*[s]
+ModRelValue=B[1]*[]
+FwModDatapoints=L[32767]*[]
+BwModDatapoints=L[256]*[]
+SyncOutMode=L[0]*[]
+FeedbackActive=B[0]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+SpecEndMode=L[1]*[]
+FwModRange=D[1.27996e-07]*[m]
+BwModRange=D[-1e-08]*[m]
+XYMoveSpeed=D[2.5e-07]*[m/s]
+StartOffset=D[-1e-08]*[m]
+StartOffsetMoveSpeed=D[2e-08]*[m/s]
+FwModMode=L[0]*[]
+BwModMode=L[0]*[]
+FwModStopValue=D[5.00504e-09]*[A]
+BwModStopValue=D[0]*[A]
+FwModStopMode=L[1]*[]
+BwModStopMode=L[1]*[]
+FwPauseTime=D[0]*[s]
+BwPauseTime=D[0]*[s]
+FwPauseDatapoints=L[0]*[]
+BwPauseDatapoints=L[0]*[]
+FwPauseMode=L[0]*[]
+BwPauseMode=L[0]*[]
+AutoRecalibrateProbeInterval=L[0]*[]
+PressurePulseValue=D[0]*[bar]
+PressurePulseDuration=D[0]*[s]
+PressurePulseRelative=B[0]*[]
+PressurePulseActive=B[0]*[]
+PressureActionId=L[0]*[]
+ModulationStopValueBandwidth=L[0]*[]
+
+[DataSet\Parameters\SPMSystem]
+SubSectionCount=0
+AOut0=D[0.0500504]*[V]
+AOut1=D[0]*[V]
+SPMMode=L[1]*[]
+VideoFPSControlValueMin=D[1.5]*[]
+VideoFPSControlWindowSize=L[5]*[]
+VideoTopLight=D[100]*[%]
+VideoSideLight=D[100]*[%]
+VideoTopBrightness=D[80]*[]
+VideoSideBrightness=D[80]*[]
+VideoTopContrast=D[70]*[]
+VideoSideContrast=D[70]*[]
+FlexVideoTopExpTime=L[60]*[]
+FlexVideoSideExpTime=L[60]*[]
+FlexVideoTopGain=L[8]*[]
+FlexVideoSideGain=L[8]*[]
+FlexVideoTopADCLevel=L[2]*[]
+FlexVideoSideADCLevel=L[2]*[]
+FlexVideoTopRatioR=D[1]*[]
+FlexVideoSideRatioR=D[1]*[]
+FlexVideoTopRatioG=D[1]*[]
+FlexVideoSideRatioG=D[1]*[]
+FlexVideoTopRatioB=D[1]*[]
+FlexVideoSideRatioB=D[1]*[]
+FlexVideoTopRatioGamma=D[1]*[]
+FlexVideoSideRatioGamma=D[1]*[]
+FlexVideoTopAutoLevels=B[1]*[]
+FlexVideoSideAutoLevels=B[1]*[]
+FlexVideoTopPositionMarkerX=D[0]*[]
+FlexVideoSidePositionMarkerX=D[0]*[]
+FlexVideoTopPositionMarkerY=D[0]*[]
+FlexVideoSidePositionMarkerY=D[0]*[]
+HighResVideoTopExpTime=L[60]*[]
+HighResVideoSideExpTime=L[60]*[]
+HighResVideoTopGain=L[25]*[]
+HighResVideoSideGain=L[8]*[]
+HighResVideoSideADCLevel=L[2]*[]
+HighResVideoTopRatioR=D[1]*[]
+HighResVideoSideRatioR=D[1]*[]
+HighResVideoTopRatioG=D[0.8]*[]
+HighResVideoSideRatioG=D[1]*[]
+HighResVideoTopRatioB=D[0.8]*[]
+HighResVideoSideRatioB=D[1]*[]
+HighResVideoTopRatioGamma=D[0.9]*[]
+HighResVideoSideRatioGamma=D[1]*[]
+HighResVideoTopAutoLevels=B[1]*[]
+HighResVideoSideAutoLevels=B[1]*[]
+HighResVideoTopADCLevel=L[2]*[]
+HighResVideoTopPositionMarkerX=D[0]*[]
+HighResVideoSidePositionMarkerX=D[0]*[]
+HighResVideoTopPositionMarkerY=D[0]*[]
+HighResVideoSidePositionMarkerY=D[0]*[]
+ImSoVideoTVConfiguration=S[]*[]
+ImSoVideoSVConfiguration=S[]*[]
+ActiveSensorByGUID=S[{7C725C17-AB98-465d-AADA-D6D453C769DA}]*[]
+MeasEnv=L[0]*[]
+SystemStateIdleZAxisMode=L[0]*[]
+SystemStateIdleMixOut4Mode=L[3]*[]
+SystemStateIdleXYAxisMode=L[0]*[]
+SystemStateIdleZAxisValue=D[0]*[m]
+SndOpModeEnabled=B[0]*[]
+SndOpMode=L[0]*[]
+ZClosedLoopMode=L[0]*[]
+ZClosedLoopSpeed=D[1000]*[]
+XYClosedLoopEnabled=B[0]*[]
+XYClosedLoopSpeed=D[1000]*[]
+
+[DataSet\Parameters\Stage]
+SubSectionCount=0
+
+[DataSet-0:0]
+Version=2
+Points=128
+Lines=128
+Frame=Scan forward
+CurLine=127
+Dim0Name=X*
+Dim0Unit=m
+Dim0Range=2.31145e-09
+Dim0Min=0
+Dim1Name=Y*
+Dim1Unit=m
+Dim1Range=2.31145e-09
+Dim1Min=0
+Dim2Name=Tip Current
+Dim2Unit=A
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-0:1]
+Version=2
+Points=128
+Lines=128
+Frame=Scan forward
+CurLine=127
+Dim0Name=X*
+Dim0Unit=m
+Dim0Range=2.31145e-09
+Dim0Min=0
+Dim1Name=Y*
+Dim1Unit=m
+Dim1Range=2.31145e-09
+Dim1Min=0
+Dim2Name=Z-Axis
+Dim2Unit=m
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-1:0]
+Version=2
+Points=128
+Lines=128
+Frame=Scan backward
+CurLine=127
+Dim0Unit=m
+Dim0Range=2.31145e-09
+Dim0Min=0
+Dim1Unit=m
+Dim1Range=2.31145e-09
+Dim1Min=0
+Dim2Name=Tip Current
+Dim2Unit=A
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-1:1]
+Version=2
+Points=128
+Lines=128
+Frame=Scan backward
+CurLine=127
+Dim0Unit=m
+Dim0Range=2.31145e-09
+Dim0Min=0
+Dim1Unit=m
+Dim1Range=2.31145e-09
+Dim1Min=0
+Dim2Name=Z-Axis
+Dim2Unit=m
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[SetView]
+ViewWidth=1288
+ViewHeight=526
+ViewCount=8
+View0=SetView-View0
+View1=SetView-View1
+View2=SetView-View2
+View3=SetView-View3
+View4=SetView-View4
+View5=SetView-View5
+View6=SetView-View6
+View7=SetView-View7
+
+[SetView-View0]
+ViewTyp=1
+LineOp=2
+Channel=1
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-32,40
+ParCount=6
+Par0=1,Shading,0
+Par1=1,DeltaGain,5
+Par2=1,Smooth,0
+Par3=1,DriverInstanceNo,0
+Par4=1,RangeMin,0
+Par5=1,RangeMax,95
+
+[SetView-View1]
+ViewTyp=0
+LineOp=1
+Channel=1
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-34,40
+ParCount=3
+Par0=0,ReverseLine,1
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,2.31145e-09
+
+[SetView-View2]
+ViewTyp=1
+LineOp=2
+Channel=0
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-36,58
+ParCount=6
+Par0=1,Shading,0
+Par1=1,DeltaGain,5
+Par2=1,Smooth,0
+Par3=1,DriverInstanceNo,0
+Par4=1,RangeMin,0
+Par5=1,RangeMax,95
+
+[SetView-View3]
+ViewTyp=0
+LineOp=1
+Channel=0
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-50,58
+ParCount=3
+Par0=0,ReverseLine,1
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,2.31145e-09
+
+[SetView-View4]
+ViewTyp=1
+LineOp=2
+Channel=1
+Frame=1
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-36,28
+ParCount=6
+Par0=1,Shading,0
+Par1=1,DeltaGain,5
+Par2=1,Smooth,0
+Par3=1,DriverInstanceNo,0
+Par4=1,RangeMin,0
+Par5=1,RangeMax,95
+
+[SetView-View5]
+ViewTyp=0
+LineOp=1
+Channel=1
+Frame=1
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-34,40
+ParCount=3
+Par0=0,ReverseLine,1
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,2.31145e-09
+
+[SetView-View6]
+ViewTyp=1
+LineOp=2
+Channel=0
+Frame=1
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-45,45
+ParCount=6
+Par0=1,Shading,0
+Par1=1,DeltaGain,5
+Par2=1,Smooth,0
+Par3=1,DriverInstanceNo,0
+Par4=1,RangeMin,0
+Par5=1,RangeMax,95
+
+[SetView-View7]
+ViewTyp=0
+LineOp=1
+Channel=0
+Frame=1
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-50,58
+ParCount=3
+Par0=0,ReverseLine,1
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,2.31145e-09
+
+[ProcessorSet]
+ProcessorCount=0
+
+
+#!S@<@:;EB>CHMHKBMMLJWKCMCEDGR@@GE<HBMTSTXZNMG=CB;=>:?IFTYjOMH?.(6<HKbX`]QJ@H=0B2H<@QKHDOKFOIFMF;HEID@=AC3?DKch_HJA<F5;0<FGJdotEA5HG26GAB@AHFMNIGKPMMJMEC=5BBH?@CLA<?AMUdaR@GAF3>6>KJAIWroU=86:=7C>AEQ[qsRD6@>.AHAKUAITTMMKGBBD8@E>GBJF<4:_M\^]KBBF>;=A<C>>AXh}e<2F6?FP>63D;?EKTPSWEJIHHB@CAHNFDJCDNDALSS[HGGKGLBD@DDXL[KQJHU<?BE@:@=BJPcqeN?@A?B@/;?AMXYfZVG??6,3CHKILHGHGSLOIEDNKOJ>>9BCKK_T^FI@;N=;<B9:C:>CFLvk^LBE@B27D?BIKCIATH@cJL>@HHBKGGC@<9=PQbqgG=4AAB:<==DH\rnLAHC892?J?FDLb`n\ID@5=A0FGGMDDNGPUTNB>D@GAFD?B@6<OJPb`UD?IF5>>?@AB:F]O[TVUJI4<@@<9JAMNKIFW\ZNCC98=@BDJ;;C?>JGPQbj[=>=A3=?A;FKTSplP;D@78B@BLJWaeXKFH:-CF@AAGGR_[UQHE=7CFLAJ>EK@?DCEYPWRQDEBN7;AE@;GD;CQT]pWM;;BCEBE9<QFMTXXMK@DE775HK?KDH=I>GPRVTRH6HBBE><89BOb\laX>E>;;5:DJNZR[_TC=67>68G@INFU`_GJA6B6A=KNFIE@HDSTKGDGBC<CL;5BBA:I4OMW^e\O?4F<N9=@H>OLUf[]H@EA=@7@D>EHGMRQXGG=HEH=CJAF@5I>7>EHWtdME8<@69H=FCB[o{KGD43@:?GBOWU\WOK=?F>D6=CB<OHSHTMMMLCAMAAHC5@LAA3DECIW\^[SBA><@=;=@6FXgo_OB@A:?<5<KHIMLMVS`F@=B7?=AIEFF<8OH@JMV]NA?FGA=;?CCIThk\>ED>8H;@@OJHWY_U;@B<<?CF7KCFGP`UJI><GF<JFNO4E7:H>=PAPQ\ghU?C47<A?:<J[hc[PK@C1BD>9D8T@OTW^YRG<84CG?N+_4AJGGTJPJLTAJJTDD>?@AFXSVLINPR<@D8;HA@EQ[jcHBB@5A==<ABPPVg^E<@5<17>?GGA<KHQK;?M[`WHCHHGDAJ>EBAKMDR\[]HI6BF:;8=GQQ[X]ONNA?==68DHHAIL@DZKLRPQ=<=BMF@;:>FRibeVJ7?77C;=NEPVglOG=7E5=A=@HRHM^bNJ@8>DBGCAAFD<@@<:GG>KKegbOKCF>5B;;>D?Rcbd^M:>;:H;5>7BIOc`cN;C871424:BNLJFI[GRZ>7BGIM@>CKAFBKLH_VRHQNH?4;CJC@E[^dUH9E>E;=DBAIRY]lLG??6JJ?BH@PFDBIQDK?BNJWJ<CJFBFEJEFDBMQOWPTGBECH?@C?:BFKT]ZR?<<C7H<48HGL`UQJE=F88NJLDJMBPLKHEOYUOLID9?D??HGORVYXJBH@7?E<BCKTPWbWH6C><7=HJNEOA@D?IEQCPYQ]LHGCAA?D7=DEGFXfl_JC8>;C<<;ADP[w`]D@5>;F<A=DBHVZgaP==B96;ANAHDRKQJKSWK=C9AALEA@:5CFCPk_WD@<:?;;9DCHT]_sg=>@<@;>@IBDK<IDB?DJCGPZUKCP9JAA<EB:AMM\a_ZK@A=?:;B?>BOZcr[J3?3A=;>BHNTVPQ\MBEED8C=<UGWOMNETNG?<BHCFGM:D8;?BBOmhS9ALE87C<BECE^{mH@3:@>@OHA@IIDKDHYMW>CDGGF@TAJJFD>9EC?HY[m_K7BG6DC>=6=K\_\aGD<8=><B@CKY\cS?G9P;:7;@ACNKOSTeXBN>B><<@=B:D@<NS>NhXEN<<A86?J>GKiamR@>G/>?CAAFROHAOSSXMBHGL>C??@6WHA8@@<AGMQ]o]KA?J>A7?>HGLLgmkD??7=::;<HFOZjfF?FH;@>5P7KEWQN^_DAH>>CABAALJJ>CYV[MB=AEH?0=>;>HEUa[]]G9FG;3:ABAMJFP[[XF@=?DH67H<AONQHKHLKIQTH5B@KOQ@6</?K=AFa^pa?FF>?=:B;@FTa_oK2AJ;<ED?4LV_]cQBBE@5::GJGFBKKX__JG<78=FPLHDDBBHIJZ]VGGJ6=EC>?<BPEKRNTNJE?BBC;@K??@MSQLQXVO8;7<AJGFMKFEHBDKJURNPJFICA;C<>C=LU[eYM>?C?>@=7GKM`oXGD7A@9@>AHNQPSPMVLE@::==IDEKEHB>=@TPX`]RE>8@47<>CGJHRSTI`XPF=6KF1MP?=KLQVH?GJEBEEJEAMRJD=JO>RFJNHRMOG7DE;6DGKOUPdRHB?;EG<BGHB\e`RF7?F>8:7AAFSWKNORUA98<<HRDNMBHBJKWULMFFPHBF?>;FGFKHQNV]QIF7<DEA:.>JWHUONT]NNJ7>CEB@OMGH>JCDBMeMH8BSH?:8?@C@MXgf]KBL<67?;=DP[fccFB889M<<?JMLXeRbI@:=93<8CNXLNIUGOOHH>PC@LFCBBGA<AGNQXV\ZJ@C?:76:I8<EGO\`a`O?7H594Q@<GSLPMM=OSNBB>FVLJ8?G>=F>>FUedLD@8<A;>?@ETl``^KA8==95?H@JNr_nGF?:;D<C=AIO[TTSMABB=?EJ=SEA7I=DIO>@W_ZSOD=>7B8AN4@EBFQP^cXMG>F=OH<FCDVX_PTFD;D<=@CEFHEJCA@OHSQLEBG?C=G<0J>EQZeYMB:FA33?>LMPUga`=?9DE@68CCPS^V\\ACB<5?>>LHJDHI?BANNFWUQOF>3/GBDD7=@NUTfglH@=72NB67DHKTWai\GB<CH<<4@C&DBMGJOOUOED>CVEGFAD>ACRPX`VKI@IE8><2@KCMXXe`F:7<CB.D?>GRZX]\@@C@8AQC=<GNGPDANHMRQdKFEIBG6<<?;GBHWWr]WHB5B28?=<BORV]dfH>:B@>A@ADJSHK^JKLGGG?7GHBJ8=B9>6KBMcqcM>7?0H><?HBL`alXI<3B>8>KII^W[WRHC?@8D>?MHAASOWYGBERJNQM?S?PHG7;6?EEKN\W_WbAQ=3:8A<@CWZUgjE6@>,;?HHKRJNROS\A6E7?>CQBQGCECA=KPTbLHF6VG4:=@9EFOvccJ<7A><EDHHX]b]PB;6;6>DBJFV]Q^]TC50EGKJQHDT<>;J@>H=8CLYloYH:;:@03AA<JN_rjWSB58A7?99MXW_[lO=CG@745=HPQJKKJOEKEIBGFHJ?EIE:7?G@BP`kmJG8A;8>?>>DT_gl[B4-8@5<GBJWTUXXU:8HJMPDHDEK@AFB7G@AHWYcTJHEBD<=9;C>ANU\xe[H;48BDA=<AEELUVWkMB=5->:;GHHSHOQCTURRD?CLKJH;A8M?H[]T`L@DDK8@>A7HM]drR8;;S<84<GCFUdjaH>EBEEF7>LFCF8CF?C@:AQXWZTFI@D=A6<:GLJ=Wcj[S<E:7>@:LGNMTQ^]X?66G<0OQLSJJJ]YNDF@7ATFAGFACDBGOCJS[PEDFE61<7GEUdjjZ?>N/5>>@AE[_[\_@8=;NRF=P4@DEJGLCBDCGRMRWMHFB?CL;36GKOEMdakR@+?DB;<GHOD`fdKCK48D2>DD=F=GQRRRZH7GE,2ADCOFGEHVHDIHZJHHJGA?IIEHFE^\NTJHIBB@HAE@DWj`b6C>WG@C@I=HFBBHJE<AOPFMRMJIFDND3<B@=?ATabbNSN77<;AGC=DH^gi^M>7FA:9CCTOc^_ZF8?<8E@KJFDLRPRQLM@ACF>CFICAIBO;CKGVU^A<>=A?>;BATT`ldT?<7UB7<JJECGGLDTRGQMLC;,5BGAJKHEDC?ELJOVX]NED@,2>?DAAC\gckZH;E00C@?@CNafeaB?>=2>?7EQFPXV[UKD@:8@8EGOHFQHJKKPAAAEO=>C?B?G>SSQga^UH35ML;<@ABBNURMO\KQKF>=<4IC8?FKMKAO@9H`PKOMTSL<5:==AFK^VeSVGFBA6=F;;JOSa`dTEC?B:&5;@DPR^WaOJ]<953;ECJNPLWANKHHCCPKELQ<=>FH]U]ZODJD<EG699BEKQTXQX]SLFK748O>HIGCRGKQGROLKKDACAKBE:66C?9@HZihdJ8;A5;>C@BMQPpnZA/A754>FFLf`jfQCA@3AF8IM@P=MROOKSB=E?6KP=GKD>?HAMXdO=CB4GG16G;:7KMeRfpP5CCB8@7989AIAIV[NQLU=<D<1JDHQIGAH@?H\VQRFTBL;GA@CDPPXWU_GAEA5F8>EGNMjZZJ43GR1AC6=LHLRWSC^KHKAG?GIIKG?:ENK_MEMEEB;HB75@=M;FV`]^^KA?4>L7BDGCSMRU_RNDCA;><FHQCCGFGCFHBGYFJ?>SAC@@<;8=BO^f_PM@7G;;:D:CEJtaG6/=C8>K:NX[XYbWAB=9LMEGEEHEI=JOLTMPACIFE4KO93=>G>HNPQ_d[DJ=CC>CA8@[FO^X[TA;B8<0?PRHJEVQAMFXOG7;DFG>>DA=BBKNIZc\LE6:?@E18BOWPac[;=BB4C@?DJJMhd]GF=0G=<KNEPMMNUWQGC687ODDM?TF5I@?NPPKULfYM@B>BF;@@89B@MTX[c]S6??><EH=k4BHHHNTEQMFFI2HHDAFE=CWRLFMWQ`@21A5CDLTOobRA49<@7A;NPVSecRE8?6B<EJAJPWPMRPLGDE72FJGLDBL:@C7BBL^b`dHG;AA8>?N8J=MHMhbXKEDC;6D27DNJPPVS]KJ>8ECEBH<BGHSO>SFILGJASHD:;A@;5@OXgeUF@F<>;?I@DTU^lQFH8=;<:<AMVW_WG[N@D14:J<CF@LJ>?B@BORUZXQGMBE<D>>;A>APFF]`hcD<><G;<CB;DHLUT^SE:;:F<@8DNROGFKOGA=>68AFJNLBCOBDXVQKCKGCJ>><3@LNWagQO@7@@5=F6BF[VX\TEBF;NFNDHHNKH<:;>B?KLake\C7?@6L98=DDNIgjkXK>>;59J:==DL[WjdVB-B2<GFCINROPXSP?;F;?DIGBKIKCQELQKKGF@HFCF=;E2@ARWjlHF?8:C>>;@OVQmqU?:I9JJA@=TQPFCCCGFFFWTLJ;DLHLHAD=@EIEGFUe`\T?<<@>6;H;JIRd\]WB(?;:@5DAPOTTbRb@4<:P7HCGKBMHDTJFDHNANNG9EGK<BEDLahZTDBC;HB>AEHNW`^YK;B;587F;@LTMHCBGOGH\LDBMI_A7@DBMG?<;HEZ\WUTSB?<5;;:CMOSdc^WB65=;<A@QUMPf^\J<=D@7?H=FIHTFCDNSHGF>?EJCGF9>AJCJL`a\QH;5:=B<DONRYqaC6<CB=>@?COcLJUPLNTRNDB=ED@GDAH:FDKPMGNAIQXTW<7F;E=NALH`^ZTG@7A;>H3<AZ_^fhB87G@>C6@NNPVQXQOBA<<FBAAENCBKAF>KQNTGFCB>@:;6C<DQTl^WGHGC>:9=HHJTD?OKSMX[DH@=4CFFEHJJEJABOLKMTHJDGCBB<>=@<FISie_PCAGCD<;>ANMS]dcV>267HH>EKSUa\_GBBHD=?8=DOLHLMKKNNCGC>JDB?=?5=9GManjSA7A<?88JKKHV@GUORMLG>2<I>=>KKGREG?FPJSXKGCGBDC@8<<?@ABO\waR>5=7?AF:CGcZf^UF<@18BC?@MVVY`_UH?7/A7ADJKLOGKUHEJNII@>CFCCE?EG;>ObdgWC6F>66>FFATc@JGGOCDA4<F@<?EJGORYXMNKH;==>DHGB:KNG>@F?GQ][RMEJ?>8584>EV^mjQC>;5?;5:7?BO^la_X<6:A?:B5AKNEYVLN>DEAG@DFIKeGHBAJ?NRQS7:FF>@>FAPFaFDaQUM:C86DHB=9=@BPQRXa\Z3B:<2<EY<NDDDSKHSNRHNCDFFIJ??KDCN`cVCBA:FDA?:A@LFLbkKG@5G48KHDD_^Z^RL7C7J8;>IOLNKCIDPCO=FHRJCEG?;A==MZr?<l[NG>C@B>A?6DHGGN\_OLZDO?JH;@BBSLIHJKJODRGDC:PJF=A=;CBKCW`\UHJ:3<;@A=CGXeniF=49B;5<KPKOPXgWQ@@02HGGFGDJFJLIMMUFADFL?GB:<C@CDJaGGGMBJ<D46O;=BIJJTfcbVIB45:BM7DJL[XPTOPHC;A@<6BRGKEIH?FB=IReWPC;@<?<=<6@CLcmoT=603@>ABNN]QbdVF8?3D;=@FFPMNIRWSD@A@B:@GK@BF8ABLG[D?cCMH?B8B>C<<5JCU`X_mO7F8B?7EB;CG^KWXPZHAI@@;:CHJECBJKHWPSOPEMYA<><?C@BMWhmXH361:@6?HGU^fdZF9B@9=A<DMQ\[ZSKIDAG>5>PFKHEAHFCC?LCFHDPPN@4@AAA;7@N[R]egY=8H:;B<>3HIQTcd\GH?A?2><?PGAOOJPXSJJNB?D@H:B<7BABDUL]c\BEE78;7;=BVWYglaF(>=E0@\ONZ`Y]D9=A:9:@47GQRPMOLKDDAOHDJOCE?G>6=RJ;C@hWW_NG>ADC<559;J[Y]dgHGCEE<;11;KKKQNJV[BF?:3ACHJLLKHG@GKUDOJJLG@<@I=CHOHX]aP?8D?7@;GKHbS\`SG52869;A<NRNPSSWET@6HBJCOIE?@B==>@HS\XZXSN@BD;CB:;=CDS]a]_HB.;=BC907OJPYVU`TNE64;@AHHFIDFHJOSJNHQHMV@B<<L>GZYJgdMB@@3BAB;MIROadUT;=+C>@D;HH[YUeRM;9?MDIQHH<?DAA?HEKANT[_YHG<B@?DB<>C?NRamjN6@>8>7BG2>MNW[\aSCC4382=IIGVIQSLUDAE<@CLFFMFECGNQORLNM@LD8H@>FFBRXR\\M?;:6ACF;@EJUV_`PG9<GME@HOFGDHEGCI@ELXOLKJADLJDDB<<KIM]^^B8@HFD8ED8>FHQ^dZT>45?<=DRGN6IMMQR]RE70<DEEKKFNPLSSLEMHFHEGFCLFA@GQUTUOR>DC0@;?EMN`^`X<A@77HHFABLCBLJDF>?GMR]PHOEG@E@AA@<?CMU_ocB>A>A;>?BBHGXjQQIC?G>>B=KCX]_WeD>FDD5@F>AJHLMPMOQKJ?<7ACHCKBB@F>FL\`YMDCB=<CFA?IPQ^bPAA9A?:RDB6=FCMMPNDOGXQLBCFABBCF@CF6AAGKX\_XKB?LF:;;>=KR[ZmXF@AB;C:;KEI^^R`OK87GD84:HIDNSOSPSTC76ABGEFFC=5FFJI[_TJDB>?;;?<BDMQnkMFB0>GBDGBEDENKNQORPMKFEA<<:ARFCO=CICFRZURPLB@CI>;C;9BCG^l_]I<><AI<CBF=;WaXcU@>??A;?2=BPKRZWQI;<5I:@BNLTMVHGNDNKMAXCAA>@I>CGUS^]J>DF?>?HNG>E:NLQU]QSNICL2@GBBHLG>HQJKKHPJGA;RN=@D9@=@H8KOae}M59B8?=;B@OVRmlPI3>:=?@AAGMUZ_VOCAD7=>6DEFMKNKRESCHKJGK<KGK=6;CDSPdWU<B??9;GB<2@JXSRVP\TAK=@?6@6>QOQMNILL[LIEKG48HH9JCAC<LAJMTaZEG@>IF;31>CT_qf]7<@A<;3>?CJGX\bdIFPA4<A;>CMOIPKKWPWM@CNMQD<=E9@DQTVdYLI>F@?EN1>GBMKT]_SSQH>>?5A68NOQUIKRL_KD:EFLG5:HIDD=@CBDTSVUMEH>7=>8@BM\UhcU4A=;EC@<K@R\gbZG;85FG><HMLMOOSKVFJC8@6=GLLHFJCCJXRLCGE=BJ?=EJBAGFTPN]_XQ<B>70JD>CKLDEQSWWXNE?866G@AHAJLBCCGRQ\XPNC98:9597:HSRczcF657A<==;EbhfjE5B=6>F>6C;DRYXacVF;18GD6@DDKQNTC\QCNDCNKMBDADV=:9KUYfs`F>?EI<A=<=BFMcUXVZ\CJ>@A;;NBD=IG;RJZTLTMFE7=DJ;;<@=@EPgc_]N<;=><7?MGKUhlkA1@6<D7GINEShY`Z6>D2@FBGPEDNNKRECLJGADH@AB?LRG;@AAOK^dd^H>G3:<D4BBCEJRT\nlCAC59AA==ANOPHONQrM<=48@CCHMCD7<?PN]dWVF?A<BA<AE@SbgaTA4@BB;8:DGL]Z`gZA8;</C8BLSOJNUTLH866CACHDKJBJJ?7;NHR^\aVH>HFE@C<ABD<DR[agUG@<F6@<B<;AMSaWXRFB58@47?FEKNKWd[FEG@;EMKFEB@D??AJPXH^YN<F8A69>GLEZ[baN:?;@:7<ALXS[XOa0.:K895\PBCOQN>DHBGRFFSTSVHHEA7Q%G849=BCHJT`\TK@KL67:INW_a_[E;5;DMR^sc(8/<@C4@>QaVd_Q;85A@=CAEBE?;[G<C=;HBEOWV\WM[VO4>6@8>CBKQB>I?HDLSSNDJB;>MG;ADQPNBFFHDHBB:GD<GG]ZWYQDK=HDE@B5@@CAIMY`XTR:7>7BEABCHLJHIZNCFMP@AHGDAEADHBLV^WFAB@BFAF9PMSX`VH>BCCC?>D;@REZ[X_G=26B@?DMKPQXIAGEABNJZ_jSDGDF<?;73E9@QSWYsgBD=<8@2F;?EYXdpJA862?=9JHTW`SgE>?;8@;C@MJB=PHDOUVWNPLH7HD;BD8>@HS\wfTB=<?2<:<IJOM]ccJ?29D7H?DKOXZ_HBJ;GFVR`ZQGCGEB@7C@>@CJYeWZMFBF>B849@AKMgxdO588E?;8=FNKQkkQ\A?=?P??E?KBFHKTCOKELKHGC>A?;=@>>CFWblmJA7;1@<9@BMegk[F6>4B@>BCQSZR`FJ]OJNDLBED<AQMDIHA?CGDFTN[TDOABG?HA;==DCTTfbUIGB=F=7?A?>Xch]J5A>;==77BRNQRRGMOS?4L8FDJSGISB>OHK[WOGI<CAEJ?IPGQfZHAJ=E>6BHAC<MS_BDMUJWEFKI;RDBKLKFFJLMWLPFEDDHIKELF-;8BDHXen^J/BE<A8?AE=O\\\bJ@I4<E89AHLDR]ZZSD?B4(55FKLKUQGQKSQ?HHFGEBHIB?;HOQUZVPB=;GK=?<AEIWqRODKMYIRDUVIDGFAHDCGLPGEHDKPDGRB?AB9BCE=?dW_SABDI@<F??DJTLfeP7FF7/BJ;@INNW[_^8;=K763KA5THVQTJOPD4JCDDKNC<?@NGJcXDGMGEBC<GC@=KF^`DEBHB>?4@3AGDGGNPGISZMKPO@>J4FHK?:;=F==FNukWO:;@C6??@DHTN^\fR3@79;L@B;FKQV_^X80D;5H>=?KTTFNLMNEA6=BDKAGMFGFMRFJFDNCQN>E=BGGAP]TRLD<H=<@7<;>BAJYZGWQ]XHF@696NF>IQC8I<DHLOOQSPLP:E<CD<<?DBD]`pc:?=A7?9>AGPcf`dS,5G;9?B<KNSUOU\PC@?8:;F@FDJA>DEOZGGGKSHKFD@>FBIFPWWDCLFKC?1AC<DA<OSVaiUNB6=@>?C;6FUKKQX`MPHH;=;@HCCEADC>@DLZhVRF@6@?;?@@:DKO]oeF::8B;=;9HC\kg^LE;@B@B9NBCJHOOZPBGDD?G:B+CICJD?GEPWQ>NAHFL6<B4<AAFIg_c]TFB;=A6:H?BFQXV[S\QHKA63C6A>PHBA??GCH`]PRKH?@:38<??LguzZD>354?<:=BFS[ggeE@+3B::B?KOOMT^NEF?<B<@FCJHDF8J@BPVeoGK=AUQ:C=;0BAOMVhsP@DN=67=K58ILT\ZZSUM5;JHE64?@BHSKHGFJLNPTJ:>>Q?@E>;;EL]o]TD8;>A48<@EM^pf[3C9E<>8DDAGO\e\TK3;:06C7>DNTJPRSEALRH5HGG<I>A?7?=?8@bda^VQK::?7:A-<ORWZeSWA>@N9G8<CGMMOHWSRPJ??BABCCE>?;?NCRXWZTPG::<8;97AMUbrdMA>2?M7;6<RW`aaV@;B=?>?DNHSPQR[RJFA;?AFFFA<GF;B84@A>E^elfPB@C6:><A7=ER]_n[[D89=<=ICGMFHKOSaSRD8<C>;GFC?F;S<@ROZePCCD;@=6>8BPNjmmM<?D/G66>DDSTjp\@<>B7@<CMQPLRXWSM@GG49KGLBJB@BE9<>>AK]dj\F;NG==46:=?GFcqxVG;95DAH?8>0HNY[[XXAA;7;7AJSJOMFEPJQSNJHBCEEC9<@17GMerkJ<=A?>C9IEFBR`pWJ;D7>@9<CJFXNOdXQI=47:IKABCKCB<D2CGFE__iMH@<<??><=E?AH_eghVB6?@AAA<=AGXUhb]E;F@=B6;GLVRMUUWUBA9;5<@FLNA@QJQLL\L?CBC=D?=<:<IDNnRG?BC1F7>9NHRatgI8CK7?A7FCCFC@HE?=H3<@TblkMHB;8<4CF<E@Mgln]K>6=N=@D4;GPX\UZiH@8?888<CMNERXTHUOG?;@>7FFTJOFF@Q_JLHK<DFD>788<HRVqvW>?;6@83DBMRZSkbP?8@2H9CE;;ICLEOELQJHJRI@HEDN8=F80<:?JL]lsUJDA<??<=<?JHXjh\M>;=9=D?6>LM[[ZfND8G@>/7CBPLNKIJNNE`RC7?QP3@>D@CVVCOVZHD?8E88GBEITUh`U?>2>FDHJ==JKCKCTWDCD^@EBBQP@H@'BC<>=KOP`p`OH=:=48A>?BDWU`aa^BE?=8>8BJVeeXRCD?D7:=DEFHHMIFM]MGC=>BALG:A<5?CGPPf\aPA9368;=J=YY\q^IG86=46@EDLK?JA]dI;FKOC@=@GAHFDGF@<>HJMWXTHC:@PD8;>=<DKIjp_SH25<:>F<JL[mg[OF;3H@@@CFLIOQPNPTK@6?EDGBC?CJBAEJSO[RLFD:2<8:KQNR]ZaQSF=<B8@HEFDAFHQNQKPSQLFD9>G><PJCG9B>?GO\[VLL<>A@=A>6>GJRpaX@=GB=6B><JSOflcL4@1D9@DALKOT]]TGG>9=BC>?NGMKUPFJM>GG>EBFE>>7;@DDPoa_BEC77A;4CPBALOQUKURUNGA68<CHJAGMJKGIPOFQ@LAODGE?<??9@9;DdvlQ>G9;7@<?ACSXvmZB<D8=?<B;<J[qhXE<078?BDEGHGJGOQSV>6>=JCHJJ<@<=<>MIg_eTH;A6H8GFH;;>=PTVTTaWRB7:GB/.>NGEQWPWKRMFB:8HHEDCDP<?LOEROZGCLIBBAA@ARDN]\Z`:5DACB47BOZS]^VJ<;;6;AACAKUO\UXUE>A8<FJBQFFJDQ=AQ\VNGKDHFAA@FQJEGL]caWJD<>D6@>>?3AFPNUKK\WNO=8<@?EPCH<BBCBEMX_YOFD<3BF9A8<M]qgWO@@3938CCPQcffI8C;@5EF?KHRUQPYLOH?BC3?@EBOBE@?H?ABWVeUCA@@?C5FWD?BTWM`aWOICI1@;=8=BEIOgfXTHJC5558=>>IHMGOUNVI@FBQCBONHAAMET[MUGONKH?EDBCCHGGQ`WKL;>D<@C@A>FCN\XZSHL5*9OG2IUFPQHLLJMKI>HFHDGFCPM=FGKX^\_L8AKM2@K78<NCKJ^c]US>7BB8C4?9DGLP\[OKAD0G8LMFNHCGGEPRM`YI>FH?C?B?NLJD[`XMI>E??F<5?BKM`j\Q;B<AK@4>?HPJZQUHAQ>EFEGFGGDECHQ=RK@Yaod?I;BN/?>79BDJO\ohe>7BC;5=:>CGLRRTWSSON1/9HFEDHDDEGHGQNRQGGIB;<G@CH=LUkmVM?7>=@;><AL[[gmc?;;>;:DGBIMSVZ\HJK<@>:>BEG@DFBRQKF@La`QOLECGC=7=>ECFDVh\^L@B@=B>:78GJU_UTO\C;@C=ELKRI>KRDHZT<3;EBKGG:?9GD@ARdc_CN<:=E@;87SDUjpkF8@<DE4:HBMK`chX6;>/2?CJFMMKOORFETGF]akWKH56EL>>>86F>F[{[F5>@G8?=B87N\ae^RQ=?D9;Q:GAPQRTRQUBBD<EB??G<RJOEFES]NFKFD?<D@;?7BAHinwUD7D<@06>=@[hhpO=7DB=B8<:VZURUSGDHNIWfhNM=@37DE68A=?FPYahaOFA>D68>>>?@JQc[nR<4<F8;<VO48RZ[RQTEK2,J`7AGIIGCIFUX]XIG@BB?77@=;CS^fsLA>D@A2,DCCN]nU<D<-4CFA;PUW]dWWLJOLMZcNEHD5ED88<@H7BLbv`ZCD;AFE@6=;DR[\``\:@;;;=22GBGRZa_WTG<K,>5;??UUJCL\WDI>BCFJJDDBCFHD9R]UWNJKAA;=ACADAP_feKA??,@B<=NOVlbdLEH;ZNUTRGHG@H?>;@=@@EHad`TX3A4CC7=17DUXXdd`?@C;<:E?@GWd]W_H?@*F<7?2BIYVGMRILGJG\:AH<BTGG=KWEIUQLQPJE?BE<<:M?bf_YC@L@;?7<9CST]\_EQQLIB@EBCEJHK?FHC=LN@SOWNOHICEHIK>=FHAAEZe_IK@B;9;0;BKUXaj^G@/>60B@DIOPNXNTWT63<BIJFJMEKMCLEWHVOKY?FEB?5ALRReeSAC@==4HA=5P`^pd@JFA@E@FDA??DQHDHRFPNRKKGHADA7QHABFG;=E7ASodXOAE4;8=8:;IQUupT=6;6==8KTFQQ``TB?8;DDF=EDESHIGNRNKDFAEH5JEC><3AHWXafQ?>=5;C667D?\sscTKNKFD@G@27BCEOPSJVGVPC?O<FIJLb9?GGJ>?EZTVRNMGBDHAG<7DONP`_QCGD88?B8=>CR`_d]=E%/88?CELTTNKNKJH=BA=DIPINIMPDHLWKIRCILF>O<;EUMXUVOHB8D@D?==J>A:7HOXWT[SU=<:=>DGHMMIKFUGJQKFEKH@KDPF7?<SDTXRPTPAOGC4(@>E=Juwd@7;657HND>GNeaUSN@D>AI:@FMJGBGELRMOMF>EDG<?<C=<>UNTtjA>KHBD=:4;@?AEPQaaZU?EBA;@9AK@NJFGGONONQPG?HJM75MI?AGAKPQV]WE<8>C8A?EJT_TgVC2E67>:GAH\]ZY[TB>?A;>CHHPNVGWLPF=E;G35PJ@H9<;@PER]^_R=<DBG;;8=9;BJTXb]cRF@@B;=?:BBES@SPRXUTF>6AAFFGEGOEABN@RNUPECG;<M>@:E=Knu^LE==8A85><ENTf{c?94A;2;J>GRQZUeYKD@G26=LILOJRBQFM[KHDICJJ>?F-<;CC9?OM]so]AGC;55:<F@ZJMX_ZNH@@97=:IJIHHH>?;>AMWQQLAGO>?CCE>KL?OWdZFGC?>JC.DLV]SX_U<5F94?8@ETeUP]MA7AD77=@EGNNNNDMOO@HHD=EQCD=:=C5@CKJKRrvW@4E>G4C5=FEHJWe]ZMF@=5;KB5HAMFLCWROMFHF?=CAIGE;EE=L@f`gZC4A98<;@FBLShesN=7=;7D;FFN`SQ\[D=?;GC;;CGOPKLOOOKJB!,I9JEGFE<;DH<OBNQaWTVDA2IAC08F8?LOZ`d]D;:57;B3=DLJRNMQNZIA?B6HLLGNG@ERVRWMNNP>G@:G:BJIST_WXHA@D8B?7B<FMOZmlQ?DB9==BPOJIOGZKODLGB?5SHHB@?8@G<BCMW]g_N7F4O78;?=GKKT]dhZ:<??=<98FCI\^ZZ\EA>=FD8LLFDOJKNPRHK7=EFJ?JBCGA@5@JcpeB?I<>>6?7=DGehk_H>:3BF9:FGNS[XUYH<??:>CIHNF@IB==DJ5?WTW^]VAEFD477;>:FOWh`gV@9B?/HA0DFJR_W]O8;E5;HFCGFKWJPPNSD=;DAFGECD:C=@CPSnPHDJ;=;A75:;CEYaslK@==?29O>FMZTY]YCA:<<=IB@JBCF>F@DEHDHQOb]SJ;>H<8<<9H@>FXhaSUF?;=C5;<>BG]^gYIA??B-6@AETQSaaTV??@B@<C@MTJ\9F?DOZNBMMCHB?DDB<??X_]fYG<>8H=A=?AIP]XgZE3:>>A8A[HGEAGEG9>DO]_PNGFA@D8A;<9AOP]YnUQ@BD@64?8<<Meqjb74?A3B?=FC7EZa`iI>=<?@9:AGMHIHABXORWNKK@?8CD@D5<DU[j]RMC?BCE;>BJOXZ[RBC:>A@<59LNHGH@DAKHNROLUBJFIBHE;C<DC8OLR[GNI@@FFDBJ<CGHNUTdO@I;23=;?@PZy]VN<@>B@;8AJHF]`WZMB?H6;DBH?CB>J=9@@GOUXaVI?;?16?D>DV]fci328LL>;:KFHHLLQNO\NEFGG4:B@FIKEBJED?IMTVDKILGBB;C:5F>GN_crQ@;?38;ABFNPeWe`HAC37:;AP@KT\RRMHKAA@>:HDFN@JCFCIIWVRA7AJ89D7=CVV]`gUN:;87BE=6DPNMCKPKRVXKB9?>6FF=DHCDDHAD@GPP\RNCI<DE>FA7ADK_hkF5<=B<=>>FGSeckL>>7C0>FKGLR`iWSDB1L87LCEGJG>HJNPPJGFC<JGBBG8;?>8E[hcYAGB78>6?=MGIKIFT\SMWNE>>:C42EMMMOORLCTIKU7;CDCGMCGABCHE`TFNH;JAGCDED7EJSUhYFH>?:I<5LGLRWVRd]F=EB78@>Q>MWLPHQOOJ8:;KAJFEKGK>QRLGDCL@HG<B8NFMIQRV_fP>=B7<D@;A=AOXSHOPPOHG@@BAD@@J@CDA>@@S\cc[B;A<<A>C@E@NR^|]B79F7;<IB@QnfgT<D4BA7=<DOVPOFGXKZC<C>;AIMB?D>=?FOXVUSMAF/JI;;<?DDDJJ_c]^VL<;?A>=4=NAPUY^VMGR;=?=;@LEDKIFJYALRKFELDKG@:KF>CKNPRdRXC>FC=B=C=GRQQa^TH54;?D;CMGMPNXWSKE845BEIEKJHMJDXDGFN`K=GC<EE>GOHPQ]__TQ<:;F@DA>9JONOZZ`SIR7@;?8ADEDWLOJOXRKE<9@@EGDH?EM?CJJ[ZYR=79N6=8?@AGR^[keN;645;==AOVQYcaQD>;?C1:OQUMLHQIFHDD?F===?CIFG;KIGJGQ]eXVAL2<D?<;A?=HMZ[nlY8:5JA<74DHGOIUhORM<>><;LDGgP<AOBOCQLFO8:GQHIE@HGIU\SXOE5=LB<-@HTadcXGA8=:=G=NRFGMLONMKDAGEF7TGNF=?;:FPOU[ZgbMGC<<?D-26GKPKXelXXG95?=C<@CGJXXSW`NA:6A@AG@I>PQNLHTP;BBDJPHAA=H?7<?A[qbW?4H@7367AM``eaTDC6F<<<FHQJRPWaM=>=<=6?HNKLOP]OMLNKSaUh_HC@C>=B44;7GIO]fnNJF<68AA4>KMb[ZWURA=7A??:MCCMSQSRRONA@7CKBFHB<;:AGNMYdhO==;6=@56ARTWeyWCB87<??8=DLojpW<<;>?A7AGKWPHNOQTIDRTWJTHCJH>HD?SB@?HSTP]JBGHE8D5=;>RNN\d[`B6I::B2?FBMKMDPWEMAWA86F<PNKBM?LHQO^NJJS5<B?BIN?<XIaaPHRC;<<C*4IPc\rfG47B?><@HHEZRSTOTJUXd`cSG@EGB:17<77AJZYrl[D@?:4>D3=?A9Thhl]V7?A<=<4JO_^TOUP@;:?F>=JDMDOKO7AMBIOUILHT0,BDG@@CW^cnOA5HM.1B9?RP]cafP80(:@CBGPJ`JUZFKCBUUbPFHEEDG47HD=@?A<GLqg[TCAA@B9:;AADPevuRC:=87?5@FJIQOV]_W12:NA;G9DMMGPHGHJUCECTNF;;BE?CEZU^PQR:?F@?J7=?QR[\ZM;D>AG<A?@HPNS\\JUK\]XMAB@DEC5E<::;AA?L\h]WW<8;99=6EJOSkhZYKL7BF/28>JSM\Wa\G>C728=KKMLUZWXX@?M05ADHM@ICGJ?DHYQSRJ<F?C:DF<1DHR`xcN=>9??3?>@RS\czN8KTC>ED?<E9BMKKHIAERLUNKHN@GBB@C97A<8=HjkqXE>;>=57@;GHIlakQK9@42?A6@>PJQUZ\Y4<E=A7KMEHHHKS9GNSYBRB*:GM?=CPIT[W[@?AABC>;>5JFZW\_ZNGHS3R>A?GIFSPGJXWTQJ?BA7HCDADG>>;LCHIGg_`QH>=A<@72;TQNjsiN=<;>5D7?EZWTbgRHA6:C?F7OKDJSKKGHLKFGG@@=E@?<EABA^__gAH;:<E6;8?LP[UjqL<UB<PI<35AC>;JNMOLI]WHFEE;@DM;@IG@JGTHMVXNDFJEA@D<JLHOWY^QF55I8;89?;RKEUIbnH4E45K@HEDKPRXLNT32GBDGSJ7?<=ACD[UcXPP72M6>68:FDU_nrI2EO><6=BB?3:^FHDOOOGJJKFRCWHBK:O@C<LPBSVcGZCDEBGH>F@HGOabXK>:?=7>EADJM]iZ_M;5E1:CCB@FIRWNTcSJ>/6AAIBJRENEFEUWDG?CHCE=H@;GHZV_QQMB๐อ๚อ๗อ๓อ๑อ๊อๅอไอโอÞอÜอÜอÜอÝอÞอÛอฺอÜอÜอÞอใอ็อๅอๅอใอใอแอใอ่อๆอใอแอเอÞอÝอÛอÛอÝอแอ็อ๋อ๒อ๖อ๗อ๖อ๑อ๏อ๋อๆอใอเอÛอือุอูอ฿อ่อ๖อ๙อ๙อ๙อ๖อ๎อๅอÞอฺอÛอÝอๆอ๋อ๕อüอฮฮþอþอ๚อ๒อ๎อ่อๆอโอ฿อโอใอโอแอใอไอไอ่อ๊อ่อ๋อ๋อ่อ่อ่อ๊อ่อไอแอ฿อÝอีอำอิอีอÞอ์อ๖อ๗อ๖อ๓อ๐อ๎อ่อโอÛอือีอือูอไอ๕อ ฮÿอ๛อ๖อ ฮÿอ๙อ๕อ๓อ๐อํอ๋อ้อ๊อ๊อ์อ๏อ๐อ๐อ๓อ๕อ๗อ๘อ๙อ๚อ๙อ๗อ๓อํอ๊อ้อ้อๆอใอแอแอÞอฺอือึอุอÞอ็อ๏อ๕อ๓อ๖อ๓อ๒อ์อ็อ฿อÛอÜอÞอฺอÜอแอ๑อÿอฮüอ๗อ๑อ์อ่อใอ฿อÛอุอึอฺอไอ๒อฮฮฮýอ๘อ๔อ์อ้อ๊อๆอๆอ๊อ้อ๊อ๎อ๑อ๔อ๙อ๛อ๚อ๘อ๕อ๓อํอ้อ็อไอใอแอแอ฿อÝอีอำอฺอÝอโอ๊อ๏อ๒อ๑อ๏อ๏อ๋อ็อไอแอÞอฺอือิอัอือใอ๔อÿอ๛อ๗อüอ๖อ๒อ๑อ๒อ๏อ๊อใอ฿อÛอุอุอÛอÞอแอๅอ้อ่อ๊อ๋อ๊อ๊อ่อไอแอ฿อเอแอเอแอแอ฿อÞอเอเอÝอÞอใอๆอ์อ๋อ๋อ๋อ๋อํอ์อ๊อ็อๅอใอเอไอ็อ์อ๐อ๒อ๓อ๔อ๗อ๓อ๏อํอ๋อ่อไอแอÞอÛอÛอÞอ็อ๕อýอ ฮüอ๙อ๖อ๔อ๑อํอไอÞอÛอุอÜอเอ่อ๔อ๚อþอüอ๙อ๖อ๎อไอÞอÛอÛอÝอÝอ฿อ฿อ฿อแอ฿อไอ็อ่อ่อๆอไอ็อ้อ๋อ๊อ็อใอÞอÜอÛอÜอÝอๅอ๊อ๓อ๔อ๕อ๗อ๗อ๚อ๗อ๓อ๎อ์อ่อใอแอÜอุอีอิอÛอ๏อýอฮฮฮ ฮþอ๛อ๓อ๏อ์อ๊อ็อ้อ้อ็อ่อไอ่อ็อๆอํอ์อํอ๋อ่อ๊อ้อ็อๅอ็อๆอไอแอÜอือัอิอูอไอ๔อýอüอ๘อ๐อ๏อ๋อ่อๅอเอÜอูอูอฺอใอ๐อÿอฮþอüอ๙อ๔อํอๅอโอเอ฿อ฿อÝอ฿อ็อ๐อþอฮฮฮฮüอ๗อ๓อ๊อ๊อ้อ็อ๊อ่อ่อ์อ์อ๐อ๔อ๘อ๘อ๗อ๔อ๒อ๏อ๏อ์อ๊อ้อ็อๅอแอÛอึอือุอÜอๅอํอ๓อ๑อüอþอüอ๖อ๓อ๐อ๊อ่อๅอโอÜอÝอไอ่อ๏อ๖อýอฮฮÿอ๚อ๖อ๔อ๑อํอๆอไอโอไอไอๅอๅอ็อ์อ๑อ๕อ๗อ๕อ๓อ๏อ๋อ้อ็อๅอๆอๅอแอÝอÛอึอำอำอัอึอฺอไอ๒อ๗อ๓อ๏อ๋อ่อโอÞอÛอุอำอัอาอึอฺอ๋อüอýอ๘อ๕อ๒อ๊อไอโอ฿อÜอ฿อแอๆอ๑อ๚อฮฮฮ ฮ๚อ๒อ๎อ๋อ่อๆอใอไอไอ็อ๎อ๓อ๚อþอýอüอ๙อ๓อ๑อ๏อ๏อ์อ์อ่อ็อ็อไอแอ฿อÞอÝอใอ่อ๏อ๓อ๖อ๓อ๚อ๖อ๗อ๓อ๏อ์อ๊อๆอใอใอโอÞอÞอโอๅอ๎อüอฮฮüอ๗อ๕อ๓อ๐อ๎อ์อๆอโอไอไอ็อ๋อ๒อ๙อ๚อüอ๙อ๙อ๘อ๒อํอ๊อ่อ่อๆอ่อ็อๆอโอใอเอÞอเอใอ่อ๎อ๒อ๑อ์อ๋อ้อๆอไอเอฺอิอฮอฬอฯอือÞอ๎อ๘อüอ๘อ๕อ๓อ๎อ้อไอ฿อÛอÞอ฿อไอ๋อ๒อýอฮฮýอ๖อ๓อ๑อ๋อๅอไอโอโอๅอๅอ๋อ๒อ๛อüอýอ๛อ๔อ๑อ๋อ่อไอใอๅอไอไอใอแอโอแอๅอ้อ๊อ์อ๊อ้อ็อๆอ๛อ๔อ๔อ๑อ๋อ่อๆอไอเอโอÝอ฿อโอ็อ๐อüอฮฮฮ๚อ๗อ๕อ๓อ์อ่อ็อ็อไอ็อ้อ๎อ๖อ ฮฮฮฮฮฮüอ๙อ๕อ๑อ๏อ๋อ้อ๋อ์อ๎อ๑อ๔อ๙อ๘อ๘อ๕อ๕อ๓อ๓อ๐อํอ๎อ๋อ์อ่อใอแอÝอึอิอาอำอุอ์อ๗อ๘อ๗อ๓อ๐อ๋อๅอ฿อÞอÛอฺอือึอÝอ์อ ฮฮ ฮþอ๖อ๐อ๋อไอเอเอÞอแอๆอํอ๔อ๙อþอþอ๛อ๘อ๖อ๔อ๑อ๋อๆอไอแอÝอ฿อ฿อใอโอๆอ่อ์อ๎อ๏อํอ๋อ๋อ็อ๗อ๓อ๑อ์อ้อ๊อ็อไอ฿อÝอฺอูอฺอ฿อๅอ๏อ๗อüอ๙อ๗อ๔อ๒อ๎อ๊อๆอโอ฿อÛอฺอแอ๏อ๛อฮฮฮฮ ฮüอ๗อ๓อ๎อ่อ้อ็อ้อ๊อ์อ๎อ๓อ๙อ ฮ ฮþอ๚อ๘อ๓อ๏อ์อ๋อ๋อ้อ๊อ้อๅอแอๅอๅอใอใอๆอ๋อ๕อ๙อ๖อ๓อ๑อ๑อ๎อ๊อๆอใอ฿อÞอÝอใอ๎อ๙อฮþอüอ๙อ๕อ๐อ๏อ๋อ็อไอๆอ่อ้อ๎อ๘อÿอฮ ฮüอ๙อ๓อ๎อ๋อ่อๆอไอๆอไอใอไอ่อ๏อ๔อ๗อ๘อ๕อ๐อ๎อ์อ้อ้อ๒อ๏อ๎อ้อ่อใอÜอÛอุอำอีอาอึอูอเอ์อ๘อüอ๘อ๕อ๏อ๊อๅอแอÞอุอึอุอ฿อ๊อ๔อ๚อÿอ ฮýอýอ๖อ๓อ๑อ๏อ๋อ่อโอโอ฿อใอๆอ๋อ๓อ๚อþอýอ๚อ๔อ๎อ์อ๊อ็อๆอÛอเอูอึอุอือึอฺอฺอÞอ฿อแอๅอไอใอๅอ๊อ่อๆอโอ฿อÝอฺอูอÞอๅอ์อํอํอ๏อ๑อ๔อ๐อ๎อ์อ็อแอแอÝอÛอÛอเอ่อ๓อýอ๛อ๘อ๕อ๓อํอ๊อๅอเอÜอุอือฺอ฿อๆอ๐อ๗อ๖อ๒อ๏อ้อๅอÞอือำอ๒อ๋อํอ๋อ็อ็อๆอ่อ่อไอแอไอ้อ๑อ๖อ๖อ๔อ๔อ๔อ๓อ๒อ๐อ๑อํอ์อ๊อ่อ้อ๊อ่อ๋อ๐อ๚อฮฮฮ๚อ๙อ๖อ๑อํอ็อใอใอๅอ็อํอ๓อüอ ฮฮฮฮþอ๚อ๕อ๎อ้อ่อ่อ่อไอๅอๅอโอเอไอๅอ็อ๊อํอ๑อ๎อ๊อไอแอใอโอ฿อฺอีอัอฯอิอเอ๋อ๓อ๚อ๚อ๕อ๑อ๋อๅอโอÜอือุอือฺอแอ๏อüอÿอýอ๙อ๔อ๓อํอ่อๆอแอÜอÝอแอโอๅอํอ๗อ๛อ๚อ๘อ๓อ๐อํอ์อํอ๊อ็อ้อ๎อ์อ่อไอโอÛอึอึอึอาอาอีอแอ๋อ๕อ๖อ๕อ๒อ๒อ๎อ่อไอเอÜอูอือีอุอใอ๏อ๙อฮฮþอüอ๘อ๔อ๓อ๎อ่อๅอเอเอแอใอ์อ๓อ ฮฮÿอýอ๙อ๒อ์อๆอÞอุอำอาอีอือุอุอุอÝอเอๅอ๋อ่อใอโอไอใอไอเอÝอÛอÛอูอือีอีอุอูอเอไอ่อ็อ๋อ์อ์อ่อโอÞอÝอÝอÛอุอุอเอ็อ๑อ๖อ๔อ๐อ๎อ๊อ่อใอÝอฺอุอีอึอูอ฿อ๋อ๙อ๘อ๘อ๔อ๒อ์อ๊อ๊อๆอใอ๋อ็อ๊อ้อ็อๆอ็อ้อ่อ๋อ็อๅอ่อ๊อํอ๏อ๋อ๋อ๊อ้อ็อ็อ็อ่อๆอๆอไอโอไอ่อ์อ๐อ๕อ๚อ๙อ๗อ๕อ๕อ๓อ๑อ๏อํอ้อๆอๅอๅอๆอ๋อ๔อýอฮþอ๙อ๔อ๑อ๋อ๋อๆอÞอุอุอุอÛอโอ้อ๋อ๊อ๊อ็อไอเอฺอÛอÝอ฿อÝอÞอÝอÜอÞอÝอÜอÝอÞอเอๅอ๊อ์อ๎อํอ๊อๅอแอÞอฺอุอูอฺอÜอเอๆอํอ๒อ๓อ๑อ๐อํอๅอโอเอÝอฺอูอÛอเอไอ๊อ๕อ๚อ๙อ๔อ๐อ๎อ๋อใอ฿อเอแอไอใอๆอไอโอแอÞอÞอÞอ฿อ฿อแอ็อ๋อ๐อ๑อ๐อ๐อํอ้อๆอใอเอูอึอิอำอัอะอึอๅอ๑อ๚อ๛อ๘อ๓อ๏อ๋อ้อๅอโอÞอÜอÛอÞอๆอ๕อ๛อฮฮ ฮ๙อ๕อ๒อ๐อ๊อๆอโอเอÞอ฿อไอ์อ๗อ ฮฮþอ๚อ๙อ๔อ๏อ้อๆอ็อๅอ็อๆอ้อ๊อ๎อ๐อ๐อ๔อ๘อ๘อ๔อ๒อํอ๊อ่อ้อ่อๅอแอÜอีอำอัอัอีอๅอ๐อ๔อ๒อ๐อ๋อ็อใอÝอุอาอฯอฮอฮอาอูอใอ๒อ๚อ๖อ๓อ๏อ์อ่อใอเอÝอÞอๅอๆอๆอโอแอเอÝอÛอฺอÛอูอฺอ฿อ็อ๋อํอ์อํอ๊อ้อๆอไอเอ฿อÜอือิอิอีอÛอไอ์อ๕อ๘อ๖อ๔อ๑อ์อๆอเอÞอÛอือือฺอเอ๋อ๘อฮ ฮ๚อ๖อ๑อ์อ็อโอÝอÜอÜอÞอแอๆอ้อ์อ๖อ๙อ๗อ๗อ๔อ๑อ์อ้อไอเอใอไอ็อ้อ้อ๊อ้อ๎อ๑อ๐อํอ่อๅอๆอไอไอๅอๆอแอ฿อÛอึอิอาอัอีอๅอ๔อ๘อ๒อ๎อ๎อ์อๆอเอÞอฺอือึอีอีอÞอ๒อ ฮÿอ๛อ๔อ๎อ์อ้อๆอ็อๅอแอใอๅอๅอโอใอโอไอ้อ่อํอ์อ๋อ๊อ้อ่อ่อๆอ็อไอไอไอโอ฿อÛอึอำอาอฯอฯอึอเอ๋อ๔อ๕อ๑อ๏อ๎อ๊อ็อๅอใอÞอึอิอึอÝอ็อ๐อ๚อ๚อ๙อ๓อ๎อ๋อ็อใอแอ฿อÝอ฿อๅอ๏อ๚อÿอ๛อ๙อ๔อ๖อ๐อ๊อๆอโอÞอÛอุอฺอฺอÝอแอๆอ๏อ๖อ๓อ๕อ๑อ๏อ์อ็อไอแอÜอูอีอิอาอฮอะอำอาอือไอ๋อ๋อ๊อ็อใอเอÛอีอาอัอฯอฯอำอเอ้อ๗อ๚อ๖อ๒อ๐อ้อๆอแอÞอÞอÛอÛอใอ็อๆอๆอ๊อํอ๒อ๖อ๗อ๖อ๗อ๘อ๙อ๖อ๔อ๐อ์อ็อโอ็อๆอๅอ฿อÛอือาอฮอฮอะอิอÛอ็อ๐อ๑อ๏อํอ์อ๊อๅอÞอÛอือีอิอิอึอแอํอ๚อ๙อ๖อ๒อ์อ่อใอÞอฺอือุอือฺอแอ๎อ๖อ๗อ๓อ๓อ๓อ๎อ๋อๆอแอไอ฿อ฿อ฿อใอๅอ่อ๐อ๖อ๕อ๒อ๒อ๏อ์อ์อ้อๆอไอโอโอใอใอเอÞอใอ่อ๏อ๑อ๏อ๋อ๊อ๋อ๊อ็อแอÜอูอีอะอออออำอÜอโอ์อ๖อ๓อ๎อํอ์อ่อโอÛอุอึอีอ๑อ๎อ๐อ๑อ๗อýอฮฮÿอ๛อ๗อ๖อ๓อํอ่อๅอโอเอใอๅอ่อ้อ๊อ๋อํอ๏อ๏อ๑อ๔อ๓อํอ๊อ็อ่อ๊อ๎อ๋อๆอเอุอึอึอำอฯอฯอือแอํอ๗อ๕อ๔อ๒อ๏อ๋อๆอแอÞอูอีอือÜอๅอ๐อ๛อ๛อ๔อ๔อ๒อ์อ่อ็อๅอแอÜอÝอใอ๊อ๔อýอฮþอüอ๚อ๘อ๑อ์อ่อ่อ็อ่อ็อไอไอๆอ๊อ๒อ๙อ๛อ๛อ๗อ๐อ้อๅอใอๅอๆอๅอไอโอเอ฿อเอเอเอ็อํอ๒อ๒อ๒อ๑อ์อ็อ็อๅอเอÞอฺอือ๘อ๎อ๐อ๓อ๕อ๙อüอþอýอ๚อ๗อ๔อ๑อ์อ๋อ๊อ็อใอโอใอ็อ้อ์อ๏อ๓อ๙อ๚อ๕อ๐อ๊อๆอใอไอใอใอไอๆอไอโอโอเอ฿อเอแอๅอ้อํอ๏อ๐อ๏อ๏อํอ๊อๅอใอ฿อÛอูอือูอÜอๅอ๑อ๖อ๙อ๕อ๒อ๐อ๎อ๊อ็อโอÜอÜอÜอ฿อ้อ๘อÿอþอüอ๖อ๓อ๑อ๊อ็อๅอแอ฿อโอๆอ้อ์อ๎อ๑อ๕อ๖อ๓อ๐อ๋อๅอแอÞอ฿อÜอÛอÝอÜอÛอูอีอัอฮอาอีอฺอไอ์อ๐อ๎อ๊อไอโอÛอิอะอหอษอแอือือฺอ฿อใอไอ๋อ๏อ๒อ๑อํอๅอๆอใอฺอูอÝอÛอึอุอูอÜอเอแอ฿อ฿อโอแอ฿อÝอÜอÜอÜอÛอÝอ฿อ฿อÞอÜอÝอÞอฺอฺอฺอÜอ฿อเอใอๅอ็อๆอแอแอ฿อÜอือีอีอือูอÞอโอ๊อ์อํอํอ้อๅอใอใอÞอÛอÛอฺอูอเอํอ๗อ๘อ๘อ๒อ๎อ์อ็อโอÝอือำอัอัอีอÝอ฿อโอๅอ่อ๎อ๋อๆอ฿อฺอุอือูอฺอÛอÜอูอุอึอึอึอÛอเอโอใอโอแอใอใอโอโอ฿อÜอุอึอีอ้อ฿อ฿อใอ็อ์อ๕อ๙อ๙อ๘อ๓อ๐อ๎อ์อ้อใอฺอือูอÝอÝอแอๅอ่อ์อ๒อ๕อ๖อ๖อ๏อ์อ๊อ็อไอโอใอไอไอไอแอแอ฿อÝอฺอÜอๆอ้อ้อๆอไอๆอๅอโอÝอุอำอฯอออสอออาอ฿อ๊อ๐อ๑อ๎อ๏อ๋อใอÜอูอำอะอฮอัอูอใอ๏อ๚อ๙อ๗อ๒อ์อ็อๆอแอÝอูอุอฺอÝอใอ๎อ๔อ ฮ ฮýอ๘อ๒อ๎อๆอแอÝอฺอÝอโอไอๆอ่อ์อํอ๐อ๒อ๓อ๑อ๏อ๐อํอ๊อ๊อ๊อ่อ่อๆอไอโอÞอÜอ๓อไอๅอ๊อ๐อ๕อýอþอ๛อ๘อ๖อ๑อ์อ็อใอเอฺอือึอึอุอ฿อ๋อ๕อüอþอ๛อ๖อ๔อ๎อ้อไอๅอโอÞอÝอเอโอๆอ่อ่อไอๆอ๋อ์อ้อ็อๅอใอ็อ็อ็อใอเอ฿อÛอือึอำอฯอะอือใอ๋อ๋อ์อ้อไอ฿อÛอุอำอฮอหอสอออูอไอ๎อ๖อ๖อ๒อํอ้อใอÞอูอำอำอะอาอือๆอ๏อþอÿอþอ๚อ๔อ๐อํอ๋อ้อๅอโอๅอ็อ๎อ๓อ๗อ๛อ๛อ๙อ๖อ๒อ๎อ๋อ้อ๋อ็อ๊อ้อ่อใอโอÞอÛอÝอ๔อ฿อÞอโอ๊อ๏อ๕อ๘อ๖อ๔อ๒อ๎อ์อๆอใอไอÞอÛอฺอูอือÛอÞอ่อ๏อ๗อ๘อ๗อ๔อ๒อํอ๎อ์อ้อ็อๆอๅอ๊อ๑อ๚อýอฮฮþอ๚อ๘อ๒อ๏อ๋อ้อ้อ็อ้อ่อ่อ็อไอใอๅอๆอ๊อ๎อ๏อ๎อ์อ์อ้อ่อใอโอÞอึอีอาอำอือÝอ๊อ๑อ๒อ๑อ์อ้อ็อเอุอีอัอาอีอูอ฿อ๊อ๔อýอ๛อ๘อ๓อ๏อ์อ้อแอÜอูอุอÜอเอ่อ๎อ๖อþอüอ๚อ๘อ๒อํอ้อ่อไอไอใอใอโอแอเอÞอÜอÜอ๖อๆอ่อํอ๑อ๔อ๗อ๕อ๓อ์อโอแอÞอÝอÜอึอัอะอฯอาอือ฿อํอ๛อ๚อ๘อ๔อํอ็อ็อๅอ฿อือิอึอือÜอแอํอ๙อþอýอ๛อ๕อ๓อ๓อ๏อ๊อใอแอใอุอีอีอึอีอือูอÜอเอใอใอโอเอÝอโอเอ฿อÝอÛอฺอือิอัอึอูอÝอ็อํอ๑อ๐อํอ๎อ์อๆอแอ฿อือิอิอึอุอÝอไอ๐อ๚อ๚อ๖อ๏อ๋อ้อ่อเอÜอุอิอิอูอเอ็อ๏อ๕อ๓อ๐อํอ๊อไอโอๅอโอเอÛอÛอÜอÜอÜอÛอูอ๓อ฿อเอแอ็อ๏อ๓อ๒อ๒อ๒อ๏อํอๆอเอÝอุอำอัอฯอฮอำอูอ๋อ๖อ๚อ๙อ๘อ๓อ๑อ๋อ็อใอÞอฺอุอฺอÝอโอ์อ๗อ ฮ ฮüอ๗อ๔อ๏อ์อ้อๅอใอใอใอ็อ่อ๊อ๐อ๒อ๓อ๔อ๔อ๓อ๒อ๎อ้อ็อ่อๆอๆอแอÜอฺอิอฯอหอฬอศอหอีอๅอ๎อ๏อ์อๆอใอÜอฺอือำอัอะอออฯอึอแอ๐อ๘อ๗อ๓อ๋อ่อใอÞอฺอุอือูอเอๆอ์อ๓อ๘อ๘อ๖อ๓อ๏อ๊อๆอโอแอแอแอ฿อÞอแอไอ่อํอ๏อ่อÝอเอใอๅอ่อ๊อ๊อํอ๊อํอ์อ๊อๅอแอÜอุอุอือุอฺอ฿อๅอํอ๒อ๚อ๗อ๘อ๒อ๊อๅอแอÝอุอีอีอÛอเอๆอ๔อþอýอ๗อ๒อ๐อๅอเอÝอÝอÞอเอใอไอ่อ๋อ๎อ๒อ๗อ๖อ๐อ๐อ๊อๆอใอแอใอเอใอโอแอ฿อÝอูอึอูอÛอ฿อ่อ๋อ๊อ๊อไอ็อๅอÜอือีอาอออออฮอัอโอ๋อ๖อ๗อ๓อ๋อๆอโอÛอูอือีอึอÝอๆอ๒อ๚อüอ๙อ๕อ๐อ๋อไอเอÞอÜอÝอÛอเอๆอ้อ๑อ๚อÿอüอ๖อ๑อๆอ่อ๊อ๊อ์อ์อ๊อํอ่อไอเอÞอฺอุอึอัอฬอออฯอือใอ๒อ๙อ๘อ๓อ๐อํอๆอ฿อูอีอาอฯอะอัอฺอๆอ๔อüอþอ๛อ๓อ๎อ๋อๅอเอÛอิอิอูอ฿อ่อ๒อýอฮüอ๚อ๙อ๖อ๑อ้อใอ฿อÝอÞอเอ฿อเอแอโอใอใอๅอๅอ็อๅอไอใอๆอๆอโอแอ฿อÝอือาอออหอษอศอหอึอโอ๏อ๏อ๏อ้อๆอแอฺอึอิอฯอฬอหอฯอฺอ่อ๒อ๚อ๙อ๕อ์อ็อใอÛอุอุอึอือÝอแอๆอ์อ๒อ๗อ๑อ๏อ๊อ๊อ๋อ๎อ์อํอ์อ์อ๋อ่อๆอไอโอÝอฺอือิอิอูอโอ๋อ๑อ๐อ๐อ๏อํอ๋อๅอแอÜอือึอาอฯอฯอำอุอ๊อ๕อüอüอ๘อ๑อ์อๆอใอเอÜอุอึอีอิอือÛอเอ่อ๓อ๖อ๓อ๐อ็อ฿อÝอูอาอาอำอาอือือูอฺอุอฺอÞอแอๅอใอ฿อÝอ฿อแอแอเอÜอูอิอิอะอฯอีอÜอแอ้อ๊อ่อ่อๆอๆอแอÞอฺอึอาอำอีอÞอ้อ๔อ๗อ๑อํอ็อ้อๆอเอÛอึอีอำอิอือโอ๏อ๖อ๕อ๓อ๊อ๔อ๒อ๑อ๑อ์อ็อ้อ่อ็อๆอโอเอ฿อÝอÛอุอำอำอีอÛอเอ่อ๎อ์อ๎อ์อ๋อ่อไอเอÜอีอือุอุอีอฺอไอ๐อ๘อ๛อ๘อ๔อ๐อ้อๅอแอÜอÜอÛอÜอ฿อใอ็อ๎อ๗อüอ๙อ๒อ์อ้อใอÝอเอใอๅอ้อ๋อํอ๎อ๔อ๙อ๛อ๙อ๖อ๓อ้อๅอ้อ็อไอโอแอ฿อÞอÜอูอือฺอุอฺอ฿อๅอ่อ่อ่อๆอไอเอึอัอออหอหอัอูอๆอ๒อ๗อ๓อ๏อ๏อๆอ฿อÛอือิอำอำอÛอๅอ๋อ๔อýอ๚อ๓อ๐อ่อ๋อ๎อ๏อ์อํอ็อใอโอไอไอไอๅอใอแอ฿อÝอÞอแอใอ่อํอ๏อ๏อ๏อ์อ้อ่อ็อใอฺอีอิอำอีอิอึอÝอ้อ๕อ๘อ๕อํอ๊อ้อๅอเอÜอÛอูอÝอ฿อ็อ๓อ๛อ๛อ๚อ๙อ๒อ๑อ๐อ้อๅอไอไอเอÝอฺอÜอเอใอ๊อ๐อ๔อ๕อ๏อ๎อ์อไอÝอฺอุอือูอูอุอุอูอÜอÛอฺอÛอÛอ฿อเอเอเอแอเอÝอุอูอุอุอือีอิอÝอไอ็อ๊อ้อ๊อ้อๆอใอ฿อÞอÛอูอิอิอูอๆอ๒อ๘อ๒อ๐อ์อ๓อ๒อ๐อ๏อ์อ๊อๅอๆอๆอไอโอเอแอ฿อÛอูอÜอÞอÞอเอใอๆอ็อ็อๆอๆอ็อไอÝอุอึอำอัอฮอหอะอุอๅอ๏อ๏อ๓อ๒อ๋อๅอเอÛอุอึอำอฯอหอออุอใอ๑อ๘อ๘อ๒อ๋อ่อๆอเอÛอูอุอÝอเอ้อ๒อ๚อ ฮþอ๚อ๓อ๏อ๊อ็อๆอๅอๆอๆอไอๆอ๊อํอ๐อ๓อ๕อ๕อ๒อ๏อ์อ๋อ็อๆอไอไอใอเอแอ฿อแอÝอÛอÝอÝอโอ้อ๏อ์อ่อๅอแอÞอÜอุอำอฯอออะอิอฺอ๋อ๖อ๗อ๒อํอไอüอ๚อ๑อ๎อํอํอํอ๋อ๊อ๊อ์อ๋อ๐อ๔อ๖อ๚อ๙อ๙อ๙อ๔อ๋อใอเอเอÞอ฿อÞอ฿อÝอÛอฺอือีอือึอุอÜอใอ๊อํอ์อ์อ้อใอÜอือิอัอออสอษอฯอÜอไอ๑อ๗อ๕อ๓อ๐อ้อเอÜอฺอือำอาอีอ฿อ้อ๔อüอ๚อ๗อ๒อ์อๆอแอÜอือุอÛอฺอÝอๅอ๋อ๒อ๘อ๘อ๗อ๔อ๏อ๊อ็อแอÞอเอใอใอโอๆอ็อๆอ๊อ๋อ์อ๊อ็อไอใอๅอโอ฿อÞอูอึอาอะอออัอิอือ฿อๆอ๏อ๓อ๒อ๋อ๏อ๒อ๑อ์อ่อๅอใอแอ฿อโอๆอ่อ๋อ๎อ๔อ๗อ๙อ๙อ๗อ๑อํอ๊อเอÝอÝอือาอำอิอีอีอิอือิอะอฮอิอือูอÜอ฿อใอ้อ่อไอÝอูอีอัอออออฯอิอฺอไอ๋อ๎อํอ์อ้อๆอแอÜอÛอีอาอำอีอุอเอ่อ๓อ๗อ๖อ๔อ๎อ์อ็อÛอิอะอออฬอะอิอÜอแอ๋อ์อํอ๐อ์อๆอแอูอีอำอัอาอิอีอือÛอฺอÜอÛอÜอÛอุอือูอÛอÜอÜอ฿อฺอีอัอัอัอือÜอใอ๋อ์อ๋อ๋อ่อไอ็อๆอโอÝอูอีอีอิอุอÜอโอๆอ๋อ๒อ๕อ๕อ๕อ๔อ๐อ๊อๆอไอเอแอเอเอ฿อใอใอใอไอไอ็อ้อ๊อ๋อ๋อ๋อ้อ้อๅอๆอไอใอÞอือาอะอฬอวอฤอฦอออุอไอํอํอ็อโอแอÜอึอาอฮอหอสอฬอฯอีอโอ๒อ๘อ๕อ์อ็อโอฺอิอาอาอฯอำอÛอไอ๑อ๛อÿอ๛อ๘อ๓อ์อ้อ็อโอแอใอโอๅอโอไอ่อ๊อ์อ๎อ๓อ๑อ๎อํอ๊อๅอไอๆอใอไอใอโอÞอÛอÛอูอÜอโอ์อ๑อํอ๋อ่อ้อ๐อ๏อ่อใอเอÜอุอำอาอีอÞอโอ๎อ๛อÿอ๘อ๕อ๓อ๑อํอ๋อใอÜอุอำอฯอะอฯอะอึอÛอ฿อไอๅอ๊อ้อไอโอÝอึอิอีอือฺอฺอูอุอือิอัอำอฺอเอใอๆอไอๆอไอไอแอเอÝอฺอือุอฺอÜอใอ้อํอ๔อ๔อ๑อ๎อ๊อๅอใอÞอÛอฺอูอÜอÞอ๊อ๒อ๘อ๚อ๑อ๋อ็อ้อใอเอÜอึอาอิอีอุอÜอโอๅอๆอ๎อํอ๐อ๑อ๏อ๎อ๋อ่อ้อ้อ๊อ่อๅอแอเอแอแอ็อ่อๆอ็อๆอๅอโอ๋อํอ๊อๆอแอÞอฺอฺอือือÛอใอ์อ๗อýอýอ๚อ๘อ๒อ์อ๋อๆอแอเอ฿อÞอแอใอ่อํอ๕อ๙อüอ๛อ๘อ๗อ๑อ๎อ้อๆอๆอ็อๆอไอๅอๅอใอใอใอใอโอใอ็อๆอ็อใอโอไอโอแอÝอฺอึอาอฬอศอฦอสอีอเอ๊อํอํอ้อโอ฿อÜอึอาอะอฬอษอฦอศอฺอ๓อ๚อ๚อ๓อ๋อๆอใอÝอูอุอิอีอฺอแอ็อ๎อ๚อýอ๚อ๗อ๐อ๋อ์อ์อ๊อ่อ็อ็อ่อๆอๆอใอไอไอๅอ่อ๊อ์อ๊อ่อ็อๆอๅอ๋อๆอ่อโอÜอือิอิอัอฯอาอีอุอโอ๋อ๓อ๓อ๒อ๏อ์อ็อๅอแอÝอุอิอฺอฺอÞอ็อ๎อ๕อýอ๛อ๗อ๕อ๐อ์อใอเอไอๆอๅอใอโอๆอ้อ่อ๋อ์อ๐อ๓อ๒อํอ้อๅอๅอไอแอÝอÛอุอิอาอะอฯอาอำอฺอไอ๊อ๎อํอ็อแอÜอฺอึอออศอฦอสอัอีอแอ๑อ๗อ๔อ๏อํอ๊อ฿อÞอÛอุอุอูอูอÞอ่อ๔อ๛อ๚อ๖อ๐อ๊อ๊อๅอ฿อเอใอใอๆอ่อ๋อ๎อ๒อ๖อ๘อ๗อ๔อ๏อ๋อๆอ่อ็อๆอ็อใอไอไอÝอÜอูอีอิอือÛอÝอแอไอ๏อ๓อ๕อ๓อ๑อ๎อ๋อ้อๆอเอÞอฺอีอาอะอำอึอÜอโอ์อ๕อ๙อ๒อ๎อ์อ็อแอเอÜอุอÞอูอึอือูอฺอÛอÞอÞอเอเอแอเอÞอูอึอุอือึอีอำอะอออาอีอึอึอูอ฿อโอ่อๆอÝอือำอออออหอออัอึอๆอ๐อ๓อ๑อ๊อๆอแอÞอูอึอัอิอือÜอแอ๋อ๖อ๚อ๚อ๓อ๎อ่อๅอเอÞอ฿อÜอÜอ฿อๆอ๋อํอ๒อ๖อ๘อ๗อ๖อ๕อ๐อ่อๆอ็อ็อ็อไอเอ฿อÜอุอีอะอฬอหอฮอือ฿อ้อ๓อ๔อ๓อ๎อ๋อ่อใอ฿อÝอ฿อูอูอึอึอึอูอๅอ๏อ๕อ๖อ๔อ๓อ๑อํอ่อไอÝอูอีอึอึอูอÛอ฿อใอ์อ๐อ๐อ์อ็อๆอๅอไอโอใอเอÞอÞอÝอแอใอเอใอใอโอๅอไอๅอโอๆอๅอใอÞอฺอึอาอออศอลอษอะอÝอ็อ๋อ้อๆอๆอแอÝอÛอือิอะอฯอำอูอโอ๐อ๔อ๓อ๒อ์อ้อๅอเอÜอุอีอือÛอเอ็อํอ๏อ๖อ๙อ๗อ๓อ๊อไอ฿อเอÞอÜอฺอÞอแอเอÜอูอึอิอัอิอือÜอแอ็อ๊อ้อ๋อ้อ้อๆอใอเอÞอÛอุอีอำอิอาอำอÛอๆอ๐อ๙อ๘อ๔อ๐อ๋อ๋อ็อโอแอ฿อÛอÜอÜอÞอไอ้อ๒อ๗อ๖อ๐อ์อๆอๆอใอÝอุอึอุอÜอเอ฿อแอๆอ่อ่อ็อไอเอÛอีอำอำอีอือูอือีอึอีอึอÛอเอๅอ็อๆอ็อๆอไอใอเอÜอุอะอฬอฯอีอÛอไอ๒อ๕อ๗อ๔อ๏อ๋อ้อโอÝอÛอึอาอำอูอ฿อๆอ๎อ๒อ๓อ๐อํอๆอ่อๆอ็อไอๆอ็อÛอแอแอÞอฺอีอฯอหอษอสอหอิอโอ๎อ๓อ๒อ๏อ๊อ็อเอแอÜอีอฯอฮอออออฯอÜอ่อ๕อ๙อ๙อ๕อ๒อ๎อ่อใอโอÝอฺอึอีอุอÝอใอ๐อ๙อÿอüอ๔อ๐อ้อๅอๅอๅอไอไอ็อ๋อํอ๑อ๘อüอüอ๙อ๔อ๓อ๏อ๋อ๋อ๋อ๊อ่อ๋อ๊อ๊อ่อ้อ้อ๋อํอ๎อ๏อ๎อํอ๋อ์อ๋อ้อๆอโอÝอฺอาอออสอออึอโอ๏อ๑อ๏อ๋อๆอแอเอÜอุอิอัอิอูอ฿อ์อ๘อþอ๚อ๔อ๓อ๎อ๋อ๊อ่อไอเอไอ่อ฿อ฿อÞอÞอÜอÜอÝอÛอูอÞอใอๅอ็อโอแอแอเอแอแอÞอÛอุอำอัอัอฮอฯอฮอิอÞอๆอ๎อ๓อ๏อ๊อๆอใอแอฺอิอึอะอัอิอือเอ้อ๏อ๖อ๒อ๋อๅอแอÝอฺอำอะอฮอัอำอือÛอไอ่อ๒อ๎อ้อๆอแอใอÝอูอีอีอึอือูอุอึอÜอ฿อÝอÜอÞอเอÜอ฿อเอเอÜอูอุอูอีอัอฯอฮอัอฺอไอ์อ๐อ๎อ๋อ็อโอเอ฿อÜอูอึอือุอÝอ็อ๎อ๕อ๖อ๔อ๑อ๋อๆอโอÜอฺอึอัอำอÞอ฿อÞอÜอฺอุอฺอูอฺอแอใอโอ฿อแอไอ๋อ๊อใอเอÞอÜอÝอÛอือีอะอะอฯอำอÜอไอๆอ๋อ๎อ์อ็อโอÝอึอาอออหอฬอฮอำอเอ๋อ๒อ๗อ๔อ๎อๅอโอÛอือีอาอีอÛอÞอแอ๋อ๓อ๚อ๚อ๖อ๒อ๏อ๊อไอโอโอÞอÞอ฿อแอไอไอโอโอไอ่อ่อ้อ็อโอÞอÝอÞอÛอฺอูอิอะอออออออฬอฯอึอเอ็อ๊อ้อๅอÞอÛอึอิอะอออฯอัอือÝอํอ๔อ๓อ๎อ๊อ็อใอเอÜอึอำอีอูอูอแอแอไอๅอๆอ้อ๎อ๓อ๕อ๕อ๒อ๐อํอ๊อ่อๆอๅอโอแอÞอÝอÜอÛอÜอÝอÝอ฿อÜอÝอโอ่อ๋อ๏อ์อ็อใอ฿อÝอูอุอีอึอุอแอ๊อ๑อ๕อ๔อ๑อ๋อ่อไอเอÞอือำอาอือเอ่อ๒อþอüอ๘อ๒อ๐อํอ้อๆอเอ฿อเอใอๅอ่อํอ๑อ๖อüอ๙อ๖อ๑อํอ์อ๊อ่อๆอไอๆอไอใอโอใอใอแอโอไอ็อ์อ๋อ๊อ้อ็อโอÞอÛอึอฯอฬอศอฦอสอฮอฺอใอ่อ็อๅอ็อไอเอÛอีอะอะอัอิอÛอไอโอไอ็อ๊อ์อ๐อ๕อ๔อ๓อ๑อ์อๆอไอไอโอเอเอ฿อ฿อÞอ฿อÝอÛอÞอเอเอใอ็อๆอ่อๆอๆอใอเอÞอฺอีอัอฯอหอษอหอฮอูอไอ๋อ๎อ๋อ้อๆอไอแอÝอุอิอาอำอีอูอเอ์อ๔อ๚อ๕อํอ็อ฿อเอÞอฺอุอูอÝอใอ๊อ๒อüอ๛อ๘อ๕อ๕อ๓อ๎อ๋อๆอโอเอไอๅอๆอๆอ่อ่อ๊อ๋อํอ๊อ้อ็อไอๆอไอโอเอÝอฺอิอฯอษอษอษอิอโอํอ๒อ๎อ้อๅอเอÝอุอัอัอำอีอือ๎อ๎อ๎อ๒อ๔อ๗อ๚อüอ๛อ๘อ๐อ๋อ่อๅอโอÞอÞอเอ฿อใอแอเอÞอÞอÞอÝอโอๆอๆอๆอไอๆอๅอไอไอแอÛอุอำอะอออสอวอฬอิอๆอ๑อ๓อ๏อ่อๅอÞอฺอือึอัอฮอฯอุอโอ๋อ๔อ๛อ๘อ๓อ๎อๆอแอÞอÜอูอิอีอฺอเอๆอ๎อ๖อüอ๛อ๙อ๑อ้อๆอ฿อÝอÛอÜอÞอ฿อโอเอเอๅอๅอไอใอๅอๆอๅอโอÝอÜอÜอฺอือึอำอัอะอสอวอษอำอÞอ็อํอ๋อๅอโอÞอุอิอฯอฬอฬอสอะอýอ๘อ๚อ๘อ๘อ๘อ๖อ๕อ๔อํอ่อ็อไอ฿อÜอÜอÝอÝอแอๆอํอ๑อ๕อ๗อ๖อ๕อ๑อ์อ่อ็อๅอๆอๅอใอÞอÞอแอเอÝอูอุอึอีอูอ฿อๆอ๋อ๋อ้อ้อๆอแอÜอึอะอษอฤอลอหอึอโอ๏อ๒อ๑อ๎อ๊อไอแอÛอีอะอหอษอศอฬอีอเอ๊อ๖อ๚อ๕อ์อๆอใอ฿อุอีอัอฮอะอาอิอฺอÝอ฿อโอ฿อÝอÜอฺอือิอีอำอิอือเอเอเอÝอÛอÛอือฺอÝอเอๅอ฿อÛอฺอÛอือีอำอะอฮอัอาอ๗อ๊อ๋อ๓อ๕อ๙อ๚อ๕อ๔อ๏อ่อๆอๅอใอ฿อูอิอัอฯอำอือฺอแอ๋อ๑อ๕อ๏อ์อ่อแอฺอึอาอุอีอึอิอำอัอีอึอีอูอÝอ฿อแอโอแอ฿อÝอÝอÝอÞอฺอือุอีอิอุอใอ๋อ๐อ๏อํอ้อไอใอใอแอÛอึอิอัอำอีอุอโอ๏อ๓อ๒อ๎อ็อๅอÞอือึอึอีอึอÜอๅอ์อ๖อ๘อ๗อ๒อ๐อ๊อ็อใอÝอุอฺอÝอ฿อแอแอÞอ฿อเอโอ฿อแอÝอÝอÞอแอแอ฿อÝอÝอฺอึอำอฮอสอหอัอ๘อ่อไอํอ๓อ๓อ๑อ๏อํอ๊อ็อใอ฿อÜอือิอำอิอิอึอÞอๆอ๊อํอ๒อ๑อ๑อ๎อํอํอ้อไอแอÞอโอไอใอใอๅอ็อๅอ่อ่อ๋อ๋อ้อๆอโอโอใอแอ฿อÜอือิอัอฮอฮอฮอำอÝอๆอ๋อ้อ้อๆอ฿อÜอึอำอัอฬอสอหอาอ฿อ้อ๖อ๖อ๑อ์อๅอโอÜอีอาอิอึอุอÛอ฿อ็อ๐อ๕อ๗อ๕อ๒อ้อเอÞอÝอÝอÜอÝอÛอÜอÛอÝอÞอ฿อเอแอไอใอโอเอÞอเอÜอÛอูอีอัอะอฬอสอษอหอýอ๓อ๒อ๒อ๒อ๐อ๏อ์อ์อ็อ฿อเอฺอีอำอาอำอีอูอไอ๎อ๗อüอ๚อ๗อ๐อ๊อๆอโอใอÞอÝอÞอเอๆอ๋อ๎อ๑อ๔อ๖อ๖อ๔อ๐อ์อ๊อๅอ฿อÞอเอ฿อÞอÝอÝอÛอุอึอึอาอิอูอโอ้อ๋อ่อใอ฿อÛอุอิอะอฬอฦอยอยอฦอะอÛอํอ๔อ๏อ๊อใอฺอือิอัอฯอัอิอฺอÞอ้อ๓อ๖อ๕อ๐อํอ็อๆอแอÜอุอุอูอÜอÝอ฿อเอไอ๊อ๏อํอ๋อ่อๅอโอÝอฺอÛอÜอุอีอิอฯอฬอหอฮอะอํอ๊อ้อ๑อ๎อ๎อ๎อ์อ๊อๅอเอÝอÛอึอิอฮอฮอฮอาอูอÞอๆอ๓อ๔อ๑อ๎อ้อๆอโอÜอฺอือัอออออีอุอÜอโอๆอ๊อ้อ็อๆอใอเอÛอือีอิอิอิอำอีอึอึอุอÝอ฿อใอใอๅอไอ็อ๋อ้อๅอโอÞอฺอุอำอัอำอุอๅอ๐อ๕อ๕อ๏อ้อแอÛอือะอออออฮอัอูอ็อ๔อ๚อ๘อ๓อ๏อ๋อๆอแอÞอูอูอÛอ฿อๆอํอ๓อ๖อ๘อ๘อ๖อ๔อ๓อ๏อ่อไอ่อ็อๆอ็อๆอไอไอๅอๅอไอเอแอ๓อ่อ่อ็อ๋อ๎อํอ๊อไอ฿อÝอÛอุอำอออษอฬอัอีอÜอ็อ๒อ๘อ๔อ๏อ๎อ่อไอเอÜอือัอฯอฯอาอูอไอ๎อ๕อ๖อ๕อ๓อ๒อํอ็อโอÜอุอฺอูอุอÛอÞอ฿อแอๆอ่อ๊อ๋อํอ๋อ้อๆอใอโอÞอÛอือาอฮอหอศอลอษอออิอ฿อ่อ่อ็อๅอ฿อุอาอฬอฦอยอมอฦอษอัอÝอ๊อ๑อ๐อ็อใอเอÝอึอัอือÛอÞอๅอ๏อ๕อýอ๛อ๗อ๒อ๏อ๊อใอÜอูอาอฬอออะอิอุอูอฺอÛอÞอÝอÜอ๎อ็อๅอๅอๅอ็อๆอๆอไอโอ฿อฺอือูอฺอึอำอาอÜอแอ่อ๎อ๑อ๏อํอ๊อ๊อ่อไอÞอูอิอออฮอำอฺอโอ๋อ๖อ๕อ๔อ๒อ๐อ๎อ์อๆอÝอีอฯอะอัอิอุอÜอÞอไอ์อ๊อ๊อๆอแอฺอึอิอิอึอือุอูอุอือือึอูอÜอÝอเอเอเอ฿อ฿อÛอุอึอีอัอัอาอึอึอÞอๅอํอ๐อํอ็อๅอโอÜอุอิอีอิอือÝอโอ่อ๑อ๗อ๗อ๏อๆอโอÝอือำอออษอหอฯอำอึอฺอ฿อๅอ็อ๋อ้อํอ๋อ่อ่อ็อ็อ็อๅอใอ฿อÜอูอีอัอฮอฬอัอือÛอโอ่อ๋อ์อ๊อ้อๆอใอแอÞอÛอึอำอะอฯอิอÛอ็อํอ๖อ๗อ๖อํอ่อๅอๅอใอÝอึอฯอฮอะอาอุอÞอโอ๊อ๏อ๏อํอ่อแอÛอือิอึอึอึอีอำอำอิอีอุอฺอÛอÝอ฿อโอแอแอไอเอÝอุอำอาอฯอออิอูอÜอ็อ๐อ๑อ๎อ่อใอÞอฺอุอิอะอาอำอึอÛอใอํอ๒อ๕อ๐อ้อเอÞอÛอูอือำอิอิอฺอ฿อไอ๏อ๓อ๔อ๏อ๊อ๑อ่อ็อ่อ้อ้อ็อใอ฿อ฿อÝอÛอือุอือือำอึอÛอไอํอ๒อ๒อ๑อํอ๊อ่อๅอโอÞอฺอุอิอะอำอุอใอ๎อ๛อüอ๘อ๓อ๏อ๊อ่อโอÞอÝอิอฯอฯอิอูอ฿อ็อ๑อ๕อ๓อ๐อ่อแอฺอะอฬอฬอออออาอีอูอÝอเอๅอไอแอÞอÛอือึอูอือึอือือึอิอิอีอÛอÜอแอไอ็อ่อๅอ็อๆอแอแอÞอÜอฺอฺอุอฺอเอไอ์อ๔อ๔อ๐อ๊อๆอแอÞอÜอูอีอาอะอาอุอÜอๆอ๑อ๓อ๐อํอไอÝอเอ฿อÝอÝอÝอÝอÜอÛอÜอÛอÜอฺอฺอือูอÜอเอไอๆอๆอๆอไอๅอ็อๆอๅอไอโอ฿อÛอÜอÜอÞอๅอ๐อ๗อ๖อ๑อ๎อ๏อ๏อํอ่อไอไอ฿อÛอูอูอÜอใอ๏อ๕อ๚อ๗อ๐อ้อๅอโอÜอูอÝอÝอเอฺอÛอÞอแอใอๆอ๎อ๐อํอๆอ฿อูอุอึอึอุอฺอุอÛอÛอÝอโอๅอๅอใอๅอๆอๅอไอใอโอแอเอโอ฿อÜอฺอÛอ฿อไอ่อ๎อ๐อ๑อํอ๋อ้อแอÝอฺอึอึอีอฺอโอ๋อ๓อ๚อ๕อ๒อ๏อ่อ่อ็อ็อๅอไอโอโอเอÝอ฿อ฿อÝอÞอÜอุอือูอÝอๅอ่อ้อ๊อ่อ็อๅอโอแอ฿อÛอูอีอาอฯอะอีอเอ๏อ๗อ๖อ๓อ๐อํอ๊อๅอใอÞอÜอฺอูอÛอเอํอ๓อ๖อ๖อ๔อ๐อ๏อ๊อๅอโอÝอÜอÛอแอ็อ๐อ๕อþอýอ๙อ๘อ๗อ๔อ์อ็อ็อไอ฿อแอแอไอ็อ๊อํอ๐อ๒อ๓อ๔อ๑อ๋อไอแอเอเอÞอเอÝอÛอูอฺอือือุอ฿อ้อํอ๏อ์อ๋อ้อใอ฿อÝอÝอูอุอÛอÛอÞอ้อ๕อ๙อ๖อ๔อ๐อ๋อ็อไอ้อ่อๆอเอÜอฺอุอÛอÝอเอโอเอใอโอ็อํอ๎อ์อ๊อ้อ็อไอโอโอโอ฿อÞอÜอึอิอาอัอำอือÞอ๊อ๏อ๏อํอ์อ๊อ้อใอ฿อฺอึอาอิอุอÝอ็อ๔อ๘อ๕อ๒อ๐อํอ่อไอเอÛอÛอูอÛอใอ๋อ๏อ๘อ๛อüอ๗อ๒อ๑อ๎อ้อใอÞอÞอÝอÝอเอใอๆอํอ๐อ๔อ๙อ๖อ๑อ๋อ่อ็อ็อ็อๆอๅอใอÞอุอีอึอือูอ฿อ้อํอ๏อํอ๊อ็อใอ฿อÛอึอำอฯอฮอฯอำอแอ๐อ๒อ๒อ๏อ็อไอใอ้อ๋อ้อๆอๅอไอใอๅอๆอ่อ๋อํอ๐อ๓อ๕อ๖อ๖อ๔อ๒อํอ่อใอ฿อไอไอโอไอแอÞอÝอÜอÝอเอๆอ๋อ๐อ๓อ๓อ๑อํอ์อ๋อ็อใอแอÝอูอุอีอือÞอ์อ๔อ๙อ๘อ๕อ๏อ๊อๆอไอแอÞอÜอÜอูอิอฺอโอ๊อ๕อ๘อ๕อ๐อํอ่อๆอโอÝอีอีอิอูอฺอÞอไอ์อ๎อ๎อ๊อๆอ฿อÝอูอึอาอึอือÛอÝอแอโอแอโอโอไอๆอ็อๆอํอ๋อ็อใอเอÝอÝอฺอูอฺอÞอใอ๋อ๔อ๕อ๒อ๐อ๏อ๋อ่อ็อโอใอโอ฿อÝอูอÛอÝอเอๅอ๋อ๐อ๕อ๗อ๕อ๓อ๒อ๊อ็อ็อๅอโอใอไอแอÞอ฿อใอไอๅอๅอ็อ๊อ์อ๋อ็อๅอ๊อ์อ้อใอ฿อÜอฺอึอำอาอฬอฬอออือไอ๔อ๔อํอ็อไอ฿อÛอือัอออหอออำอูอๅอ๓อ๘อ๗อ๑อ์อ่อแอÝอÛอุอีอือูอÝอใอ์อ๒อ๖อ๔อ๑อ๏อ๊อไอแอฺอุอือุอูอูอÜอÞอเอÞอแอแอโอไอใอใอโอÞอ฿อ฿อ฿อÜอีอาอะอะอำอึอใอ๋อ๏อํอ๊อ่อโอÝอุอ็อไอเอÛอุอูอÞอแอๅอ๊อํอ๓อ๘อ๖อ๖อ๔อ๐อํอ็อใอ฿อฺอÝอ฿อแอโอใอไอๅอ็อ์อ๏อ๏อ๐อ๑อ๏อ่อโอโอโอÝอÞอÛอุอึอำอาอัอัอำอุอโอ็อๆอๅอใอ฿อÝอÜอุอะอศอฤอรอวอำอแอ๏อ๖อ๒อํอ็อไอ฿อูอิอฮอหอสอฬอฮอิอÛอๆอ๏อ๏อํอ๎อ๊อแอÛอุอำอฮอฮอัอำอาอีอือุอÜอÝอเอ฿อÝอูอÜอÝอเอÞอฺอีอำอฯอหอษอฬอฯอือโอ็อ่อ็อโอเอÞอเอÞอÞอึอำอีอาอีอึอÛอโอ้อ๏อ๓อ๖อ๕อ๓อ๎อ๋อๅอแอÜอึอฺอÛอÞอโอโอไอ่อ๊อ๐อ๒อ๐อ๋อ๋อ๋อ๋อ๊อไอเอ฿อเอÞอÝอูอิอาอาอาอึอÛอแอๆอ็อๅอๆอใอ฿อูอึอัอออหอฮอีอÜอๆอ๒อ๕อ๐อ์อ็อใอÞอÛอือะอะอฯอาอÜอ้อ๓อ๚อ๚อ๖อ๏อ้อ่อๆอใอ฿อÞอเอโอใอไอ็อ๋อ๎อ๑อ๒อ๒อ๐อ๊อ็อแอÜอÛอÞอเอแอเอเอÞอÝอเอไอ่อ้อๆอๅอๅอแอ฿อ฿อÛอือฺอูอุอึอึอิอูอÜอ฿อๆอํอ๕อ๚อ๖อ๒อ๎อ้อโอใอเอÝอÛอÜอÞอÜอÛอเอไอ๊อ๏อ๓อ๖อ๕อ๒อํอ็อโอเอÞอÜอฺอุอุอฺอือิอัอัอิอุอเอ็อ๊อ๋อ๊อๅอเอฺอีอฯอสอรอพอฝอภอฦอัอไอ๐อ๏อ่อเอÛอึอาอฮอษอฤอฦอฯอÝอ๊อ๓อ๓อํอ๊อๅอเอÜอÛอุอาอฯอสอศอฬอัอือแอ์อ๑อ๒อํอใอÝอÛอือัอฯอออออฯอำอิอุอุอ฿อโอ฿อแอÞอÞอ฿อÞอÞอÜอÛอีอÜอ฿อÜอึอำอัอึอÛอๆอ๖อüอ๚อ๘อ๕อ๑อ๑อํอ๊อๅอเอฺอีอำอำอÜอโอ็อ์อ๒อ๖อ๕อ๔อ๒อ๎อ๋อๆอโอแอ฿อÝอุอÛอือิอือือÜอเอโอๅอ่อ่อๆอโอÝอÝอÝอุอิอะอฬอศอลอฤอฦอำอÛอไอ์อํอ่อใอ฿อฺอำอออศอสอสอหอัอÝอ้อ๗อ๔อํอ่อแอÞอÜอึอีอิอึอือÜอๆอ๎อ๕อ๚อ๓อ๏อ์อๆอไอโอ฿อ฿อโอโอแอใอๅอ็อ๊อ๋อ้อ๊อ๋อ๋อ่อ็อ้อ็อๅอใอเอัอึอีอาอะอฮอหอฮอฮอึอโอ๊อ๓อ๓อ๑อ๏อ่อใอ฿อÝอือีอัอฯอฮอฯอาอึอ฿อ๎อ๚อ๘อ๓อ๐อ๊อๆอไอโอÝอือีอุอÛอÝอÛอÞอเอใอ๐อ๐อ์อ็อแอÛอูอึอึอีอีอำอัอหอวอฤอวอฬอำอÝอไอ็อๆอแอÜอือำอฯอหอศอวอฦอหอือใอ์อ๐อ์อๆอโอ฿อÝอือัอออหอษอหอะอูอแอ๎อ๕อ๓อ๎อ้อๅอÛอุอิอัอำอูอÜอÝอแอ่อ์อ๏อํอ่อใอÞอÛอุอือือึอุอุอฮอีอีอาอฬอศอษอษอฮอึอ฿อๆอ๋อ๋อ้อ้อ้อ้อๆอใอ฿อÜอูอึอาอัอีอÛอๆอ๐อ๖อ๕อ๐อ๋อ๋อ็อไอแอÞอฺอึอำอึอÜอใอ๊อ๑อ๕อ๓อ๑อ๊อใอแอูอิอัอาอาอิอีอีอฺอโอ่อ้อๆอไอแอÝอÛอÝอÜอÝอÜอฺอือึอำอะอออฯอำอือูอเอ็อ่อๅอไอ฿อฺอึอัอฮอออฮอฮอิอÜอๅอ๏อ๒อ๎อ่อใอ฿อฺอิอฯอฬอฮอำอือÞอๆอ๊อ๒อ์อโอÝอÝอือาอสอะอาอะอะอฺอุอูอึอือึอีอำอือึอุอÛอ฿อไอ้อ๊อ๋อ์อ๋อ็อ่อÞอฺอำอออฦอภอพอฝอฟอมอฤอฮอึอฺอฺอุอูอุอะอฬอวอฦอษอออือใอ์อ๓อ๒อ๎อ็อแอ฿อเอๅอ๑อþอฮýอ๘อ๐อ๋อ่อๅอเอÞอÜอ฿อ่อ์อ๘อฮฮþอ๙อ๓อ๐อํอ๊อ็อไอไอโอ฿อÜอฺอ฿อÞอฺอีอัอออฬอหอสอฬอาอฺอแอ่อ๋อ๐อ๖อ๗อ๐อํอ็อไอÞอูอือุอุอูอือิอำอะอัอาอือูอ฿อแอÞอ฿อÞอฯอÛอÞอÝอูอุอุอÜอÞอเอÞอÞอ฿อ฿อ฿อ฿อÝอฺอือีอำอะอฯอฯอีอÜอแอ็อ์อ๊อ๋อ่อๆอๅอใอเอ฿อฺอีอาอะอฮอฮอัอึอแอ่อํอ๑อ์อๆอแอฺอุอึอิอิอาอาอำอำอาอำอุอÜอÛอÛอÞอโอÞอÜอÞอ฿อÞอÜอฺอุอึอือีอือÜอไอ่อ็อๅอใอแอÞอÞอÜอูอีอือึอฺอ฿อ้อ๐อ๏อ์อ้อ็อไอโอÝอูอุอีอาอีอือÜอไอ์อ๓อ๔อ๏อ้อไอเอÞอÜอÝอÞอเอๅอ้อฮอีอำอิอาอฯอออฯอฯอิอÞอ่อํอ์อํอ์อ๋อ่อๅอ฿อือัอฯอหอศอหอฮอิอÝอํอ๕อ๒อ๎อ๊อๆอแอÜอือิอัอฮอฯอึอÞอ็อ๖อ๘อ๕อ๎อ็อเอÜอือิอำอำอูอÞอ้อ๏อ๘อ๗อ๔อ๑อ๋อๆอโอÝอฺอือูอือึอาอิอิอำอือÜอแอๅอ่อ็อ้อๆอเอแอ฿อูอือีอฮอสอวอษอออาอโอ๎อ๑อ๎อ๋อ่อโอÝอุอิอฯอะอฯอาอึอÝอ่อ๔อ๖อ๒อ๋อๅอโอÜอูอึอิอึอูอ฿อๅอสอือึอือิอาอำอึอูอ฿อ็อ๊อ้อ่อ็อๅอใอเอฺอึอำอัอออฬอฮอีอÞอโอ๊อํอ๋อ๊อ็อโอ฿อูอาอออษอวอวอษอิอๅอํอ๒อ์อๆอเอÝอฺอิอฯอหอสอฬอฮอัอÝอ้อํอ๕อ๒อ๏อ๊อๆอ่อไอเอÞอÛอÞอÜอÛอฺอฺอÝอÜอ฿อเอÞอเอแอแอแอÝอÛอุอีอาอฮอสอลอยอภอภอลอะอ฿อ๊อ๋อ้อๅอ฿อือำอฯอศอลอรอวอำอÞอํอ๔อ๒อ๋อๆอ฿อÛอือำอัอฮอัอีอÛอเอีอีอีอÝอÞอÝอเอÝอÞอ฿อÞอÝอุอำอือุอือือือือีอำอาอัอาอือÜอใอ็อๆอ่อๆอไอไอแอเอÝอฺอึอาอัอฮอาอุอแอ๋อ๑อ๑อ๏อ๋อ็อไอเอÛอือิอะอฮอึอ฿อ๋อ๓อ๓อํอ๊อ็อ฿อÛอุอาอออสอออะอีอือฺอฺอÛอÝอเอÛอีอำอฯอฮอฬอออัอะอัอีอะอออฯอฯอัอือÜอÞอÝอÝอฺอุอิอาอำอัอำอีอีอูอแอ้อ้อ็อๆอใอแอÝอุอึอือีอำอฯอาอึอฯอาอฯอัอีอุอÞอÞอÜอ฿อÞอฺอฺอุอึอือึอุอูอือึอูอÛอ฿อโอๅอๅอไอโอโอแอแอเอ฿อ฿อÝอีอะอษอวอลอฦอหอุอไอํอ๏อ๊อๆอๅอแอÝอุอิอาอะอออฯอือโอ๊อ๓อ๓อ๏อํอ่อไอใอÝอุอีอิอิอิอูอโอ่อ๐อ๖อ๕อ๒อ๎อๅอฺอาอฬอฬอออะอัอีอือึอÛอÝอÞอแอÞอÞอÞอÝอÜอฺอูอูอือึอำอออฯอาอุอÝอไอ้อ์อ้อๆอโอ฿อเอÛอูอิอัอัอาอฺอหอฮอะอฯอฮอัอือฺอÝอฺอÝอโอใอใอโอแอÜอÜอÛอูอือูอÛอฺอÛอฺอูอฺอÝอÜอÝอ฿อÜอฺอุอึอัอัอฮอออษอฦอะอือÞอใอเอ฿อÝอÝอฺอีอึอำอะอะอัอีอุอๆอ๎อ๑อ๋อ๋อ๊อไอÝอฺอฺอึอำอาอิอึอÝอๆอ๎อ๔อ๑อ์อ่อ้อแอÜอีอำอัอออัอัอุอÞอโอไอๆอ่อๆอÞอÞอÜอฺอฺอÛอÝอÛอุอีอาอิอำอิอ฿อใอโอใอไอใอโอแอÞอÛอฺอูอีอาอำอีอÝอใอ๓อ๓อ๐อ๑อ๏อ๊อ่อใอ฿อึอิอาอัอัอัอำอึอึอึอÛอ฿อเอแอใอๅอใอแอเอูอูอุอุอีอัอฬอวอฦอรอฟอฝอรอิอ฿อไอ่อใอ฿อÜอฺอีอฯอฬอษอศอสอออฯอึอแอ่อํอ่อใอÜอูอิอิอัอฯอฬอสอออัอุอแอ้อ๏อ้อใอแอฺอำอำอะอฬอสอษอออัอำอีอูอÜอแอเอÞอีอะอฮอฮอะอฯอฯอัอะอัอะอำอิอึอุอุอูอฺอูอÜอÝอÛอูอีอิอำอะอฬอฯอฺอแอ๕อ๗อ๖อ๓อ๕อ๑อ๋อ่อใอ฿อÛอุอิอาอำอุอÝอÞอโอๆอํอ๓อ๒อ๓อ๐อ้อใอÞอ฿อÝอÛอÛอÞอฺอีอำอออหอฬอฮอะอิอุอÛอÞอเอแอÝอÜอูอึอำอฯอสอวอฦอรอยอสอีอโอ๎อ๊อๆอโอÝอือิอฯอหอษอวอสอำอเอ๋อ๔อ๖อํอ็อ็อใอÞอฺอีอะอาอีอฺอÞอโอ็อ์อ๏อํอ้อ็อเอฺอีอิอำอาอะอะอฮอหอษอศอหอิอิอีอึอุอฺอุอุอุอือำอฯอะอฯอฯอะอึอÜอ๗อ๐อํอ๏อํอ๏อ๋อ่อแอÝอฺอือีอะอออัอีอÛอๅอ๒อ๘อ๚อ๖อ๏อ๋อ้อๅอใอเอÜอึอือÜอÞอ฿อโอ่อ๏อ๐อ๒อ๓อ๒อํอ้อๅอเอโอเอÞอÝอÛอฺอึอำอฯอฮอัอือไอ๊อํอ์อ๊อไอ฿อÜอุอีอัอออศอลอวอหอีอ่อ๑อ๐อํอ็อโอ฿อÛอุอาอออออออิอ฿อ๋อ๔อ๕อ๔อ๏อ๋อ๊อๆอโอÝอÞอÛอฺอูอฺอÜอ฿อๆอ่อๅอๅอไอใอโอเอÜอูอฯอออออออฬอสอวอวอษอฮอำอ๔อ๎อ๎อ์อ์อ๋อ๊อๅอโอเอุอิอัอฮอฯอาอÛอใอ์อ๕อ๛อ๙อ๔อ๎อ๋อๅอÝอูอีอาอฯอะอำอูอ฿อๅอ้อ๏อ๑อ๒อ๒อ๏อ๊อใอโอÝอูอึอือือีอิอาอัอะอฮอาอุอ฿อโอๆอๆอๅอใอแอÛอิอฯอสอฦอรอลอฯอÝอ๑อ๘อ๗อ๒อ๋อๅอเอÞอูอีอะอออออัอุอโอ๏อ๚อ๚อ๗อํอ็อๅอโอÝอฺอือือฺอÝอ฿อไอ๋อ๎อํอํอ๊อไอแอÛอุอึอิอำอำอัอฮอสอษอฦอรอฦอฬอุอ๔อ๊อ๋อ็อๅอๆอๅอโอเอÜอือฯอฬอศอฬอะอิอโอ๎อ๔อ๑อ๐อ๐อ๋อ็อเอÜอÜอิอฯอฯอัอึอÝอโอ๊อ๑อ๖อ๘อ๒อ๎อํอ๎อ๋อไอÝอูอือีอือฺอÜอฺอÜอฺอÛอÞอเอไอ็อ็อใอ฿อÜอÞอÜอูอุอีอัอออสอออิอโอ๋อ๐อ๎อ้อไอเอÝอุอำอฮอสอสอฬอึอแอ๏อ๖อ๐อํอ่อๆอโอÝอือีอาอฯอฮอัอือๅอ์อ๒อ๒อํอ็อแอฺอาอออศอลอลอศอหอออะอิอุอูอือุอÛอ๐อ้อ่อ่อ็อไอไอเอ฿อÛอึอำอฮอหอวอลอฮอุอแอ๊อ๏อ๒อ๒อ์อ็อๆอ฿อÛอุอฯอออะอิอฺอ฿อ้อ๐อ๕อ๓อ๎อํอ์อ่อ็อโอÜอุอูอÜอÞอÞอเอๅอ๊อํอ๒อ๑อ๏อ๊อ่อๆอโอ฿อÞอÜอูอีอาอฮอฮอฬอัอูอ฿อ็อ์อ๎อ์อ็อใอ฿อูอิอฯอศอลอษอฮอูอๅอ๐อ๒อ๐อํอๆอโอโอÜอือาอออะอึอแอ์อ๔อ๙อ๖อ๑อ๎อ้อไอแอÞอÛอÛอÛอ฿อแอๅอ้อ๐อ๓อ๔อ๒อ๐อ๊อ่อ๊อ่อๆอๅอไอเอÝอÜอุอึอะอสอฦอรอมอภอฦอาอÞอ๋อ๐อ๎อ๊อ่อไอ฿อฺอือำอฬอวอฦอหอาอÛอ้อ๑อ๗อ๖อ๒อ๎อ้อไอเอ฿อÜอÜอÜอÛอÛอÝอแอๆอํอ๐อ๔อ๑อ์อ่อไอโอÞอÞอÝอÜอุอึอาอาอออหอฮอัอูอใอๆอไอโอ฿อูอึอัอสอฦอภอฝอภอฤอะอÜอ๋อ์อ่อไอแอฺอูอำอฬอศอฦอลอษอัอ฿อ์อ๒อ๎อ้อๆอใอÛอือิอัอำอึอุอฺอÝอใอ๊อ์อํอ๊อ๊อ่อแอๆอใอใอใอเอÞอÝอูอือีอัอออษอวอลอฦอออุอใอ๊อ่อ็อ็อๅอแอÝอุอำอฯอสอษอศอสอิอใอ๕อ๚อ๘อ๓อ๏อ๊อ้อ้อ่อไอÞอูอาอำอึอÛอไอ์อ๓อ๗อ๔อ๑อํอๆอ฿อูอือือฺอฺอÜอÜอÜอุอÜอÛอÞอโอโอโอใอแอ฿อÞอÜอฺอิอะอออลอพอฟอยอฯอÜอ้อ๊อๆอใอÞอฺอุอีอฯอฮอฬอสอสอฯอูอๆอ๊อ๊อๅอใอÜอุอีอะอหอษอษอษอฮอาอีอเอๅอ็อ็อโอฺอาอๅอเอแอÝอÞอÛอฺอูอือาอัอหอวอฦอวอศอฯอÜอ็อ๊อ๊อ๊อๆอเอÝอÛอือิอฮอหอศอวอวอฯอุอๅอ๒อ๖อ๔อ๎อ๋อ็อโอ฿อÝอูอีอาอาอูอÝอ้อ๔อ๚อ๘อ๒อ๏อํอ่อๆอเอÛอฺอÜอเอไอ็อ๋อ๏อ๖อ๚อ๘อ๕อ๐อ๊อไอแอÞอÝอÝอÝอูอึอฺอÜอ฿อเอโอ่อ๊อ็อใอไอแอ฿อÜอฺอีอฯอสอลอฤอรอฦอีอ่อํอ์อ็อไอแอุอือัอออษอสอสอฮอือๅอ๒อ๒อ๎อ๊อ๊อไอเอโอÞอÝอÛอูอือีอำอิอัอฮอฬอหอลอมอพอมอหอือๅอ่อ็อไอเอฺอิอฬอหอสอฦอลอยอฤอฮอฺอ่อ๐อ๏อ๊อใอเอแอÝอูอึอฮอษอษอฬอิอÛอโอ้อ๓อ๒อ๐อ๊อ่อโอÜอุอาอะอาอิอำอÛอ฿อใอไอ่อ๋อ๋อ่อโอÞอฺอำอาอีอุอือฺอุอือิอุอ฿อไอๆอๆอ็อใอแอ฿อÜอุอัอสอลอมอมอรอสอูอ้อํอ้อไอแอÛอือาอหอษอวอศอฬอิอูอ็อ๓อ๕อ๑อํอ้อใอแอไอๆอๅอเอÝอÜอÝอ฿อÞอÞอ฿อ฿อเอเอเอโอๆอๆอไอๅอๅอๅอไอเอÜอÛอีอฮอษอฤอภอยอรอสอีอๅอ๋อ๊อ้อ็อโอ฿อÜอือิอฯอหอษอหอัอÜอ๋อ๒อ๓อ๐อ๊อๆอเอÛอุอีอฮอสอหอออัอึอÛอ็อ้อ่อใอใอแอÛอัอฬอษอวอสอหอฮอฯอะอัอิอือือ฿อแอ฿อÛอÜอÞอ฿อือิอัอฯอออออาอึอุอÛอแอๆอๅอไอโอÜอูอึอฯอฯอฬอสอฬอัอือไอํอ๑อ๎อ๊อใอÝอูอใอใอโอแอ฿อเอเอÞอ฿อÜอโอ่อ่อๅอไอ๊อ็อๆอไอโอๅอๆอไอโอ฿อีอาอัอฬอศอลอวอสอฮอีอใอ์อ๏อํอ๊อๆอเอุอาอะอหอวอฤอภอฦอฬอุอโอ๋อ๐อ๎อ้อๅอเอฺอึอฯอฬอฬอาอÝอๆอ์อ๒อ๐อ๏อ์อ้อไอ฿อฺอูอือุอฺอูอÜอÜอÝอแอ็อ่อ็อๅอโอÞอÜอÜอÜอฺอึอำอฮอวอฤอมอมอรอศอีอÝอๅอ่อไอ฿อือะอหอฦอยอภอฝอมอศอะอโอ์อํอ์อๅอ฿อฺอะอโอÞอÛอÜอÜอÜอูอุอึอ฿อ็อ็อๆอ่อ้อ์อ๋อ้อๅอแอแอเอแอเอ฿อÞอÝอÛอุอำอาอิอือÜอแอๆอๆอไอ฿อÜอÞอÛอีอะอฬอวอยอภอมอลอฯอÞอ่อ๊อ้อเอูอึอะอหอษอฦอวอษอฯอÜอๆอ๋อ๎อ์อ้อโอเอÞอฺอีอิอีอือูอÛอÞอโอๅอ่อํอ์อ่อแอÞอÜอÝอÛอูอือีอำอำอัอฮอฬอฮอัอึอÜอแอใอโอแอÛอิอฮอษอลอลอฦอวอหอำอฺอโอๆอ่อๆอเอÜอุอะอÞอÞอÛอÜอฺอูอุอูอูอÝอแอโอๆอ๋อํอ๎อํอ๋อ็อโอใอ฿อูอÛอฺอุอีอัอฮอสอศอสอฮอีอÛอแอไอๅอโอÞอÝอุอิอัอฮอฦอยอยอยอสอีอโอ้อๆอโอแอÝอูอาอฮอหอฦอฦอษอออูอ็อ๐อ๑อ๋อ็อเอÞอูอิอาอัอาอำอือÛอโอ๋อ๏อ๐อ๏อ์อ่อใอโอเอÜอูอÛอÛอÞอÞอใอๆอๆอ่อ่อๆอไอไอโอแอÞอÞอÜอูอีอะอหอศอฦอฦอษอีอÞอ็อๆอๆอไอÝอุอำอฮอ฿อÜอÝอูอึอุอÛอ฿อโอใอ่อ๋อ๐อ๒อ๒อ๏อ้อไอแอÝอÝอÜอูอูอฺอÛอฺอÛอฺอÛอÞอÝอแอÞอเอ฿อโอแอแอเอÞอฺอีอาอฮอสอฤอภอพอสอุอๆอ๋อ้อ็อใอÝอือิอฯอหอฦอฤอศอะอเอ๎อ๒อ๏อ๊อ่อใอÝอÛอึอาอฯอษอฬอึอไอ๒อ๙อ๘อ๓อํอ่อโอ฿อ฿อÜอÛอÛอÜอÝอเอเอใอ่อ๋อ๐อ๋อ็อใอเอÞอÜอÛอฺอÛอือิอัอหอลอยอยอฤอะอุอไอ้อ๊อๅอเอÜอุอาอฯอึอึอิอะอออศอฬอฯอิอูอÝอๅอํอ๐อํอๆอโอใอเอือฯอสอหอสอษอออาอีอฺอÝอ฿อ฿อเอÞอูอิอิอิอำอาอะอะอะอออษอษอฬอหอะอาอฺอฺอฺอÛอÜอุอึอิอัอออฬอฮอฮอัอูอ฿อๅอ์อ่อแอÝอูอฺอึอออวอฤอศอฯอีอÝอๆอ๊อ๊อ็อใอÞอีอัอฬอศอลอฤอลอศอสอัอือÝอไอแอ฿อÛอึอาอัอัอฯอาอาอะอะอะอัอออสอฮอึอฺอÝอÝอÞอÜอÛอฺอือำอำอัอิอิอิอำอึอÜอใอํอ๕อ๕อ๒อ๏อ์อ๋อๆอโอเอÜอูอำอฮอออะอำอึอือฺอแอๆอ็อ็อไอ฿อูอีอาอาอีอำอัอฮอออหอศอฤอฤอฦอฬอิอÜอÞอÝอÝอูอำอัอฮอษอฦอยอฝอพอลอำอÝอใอไอใอเอÛอีอฯอศอลอรอฦอสอีอเอํอํอ๊อๆอเอÝอีอีอิอะอฮอะอีอฺอÝอเอๆอ้อ๋อ๎อ๋อ้อๆอÝอฺอุอีอำอึอิอำอะอฮอออสอศอศอฬอาอÜอแอโอÞอฺอือิอะอาอหอฯอออสอษอฮอัอำอÛอไอ้อ๋อ๋อ้อๆอแอÞอฺอิอัอออสอศอษอหอิอÜอโอ้อ๊อ๊อ่อโอÜอีอฮอหอวอรอรอลอวอษอฬอัอำอุอุอือีอาอำอัอฯอาอิอำอะอฮอฯอออัอึอุอÜอÜอÞอเอเอเอÜอฺอุอิอาอัอาอิอีอูอแอ้อ๊อ๊อๆอแอ฿อÜอูอึอำอฯอฬอสอษอฬอำอÛอใอๆอๆอ่อโอือาอีอิอฬอสอฬอออะอีอึอือุอุอูอุอฺอือือือือีอิอำอวอฬอหอศอสอหอออาอือ฿อ้อ๊อๅอใอๅอไอÝอÛอฺอึอฯอฬอฮอหอหอฬอำอÜอๅอ้อ์อ้อโอเอÞอุอุอาอออศอฦอวอสอฯอึอÞอใอไอโอเอุอีอัอำอำอัอาอัอัอะอะอออฯอาอิอÜอแอแอÞอÝอÜอูอุอีอำอะอาอำอัอัอุอแอ็อ้อ้อๅอไอแอÜอÛอิอฮอหอษอหอออิอเอ๊อ์อ่อไอแอÞอÝอุอำอฮอฬอสอออฮอำอือฺอÛอุอฺอุอึอีอิอีอำอิอิอัอฯอวอษอหอวอวอษอวอฬอีอๅอ๏อํอ์อๆอไอๅอÝอูอือะอสอษอวอษอหอัอÞอ้อ๒อ๎อ้อ็อๆอแอÜอือัอฮอฬอฮอะอิอุอÝอเอๅอ้อ๋อํอๅอÝอือือึอีอำอิอาอะอฯอะอะอฯอำอีอฺอÜอÜอÜอÛอุอีอฯอออษอลอฤอภอภอษอึอไอ้อ่อไอÞอÛอุอิอัอสอลอยอฤอสอะอÛอ้อ๒อ๏อ่อใอเอูอำอัอัอฯอฮอะอิอฺอ฿อ็อ้อ่อ๊อๆอโอ฿อฺอึอิอิอำอัอะอฯอสอสอออฮอหอสอฬอึอÝอเอใอไอแอ฿อ฿อÜอือัอออฬอสอสอสอสอฯอÜอไอ๋อ์อ้อ่อๅอÞอÝอฺอีอฮอษอวอศอฮอือÜอเอใอ๋อ๊อๅอใอแอÝอÜอ฿อ฿อโอโอเอเอใอโอใอ้อํอ๊อใอÝอฺอือึอือือำอฯอสอวอฦอฤอยอลอะอูอโอโอโอÝอุอิอำอะอฬอฦอภอยอมอฦอาอÞอ๎อํอ็อโอÝอÛอูอาอออฬอษอหอออูอๅอ๐อ๕อ๏อ๋อ็อÞอุอิอัอาอำอิอีอึอูอÛอฦอฤอมอลอวอศอัอฺอๆอ์อ์อ๋อไอÝอÛอÛอือิอัอษอฤอรอฟอพอลอฺอ๎อ๓อ๐อ๋อ่อๅอโอÝอฺอึอำอฮอวอสอะอฺอไอ์อ๏อ๓อ๏อ๋อ้อใอ฿อ฿อฺอูอือฺอÝอเอไอ็อ๊อ๏อ์อ๊อ็อใอแอ฿อÜอุอือำอีอึอุอึอือือฺอแอไอใอใอโอ฿อÛอือิอัอออวอยอฟอพอภอสอึอ่อ๎อ๋อไอแอÝอุอัอฬอษอลอรอหอึอโอ๎อ๒อ์อ็อใอแอÜอูอิอฯอออาอูอÝอโอ็อฤอรอยอยอฤอลอฬอฺอไอ่อ้อๆอใอÜอุอีอาอออศอฤอภอฝอผอมอศอะอÞอไอ่อ็อๅอแอÝอึอัอฯอฬอษอฦอลอฦอฬอีอÞอ้อ๎อ๊อใอÞอÛอึอฮอหอัอำอฬอศอหอาอุอÜอ฿อแอ฿อÝอึอฮอออำอออหอสอสอหอฬอฬอออฮอาอึอÝอโอใอแอ฿อÜอÛอือัอฮอสอฤอพอฟอฤอฯอุอ่อ๊อ่อไอเอÝอูอัอศอฤอมอฟอรอสอÛอ์อ๒อ๋อ่อไอÛอึอำอำอาอฮอัอึอÜอๆอ๎อพอรอวอศอศอหอะอือ฿อใอโอแอ฿อือึอีอะอสอวอรอยอฝอนอผอฤอึอเอๆอไอโอเอÝอูอือีอฯอสอฦอรอวอฬอือแอ๋อ๐อ๋อ่อๅอเอฺอึอฮอวอวอลอฦอหอัอÛอใอ่อ๋อ้อๅอใอÛอีอฯอศอฤอรอศอฬอฮอฮอัอือÞอÞอÝอฺอือิอาอำอีอำอัอฯอออฬอหอสอลอสอัอิอูอÝอÜอÞอÛอูอีอฯอฬอหอวอฤอรอฦอัอูอๅอ่อๅอแอÜอิอะอฮอสอฦอฦอศอฮอÛอๆอมอษอศอวอศอฮอาอุอÛอ฿อเอ฿อ฿อÜอÜอุอิอฯอฬอศอลอยอพอมอวอาอÜอแอ่อใอ฿อูอีอิอฯอสอมอผอบอฟอฤอฬอือใอ้อๆอใอโอÞอือำอฯอฬอษอหอาอÜอแอ้อ๐อ๎อ๊อๆอÝอฺอึอิอัอศอฦอฤอษอฮอฯอัอีอุอฺอฺอูอูอÝอือิอาอออฬอัอัอะอหอฬอออออออาอึอือÛอÛอÝอÜอูอึอิอัอออษอวอลอฮอฺอเอ็อๅอโอโอÞอูอึอัอฬอวอฤอวอหอาอÜอฯอาอิอูอฺอÛอูอือีอิอะอฯอฮอฯอัอออฬอหอสอศอษอษอฦอหอฮอิอือุอือุอึอิอาอัอัอฮอหอหอสอศอวอศอฮอูอแอใอไอโอ฿อฺอีอฮอลอภอฝอฟอรอวอำอแอ่อ๊อ็อแอฺอาอหอศอรอยอมอฤอศอฬอัอำอือÝอเอูอำอออหอหอสอสอฬอฬอสอหอหอสอฬอฬอะอาอึอือูอÝอÛอุอึอัอหอฦอฤอฤอษอฮอÛอ็อ้อๆอใอเอÛอีอัอฯอฬอวอมอฤอฮอือ็อ๒อ๊อ๑อ๑อ์อ้อ่อๅอไอโอเอÝอฺอุอฺอูอือุอูอุอฺอฺอÞอเอโอโอแอเอÞอÛอีอุอือิอะอฯอฬอฦอยอยอฝอปอยอาอÜอโอไอแอ฿อือาอออศอรอพอนอปอภอลอูอ้อํอ้อโอเอฺอิอะอหอฬอฮอฮอำอือ฿อ๊อ๐อํอ้อใอÞอÜอÛอÛอือีอิอีอูอูอูอฺอ฿อโอไอๅอไอโอเอÝอÜอึอึอีอำอฯอสอฤอฟอพอยอษอีอ฿อใอ฿อÝอูอาอฯอออวอภอปอนอถอฟอัอไอาอ฿อแอใอไอไอแอÝอÛอุอฯอสอฦอฤอรอฦอศอฬอออัอะอีอูอูอือือาอะอฮอฮอิอูอิอัอัอะอะอออสอษอฮอาอูอÜอÝอÞอÞอÜอูอฺอุอือิอฮอฬอฯอาอีอÞอ็อ๋อ่อ่อ่อแอÜอูอือาอออสอศอออีอ฿อ่อํอ๊อ่อÛอำอออวอฤอยอมอฤอษอออฯอำอือุอูอุอีอำอฯอฬอหอหอออฮอฯอฮอะอาอัอาอำอุอุอูอÛอุอูอÜอฺอุอุอิอะอฯอาอีอฺอเอๆอํอํอ๋อ็อๅอโอ฿อÜอฺอีอิอัอฮอสอลอลอวอฬอะอีอฺอÝอแอ฿อฺอำอฯอหอศอศอศอหอฬอออฯอฯอาอัอำอีอีอึอึอือึอำอึอิอือีอะอหอวอหอออัอึอฺอ฿อไอๅอโอๅอไอโอฺอฮอหอศอฦอรอลอึอๅอ๐อํอ่อใอÝอึอำอัอาอะอฬอฬอฯอูอใอ้อํอํอ๋อ่อไอใอโอÞอฺอฺอÜอÜอÛอูอุอุอุอÜอÝอเอโอแอÞอÜอฺอูอีอัอออหอฦอมอฝอฟอยอษอÜอ้อ๏อ็อ็อๆอๅอใอเอÛอีอฯอฮอหอวอวอสอะอฺอใอ้อ๎อ์อ์อ้อๅอแอÝอือีอึอิอือึอึอิอึอุอูอÛอ฿อโอไอโอเอ฿อเอแอฺอิอึอึอำอัอาอฯอฯอาอึอÛอๅอ๋อ้อไอÞอÛอือำอฯอออหอฬอะอฺอแอ๋อ๐อํอ็อไอÞอุอีอะอฯอฬอออำอูอเอ๊อ๏อ๒อ๏อ๋อ็อใอÞอÛอุอือุอÛอÝอโอใอ่อ๊อ์อ๋อ็อๅอแอเอÛอำอีอีอาอาอออษอลอมอฤอยอฦอฮอึอ฿อ๋อๆอแอ฿อ฿อÝอือิอัอฬอวอยอภอมอลอออือแอ้อ๎อ์อ๊อๆอโอÞอฺอุอำอะอฯอะอิอำอือฺอÝอใอ่อ๋อ๊อๆอเอÜอูอือึอึอิอิอิอาอฯอฮอะอออฯอำอือÛอูอือึอะอออออสอฦอมอฝอนอฝอฬอÝอใอๅอไอเอÛอีอาอฮอวอฤอภอพอมอลอาอ่อ๐อํอ็อแอ฿อฺอาอฯอัอออออัอีอูอÞอ่อํอํอ๋อ่อๆอÞอุอึอีอีอือฺอฺอÜอฺอÜอฺอฺอเอโอเอ฿อเอๆอ๊อ้อๅอโอ฿อึอัอออสอศอลอมอรอลอออÝอ๋อ๐อํอ์อ๊อๅอÜอือิอัอะอออัอาอีอÛอๅอ๊อํอ๎อ์อ่อโอÝอุอิอีอีอีอิอิอำอะอฮอษอลอรอฤอวอหอฯอัอฮอออัอะอฮอหอษอศอลอลอฤอยอฦอหอีอÜอÛอฺอฺอือิอำอฮอลอมอยอศอะอีอÞอๅอ๊อๆอเอÞอฺอึอิอฮอสอฬอาอÝอแอๆอ๎อ๎อ์อๆอใอโอÝอุอิอำอาอิอึอูอÜอÝอÛอÜอÞอ฿อÜอÞอÝอÜอๆอโอแอเอÞอฺอิอฯอออศอลอฤอลอฦอวอฬอÜอํอ๐อํอ็อๅอเอÞอูอือะอออฬอฬอออฮอีอÞอไอํอ๏อ๎อ้อๅอเอÛอÜอูอีอิอำอีอีอือิอูอÛอ฿อเอ฿อÞอÜอฺอึอิอาอาอัอฮอสอษอฦอมอฟอพอศอิอÜอใอโอÜอุอำอออษอฤอภอฟอฝอพอรอะอÜอ้อ๊อๆอ฿อÛอีอฯอฮอษอษอสอออึอฺอเอ็อ๎อํอ็อใอ฿อÞอÛอือัอฮอฯอาอึอือือÛอÞอเอแอเอÞอัอฦอๆอิอีอีอิอิอาอฯอหอสอศอลอฦอลอวอฬอิอÛอเอๆอไอโอÛอุอือิอฬอศอฦอมอฝอภอรอษอาอÜอๅอใอÝอุอำอออศอวอรอภอฟอภอมอลอวอษอฬอัอีอิอฯอฬอวอมอภอยอฤอรอฦอฦอรอยอลอศอสอฮอฮอะอาอุอีอาอะอหอสอฦอรอฤอฦอสอฮอือÜอโอโอ฿อÞอÜอือิอัอหอศอฦอลอวอษอาอ฿อ์อ์อๆอไอแอฺอีอัอฮอัอาอาอาอำอิอฺอÛอÞอÞอ฿อÞอÛอึอ์อใอแอเอÞอÛอือำอะอฮอหอศอฦอศอออีอแอ้อ้อใอแอÝอ฿อือำอฬอศอลอฤอฦอษอฮอือโอ๋อ๓อ๏อ๋อ็อใอ฿อÛอีอฯอฮอหอออำอÜอไอ้อ๑อ๎อ๋อ็อโอแอ฿อุอฺอÛอฺอฺอÜอÜอÞอเอโอๆอๆอๆอแอÛอÛอูอฺอือีอิอำอัอฮอหอฦอรอลอฮอ฿อ๊อ่อไอใอÞอฺอึอัอฮอศอรอมอยอฬอึอๅอ๎อ์อ้อโอูอึอีอัอฬอฬอฬอฮอาอฺอเอ็อ๋อ๊อๆอใอ฿อฺอิอาอใอโอโอแอÞอÜอือำอฮอฮอฮอษอฤอสอออิอÝอๅอ่อๅอๅอใอแอฺอีอฯอหอศอยอภอลอษอึอÞอ่อ๏อํอ่อไอเอฺอูอึอฯอฯอะอาอึอÞอๅอ์อ๐อ๋อๅอโอÞอูอูอือึอีอีอุอÛอÛอเอโอไอ้อ็อไอเอÞอÛอูอฺอูอุอีอัอะอออฬอหอฮอึอ฿อใอโอแอเอÜอุอิอัอสอฤอฟอปอนอบอยอฬอÞอ์อ๊อ่อใอÝอฺอะอหอออสอศอหอัอูอแอ้อ๎อ๋อ่อไอเอฺอือือแอÛอÛอฺอÛอฺอือึอิอัอฮอฮอฬอออฮอาอÝอไอ็อ็อแอÞอÞอฺอีอัอฬอษอษอฦอลอลอษอีอÝอใอ่อ็อโอÝอฺอูอำอฬอศอลอรอฤอหอือโอ๊อ๋อ็อใอเอฺอัอษอลอรอภอลอศอฮอีอÝอเอใอแอÞอฺอึอำอออสอศอสอฮอัอึอัอฮอฬอหอฮอำอิอำอีอึอิอิอาอฯอฬอหอสอฦอรอมอฤอหอึอแอๅอไอเอÛอึอิอัอฯอหอวอฤอลอศอฯอือไอ๋อ้อโอฺอึอาอฮอึอิอฺอÛอÛอฺอึอีอีอาอฮอหอหอฮอิอÛอเอแอแอ฿อÝอฺอุอำอะอหอฦอยอพอภอฦอฬอึอใอ็อ๊อๆอไอโอÞอุอะอฬอศอฤอภอมอฬอÜอ๋อ๓อํอ็อใอแอÜอือีอะอะอฮอษอษอฯอÜอๆอ๑อ๐อ์อ่อไอเอÝอูอำอฯอัอำอำอำอาอะอฮอาอิอือÛอÞอ฿อเอÞอุอำอัอฮอฬอหอฤอฟอพอรอหอีอÞอโอโอ฿อฺอุอึอิอะอฬอษอหอฮอีอÜอใอๆอไอใอÞอูอีอัอฬอฦอฺอิอึอีอึอีอาอัอฯอฮอะอัอำอีอึอฺอือึอือึอิอิอาอออฬอศอฦอฦอยอฤอศอฬอิอิอึอุอือีอำอาอะอฯอฯอสอศอศอษอหอะอึอ฿อใอโอแอÝอึอฮอหอวอรอยอฦอฮอÝอ่อ๏อ๏อ๋อ่อไอใอเอูอิอัอัอัอัอูอแอๆอ๎อ๒อ๏อ๊อ้อไอ฿อÝอÜอฺอือิอาอฮอฯอหอวอรอมอมอรอวอำอÝอเอแอÜอึอิอหอฤอยอมอฝอผอยอษอิอÞอ๋อๅอÞอือึอึอัอหอือÛอฺอÛอÜอÛอÝอเอแอไอ๊อํอ์อ์อ๋อ๊อใอÞอÜอูอูอุอูอือีอำอาอะอออออฮอำอฺอÛอฺอฺอÜอÛอุอึอัอฮอสอยอยอพอพอมอฬอุอๅอ๊อ็อใอเอูอาอออสอวอศอศอหอำอÝอ่อ๐อ๑อํอ๊อใอÝอือาอฮอะอฮอะอิอÜอเอๆอ้อ๋อ์อ้อ็อไอเอÜอูอือีอือำอิอำอัอฯอะอาอือÜอแอÞอูอึอือาอฬอศอมอพอบอฟอฤอฬอิอ฿อใอๅอแอÝอือัอออฬอฦอÞอะอาอิอีอำอำอึอือÛอเอๆอ้อ็อใอ฿อฺอีอิอาอฮอฬอฬอสอสอสอสอศอลอลอฦอศอออีอุอฺอูอูอำอาอาอฯอออษอฤอมอฟอยอออÜอๆอ็อแอÜอุอึอาอฮอศอฤอฤอฤอสอาอÞอ๊อ๊อๆอโอÞอÝอีอะอฯอฯอะอัอึอÞอ้อ๎อ๑อ๎อ๋อไอโอ฿อูอูอือีอึอุอือึอุอูอฺอ฿อแอโอเอเอÞอฺอฺอูอือีอำอฮอษอลอภอปอฝอฦอำอÞอเอÞอÞอÞอูอำอฯอษอฤอฮอสอษอศอษอหอฬอัอึอฺอÝอแอๅอไอแอÝอุอึอะอศอฦอศอษอหอออฯอาอำอัอึอึอือÛอือาอัอัอฮอฯอฯอออฯอฬอหอษอษอษอะอึอือูอูอึอือีอำอาอัอฮอฬอวอฦอศอฬอาอÝอโอเอเอÝอูอิอำอฯอวอฦอลอฦอษอฯอิอูอไอ้อ็อโอเอÝอุอำอฮอสอะอฮอฮอำอิอือุอฺอÜอ฿อÞอูอิอฯอะอฮอฯอออฬอออฮอัอฮอาอึอึอุอึอึอือีอึอึอำอฯอสอึอลอฦอฦอสอฮอึอ฿อ่อ์อ้อๆอโอÜอฺอุอีอัอฯอฬอสอออำอือุอÛอÝอเอโอเอ฿อÜอุอือีอีอิอัอาอฮอออษอฦอยอฟอปอพอฤอะอูอ฿อÜอือิอะอหอศอฤอมอพอพอบอพอภอสอÝอไอแอÛอีอิอะอหอวอลอรอมอวอีอÝอ่อํอ้อ็อ฿อÛอุอำอออษอวอสอะอำอึอือุอÜอ฿อไอแอÞอÛอือาอัอัอาอฯอออหอศอลอมอภอฤอหอาอึอูอÛอือึอฯอฬอฬอศอมอฤอลอยอภอภอยอยอหอำอฺอใอ่อ๊อไอเอÛอูอีอาอสอฤอฦอฤอศอหอำอÛอ฿อแอโอโอÞอฺอึอาอออษอษอษอวอษอสอสอสอะอฮอัอีอึอือีอือึอีอิอำอฮอฯอฮอสอฦอวอศอสอฯอฺอÝอโอเอÜอฺอือาอฯอสอฦอลอฤอศอฬอฯอูอไอ่อๅอ฿อูอิอะอฯอษอศอวอศอหอออฮอำอุอÜอÞอÝอือฯอศอฦอฤอวอฦอวอศอศอศอวอฦอหอหอหอออฬอิอีอาอะอออษอฦอลอฮอยอฤอฤอวอสอัอÛอแอ่อ๊อ่อแอÜอฺอึอำอฯอฬอวอวอษอหอฮอำอฺอใอ็อ้อ์อ็อใอ฿อÛอึอาอัอัอะอำอิอุอฺอÝอโอ่อ้อ็อโอÜอฺอือึอึอิอัอฮอฬอฬอสอสอฬอฮอำอÛอแอโอÝอึอะอาอออวอรอพอผอบอบอฟอฦอออÛอ็อ็อใอÜอึอฯอษอฦอมอมอฤอศอฯอีอÝอๅอ่อๆอโอÝอูอิอฬอวอษอออาอำอีอึอุอูอุอูอุอีอำอำอะอฬอวอฤอฤอลอรอยอฝอรอยอรอฤอฦอสอัอุอเอๆอไอไอÝอูอึอิอะอหอศอฤอมอยอฤอสอัอ฿อ่อํอ่อแอÜอูอุอิอออฦอลอลอลอฦอษอฯอุอÜอเอแอÝอฺอีอาอฮอฯอฬอออึอีอะอออฯอออออฬอฯอัอฯอำอฮอษอศอฬอออหอสอฦอลอฤอวอฬอาอือÞอโอ฿อือำอำอะอสอรอฟอฟอฦอฯอฺอไอ่อ็อไอÞอือัอฬอษอฦอหอฮอออฯอะอัอิอีอึอือีอำอำอัอาอออฮอออออหอวอรอพอศอฑอดอตอนอฟอษอือ฿อใอใอแอÜอือิอาอวอภอปอนอผอพอมอวอัอÞอไอ้อ๋อๅอÝอฺอิอะอฬอศอฦอศอสอะอิอฺอแอ่อ๊อ็อโอÝอูอึอีอิอาอาอฯอัอิอึอูอÛอเอไอ฿อÝอฺอุอูอÛอฺอุอีอัอฯอฬอวอรอฟอฝอรอำอÛอโอ฿อูอูอำอออฦอฟอบอทอปอรอหอือเอๅอใอเอฺอึอัอออศอศอหอฮอัอีอูอแอ์อ๋อ้อๆอแอÜอึอัอออฮอะอัอาอีอุอ฿อใอยอนอปอฝอรอหอำอเอๆอ่อๆอใอเอÝอูอือะอษอลอฟอพอพอยอหอึอๆอ๊อ๊อ้อไอÞอูอำอฯอศอรอฤอวอัอุอÝอใอ้อ์อ๊อๆอเอÝอูอึอำอาอะอฯอัอิอือฺอÞอโอใอๅอโอเอÛอุอุอือือุอีอัอหอวอรอมอยอลอหอีอ฿อเอÞอูอำอฬอศอฤอฝอธอดอธอผอรอัอใอ่อๆอไอÝอิอฯอฬอวอรอพอฝอภอฮอูอ้อ๐อ๋อ็อโอÝอูอือัอออหอฬอะอำอิอือÝอแอศอลอรอวอฬอะอำอือึอึอึอึอำอาอัอออฮอหอษอวอศอฬอิอือÝอÞอÜอÜอ฿อ฿อูอึอฮอหอฦอยอลอศอหอำอÛอไอ์อ๊อๅอๅอÞอÛอือออสอฦอฤอฦอฦอษอวอสอะอฯอาอัอึอีอฮอศอศอลอวอษอษอวอศอลอฤอฤอวอหอาอิอึอุอÜอีอะอออสอศอวอศอฦอรอฦอวอฯอฺอÝอÞอแอ฿อูอิอัอฮอยอผอฝอภอษอฯอเอ์อ๊อไอÝอÛอึอาอฯอฬอออฬอออำอือÛอแอๅอฟอตอนอฟอสอัอÜอแอ฿อÛอฺอูอึอาอสอฤอยอฝอธอตอถอบอฦอือโอ็อๆอใอเอÛอิอัอฮอลอมอฟอปอทอปอลอัอเอ้อ๊อๅอแอÝอูอิอฯอสอศอหอิอÛอ฿อโอๆอ๊อ่อไอÞอฺอุอิอัอาอะอำอัอิอาอิอฯอออออฬอออะอิอำอีอือูอะอลอรอรอมอพอนอธอพอฦอาอ฿อโอÞอือือือออฦอมอฝอผอพอภอศอัอูอไอ็อใอฺอัอสอฦอวอลอฤอวอษอัอีอูอ฿อ฿อิอฦอฦอสอออีอฺอูอูอุอือึอีอฯอสอวอลอมอพอบอธอตอณอธอลอัอูอÞอÛอือีอาอออฦอมอผอนอธอทอปอลอือ่อ้อ่อโอÜอือฯอฬอวอยอรอยอรอลอษอออือÞอไอÝอิอะอฯอหอศอลอพอฝอฟอมอฤอลอศอสอษอสอฮอฬอสอศอฬอออหอศอฤอมอมอพอปอปอยอวอฯอาอีอุอำอะอฯอออสอศอฤอมอพอมอฦอฬอึอ฿อแอÝอÛอุอิอีอะอออสอวอวอหอออาอÛอโอฬอษอฬอำอูอÞอแอÞอÜอฺอุอือีอฯอออษอฤอฟอผอบอทอตอทอฟอษอัอือÜอือัอออศอมอฝอทอตอตอทอปอศอาอฺอเอ฿อ฿อุอือีอออฤอภอผอฝอยอลอหอำอÝอไอไอเอÞอือัอษอลอวอษอฬอออัอือÝอโอ้อ็อใอใอฺอีอาอะอาอาอฯอฮอออฬอหอสอสอสอะอิอุอÜอÛอุอึอิอัอฬอสอศอรอปอนอทอผอฦอูอไอไอเอฺอีอัอออฦอยอฝอบอพอยอสอึอ่อ๋อือๆอ๊อ็อไอโอเอÜอุอึอาอัอำอาอิอาอาอะอาอำอีอูอÜอÜอÛอÜอูอูอึอิอาอะอษอรอภอปอถอณอดอภอฬอÜอไอแอÝอุอำอฯอวอมอพอนอธอนอปอษอีอ฿อใอโอÞอÛอิอฯอฬอสอฤอมอฝอฟอภอฤอสอัอฺอแอÜอือึอาอัอฯอำอิอาอัอัอฯอฮอะอหอหอฮอาอือีอือิอหอวอลอลอยอพอฝอฝอภอฦอฮอำอÜอฺอุอึอำอัอฮอสอฦอยอฝอฝอฝอรอสอะอÛอใอฺอโอแอโอÜอÞอุอิอัอะอฯอฮอำอึอึอือÜอแอใอ็อ็อๅอโอ฿อูอุอึอีอัอะอฯอออศอรอฤอยอมอมอรอฮอิอÜอแอ฿อÜอุอีอาอฮอฦอภอบอพอภอรอออÝอ็อ่อๅอแอÛอึอะอออศอฤอรอษอะอิอ฿อ๊อ๋อ้อ็อแอฺอุอิอำอฬอออออฮอัอิอิอึอีอือุอÛอูอือึอีอาอฯอฮอฬอศอลอมอพอปอธอภอสอาอÝอÛอÛอือะอฬอสอลอภอบอทอถอบอภอวอีอไอไอฬอโอเอÝอÝอÜอีอฬอฦอยอภอพอบอปอผอฟอยอลอลอสอฯอฮอฬอฬอหอวอรอยอวอรอยอรอมอพอพอพอภอภอรอสอะอัอะอะอัอฯอหอสอศอยอรอฤอยอวอฮอิอÝอ฿อเอÛอึอือาอฮอวอมอพอบอฝอพอฝอรอวอะอÝอÞอฺอูอำอออออษอหอหอหอออฮอัอุอฺอÜอเอุอัอะอะอฮอออาอัอฬอศอลอมอฝอปอฝอยอวอฯอีอูอูอัอษอฬอฦอยอปอตอฏอฎอฎอณอพอหอÝอ฿อือÝอ฿อÜอึอัอหอวอลอภอธอดอบอปอปอบอผอผอพอฟอภอมอรอยอฦอฤอหอหอวอศอฦอวอฤอมอพอฟอมอฟอมอฦอฮอฮอีอาอาอะอฬอสอสอฦอฤอฟอภอภอรอฮอูอÞอÝอฺอึอาอฬอวอยอฟอฝอพอภอยอหอือÞอใอใอ฿อูอีอะอหอษอวอวอฤอมอยอฦอฬอฮอัอÜอÞอÞอÛอัอหอษอศอศอลอฦอษอศอสอศอหอสอฯอีอิอำอะอฯอะอะอออสอศอฦอยอภอภอลอสอำอึอูอฺอNCJMMNHRSLZGC=3=CAHARKJU[XX\J-)2:EBGHPTQ^I_OH-.3B;JKQOKPWXB><2.BRKEMRQNTVPLCIFGC?BEFCHBHLNJGRXfYO0-;?BHDIDSTQSRWR>.$?G8<JBPMT\JPO@RKCMMLNDMPG;>>>EEHPMMUW\UJ;+0+EEAIIRS]YWP;3/;8DCKXVRTXNPH;835BIIVJIS\MMHHMFOMLB?:GEGKOCMPPSPZQJ<81HEHHNKRcNPZPQG-/+:CLGQKTFRPIOg_LAS?FNFI?FBDLJN6J9GNTVOJM0B>=JC?GPPFFPSZFA=-9DFAESMZ]VUNF;216>EVKNXZOHEMMJDG><;CP[PIHHBGLMSWIN?B?@J?>KCDIJSJSQUAFB2<?A=GLDU?PVWO`EDA?AAC<MPMJKONBRTVKN[X=14:@NAMRNNX_QOE1"5>A;IOHWAUcUW75295:FGJ_XQd]DAC?;?8HDLMMOSWGFGRYRTPAM:>7@EL?KFJTTQVVUQE553;ACNNPCGFNNRTQNGB9776ABIPRUVW7LMOMQK8GA?FGNN>JDSQTGN`=60;:EM?ORTTWWTC,'18=GJOLZNSPUJ7=35>CKPOPNOMHCMSOIINA@@FIKHDBOFLMNU\STJ725:B=DLTRBMLJ[h`K?314.BDKOQQQRXbE5jNCXQE?<EL?@EMKHLNNXOTG<;7<ALEJGPSSSVFA8>99IIBRRTVPOG"-64CHLQONSWTRJXCKFJ8EV:?TTNKHKGKUMWNTRK>1?>>JEFFHMTK@PSbVSKL0&.@ALG`\SSPJPNHC>=CFCBCFN@HNENLESUJ?E@:0HQHKOTeXUI51<G8>?DLO_RSWYW6.15ABAH[UN]QJNL?B>8>;NHRSMHOIMOOMNSRQO?23>>FCCHTOQSGMK\YUSK5,+7>CNQQJJXWSH=@8==MNOPPONLQIJXSVLJ3;77;AQQGHLSUYTQ>7868?>NLOUVZ\YO4* 7AMHQNPRUTWPK?97<6??QOWQQMPHFMQTLKO?8:BHECLGIGMEMPNRYNJAHI85=HKROWZPUVKP<651FFNOUVXRLPH@EBCANBB?ILNJPFDHFLNOW>>@;@MEH<PRMQKUJ<3;4@HJKLQR^QQHH4/77@JJ[ORUK_iTLEDE:;>4GLSKGGY@NNGILGLTQ\YK.(8-=LCLT]T[ESQ4"1<IAJPRMRMOXSAP>:ABD@JOVKO?JNJIUUULN?6;>HC@AEQ^Q`XMC4$35AKPFJ[O^TTN>0&J58FRMLV[SLJTM@=85:CHDPYLHFHMNOQBKHIQZRD13A?@PEBUNU]OVZG,6;>DHPGNVY`hcEH>8:5CO>HRU`RGCHJPQLNM<@<D<EIJKNPUTDIH8->BNE;KLJVQKGWT<;6/2MEJQMOPWUWG?3/2HAVIJMIPTPP[O@BBDLNa\J:545?CBFQMR\Q_SI;"13=EKOU\VMMOO;410?JUUPQGCEU[NHMSEAKAA=>@LHUDMQRZSRL1-2BCEIALIWRZUQE92%5;MPGMRVWMOVK:7'B>MGLJPPHXSNMLKCDCJNNZ]L4/F85HBKMOW^[NIB+*9:GGJUQTOPSMJ56/3HPATTQWSUJDCHGKF?GMEOKVJHIGLNPKQPEH8@:A=DDMH[T[UTC:0@3=6CKUGNK]XNQK?>&#BDGHKTDNOQ\XQJCALGWSXN7.85?CGJGR\ZUTSB0)98CAJKGRSXRVR8.93?CBRMSIWVSTHC662EDKUMGSOHDHMJUSSK8DD>>DRU@HJVVQ[XSC6(/<=KADS\IR[OT;/4@/=@FDOPKSOQZZNUJGBMAEL=EGOE@LPKGXZNZ[P@-*7=DDKMLOPT\JP<#(5FFOOQSUbZV=59?<?APKHWRVOQFCGBGLJE>>KBRAIGBQFVTdTQ??8-?B8LHUMNRXVRW723.0GCKNSQO]C[QLL?ECDO;:MBGRSQBIFPSUGP`WL<17:8IGENPWVPRWU;1.*<CBJRVPKb[BF75:KMEP[PVXQLHJDEPD;W8BEDCHLFOUU[WXR>;;8>93LWPENNQUUX<7+-6H;VCMRV_NUFMP>;9SPADFGPWSOPLIMKHUQKFA9<?FFNHFLKSWTPVO3+5<?IMFPUNVR\Q9'4:AAKMGJYXW_UC1383=CNRXRTWKKHKJLFLD?ADFKFAFHMJLNNV[MH:;3=>7>BRQJQSRU[QGJB=JHG8FIMBDSPOKKGFBMMIE<A>JHG:CCH]VMSQP797?/8OJWOSW_MC)$5B=GHUPTRUWOP0-/<ABNNXUOTKFKCPSTLC?B=GJGNC=EPRCQT^UVL@3/97CJC@NMOUTRMRROKEJO=69CIGY[RWRY>RPKJG=EA?C>DFMSNFRaJV_5020=ELQLZUXUJK6?'3><M_ORWUQ]YL;0,12MONNkkTPAEFJIHHFBBBGHMKNEHGGHFRUJJ<;>J;ECE@ULONJOMTOD>EKD6;@LSZSZUXTQIF8+7G@DGIP<NSiAELHPG:;BG<DJIFKNHELJQJ>7G5DCIQGOUNQ^VL7'1?AJLHFJ\][QJME=;7SBKKGZNPQKTKBDFHGH?GF@UHAEN?HKLQMTcKEB46>N7BC=SaQTUTOH?/4;?EHLJMOHBMFLKOOS^NG;7;EDDBCOY[\\OF8/+0BEKMGQRXWTZK-+8DFRNNJWWZ@?G:.3D?KU\SQJJJILIPKHPKB8ELJFKADKHDTPPQERCB=<OKM<PFJLWIXRPME;:2?DHHFP\THJBIIPXIHFACBFF?NFKMGRY_TN=6/6;@=KUNKW\LLP<>0-4DQD]NT][ZMB,3-C?KIPPJNPPNILECCHH@H=KKELKIHPHQSTBIMNA:?EHKQFGFPMTQYUPYH6",<DLEGQTKSQPJJJCBDMAEHRSPCGIFORTW\A<7;;5:JYJLV\XOQGP'(1<BEJMRUYNcDK7(,A=MMCSSOSPpYJOABF<<[BJEN[>ESKGMAMDHJM>KFGT=MK=6AGOCcUTYRK/8/A=BOH[N^PZKQ@196C6A?S]eV*2?AP[`QC<7AP@OF>MVMOSNRO?57J@K<MMRIGM`XHA$+=EGAPHZJSR]MPJ>74:ILEHVTJQHLMJRHLDFL@L=?FBBPGCHNFL^_gSK-&269>HTO^[7[_WA)(0@CELTWYUSHJIREABBBOADPPNMLHJMM]SMNF+79D@@MTPTSSPWN=(70;GDKJVOVSP[NGC60/<QRDMHLQWLUKKH@;?:DJ=COOMEGAFCORReUZPO?/8BBGPPSUZVT]M@=422BPCFTUNHNHGPMHB>ASBO@JKH@GSYWJNOL;3<<DH=P@Z\W\MG=(3*GKNPNeN\NW^?.$15EHKPWORfQWG@=B>6@6HCRILTMLFB@@JQFTSVR_M<;32<@CJJRTUU]`A.+.:B>EON\ZTPOCDBE?L@GFHIHJOEKCKUWWQKG5;<9GEDGYROSaTH>62-A=JPJXWZKHcPE2#,@EITPUOPPTHQFB514?DIORJLHTIOBJKEHKTWRQ^O='4<@7GL^VXRV]M2*2?DMJ^NPF`WHJ/*5=DOILNPUPWGFXNKPSB5=?HDJHIIQXXV\IH?456>CPKSUM[ZPTA,2<5@DHKQNPNaV[NA3-&6<PJMTGRQMAMFDJONLSX]OG:*0=:GOGHNbS\cO8+&0>HKPKO^SOSR_G4-14GDRTXZ\RJFgD03JBF;?IDGECIIXOPNLSBJ@AAFKM:DGTSGPTX@><.6BB<UMJ^TSQPPO94/4?BIQXNMLJ7NFMOGNQHFQU<0@C;PAFBJUOTQSJC42A67JVZZQUIWWH*#4H5QPPXdRNTPLJBPKEVAC>>FHA@@TNNUOHO?37DEC>EN[POJW\\KF*.37EHPLJS_`QLJI206;ACSQMPO_VGNVHMSUSSUKJ<1;37IOSDH][ZPC.?=?BGCSQT\XNPD5(;6<=JPSS\SPYMJB301EVBJCLBVQLHHKRX[QQNDP85CIDEC>DRIT[QCF3*67BFLTQ\\\QKI>,,+;IGAHRS]TRMJII[=NHFSI6CCFC@AFQFDPT]STO3-*=I:CWXKX]XRF4"(5@DKVQTOXXV;6>02?NCIHTOPNDODPDDGDRGBEFNLDBFEbTWKMNID>B9K=C>SDMLT\OOFDA:6=>@KMOMHPTO_OR^?'@=LQEJVJUHFPHMORVLH==A=?BEGTS\TXUPH2+-5@LHJX]SP]QKB#,/CDDSRNUUP\S>928AEAKLOQJQKLUGHQOCQG:?7LBD?IJCcGNZdSQD>)52CD>NNOgMPLEN`KC7./?=KPLOCHUQO]FL[GLB;;GJEIKMJMLJW_MRA0658?GIIWTVkUR:.455@EJQVGLhXRL194C<FHKRNUQLGDXFKJULTG@AC?2?DH?XMGSg_]M;D--:DBIGKKQSMIOTTPGC.13;KMGQO^RRNDIIDDGFGLFHGTHHNDZXQWTN>,48;GGPKQP]XXN<&3C2DALNQHPRQhN528<<>DOIOGXNPPJEIFFRC>CEJPJ@QKHHROaRWUN;434=CGKGVGRPUEIVWOI7#@2;IJ?GQjlPFRK97@EJ<MPRFJSO@G;JQMHW:9H=OMGC@WL[T^VC.+7JOGJOM]lLTC%&7BCFJKJLXQKLVPD<47>?BFQKPPTfeQ7P7:[NH9059ANMNKLIQOJPLCYXRC.&=7=CDGLTSUPSGL@56:BEHIQSMTLXMQU[??0=7D@=HJNWV[WSZU=0,6:CB:ERTLZP\N;).6?ANHJWPT_VKA87184=BKFIKXWKME?JGLL?FN@>FI@NJGMPMOINJG\KQO3)6<L:GLJUSSTRSF:0+/DHHYJJsTNUBH785<7JDHJMNOPJPNQRGA;<>EECJFNSSUXSS<7-.=CFIOKSLXTWK?85/6<G=SJRRVSSBMbC663;CILOROIMEPWNFTJFDO]aZI0%.23FLN\OYTSPI/ -><KJIKOUQTIGA5<EDGRV?LXHHLJIQMONO>?=EF>=EKRZFP]UTD0#889HJLRSSZPUL@*%A=J@PPMQVUWLJN6>;B9@GLGEJQOQKHHPCHLGMJUMRF<1;C4FHQQRMXKHX4&3BC7H[XQZSMWMT@020DEWTSF8^fAO@JAF<A@<TPBIMDTLIOQNKPA87@AILFMQQVJM\C<;0.ALCHMSHXSWRHN91754@8FUOOJXRZOLI@0(LOSSFA<<A=A?WMPNZMSTDD242BH9QLLgNNO]P-)37@LEZVbYVSGCHCEJMHGFHOADANBTKMOLUGS6<<@>I?BLWOB]RK53.?D@@LMQQ\RWQJC=.4=3BFYYX\bjMFK=C??YIIVFA4;7AFJONWOROS[JE)00>HMHIHTWPYOD&&17;BLNUPU^oQOGBA;@<:\CHIDN4A^EQNMNVDR<C@BH?EDMHSXLEW5*48HBJXOOGNUUNFK763>3CBCI\RWOLSOPG@BGHHK=@FGHGDBEPRMMXVbQ92+2>BJFUXMSWXNP.(,+9FJWNSURWUJ1,54JFFEXSVOO1€F@HB@AJGLIGAFPJLQ\XPRZQ5666=C@LUOQYKNWOE?@/;4=CEPSTTOTSZOIG>92GOGDNL<MMJNIPRONaUHB2.>>DKGNLKT\VUJ?)-3AADHRPXYP`XI;),;>LMKTSWYWIF@DEENHCDHQMOVAKJGPEFFHE62<GGF?JSTUSXUUUGN+#'2DHQPRVNOYSMJE72<:FQFHNIKN]ROPGLJOUEA?D<FTDEFKHQW]GPJ720>7>CRZUR\WVQ;,56=FMNL_[QFACUH:;A5EFBVNIMMWtDGHLNTQ>;/2;>EUKQTNUbXUK<*+43?MKE[UTWL\KI52,.RBIS9LI>HN[bwPE@AB4CIFEISNGHE@GKWOEEBJF;6=EAJNPHUMU\L;8:57;BNRG^XXMCHC=77HCLCHWJPSQNH@HCNNP=@?HJIBHLQQMKMJ:KA8BK@E@JIRNNPSCQ@F7B8CCPDWXNNRLHC?XfGGD?DECGHCFDMHLHMMPT9<?DEDDHGLKOIJQaO@15?@BI>NWWaVSVV@830:D@IA^mUaMGE@8:E:J=AI\RKIMIFMNOF=CGAC??ILGIPXP]QLL>5*6@HB@CONNUXSQNTDD77G>DMLKGOPMSJFJWUUNMF1=<?>EHKQM[USYV=!*;<BNHLWJfaVHJ56B=GOOUPVTKRPH7+8=HLHL[PJNEAMPKKOQQNA>6EGDMTLHMUZ[XgHE>2438>DQ5GNLIK[\]OMH2)3DFRLGSWWOOJCGCIJFEAFDFGE=HNGO]\OC787CAAMQNaIUMWHM?5=>7ACDQ[RSR\I?4.22EBKK^[KLkRGNOEHIG?;K/D@UDFHHMRQN^\LS=968:BDLFFRSU^TRXM2$'8HHGQUVP[HOBG@;?;OQP@K[NSJRKKMLPMOA<8@CHM[EHFYRXSOH?26737RGTUONRZaD8?33O>GI^LQW^RPKJHCKE5DEBNMC1NS2SIPMZTG@I;=D=PGCCGKNDOR_cRJ;(01<JARGR^ZOGaE<7,;AHRVRZZM@1ITEBFLADAGBBICIRUNfwS0102>@CFKTOZdMU_D31+<.AFHTHJLMXRdO9@BAJL@MDHILF=DJZONIDHSHEA::LHLLMHRQTcXQRD-(-<>DOIOPWVXNW2(18?FNHYQOSXQJUSPRE=17HGFPNLERNSHXZN@117D@GHKNMVU_UN921&A?CHEMQVfGQ[\A7645=BTYQPPPHPGIJMJDKGBQ??STEGKEOGJJL[[`lI9!"=>NUBMXLPJN[OMA7/8=ADFS\ZUNNJH;8@HKNA4BNHSVRWSTMF=;69:>KDMRRT\VaPC.+);GJEKPTNVZ^JA$82C>HLTGVKScc_EKF:=/6:RKKRMgOXHMGHAQGNLRNK==6HEA4MVJKFZS^R?A2,;5BMJOWa]WP<E34?CNNONSSPDDDFJJEHC=7DQMEE?LBIEUIOE89?DJHFHHSRKXNKG=C0=:KBKOVT`UG@\]4569>?CFHEAQMWNJFHFOSZTPP;0:<;<EPNMRU\MMD,/BFCGESV\PRX]L3+=/;EHMKS^[QNEFMLQNI=A8MDGMGMSSPTTKKC@/D=KNENJOTTPUJDE0*8<EHHDQZHY]PUG;1279@HHJLS_SYMG?KLLHJMOPI:@;:FGHMEKPWXQW@0+@?AHMCRTV]YPO7%17BANTJNUTLPTN=,5:7LMPSKRSYRNDOGDSOC<?DBC>NPBMQSS[^C8+17?<FORPLRSVUNJA/18>C?GLRNX`UOIHEHGJW\RVR<:9;?MHHFHL]dVMA726A;IGHSXXTY?NM2926>COERYTg[\JA?439<VONHOGSGKGJFIKEFL<NDJMBGKNNNEIHN?;5=CFADPGWNVRX[D319=<=FLIVPTSTQGFNRJOMF@BJDB?GJHLQKRR[\JD.3=AD@GQ@E[U^MUM;+56@BCHM=J^UVPN68A26HNKONJSTPMIE:9>AOKFMOJLJFOKLPMHMK-8<LNFBFMK[QH`BR@>2-<CHKDHSPVRTKLLLPM@?=ACFBN@FHEKELMGNPQF;E>BK:FCDHVUPRPS;<286DBBTGMXYYSE!&;D=HPCSNWYZHJD?6.-=OP[`UQNPNQKJ[PMF<256>ILFOIPSNUZXO9?.0=?CFGPJOOQWXHBUGJB677:<QRKRVSIIGJUO^UA6/IAENDPGPSXZQSI ,3EGFMMHNXR`O@54&7A>KTT]TN\SA<:<+;?@KLMRMN\GONLQRUBBD4CCBMNNHHJPFFNP@HK8>BH:DHGHNU\OWUNBK?41:CABNUKCTSQRFJRUPOB75AI?HLOHMQTa^VL2*&;=DKMKS`R[UR@ ;==CHHUITKR^MH?1&D[MMJQKNANFEDTOUSQBD?0?<?DDIOMV[X\TRA<?-;:EH8OOUTVSLIKRE0&+<FJDO]UeXONFKMOHOEP?>OPGIU>0NPKX[XI7&4ADH=GDWbWWMM/516GBDKUPNQ]HK1;05??JFMSZ[_[RLIKAE@;6>JGNNGLHMJMQBMHZLD9D=LABAGSHUKODQO<QG1#+=?H>PRSWQLJBFEDDFSKBFIFMJKNJENPQNUE>501ENNMGVRO_[N1:7??@TQOLTUX]Q?%-9?EMUQOQRRPAB878?FBJQMQXSLHJEIONJKOIGD=85KPJ?KLNOSUFBBJNE*-96;KCLXJUV]PQ81503@PLUTVOHLQFFMKMM?@:FH[AJD:FRSTFM;=BAIFEEHHQXLFZO@=<?;7CMQNNXWfTE-'02GCFQJPRX[NJ_ACFFCG;AFONJCMDHFPIOKWRRJBA=7H>I:FDPZ>_HJQN;:@38EHNSUSTYQHDKBO?HC>;G_QCDKKNRKJFE57OAEKP81SUOP\TIG;69<F?BHPFT[TcTQ@<7:);QFSK[[XQICEMCFCABAHEPLJCROHCEGKDJPPX71687F?FKOUhMVJO0=H-0>GEMS[TLLSGIMJJCCC>ADFDHIT\FPL^`R:&3<F?JRMVMMXcP8 36JNFJMRU\\^K:.&5@ATLMoe]XI>8D121EFHHOJMMXMEIFLNKQ<RHKDFP117DBI@RRK_aUPL6!(89@PIMUMLZUJ4+,/?JEMIPWKKMQAMKTOHWSD388AD@GKOSVY\`RH8++;6KLRGM[W`]>4-0+8?QJTX]\SWHA-121@DUNNFUOLKTSK=IHF;<DOOK92*<CFH>RUVTX^U4 3<EAHOPOQRT[N@+"*?JOPNESKOUKBOPHQKJ9==EGGJDKJOYVZc]M8,36?@?LZQJ`X^MC5)02=GFJUHY^^\B9->*;DKKNUORRXWSOD@7+4:DGAIDBF<NGJOKKJNPKTNE/A63B@KE?`P]ZVJA*)/AFDFJPNNXZOG:136DDPKMMN[`HKMHGONDC2;MGENSH@MNVVWE:436DEIKFRZ]VN\K?$&0ABGGMSHRV[ZTH=*-=>BE@>GNMA6AJ:@HHMOLR]UD386?BBEFPQUMXOB@48C:9@GSCPYPT[X;&16<HSQYWZbEJMF\BAKJ><CHFX<IELMA[LEFO83BA?HHGQGEUXVPW6&@@>JGMTN[UXUjHOB?.+7KMKJ>6CACGJCBNQTRTZR?>3/=IJIQESTa]I3"+;CMK;C\WT[\F743=BNFMEVVSPPKHLJRJ@EA>FGAIEHMJKR]`OKM777@CA>JNKWaTfA>+-4ABKK<HNTZNWU[I;2+42@@BNK@AWjPG;AGLW\MFH6=H??ABNLJCNVeOA641>:NEDFHT]URQOE+,/?@EOGRS^]WFLB5/3=SGV[OSOJNEJEKF@B9CRAJDJGKOKINL[HH1;5DFADLSHVVUPSRE:4677>LJEGNJJV\LNLMIPLEB;IABGCJGGHXUIXVG5:85<IFRHK^_V\^4#37@=RTXUH\Q^[QF8,/6?ARNZb]TOSLEEFKHR@@:;@BSPIB=QSMQDDJG9F=MHB?HMPUZPQHA;<<B<EBFKHGHNP_TXWCPN;@9A<MIGGMMLMUVWS^D>;23GADEHKL\WNDSM5.98JAFFGSMTlNCD724DBEH[ITePlUE<E;<<A@=^KF>NB8=aQPUHEH?==ECE?FHFHJZSOPFFA:<DKAAFEMMTYQKH\D:G>GM5=K\RNOMPMGSUQ]I>062DBALDQS[\]ON6+'8?@UQVTYJW\J0272?HOJQLTPXHKK@B4==8DGKIQXULGGMQRIRQE@=<BEJJGGDMR^OPUNFDB<36FIFLBORVF^SLKA<:15?LMPQM\SHILGUJFJ=5E@<@DEMO[HVXQQA508>BIKLUQRRVX=+)4:DQFKQR_XPPSC:47.9KGXOTMPSVHRMOKKII@D:H?DFJL=BbRD^WTLA<5@38M@K?CLX_ZRQX:-65?CKKMOUS]QMGF509?ESJNHHPFSMGMRWZHJ;0G<ACEJWTWYKSWE30);EKKMEQU_TUNE<3,->@CGCW]ZHZJKGKFA=8:GKTMBPR56PfNHOJLJC:I=NGHKI?HSNOT[]PW%&6.ALKMKKV^^KMJP=3FABJLCJMHFNLSVaOEF4+:<@EJKZLNeR^PB-012?GKFSRQZcQH8(.=GIGNTGOLUWND>:2$APCQHNKULGJKHOKG>DG>AKHLPPMDTFCMHPUJLgLG,754BPPMPOUWSII>;0<=?ENQUTIQGMCQRMPCCE8>CCE>ETXO_VTW<8567>@COR\KU]NA-%7;=EGDUXTOY\TE8<20?C=CCSU\RRPLMHD@;AD?BFJGJJJJPRHHS_TQ^VC?&57C?G[IASFZ\MF2-07>OVFDB[XTHMKI?74=CCEHNMHEJPKOcWDG0?6E;GCMMPNU[]VD;66:HONJQVP[QZIG=9,(>HCJR[XUWQJNI798=EA>IPCETQ_OOFOMHSW^]Q>'"6;AGRNJXacUA<>-9/>EJQRVVWKPJE=<B=EEPM@PMWWEDSR\PGH>34@=HGLQRS[UTJP<)@8;FIFTPRLdSS=4,.0BDGHQMRTQWWOC9;849=GRNPHH[QRQOJLOGQ\VO@477HHSFELNV]]XO;3"+=BCGPQOWST[OF<;,7:DKJSPJMIGESDIG=@NG=D?APMJQN\QLLR</56@?MPPSTSY\i@6/&$3BNNHSMWQW`SN5;)6=?BRPSKRPSQTNHRCVNHGO?<@>BA;GRL[WRc^K'++<BKGJOIS`_QAJ814>EGKHUJVSILPGHB5CGEIOCIJGPM9NQbZN>655>BFIKRTGPP^TS@43/(GGFESPQ]OQaSRF,7.@KBAGN[RTNXUODLRWY\YLB>73>B8CPHOX\gtC(>@C:KEGQ]`_SMA3.44IGDOOAQQ\PD?DFAIECADBGDHMNFUT]`GB84=@CAAGFOQVV]T[P5.5,3?>DUSNWWT\SO9/.2CCBSDWTNSVSTKNRORRJM@8CDGFGLSQ?R`RUbFB.-1BBGLNI]_WRVH?*%9<JOIMWNRQ\B;673=EDJRSPOM@IHLCD?HG:FJNJLHJJJN^O^PLC353BJA?GMSM^X[SF6+?:0BECPG?USWXOPNESD?@?@EDKJCCOKLKSIRVXS>.2;=FGHLSLQ\]ZWG7&-0DGDFVI]bVK?#%:0BLMYWJNP\QEAI:7DAEGNHOHSPC8WTYUONQC8+8H=HCKSJM]T]XMC205;A?HKGZXNOVSSJOHFHB61<EHBZTWJHE>KJQFJGI@CGU@DFDEWcLLRG18=8?HFNP[DR\VRC2*1@D?R[SXb]f?0.1;HBGGFPMQPCJNNJTSXH5DG3BCFHBJRPR`RZZM?,22=CBNKJBO^U_UMLDC46/7AFQTO[UULOFMNP?A8DFCJCFJFNVST\[UO3*/AIDLHOS\YVTG6*-BDBDNWNNSdTLP9+">:<IXG`NLHKRMEGFESJERDICKGFGGUKa_TNC<5;;=;EHNDQVODTXTQEM<:-8CBGHGLWZ[KOGJFAEFC@@CFKJIMKRO[UW\MC22A/6:FIS[T^hUN7*.0<FILPL]US\N"&,5@BNRW_HPUKHE>HBEUHFMT@DI>NODXHJUKRNC88D:7>UFKRHRSVPTPPG@/)1A@CNT\`WOD@;:>*:>FV\RRCMLLWKEOTQP<4>=BFHOGINO\[][B1&6:FAKQPOWZ\TG5-9:NHUTZXZ`NIBB525==JQQ[MOJKGECLJJRE=5DU?ECMETCKLPHKPIOO@D2$15CGPPLRMRRNR;0(>AFJJJSVILTNONPKG<BE;3MJLPHN[RaXPC7-2?6BPNLK[YXNZS:+5:>PYTHPNaTO;3;;;CBRULOaYRMQELGLGPIA6?FD?HEJCLDMPOMSRLMN;1+2@GJNDNYAZ[RU;268?DJSW^RNAO?DDFIH?>K?@QJLGXJMLLKGD>0@K?CF>GGRPFRTO>4=><B<R`TR[]KS?C308?>KNURV_OG<UCI>CLC7=EKON>LkQGFHFNFG@CCP&/2?EHNINO]OlQK<%-;7@IMRQPSUKJF6>4:?GOOQL\KMDOTPMZVLH>60@@NILNJ]^`VX=#,8:8AORSLX_eK@25(1CBHGOMSQX[LVB9454BGCXPMCN^XQDKKKF=6;LBGN%+2;HBDW[HRXWVS."2?8IGJOSWTPMXK<>:@;MACMMTT\UMGUIWPI</@<G=JSKHNXUWSHA104:9OGHLOT]ZWB/ 95GFCBN\T\_\T734?;6GHPUTL`QMJKGB>=B:6=BGCH,+3:=AHPXSOU\T;'56@AHN@J]_[RP@709+9LEMNNZ\KIRWGLJMAJJBBBDDFBUTOOOQNH837DBB4MCNSTWY]F/'68=NGQNOXRoXGL-/088ILQHVWOEWHJ?C?05?HJS?BH301?>HJKPLR[YcN@/67GCMLSSNj\PP86/+>BDSLSH]NJJLG2==B@NHKPNDFDPXOXIBWA90CCFJHBNPWadMC5'7<?;BHLU[U`hJ:61463=@OKTPW_VXOF336A69EJKCD>C?HEIO@NPGMRUM96C9;EAEPFIY[SXFD.,*FA<UQP_XUUUA<BA>GGHIIIIHOIHGJCKQK;Q<?OJGJFKCIN^R>@8F?D7HEHKXWRSOPC8/91>E>PQPH]VZWRB:70879?NB>JMMOEDP_TSTQQB6+;I?EBDN_VUWX\H+(8,6EGGSIW]T^[F1/':Ne<RUTWUURPRDI@MBBBHFAISWEKE9ULYTC;2/8IIJAEJWT^g`O6$506BJDPUK[ZaSXA3+&6=@GO\KALIEPDIEGBAZ^SOD)37>CBGERP[^]QQ,";:-@ASVERXS^_H&$*LBJPJNVOPMIHDB<8ABB@IPKNPIRPQRPJH66>;B?ILJANOZ`PWD-;@;?CEORKUJT_`UJ=231ACLACJJHSRMTXOOGT@DMC<>GLL?J?JJGPXUQRE3-979JGONKXW]]=007FG?LPLRSSQZN80)4>@HMQRKZW_KFKFCLIE?=EFOPIUG@IDMQYC@<?G6<EFJKIRPRW]LHJ188:DFTHOJ<QLQPRUONLJFOIIABGEHBKKDQPMSMJRC7DAACGHDHGIQThH5,@==HMJTOJW\RPA&*3?BD[g`NQNQLDA<>CDPTAHWGGLG@GOXJPKF?;8BCJCBDETQNGPKPM<20<CGMH@;ORUPIOOJJ@<7@FDHJGKNFOMMQ[\XNND7FB.;BMIRRVZbVJH&(?>HDJLI`WHXKB-41C;GJQ[RTTOM?DB:;<BKSMGFTIPRLHP[ND@IF>?G@BBHPLPOTTXIMG,63?HPMKQGJUS]VN[H-70?>GPMKYVJMKHXJWEM=CA88IJ>JFPKM[WYJ?46,@?JNNPfWQY[W9!%;?FCFQXUHS[L>1/DECGGHLONWPSIFLNGC>=OBMJNOCHKIMMNO_TDG?9=>>FHRSPACUXJ^OTB1,8;>HJILQ^SDVFINZYC>H>?HHAGJKMONV\oX;<6(===BHMSUWaRWV-#.6;AMQTPKYgT@+*;7BCFOKVU]DOE<E><@7@NENGKMRGNMUGMPPVTA@;;>FGAFROKOZZ\VNTKH:/5:@RFEMUUR\QI>@BEJEBBPKXOFEFFNGKOIR==HKBE@FLIPJMNIF4B6HGBLJDKTN\TSB57BC7BL@VRQZ\^V<B355?AEBS]NSII8HcEKOK?<;=QDHGLMIADI_MXfXUE4+/7@LJQVKPZUWQ8"20;BIJSZVXSOENKQGF=;>CGSNJJAP_PQU`QD@+73F@>D[ObO]bB1).7>?LMHQaMQ[^TC71*+=UPKGR]PSNGLKGHKF@DGHBESPGAL>WRQKOd`dKM;'-7:GCLS]\^TB@0-0=@DFFJTSY[OEJGA=:6AMSX@NPJLJU[ZQNNAB31<C9JLQRaU_TO=+%7@:GRLRXWST^S>$3(>DFQJLLZNTPELKC9EA8?FDWSMQHJUSPOJXURQXXK366/5O=ZWVOW^[@+1ACMMQMUHT`QLJ9=>;BLFQMENPIGPRSRWTGB:3<CEF>U_SSU]YF8--2>>JMWUUZWNS?=8+58;DFSdRWXWHBG;<77BACKNGKPJNLPH_FDUOUMMKN>E;5;JAOEPP^L]JHE,9/L>:L`DYTe^ML87*6:>VPWS[LJJEJBICQ8:JAPOEHHLGGMUSN@:78J<>IFRRJWNWXE75-8>OJBId[SVRN=0=:A<4KHCTGXcOV\HLC8SRLSUPI=,;?=MIKQTWPSY@-/8@=CI[JTP^XSM16.6<DONMVSLQPD@8=EECQBCPPJ?JJRVTTXSKK>-.:=<BGOLSYXPWKO?;243B@FUURX[WPQ?=03.7RQSNWTMRTUVIKGJOPGBIB17JCEFQKUUSUM[K9&33AJFTPXT]`QI6/03BBHLQPSQ_TLF?53=3KIILLURPLOGNQONGEBB>II<BTVHN`_ZUC2192DDKR\FQ[R\G;6.2=@=FSLOTTVLNOTRPFOGKHDAISB/EOIMMNKTUXZKK+6==?HDGPZUYdTD-"6@CEHWPVWU[ND;)26@GKUQORMNNBMIKALHHH>ADRQDJHJTPNW^Q<?4309AAHNN^VXbHM="@=D<PLFXOVZOWQJRSKKKG??<PG=CPBHCHSOPCKUHF/48>FAGWOMXgNDMD0-C<GRNJWWYTTPG>2'>KIKDa\STAIJHEG@GCFGHHGFENMTGPMG??>Q:B@EECFKG[T]MJJ:8>:@ABFQXJNRVWYMKLQ+8;GDMKIUJTUOKRSPUOMP9D6C6<AKHCHXfpQG6.-6?<GLQO]YSYZB 1>BBSTUVTOKGBC<1>;;PJRRSGIPELRTJIL:6?KEGLCJJLLHRWXQDA35D@JACUJDNPXOGJIIHFG510=BPGJ@WhRKLBHNHGA<?BLHEFOTHHW[aL4$;?HGEHQNS[WZOPK<$(==BTGZJRLXUN:3/87LLKHQKUXQ@=GAF@HDCMPMDBHQDQSVXSUGC6=8B=AHJHIYSTUQKSZFKK2*7BDRKTOUTP@FLJMMKE6?MLHGFGKNNZT\aTS:(,>ACNITV]]VWH)*,9AD@NLRPR\TKLE!+4<PMNRZSOMFHINJHDNKEN?QD?GMCINMRPXEB7>>GEBAHH9\LOBHXUCMKMA9.4?D8RORefPCOBCKBLNK<ENPMT<JFLNNUH7@D;GCF@IISTPMTM>=32E@ENTOJLV\MLK=1,0;IFVPRPO[TSJC8;25KCFMXCNEGRPOQNMAFE9?IAKMFLNQPPTUXSLMAI?*87DKOUSTOPMDFA;>2CJZTKNIEIHKRKGOC@:A?CLHJHJP\^fSSN53-/;:HHKXZWWcX?2 64<=GPWVUJRSQF53/-BEDSZPXULHJRJLQOFB>6<>BBDFJUCFOXUT\ZKFMO!/@@@IGUWUW]QC%368<CPQVTRTKECB=8E87FGPOKJJRUNMZSQ_D7,08>?BFMXURT__KH+!/=ABDPNUXSS]LB64++BMMULLOVULJD?;>=5GHITOHNMMSQRJDKC7=;CDIJ1?/=?QLTRP]U^L@2&.5FROI_`QM@CAC947?BMSQXVWGFZMSQUE6>:<;ABDILSNUUX\L4='1D>?RJTU\VNU<,0.>ANONVNTWTVSH@9914HLPVDUPQPMFJ?JF=;C?DIHHD&23=GLHMTN`^ZO31<CBHHNUTWPHH<=;FBCH>TNLHKPNLLQ\NP<===P<HFGKPKWff`A31-/@DAHKVW]TV[7)*+7DOKSUOO[Y[RG<4;29;NKQFKMHTPNHHEC;A9B7MMDA?:J@FNQU[]Z\SD1$/?FBHPMPUPRSTB-.=5;J[QWSRSLDNK=89E>MSLONOP=NQTUKP>;;@BJAGJ[RNOWVURB#/3=>MCJXDBr[W>A:21?@;PS[RWRNHQKG>@@??DH?HKEB46@BOEGR]LTbZN6"+5?DLTKW\SXTM;#">4=QSOVU[JPL+/@4?JXKPPU_OCBQKLRNCL>7?BH?>DRV^QSSWN1(>:6BR@HJWTKUaVLD;6-08KMKWMMNOcSH?:32@48FnTIAD@DHNEKSPUcXT9!+G@?LQ]AR]aWN<&&7;@?N_Z]QUSHH8(84DDQMLQNQ_LULNSOIHT>35AFJLGOX\NaLLZ6%817=DJJSI]]Z\G+15;>BCKNT[eWJMJ=1:,0>>CJNOPLO8SURJJMF[[ZNQ8-3=DDMNSSVU]WRG-13;;;MWQYQ[TZF.(+3FMGOLVTQVOA?<>;A;LLNQOOHODKLXTQN@N68A>CAEHGST^f\\H,/(2<DGQI[WbFPZPI9/#3<DALN[UC<ARNHKAMMLTKSAE4??BGE?NEST`]T?+/4@=CJMQXbUY^K1#,5JH?KSZgST_WE3).CJRKNUVRKFMDLDHCJP4KEHHDFGGJLHMQPJNC4>2FEB7VUBaOadM5<A%:7@HHVMRDNPUNKIJF<B@GOBBAOOGD?XJNOSW\BL=,?FC<N:OPNSRZdJ3"%:@OSO[QeYYG9318:BNMRPTRUMI;8?6@FPGHROFHVBPSHMYa]O189<A>CCKOTK[[WTHH<1'5;HIMIKZ<MOWSMHA@D0?OVJGHNJDDHCNU^[RVD=5966ANLCWRU^XN@-'86BHFJPZW\RXN$%/6?IF[WXabVZKFDDCEMH:;MWKEHLJB=TTXGNSOA?5BC8ACQLUGS\JKCB;>D@LJHMFLG๔อ๔อ๔อ๒อ๐อ๎อ๏อ๋อๆอไอ฿อÜอÝอโอ๊อ๏อ๒อ๕อ๓อ๖อ๒อ๑อ๐อ์อใอÞอฺอำอำอÛอ็อ๒อ๘อ๚อüอüอ๛อ๗อ๔อ๏อ่อๅอเอÝอÞอ่อ๒อ๚อüอÿอฮÿอþอ๛อ๘อ๕อ๎อ้อ้อ๋อ๑อ๘อ ฮฮฮฮฮÿอüอ๘อ๕อ๑อํอ้อ็อๆอ็อ้อ้อ๊อํอ๎อ๐อ๐อ๒อ๓อ๕อ๖อ๕อ๔อ๒อ๒อํอๆอÝอือิอฺอๅอ์อ๏อ๑อ๓อ๕อ๖อ๖อ๒อํอ้อๅอแอÜอือูอโอ๏อ๒อ๔อ๚อþอþอฮÿอþอ๙อ๒อ๐อ๖อ๔อ๗อ๓อ๐อ๒อ๑อ๎อ์อ๊อ๋อ้อๅอๅอ๊อํอ๑อ๓อ๔อ๕อ๕อ๒อ๐อํอ็อใอฺอิอาอุอใอ์อ๕อ๗อ๙อ๚อ๛อ๛อ๘อ๓อ์อๅอ฿อÜอแอ๊อ๕อ๛อ ฮฮฮฮÿอ๚อ๖อ๑อ๋อ้อ็อ็อ๋อ๐อ๙อ ฮฮฮฮþอ๛อ๙อ๖อ๏อํอ๋อ๋อ๋อ้อ้อ็อๆอไอ็อ๊อ๎อ๏อ๑อ๓อ๑อ๐อ๑อ๐อ์อ้อ็อไอÞอÛอูอÞอๅอ๎อ๏อ๑อ๒อ๓อ๑อ๐อํอๅอโอÝอึอำอัอีอ฿อ็อ๒อ๘อ๛อ๙อ๙อ๖อ๖อ๑อ๒อ๐อ๏อ๕อ๓อ๊อเอ฿อโอÝอ฿อแอเอเอเอไอๅอๆอๆอๅอๅอไอ่อ็อ์อํอ๊อ็อใอเอเอ฿อๆอ่อ๋อ๎อ๏อ๐อ๔อ๕อ๒อ๒อ๓อ๑อ๎อ๊อใอโอ็อ์อ๓อ๘อ๚อ๛อþอÿอ๛อ๛อ๓อ์อ็อแอÝอÞอโอ์อ๕อ๚อüอþอ๚อ๙อ๗อ๒อ็อใอโอโอเอ฿อÜอ฿อ฿อโอๆอ๊อ์อ๋อๅอไอไอๆอๆอ่อ้อ่อ็อโอÜอÜอฺอÝอเอไอ่อ้อ๋อ๎อ๏อ๐อ๑อ๑อ๏อ์อ๊อๆอโอÜอ฿อ฿อโอ๋อ๐อ๔อ๘อ๛อ๛อ๘อ๚อ๔อ๗อ๒อ๗อ๓อ๎อ็อๅอๅอ้อ๋อํอ๑อ๓อ๗อ๗อ๔อ๓อ๑อ๑อ๏อ์อ๏อ๎อ้อไอใอเอูอำอือเอ่อํอ๑อ๏อ๑อ๒อ๏อํอ์อๅอÛอือิอึอÜอ๋อ๓อ๖อ๗อ๛อ๛อ๗อ๖อ๒อ๒อ๎อไอÞอฺอเอ็อ๏อ๗อýอฮฮฮฮüอ๗อ๕อ์อๅอไอ่อ๊อ๎อ๒อ๖อüอ๚อýอ๛อ๙อ๖อ๒อ๏อ๊อ้อ้อ๋อ็อใอ฿อÛอุอฺอÜอโอ็อํอ๏อ๐อ๐อ๒อ๓อ๔อ๒อ๎อ๊อๆอ฿อฺอำอัอาอุอเอ้อ๎อ๑อ๔อ๔อ๑อ๎อ๐อ๐อ๐อ๎อ๖อ๓อ๎อ๊อ็อๅอ้อํอ๓อ๙อþอฮฮฮฮýอ๘อ๔อํอ๒อ๒อ๐อํอ์อ่อๆอ์อํอ๏อ๑อ๒อ๒อ๐อ๎อ๐อ๑อ๒อ๐อ์อๅอใอเอือฺอแอ๋อ๐อ๕อ๗อ๗อüอ๙อ๔อ๐อ๊อไอ฿อฺอฺอโอ๎อ๙อÿอฮฮÿอüอ๛อ๔อ๒อ๎อ้อๅอใอ๊อ๏อ๗อýอฮฮฮþอ๛อ๘อ๕อ๓อ๑อ๑อ๒อ๒อ๎อ๋อ๊อ้อ่อ๊อ๎อ๑อ๑อ๑อ๑อ๏อ๑อ๑อ๎อ๐อ๏อํอ๋อๆอ฿อÛอึอึอÜอใอ๊อ๏อ๑อ๔อ๖อ๕อ๑อ๎อ๐อ๏อ๎อ๓อ๔อ๊อแอÞอ฿อ็อ๐อ๗อÿอฮฮฮฮฮ ฮüอ๘อ๓อ่อ็อ์อใอแอใอ฿อÛอÝอเอๆอ็อๅอ็อ๊อ์อ๋อ๋อ์อ๊อ่อไอ฿อÜอฺอÛอแอ่อ๎อ๓อ๖อ๖อ๕อ๔อ๒อ๏อ๊อๆอโอÝอÞอแอ่อํอ๓อ๘อ๙อ๙อüอ๗อ๓อ๎อ็อใอเอโอ๑อ๙อฮฮฮ	ฮฮฮฮþอ๙อ๖อ๒อ๐อ๏อ๊อ๋อ้อ๊อ๋อ๑อ๒อํอ๓อ๗อ๖อ๒อ๐อ๎อํอํอ์อ๋อ่อๆอแอÝอูอึอิอุอ฿อๅอ๊อํอ๎อํอ๎อ๎อํอ๋อๆอใอใอ๓อ๏อ็อแอÝอÛอฺอแอํอ๙อ๛อþอüอ๙อ๒อ๋อ็อใอเอÞอÜอฺอูอÛอÞอโอๅอ็อ็อๅอๅอ่อๅอ่อๆอโอใอแอเอแอÞอฺอูอÝอแอๅอ๊อ๔อ๖อ๔อ๔อ๓อ๏อ์อแอÛอือุอเอ็อ๎อ๐อ๕อ๘อ๚อ๚อ๘อ๓อ์อ๊อ็อเอฺอึอÝอ้อ๓อ๚อýอÿอฮ ฮüอ๘อ๔อ๎อ้อ๊อ๊อ่อ๋อ์อ๏อ๕อ๚อýอ๛อüอ๙อ๕อ๒อ๑อ๎อ๎อ์อ๊อๅอใอแอÜอูอึอัอึอ฿อๆอ๊อํอ๏อ๐อ๑อ๏อ์อ๊อ็อใอไอๅอ๐อ๊อไอÞอฺอุอ฿อ่อ๓อ๚อþอ ฮþอ๚อ๗อ๕อ๔อ๑อ๋อ่อ็อ์อ๑อ๖อ๚อýอýอ๛อ๙อ๖อ๒อ๏อ๎อํอ้อ็อ็อโอÞอูอือือÞอใอ๊อ๏อ๓อ๖อ๒อ๏อ๎อ๏อ์อ่อโอÜอือีอุอÞอๆอ๏อ๕อ๙อýอ๛อ๘อ๖อ๑อ๏อ่อÞอูอึอÞอ่อ๖อþอฮฮÿอüอ๚อ๗อ๒อ๏อ๊อๅอโอเอไอ้อ๏อ๔อ๛อýอÿอüอ๚อ๕อ๑อํอ๋อ็อ็อ็อๆอๅอเอÞอÝอฺอÞอใอ้อ๊อ๊อ๊อํอํอํอ์อ๋อ้อ๊อ๊อ็อ่อ๏อ๊อ็อๅอ็อ็อ๊อ๏อ๘อ๛อüอýอüอ๙อ๖อ๐อํอ่อใอโอเอๅอํอ๒อ๚อ๚อ๚อ๘อ๔อ๐อ๋อๅอเอ฿อÝอÜอÞอเอโอใอๅอโอไอๆอ้อ้อ็อๆอ็อ็อๆอ่อ็อ็อๆอใอแอÝอแอไอ่อ๋อํอ๋อํอํอ๑อ๎อ๋อ้อ็อๅอเอเอๅอ์อ๓อ๙อüอýอþอýอ๛อ๗อ๓อ์อ็อใอโอแอ้อ๓อ๙อฮฮฮฮÿอ๛อ๗อ๒อ๏อ้อÛอึอำอีอึอือÝอแอใอ้อ้อ่อไอแอแอโอÝอ฿อÝอือิอีอิอีอะอไอโอÜอือึอ฿อ์อ๑อ๛อÿอýอÿอüอ๗อ๒อ์อใอไอÞอÜอเอ๐อ๛อÿอฮฮฮ ฮüอ๛อ๘อ๕อ๒อ๎อ๋อํอ๊อ์อ๑อ๔อ๖อ๗อ๙อ๚อ๖อ๑อ๐อํอ๑อ๑อ๎อํอ๋อๆอโอÝอÛอÛอ฿อไอ์อ๎อ๏อ๏อ๒อ๔อ๕อ๑อ๊อ็อเอฺอือือ฿อ๋อ๓อ๙อüอüอ๙อ๚อ๙อ๒อ์อ็อแอÝอูอÝอ็อ๓อ๕อüอฮฮÿอýอ๛อ๖อ๐อ๋อ้อ่อใอแอใอ่อ์อ๓อ๛อýอþอýอ๙อ๓อ๑อ๐อ๐อ๑อ๏อํอ๊อ็อ้อ็อ็อๆอ่อโอÞอโอ้อ๑อ๕อ๘อ๘อ๗อ๙อüอ๙อ๖อ๒อ๋อๆอเอฺอฺอโอ๒อ๙อýอฮฮฮ ฮÿอýอ๘อ๐อ่อÞอึอุอึอÛอแอ๊อ๑อ๒อ๑อ๔อ๖อ๑อํอไอเอÞอเอเอแอ฿อÝอÝอÛอฺอเอโอๆอ็อ๊อํอํอ๊อ๊อ้อๅอเอÜอÜอÛอฺอเอ้อ๎อ๑อ๐อ๑อ๕อ๔อ๓อ๑อ๋อ่อไอไอ฿อÜอแอ็อ์อ๕อþอþอþอüอ๘อ๖อ๓อ๐อ๊อไอ฿อÞอใอ๊อ๐อ๙อ๛อþอüอ๚อ๘อ๕อ๔อ๒อ๏อ๋อๆอเอÝอแอโอไอๆอไอ฿อุอัอัอึอÝอ็อ๋อํอ๐อ๑อ๔อ๑อ๎อ๋อไอแอÛอือึอÛอ้อ๔อ๛อÿอ ฮÿอüอ๖อ์อ่อๅอโอโอÞอโอ็อ๑อüอฮฮüอ๗อ๔อ๑อ๑อ๒อ๒อ์อๆอโอใอแอÞอÞอ฿อÞอใอ่อ๋อ๏อ๑อ๒อ๑อํอ๎อ์อ้อไอ฿อฺอึอำอูอไอํอ๐อ๑อ๑อ๐อ๒อ๐อ๎อ๊อไอÞอูอีอึอÜอไอ๑อ๙อýอ๛อ๘อ๘อ๗อ๔อ๏อ๊อๆอไอเอ฿อใอ๋อ๗อ๛อ ฮ ฮฮ ฮþอ๛อ๙อ๗อ๐อํอ้อ็อๅอไอ็อ้อ๋อ๋อไอแอÝอิอิอูอโอๅอ๊อ๐อ๑อ๓อ๒อ๏อ์อ็อเอูอือีอือเอ๋อ๒อ๖อ๗อ๚อ๚อ๖อ๓อ๎อ๊อไอ฿อ฿อเอ่อ๐อ๗อþอฮþอฮþอ๚อ๖อ๐อ์อ่อๆอๆอๆอ็อ้อ้อ๋อ๎อ๐อ๎อ๏อํอ์อ่อ็อๆอๅอๆอๅอโอ฿อÝอฺอือือือ฿อโอ่อ๋อ๏อ๐อ๒อ๐อ๏อ่อไอÞอึอำอิอุอแอ่อ๐อ๓อ๘อ๛อ๚อ๕อ๖อ๔อ๑อ่อโอÞอฺอูอÜอแอ์อ๙อ๛อüอýอýอüอ๘อ๘อ๖อ๓อ๏อ็อใอเอแอโอไอไอÜอÝอฺอีอำอุอโอ่อ๎อ๑อ๓อ๔อ๒อ๒อํอ่อเอÛอึอัอำอฺอๆอ๎อ๓อ๕อ๙อ๘อ๖อ๕อ๒อ๏อ่อโอÞอÛอแอ้อ๐อ๖อ๚อýอÿอ๚อ๙อ๕อ๔อ๐อ๊อๅอโอแอไอ์อ๑อ๛อ๛อýอýอ๙อ๖อ๕อ๐อ๎อ์อ๋อ์อ๊อ้อๅอโอÝอÛอเอโอไอ็อ์อ๏อ๋อ่อ๊อํอ๎อ่อโอÞอือาอออฯอึอใอ๋อ๎อ๒อ๑อ๓อ๖อ๒อ์อ๊อๅอ฿อÛอีอูอใอ๊อํอ๖อ๚อýอÿอÿอüอ๚อ๙อ๔อ๒อ๏อ็อโอ฿อฺอÛอฺอÝอÝอๅอ็อ็อ๊อํอํอํอ๎อ๒อ๑อ๐อ๏อ๏อ็อโอ฿อุอาอฮอำอÛอ็อ๏อ๓อ๖อ๘อ๕อ๓อ๑อํอ๊อใอÜอÛอูอ฿อ๋อ๘อþอฮฮ ฮýอ๚อ๖อ๑อ้อโอÜอเอๆอ์อ๑อ๖อ๛อýอüอ๙อ๘อ๔อ๐อ๋อ่อๅอๅอๆอ็อ้อ๋อ้อ่อ์อ๏อ๒อ๒อ๓อ๐อ๑อ๑อ๒อ๔อ๑อ๐อ๋อๅอÞอีอาอิอูอ฿อ๋อ๐อ๒อ๗อ๗อ๖อ๒อ๏อ๎อ๊อเอÜอึอัอึอÞอ็อ๐อ๘อ๚อüอþอüอ๗อ๔อ๑อ๊อ๊อๆอใอโอ฿อแอใอๅอๆอ฿อ๗อüอ๚อüอýอ๛อ๖อ๒อ๔อ๓อ๒อ๒อ๎อ้อ่อไอÛอือิอูอแอ็อํอ๒อ๔อ๒อ๓อ๑อ๎อ่อใอเอฺอุอิอฺอเอ้อ๓อ๘อ๙อüอüอ๙อ๓อ๏อ๐อๆอÞอ฿อ฿อๅอ๓อ๙อÿอ ฮþอþอ๛อ๖อ๒อ์อ็อไอใอโอใอไอๆอๆอ็อ๎อ๋อ๎อ๏อ๎อ๐อ๑อ๐อ๐อ๐อํอ้อไอÝอูอาอฯอาอูอ฿อๅอ้อ๐อ๘อ๖อ๒อ๏อ๎อ๋อ่อไอเอูอิอือ฿อ๊อ๓อ๙อ๚อýอ๘อ๙อ๗อ๓อ๎อ็อไอÞอ฿อÞอÛอเอไอ๊อ้อุอ๛อ๛อüอýอ๚อ๔อ๏อํอ๊อ่อ้อ็อๆอๅอแอÝอÛอÛอ฿อๅอ้อ์อํอ๎อ๎อํอํอ์อ๊อ็อแอÜอุอิอีอÝอๆอ๏อ๓อ๖อ๖อ๕อ๕อ๓อ๎อ๋อ่อใอÜอูอÝอ๊อ๔อ๗อ๙อýอýอüอ๛อ๛อ๔อ๎อ็อ฿อÛอÞอๅอ๏อ๕อ๛อÿอฮþอüอ๖อ๒อ๎อ้อ็อๆอๆอๆอๆอไอๅอใอๆอ้อ๊อ์อ๋อ๊อ๊อํอ๏อ๐อ๏อํอ๊อ้อๆอเอÛอือุอÜอโอ๊อํอ๑อ๖อ๚อýอ๙อ๕อ๓อ๐อ์อ่อโอÜอูอูอฺอÝอโอแอฺอโอๆอ่อ๊อ้อ้อ๊อ็อไอเอเอÛอÛอÜอ฿อÜอูอือูอÝอ฿อแอโอเอโอ็อ่อ๊อ้อโอÝอฺอึอิอะอือÝอใอ็อ๏อ๔อ๓อ๑อํอ๊อๆอเอูอึอือเอ๎อ๖อ๙อüอýอýอ๗อ๒อ๎อํอๆอแอÝอูอใอ๎อ๚อÿอฮฮฮฮüอ๗อ๕อ๑อ๎อ๏อ๎อ๎อ์อ้อๅอโอใอๆอ่อ๋อ๊อ๊อ๋อ้อ๊อ์อํอ๊อๆอ็อๆอเอีอัอออฬอออิอÝอใอ้อ๋อ์อํอ๐อํอ๋อ้อไอ฿อฺอือิอะอฯอออะอะอสอ๏อ๕อ๙อ๛อ๛อ๛อ๕อ๑อํอ่อๅอÞอแอ฿อÜอÛอูอฺอ฿อแอแอๅอ่อ๋อ์อ๎อํอ๊อ็อๅอๅอÜอูอือะอือ฿อ็อ๏อ๔อ๖อ๕อ๒อ๑อ๊อๅอเอÛอูอุอÞอใอ๎อ๖อ๙อýอüอ๔อ๑อ๎อ๊อไอแอฺอีอิอุอแอ์อ๔อüอüอ๛อ๖อ๕อ๎อเอฺอีอือูอูอูอูอุอูอุอฺอÜอÞอÞอเอ฿อ฿อÝอÝอÝอÝอÛอÜอÝอูอิอำอิอุอÞอโอแอๆอ่อ๊อ๋อ๎อ๊อ้อๅอโอเอÞอÛอือำอีอุอฺอูอีอ๛อÿอฮÿอüอ๕อ๑อ์อ่อแอÝอฺอุอือÛอๅอ์อ๎อ๐อ๒อ๒อ๑อ๎อ๑อ๐อ์อ฿อเอโอ฿อเอÞอ฿อใอๆอ่อ่อ๊อ์อํอ๎อํอํอ์อ๋อ๊อ่อ็อไอๅอๆอ์อ๏อ๔อ๔อ๖อ๕อ๓อ๓อ๑อํอ์อ้อโอÝอÛอแอํอ๕อ๘อ๙อ๘อ๗อ๙อ๙อ๘อ๓อ์อไอแอ฿อÝอÞอใอ๊อ๎อ๐อ๏อ๏อ๎อ๎อ้อ็อไอแอเอÝอÜอÝอ฿อแอเอโอโอใอๅอๅอ่อๆอๆอๆอ่อๆอ๊อ๋อ้อ่อๅอใอÞอิอำอิอึอÜอไอ่อÛอ๚อüอýอ ฮ๛อ๓อ๏อ์อๆอโอ฿อÝอแอ๋อ๐อ๕อ๙อ๛อ๛อ๙อ๗อ๔อ๑อ๏อ๒อ๐อ๏อ๎อํอ๊อ่อโอฺอือุอเอๆอ์อ์อํอํอ๐อ๒อ๐อ๊อโอÜอีอัอัอีอเอ๊อ๒อ๔อ๓อ๓อ๑อ๏อ์อ็อแอÛอือัอัอุอ้อ๕อ๙อ๛อüอ๙อ๕อ๓อ๐อ๋อๅอÞอÝอ฿อเอไอ๎อ๘อ๚อýอýอ๗อ๒อํอ๊อ่อๆอๆอ็อๆอๅอใอโอโอเอÞอแอ็อ้อ่อ็อ่อ็อ้อ๋อ้อ้อ้อๅอโอ฿อÛอÛอุอุอÛอÝอแอโอแอ฿อ๚อ๗อ๙อ๘อ๖อ๑อ๏อ๊อ่อไอโอใอ่อํอ๔อ๙อ๛อ๛อüอ๛อ๘อ๑อํอ์อ์อํอ์อ๋อ่อโอเอ฿อเอโอไอๆอๆอ็อ๊อ่อ๊อ้อๆอ็อไอÞอือาอะอำอฺอใอ๋อ๏อ๓อ๖อ๕อ๏อ์อ้อโอÜอฺอูอึอÛอเอ้อ๔อ๛อüอ๘อ๚อ๕อ๓อ๏อ่อเอุอีอูอโอ๋อ๖อ๛อýอþอüอ๙อ๖อ๕อ๑อ๏อ๋อ้อ๊อๆอ่อ้อ๊อ๋อ์อ๎อ๏อ๑อ๏อ๎อ๎อํอ์อ์อ๋อ่อ่อไอเอÜอÞอ฿อÝอÜอÞอใอ่อ้อ่อๆอ฿อ๖อ๗อ๙อ๗อ๗อ๒อํอ็อใอเอÛอุอแอ๐อ๚อþอ ฮ ฮ ฮÿอüอ๗อ๔อ๑อ๎อ์อ๋อ์อ๊อ๋อ๎อ๒อ๒อ๔อ๔อ๗อ๕อ๑อ๏อ๐อ๐อ๎อ๎อํอ้อๅอแอฺอฺอÞอใอ่อ๎อ๔อ๙อ๘อ๒อ๒อ๏อ๊อใอÝอูอีอาอัอÛอ็อ๒อ๖อ๗อ๘อ๗อ๕อ๑อํอ่อไอÛอฺอÛอโอ์อ๙อýอฮ ฮþอÿอþอ๚อ๗อ๓อํอเอÜอÜอÛอÞอแอไอ๋อ๑อ้อํอํอ๎อ่อโอๅอใอเอÝอเอ฿อแอ฿อ฿อÞอÝอÞอแอแอโอใอ฿อโอÛอ่อ๋อ๑อ๔อ๕อ๓อ๓อ์อ็อใอÞอÛอฺอโอ๊อ๒อ๗อ๚อüอ๙อ๙อ๓อ๎อ็อใอÞอÛอือÜอๅอ้อ๏อ๑อ๕อ๘อ๛อ๗อ๏อๅอÞอๅอ์อ๎อ๐อ์อไอÞอฺอÛอ฿อๆอ้อไอ็อๆอ้อ์อ๋อ่อ็อไอโอแอÝอÝอใอ่อ๏อ๐อ๓อ๓อ๗อ๗อ๔อ๑อ๏อํอ๊อแอฺอุอÜอ็อ๒อ๕อ๖อ๗อ๛อ๗อ๘อ๏อ์อ๊อๅอÝอÛอูอือฺอโอ้อ๐อ๑อ๑อ๐อ๏อ็อโอโอÝอÜอฺอุอูอฺอูอุอุอุอฺอÜอÜอ฿อแอโอแอไอ์อ๓อ๕อ๕อ๔อ๔อ๒อ๊อใอุอีอำอÝอ๊อ๒อ๘อýอÿอฮüอ๗อ๑อํอ๏อ๊อเอÛอÝอ็อ๕อþอฮฮฮฮþอ๙อ๓อ๏อ๊อ๊อ้อ่อๆอ็อ๊อํอ์อ๏อํอ๎อ๐อ๎อ๋อ้อ่อ่อๆอไอโอเอฺอีอาอัอำอÞอ็อ์อ๎อ๑อ๔อ๒อ๏อํอ่อไอÞอฺอิอะอิอโอ่อ๑อ๗อ๗อ๘อ๘อ๖อ๑อ๎อ้อๅอแอÜอÛอÜอÞอใอ๋อ๔อ๙อ๘อ๔อ๕อ๒อ๓อ๐อํอ้อ็อใอโอแอแอไอ้อํอ๒อ๔อ๓อ๗อ๙อ๕อ๒อ๐อ๑อ๑อ๒อ๓อ๕อ๒อ๎อ๊อเอÛอึอัอฮอาอโอ๎อ๔อ๘อ๙อ๚อ๗อ๕อ๒อํอๆอแอÜอึอิอึอÛอใอ้อ๑อ๔อ๒อ๑อ๐อ์อ็อๅอๅอใอโอไอไอแอโอใอ่อ๊อ็อ๊อ้อ์อ์อ๊อ่อ๋อ๊อๅอ฿อฺอุอึอำอาอือÞอใอ้อ๋อ้อ๋อ่อ๋อๆอ฿อือัอฯอออำอเอ่อ๒อ๔อ๕อ๓อ๑อ๏อๆอไอ฿อÛอำอฬอฮอุอไอํอ๖อ๗อ๘อ๙อ๕อ๐อํอ่อเอÝอูอุอฺอ฿อโอๅอ๊อ๎อ๓อ๔อ๗อ๔อ๒อ๏อ๋อ้อๆอๅอํอํอ๐อ๐อ์อ๋อ็อเอÜอูอาอะอีอฺอใอ๋อ๏อ๔อ๖อ๕อ๓อ๐อ๋อๆอโอÛอีอฺอแอ์อ๖อ๚อüอýอÿอüอ๙อ๓อํอ้อไอแอใอๅอ็อ้อ์อ๋อํอ๎อ๏อํอ๋อ์อ๋อ้อ้อ้อ่อไอแอÛอึอาอะอาอูอÞอใอ๊อ๋อํอ๎อ๏อ้อๅอโอÞอึอะอฯอิอÛอไอํอ๑อ๔อ๕อ๒อ๑อํอ็อแอเอÜอำอัอิอÝอ้อ๔อ๘อ๛อ๚อ๗อ๔อ๐อ์อๆอใอ฿อÞอÛอÛอ฿อ็อ๎อ๖อ๚อüอüอ๚อ๘อ๓อ๐อ๑อ๏อ๎อ๐อ้อ๊อ่อ้อ๊อ่อไอ฿อฺอึอฮอหอัอÜอใอ้อ์อ๒อ๔อ๑อ๊อ็อโอÞอึอฯอฮอำอไอ๐อ๘อ๚อüอüอ๚อ๔อ๒อ๑อ๐อๆอเอÝอ฿อๆอ๐อ๘อüอýอüอ๚อ๚อ๘อ๕อ๒อ๎อ้อ่อ่อโอเอ฿อÜอุอฺอแอๆอ้อ๊อ๊อ๊อ๋อ๊อ่อ่อใอÞอูอาอาอาอำอÛอโอ๋อ๐อ๒อ๐อ๐อ์อ่อ็อเอฺอีอัอิอÝอ่อํอ๒อ๕อ๗อ๗อ๗อ๔อ๑อ๎อ๋อๅอÞอึอัอัอÛอๆอ๑อ๘อüอüอ๚อ๙อ๖อ๔อ๑อํอ๋อํอ์อ์อ๎อํอ้อ็อๅอแอÜอึอาอำอีอแอ้อํอ๒อ๒อ๐อ๑อ๏อํอๅอ฿อฺอัอฯอิอÞอ๋อ๔อ๗อ๘อ๗อ๗อ๔อ๒อ๋อๆอไอเอÛอำอิอฺอไอ๎อ๕อ๘อ๘อ๕อ๑อ๋อใอÝอุอือุอฮอัอุอโอโอใอใอ็อ้อ๊อ์อ์อํอ๎อ๏อ๏อ๋อๆอโอ฿อÝอูอÛอÛอ฿อโอไอๆอ็อไอ่อ่อ้อไอ฿อÞอÛอึอัอิอือÛอๅอํอ๐อ๑อ๕อ๑อ๐อํอ็อไอแอÞอฺอือีอÛอแอ๋อ๒อ๕อ๘อ๗อ๔อ๎อ๋อ่อๅอใอ๎อ฿อเอÞอÛอÛอÛอูอูอÛอือำอือเอโอไอ่อๆอ่อ่อ๊อ๋อ็อโอÝอูอึอิอิอÛอไอ็อ๏อ๗อ๘อ๒อ์อ็อโอ฿อÞอูอิอำอÜอ๊อ๒อ๓อ๘อ๕อ๔อ๑อ๊อÞอÛอุอีอาอาอัอิอัอัอาอะอัอัอีอูอูอุอูอÜอÞอÝอฺอือาอฯอฯอออะอÛอแอไอๆอ็อ๋อ๎อ๊อไอแอÝอÛอำอออษอษอฬอีอแอ้อ๏อ๑อ๓อ๒อ๒อ๏อ๊อโอÛอือิอาอีอÞอๅอ๏อ๕อ๘อ๙อ๖อ๒อ๑อ๐อ์อ็อโอ่อ์อ่อๆอ็อๅอแอÝอฺอีอีอำอือเอๅอ๋อ๑อ๑อ๎อ๊อ๊อ๋อไอÝอือิอือเอๅอ๊อํอ๏อ๐อ๒อ๐อํอ็อแอÛอูอาอัอฺอๆอ์อ๒อ๗อ๛อ๛อ๘อ๕อ๑อ๋อๆอใอÜอÛอูอÝอๅอ๋อ๓อ๔อ๒อ๒อ๑อ๒อ๒อ๒อ์อ๊อ่อ็อ็อๆอใอ฿อุอาอฯอออฯอฮอำอุอฺอุอูอÜอÝอเอแอÛอÛอึอฯอฬอออะอึอเอ็อ๎อ๏อ๑อ๑อ๎อ้อโอÜอีอะอฯอฬอะอูอโอํอ๒อ๓อ๓อ๖อ๔อ๑อํอ็อใอเอๆอโอโอÞอฺอÞอÝอÝอÞอฺอูอÝอเอโอโอใอๆอ็อ้อๆอๆอ็อโอÞอุอะอฬอหอาอÜอ็อ๋อ์อ๐อ๒อํอ็อไอÝอีอออสอษอัอÝอ๊อ๑อ๓อ๔อ๕อ๒อ๎อ้อๅอเอูอีอูอเอ็อํอ๔อ๘อ๘อ๘อ๘อ๖อ๒อ์อ่อๆอๆอโอไอโอโอไอไอๅอใอไอ็อ้อ๊อ็อไอๆอ้อ้อ๋อใอÞอุอึอิอาอำอิอุอÛอแอโอๅอ่อ์อ็อ็อไอโอÞอือำอัอาอิอุอÝอไอ่อ์อ๏อ๐อ๏อํอ๋อ้อ๊อ็อๅอÞอÜอึอะอัอÞอ๐อ๓อ๖อ๕อ๓อ๒อ๑อ๎อํอ้อ้อ๊อ่อ็อไอเอÛอึอิอำอือÜอเอๅอ่อ๊อ์อํอ้อๅอ฿อฺอำอฮอฬอออือเอ้อ๏อ๑อ๒อ๓อ๓อํอ็อโอÞอือาอะอาอแอ้อ๕อ๘อ๚อ๛อ๙อ๖อ๔อ๎อ่อไอ฿อÛอ฿อๆอ๎อ๕อ๗อ๗อ๙อ๙อ๘อ๔อ๑อ๐อ๎อ์อ๊อๆอใอไอเอÝอÞอÛอฺอÝอแอ็อ็อ่อ๊อํอ๎อ๋อํอๅอไอแอÜอัอฬอษอษอฯอÜอโอ๊อํอ๏อ๓อ๒อ๐อ์อไอเอÝอÛอเอๆอเอÝอ฿อใอ๏อ๙อýอฮฮÿอüอ๗อ๗อ๙อ๔อ๑อ๎อ้อ๊อ้อใอใอโอไอ็อ์อ๎อํอ๎อ๎อ์อ๋อ้อๅอใอโอÞอึอาอฯอาอÛอแอ่อ๎อ๐อ๑อ๐อ๑อ๋อ้อๅอฺอิอะอิอÞอ็อํอ๖อ๗อ๘อ๙อ๗อ๒อ๑อํอไอÝอฺอุอÞอๆอ๏อ๓อ๘อ๘อ๘อ๗อ๓อ๐อ๋อๆอใอไอๅอเอเอ฿อÞอฺอุอำอาอีอือูอÜอโอ็อ่อ่อ๊อๅอโอใอÞอึอออลอฤอศอหอึอ฿อๅอ่อ๊อ๊อ๊อ้อๆอใอ฿อÞอ฿อÞอใอ฿อÛอÛอÜอ็อ๒อ๘อýอüอ๛อüอ๙อ๕อ๏อ้อๅอๅอๆอๅอๆอ่อ๊อ้อ๋อ๊อ๋อ์อํอ์อ้อ้อ่อๅอๆอเอÜอูอาอออหอะอÛอแอ่อํอํอ๏อํอํอ้อๆอÜอึอะอฮอาอ฿อ๊อ์อ๒อ๕อ๘อ๘อ๖อ๑อ๏อ๊อๅอโอึอีอÛอไอ๋อ๐อ๕อ๘อ๚อ๗อ๖อ๔อ๔อ๏อ์อ้อๅอโอไอโอใอๆอใอๅอ่อ้อ๋อ๋อ้อ็อ่อไอโอใอไอใอแอูอึอำอฮอหอะอือเอๆอ๊อ์อํอ๋อ์อ่อ่อๅอโอÞอÝอเอÞอือิอึอÛอ้อ๏อ๔อ๗อ๖อ๖อ๘อ๘อ๖อ์อเอÜอฺอึอีอูอ฿อไอๆอ็อ๋อ๊อ็อโอโอแอÛอือุอฺอÞอÝอูอึอึอาอือÜอÝอโอ฿อ฿อÞอแอไอ฿อÞอือิอหอฦอษอุอใอ๋อ๏อ๑อ๏อ๐อ๏อ์อ้อแอำอัอฮอฯอูอ็อ๏อ๒อ๔อ๕อ๓อ๒อ๐อ์อๆอโอ฿อเอÞอÜอÜอแอ่อ๎อ๑อ๔อ๖อ๘อ๘อ๗อ๗อ๓อ์อโอิอะอึอิอูอÝอุอีอิอูอโอ้อ๐อ๓อ๐อํอ์อ๋อ๊อ้อๆอไอใอเอ฿อไอ฿อฺอึอุอÞอ๋อ๑อ๔อ๖อ๖อ๘อ๗อ๔อ๏อ์อ็อใอ฿อ฿อ฿อโอ่อ๏อ๒อ๖อ๖อ๖อ๕อ๒อํอ๋อๅอใอเอÝอุอำอสอออะอุอÝอใอไอ็อ์อ๋อํอ่อไอÞอูอิอะอษอลอศอัอÜอแอ็อ้อ๋อ๏อ๒อ๏อ้อๅอÞอฺอำอฮอาอ฿อ๊อ๐อ๖อ๘อ๕อ๕อ๓อ๎อ๊อๅอÜอุอิอีอฺอแอ๊อ๑อ๘อ๛อ๚อ๙อ๘อ๘อ๗อ๐อ๋อ่อๆอ่อ๋อ๊อ๊อ๊อ้อ์อํอ๋อํอ๏อ๏อ๏อ๐อํอํอ์อ๊อ็อๅอใอใอโอเอๅอุอือำอาอือไอ๋อ๏อ๐อ๔อ๔อ๔อ๑อ์อ้อไอÞอูอีอึอÛอๆอ๑อ๚อüอ๚อ๙อ๓อ๏อํอใอÝอฺอีอิอิอฺอ฿อๆอ๎อ๔อ๕อ๖อ๔อ๓อ๑อ๏อํอ้อ็อไอแอÝอฺอูอÝอแอไอ่อ้อ๋อํอ์อ์อ๊อๆอโอÜอึอาอฮอำอูอไอํอ๒อ๔อ๔อ๔อ๒อ๎อ๋อ้อโอÝอุอิอฺอแอ็อ๑อ๗อ๚อ๛อþอ๙อ๙อ๕อ๎อ๊อๆอโอไอโอÝอ฿อๅอํอ๔อ๚อüอ๛อ๛อ๙อ๔อ๒อ๑อ๏อ๎อ์อๆอใอไอแอ฿อเอแอฺอาอหอฤอลอออฺอๅอ์อ๓อ๕อ๔อ๒อ์อ็อโอÝอึอำอัอฺอ็อ๑อ๖อ๚อ๙อ๙อ๘อ๕อ๒อ์อ้อๅอๅอไอ่อ๏อ๒อ๓อ๔อ๕อ๓อ๎อ๑อ๐อ๋อ่อ้อ่อ่อๆอไอโอเอ฿อÜอเอใอๆอ่อ้อ์อ๑อ๒อ๑อํอๆอไอ฿อึอัอออฮอิอแอ๊อ๐อ๔อ๔อ๒อ๏อ๋อๆอแอÛอึอำอฯอิอแอ์อ๐อ๕อ๖อ๙อ๖อ๕อ๕อ๒อํอ็อแอÝอÜอÛอโอๆอ์อ๐อ๓อ๕อ๗อ๕อ๔อ๖อ๕อ๒อ๏อ์อ๊อ๊อ๊อ่อ้อ๋อ้อ๋อ้อ่อฺอุอิอีอฺอโอๆอ้อ๏อ๑อ๑อ๎อ๋อ็อไอÞอÛอฺอือ฿อ๊อ๐อ๓อ๕อ๛อ๛อ๔อ๐อ๋อๆอโอ฿อูอือิอือÞอๅอ๎อ๑อ๓อ๏อ๋อ่อ่อํอ็อฺอุอือฺอฺอÜอÝอโอๆอ้อ์อ็อไอๅอ็อๆอ่อไอโอแอÞอฺอุอึอำอึอÜอแอๅอ่อ้อ็อๆอใอÞอÜอึอีอิอออะอีอÛอใอ๏อ๒อ๒อ๓อ๒อ๒อ๏อํอ็อโอÛอุอือิอึอ฿อไอ่อํอ๒อ๖อ๘อ๔อ๐อ๎อ๊อโอÞอูอึอิอิอุอเอ์อ๊อ๋อูอึอิอือÜอ฿อโอๆอ้อํอ๋อ้อไอแอÜอฺอึอาอาอึอÝอไอ์อํอ๏อ๖อ๓อ๒อ๑อ็อไอ฿อฺอิอีอแอ์อ๓อ๘อüอüอ๚อ๔อ๎อไอÞอฺอือีอือุอฺอÛอÜอูอูอูอฺอÛอฺอÛอÜอÝอÝอ฿อÝอÛอูอือีอัอาอฯอีอÛอ฿อแอๅอๅอไอๆอแอÜอุอุอาอออออำอฺอใอ้อ์อ๏อ๑อ๒อ๐อ์อ้อใอÝอีอาอาอีอูอไอ์อ๑อ๗อ๚อ๛อ๙อ๓อ์อ็อ฿อึอำอำอาอีอุอÜอแอÞอÝอือีอึอฺอแอๅอ๊อํอ์อ๎อ๋อ้อไอแอÞอÛอุอาอฯอัอÝอ็อ๑อ๔อ๔อ๑อ๑อ๎อํอ่อใอ฿อูอีอึอแอ๎อ๖อ๚อýอÿอþอ๛อ๗อ๔อํอไอีอาอฯอฯอาอึอูอÜอโอ็อใอโอแอ฿อ฿อÜอไอๆอแอโอเอÞอÜอฺอีอึอิอือุอÛอÝอÝอÞอ฿อแอÞอ฿อÜอุอึอึอำอฺอโอ๊อ๎อ๏อ๏อ๏อ์อ่อๆอๅอใอÞอุอีอิอิอฺอโอ๊อํอ๓อ๔อ๗อ๘อ๘อ๑อ๎อ๋อ็อไอ฿อÝอฺอÛอÞอแอโอโอโอÛอ฿อโอไอใอใอใอๅอ็อ่อๆอแอÞอÜอือาอสอวอฮอีอโอ๋อ๏อ๏อ๎อ๎อ๋อๆอใอÞอึอะอออหอิอ฿อ่อ๓อ๙อ๙อ๙อ๕อ๓อ๐อ๊อ็อใอÝอÛอแอ์อ๕อüอýอÿอฮฮüอ๘อ๕อ๑อํอ๓อๆอๆอ่อ้อ์อ๏อ๒อ๑อ๒อ๏อ๎อ๏อ๒อ๓อ๑อ๐อ๎อ้อใอÝอุอีอะอฮอีอÛอโอ้อ๎อ๏อ๒อ๐อ๋อ็อใอÝอÛอุอำอัอำอึอูอโอ้อ๏อ๓อ๕อ๕อ๔อ๐อ๋อ็อใอแอÜอือีอิอิอุอÝอใอๆอูอ๏อ๑อ๏อํอ๐อ๎อ๋อ์อ๋อ๋อ้อๆอใอ฿อูอำอัอิอÜอ็อ๋อ๏อ๑อ๐อ๏อํอ๋อ๊อใอÜอือาอะอิอแอ์อ๓อ๘อ๛อüอüอ๙อ๕อ๑อ๋อ่อเอÛอฺอÞอ๋อ๗อþอฮ ฮþอÿอ๚อ๔อ๏อ้อใอใอไอๆอๆอ็อ่อๅอๆอ็อ๊อ๊อ็อๆอใอÝอÞอÜอฺอÛอุอุอุอีอิอึอÝอใอ้อ้อ๊อ์อ๏อ๎อํอ่อใอ฿อุอำอออศอสอฬอิอใอ๐อ๕อ๗อ๗อ๓อ๑อํอ่อๆอโอÛอือิอำอีอÛอใอ่อ๏อ๏อÜอþอÿอýอ๛อ๚อ๗อ๑อ๎อ๋อ่อ่อ็อๆอโอ฿อ฿อแอไอ็อ์อํอ้อ๊อ์อํอํอ๋อ่อโอฺอุอีอำอูอแอ์อ๑อ๗อ๙อ๚อ๖อ๏อ๋อ่อใอÜอุอีอÛอๆอ๑อ๘อüอýอ๛อ๙อ๘อ๏อๆอใอใอไอไอแอโอ่อํอ๑อ๙อ๛อ๙อ๚อ๗อ๓อ๔อ๑อ๏อ้อฺอุอุอูอูอึอะอฬอะอึอ฿อๆอ๊อ๎อ๐อ์อ์อ้อๅอโอÞอีอฯอษอวอหอึอเอ้อ๏อ๑อ๏อ๎อํอ้อไอ฿อÛอูอำอัอาอูอเอ๋อ๔อ๒อ๓อ๒อฺอþอþอüอýอýอ๚อ๒อ่อูอีอึอุอÝอโอ็อ้อ็อ็อ้อ๊อ็อไอไอไอใอไอไอแอÜอูอูอÛอÛอÛอÛอ฿อไอ่อ้อ์อ์อ๊อ็อ็อใอเอÛอีอำอือÝอโอ๋อ๒อ๖อ๖อ๓อ๒อ๑อ๋อโอูอีอึอึอูอÝอไอ้อ๊อ๊อ่อ่อ่อแอÜอÛอีอาอำอาอีอิอึอึอีอาอึอฺอÝอÞอÜอÛอÝอÞอÝอูอึอีอัอฯอฯอำอำอีอÛอÞอÞอ฿อแอโอโอใอแอÝอÛอุอิอำอะอิอึอÜอ฿อใอๆอ่อูอ๚อ๕อ๐อํอ๋อๆอใอแอใอ็อโอึอือือูอÜอÞอÝอÞอ฿อÞอ฿อÞอเอเอÞอÝอÜอูอือิอัอีอุอÜอแอใอๅอ็อๅอๆอไอโอแอโอเอÝอีอำอึอ฿อ้อํอ๏อ๓อ๕อ๘อ๖อ๏อ๊อโอÝอฺอึอำอือÜอๅอ๏อ๓อ๕อ๗อ๖อ๘อ๎อใอฺอิอัอัอำอีอฺอเอใอๆอไอๆอ็อ็อใอแอ฿อ฿อเอ฿อ฿อÞอÜอฺอูอÜอÞอ฿อแอแอใอๆอๆอๅอๅอๅอใอÞอูอำอะอฮอออัอุอโอ้อ๊อ๋อํอ๑อ฿อ๛อ๙อ๗อ๒อํอ้อใอแอÝอเอๅอ๋อ๑อ๒อ๕อ๗อ๖อ๖อ๔อ๑อ๏อ๋อ้อๅอไอไอๅอแอÛอึอิอาอิอฺอเอไอ่อ๋อ์อ๋อ๋อ็อใอ฿อูอิอฮอษอฮอÞอ้อ๎อ๒อ๔อ๒อ๒อ๑อํอ๊อแอุอาอะอัอุอ๊อ๓อ๗อ๚อ๛อ๛อ๗อ๔อ๑อํอ้อ็อใอแอโอ่อ๓อ๙อýอþอüอýอüอ๖อ๓อ๒อ๐อ๐อ๑อ๐อํอ๎อ์อ้อ็อใอเอแอๅอ๋อ์อ๎อ๏อํอ์อ๋อ๊อ่อใอÝอุอัอวอฦอวอษอฯอุอเอ่อ๊อ๋อำอ๓อ๓อ๓อ๒อ๒อ๐อ็อโอÜอุอึอีอÞอ๋อ๓อ๖อ๗อ๔อ๑อ๑อํอๆอ฿อÝอÛอÛอÜอÜอÝอÝอÜอÝอÝอ฿อ฿อแอโอแอใอๅอๆอใอใอโอฺอำอัอัอุอÞอไอ็อ๋อํอํอ้อ้อโอแอÝอูอำอิอำอือเอไอ๊อ๑อ๓อ๔อ๕อ๒อ์อ่อโอÝอือึอูอเอ๊อ๒อ๙อ๚อ๛อüอ๚อ๑อ้อ่อไอุอำอำอัอะอาอำอัอำอูอÝอÞอใอๅอ่อๅอ็อๆอๅอไอใอ฿อÜอุอะอษอฦอยอวอฬอิอฺอ฿อแอโอึอ๕อ๖อ๔อ๐อ๋อใอÞอÛอีอำอุอๆอ๕อþอþอýอýอ๚อ๓อ๏อ์อๆอใอไอๆอ่อํอ๒อ๖อ๚อ๙อ๖อ๓อ๔อ๔อ์อ้อ็อ่อๅอๅอใอใอแอ฿อÞอÜอÞอๅอ์อ๐อ๒อ๓อ๓อ๋อ๊อ้อ้อโอ฿อฺอีอาอฯอาอฺอเอ่อ๏อ๔อ๓อ๒อ๏อ๋อ่อๆอไอÞอึอีอฺอ฿อๅอํอ๎อ๑อ๓อ๑อ๋อ๊อ่อใอÜอุอีอิอิอาอิอำอีอÝอเอแอแอเอÞอโอ่อๆอ฿อโอแอแอÞอÜอึอัอะอิอีอฺอÞอ฿อใอใอโอเอ๐อ๑อ๐อ๎อ๏อํอ็อ฿อือิอาอือโอํอ๕อ๘อ๗อ๘อ๕อ๔อ๐อ้อเอÜอÛอำอีอุอเอ๋อ๐อ๒อ๒อ๏อ๊อๆอเอูอือÛอใอใอ฿อ฿อแอแอโอไอ็อ้อ๊อ๋อํอํอ๐อ๏อ์อ่อไอÛอออษอฯอุอโอ้อํอ๑อ๓อ๔อ๕อ๑อ๐อ้อÞอÛอีอฮอัอือ฿อ๋อ๐อ๘อ๛อ๛อ๙อ๕อ๕อ๒อ๑อํอๆอแอีอฮอาอึอูอÜอÜอÛอÝอÞอÝอ฿อÝอÝอÜอÝอ฿อÞอือีอำอัอิอิอัอะอะอาอือÛอฺอÛอÜอฺอํอ๎อ์อ่อไอÛอิอัอออะอุอไอ๏อ๔อ๗อ๘อ๗อ๘อ๔อ๏อ๊อๅอÞอÜอุอเอ๋อ๔อ๚อýอÿอþอüอ๗อ๔อ๓อ๎อ้อๆอๅอโอÞอÜอูอÛอ฿อๆอํอ๎อ๏อ๑อ๎อ๋อ๊อ้อๅอไอโอ฿อฺอำอะอำอÛอไอ๊อ์อ๏อ๎อํอ๎อ์อ๊อไอÜอีอฮอฬอำอฺอๅอ๒อ๕อ๙อ๚อ๙อ๗อ๗อ๓อํอไอโอ฿อือะอำอูอเอ็อํอ๒อ๖อ๒อ๋อๅอแอÝอุอือิอัอัอาอัอัอาอัอาอิอิอุอÜอฺอึอึอึอิอโอ๐อ๑อ๐อ๏อ๏อ้อแอÛอฮอออัอเอํอ๓อ๗อ๖อ๑อ๒อ๐อ๊อ้อๅอใอเอฺอุอึอุอÝอ็อํอ๐อ๑อ๒อ๓อ๐อ๊อใอÞอÛอูอุอึอฺอแอๅอๆอไอใอๅอ๋อ๎อ๏อ๏อํอ่อๅอเอูอีอาอำอือฺอแอ็อ๋อ๏อ๐อ๒อ๐อํอ๊อๅอฺอึอฬอสอออึอโอํอ๒อ๔อ๔อ๖อ๔อ๒อํอ้อใอÛอีอำอุอไอํอ๖อ๙อýอþอüอ๘อ๗อ๓อ๒อ๋อแอูอาอำอัอาอือÝอไอ์อ๑อ๑อ๏อ์อ้อ็อ฿อÜอุอือๆอๅอๅอ็อไอๆอใอเอÜอฺอูอÝอเอ็อ่อ๊อํอ๒อ๒อ๏อํอ์อ๋อๅอ฿อือำอีอุอเอ๋อ๑อ๘อ๚อ๘อ๕อ๓อ์อโอูอำอฮอำอีอฺอโอๆอ่อๆอๆอไอไอเอฺอึอึอูอฺอÛอูอุอฺอฺอฺอÝอโอไอโอเอ฿อเอใอแอใอโอโอÝอÜอูอÛอเอ็อ๊อ์อํอ๎อ๏อ๏อ๏อ๋อ้อๆอเอÝอÛอÛอเอใอ๋อ๑อ๕อ๕อ๘อ๘อ๕อ๐อ๋อโอÜอฺอÞอือฬอัอุอÞอใอ้อ์อ๎อํอํอ๏อ๐อํอ็อแอÞอ้อ้อ่อ่อๅอแอÛอึอำอำอุอเอๅอ๊อ๏อ๓อ๔อ๒อ๏อ๎อ้อๅอÝอฺอุอฺอๆอ๑อ๕อ๘อ๚อ๛อ๛อ๙อ๕อ๐อํอ้อโอÜอÛอเอ์อ๐อ๙อÿอฮฮÿอýอ๘อ๐อ๊อๆอ็อ่อ้อ่อ็อโอเอเอๅอ็อ์อ๊อ๋อ์อ๊อ์อ์อ่อไอโอÝอุอุอีอึอฺอโอ่อํอ๎อ๋อ์อ์อ๋อ้อๅอแอÝอุอึอือÛอโอ์อ๑อ๕อ๖อ๗อ๖อ๘อ๓อ๎อ์อไอÞอÛอูอุอÜอไอ๎อ๗อ๚อýอüอüอüอ๙อ๕อ๏อ๊อไอ฿อโอใอโอเอÞอÝอÝอÛอูอึอือÜอ฿อใอ็อ่อ้อ้อ่อ๊อ่อไอเอฺอึอำอำอÜอ่อ์อ๏อ๓อ๔อ๒อ๓อ๓อ๎อ่อแอฺอือำอุอๆอ๑อ๔อ๘อ๚อ๚อ๕อ๕อ๓อ๎อ๊อๅอโอÝอÞอแอ๊อ๒อ๖อ๚อ๙อ๗อ๗อ๓อ๒อ๎อ๊อไอแอÞอเอÜอÛอÝอฺอือฺอÞอแอใอๅอ็อ๋อ่อๆอๆอๆอโอÞอฺอำอออฮอีอÜอๆอ์อ๐อ๕อ๖อ๓อ๐อํอ์อ้อใอÜอูอึอีอุอเอ๊อ๒อ๕อ๗อ๛อýอ๛อ๗อ๖อ๑อ้อไอแอ฿อไอ๊อ้อ้อ็อไอÜอูอีอัอึอฺอ฿อไอ้อ่อ้อ้อ่อ้อ็อเอือัอฯอัอุอโอ้อํอ๑อ๒อ๓อ๒อ๐อ๊อๆอแอุอÜอฺอุอ฿อๆอ์อ๑อ๕อ๗อ๔อ๓อ๏อ๊อๆอฺอิอออหอออัอฺอแอไอ็อไอโอ฿อÜอือุอิอิอำอีอิอีอึอีอีอีอึอูอุอูอฺอุอÛอÝอÜอÛอูอือุอึอึอีอฺอÞอๆอ้อ๊อ์อ๎อ๐อํอํอ่อๆอแอÝอือาอาอูอใอ้อ๏อ๓อ๖อ๙อ๙อ๗อ๒อ๏อ๊อๅอแอÝอÞอเอๅอแอเอÞอÝอÜอÞอเอ฿อโอใอ็อ็อ็อ็อๅอใอใอโอÝอือัอฯอัอฺอโอ็อ๊อํอ๑อ๑อ๎อ๐อ๑อ๊อไอÝอูอิอัอีอโอ๋อ๐อ๔อ๖อ๗อ๖อ๒อ๓อ๓อ๋อๆอใอ฿อÝอโอ้อ๏อ๕อ๚อ๚อ๙อ๚อ๗อ๓อ๑อ์อ่อๅอใอโอใอ้อ๏อ๒อ๔อ๓อ๒อ๑อ๐อํอ์อ่อ่อ้อ่อ็อๅอโอ฿อแอ฿อ฿อ่อ์อ๑อ๑อ๏อ๏อ๐อ๒อ๑อ๎อ่อๅอใอÜอÛอือÛอÝอไอ๏อ๕อ๖อ๖อ๗อ๙อ๗อ๔อ๑อํอ้อๅอแอแอไอิอาอฯอัอิอือฺอÛอÛอÜอÛอÝอÜอÛอÝอÜอÝอÜอฺอฺอุอีอะอาอุอฺอ฿อแอแอไอๅอๆอ่อ้อไอ฿อÜอุอำอฯอะอีอÞอโอ่อ้อ๋อํอ๊อ้อ้อโอÛอึอัอัอÞอ์อ๒อ๓อ๖อ๘อ๕อ๕อ๒อ๏อ้อแอÜอÜอฺอÝอแอ่อ๓อ๙อÿอýอ๛อ๖อ๎อ๊อ็อไอใอแอ฿อÞอÜอีอาอะอะอึอÝอแอ่อ๊อ๋อ้อ๊อ็อๆอใอเอÝอุอัอหอษอฮอัอฺอใอ้อ์อ๎อ๐อ๐อ์อ๊อ่อๅอไอÞอือีอูอฺอูอุอÜอแอ่อ๏อ๓อ๕อ๕อ๓อ๒อํอ็อไอใอแอแอ฿อฺอือัอฬอฮอีอ฿อเอใอๅอไอๆอใอใอเอÞอูอำอออสอสอือใอ๋อ์อํอ๏อ๎อ๋อ๊อ็อ฿อฺอัอฮอัอฺอเอํอ๔อ๖อ๙อ๙อ๖อ๒อ๋อๆอใอฺอีอุอÝอใอ่อ๓อ๘อ๙อüอ๛อ๚อ๘อ๓อ๑อ๏อ่อ็อๅอไอแอÝอÛอีอึอุอฺอเอแอใอๆอๆอไอโอแอใอแอÞอÝอÞอÛอือฺอÜอÜอแอใอๆอ็อ๋อ์อํอ์อ์อ๋อไอ฿อÜอุอิอÛอือือÜอๆอ๎อ๒อ๒อ๕อ๖อ๒อ๏อ์อ๏อํอ้อๆอโอใอแอÝอฺอือีอุอÝอโอๆอ็อ้อ๊อ้อ็อ็อๅอแอÜอีอออวอฤอสอึอใอ่อ์อ๏อ๏อํอ์อ้อ฿อฺอำอฯอออาอÝอๆอํอ๑อ๒อ๑อ๏อ๎อ๎อ๋อ่อใอÛอูอุอÝอๅอ๒อ๓อ๏อ๎อํอ๋อ่อๆอใอๅอๅอใอไอไอเอÝอือำอะอาอำอือÝอ฿อใอๆอ่อ๊อ่อ่อๅอ฿อฺอาอฬอษอฦอศอสอัอÛอโอๆอๆอๆอ๋อ๊อๆอโอÞอÛอือีอิอือัอาอÜอ้อ๔อ๘อ๚อ๙อ๚อ๖อ๐อ์อโอÛอูอึอุอึอึอึอีอิอีอำอึอฺอูอือือึอำอุอแอเอÞอÜอือออวอวอหอูอโอไอๅอๅอๅอๆอ็อไอูอาอฬอสอษอำอฺอไอ๋อ๋อํอ๏อ๏อ๋อ็อๅอเอึอำอาอฺอเอ่อ๐อ๔อ๖อ๗อ๘อ๖อ๓อ๋อไอÞอึอาอฯอฯอะอาอำอึอÜอโอ็อๆอๆอโอ฿อ฿อÞอ฿อ฿อÞอÝอฺอÜอÛอูอิอาอีอÛอÜอÞอÝอเอใอๅอ็อใอใอ฿อÝอฺอฺอือีอุอออฮอือไอ๎อ๓อ๖อ๖อ๙อ๔อ๐อ๋อๅอแอเอ฿อเอเอโอๆอๆอ่อๅอไอ็อ็อๆอ็อไอใอใอแอเอเอ฿อÜอูอีอฯอฮอัอูอใอ๊อํอ๋อ๋อ้อ๋อ็อเอ฿อุอำอาอÛอเอ่อ์อ๏อ๒อ๏อ๋อ้อๆอโอÞอึอฯอฬอะอ฿อ้อ๑อ๕อ๗อ๖อ๓อ๏อํอ้อๅอแอÞอเอโอ่อ๎อ๒อ๖อ๗อ๚อ๛อ๕อ๒อ๏อ่อไอโอแอแอแอ฿อÝอÛอฺอือำอำอิอุอÛอแอ็อ็อไอใอๆอไอใอแอ฿อÛอือือุอฺอ฿อสอออูอไอ้อ๐อ๔อ๔อ๕อ๔อ๐อ๏อ๋อๅอ฿อÜอือฺอโอ๊อ๑อ๙อýอ๛อ๙อ๔อํอ้อไอใอแอ฿อ฿อÞอÞอÜอÛอือÛอเอใอๅอใอÝอÝอÜอÝอโอแอÞอÜอือึอีอÛอ฿อแอไอไอไอๆอ่อ็อ่อๅอโอเอเอÛอุอฺอเอใอ็อํอ๓อ๗อ๕อ๏อํอ้อใอเอีอฯอัอูอๆอ๏อ๓อ๕อ๘อ๘อ๔อ๔อ๒อ๏อ่อโอแอÞอือูอÛอÝอÞอแอโอๆอ่อ๊อ็อ็อๆอ่อๅอๅอๅอๆอใอแอ฿อÝอุอิอะอฯอึอÛอ฿อๆอ็อ้อ้อ๐อ๓อ๒อ๎อ่อ์อๅอใอแอÜอฺอÞอใอ่อ๎อ๓อ๔อ๕อ๕อ๑อ๋อๅอ฿อูอีอิอีอึอึอิอือุอÛอ฿อโอไอÝอฺอÜอÞอÝอÝอÛอุอึอิอิอึอÝอใอโอใอไอๅอโอ่อ๐อ์อๆอใอเอุอำอำอำอุอÞอไอ่อ๊อ๎อ๐อ๑อ๏อํอ่อใอÞอิอัอฬอฮอำอุอÞอ๊อ๏อ์อ๎อ๊อ้อเอูอะอออสอฬอออออฯอัอำอึอูอÛอÜอÝอฺอือือือีอำอาอิอีอิอีอึอือิอาอวอออีอÝอไอ๊อ๎อ๑อ๒อ๒อ๐อ์อแอÜอึอีอำอูอÞอเอ่อ๐อ๕อ๖อ๘อ๗อ๒อ๋อไอโอแอÝอÞอÜอÛอÛอฺอฺอÝอแอไอๆอ้อ๊อ๋อ๋อ์อ็อเอโอแอ฿อึอฮอษอฯอฺอไอ่อ้อ๋อ๋อ่อๆอแอÞอÜอิอวอรอหอÛอไอ๊อ์อ๋อ๊อ่อๅอแอÛอิอฮอศอฦอหอือใอ้อํอ๐อํอ๋อ๊อเอูอาอออหอฮอิอฺอแอ้อ๐อ๑อ๒อ๐อ๑อ๏อ์อ้อ้อโอÞอÞอÜอÛอฺอือุอีอุอีอำอัอัอฺอฬอำอÜอใอๆอ่อ็อ๊อ่อไอแอูอะอสอวอวอออูอๆอ์อ๐อ๓อ๐อ๐อ์อๆอโอแอุอาอะอือใอ๊อ๓อ๗อ๗อ๙อ๗อ๕อ๑อ์อ้อ็อๆอไอไอไอโอÞอฺอูอำอะอาอฺอ฿อใอๆอ่อ้อ๋อ๊อ่อใอÝอึอะอศอฤอฤอษอาอÞอๅอ๋อ์อ๊อ็อ่อไอÜอือออฦอสอัอÛอใอ๐อ๔อ๖อ๓อ๒อ๎อ๊อโอÝอฺอำอัอาอÜอๆอ๎อ๖อ๙อ๛อ๙อ๖อ๓อ๓อ๏อํอ้อ๊อๅอแอเอไอๅอๅอ็อ๎อ๓อ๓อ๓อํอวอหอือแอๅอ่อ้อ่อ์อ้อๆอเอÜอิอออษอัอÝอ่อ๎อ๐อ๒อ๑อ๏อ์อ๊อๅอแอฺอำอฯอำอÝอ่อ๑อ๕อ๖อ๕อ๒อ๏อ๐อ์อ๊อ้อโอเอ฿อÜอÛอÛอฺอูอฺอÞอโอๆอๆอๆอๆอ็อ่อ้อ้อ้อใอÜอีอหอรอมอวอำอÜอใอ็อ๊อ์อ๋อๅอเอÞอึอัอศอลอฦอฬอูอโอ๋อ๎อ๏อ๏อ๎อ๊อ์อ่อ฿อุอฮอฯอิอÞอๅอ๐อ๔อ๖อ๗อ๕อ๒อํอ์อ๊อ็อเอÜอุอิอิอือ฿อ๊อ๒อ๗อ๙อ๙อ๛อํอือูอฺอÞอÝอ฿อ฿อÝอÜอฺอÛอฺอูอือิอัอาอุอÜอแอๆอ่อ์อ๋อ์อ๎อไอเอูอาอฮอออะอูอไอ๎อ๐อ๒อ๓อ๒อ๑อ๎อ๋อ้อโอÛอูอÛอแอ่อ๏อ๖อ๙อ๚อ๘อ๘อ๖อ๔อ๑อ๋อโอเอÞอÝอÜอฺอือิอึอูอแอๆอไอๅอๅอไอเอ฿อแอแอÝอุอิอฮอออะอูอแอ่อ์อํอ๎อํอ๋อๆอแอฺอีอาอออสอฮอุอๆอ๎อ๑อ๒อ๓อ๒อ๐อ๊อ๊อ่อโอÛอึอัอะอำอÞอ้อ์อ๒อ๓อ๔อ๔อ๘อ่อฬอฬอฯอีอุอุอÞอแอเอเอเอÞอÝอูอาอฬอฮอิอÜอโอๅอ็อ็อ้อ้อ่อใอ฿อÛอีอาอำอือÝอโอๆอ๋อ๐อ๔อ๒อํอ๎อ์อๆอแอฺอิอฯอีอเอ๋อ๒อ๗อ๘อ๕อ๑อ์อๅอÝอึอีอึอิอีอะอัอิอำอิอึอÛอÝอÝอ฿อูอÝอÜอÝอÛอÛอฺอำอะอัอะอฯอำอÛอ฿อแอๅอๆอ่อ็อไอๅอไอเอÛอำอฯอฬอัอÝอ๋อ๎อ๑อ๔อ๓อ๕อ๓อ๎อํอ็อใอÝอูอฯอออหอฬอฯอÛอๆอ์อ์อ์อÝอษอหอัอึอฺอÜอÛอÛอÜอÞอÝอฺอึอำอฯอสอวอษอฮอุอเอไอไอๅอใอแอเอÝอือฮอศอษอาอÝอ็อ์อ๎อ๏อํอ๑อ๒อ๋อไอแอฺอาอาอูอเอๆอํอ๐อ๐อ๑อ๎อ๏อ์อๆอแอÞอÜอÛอฺอฺอุอึอือูอฺอÜอ฿อแอโอๅอไอใอไอโอแอเอÜอำอออษอศอษอะอึอÜอเอใอไอ็อ็อไอไอÞอีอฯอลอฦอหอีอแอ็อ๊อ์อ์อ๋อ๏อํอ๊อๅอ฿อÜอือาอฬอสอะอฺอโอ๋อ๑อ๕อ๗อ๙อๆอไอๆอๆอเอือาอิอือฺอÛอูอิอฯอออออออาอึอุอÜอ฿อ฿อแอแอÞอÞอÞอÜอีอหอวอษอะอึอÞอใอ้อ๊อ้อ๋อ๊อ๋อๅอ฿อูอำอะอฬอฮอือโอ๋อ๏อ๐อ๑อ๎อ๎อ๋อๅอÞอุอาอะอฮอาอูอใอ์อ๒อ๐อ๎อ็อเอÛอึอำอาอะอาอัอัอัอำอึอฺอÞอ฿อฺอÝอÜอÞอÞอ฿อÝอÛอฺอูอูอุอำอาอิอÛอโอ็อ่อ๊อ์อ๎อํอ๊อ้อๅอเอÛอุอิอะอฯอิอÜอแอ็อ์อ๐อ๎อ๎อไอ๖อ๔อ๒อ๑อ๋อไอแอÞอÝอÞอÝอÛอฺอุอฺอÞอเอแอใอไอๅอๆอๅอไอๆอแอÜอฺอำอฮอฮอีอÝอแอๆอ๊อ๊อ๋อ้อ้อ่อเอุอิอออศอฮอÞอ้อ๐อ๕อ๙อ๗อ๓อํอ้อ๊อใอÞอุอำอะอฯอีอÝอ้อ๐อ๔อ๘อ๖อ๔อ์อโอูอำอะอออออฮอฮอฯอฯอะอฮอัอำอุอÞอแอๅอแอÞอÜอÞอแอÞอÜอÛอุอูอÛอÛอÛอÞอ฿อใอโอใอๅอ่อ็อ็อๅอ฿อูอึอิอิอำอูอÞอเอใอ็อ่อ๊อ๋อไอ๗อ๕อ๕อ๓อ๑อ้อใอเอÜอÞอÛอูอÝอใอ่อ๊อ๎อ๎อ์อ์อ์อ๋อ้อ่อๆอโอÝอุอาอฬอหอัอุอเอๅอๅอ็อ้อ๋อ๊อ้อๅอÝอุอิอิอาอะอือ฿อ็อ๋อ์อ๎อ๏อ๎อ๎อ็อไอเอึอัอะอำอฺอใอ์อ๏อ๒อ๓อ๔อ๎อํอ้อÞอÛอะอษอหอฮอัอีอูอÞอแอใอไอÛอÛอูอÜอฺอÛอแอๅอÞอÛอือิอาอำอิอีอฺอÞอเอเอเอโอใอโอใอใอแอฺอึอำอะอฮอะอิอุอÞอ฿อ฿อแอไอแอ๖อ๔อ๒อํอ่อใอแอใอ฿อแอๆอ่อ์อ๏อ๎อ๔อ๗อ๖อ๏อ๋อ้อๆอๅอใอใอโอÝอุอิอออสอฯอุอÝอโอไอ็อ๊อ่อ็อไอ฿อีอฯอศอฤอยอสอือแอ่อ์อ๐อํอ้อๆอโอÝอÛอึอออออือ฿อ็อ๐อ๔อ๔อ๒อ๑อ๎อ๋อ่อไอเอÝอÛอÛอÜอÞอๆอ๋อ๎อ๓อ๓อ๔อ๓อ๔อ๐อ์อ้อ่อๆอ็อไอใอเอ฿อÜอือุอÜอเอโอใอไอไอใอแอโอใอแอเอูอีอาอออหอษอฬอฮอัอือÜอÞอÝอÝอึอ๕อ๓อ๎อ่อ็อÞอุอือึอุอÜอแอ้อ๑อ๔อ๕อ๓อ๐อ๎อ๋อๅอเอÝอÞอÜอÜอึอิอิอีอือÜอÞอแอใอๆอ็อ้อ็อใอÝอÝอุอำอฮอหอฮอือโอ่อ์อ๎อํอ์อ๋อๆอโอÝอือาอฮอัอฺอๆอ๏อ๓อ๔อ๒อ๓อ๔อ๐อ์อๅอÝอูอุอาอึอÜอโอ๊อ๔อ๙อ๗อ๕อ๑อํอ้อๆอใอเอÜอÜอูอึอำอัอัอัอัอิอือÛอฺอÜอÝอÞอÝอÝอเอใอÝอูอูอฯอสอฦอรอลอหอำอึอÞอใอใอๅอใอโอ๒อ๑อ์อไอ฿อฺอิอฯอึอแอ้อ๐อ๓อ๖อ๖อ๕อ๓อ๑อํอ่อเอÝอฺอูอุอÞอ็อ์อ๑อ๒อ๏อ๏อํอํอ๋อ่อ่อไอโอโอเอÜอีอะอฯอฯอิอÞอเอใอๆอ้อ๊อ์อๅอเอÛอึอำอฮอศอษอาอฺอๅอ้อ๋อ๊อ้อๆอ๊อๆอแอฺอิอะอฬอฬอาอูอๅอ๐อ๒อ๔อ๕อ๖อ๖อ๏อๅอเอÞอือึอำอัอาอิอุอÛอเอใอไอใอแอÞอเอÜอึอÛอโอ฿อีอาอาอะอฮอฬอหอหอะอำอึอีอีอีอำอำอูอ้อ็อไอเอÜอีอฮอสอษอึอ฿อ้อ๐อ๓อ๒อ๑อ๏อํอ๎อ็อ฿อือิอำอาอะอิอÜอÞอเอโอใอเอโอแอÞอ฿อ฿อÝอÜอุอาอษอศอศอษอฮอฺอเอใอๆอ่อ้อ๊อไอแอ฿อีอฯอษอยอฤอฬอือแอ้อํอ๎อ๎อ๎อ้อไอเอฺอะอหอฬอิอแอ๋อ๐อ๒อ๓อ๒อ๎อ๋อ้อ็อไอ฿อูอือูอÞอโอ็อ๓อ๕อ๕อ๖อ๔อ๓อ๐อ๏อ๊อ็อ็อ็อๆอๅอโอแอโอๆอ่อ้อ์อ๏อ๐อ๏อํอ๋อ่อๅอๆอใอไอๆอใอโอÞอฺอฺอุอสอสอหอีอÜอโอ้อํอ๎อ์อ๊อ็อๅอ฿อÛอึอีอึอÛอเอ้อํอ๑อ๔อ๕อ๓อ๎อ้อไอโอเอเอÞอ฿อÛอุอีอาอำอีอึอÛอ฿อเอโอโอไอๆอโอ฿อÞอือาอฮอวอฬอัอุอ฿อไอ่อ๋อ์อ๊อๅอÝอÛอึอฮอสอสอำอเอ็อ๎อ๐อ๑อ๑อ๒อ๏อ้อๅอแอÝอีอะอฮอีอฺอเอ้อํอ๐อ๒อ๓อ๑อ์อ็อเอÝอÛอือีอิอำอิอุอÜอ฿อแอไอๆอ่อๆอๆอๅอใอๅอๅอแอÞอÝอใอเอุอาอฮอวอมอภอวอีอÝอใอๆอ๊อ์อๅอโอไอ฿อÝอุอาอฯอฮอึอ฿อ้อ๏อ๓อ๑อํอํอํอ๏อๆอÞอÛอุอิอาอะอำอÛอใอๆอ้อ๋อ๋อ๊อ่อไอๅอๅอไอแอÞอÝอาอหอฬอฬอีอูอ฿อเอใอๅอ็อๆอไอเอÜอือัอวอรอยอศอือÝอๆอ๊อ๋อ๋อ่อ่อๆอแอÞอือิอฯอออฬอัอีอ฿อ๋อ๏อ๏อ๑อ๏อ๋อใอÞอฺอิอะอฮอหอหอะอือÝอเอแอไอ็อ่อไอๆอ็อใอÞอือะอออฮอ฿อÞอÜอือาอษอภอฝอรอาอÞอๅอ้อ์อํอ๊อๆอไอ฿อึอฮอสอสอออาอÜอใอ์อ๑อ๐อ๐อ์อ๊อ็อโอÞอÜอูอÛอฺอÞอไอ้อ์อ๏อ๏อ๎อ์อ๎อ์อ้อใอ฿อÞอเอฺอึอฯอสอหอออาอุอ฿อโอๅอๆอๅอไอโอ฿อูอำอฯอสอวอรอศอีอÛอใอ๊อ์อ๊อ๊อ็อโอเอÜอำอฮอษอหอำอÝอใอ์อ๏อ๑อ๐อ๐อ๋อ้อๅอใอเอฺอำอะอำอุอÜอใอ๋อ๑อ๔อ๔อ๑อ๐อ๎อ๎อ๏อ้อๆอใอ฿อÜอÞอไอแอแอÞอือะอฬอฯอึอ฿อๅอ็อ็อใอๅอๆอไอโอÜอีอฯอษอลอษอำอแอ๊อ๐อ๒อ๔อ๔อ๏อ๋อ้อไอแอÝอึอิอิอุอÝอ่อํอ๑อ๒อ๑อ๐อ์อ้อ่อๆอใอไอโอÜอÜอÜอฺอÞอเอÞอ฿อโอใอๆอ้อๆอใอโอ฿อฺอิอะอฮอออสอฮอุอÞอไอ้อ๋อ๋อ่อๆอใอเอÜอีอออภอภอฦอัอÜอ่อ๎อ๑อ๑อ๎อ๏อ๊อ๊อๅอแอฺอัอฮอฬอาอึอโอ์อ๒อ๕อ๗อ๕อ๔อ๐อ๎อ๊อ็อใอ฿อÛอุอÞอÞอ฿อฺอึอีอีอำอึอÜอแอใอๅอ่อ์อ์อ่อๆอ฿อูอิอฮอวอลอฯอฺอไอ้อ๋อ๋อ๊อ๊อ็อๆอไอÝอีอาอำอาอูอโอ๋อ๎อ๏อ๎อํอ๎อ๊อ่อๅอเอเอÞอÜอÛอÝอ฿อๆอ่อ้อ้อ่อ็อ่อๆอไอๆอไอเอไอใอÞอึอฯอฬอฯอิอÛอโอๅอ็อ่อ่อ่อไอโอเอÜอึอะอหอวอษอัอฺอแอํอ๎อ๏อ๐อ๑อ์อ้อ็อแอÝอูอัอฮอหอออึอÞอ่อ์อ๋อ๏อ๒อ๓อ๎อ้อๅอโอ฿อูอิอาอือแอ฿อูอำอฬอวอฤอฦอหอำอฺอ฿อโอ็อ้อๆอ่อๆอ฿อีอออฝอพอวอุอÞอโอๅอ๊อ้อ๊อ้อไอÞอือฮอสอษอฬอีอ฿อ้อ๎อ๏อ๎อ๐อ๎อ๋อํอ๊อๆอÞอฺอÜอÝอเอแอใอใอไอๆอ่อ่อ้อ้อ๊อ่อๆอใอๅอใอÜอึอฮอออฮอำอูอÝอเอใอๅอ็อๆอ็อๅอแอÛอีอฮอษอรอฟอลอฯอิอÞอๆอ๊อํอ๎อ้อๆอใอÝอือาอหอวอฦอฬอึอ฿อ้อ์อ๎อ๐อ์อ๋อ็อโอเอÝอุอำอฯอออฬอÜอฺอือิอำอำอึอÛอÝอ฿อ฿อเอโอโอเอÞอแอÞอือำอฮอลอรอฦอฮอุอใอๅอ่อ๊อ่อ็อๅอ฿อฺอิอะอสอษอออุอๅอํอ๏อ๐อ๏อ๏อํอ็อๅอเอÛอิอีอÛอโอ็อ๎อ๒อ๒อ๓อ๒อ๎อ้อๆอใอเอแอ฿อ฿อÜอ฿อแอๅอๆอ็อ้อ้อ้อ็อๆอไอๅอไอไอใอเอูอึอฮอสอศอสอัอูอ฿อแอโอๅอ่อ้อๆอใอ฿อุอัอสอฦอวอออูอÝอแอ้อ์อ๏อ๐อ๋อ๊อ์อไอเอฺอีอัอฯอฬอออÜอÝอแอไอ่อ๊อ์อํอํอ๋อ์อํอ์อ๊อ่อๆอใอแอÛอีอัอฬอะอือ฿อไอ่อ๊อ๊อ้อ้อๅอใอเอูอัอหอฦอลอหอึอโอ๊อ๋อํอํอ๏อ๊อ็อแอีอัอออะอÞอ้อ๎อ๗อ๚อ๚อ๘อ๑อ์อ๊อ็อใอÝอุอุอÛอูอ฿อๅอๆอ๊อ๊อ๋อ่อ็อๅอๅอเอÝอเอไอแอÜอือำอะอออสอฬอาอÞอโอใอ็อ็อ้อ่อไอโอ฿อุอาอสอฤอมอรอหอำอÞอไอ่อ๋อ์อ๋อ๊อใอÜอฺอิอฯอหอศอฦอษอออฮอฯอาอุอ฿อๅอๆอๆอ็อแอÝอูอือึอุอÛอูอึอัอัอะอำอิอือฺอÛอุอฺอÛอÛอÝอÞอฺอัอฮอออสอหอิอูอ฿อไอๆอ็อ็อๆอไอ฿อ฿อฺอีอฮอหอออีอÝอ็อ๋อ์อ๏อ์อ่อไอ฿อึอฯอรอศอัอÛอ็อ๋อํอ๏อํอ๋อ๋อ็อ็อไอแอโอแอÞอÜอฺอึอาอฬอฬอำอิอุอÝอ฿อÞอแอโอๆอๆอโอ฿อฺอาอฯอศอรอมอฦอะอือเอๅอ็อ่อ่อ็อๅอๆอใอÝอุอัอฬอหอหอัอือÞอๆอ๐อ๖อ๙อ๚อ๗อ๒อ์อ็อใอ฿อเอ฿อÞอÝอÛอฺอÜอ฿อๅอ่อ็อ่อ่อ้อ้อ่อ้อ็อแอÝอฺอิอออศอฦอฮอูอใอๆอๆอ้อ่อ้อ็อใอฺอิอฮอศอฦอฬอฺอๅอ่อ๊อ์อํอํอ่อๅอใอแอึอัอออสอฮอฺอ๊อ๎อ๒อ๖อ๖อ๒อ๒อ๊อ็อไอโอโอเอÞอ฿อแอใอๅอแอ฿อแอแอโอ฿อแอ฿อแอเอแอใอÞอÝอิอออษอวอศอฬอิอÛอ฿อไอ่อ่อ๊อ็อ้อๆอแอÞอ฿อฺอีอัอออฮอัอึอÛอไอ๊อ์อ๎อ๐อ๏อ๎อํอ็อแอÛอุอึอือึอีอุอฺอูอฺอÝอ฿อโอใอไอไอๅอใอเอÛอุอำอฯอศอมอฟอภอศอฯอิอÞอใอ่อ๊อ้อๆอ฿อÛอิอษอลอยอษอำอÝอๆอ๋อ๋อ๋อ็อๅอใอÜอึอัอศอลอะอÞอ้อ๏อ๓อ๖อ๔อ๐อ๋อแอ฿อÛอึอือือือูอÛอÝอÞอÝอÝอÜอÛอุอุอฺอÛอ฿อÞอÜอÝอูอุอึอาอฯอหอศอหอาอูอÜอ฿อไอ็อใอๅอใอ฿อ฿อÛอุอำอฯอหอศอลอหอษอัอ฿อ้อ์อ๐อ๒อ๑อ์อไอÝอือิอิอึอÝอใอๆอ๒อ๕อ๗อ๘อ๒อ๋อๆอใอไอไอโอแอÜอูอูอึอะอออสอออึอÜอเอโอโอไอแอโอโอเอÛอีอฮอฦอภอยอหอูอเอๅอ็อ้อ๊อ็อไอแอÜอีอฮอวอฦอหอÝอ๊อ๐อ๕อ๔อ๔อ๐อ์อๆอเอุอฯอฬอหอออออิอÝอไอ็อ์อ๋อ่อใอÞอÜอูอึอำอำอิอีอิอำอาอฮอะอีอูอฺอุอฺอÜอÝอÜอÜอฺอÝอÜอฺอึอึอึอิอาอะอออาอฦอฯอÝอ้อ๏อ๐อ๑อ๏อ์อ๋อ่อๆอแอÝอฺอือÝอไอํอ๐อ๑อ๓อ๑อ๐อ๏อ๋อๆอไอไอแอ฿อÜอÛอูอือือÛอÝอเอใอ๊อ้อ้อ้อ่อ่อ็อเอฺอัอฬอศอศอฮอุอเอใอ้อ๋อ้อ็อๅอโอÝอีอะอหอฤอภอฤอึอไอ๋อ๐อ๓อ๑อ์อ่อๆอใอ฿อือำอัอึอÝอโอ่อ๎อ๓อ๕อ๒อ๎อ๋อ้อใอÜอุอึอิอำอัอาอะอัอฯอฮอฯอีอูอือุอÛอÛอฺอุอฺอูอÛอูอึอิอาอฯอออหอสอออะอือใอ๋อ๎อ๎อ๎อ๋อ๋อ้อไอใอÜอิอะอหอะอือÞอๆอ้อ๋อ๊อๆอแอุอำอะอาอะอัอัอฯอะอัอัอิอุอุอÜอÞอฺอฺอุอูอีอิอาอะอฮอหอฬอฬอฯอือÛอÛอÜอÜอÝอเอเอเอÝอูอุอำอฯอฬอฮอึอÝอแอๆอ้อ๎อ๋อไอเอÜอีอออฬอวอสอฬอำอÛอใอๆอ๊อ่อๆอใอÞอุอะอฬอออำอฬอหอหอฯอัอฯอำอุอฺอÝอÝอÛอือÜอฺอะอฮอฮอฮอฮอฬอสอษอษอหอฬอฯอะอัอฺอใอ็อ้อ๊อ็อๅอไอเอฺอือหอลอรอษอึอเอๆอ์อ๏อ๎อํอ๊อ็อใอÞอูอึอีอีอÜอแอ็อ์อ๏อ๎อํอ๋อ่อ็อโอเอÞอเอÞอÛอือีอฯอหอสอสอออีอÝอเอไอใอใอใอโอแอÝอิอหอฤอฝอรอฯอÛอโอ็อ์อ๎อ์อ่อไอโอÝอำอวอรอวอะอีอแอ๊อ๎อ๎อ๎อ์อ๊อๆอโอโอÝอึอิอัอำอูอÞอๆอ์อ๏อ๏อ๑อ๎อ๋อ่อ๊อ่อโอÛอือุอือึอีอือÛอโอๆอๆอ่อ้อÞอฯอูอโอ็อ็อ๊อ๋อๅอเอÞอÛอีอออฦอฤอฯอÝอ็อ๋อ๏อ๐อ๑อ๏อํอ้อไอเอÞอฺอึอิอÛอเอๅอ้อ์อ๋อ์อ๎อ์อ๊อๅอเอฺอิอิอิอะอะอหอวอฦอฬอำอุอÛอÜอ฿อ฿อÜอÛอฺอึอัอฬอลอภอภอรอหอีอÝอโอ็อไอใอใอแอÝอูอะอวอยอฦอะอÜอใอ้อ๋อ๊อํอ๎อ์อๆอแอÝอิอออศอออีอเอๅอ์อ๒อ๓อ๔อ๑อํอ่อๆอ฿อฺอฺอือีอึอุอÛอ฿อใอ็อํอ๑อ๒อ๑อ๒อ๊อวอาอฺอ฿อใอๅอๅอโอÝอุอึอาอสอฤอศอึอ฿อไอ่อ๋อ๋อ้อ๋อ๋อๅอÞอีอัอฮอัอึอÞอๅอํอ๒อ๑อ๑อ๏อ์อ้อใอÜอฺอูอุอำอำอาอะอะอัอาอิอึอูอฺอÛอÜอÞอ฿อÝอูอือีอาอฮอหอสอัอือÞอเอแอใอ่อ็อๆอๆอโอÞอึอะอสอออูอโอ้อํอ๐อ๐อ๏อ๊อ็อๆอ฿อÜอะอสอศอสอาอÞอๆอํอ๑อ๒อ๑อํอ์อ็อแอÜอÞอูอือีอุอฺอÝอ็อ๎อ๑อ๐อ๏อํอ๎อ๏อ๒อษอาอÛอÞอแอแอแอเอÞอÛอุอะอษอพอบอฟอฯอฺอ฿อๅอๅอ็อๅอไอแอÞอูอฮอวอฤอยอษอาอÛอๅอ๊อ์อ๏อ์อ่อๅอโอูอือึอิอิอิอฺอÞอใอใอไอใอโอแอ฿อÜอ฿อเอแอÞอูอึอะอฮอฮอหอฮอำอÝอเอโอเอเอÞอแอแอÜอือฮอมอพอภอลอฮอูอÝอเอๅอ่อ็อ็อแอฺอือออภอพอรอษอำอÛอโอ่อ๋อ๎อ๊อ้อๅอแอÝอิอฯอสอศอศอะอือÜอโอ็อ์อ์อํอ๋อ์อ๎อิอึอูอูอÛอÛอูอฺอฺอือึอิอะอหอสอะอือูอÞอไอใอๅอ็อๅอไอไอÜอึอะอหอษอหอิอÞอ็อ็อ้อ๎อ้อๅอแอูอาอออศอรอฦอสอออะอำอำอาอาอำอาอัอฯอออสอษอศอษอษอษอศอฦอลอสอษอฬอะอฮอฮอออฮอะอะอาอะอฬอลอมอลอษอฬอฯอาอิอฺอÛอÝอ฿อÝอูอีอะอศอลอรอฦอฮอีอÛอโอๅอ็อ้อ่อโอÞอ฿อึอะอษอลอภอรอศอฯอุอÞอๅอ้อ์อ๊อ๋อไอ้อๆอใอเอแอใอ฿อุอิอฯอหอศอฤอฦอหอือÜอÜอÞอแอใอๅอโอÜอึอาอหอลอผอฝอลอาอฺอแอๆอ็อ่อ๊อ็อๆอ฿อูอำอฮอศอศอฯอÛอ็อ๋อ์อๅอ้อ่อโอÝอูอำอฬอษอวอศอศอวอสอศอหอฯอาอาอำอึอึอะอษอษอสอออำอะอออฦอรอฤอหอะอุอ฿อเอโอแอใอใอโอÝอุอะอรอบอธอภอฬอือ฿อไอ็อ็อ่อ็อใอเอÛอีอหอวอมอรอหอิอแอๆอ๊อ๎อ๏อํอ็อๆอ๐อฯอฯอะอะอะอฯอฯอะอำอิอฮอวอภอปอผอวอาอุอÜอÞอ฿อÞอÞอฺอึอฮอลอฟอปอนอมอะอือฺอใอๅอ่อไอเอแอÞอึอัอหอฤอรอฮอÝอ๊อ้อ๋อ๋อ็อๅอใอÞอÛอุอิอำอำอำอิอือÛอÞอเอไอ็อ็อๅอโอ฿อÜอÛอุอึอำอฮอหอศอศอออิอุอÛอ฿อแอแอÞอÝอ฿อÝอูอาอออษอลอลอฬอำอุอÝอแอโอๅอใอเอเอÜอูอิอฬอฤอฟอพอรอออีอÞอใอๅอไอ็อ่อ่อ่อ๋อ้อๆอโอÝอูอึอำอิอัอำอีอำอิอุอÛอÜอÜอฺอÝอÞอแอ฿อÝอÝอฺอีอฯอหอฦอฦอฬอือÝอแอๅอๆอๅอโอโอเอÜอีอออสอฮอฺอโอ่อ้อ่อ๎อ๎อ๋อ๊อๆอโอÞอฺอาอะอำอÜอๆอ๏อ๓อ๕อ๓อ๑อ๎อ๊อ๊อไอ฿อึอีอิอำอำอีอีอึอุอÛอ฿อเอโอเอÞอÜอุอึอูอุอฺอฺอุอาอาอีอูอÜอ฿อๅอ่อ้อ้อ้อๆอ็อไอแอÝอึอะอฮอฯอะอูอ฿อๆอ๊อ๋อ๋อ็อๆอๆอไอ่อ์อ๋อ่อใอ฿อฺอูอือีอึอือือีอีอือูอุอูอูอÜอÛอÛอÜอูอีอิอฯอออออสอฬอัอิอึอÛอÜอÝอÞอแอแอเอÞอูอีอศอวอฮอุอÞอโอ็อ้อ็อๆอเอÜอÛอึอฬอศอลอสอีอเอ็อ๊อ์อํอ็อÝอือาอฮอฬอษอวอศอหอฮอาอึอุอึอิอึอือัอำอาอะอะอาอำอัอหอสอวอลอฤอศอออิอีอุอึอุอือุอฺอีอาอฯอะอฬอสอศอฦอสอฯอือÜอÝอÞอÜอฺอÝอแอๆอๆอโอÝอÝอÜอุอึอีอูอ฿อไอๆอ็อ้อ่อ้อ้อ้อ็อ็อ็อๅอโอ฿อือะอหอษอศอสอะอะอีอÛอแอไอใอๅอแอÜอือฯอลอภอภอยอฬอฺอ฿อแอโอไอโอเอÝอำอฮอฬอศอลอสอึอÞอ็อ้อํอํอ๋อ็อแอÜอือำอะอฮอะอาอีอÛอ฿อใอไอๅอใอแอโอโอแอเอเอÝอÜอÛอุอัอฯอัอิอึอือÛอ฿อเอโอโอใอโอÞอÝอฺอิอัอฬอวอลอรอฤอฮอีอÝอโอโอโอแอเอÛอÜอใอโอÞอึอาอะอสอสอาอÛอๅอ้อํอํอ๋อ้อ็อเอÛอÛอุอือึอัอฯอสอสอวอษอหอออัอือือุอÛอูอÛอูอุอิอฮอวอภอฟอรอฬอาอÜอโอๅอๆอใอใอเอีอะอออศอฟอนอผอออÜอโอๅอๆอๆอ็อใอÝอฺอุอิอฮอฬอัอฺอใอ่อ๋อ๎อ๏อ๎อ๎อ์อ๊อ็อโอ฿อÜอฺอÛอูอือือูอÝอเอÞอ฿อ฿อเอ฿อÝอ฿อเอÝอÜอÛอูอิอะอษอลอฤอฦอหอาอือÛอ฿อÞอ฿อÛอุอีอูอÞอ฿อฺอึอฯอออศอฬอาอÝอๅอ๊อ๎อ๎อ์อ๋อ๊อๅอÞอุอÛอูอูอูอุอำอฮอฮอัอาอุอÜอÝอÝอ฿อÞอÞอÜอÛอุอีอาอษอปอถอผอยอศอำอุอÛอÞอเอเอ฿อฺอีอะอวอภอฝอนอรอฯอูอเอๅอ็อๅอแอÝอฺอือฯอลอมอยอฬอฺอแอๆอ๊อ์อ์อ้อ็อใอÜอีอำอัอาอึอือÜอแอใอ่อ๋อ๊อ๋อ่อ่อ็อไอแอแอÞอÛอุอุอึอิอะอออศอสอฮอิอูอÜอÝอ฿อเอแอÞอฺอูอูอÞอูอัอฬอษอลอฤอรอสอิอÜอแอใอเอเอแอÞอฺอิอฯอษอลอฤอวอฬอฮอัอาอิอึอุอำอะอออสอหอฬอออฯอฮอฯอฮอหอออสอฯอาอาอาอำอึอุอูอือึอาอัอฯอฬอฬอฬอำอึอÜอÜอÞอเอ฿อÞอเอ฿อÛอูอาอออศอหอาอÛอÞอใอ้อ๋อ๊อ๎อ๊อๆอโอูอิอหอฤอลอสอาอือÝอแอไอโอไอÞอุอาอหอษอษอะอาอศอศอวอฤอฤอษอฬอะอิอำอำอำอิอาอฬอษอฬอออวอใอแอÛอัอหอวอวอออุอใอ๊อ๏อํอ์อ๊อไอโอ฿อุอาอออษอฯอÛอๆอํอ๒อ๒อ๒อ๑อ๎อ่อโอÞอÛอูอฺอฺอูอือูอูอÝอแอไอๆอ็อไอโอแอเอโอÞอือำอฮอษอยอพอฟอฤอฯอือÝอเอโอๅอ็อแอÞอีอะอษอฟอภอษอีอเอ่อ์อ๏อํอ๋อ์อ็อ฿อÛอุอำอษอฤอฦอหอีอแอ๊อ๏อ๋อ็อๆอๆอโอÜอุอึอีอือุอือือือีอีอือูอุอูอÛอÝอฺอุอุอูอือุอีอาอะอโอ฿อิอหอยอภอพอรอะอฺอแอๆอ็อ้อ่อใอูอาอษอฤอลอสอำอÛอไอ่อ๋อํอ๏อ๎อํอ่อโอÝอุอิอำอิอีอุอÜอโอ้อ๋อ๊อ็อใอไอโอแอÞอÞอÜอุอัอหอวอฤอมอมอลอฮอึอÛอÞอใอใอเอÝอูอะอสอยอพอปอภอษอึอ฿อใอ่อ่อ็อไอแอÝอูอีอฯอศอฤอศอิอÞอ๊อ์อ์อ๎อ๋อ้อ็อๅอ฿อÛอือำอิอิอิอีอÝอ฿อโอๆอ๊อ์อํอ้อๆอใอเอ฿อÞอูอีอาอฯอำอÛอึอำอออวอมอรอษอะอฺอแอ้อ็อ๋อๆอเอฺอือัอวอมอลอึอเอ๊อํอ๏อ๎อ์อ้อ็อโอเอÝอือิอีอิอฺอÞอโอ็อ๊อ๊อ้อๆอๅอๅอแอÞอ฿อÞอÜอุอิอะอฬอฦอฦอวอฮอึอฺอÝอ฿อเอใอÞอึอาอออศอภอนอบอมอษอำอÜอ฿อใอไอไอ฿อูอีอออศอฤอฟอยอศอฮอฺอแอๅอ๊อ๋อ๊อ้อโอÝอือะอหอษอหอออัอึอÜอแอใอๅอ่อ็อ็อ่อ้อๆอไอแอเอÞอÝอีอีอิอะอฮอสอศอวอฦอลอวอหอัอือÛอÜอÞอÝอÜอฺอือะอฯอสอษอษอสอีอฺอใอใอๆอ๊อ้อเอเอÛอิอษอรอมอภอฦอฬอุอ฿อใอๆอใอเอÛอิอออสอหอหอษอษอฬอออออออาอือีอึอึอิอิอิอีอิอิอำอัอออษอลอษอฯอิอูอฺอÛอÞอÝอÜอือิอำอฮอสอฦอมอยอศอะอÛอเอๅอไอไอๆอๆอÛอึอัอฬอษอฦอฬอำอือÞอเอๅอ๊อ๋อํอ์อ็อ็อเอือีอฯอสอศอวอสอษอิอาอะอฬอศอฦอวอหอิอฺอÞอโอแอเอ฿อÜอึอัอฮอษอลอวอัอูอแอไอ็อ่อ่อแอแอÛอึอัอออษอวอฯอือแอๆอ๊อ์อ๊อๅอไอ฿อÜอูอีอัอิอือÜอแอใอใอๅอไอๅอไอเอÝอÝอ฿อ฿อÞอฺอีอะอฬอฦอยอมอภอลอออุอÝอแอไอไอๅอใอเอÜอึอัอหอวอลอฤอฦอฬอิอฺอแอไอๅอ็อใอเอÝอือัอหอศอลอศอออือเอ๊อ๐อํอ้อไอใอ฿อูอือีอะอออศอษอศอฤอือึอีอิอิอำอีอÛอเอเอโอแอโอเอ฿อูอิอัอฬอศอยอมอวอาอÜอไอ็อ็อ่อไอโอฺอือำอฬอษอวอออุอใอ๊อ์อ๎อ๏อ๎อ๊อ่อใอ฿อูอำอัอาอีอÞอๆอ๋อ๐อ๐อ๑อ๐อ๏อํอ๊อๆอไอโอ฿อเอÝอฺอุอุอุอฺอÜอ฿อแอแอ฿อใอๅอโอÜอÛอÛอาอสอรอภอยอสอิอÜอไอๅอๆอๆอไอÝอÛอุอัอษอฤอรอษอัอูอÞอไอ่อ๋อ์อ๊อ้อๆอโอÞอูอุอีอัอออสอวอวอฦอÝอÛอÜอÝอ฿อ฿อÜอÜอแอใอแอแอ฿อÝอÜอฺอีอะอหอฤอรอฤอฯอิอÝอ฿อโอโอใอโอเอูอิอะอศอรอฤอออÛอไอ้อ๊อ์อํอ่อๅอเอÜอึอะอษอหอะอูอใอ๋อํอํอ๋อ็อใอเอÝอÜอฺอือูอึอือือูอือือุอือฺอÜอÝอÛอุอฺอุอุอือำอะอฮอศอมอพอรอศอออีอÜอเอใอๅอใอโอÞอีอะอษอมอฟอผอมอออÛอเอไอ็อ๊อ็อๆอๆอเอÝอุอัอฮอสอศอวอลอมอมอฬอสอสอฬอออาอะอฯอัอำอัอาอิอีอีอะอฬอสอหอษอลอรอฤอฬอึอÜอ฿อ฿อแอแอÝอฺอือำอสอศอวอฤอฦอฯอูอÞอใอไอเอ฿อÞอุอาอฮอศอฤอมอมอวอฯอฺอÞอÝอÞอÛอÜอึอะอฬอศอษอวอวอฦอศอษอฬอฮอฯอะอัอาอาอัอำอีอิอาอฮอออออสอสอออะอาอัอีอุอูอุอูอฺอÝอÛอูอิอัอษอวอวอวอหอัอึอÛอÞอ฿อใอๅอโอÜอฺอูอีอัอหอวอลอฤอมอมอโอ่อํอ๎อ๏อ์อ๊อ๋อ็อๆอโอÝอูอูอือัอฬอศอลอรอภอลอษอฯอำอูอÝอ฿อÞอÜอÛอÛอำอฬอพอปอนอฟอษอิอÛอ฿อใอๅอๅอโอ฿อือะอสอรอผอฟอหอÜอๅอ่อ๊อ๊อๆอโอÞอุอีอิอัอฯอำอิอุอโอๅอ่อ์อ์อ๋อ่อไอ฿อÞอÝอÛอÛอฺอีอาอฯอฯอฮอาอือฺอÛอÜอÝอฺอูอุอือึอิอำอฯอษอรอมอมอลอฬอำอือูอฺอÛอÝอฺอุอูอือำอออออสอหอษอหอหอฬอฤอษอำอÛอเอโอ฿อแอแอใอ฿อาอฮอออฬอฮอฯอออฬอษอหอาอึอุอือึอุอุอีอัอะอัอฮอษอยอมอวอิอÛอเอเอแอโอใอเอÝอูอาอสอฤอพอปอบอพอฬอฺอ฿อใอๆอใอโอÛอุอิอำอออศอลอหอาอÜอใอ่อ้อ้อ่อ็อไอโอÞอือำอึอูอูอÛอÝอเอโอไอๅอไอแอแอ฿อแอแอÞอÝอÝอูอิอฮอสอฦอฤอวอฮอำอุอÜอ฿อโอเอเอเอแอÜอุอำอฮอหอสอวอมอภอฟอฝอือ฿อ่อ๊อ์อ้อ่อไอโอÝอูอือุอูอือุอึอิอำอิอูอÜอÝอÝอÜอÝอÞอ฿อÝอÜอฺอำอฮอศอมอฝอบอภอฬอูอÝอ฿อโอโอแอÝอุอฯอศอรอพอฝอวอัอÝอใอๅอๆอ็อๆอใอเอÜอุอาอสอศอศอฬอุอใอ้อํอ์อ๋อ่อๆอเอÜอฺอือุอือือิอำอีอึอิอีอีอึอูอำอาอำอำอะอฯอฯอออหอศอรอพอฟอภอวอหอะอำอิอุอฺอฺอุอÜอีอำอะอำอิอออสอฬอหอสอยอมอลอฯอือฺอÛอเอÞอÜอึอออมอฟอภอภอยอรอยอลอรอมอมอวอศอษอวอวอลอษอสอสอศอลอลอมอฟอรอฦอหอะอะอัอิอึอึอึอิอฮอษอวอยอพอรอฦอฮอือูอฺอÜอÛอูอึอีอำอออฦอรอมอภอฤอฮอฺอใอ่อ่อ็อแอÝอุอึอาอฬอศอลอฤอฦอหอัอฺอเอเอโอใอโอÞอเอÝอÝอÞอÜอูอีอำอะอะอฯอัอำอึอุอูอÛอÛอฺอูอูอือำอะอออษอลอฟอผอปอทอปอพอฬอือ฿อๅอๆอๆอไอเอÜอือิอัอฮอฮอะอำอูอÝอๅอๆอๅอ฿อÜอÛอุอือูอุอุอูอึอึอึอิอีอุอÜอ฿อแอใอไอไอใอไอโอÝอือฯอรอฟอบอธอพอวอาอÛอ฿อใอใอใอโอÜอีอะอศอพอธอผอลอาอÛอไอ่อ๋อ๊อ่อโอÞอุอีอฯอสอฦอศอะอือ฿อ็อ๊อํอ๎อ้อใอÞอือาอัอาอัอฮอออฬอศอฤอฤอฦอษอฯอิอึอุอูอÜอÜอÜอือุอือีอฯอสอฦอภอปอบอนอทอบอะอÛอ฿อเอใอใอเอÝอูอำอฬอฦอรอลอะอÛอใอ้อ์อํอ๋อ็อแอÝอูอีอำอำอิอึอูอแอใอ็อ๋อ๊อ้อ็อไอใอโอเอÝอฺอุอีอะอหอลอพอฝอรอออิอูอÜอÞอเอแอโอÝอือำอฮอฦอผอนอบอลอัอÛอเอแอโอใอเอÝอุอัอออฦอมอพอยอฬอำอ฿อ่อ๊อ๊อ่อแอ฿อÞอÛอุอำอัอะอะอำอือÜอแอๆอๆอ่อ็อใอÞอÝอÛอูอือีอำอะอฯอัอะอำอูอÝอแอใอ็อๅอๅอัอิอÝอเอใอแอเอÜอูอีอฯอษอมอพอมอสอือเอๆอ็อไอโอ฿อือฯอออหอฬอฮอฮอะอึอแอไอๆอ่อ่อ็อใอÝอุอาอำอาอออสอวอฤอภอภอลอษอฮอาอือฺอฺอÜอÛอฺอือีอฯอหอรอนอทอพอลอะอุอฺอÞอโอÞอÜอุอิอออศอรอฟอมอออุอ฿อๅอ่อ็อ็อๆอแอÞอฺอีอาอออษอศอหอัอูอเอ็อ่อ้อๅอเอโอ฿อÜอูอึอิอำอาอีอีอึอÛอเอโอๅอๆอๅอ็อๆอๅอสอีอÜอเอแอแอ฿อÞอÜอึอฯอฤอฝอปอภอาอÝอโอไอๆอๆอๅอแอÝอือำอฯอฮอฮอำอือÛอÝอ฿อเอแอไอใอโอเอเอÝอฺอูอือีอาอออหอวอหอฯอำอึอีอฺอÛอÛอÛอฺอือึอะอฦอปอฒอณอบอฤอฮอือÜอÝอเอ฿อÝอฺอิอออวอภอธอฝอษอึอ฿อๅอ็อ็อๆอโอÝอÛอือะอหอลอมอมอลอออาอฺอแอๅอใอแอÝอÞอÝอÛอÛอีอัอออฮอฮอะอาอึอฺอ฿อโอ่อๆอใอๅอ่อือÛอÛอÝอÞอÜอูอีอะอศอรอฝอนอนอฟอฯอÛอเอแอใอไอโอ฿อÛอือำอฮอสอฤอวอฮอือÝอใอ่อๆอเอÜอือำอฯอหอหอฮอออฬอฯอือÜอÝอแอแอÞอÜอุอิอาอฯอัอัอฮอสอฦอลอยอลอศอะอิอึอึอุอูอฺอีอะอออสอฤอภอบอถอธอลอะอึอÜอÞอÝอÞอÜอึอือือวอมอพอยอลอสอำอÞอโอๅอ้อ่อโอÜอุอิอะอฮอฮอฬอสอษอฮอัอิอูอÞอ฿อโอๆอๆอใอโอแอีอฺอÞอเอÞอÝอÝอูอาอฯอฬอยอผอนอพอฮอฺอแอไอๅอไอแอÞอูอะอหอรอฟอฝอฤอฮอÝอใอๆอ๊อ็อใอแอÜอึอัอัอฮอฬอึอ฿อแอ่อ์อ์อ้อ๊อ็อไอÞอึอำอีอึอาอาอฯอออษอหอสอออำอึอือือฺอÝอเอÜอีอฮอสอลอมอปอธอพอสอัอิอÛอ฿อÛอÝอÞอÛอีอัอะอฮอวอภอพอพอรอฬอีอเอไอใอแอ฿อฺอือิอัอฮอฦอภอภอรอษอฯอือูอÞอๅอ็อÝอึอีอๆอูอÜอÝอÝอÜอÞอÝอฺอึอฯอลอพอนอฝอฬอุอูอÝอแอ฿อÜอึอีอิอหอมอปอธอผอษอิอÜอโอไอ็อๆอ฿อูอำอฯอหอวอฦอฦอฬอือÝอใอๆอๅอๅอไอแอÞอฺอุอัอะอฮอออหอวอลอรอรอมอลอออีอุอุอุอือือำอฮอวอรอปอนอถอฒอทอฦอฯอีอูอÜอÝอÜอฺอีอำอฬอฤอพอดอตอผอศอำอูอÞอเอใอโอ฿อูอิอสอรอมอพอฝอมอศอฮอือแอๅอ้อ๊อ๊อ็อๆอใอโอ็อเอ฿อÜอุอึอึอำอำอฮอวอมอผอบอยอสอำอุอฺอÝอÝอÝอูอำอฯอษอมอบอทอปอฦอออีอÜอแอๆอๅอเอÜอือาอฬอลอฟอภอสอึอÞอๆอ็อๆอๆอใอเอÜอึอาอฮอฬอฯอาอึอูอÝอÞอใอโอแอเอÜอฺอือือิอิอาอาอฬอวอรอภอมอยอศอฮอาอีอูอÛอÜอÜอÜอือำอหอยอปอตอทอพอษอีอÞอแอไอใอ฿อเอูอีอฬอสอฦอพอผอผอมอสอุอแอๅอ็อ่อ็อไอÞอูอÛอไอออออหอสอศอฬอหอสอษอฤอยอฟอภอยอศอออะอาอำอำอีอิอึอำอฮอลอปอถอปอวอฯอุอÛอÝอ฿อ฿อÞอÜอือฯอหอฤอพอผอฦอึอÞอๅอๆอ็อ้อ่อๆอแอึอาอออฤอพอฟอวอิอÝอแอแอ฿อเอÜอุอาอออหอสอษอษอศอศอษอษอหอษอฯอฮอฯอะอาอะอะอะอะอัอะอฯอออษอวอลอฤอลอออาอุอูอÛอ฿อใอÜอุอÛอาอฮอลอผอบอมอลอสอึอÝอใอๅอๆอไอเอÜอฺอฺอแอาอฮอหอษอศอวอษอออะอาอิอัอำอิอึอิอาอัอำอือิอำอะอฮอสอฤอฝอฟอฟอลอฯอิอึอึอฺอุอÛอูอุอีอัอฬอลอพอฝอฦอาอเอๅอ็อๆอใอเอÛอีอฮอษอรอฤอษอัอฺอเอๅอ็อๆอๆอโอÞอÛอึอัอฯอฮอาอือÜอแอไอๆอไอโอไอแอÞอ฿อÞอูอฺอุอำอาอัอหอยอผอบอรอษอะอีอุอÛอÝอÞอÝอฺอึอิอฬอฤอพอนอบอบอพอวอำอฺอÞอ฿อ฿อÝอÝอÜอิอือุอÝอูอีอำอาอิอึอือ฿อโอโอÝอÛอÜอÜอฺอุอูอฺอฺอÜอÜอือฯอวอฤอพอมอลอฬอาอูอเอแอแอÞอÞอูอิอออลอพอบอพอษอือÞอใอไอไอๆอไอเอฺอาอหอศอรอรอฬอุอใอ๊อํอ๎อ๎อ้อใอÜอีอออวอมอฟอยอรอลอฦอฦอฦอฦอหอฯอะอหอษอสอฬอสอสอฬอะอฬอวอยอฤอมอฟอผอพอรอสอฬอฯอำอึอือำอาอฮอหอวอมอภอภอยอวอฬอะอำอือือึอึอิอีอิอุอ
