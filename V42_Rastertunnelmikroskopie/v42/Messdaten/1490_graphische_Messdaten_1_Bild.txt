@@ -1,0 +1,5 @@
+# horizontal: Anfang x/y; Ende x/y; Anzahl; vertikal: Anfang x/y; Ende x/y; Anzahl (Bild 1)
+95 67       183 54      3       46 127      105 48      5
+58 111      183 99      4       63 225      142 115     7
+66 181      219 167     5       84 280      222 80      13
+51 241      234 224     6       135 247     199 152     6

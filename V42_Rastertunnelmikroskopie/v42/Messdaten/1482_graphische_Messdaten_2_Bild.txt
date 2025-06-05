@@ -1,0 +1,5 @@
+# horizontal: Anfang x/y; Ende x/y; Anzahl; vertikal: Anfang x/y; Ende x/y; Anzahl (Bild 2)
+716 67      869 51      5       694 141     747 61       5
+715 110     805 100     3       701 211     745 149     4
+689 226     870 210     6       727 253     824 113     9
+717 267     901 249     6       789 203     890 65      9
