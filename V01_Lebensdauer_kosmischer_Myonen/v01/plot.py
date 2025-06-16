@@ -164,10 +164,13 @@ x_plot12 = np.linspace(-0.5,2)
 
 params_linear, covariance_matrix_linear = np.polyfit(np.log(no_zero_messwerte), np.log(no_zero_counts), deg=1, cov=True)
 
+
+
 fig12,ax12 = plt.subplots(figsize = (6,5))
 ax12.plot(np.log(no_zero_messwerte), np.log(no_zero_counts), "x")
 ax12.plot(x_plot12, params_linear[0] * x_plot12 + params_linear[1])
 plt.grid()
+#plt.errorbar()
 fig12.savefig("Linearisierung.pdf")
 
 
@@ -204,12 +207,18 @@ U = params2[2]
 lamdba = ufloat(b,uncertainties2[1])
 tau = 1/lamdba
 
+Fehler_bei_Counts_fit = np.sqrt(Counts_pro_Channel_fit)
+Fehler_bei_Counts_ex = np.sqrt(Counts_pro_Channel_ex)
+
 fig2,ax2 = plt.subplots(figsize = (6,5))
-ax2.plot(Lebensdauer_Messwerte_fit,Counts_pro_Channel_fit, ".", mfc='none', color = "mediumpurple", label = "inkludierte Messwerte")
-ax2.plot(Lebensdauer_Messwerte_ex,Counts_pro_Channel_ex, ".", mfc='none', color = "hotpink", label = "exkludierte Messwerte")
+ax2.errorbar(x = Lebensdauer_Messwerte_fit,y = Counts_pro_Channel_fit, xerr = None, yerr=np.sqrt(Counts_pro_Channel_fit), fmt="o", alpha = 0.4, capsize = 3.3, color = "mediumpurple", label = "inkludierte Messwerte")
+ax2.errorbar(x = Lebensdauer_Messwerte_ex,y = Counts_pro_Channel_ex, xerr = None, yerr=np.sqrt(Counts_pro_Channel_fit), fmt="o", alpha = 0.4, capsize = 3.3, color = "hotpink", label = "exkludierte Messwerte")
+#ax2.plot(Lebensdauer_Messwerte_fit,Counts_pro_Channel_fit, ".", mfc='none', color = "mediumpurple", label = "inkludierte Messwerte")
+#ax2.plot(Lebensdauer_Messwerte_ex,Counts_pro_Channel_ex, ".", mfc='none', color = "hotpink", label = "exkludierte Messwerte")
 # ax2.plot(x_plot2, a*np.exp(-b*x_plot2) + U, color = "darkorange", label = "Ausgleichsfunktion" )
 ax2.plot(x_plot2, exp(x_plot2,*params2), color = "darkblue", label = "Ausgleichsfunktion")
 #ax2.plot(x_plot2, exp(x_plot2, np.exp(3.2112),1.3707,4.5081), label = "andere Ausgleichsfunktion")
+#plt.errorbar()
 ax2.set(
     xlabel=r"Zeit $t$ in $\mu\mathrm{s}$",
     ylabel="Counts",
