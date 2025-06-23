@@ -22,6 +22,7 @@ $\tau_0 = \tau(\infty)$ ist die charakteristische Relaxationszeit.
 Zur Bestimmung der Relaxationszeit und Aktivierungsenergie wird die Ionen-Thermostrom-Methode verwendet. Bei dieser Methode wird bei einer Temperatur $T_1$ ein homogenes elektrisches Feld angelegt für die Zeit $t_1 >> \tau{T_1}$. Nach dieser Zeit sollte die Probe vollständig polarisiert sein. Anschließend wird die Probe auf die Temperatur $T_0$ heruntergekühlt. Danach wird das elektrische Feld abgeschaltet und die Probe mit konstanter Heizrate $b = \frac{\symup{d}T}{\symup{d}t}$ erhöht. Bei steigender Temperatur relaxieren die Dipole allmählich in ihren Grundzustand. Dadurch entsteht ein temperaturabhängiger Depolarisationsstrom $I$, der durch 
 \begin{equation}
     I(T) = \textcolor{PineGreen}{\frac{N p² E}{3 k_b T_1}} \textcolor{RoyalPurple}{ \frac{1}{\tau_0} \exp{\left(- \frac{W}{k_b T}\right)}} \textcolor{RedViolet}{\exp{\left( -(b \tau_0)^{-1}  \int_{T_0}^{T} \exp{\left(-\frac{W}{k_b T'}\right)}\symup{d}T'\right)}}
+    \label{eqn:grosse_I_Formel}
 \end{equation}
 beschrieben wird. Der grüne Teil beschreibt dabei die durchschnittliche Polarisation pro Dipol, der blaue Teil beschreibt die Relaxationsrate und der rote Teil die Anzahl der für den Strom relevanter Dipole. $p$ bezeichnet dabei das Dipolmoment eines einzelnen Dipols und $N$ ist die Anzahl der Dipole pro Einheitsvolumen. Das Maximum der Kurve ist unabhängig von der ursprünglichen Temperatur $T_1$ auf die die Probe aufgeheizt wurde und ist bei der Temperatur  
 \begin{equation}

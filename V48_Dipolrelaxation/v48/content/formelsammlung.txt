@@ -1,3 +1,15 @@
+I(T) = \textcolor{PineGreen}{\frac{N p² E}{3 k_b T_1}} \textcolor{RoyalPurple}{ \frac{1}{\tau_0} \exp{\left(- \frac{W}{k_b T}\right)}} \textcolor{RedViolet}{\exp{\left( -(b \tau_0)^{-1}  \int_{T_0}^{T} \exp{\left(-\frac{W}{k_b T'}\right)}\symup{d}T'\right)}}
+\label{eqn:grosse_I_Formel}
+
+T_{\text{max}} = \sqrt{\frac{b W \tau\left(T_{\text{max}}\right)}{k_b}}
+\label{eqn:T_max}
+
+\ln(I(T)) = \text{const} - \frac{W}{k_b T}
+\label{eqn:approx_kalte_Temperaturen}
+
+\ln(\tau(T)) = \ln(\tau_0) + \frac{W}{k_b T} = \ln \left(\frac{1}{I(T)} \int_{T}^{\infty}I(T')\symup{d}T' \right)
+\label{eqn:fuer_W_Bestimmung}
+
 Statistische Formeln zum copy & pasten:
 
 Mittelwert:
