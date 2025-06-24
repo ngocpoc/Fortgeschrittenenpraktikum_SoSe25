@@ -1,7 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Untersuchung der Gitterstruktur von HOPG}
-Zur Untersuchung der Gitterstruktur werden zwei Scandurchgänge verwendet mit jeweils einem vorwärts und einem rückwärts Scan. Diese sind in Abbildung \ref{fig:Gitter_Graphit_1} und \ref{fig:Gitter_Graphit_2} zu sehen. Zur Bestimmung des Übernächsten-Nachbarn-Abstands $d$ werden die Längen der beiden Gittervektoren $\vec{g}_1$ und $\vec{g}_2$ gemessen. Dies erfolgt graphisch über mehrere Einheitszellen hinweg. Der Mittelwert beider Längen der Gittervektoren entspricht $d$. $\vec{g}_1$ wird aus den annähernd vertikalen Linien bestimmt und $\vec{g}_2$ aus den diagonalen Linien. 
+Zur Untersuchung der Gitterstruktur werden zwei Scandurchgänge verwendet mit jeweils einem vorwärts und einem rückwärts Scan. Diese sind in Abbildung \ref{fig:Gitter_Graphit_1} und \ref{fig:Gitter_Graphit_2} zu sehen. Zur Bestimmung des Übernächsten-Nachbarn-Abstands $d$ werden die Längen der beiden Gittervektoren $\vec{g}_1$ und $\vec{g}_2$ gemessen. Dies erfolgt graphisch über mehrere Einheitszellen hinweg. Der Mittelwert beider Längen der Gittervektoren entspricht $d$. Der Vektor $\vec{g}_1$ wird aus den annähernd vertikalen Linien bestimmt und der Vektor $\vec{g}_2$ aus den diagonalen Linien. 
 \begin{figure}[h]
     \centering
     \begin{subfigure}{.475\linewidth}
@@ -45,7 +45,7 @@ Die graphisch ermittelten Längen der aus den Gittervektoren sind in Tabelle \re
     \label{fig:Gitter_Graphit_2}
 \end{figure}
 
-\begin{table}[h]
+\begin{table}[h!]
   \centering
   \caption{Graphisch ermittelte Länge der Gittervektoren des zweiten Graphitscans.}
   \label{tab:Graphit_Bild_2}
@@ -71,10 +71,10 @@ Der Winkel zwischen den Gittervektoren ergibt sich durch die Berechnung mithilfe
   \alpha = \arccos{\left(\frac{\vec{g}_{\text{1}} \cdot \vec{g}_{\text{2}}}{\left|\vec{g}_{\text{1}} \right| \left|\vec{g}_{\text{2}} \right|}\right)}
 \end{equation*}
  zu $\alpha = (49,37 \pm 0,39)°$.
-\floatbarrier
+\FloatBarrier
 
 \subsection{Untersuchung der Oberfläche von Gold}
-Zur Untersuchung der Stufen auf einer Goldoberfläche werden die Bilder, die in \autoref{fig:Gold} zu sehen sind, verwendet. Der Scan \ref{fig:fremdes} wurde nicht während der Durchführung selbst aufgenommen, sondern von einer anderen Versuchsdurchführung für die Auswertung zur Verfügung gestellt. Der Scan \ref{fig:eigenes} wurde selbstsändig aufgezeichnet. Aus beiden Scans werden vier verschiedene Höhenprofile mithilfe der Software Gwyddith extrahiert und für die Auswertung verwendet. Die ausgewählten Höhenprofile sind in \autoref{fig:Hoehenprofil_Bild_1} und \autoref{fig:Hoehenprofil_Bild_2} dargestellt. Die daraus ausgewählten Höhenunterschiede $\Delta z$ sind in \autoref{tab:Hoehendiff} aufgelistet und in \autoref{fig:Hoehendiff} dargestellt.
+Zur Untersuchung der Stufen auf einer Goldoberfläche werden die Bilder, die in \autoref{fig:Gold} zu sehen sind, verwendet. Der Scan \ref{fig:fremdes} wurde nicht während der Durchführung selbst aufgenommen, sondern von einer anderen Versuchsdurchführung für die Auswertung zur Verfügung gestellt. Der Scan \ref{fig:eigenes} wurde selbstsändig aufgezeichnet. Aus beiden Scans werden vier verschiedene Höhenprofile mithilfe der Software Gwyddion extrahiert und für die Auswertung verwendet. Die ausgewählten Höhenprofile sind in \autoref{fig:Hoehenprofil_Bild_1} und \autoref{fig:Hoehenprofil_Bild_2} dargestellt. Die daraus ausgewählten Höhenunterschiede $\Delta z$ sind in \autoref{tab:Hoehendiff} aufgelistet und in \autoref{fig:Hoehendiff} dargestellt.
 In \autoref{fig:Hoehendiff} ist bei beiden Scans eine Lücke zwischen zwei Häufungen zu sehen. Aus den Häufungspunkten wird die Dicke einer Atomschicht bestimmt. Der Mittelwert der Höhe der einatomigen Stufe des erstens Scans ist $\Delta z_{\text{eigen}} = (0,249 \pm 0,029) \,  \unit{\nano\meter}$ und des zweiten Scans ist $\Delta z_{\text{nicht eigen}} = (0,269 \pm 0,030)\,  \unit{\nano\meter}$. Die aus beiden gemittelte Höhe beträgt $\Delta z_{\text{beide}} = (0,259 \pm 0,021)\,  \unit{\nano\meter}$.
 
 %Oberere_Haufungspunkt_eigen_Mittelwert:  0.8380000000000001 0.023288051299611427
