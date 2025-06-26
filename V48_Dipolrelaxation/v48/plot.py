@@ -19,10 +19,10 @@ def exp_Untergrund(t, m, a, b):
     return m * np.exp(a * t) + b
 
 
-def plot_strom(ax, T_K, I, mask_exclude, mask_untergrund, untergrund_fit=None, label="Messdaten", fit_color="darkgreen"):
+def plot_strom(ax, T_K, I, mask_exclude, mask_untergrund, untergrund_fit=None, label="Messwerte", fit_color="darkgreen"):
     """Hilfsfunktion zum Plotten der Stromdaten mit Untergrund"""
     ax.plot(T_K, I, "x", color="tab:blue", label=label)
-    ax.plot(T_K[mask_exclude], I[mask_exclude], "x", color="tab:red", label="exkl. Messdaten")
+    ax.plot(T_K[mask_exclude], I[mask_exclude], "x", color="tab:red", label="Exkludierte Messwerte")
     ax.plot(T_K[mask_untergrund], I[mask_untergrund], "x", color="tab:green", label="Untergrund")
 
     if untergrund_fit is not None:
@@ -31,15 +31,18 @@ def plot_strom(ax, T_K, I, mask_exclude, mask_untergrund, untergrund_fit=None, l
         ax.plot(T_fit, I_fit, "-", color=fit_color, label="Exp. Fit (Untergrund)")
 
     ax.set_xlabel(r"$T\,[\si{\kelvin}]$")
-    ax.set_ylabel(r"$I_D\,[\si{\pico\ampere}]$")
+    ax.set_ylabel(r"$I\,[\si{\pico\ampere}]$")
     ax.set_xlim([195, 295])
     ax.grid()
     ax.legend()
 
 t_1, I_1, T_1 = np.genfromtxt("Messdaten/ersteReihe.txt", unpack=True)
 t_2, I_2, T_2 = np.genfromtxt("Messdaten/zweiteReiheVor.txt", unpack=True)
+t_2_f, I_2_f, T_2_f = np.genfromtxt("Messdaten/zweiteReihe.txt", unpack=True)\
+
 T_1_K = T_1 + 273.15
 T_2_K = T_2 + 273.15
+T_2_K_f = T_2_f + 273.15
 
 #####################################################
 # Heizraten
@@ -54,6 +57,8 @@ params1, cov1 = curve_fit(lin_fit, t_1, T_1_K)
 # Fit für zweite Messreihe
 params2, cov2 = curve_fit(lin_fit, t_2, T_2_K) 
 
+params2_f, cov2_f = curve_fit(lin_fit, t_2_f, T_2_K_f) 
+
 # Fit-Parameter mit Unsicherheiten
 def get_fit_params(params, cov):
     m, b = params
@@ -64,14 +69,19 @@ m1, b1 = get_fit_params(params1, cov1)
 # m12, b12 = get_fit_params(params12, cov12)
 m2, b2 = get_fit_params(params2, cov2)
 
+m2_f, b2_f = get_fit_params(params2_f, cov2_f)
+
 m1_s = m1/60
 m2_s = m2/60
+
+m2_s_f = m2_f/60
 
 # Nominalwerte extrahieren für Plot
 m1_nom, b1_nom = unp.nominal_values([m1, b1])
 # m12_nom, b12_nom = unp.nominal_values([m12, b12])
 m2_nom, b2_nom = unp.nominal_values([m2, b2])
 
+m2_nom_f, b2_nom_f = unp.nominal_values([m2_f, b2_f]) 
 tlist1 = np.linspace(0,105, 1000)
 # tlist12 = np.linspace(cut, 105, 1000)
 tlist2 = np.linspace(0,40, 1000)
@@ -79,7 +89,7 @@ tlist2 = np.linspace(0,40, 1000)
 
 fig, (ax1, ax2) = plt.subplots(1,2, sharey=True)
 
-ax1.plot(t_1, T_1_K, "x", label="Messdaten")
+ax1.plot(t_1, T_1_K, "x", label="Messwerte")
 ax1.plot(tlist1, lin_fit(tlist1, m1_nom, b1_nom), "-", color="darkviolet", label="Lin. Regression")
 # ax1.plot(tlist12, lin_fit(tlist12, m12_nom, b12_nom), "-", label="Lin. Regression")
 ax1.set_xlabel(r"$t\,[\si{\minute}$]")
@@ -88,7 +98,7 @@ ax1.set_ylabel(r"$T\,[\si{\kelvin}]$")
 ax1.legend(loc="upper left")
 ax1.grid()
 
-ax2.plot(t_2, T_2_K, "x", label="Messdaten")
+ax2.plot(t_2, T_2_K, "x", label="Messwerte")
 ax2.plot(tlist2, lin_fit(tlist2, m2_nom, b2_nom), "-", color="darkviolet",  label="Lin. Regression")
 ax2.set_xlabel(r"t$\,[\si{\minute}]$")
 ax2.set_title("Zweite Messreihe")
@@ -204,6 +214,21 @@ plot_strom(
 ax3.set_ylim([-1.3, 14])
 fig3.savefig("build/zweiterStromVor.pdf")
 
+I_2_f[0:20] = -faktor1 * I_2_f[0:20]
+I_2_f[20:28] = -faktor2 * I_2_f[20:28]
+I_2_f[28:] = -faktor1 * I_2_f[28:]
+I_2_f = I_2_f * 1e12    # in pA
+
+fig3, ax3 = plt.subplots()
+ax3.plot(T_2_K_f, I_2_f, "x", color="tab:blue", label="Messwerte")
+ax3.set_xlabel(r"$T\,[\si{\kelvin}]$")
+ax3.set_ylabel(r"$I\,[\si{\pico\ampere}]$")
+ax3.set_xlim([195, 295])
+ax3.grid()
+ax3.legend()
+# ax3.set_ylim([-1.3, 14])
+fig3.savefig("build/zweiterStrom.pdf")
+
 
 #####################################################
 # Messungen ohne Untergrund
@@ -224,7 +249,7 @@ indices_polarisation1 = np.concatenate([
 
 # Indizes für Stromdichtenansatz
 indices_stromdichte1 = np.concatenate([
-    np.arange(33,58),
+    np.arange(17,58),
 ])
 
 # Bool-Masken erzeugen
@@ -235,11 +260,11 @@ mask_stromdichte1 = np.zeros_like(I_clean1, dtype=bool)
 mask_stromdichte1[indices_stromdichte1] = True
 
 fig4, ax4 = plt.subplots()
-ax4.plot(T_clean1, I_clean1, "x", color="tab:blue", label="Bereinigte Messdaten")
-ax4.plot(T_clean1[mask_polarisation1], I_clean1[mask_polarisation1], "x", color="tab:green", label="Polarisationsansatz")
-ax4.plot(T_clean1[mask_stromdichte1], I_clean1[mask_stromdichte1], "x", color="tab:orange", label="Stromdichtenansatz")
+ax4.plot(T_clean1, I_clean1, "x", color="tab:blue", label="Korrigierte Messwerte")
+ax4.plot(T_clean1[mask_polarisation1], I_clean1[mask_polarisation1], "o", fillstyle="none", color="tab:green", label="Polarisationsansatz")
+ax4.plot(T_clean1[mask_stromdichte1], I_clean1[mask_stromdichte1], "x", fillstyle="full", color="tab:orange", label="Stromdichtenansatz")
 ax4.set_xlabel(r"$T\,[\si{\kelvin}]$")
-ax4.set_ylabel(r"$I\,[\si{\pico\ampere}]$")
+ax4.set_ylabel(r"$I_D\,[\si{\pico\ampere}]$")
 ax4.grid()
 ax4.set_xlim([195,295])
 ax4.set_ylim([-1.3,8])
@@ -254,7 +279,7 @@ indices_polarisation2 = np.concatenate([
 
 # Indizes für Stromdichtenansatz
 indices_stromdichte2 = np.concatenate([
-    np.arange(18,26),
+    np.arange(11,26),
 ])
 
 # Bool-Masken erzeugen
@@ -266,11 +291,11 @@ mask_stromdichte2[indices_stromdichte2] = True
 
 
 fig5, ax5 = plt.subplots()
-ax5.plot(T_clean2, I_clean2,"x", color="tab:blue", label="Bereinigte Messdaten")
-ax5.plot(T_clean2[mask_polarisation2], I_clean2[mask_polarisation2], "x", color="tab:green", label="Polarisationsansatz")
-ax5.plot(T_clean2[mask_stromdichte2], I_clean2[mask_stromdichte2], "x", color="tab:orange", label="Stromdichtenansatz")
+ax5.plot(T_clean2, I_clean2,"x", color="tab:blue", label="Korrigierte Messwerte")
+ax5.plot(T_clean2[mask_polarisation2], I_clean2[mask_polarisation2], "o", fillstyle="none", color="tab:green", label="Polarisationsansatz")
+ax5.plot(T_clean2[mask_stromdichte2], I_clean2[mask_stromdichte2], "x",fillstyle="full", color="tab:orange", label="Stromdichtenansatz")
 ax5.set_xlabel(r"$T\,[\si{\kelvin}]$")
-ax5.set_ylabel(r"$I\,[\si{\pico\ampere}]$")
+ax5.set_ylabel(r"$I_D\,[\si{\pico\ampere}]$")
 ax5.grid()
 ax5.set_xlim([195,295])
 ax5.set_ylim([-1.3,14])
@@ -296,8 +321,9 @@ ax6.plot(T_1_inv, lnI_1, "x", color="tab:green", label="Messwerte")
 ax6.plot(Tlist_inv, lin_fit(Tlist_inv, m1_pol, b1_pol), "-", color="darkgreen", label="Lin. Fit")
 ax6.set_xlabel(r"$T^{-1}\,[\si{\per\kelvin}]$")
 ax6.set_ylabel(r"$\ln\left( \frac{I_D}{I_0} \right)$")
-ax6.set_xlim([4.025e-3, 4.325e-3])
-ax6.set_ylim([-1,2])
+ax6.set_xlim([4e-3, 4.35e-3])
+ax6.set_ylim([-1.25,2])
+ax6.legend()
 ax6.grid()
 fig6.savefig("build/polarisation1.pdf")
 
@@ -314,7 +340,8 @@ ax7.plot(Tlist_inv, lin_fit(Tlist_inv, m2_pol, b2_pol), "-", color="darkgreen", 
 ax7.set_xlabel(r"$T^{-1}\,[\si{\per\kelvin}]$")
 ax7.set_ylabel(r"$\ln\left( \frac{I_D}{I_0} \right)$")
 ax7.set_xlim([4e-3, 4.35e-3])
-ax7.set_ylim([-1,1.5])
+ax7.set_ylim([-1.25,2])
+ax7.legend()
 ax7.grid()
 fig7.savefig("build/polarisation2.pdf")
 
@@ -342,16 +369,17 @@ params_strom1, cov_strom1 = curve_fit(lin_fit, T_inv1, ln_integral1)
 m1_str, b1_str = get_fit_params(params_strom1, cov_strom1)
 W1_str = m1_str*k_B
 
-Tlist_strom = np.linspace(3.65e-3, 4.053e-3)
+Tlist_strom = np.linspace(3.65e-3, 7e-3)
 fig8, ax8 = plt.subplots()
 
-ax8.plot(T_inv1, ln_integral1, "x", color="tab:orange", label=r"Messdaten")
+ax8.plot(T_inv1, ln_integral1, "x", color="tab:orange", label=r"Messwerte")
 ax8.plot(Tlist_strom, lin_fit(Tlist_strom, *params_strom1), "-", color="orangered", label="Lin. Fit")
 ax8.set_xlabel(r"$T^{-1}\,[\si{\per\kelvin}]$")
-ax8.set_ylabel(r"$\ln\left( \frac{\int_T^{T^*} I(T')\,dT'}{I(T)} \right)$")
-ax8.set_xlim([3.7e-3, 4.05e-3])
+ax8.set_ylabel(r"$\ln\left( \frac{1}{I(T)}\int_T^{\infty} I(T')\,\symup{d}T' \right)$")
+ax8.set_xlim([3.65e-3, 4.4e-3])
+ax8.set_ylim([-1.25, 8])
 ax8.grid()
-ax8.legend()
+ax8.legend(loc="upper left")
 fig8.savefig("build/stromdichte1.pdf")
 
 # zweite Messung
@@ -371,13 +399,14 @@ W2_str = m2_str*k_B
 
 fig9, ax9 = plt.subplots()
 
-ax9.plot(T_inv2, ln_integral2, "x", color="tab:orange", label=r"Messdaten")
+ax9.plot(T_inv2, ln_integral2, "x", color="tab:orange", label=r"Messwerte")
 ax9.plot(Tlist_strom, lin_fit(Tlist_strom, *params_strom2), "-", color="orangered", label="Lin. Fit")
 ax9.set_xlabel(r"$T^{-1}\,[\si{\per\kelvin}]$")
-ax9.set_ylabel(r"$\ln\left( \frac{\int_T^{T^*} I(T')\,dT'}{I(T)} \right)$")
-ax9.set_xlim([3.65e-3, 4.053e-3])
+ax9.set_ylabel(r"$\ln\left( \frac{1}{I(T)} \int_T^{\infty} I(T')\,\symup{dT}'\right)$")
+ax9.set_xlim([3.65e-3, 4.4e-3])
+ax9.set_ylim([-1.25, 8])
 ax9.grid()
-ax9.legend()
+ax9.legend(loc="upper left")
 fig9.savefig("build/stromdichte2.pdf")
 
 #####################################################
@@ -416,7 +445,7 @@ ax10.plot(Tlist_relax, unp.nominal_values(tau(tau0_2, Tlist_relax, W2_str)), "-"
 ax10.set_xlabel(r"$T\,[\si{\kelvin}]$")
 ax10.set_ylabel(r"$\tau\,[\si{\second}]$")
 ax10.legend(loc="upper right")
-ax10.set_ylim([0,500])
-ax10.set_xlim([245,300])
+ax10.set_ylim([0,400])
+ax10.set_xlim([250,290])
 ax10.grid()
 fig10.savefig("build/relaxation.pdf")

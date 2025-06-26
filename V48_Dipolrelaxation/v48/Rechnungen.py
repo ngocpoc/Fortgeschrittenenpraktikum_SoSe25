@@ -64,7 +64,8 @@ faktor2 = (1/20) * 0.3 * 1e-10
 # Erste Messung #####################################
 I_1 = -faktor1 * I_1
 I_1 = I_1 * 1e12
-
+print(I_1)
+print(len(I_1))
 indices_untergrund = np.concatenate([
     np.arange(0,17),
     # np.array([22, 23]),
@@ -98,6 +99,7 @@ I_2[20:28] = -faktor2 * I_2[20:28]
 I_2[28:] = -faktor1 * I_2[28:]
 I_2 = I_2 * 1e12
 
+print(I_2)
 # Indizes für Untergrund
 indices_untergrund2 = np.concatenate([
     np.arange(0, 11), 
@@ -126,6 +128,18 @@ params_untergrund2, cov_untergrund2 = curve_fit(
     I_2[mask_untergrund2],
     p0=(2, 0.01, -1.1)
 )
+
+def get_fit_params_exp(params, cov):
+    m, a, b = params
+    err_m, err_a, err_b = np.sqrt(np.diag(cov))
+    return ufloat(m, err_m), ufloat(a, err_a), ufloat(b, err_b)
+
+print("Untergrund")
+m1_exp, a1_exp, b1_exp = get_fit_params_exp(params_untergrund, cov_untergrund)
+m2_exp, a2_exp, b2_exp = get_fit_params_exp(params_untergrund2, cov_untergrund2)
+
+print(rf"Erste Messreihe: m1_exp: {m1_exp} a1_exp: {a1_exp} b1_exp: {b1_exp}")
+print(rf"Zweite Messreihe: m2_exp: {m2_exp} a2_exp: {a2_exp} b2_exp: {b2_exp}")
 
 
 #####################################################
@@ -197,7 +211,7 @@ def IntTrapez(T, Strom):
 # Messung 1
 print("erste Messung")
 indices_stromdichte1 = np.concatenate([
-    np.arange(33,58),
+    np.arange(17,58),
 ])
 
 mask_stromdichte1 = np.zeros_like(I_clean1, dtype=bool)
@@ -227,7 +241,7 @@ print(rf"W1_str = {W1_str} eV")
 # Messung 2
 print("zweite Messung")
 indices_stromdichte2 = np.concatenate([
-    np.arange(18,26),
+    np.arange(11,26),
 ])
 
 mask_stromdichte2 = np.zeros_like(I_clean2, dtype=bool)
