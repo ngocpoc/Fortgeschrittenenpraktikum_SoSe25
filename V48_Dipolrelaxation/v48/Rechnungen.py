@@ -244,7 +244,7 @@ W1_str_eV = W1_str * eV
 
 print(rf"m1_str: {m1_str} K")
 print(rf"b1_str: {b1_str} keine Einheit")
-print(rf"W1_str = {W1_str} J und {W1_pol_eV} eV")
+print(rf"W1_str = {W1_str} J und {W1_str_eV} eV")
 
 # Messung 2
 print("zweite Messung")
@@ -315,4 +315,15 @@ print(f"I_max = {I_max2} pA bei T_max = {T_max2} K")
 print(rf"tau_max2: {tau_max2} s")
 print(rf"tau0_2: {tau0_2} s")
 
-W_theorie = 0.66
+W_theo = 0.66
+
+rel_W1_pol = rel_Abweichung(unp.nominal_values(W1_pol_eV), W_theo)
+rel_W2_pol = rel_Abweichung(unp.nominal_values(W2_pol_eV), W_theo)
+rel_W1_str = rel_Abweichung(unp.nominal_values(W1_str_eV), W_theo)
+rel_W2_str = rel_Abweichung(unp.nominal_values(W2_str_eV), W_theo)
+
+print("Abweichungen")
+print(rf"W1_pol: {rel_W1_pol}%")
+print(rf"W2_pol: {rel_W2_pol}%")
+print(rf"W1_str: {rel_W1_str}%")
+print(rf"W2_str: {rel_W2_str}%")
