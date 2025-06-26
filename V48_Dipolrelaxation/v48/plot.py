@@ -9,6 +9,8 @@ import scipy.constants as const
 # import matplotlib.ticker as ticker
 
 k_B = const.k
+eV = 6.241509074460763e18 
+
 def rel_Abweichung(exp, theo):
     return (np.abs(exp-theo)/(theo)*100) #ist schon in Prozent
 
@@ -100,7 +102,7 @@ ax1.grid()
 
 ax2.plot(t_2, T_2_K, "x", label="Messwerte")
 ax2.plot(tlist2, lin_fit(tlist2, m2_nom, b2_nom), "-", color="darkviolet",  label="Lin. Regression")
-ax2.set_xlabel(r"t$\,[\si{\minute}]$")
+ax2.set_xlabel(r"$t\,[\si{\minute}]$")
 ax2.set_title("Zweite Messreihe")
 ax2.legend(loc="upper left")
 ax2.grid()

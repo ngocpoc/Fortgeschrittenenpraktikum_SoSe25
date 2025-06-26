@@ -7,6 +7,8 @@ from scipy.optimize import curve_fit
 import scipy.constants as const
 from scipy.integrate import trapezoid
 
+eV = 6.241509074460763e18
+
 def rel_Abweichung(exp, theo):
     return (np.abs(exp-theo)/(theo)*100) #ist schon in Prozent
 
@@ -176,9 +178,11 @@ params_pol1, cov_pol1 = curve_fit(lin_fit, T_1_inv, lnI_1)
 
 m1_pol, b1_pol = get_fit_params(params_pol1, cov_pol1)
 
+W1_pol_J = -m1_pol*k_B
+W1_pol_eV = W1_pol_J * eV
 print(rf"m1_pol: {m1_pol} K")
 print(rf"b1_pol: {b1_pol} ohne Einheit")
-print(rf"W1_pol = {-m1_pol*k_B} eV")
+print(rf"W1_pol = {W1_pol_J} J und {W1_pol_eV}")
 
 # Messung 2
 print("Messung 2")
@@ -194,10 +198,13 @@ T_2_inv = 1 / T_clean2[mask_polarisation2]
 
 params_pol2, cov_pol2 = curve_fit(lin_fit, T_2_inv, lnI_2)
 
+
 m2_pol, b2_pol = get_fit_params(params_pol2, cov_pol2)
+W2_pol = -m2_pol*k_B
+W2_pol_eV = W2_pol * eV
 print(rf"m2_pol: {m2_pol} K")
 print(rf"b2_pol: {b2_pol} ohne Einheit")
-print(rf"W2_pol = {-m2_pol*k_B} eV")
+print(rf"W2_pol = {W2_pol} J und {W2_pol_eV} eV")
 
 #####################################################
 # Stromdichtenansatz
@@ -233,10 +240,11 @@ params_strom1, cov_strom1 = curve_fit(lin_fit, T_inv1, ln_integral1)
 m1_str, b1_str = get_fit_params(params_strom1, cov_strom1)
 
 W1_str = m1_str*k_B
+W1_str_eV = W1_str * eV
 
 print(rf"m1_str: {m1_str} K")
 print(rf"b1_str: {b1_str} keine Einheit")
-print(rf"W1_str = {W1_str} eV")
+print(rf"W1_str = {W1_str} J und {W1_pol_eV} eV")
 
 # Messung 2
 print("zweite Messung")
@@ -263,10 +271,11 @@ params_strom2, cov_strom2 = curve_fit(lin_fit, T_inv2, ln_integral2)
 
 m2_str, b2_str = get_fit_params(params_strom2, cov_strom2)
 W2_str = m2_str*k_B
+W2_str_eV = W2_str * eV
 
 print(rf"m2_str: {m2_str} K")
 print(rf"b2_str: {b2_str} keine Einheit")
-print(rf"W2_str = {W2_str} eV")
+print(rf"W2_str = {W2_str} J und {W2_str_eV} eV")
 
 
 #####################################################
@@ -305,3 +314,5 @@ tau0_2 = tau0(tau_max2, T_max2, W2_str)
 print(f"I_max = {I_max2} pA bei T_max = {T_max2} K")
 print(rf"tau_max2: {tau_max2} s")
 print(rf"tau0_2: {tau0_2} s")
+
+W_theorie = 0.66
