@@ -1,0 +1,10 @@
+Statistische Formeln zum copy & pasten:
+
+Mittelwert:
+$$\bar{x} = \frac{1}{n} \cdot \sum_{i = 1}^{n}x_i$$ 
+
+Std des Mittelwerts:
+$$\Delta \bar{x} = \sqrt{\frac{1}{n \cdot (n - 1)} \cdot \sum_{i = 1}^{n}(x_i - \bar{x})} $$
+
+Gauß:
+$$\Delta f = \sqrt{\sum_{i = 1}^{n} \left( \frac{\partial f}{\partial x_i} \right)^2 \cdot \left(\Delta x_i \right)^2}$$
