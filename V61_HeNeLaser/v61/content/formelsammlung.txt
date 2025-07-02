@@ -8,3 +8,16 @@ $$\Delta \bar{x} = \sqrt{\frac{1}{n \cdot (n - 1)} \cdot \sum_{i = 1}^{n}(x_i - 
 
 Gauß:
 $$\Delta f = \sqrt{\sum_{i = 1}^{n} \left( \frac{\partial f}{\partial x_i} \right)^2 \cdot \left(\Delta x_i \right)^2}$$
+
+
+E_{\text{Ph.}} = h\nu = E_2 - E_1\,, 
+    \label{eqn:energiePhoton}
+
+I(\nu, z) = I(\nu, z=0)\cdot \exp(- \alpha(\nu)z)\,, 
+    \label{eqn:IntensitaetVerstaerkung}
+
+\alpha(\nu) = \left(N_i - \frac{g_i}{g_k} N_k \right)\sigma(\nu)\,. 
+    \label{eqn:Absorptionskoeffizienten}
+
+G_0(\nu, z) = \frac{I(\nu, z)}{I(\nu, z=0)}= \exp(-\alpha(\nu) z)\,. 
+    \label{eqn:Verstaerkungsfaktor}

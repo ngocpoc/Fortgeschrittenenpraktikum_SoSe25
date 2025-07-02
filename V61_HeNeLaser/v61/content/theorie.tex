@@ -1,14 +1,60 @@
 \section{Zielsetzung}
 \label{sec:Zielsetzung}
-- Funktionsweise He-Ne Laser
-- Eigenschaften Laser bestimmen
+Ziel des Versuchs ist das Verstehen der Funktionsweise eines Helium-Neon Lasers (He-Ne Lasers). Zusätzlich werden zentrale Eingenschaften des Lasertrahls wie Wellenlänge, Polarisation und Intensitätsverteilung untersucht. 
 
 \section{Theorie}
 \label{sec:Theorie}
+\subsection{Grundlagen der Laserphysik}
+In einem Laser (engl. \textbf{l}ight \textbf{a}mplification by \textbf{s}timulated \textbf{e}mission of \textbf{r}adiation) finden drei wichtige Prozesse statt. Diese sind die spontane Emission, die stimulierte Emission und die Absorption.\\ 
+Fällt ein Elektron aus einem angeregten Zustand $\ket{k}$ mit der Energie $E_k$ ohne äußere Einwirkung in ein niedrigeres Niveau $\ket{i}$ mit der Energie $E_i$ zurück, handelt es sich um eine spontane Emission. Das dabei emittierte Photon hat eine zufällige Richtung, Polarisation und Phase.\\
+Im Gegensatz dazu ist die stimulierte Emission ein Prozess, bei dem ein Photon ein angeregtes Atom zum Übergang in einen energetisch tieferen Zustand anregt.
+Das dabei erzeugte Photon ist hinsichtlich Frequenz, Richtung, Phase und Polarisation identisch mit dem auslösenden Photon.
+Dieser Prozess ist die Grundlage für die kohärente Lichtverstärkung im Laser. \\
+Bei der Absorption wird ein Photon von einem Atom absorbiert. Dadurch wird das Atom von einem niedrigeren Energieniveau $E_i$ in ein höheres Niveau $E_k$ angeregt. Die Energie des Photons beträgt dabei
+\begin{align}
+    E_{\text{Ph.}} = h\nu = E_k - E_i\,, \label{eqn:energiePhoton}
+\end{align}
+wobei $h$ die Planck-Konstante und $\nu$ die Frequenz des Photons ist.\\
+Neben diesen Prozessen ist eine Voraussetzung für die Funktionsweise eines Lasers eine Besetzungsinversion. Das bedeutet, dass mehr Atome in einem angeregten Zustand $\ket{k}$ als im Grundzustand $\ket{i}$ sind ($N_k \ge N_i$). Dadurch dominiert die stimulierte Emission über die Absorption, was im thermischen Gleichgewicht nicht möglich ist. Demnach ist die Besetzungsinversion essentiell für die Verstärkung. Dabei gilt für die Intensität
+\begin{align}
+    I(\nu, z) = I(\nu, z=0)\cdot \exp(- \alpha(\nu)z)\,, \label{eqn:IntensitaetVerstaerkung}
+\end{align}
+mit $z$ als Propagationsrichtung und dem Absorptionskoeffizienten 
+\begin{align}
+    \alpha(\nu) = \left(N_i - \frac{g_i}{g_k} N_k \right)\sigma(\nu)\,. \label{eqn:Absorptionskoeffizienten}
+\end{align}
+Hier bezeichnet $\sigma(\nu)$ den optischen Absorptionsquerschnitt und $g_i,\,\,g_k$ statistische Gewichte.
+Daraus ergibt sich der Verstärkungsfaktor 
+\begin{align}
+    G_0(\nu, z) = \frac{I(\nu, z)}{I(\nu, z=0)}= \exp(-\alpha(\nu) z)\,. \label{eqn:Verstaerkungsfaktor}
+\end{align}
+Zusätzlich ist eine Besetzungsinversion in einem  Zwei-Niveau-System nicht erreichbar, da die Absorption und stimulierte Emission gleich wahrscheinlich ist. Daher werden mindestens Drei-Niveau-Systeme für Laser verwendet, um eine effektive Besetzungsinversion zu ermöglichen. Hierbei werden Elektronen auf ein höheres Energieniveau gepumpt und anschließend auf ein metastabiles Laserniveau überführt, welches eine vergleichsweise lange Lebensdauer besitzt, sodass mehr Teilchen im oberen als im unteren Niveau vorhanden sind. \cite{laserspektroskopie} \cite{laser}
+
+\subsection{Aufbau und Funktionsweise eines Lasers}
+Ein Laser besteht aus drei grundlegenden Komponenten: dem aktiven Medium, einer Energiepumpe und einem optischen Resonator.\\
+Das aktive Medium legt die Wellenlänge des Laserstrahls
+\begin{align}
+    \lambda = \frac{h c}{E_k - E_i} \label{eqn:Wellenlange}
+\end{align} 
+fest durch die Energiedifferenz von zwei Energieniveaus.\\
+Die Energiepumpe führt dem aktiven Medium Energie zu, um eine Besetzungsinversion im Medium zu erzeugen. Durch diese Bedingung kann eine Verstärkung durch stimulierte Emission erreicht werden.\\
+Der optische Resonator besteht typischerweise aus zwei gegenüberliegenden Spiegeln, welche die Photonen mehrfach durch das aktive Medium reflektieren. 
+Dadurch wird die selektive Verstärkung resonanter Frequenzen ermöglicht. \cite{laserspektroskopie}
+
+\subsection{Der Helium-Neon-Laser}
+\subsection{Resonatorprinzip und Stabilität}
+\subsection{Longitudinale und transversale Moden}
+\subsection{Frequenzspektrum und Modenstruktur}
+\subsection{Dopplerverbreiterung und Multimodebetrieb}
+\subsection{Polarisation und Brewster-Winkel}
+\subsection{Beugung am Gitter und Wellenlängenbestimmung}
+\subsection{Fresnel-Zahl und Modenverluste}
+
 \cite{anleitungV61}
+\cite{laserspektroskopie}
 \cite{laser}
 \cite{photonics}
-\cite{laserspektroskopie}
+
 
 % \subsection{Vorbereitungsaufgaben}
 % \label{sec:Vorbereitungsaufgaben}
