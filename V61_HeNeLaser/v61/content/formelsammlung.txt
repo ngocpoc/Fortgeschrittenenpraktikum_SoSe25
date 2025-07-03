@@ -21,3 +21,39 @@ I(\nu, z) = I(\nu, z=0)\cdot \exp(- \alpha(\nu)z)\,,
 
 G_0(\nu, z) = \frac{I(\nu, z)}{I(\nu, z=0)}= \exp(-\alpha(\nu) z)\,. 
     \label{eqn:Verstaerkungsfaktor}
+
+\lambda = \frac{h c}{E_k - E_i} 
+    \label{eqn:Wellenlange}
+
+0 < g_1 g_2 < 1\text{ oder } g_1 = g_2 = 0 
+    \label{eqn:Stabilitaetsbedingung}
+
+g_i = \left(1- \frac{L}{r_i}\right)
+    \label{eqn:stabilitaetsparameter}
+
+L_{\text{max}} = r_1 + r_2\,.
+    \label{eqn:maximaleResonatorlaenge}
+
+\nu_q = \frac{q c}{2L}, \quad q \in \mathbb{N}\,, 
+    \label{eqn:longmoden}
+
+\Delta \nu = \frac{c}{2L}\,. 
+    \label{eqn:modenabstand}
+
+I(r) = I_0 \cdot \exp\left(-2 \frac{r^2}{w^2} \right)\,, 
+    \label{eqn:intensitaet00}
+
+I(r) = I_0 \left(\frac{r}{\omega}\right)^2\cdot \exp\left(-2 \frac{r^2}{w^2} \right)\,. 
+    \label{eqn:intensitaet10}
+
+F = \frac{a^2}{L \lambda}\,, 
+    \label{eqn:fresnel}
+
+\theta_B = \arctan\left( \frac{n_2}{n_1} \right)\,, 
+    \label{eqn:Brewster}
+
+I(\theta) = I_0 \cos^2(\theta)\,, 
+    \label{eqn:malus}
+
+\Delta \nu_D = \frac{2\nu_0}{c} \sqrt{ \frac{2kT \ln 2}{m} }\,, 
+    \label{eqn:dopplerverbreiterung}

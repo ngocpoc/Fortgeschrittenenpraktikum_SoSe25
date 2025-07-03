@@ -1,6 +1,6 @@
 \section{Zielsetzung}
 \label{sec:Zielsetzung}
-Ziel des Versuchs ist das Verstehen der Funktionsweise eines Helium-Neon Lasers (He-Ne Lasers). Zusätzlich werden zentrale Eingenschaften des Lasertrahls wie Wellenlänge, Polarisation und Intensitätsverteilung untersucht. 
+Ziel des Versuchs ist das Verstehen der Funktionsweise eines Helium-Neon Lasers (He-Ne Lasers). Zusätzlich werden zentrale Eigenschaften des Lasertrahls wie Wellenlänge, Polarisation und Intensitätsverteilung untersucht. 
 
 \section{Theorie}
 \label{sec:Theorie}
@@ -38,23 +38,125 @@ Das aktive Medium legt die Wellenlänge des Laserstrahls
 \end{align} 
 fest durch die Energiedifferenz von zwei Energieniveaus.\\
 Die Energiepumpe führt dem aktiven Medium Energie zu, um eine Besetzungsinversion im Medium zu erzeugen. Durch diese Bedingung kann eine Verstärkung durch stimulierte Emission erreicht werden.\\
-Der optische Resonator besteht typischerweise aus zwei gegenüberliegenden Spiegeln, welche die Photonen mehrfach durch das aktive Medium reflektieren. 
-Dadurch wird die selektive Verstärkung resonanter Frequenzen ermöglicht. \cite{laserspektroskopie}
+Der optische Resonator besteht typischerweise aus zwei gegenüberliegenden Spiegeln, welche die Photonen mehrfach durch das aktive Medium reflektieren.
+Dadurch wird die selektive Verstärkung resonanter Frequenzen ermöglicht. In der Regel ist ein Spiegel teildurchlässig (OC, engl. output coupler) und ein Spiegel reflektierend (HR, engl. highly reflective).
+Für Resonatoren gelten folgende Stabilitätsbedinungen 
+\begin{align}
+    0 < g_1 g_2 < 1\text{ oder } g_1 = g_2 = 0 \label{eqn:Stabilitaetsbedingung}
+\end{align}
+mit den Stabilitätsparametern $g_i$ der beiden Spiegel erfüllt werden. Hierbei sind die Paramter über den Krümmungsradius $r_i$ und der Resonatorlänge $L$ durch
+\begin{align}
+    g_i = \left(1- \frac{L}{r_i}\right)\label{eqn:stabilitaetsparameter}
+\end{align}
+definiert. 
+Durch die Stabilitätsbedinung ergibt sich eine maximale Resonatorlänge von
+\begin{align}
+    L_{\text{max}} = r_1 + r_2\,.\label{eqn:maximaleResonatorlaenge}
+\end{align}
+\cite{laserspektroskopie}
 
 \subsection{Der Helium-Neon-Laser}
-\subsection{Resonatorprinzip und Stabilität}
-\subsection{Longitudinale und transversale Moden}
-\subsection{Frequenzspektrum und Modenstruktur}
-\subsection{Dopplerverbreiterung und Multimodebetrieb}
-\subsection{Polarisation und Brewster-Winkel}
-\subsection{Beugung am Gitter und Wellenlängenbestimmung}
-\subsection{Fresnel-Zahl und Modenverluste}
+In diesem Versuch wird ein He-Ne Laser verwendet. Dabei sind die Neon-Atome das aktive Medium, welche durch die Helium-Atome als Pumpmedium angeregt werden. 
+Die Anregung erfolgt durch elektrische Gasentladung, wodurch Elektronen die Helium-Atome in metastabile Zustände anregt. Durch Stoßprozesse werden die Ne-Atome auf das $3s_2$ Niveau angehoben. 
+Dies sorgt für die Besetzungsinversion. 
+Der Übergang der entscheidend für die Wellenlänge ist, ist von $3s_2$ in das kurzlebige $2p_4$ Niveau und entspricht der Wellenlänge $\lambda = \SI{633}{\nano\meter}$. \cite{laser} \cite{leifiLaser}
 
-\cite{anleitungV61}
-\cite{laserspektroskopie}
-\cite{laser}
-\cite{photonics}
+
+\subsection{Longitudinale und transversale Moden}
+In einem Laserresonator können sich nur bestimmte Frequenzen verstärken, bei denen sich eine stehende Welle ausbildet. 
+Diese sogenannten longitudinalen Moden entstehen durch konstruktive Interferenz der reflektierten Wellen zwischen den beiden Spiegeln. 
+Die Resonanzbedingung ist erfüllt, wenn die Resonatorlänge $L$ ein ganzzahliges Vielfaches der halben Wellenlänge beträgt. Die erlaubten Frequenzen $\nu_q$ lauten:
+\begin{align}
+    \nu_q = \frac{q c}{2L}, \quad q \in \mathbb{N}\,, \label{eqn:longmoden}
+\end{align}
+wobei $c$ die Lichtgeschwindigkeit ist. 
+Der Abstand zwischen benachbarten longitudinalen Moden beträgt somit
+\begin{align}
+    \Delta \nu = \frac{c}{2L}\,. \label{eqn:modenabstand}
+\end{align}
+Die Anzahl der im Resonator verstärkten longitudinalen Moden hängt vom Verhältnis des Verstärkungsprofils zur Modenabstandsfrequenz $\Delta \nu$ ab. 
+Die Breite des Verstärkungsprofils ergibt sich aus der Dopplerverbreiterung des Emissionsspektrums (siehe Abschnitt \ref{sec:dopplerverbreiterung}).
+Somit können gleichzeitig mehrere Frequenzen $\nu_q$ innerhalb dieses Verstärkungsbereichs liegen.\\
+Im sogenannten Multimodebetrieb befinden sich mehrere dieser Resonanzfrequenzen innerhalb des Verstärkungsprofils des Lasermediums. 
+Alle Moden, die die Schwellenbedingung erfüllen, werden dabei gleichzeitig verstärkt. Im Frequenzspektrum eines Multimode-Lasers erscheinen die longitudinalen Moden als eng beieinanderliegende, diskrete Linien innerhalb des Verstärkungsprofils. Diese Struktur lässt sich z. B. durch ein optisches Gitter auflösen. 
+Dies führt zu einem Laserstrahl, der aus mehreren spektral eng beieinanderliegenden Frequenzen besteht.\\
+Im Gegensatz dazu wird beim Singlemodebetrieb nur eine einzige longitudinale Mode verstärkt.\\
+Neben den longitudinalen Moden existieren transversale Moden (TEM-Moden), die die Intensitätsverteilung quer zur Ausbreitungsrichtung beschreiben. 
+Diese werden durch zwei Indizes $m$ und $n$ charakterisiert, die die Anzahl der Intensitätsnullstellen in $x$- bzw. $y$-Richtung angeben. 
+Der Grundmodus TEM$_{00}$ weist eine gaußförmige Intensitätsverteilung auf:
+\begin{align}
+    I(r) = I_0 \cdot \exp\left(-2 \frac{r^2}{w^2} \right)\,, \label{eqn:intensitaet00}
+\end{align}
+mit $r$ als radialer Abstand zur Strahlachse und $w$ als Strahlradius. Höhere Moden wie TEM$_{01}$ besitzen Intensitätsmaxima mit zentraler Nullstelle. Die intensitätsverteilung der TEM$_{01}$-Mode ist beschrieben durch
+\begin{align}
+    I(r) = I_0 \left(\frac{r}{\omega}\right)^2\cdot \exp\left(-2 \frac{r^2}{w^2} \right)\,. \label{eqn:intensitaet10}
+\end{align}
+% Die Amplitudenverteilung ist in \autoref{fig:TheorieAmplituden} abgebildet.
+Welche transversalen Moden im Resonator auftreten können, hängt von der Geometrie des Resonators und der sogenannten Fresnel-Zahl $F$ ab:
+\begin{align}
+    F = \frac{a^2}{L \lambda}\,, \label{eqn:fresnel}
+\end{align}
+wobei $a$ der Spiegelradius, $L$ die Resonatorlänge und $\lambda$ die Wellenlänge ist. Für kleine Fresnel-Zahlen wird der Modenraum eingeschränkt, was zur Selektion niedriger TEM-Moden führt.\\
+Zur experimentellen Beobachtung können höhere transversale Moden durch gezieltes Einbringen einer Modenblende im Resonator unterdrückt werden. So lässt sich beispielsweise die TEM$_{01}$-Mode durch einen dünnen Draht verstärken. \cite{laserspektroskopie} \cite{laser} \cite{anleitungV61}
+
+\subsection{Polarisation und Brewster-Winkel}
+Durch die Brewster-Fenster weist der Laserstrahl eine feste lineare Polarisation auf, welche an den Enden der Entladungsröhre den Brewster-Winkel ausnutzen. 
+Der Brewster-Winkel $\theta_B$ ist der Winkel, bei dem p-polarisiertes Licht (parallel zur Einfallsebene) vollständig transmittiert und nicht reflektiert wird:
+\begin{align}
+    \theta_B = \arctan\left( \frac{n_2}{n_1} \right)\,, \label{eqn:Brewster}
+\end{align}
+wobei $n_1$ der Brechungsindex der ersten und $n_2$ der zweiten Grenzfläche ist. 
+Im Resonator wird dadurch nur die p-polarisierte Komponente des Lichts verlustfrei zurückgeführt, während die s-polarisierte Komponente (senkrecht zur Einfallsebene) teilweise reflektiert und somit unterdrückt wird. 
+Dies führt dazu, dass sich im Resonator ausschließlich p-polarisierte Moden verstärken können und der austretende Laserstrahl linear polarisiert ist.\\
+Mithilfe eines Polarisationsfilters lässt sich experimentell die Polarisation überprüfen.
+Dabei folgt die gemessene Intensität dem Gesetz von Malus:
+\begin{align}
+    I(\theta) = I_0 \cos^2(\theta)\,, \label{eqn:malus}
+\end{align}
+wobei $\theta$ der Winkel zwischen Polarisationsrichtung des Laserlichts und der Transmissionsrichtung des Polarisators ist. 
+Die Intensität erreicht ihr Maximum, wenn beide Richtungen parallel sind, und wird null, wenn sie senkrecht zueinander stehen. \cite{laser}
+
+\subsection{Dopplerverbreiterung und Verstärkungsprofil}
+\label{sec:dopplerverbreiterung}
+Da das aktive Medium des He-Ne Lasers ein Gas ist, bewegen sich die Atome aufgrund ihrer thermischen Energie mit unterschiedlichen Geschwindigkeiten. 
+Diese Bewegung führt zu einer frequenzabhängigen Dopplerverschiebung der emittierten Strahlung relativ zum Beobachter. 
+Ein Photon, das von einem sich bewegenden Atom ausgesendet wird, erscheint je nach Bewegungsrichtung gegenüber der Strahlausbreitung leicht blau- oder rotverschoben. 
+Dies führt insgesamt zu einer spektralen Verbreiterung der Emissionslinie, die als Dopplerverbreiterung bezeichnet wird.\\
+Das Dopplerverbreiterte Verstärkungsprofil besitzt eine gaußförmige Form und seine Halbwertsbreite $\Delta \nu_D$ ergibt sich zu:
+\begin{align}
+    \Delta \nu_D = \frac{2\nu_0}{c} \sqrt{ \frac{2k_{\text{B}}T \ln 2}{m} }\,, \label{eqn:dopplerverbreiterung}
+\end{align}
+wobei $\nu_0$ die zentrale Übergangsfrequenz, $T$ die Gastemperatur, $m$ die Masse der emittierenden Atome, $k_{\text{B}}$ die Boltzmann-Konstante und $c$ die Lichtgeschwindigkeit ist.\\
+Für den He-Ne Laser bei Raumtemperatur liegt die Dopplerbreite typischerweise im Bereich von $\SI{1.5}{\giga\hertz}$, während der Modenabstand nur ca. $\SI{300}{\mega\hertz}$ beträgt. 
+Da die Dopplerbreite typischerweise größer als der Modenabstand ist, können mehrere longitudinale Moden innerhalb des Verstärkungsprofils gleichzeitig verstärkt werden. \cite{photonics} \cite{laserspektroskopie}
+
+% \cite{anleitungV61}
+% \cite{laserspektroskopie}
+% \cite{laser}
+% \cite{photonics}
+% \cite{leifiLaser}
 
 
 % \subsection{Vorbereitungsaufgaben}
 % \label{sec:Vorbereitungsaufgaben}
+% \subsection{Resonatorprinzip und Stabilität}
+% \label{sec:Resonatorprinzip}
+% In der Regel bestehen optische Resonatoren aus einem HR (engl. highly reflective) und einem OC (engl. output coupler) Spiegel, die das Licht im aktiven Medium reflektieren. Dies ermöglicht die Verstärkung durch stimulierte Emission. Nur die Frequenzen werden verstärkt, bei denen sich eine stehende Welle im Resonator ausbildet. 
+% Diese Resonanzbedingung wird durch die Wellenlänge
+% \begin{align}
+%     \nu_q = \frac{q c}{2L}\label{eqn:resonanzfrequenz}
+% \end{align}
+% mit der Modenordnung $q \in \mathbb{N}$ und der Resonatorlänge $L$ erfüllt.
+% Neben der Resonanzbedingung muss die Stabilitätsbedingung
+% \begin{align}
+%     0 < g_1 g_2 < 1\text{ oder } g_1 = g_2 = 0 \label{eqn:Stabilitaetsbedingung}
+% \end{align}
+% mit den Stabilitätsparametern $g_i$ der beiden Spiegel erfüllt werden. Hierbei sind die Paramter über den Krümmungsradius $r_i$ und der Resonatorlänge $L$ durch
+% \begin{align}
+%     g_i = \left(1- \frac{L}{r_i}\right)\label{eqn:statGewichte}
+% \end{align}
+% definiert. 
+% Durch die Stabilitätsbedinung ergibt sich eine maximale Resonatorlänge von
+% \begin{align}
+%     L_{\text{max}} = r_1 + r_2\,.\label{eqn:maximaleResonatorlaenge
+% \end{align} \cite{laserspektroskopie}
