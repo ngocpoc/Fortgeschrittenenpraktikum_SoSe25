@@ -51,7 +51,7 @@ Es wird daher vermutet, dass die Vorzeichen der Messwerte ab dem Punkt, an dem d
 Durch eine entsprechende Korrektur der Vorzeichen ergibt sich der in \autoref{fig:Untergrund2} dargestellte Verlauf, die dem erwarteten Verhalten entspricht. Daher wird diese korrigierte Version für die weitere Auswertung verwendet.\\
 Aus der Ausgleichsfunktion der ersten Messreihe ergibt sich eine Untergrundfunktion von 
 \begin{align*}
-    I_{U,1} = \SI{2.9\pm2.2}{\micro\ampere}\cdot \exp\left(\SI{0.0495\pm0.0028}{\per\kelvin}\cdot T \right) - \SI{0.76\pm0.04}{\pico\ampere}\,.
+    I_{U,1} = (2{,}9\pm2{,}2)\cdot 10^{-6}\,\si{\pico\ampere}\cdot \exp\left(\SI{0.0495\pm0.0028}{\per\kelvin}\cdot T \right) - \SI{0.76\pm0.04}{\pico\ampere}\,.
 \end{align*}
 \begin{figure}
     \centering
@@ -75,11 +75,11 @@ Aus der Ausgleichsfunktion der ersten Messreihe ergibt sich eine Untergrundfunkt
 % Zweite Messreihe: m2_exp: 0.00011+/-0.00011 a2_exp: 0.040+/-0.004 b2_exp: -1.29+/-0.12
 Die Ausgleichsfunktion der zweiten Messreihe sieht wie folgt aus:
 \begin{align*}
-    I_{U,2} = \SI{0.00011\pm0.00011}{\ampere}\cdot \exp\left(\SI{0.040\pm0.004}{\per\kelvin}\cdot T \right) - \SI{1.29\pm0.12}{\pico\ampere}\,.
+    I_{U,2} = \SI{0.00011\pm0.00011}{\pico\ampere}\cdot \exp\left(\SI{0.040\pm0.004}{\per\kelvin}\cdot T \right) - \SI{1.29\pm0.12}{\pico\ampere}\,.
 \end{align*}
 \FloatBarrier
-Die Untergrundfunktionen werden von den jeweiligen Messreihen abgezogen, somit ergeben sich die in \autoref{fig:Untergrundfrei1} und \autoref{fig:Untergrundfrei2} dargesetellten Messdaten. 
-In diesen Abbildungen sind die ausgeschlossenen Messwerte bereites herausgefiltert. 
+Die Untergrundfunktionen werden von den jeweiligen Messreihen abgezogen, somit ergeben sich die in \autoref{fig:Untergrundfrei1} und \autoref{fig:Untergrundfrei2} dargestellten Messdaten. 
+In diesen Abbildungen sind die ausgeschlossenen Messwerte bereits herausgefiltert. 
 Zudem sind die Messwerte gekennzeichnet, die für die Bestimmung der Aktivierungsenergie verwendet werden.
 Hierfür wird einmal die Methode mit dem Polarisationsansatz und einmal mit dem Stromdichtenansatz gewählt.
 Die genaue Anwendung der beiden Ansätze wird in den folgenden beiden Abschnitten erläutert.
@@ -119,21 +119,21 @@ mit $I_0 = \SI{1}{\pico\ampere}$, ergibt sich die Aktivierungsenergie $W$ aus de
 \end{figure}
 Aus der linearen Regression ergeben sich für die erste Messreihe die Parameter
 \begin{align*}
-    \alpha_1^{\text{Pol.}} = -\left(8,66\pm0,23\right)\cdot 10^{-3}\,\si{\kelvin} \text{ und } \beta_1^{\text{Pol.}}=\SI{36.6\pm1.0}{}\,.
+    \alpha_1^{\text{Pol.}} = -\left(8{,}66\pm0,23\right)\cdot 10^{-3}\,\si{\kelvin} \text{ und } \beta_1^{\text{Pol.}}=\SI{36.6\pm1.0}{}\,.
 \end{align*}
 Die entsprechende Aktivierungsenergie beträgt somit
 \begin{align*}
-    W_1^{\text{Pol.}} = \left(0,747 \pm 0,020\right)\,\si{\electronvolt}\,.
+    W_1^{\text{Pol.}} = \left(0{,}747 \pm 0{,}020\right)\,\si{\electronvolt}\,.
 \end{align*}
 % m1_pol: (-8.66+/-0.23)e+03 K
 % b1_pol: 36.6+/-1.0 ohne Einheit$$
 Für die zweite Messreihe ergeben sich die folgenden Parameter :
 \begin{align*}
-    \alpha_2^{\text{Pol.}} = -\left(7,5\pm0,23\right)\cdot 10^{-3}\,\si{\kelvin} \text{ und } \beta_2^{\text{Pol.}}=\SI{36\pm4}{}\,.
+    \alpha_2^{\text{Pol.}} = -\left(7{,}5\pm0,23\right)\cdot 10^{-3}\,\si{\kelvin} \text{ und } \beta_2^{\text{Pol.}}=\SI{36\pm4}{}\,.
 \end{align*}
 Demnach ergibt sich eine Aktivierungsenergie von 
 \begin{align*}
-    W_2^{\text{Pol.}} = \left(0,65 \pm 0,08\right)\,\si{\electronvolt}\,.
+    W_2^{\text{Pol.}} = \left(0{,}65 \pm 0{,}08\right)\,\si{\electronvolt}\,.
 \end{align*}
 \begin{figure}
     \centering
@@ -164,16 +164,16 @@ Im Gegensatz zum Polarisationsansatz, wird bei dem Stromdichtenansatz der gesamt
 Diese Relation wird für die beiden Messreihen in \autoref{fig:Stromdichte1} und \autoref{fig:Stromdichte2} dargestellt. 
 Zusätzlich wird eine lineare Regression durchgeführt, wodurch die Parameter 
 \begin{align*}
-    \alpha_1^{\text{Str.}} = \left(1,114\pm0,023\right)\cdot 10^{-4}\,\si{\kelvin} \text{ und } \beta_1^{\text{Str.}} = -\left(42,2\pm0,9\right)
+    \alpha_1^{\text{Str.}} = \left(1{,}114\pm0{,}023\right)\cdot 10^{-4}\,\si{\kelvin} \text{ und } \beta_1^{\text{Str.}} = -\left(42{,}2\pm0{,}9\right)
 \end{align*}
 für die erste Messung sowie 
 \begin{align*}
-    \alpha_2^{\text{Str.}} = \left(1,05\pm0,05\right)\cdot 10^{-4}\,\si{\kelvin} \text{ und } \beta_2^{\text{Str.}} = -\left(38,8\pm1,9\right)
+    \alpha_2^{\text{Str.}} = \left(1{,}05\pm0{,}05\right)\cdot 10^{-4}\,\si{\kelvin} \text{ und } \beta_2^{\text{Str.}} = -\left(38{,}8\pm1{,}9\right)
 \end{align*}
 für die zweite Messung bestimmt werden. Die Aktivierungsenergie $W$ wird mithilfe von $W= k_{\text{B}} \cdot \alpha^{\text{Str.}}$ bestimmt. Daraus folgen die Aktivierungsenergien 
 \begin{align*}
-    W_1^{\text{Str.}} &= \left(0,960\pm0,020\right)\,\si{\eV}\text{ und}\\
-    W_2^{\text{Str.}} &= \left(0,91\pm0,04\right)\,\si{\eV}
+    W_1^{\text{Str.}} &= \left(0{,}960\pm0{,}020\right)\,\si{\eV}\text{ und}\\
+    W_2^{\text{Str.}} &= \left(0{,}91\pm0{,}04\right)\,\si{\eV}
 \end{align*}
 \begin{figure}
     \centering
