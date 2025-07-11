@@ -106,6 +106,7 @@ Die genaue Anwendung der beiden Ansätze wird in den folgenden beiden Abschnitte
 % W1_pol = (1.196+/-0.032)e-19 eV
 Der Polarisationsansatz basiert auf Gleichung \ref{eqn:approx_kalte_Temperaturen}. Auf Grundlage dieser Beziehung werden aus den Messreihen die Datenpunkte entnommen, die einem exponentiellen Verlauf folgen. 
 Durch Anwendung des natürlichen Logarithmus auf diese Messwerte ergibt sich ein linearer Zusammenhang mit $T^{-1}$. 
+In \autoref{tab:Polarisation1} und \autoref{tab:Polarisation2} sind die Messwerte aufgelistet, die für diesen Teil der Auswertung verwendet werden. 
 Diese lineare Beziehung ist in \autoref{fig:Polarisation1} und \autoref{fig:Polarisation2} dargesetellt. Durch eine lineare Regression der Form
 $$
 \ln\left(\frac{I_D}{I_0}\right) = \alpha^{\text{Pol.}} \cdot \frac{1}{T} +\beta^{\text{Pol.}}\;,
@@ -141,6 +142,55 @@ Demnach ergibt sich eine Aktivierungsenergie von
     \caption{Messdaten sowie linearer Fit der zweiten Messreihe zur Bestimmung der Aktivierungsenergie mithilfe des Polarisationsansatzes.}
     \label{fig:Polarisation2}
 \end{figure}
+
+\begin{table}[!htb]
+    \caption{Messwerte für den Polarisationsansatz.}
+    \begin{subtable}{.5\linewidth}
+      \caption{Erste Messreihe.}
+      \label{tab:Polarisation1}
+      \centering
+        \begin{tblr}{colspec= c c}
+            \toprule
+            $T^{-1}\,[\si{\per\kelvin}]$ & $\ln\left( \frac{I_D}{I_0} \right)$ \\
+            \midrule
+            $0{,}00430756$ & $-0{,}72579018$\\
+            $0{,}00428908$ & $-0{,}47852933$\\
+            $0{,}00426894$ & $-0{,}50553041$\\
+            $0{,}00424719$ & $-0{,}3090804$ \\
+            $0{,}00422744$ & $0{,}01550342$ \\
+            $0{,}00420964$ & $0{,}13794488$ \\
+            $0{,}00419199$ & $0{,}24631483$ \\
+            $0{,}00417275$ & $0{,}34198527$ \\
+            $0{,}00415541$ & $0{,}42989272$ \\
+            $0{,}00413993$ & $0{,}75029129$ \\
+            $0{,}00412456$ & $0{,}87432408$ \\
+            $0{,}00410593$ & $1{,}08893362$ \\
+            $0{,}00409249$ & $1{,}17901549$ \\
+            $0{,}00407581$ & $1{,}25991489$ \\
+            $0{,}00405927$ & $1{,}41043809$ \\
+            $0{,}00404449$ & $1{,}47520489$ \\
+        \bottomrule
+        \end{tblr}
+    \end{subtable}%
+    \begin{subtable}{.5\linewidth}
+      \centering
+        \caption{Zweite Messreihe}
+        \label{tab:Polarisation2}
+        \begin{tblr}{colspec =c c}
+            \toprule
+            $T^{-1}\,[\si{\per\kelvin}]$ & $\ln\left( \frac{I_D}{I_0} \right)$ \\
+            \midrule
+            $0{,}00433369$ & $-0{,}83130816$\\
+            $0{,}00428541$ & $-0{,}74148465$\\
+            $0{,}00422744$ & $-0{,}46874909$\\
+            $0{,}00417798$ & $-0{,}25182328$ \\
+            $0{,}00412797$ & $0{,}30402426$ \\
+            $0{,}00407914$ & $0{,}85962389$ \\
+            $0{,}00403633$ & $1{,}37859293$ \\
+            \bottomrule
+        \end{tblr}
+    \end{subtable} 
+\end{table}
 % Messung 2
 % m2_pol: (-7.5+/-0.9)e+03 K
 % b2_pol: 31+/-4 ohne Einheit
@@ -161,6 +211,7 @@ Im Gegensatz zum Polarisationsansatz, wird bei dem Stromdichtenansatz der gesamt
 \begin{align*}
     \ln \left(\frac{1}{I(T)} \int_{T}^{\infty}I(T')\,\symup{d}T' \right) = \alpha^{\text{Str.}}\cdot\frac{1}{T}+ \beta^{\text{Str.}}\,.
 \end{align*}
+Die ausgerechneten Werte, die zur graphischen Darstellung verwendet werden, sind in \autoref{tab:Strom1} sowie in \autoref{tab:Strom2} aufgeführt.
 Diese Relation wird für die beiden Messreihen in \autoref{fig:Stromdichte1} und \autoref{fig:Stromdichte2} dargestellt. 
 Zusätzlich wird eine lineare Regression durchgeführt, wodurch die Parameter 
 \begin{align*}
@@ -187,6 +238,88 @@ für die zweite Messung bestimmt werden. Die Aktivierungsenergie $W$ wird mithil
     \caption{Messdaten sowie linearer Fit der zweiten Messreihe zur Bestimmung der Aktivierungsenergie mithilfe des Stromdichtenansatzes.}
     \label{fig:Stromdichte2}
 \end{figure}
+
+\begin{table}[!htb]
+    \caption{Messwerte für den Stromdichtenansatz.}
+    \begin{subtable}{.5\linewidth}
+      \caption{Erste Messreihe.}
+      \label{tab:Strom1}
+      \centering
+      \resizebox{0.90\textwidth}{!}{%
+        \begin{tblr}{colspec= c c}
+            \toprule
+            $T^{-1}\,[\si{\per\kelvin}]$ & $\ln\left( \frac{1}{I(T)}\int_T^{\infty} I(T')\,\symup{d}T' \right)$ \\
+            \midrule
+            $0{,}00430756$ & $5{,}53727186  $\\
+            $0{,}00428908$ & $5{,}28452399  $\\
+            $0{,}00426894$ & $5{,}30493947  $\\ 
+            $0{,}00424719$ & $5{,}10053323$ \\
+            $0{,}00422744$ & $4{,}76692976  $\\
+            $0{,}00420964$ & $4{,}63427160  $\\
+            $0{,}00419199$ & $4{,}51331763  $\\ 
+            $0{,}00417275$ & $4{,}40495014$ \\
+            $0{,}00415541$ & $4{,}30266744  $\\ 
+            $0{,}00413993$ & $3{,}96422015  $\\ 
+            $0{,}00412456$ & $3{,}81336299  $\\ 
+            $0{,}00410593$ & $3{,}57556897$\\
+            $0{,}00409249$ & $3{,}45303655  $\\ 
+            $0{,}00407581$ & $3{,}33432789  $\\ 
+            $0{,}00405927$ & $3{,}14451034  $\\ 
+            $0{,}00404449$ & $3{,}04041120$ \\
+            $0{,}00403145$ & $2{,}89530245  $\\ 
+            $0{,}00401687$ & $2{,}70012761  $\\
+            $0{,}004004  $ & $2{,}53052302  $\\ 
+            $0{,}00398963$ & $2{,}40682415$ \\
+            $0{,}00397535$ & $2{,}26252749  $\\ 
+            $0{,}00396275$ & $2{,}16542389  $\\ 
+            $0{,}00395179$ & $2{,}00259342  $\\ 
+            $0{,}00393933$ & $1{,}86940003$\\
+            $0{,}00392696$ & $1{,}72026788  $\\ 
+            $0{,}00391466$ & $1{,}59332439  $\\ 
+            $0{,}00390396$ & $1{,}47023588  $\\ 
+            $0{,}00389332$ & $1{,}30063132$ \\
+            $0{,}00388123$ & $1{,}13470503  $\\ 
+            $0{,}00387072$ & $1{,}01023451 $\\
+            $0{,}00385877$ & $8{,}81092332\cdot10^{-1}$ \\
+            $0{,}00384837$ & $7{,}70095733\cdot10^{-1}$ \\
+            $0{,}00383803$ & $6{,}68891653\cdot10^{-1}$ \\
+            $0{,}00382922$ & $5{,}66874989\cdot10^{-1}$ \\
+            $0{,}00381898$ & $4{,}17893529\cdot10^{-1}$ \\
+            $0{,}00381025$ & $1{,}87121942\cdot10^{-1}$\\
+            $0{,}00380011$ & $4{,}47615545\cdot10^{-3}$ \\
+            $0{,}00379147$ & $-2{,}18428257\cdot10^{-1}$\\ 
+            $0{,}00378286$ & $-1{,}08994708$\\
+        \bottomrule
+        \end{tblr}
+      }
+    \end{subtable}%
+    \begin{subtable}{.5\linewidth}
+      \centering
+        \caption{Zweite Messreihe}
+        \label{tab:Strom2}
+        \resizebox{0.90\textwidth}{!}{%
+        \begin{tblr}{colspec =c c}
+            \toprule
+            $T^{-1}\,[\si{\per\kelvin}]$ & $\ln\left( \frac{1}{I(T)}\int_T^{\infty} I(T')\,\symup{d}T' \right)$ \\
+            \midrule
+            $0{,}00433369$ & $6{,}2378334$ \\
+            $0{,}00428541$ & $6{,}14006521$ \\
+            $0{,}00422744$ & $5{,}85840482$\\
+            $0{,}00417798$ & $5{,}62726622$\\
+            $0{,}00412797$ & $5{,}04615027$\\
+            $0{,}00407914$ & $4{,}45069121$\\
+            $0{,}00403633$ & $3{,}85547134 $\\
+            $0{,}00398963$ & $2{,}7117137$\\
+            $0{,}00382922$ & $1{,}75833508$\\
+            $0{,}00379291$ & $1{,}3077667$\\
+            $0{,}00375728$ & $0{,}93749343$\\
+            $0{,}00372093$ & $0{,}44572757$\\
+            $0{,}00366099$ & $-0{,}81806341$\\
+            \bottomrule
+        \end{tblr}
+        }
+    \end{subtable} 
+\end{table}
 
 \FloatBarrier
 \subsection{Bestimmung der Relaxationszeit}

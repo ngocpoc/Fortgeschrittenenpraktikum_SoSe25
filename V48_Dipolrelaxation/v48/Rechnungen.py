@@ -174,6 +174,9 @@ mask_polarisation1[indices_polarisation1] = True
 lnI_1 = np.log((I_clean1[mask_polarisation1] )/ I_0) # hier ist I_0 jetzt 1pA
 T_1_inv = 1 / T_clean1[mask_polarisation1]
 
+print(lnI_1)
+print(T_1_inv)
+
 params_pol1, cov_pol1 = curve_fit(lin_fit, T_1_inv, lnI_1)
 
 m1_pol, b1_pol = get_fit_params(params_pol1, cov_pol1)
@@ -195,6 +198,10 @@ mask_polarisation2[indices_polarisation2] = True
 
 lnI_2 = np.log((I_clean2[mask_polarisation2] )/ I_0) # hier ist I_0 jetzt 1pA
 T_2_inv = 1 / T_clean2[mask_polarisation2]
+
+print(lnI_2)
+print(T_2_inv)
+
 
 params_pol2, cov_pol2 = curve_fit(lin_fit, T_2_inv, lnI_2)
 
@@ -228,12 +235,14 @@ mask_stromdichte1[indices_stromdichte1] = True
 I_strom1 = I_clean1[mask_stromdichte1]
 T_strom1 = T_clean1[mask_stromdichte1]
 
-
 ln_integral1 = IntTrapez(T_strom1, I_strom1)
 T_strom1 = T_strom1[np.isfinite(ln_integral1)]
 I_strom1 = I_strom1[np.isfinite(ln_integral1)]
 ln_integral1 = ln_integral1[np.isfinite(ln_integral1)]
 T_inv1 = 1/T_strom1
+
+print(ln_integral1)
+print(T_inv1)
 
 params_strom1, cov_strom1 = curve_fit(lin_fit, T_inv1, ln_integral1)
 
@@ -266,6 +275,9 @@ T_strom2 = T_strom2[np.isfinite(ln_integral2)]
 I_strom2 = I_strom2[np.isfinite(ln_integral2)]
 ln_integral2 = ln_integral2[np.isfinite(ln_integral2)]
 T_inv2 = 1/T_strom2
+
+print(ln_integral2)
+print(T_inv2)
 
 params_strom2, cov_strom2 = curve_fit(lin_fit, T_inv2, ln_integral2)
 
