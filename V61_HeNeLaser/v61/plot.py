@@ -7,7 +7,7 @@ from scipy.optimize import curve_fit
 from scipy.integrate import trapezoid
 import scipy.constants as const
 
-#Frequenzmessung; Abstand zwischen den Frequenzen 
+#Frequenzmessung; Abstand zwischen den Frequenzen alle Frequenzen in MHz!!!
 Frequenzen_1 = np.genfromtxt("Messwerte/Multimoden_1.txt", unpack=True)
 Fehler_1 = np.ones(len(Frequenzen_1))
 Frequenzen_mit_Fehler_1 = unp.uarray(Frequenzen_1,Fehler_1)
@@ -17,7 +17,7 @@ Differenz_Frequenzen_1_Mittel = np.sum(Differenz_Frequenzen_1)/len(Differenz_Fre
 Diff_F_fuer_plot_1 = 1/Differenz_Frequenzen_1_Mittel
 #print("1.Messung:" )
 #print(Differenz_Frequenzen_1)
-#print(Differenz_Frequenzen_1_Mittel)
+print("Differenz_Frequenzen_1_Mittel",Differenz_Frequenzen_1_Mittel)
 
 Frequenzen_2 = np.genfromtxt("Messwerte/Multimoden_2.txt", unpack=True)
 Fehler_2 = np.ones(len(Frequenzen_2))
@@ -28,7 +28,7 @@ Differenz_Frequenzen_2_Mittel = np.sum(Differenz_Frequenzen_2)/len(Differenz_Fre
 Diff_F_fuer_plot_2 = 1/Differenz_Frequenzen_2_Mittel
 #print("2.Messung:" )
 #print(Differenz_Frequenzen_2)
-#print(Differenz_Frequenzen_2_Mittel)
+print("Differenz_Frequenzen_2_Mittel",Differenz_Frequenzen_2_Mittel)
 
 Frequenzen_3 = np.genfromtxt("Messwerte/Multimoden_3.txt", unpack=True)
 Fehler_3 = np.ones(len(Frequenzen_3))
@@ -39,7 +39,7 @@ Differenz_Frequenzen_3_Mittel = np.sum(Differenz_Frequenzen_3)/len(Differenz_Fre
 Diff_F_fuer_plot_3 = 1/Differenz_Frequenzen_3_Mittel
 #print("3.Messung:" )
 #print(Differenz_Frequenzen_3)
-#print(Differenz_Frequenzen_3_Mittel)
+print("Differenz_Frequenzen_3_Mittel",Differenz_Frequenzen_3_Mittel)
 
 Frequenzen_4 = np.genfromtxt("Messwerte/Multimoden_4.txt", unpack=True)
 Fehler_4 = np.ones(len(Frequenzen_4))
@@ -50,7 +50,7 @@ Differenz_Frequenzen_4_Mittel = np.sum(Differenz_Frequenzen_4)/len(Differenz_Fre
 Diff_F_fuer_plot_4 = 1/Differenz_Frequenzen_4_Mittel
 #print("4.Messung:" )
 #print(Differenz_Frequenzen_4)
-#print(Differenz_Frequenzen_4_Mittel)
+print("Differenz_Frequenzen_4_Mittel",Differenz_Frequenzen_4_Mittel)
 
 Frequenzen_5 = np.genfromtxt("Messwerte/Multimoden_5.txt", unpack=True)
 Fehler_5 = np.ones(len(Frequenzen_5))
@@ -61,7 +61,7 @@ Differenz_Frequenzen_5_Mittel = np.sum(Differenz_Frequenzen_5)/len(Differenz_Fre
 Diff_F_fuer_plot_5 = 1/Differenz_Frequenzen_5_Mittel
 #print("5.Messung:" )
 #print(Differenz_Frequenzen_5)
-#print(Differenz_Frequenzen_5_Mittel)
+print("Differenz_Frequenzen_5_Mittel",Differenz_Frequenzen_5_Mittel)
 
 #Plot davon: 
 Laengen = np.array([unp.nominal_values(Laenge_1), unp.nominal_values(Laenge_2), unp.nominal_values(Laenge_3), unp.nominal_values(Laenge_4), unp.nominal_values(Laenge_5)])
@@ -280,6 +280,37 @@ n = 1
 lamda_1 = (a_1*d)/(n * L)
 lamda_2 = (a_2*d)/(n * L)
 print("lamda", lamda_1) # lamda = 5.2500000000000006e-05 cm 10^-2 nanometer 10^-9 --> 525 nm 
+
+#Verbreiterung der Linienbreite 
+temp = 293.15 #in Kelvin, = 20 °C 
+lamda_0 = 650 * 10**(-9) #in m
+k_b = 1.380649  * 10**(-23)  # in J/K 
+masse_Ne = 20.1797 * 1.66053906892  * 10**(-27) # in kg Masse von Neon
+delf_0 = 1/lamda_0 * np.sqrt((8 * k_b * temp * np.log(2))/(masse_Ne))
+print("delf_0", delf_0) #delf_0 = 1292881445.4254675 Hz = 1.2928814454254675 GHz
+#eigener Wert
+lamda_1 = lamda_1 * 10**(-2) #jetzt in m
+delf_1 = 1/lamda_1 * np.sqrt((8 * k_b * temp * np.log(2))/(masse_Ne))
+print("delf_1", delf_1) #delf_1 1558845628.4844205 = 1.5588456284844205 GHz
+
+#delf / delta f 
+#Differenz_Frequenzen_1_Mittel 197.50+/-0.24 MHz
+#Differenz_Frequenzen_2_Mittel 162.62+/-0.18 MHz
+#Differenz_Frequenzen_3_Mittel 137.44+/-0.16 MHz
+#Differenz_Frequenzen_4_Mittel 93.50+/-0.10 MHz
+#Differenz_Frequenzen_5_Mittel 72.86+/-0.10 MHz
+
+delt_1 = delf_1/(Differenz_Frequenzen_1_Mittel*10**6)
+delt_2 = delf_1/(Differenz_Frequenzen_2_Mittel*10**6)
+delt_3 = delf_1/(Differenz_Frequenzen_3_Mittel*10**6)
+delt_4 = delf_1/(Differenz_Frequenzen_4_Mittel*10**6)
+delt_5 = delf_1/(Differenz_Frequenzen_5_Mittel*10**6)
+
+print("delt_1",delt_1) #delt_1 7.893+/-0.009
+print("delt_2",delt_2) #delt_2 9.586+/-0.010
+print("delt_3",delt_3) #delt_3 11.342+/-0.013
+print("delt_4",delt_4) #delt_4 16.672+/-0.018
+print("delt_5",delt_5) #delt_5 21.396+/-0.030
 
 def rel_Abweichung(exp, theo):
     return (np.abs(exp-theo)/(theo)*100) #ist schon in Prozent
