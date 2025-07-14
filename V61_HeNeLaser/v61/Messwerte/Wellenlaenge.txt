@@ -1,4 +1,4 @@
-#x in mm        I in /muA       d = 20 cm Gitter Und Photodiode
+#x in mm        I in /muA       d = 20 cm zw Gitter und Photodiode
 -27             0.001
 -26             0.001
 -25             0.001
