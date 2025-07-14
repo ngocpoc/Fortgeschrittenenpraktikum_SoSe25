@@ -1,12 +1,12 @@
 \section{Zielsetzung}
 \label{sec:Zielsetzung}
-Ziel des Versuchs ist das Verstehen der Funktionsweise eines Helium-Neon Lasers (He-Ne Lasers). Zusätzlich werden zentrale Eigenschaften des Lasertrahls wie Wellenlänge, Polarisation und Intensitätsverteilung untersucht. 
+Ziel des Versuchs ist das Verstehen der Funktionsweise eines Helium-Neon Lasers (He-Ne Lasers). Zusätzlich werden zentrale Eigenschaften des Laserstrahls wie Wellenlänge, Polarisation und Intensitätsverteilung untersucht. 
 
 \section{Theorie}
 \label{sec:Theorie}
 \subsection{Grundlagen der Laserphysik}
 In einem Laser (engl. \textbf{l}ight \textbf{a}mplification by \textbf{s}timulated \textbf{e}mission of \textbf{r}adiation) finden drei wichtige Prozesse statt. Diese sind die spontane Emission, die stimulierte Emission und die Absorption.\\ 
-Fällt ein Elektron aus einem angeregten Zustand $\ket{k}$ mit der Energie $E_k$ ohne äußere Einwirkung in ein niedrigeres Niveau $\ket{i}$ mit der Energie $E_i$ zurück, handelt es sich um eine spontane Emission. Das dabei emittierte Photon hat eine zufällige Richtung, Polarisation und Phase.\\
+Fällt ein Elektron aus einem angeregten Zustand $\ket{k}$ mit der Energie $E_k$ ohne äußere Einwirkung auf ein niedrigeres Niveau $\ket{i}$ mit der Energie $E_i$ zurück, handelt es sich um eine spontane Emission. Das dabei emittierte Photon hat eine zufällige Richtung, Polarisation und Phase.\\
 Im Gegensatz dazu ist die stimulierte Emission ein Prozess, bei dem ein Photon ein angeregtes Atom zum Übergang in einen energetisch tieferen Zustand anregt.
 Das dabei erzeugte Photon ist hinsichtlich Frequenz, Richtung, Phase und Polarisation identisch mit dem auslösenden Photon.
 Dieser Prozess ist die Grundlage für die kohärente Lichtverstärkung im Laser. \\
@@ -40,11 +40,11 @@ fest durch die Energiedifferenz von zwei Energieniveaus.\\
 Die Energiepumpe führt dem aktiven Medium Energie zu, um eine Besetzungsinversion im Medium zu erzeugen. Durch diese Bedingung kann eine Verstärkung durch stimulierte Emission erreicht werden.\\
 Der optische Resonator besteht typischerweise aus zwei gegenüberliegenden Spiegeln, welche die Photonen mehrfach durch das aktive Medium reflektieren.
 Dadurch wird die selektive Verstärkung resonanter Frequenzen ermöglicht. In der Regel ist ein Spiegel teildurchlässig (OC, engl. output coupler) und ein Spiegel reflektierend (HR, engl. highly reflective).
-Für Resonatoren gelten folgende Stabilitätsbedinungen 
+Für Resonatoren gelten folgende Stabilitätsbedingungen 
 \begin{align}
     0 < g_1 g_2 < 1\text{ oder } g_1 = g_2 = 0 \label{eqn:Stabilitaetsbedingung}
 \end{align}
-mit den Stabilitätsparametern $g_i$ der beiden Spiegel erfüllt werden. Hierbei sind die Paramter über den Krümmungsradius $r_i$ und der Resonatorlänge $L$ durch
+mit den Stabilitätsparametern $g_i$ der beiden Spiegel erfüllt werden. Hierbei sind die Parameter über den Krümmungsradius $r_i$ und der Resonatorlänge $L$ durch
 \begin{align}
     g_i = \left(1- \frac{L}{r_i}\right)\label{eqn:stabilitaetsparameter}
 \end{align}
@@ -59,7 +59,7 @@ Durch die Stabilitätsbedinung ergibt sich eine maximale Resonatorlänge von
 In diesem Versuch wird ein He-Ne Laser verwendet. Dabei sind die Neon-Atome das aktive Medium, welche durch die Helium-Atome als Pumpmedium angeregt werden. 
 Die Anregung erfolgt durch elektrische Gasentladung, wodurch Elektronen die Helium-Atome in metastabile Zustände anregt. Durch Stoßprozesse werden die Ne-Atome auf das $3s_2$ Niveau angehoben. 
 Dies sorgt für die Besetzungsinversion. 
-Der Übergang der entscheidend für die Wellenlänge ist, ist von $3s_2$ in das kurzlebige $2p_4$ Niveau und entspricht der Wellenlänge $\lambda = \SI{633}{\nano\meter}$. \cite{laser} \cite{leifiLaser}
+Der Übergang der entscheidend für die Wellenlänge ist von $3s_2$ in das kurzlebige $2p_4$ Niveau und entspricht der Wellenlänge $\lambda = \SI{633}{\nano\meter}$. \cite{laser} \cite{leifiLaser}
 
 
 \subsection{Longitudinale und transversale Moden}
@@ -87,7 +87,7 @@ Der Grundmodus TEM$_{00}$ weist eine gaußförmige Intensitätsverteilung auf:
 \begin{align}
     I(r) = I_0 \cdot \exp\left(-2 \frac{r^2}{w^2} \right)\,, \label{eqn:intensitaet00}
 \end{align}
-mit $r$ als radialer Abstand zur Strahlachse und $w$ als Strahlradius. Höhere Moden wie TEM$_{01}$ besitzen Intensitätsmaxima mit zentraler Nullstelle. Die intensitätsverteilung der TEM$_{01}$-Mode ist beschrieben durch
+mit $r$ als radialer Abstand zur Strahlachse und $w$ als Strahlradius. Höhere Moden wie TEM$_{01}$ besitzen Intensitätsmaxima mit zentraler Nullstelle. Die Intensitätsverteilung der TEM$_{01}$-Mode ist beschrieben durch
 \begin{align}
     I(r) = I_0 \left(\frac{r}{\omega}\right)^2\cdot \exp\left(-2 \frac{r^2}{w^2} \right)\,. \label{eqn:intensitaet10}
 \end{align}
@@ -100,7 +100,7 @@ wobei $a$ der Spiegelradius, $L$ die Resonatorlänge und $\lambda$ die Wellenlä
 Zur experimentellen Beobachtung können höhere transversale Moden durch gezieltes Einbringen einer Modenblende im Resonator unterdrückt werden. So lässt sich beispielsweise die TEM$_{01}$-Mode durch einen dünnen Draht verstärken. \cite{laserspektroskopie} \cite{laser} \cite{anleitungV61}
 
 \subsection{Polarisation und Brewster-Winkel}
-Durch die Brewster-Fenster weist der Laserstrahl eine feste lineare Polarisation auf, welche an den Enden der Entladungsröhre den Brewster-Winkel ausnutzen. 
+Durch die Brewster-Fenster weist der Laserstrahl eine feste lineare Polarisation auf,  welche an den Enden der Entladungsröhre so ausgerichtet sind, dass sie den Brewster-Winkel ausnutzen. 
 Der Brewster-Winkel $\theta_B$ ist der Winkel, bei dem p-polarisiertes Licht (parallel zur Einfallsebene) vollständig transmittiert und nicht reflektiert wird:
 \begin{align}
     \theta_B = \arctan\left( \frac{n_2}{n_1} \right)\,, \label{eqn:Brewster}
