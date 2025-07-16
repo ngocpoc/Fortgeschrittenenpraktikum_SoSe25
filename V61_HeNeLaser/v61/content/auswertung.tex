@@ -1,35 +1,219 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Stabilitätsbedingung und das Frequenzspektrum}
-Für diesen Versuch 
+Für diesen Versuch werden zwei Spiegel mit Krümmungsradius von $1{,}4 \, \unit{\meter}$ verwendet. Der Laser ist nach Formel \ref{eqn:maximaleResonatorlaenge} demnach bis auf eine Länge von $2{,}8 \, \unit{\meter}$ stabil. Mithilfe der Versuchsapperatur lässt sich diese Länge nicht erreichen. Der Laser konnte auf der maximal einstellbaren Länge von $2{,}05 \, \unit{\meter}$ stabilisiert werden. Aus praktikabilitäts Gründen werden neben der Stabilitätsbedingung parallel die Frequenzabstände der longitudinalen Moden gemessen. Die aus den Messdaten ermittelten, normierten Frequenzabstände $\Delta f$, die Leistung des Lasers $P$ und die Länge des Resonators $L$ sind in /autoref{tab:Multimoden} aufgeführt.
 \begin{table}[h]
     \centering
-    \caption{Graphisch ermittelte Länge der Gittervektoren des ersten Graphitscans.}
-    \label{tab:Graphit_Bild_1}
-    \begin{tblr}{colspec= c c c c}
+    \caption{Normierte Frequenzabstände der longitudinalen Moden bei verschiedenen Resonatorlängen.}
+    \label{tab:Multimoden}
+    \begin{tblr}{colspec= c c c}
         \toprule
-        $\left|\vec{g}_{\text{1,vor}} \right| / \unit{\pico\meter}$ & $\left|\vec{g}_{\text{2,vor}} \right| / \unit{\pico\meter}$ & $\left|\vec{g}_{\text{1,rück}} \right| / \unit{\pico\meter}$ & $\left|\vec{g}_{\text{2,rück}}\right| / \unit{\pico\meter}$ \\
+        $L / \, \unit{\centi\meter}$ & $P / \unit{\milli\watt}$ & $\Delta f / \unit{\mega\hertz}$\\
         \midrule
-        $276,1  \pm 12,8$   & $175,1  \pm  5,1$    &  $277,6   \pm  5,1$   & $173,2    \pm 5,1$ \\
-        $278,0  \pm 4,3 $   & $169,6  \pm  2,8$    &  $272,4   \pm  8,5$   & $171,5    \pm 6,4$ \\
-        $274,1  \pm 6,4 $   & $169,3  \pm  3,2$    &  $273,3   \pm  4,3$   & $170,8    \pm 2,8$ \\
-        $274,0  \pm 5,1 $   & $173,3  \pm  6,4$    &  $278,0   \pm  4,3$   & $171,5    \pm 2,8$ \\
+        $76,1$ & $6,402$ & $197,50 \pm 0,24$ \\
+        $92,6$ & $5,257$ & $162,62 \pm 0,18$ \\
+        $109$ & $3,313$ & $137,44 \pm 0,16$ \\
+        $160$ & $4,357$ & $93,50 \pm 0,10$ \\
+        $205,3$ & $2,554$ & $72,86 \pm 0,10$ \\
         \bottomrule
     \end{tblr}
 \end{table}
 
+Der Zusammenhang zwischen Frequenzabstand und Länge des Resonator wird in \autoref{fig:Multimoden} klar. Der Zusammenhang folgt der Gleichung 
+\begin{equation*}
+    \frac{1}{f} = m \cdot L + y_0 \, .
+\end{equation*}
+
 \begin{figure}[h]
     \centering
-    \begin{subfigure}{.475\linewidth}
-      \includegraphics[width=\linewidth]{Messdaten/Gitter_Graphit/2_Bild_forwards.png}
-    \end{subfigure}\hfill 
-    \begin{subfigure}{.475\linewidth}
-      \includegraphics[width=\linewidth]{Messdaten/Gitter_Graphit/2_Bild_backwards.png}
-    \end{subfigure}
-    \caption{Zweiter Scan der Gitterstruktur von HOPG mit graphischer Auswertung.}
-    \label{fig:Gitter_Graphit_2}
+    \includegraphics[width=\linewidth]{build/Frequenzspektrum.pdf}
+    \caption{Inverse Frequenzabstände $\Delta f$ aufgetragen gegen Resonatorlänge $L$ mit Ausgleichsgerade.}
+    \label{fig:Multimoden}
 \end{figure}
+Aus der Ausgleichsrechnung ergeben sich die Werte 
+\begin{equation*}
+    m = (6,7117 \pm 0,0136) \cdot 10^{-5} \, \frac{\unit{\mu\second}}{\unit{\centi\meter}}\,\, \text{und} \,\, y_0 = (-4.96 \pm 1,56)  \cdot 10^{-5} \, \unit{\mu\second}\, .
+\end{equation*}
+\FloatBarrier 
 
+\subsection{Moden des Lasers}
+Bei der Vermessung der Moden des Lasers werden die 00-Mode und die 01-Mode vermessen.
+\subsubsection{00-Mode}
+Die aufgenommenen Intensitätswerte $I$ abhängig von der Verschiebung $r$ der Photodiode senkrecht zum Laserstrahl sind in \autoref{tab:00_Mode} aufgelistet. Sie wurden bei einer Resonatorlänge von $76{,}1 \, \unit{\centi\meter}$ und einer Laserleistung von $6.200 \, \unit{\milli\watt}$ aufgenommen.
+\begin{table}[h]
+    \centering
+    \caption{Intensitätswerte $I$ der 00-Mode abhängig von der Verschiebung $r$.}
+    \label{tab:00_Mode}
+    \begin{tblr}{colspec= c c c c}
+        \toprule
+        $r / \, \unit{\milli\meter}$ & $I / \unit{\mu\ampere}$ & $r / \, \unit{\milli\meter}$ & $I / \unit{\mu\ampere}$\\
+        \midrule
+        $0$  & $9{,}41$  & $16 $ & $0{,}63$ \\
+        $1$  & $10{,}34$ & $17 $ & $0{,}34$ \\
+        $2$  & $13{,}93$ & $18 $ & $0{,}17$ \\
+        $3$  & $12{,}33$ & $19 $ & $0{,}09$ \\
+        $4$  & $13{,}48$ & $-1 $ & $8{,}11$ \\
+        $5$  & $12{,}69$ & $-2 $ & $5{,}70$ \\
+        $6$  & $11{,}54$ & $-3 $ & $5{,}36$ \\
+        $7$  & $11{,}15$ & $-4 $ & $2{,}91$ \\
+        $8$  & $9{,}62$  & $-5 $ & $2{,}22$ \\
+        $9$  & $7{,}84$  & $-6 $ & $1{,}37$ \\
+        $10$ & $6{,}05$  & $-7 $ & $0{,}75$ \\
+        $11$ & $4{,}74$  & $-8 $ & $0{,}51$ \\
+        $12$ & $3{,}28$  & $-9 $ & $0{,}24$ \\
+        $13$ & $2{,}51$  & $-10$ & $0{,}11$ \\
+        $14$ & $1{,}55$  & $-11$ & $0{,}05$ \\
+        $15$ & $1{,}07$  & &   \\
+        \bottomrule
+    \end{tblr}
+\end{table}
+
+Die Messdaten sind in \autoref{fig:Mode_00} graphisch dargestellt. Nach Gleichung \ref{eqn:intensitaet00} sollte die Intensitätsverteilung die Form einer Gaußkurve haben. Dies wird mithilfe einer Ausgleichskurve überprüft. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{build/Mode_00.pdf}
+    \caption{Intensitätsverteilung der 00-Mode mit Ausgleichskurve.}
+    \label{fig:Mode_00}
+\end{figure}
+Aus der Ausgleichsrechnung ergeben sich die Werte 
+\begin{equation*}
+    I_0 = (13{,}3068 \pm 0{,}1892) \, \unit{\mu\ampere} \,\, \text{und} \,\, w = (9{,}6445 \pm 0{,}1584) \, \unit{\milli\meter\squared}
+\end{equation*}
+mit einer Verschiebung der Kurve von $r_0 = (-3{,}9828 \pm 0{,}0791)\, \unit{\milli\meter}$ entlang der $r$ Achse.
+\FloatBarrier 
+
+\subsubsection{01-Mode}
+Die aufgenommenen Intensitätswerte $I$ der 01-Mode sind abhängig von der Verschiebung $r$ der Photodiode senkrecht zum Laserstrahl in \autoref{tab:01_Mode} aufgelistet. Sie wurden bei derselben Resonatorlänge und einer Laserleistung wie die 00-Mode aufgenommen.
+\begin{table}[h]
+    \centering
+    \caption{Intensitätswerte $I$ der 01-Mode abhängig von der Verschiebung $r$.}
+    \label{tab:01_Mode}
+    \begin{tblr}{colspec= c c c c}
+        \toprule
+        $r / \, \unit{\milli\meter}$ & $I / \unit{\mu\ampere}$ & $r / \, \unit{\milli\meter}$ & $I / \unit{\mu\ampere}$\\
+        \midrule
+        $0$       & $1{,}19$     & $18$       & $0{,}25$ \\
+        $1$       & $0{,}56$     & $19$       & $0{,}10$ \\
+        $2$       & $0{,}16$     & $20$       & $0{,}04$ \\
+        $3$       & $0{,}01683$  & $-1$       & $1{,}78$ \\
+        $4$       & $0{,}2473$   & $-1{,}5$   & $2{,}03$ \\
+        $5$       & $0{,}3743$   & $-2$       & $2{,}32$ \\
+        $6$       & $0{,}6271$   & $-3$       & $3{,}38$ \\
+        $7$       & $1{,}3249$   & $-4$       & $3{,}08$ \\
+        $7{,}5$   & $2{,}59$     & $-5$       & $3{,}42$ \\
+        $8$       & $2{,}97$     & $-6$       & $3{,}17$ \\
+        $9$       & $3{,}52$     & $-7$       & $2{,}27$ \\
+        $10$      & $3{,}72$     & $-8$       & $1{,}62$ \\
+        $11$      & $3{,}15$     & $-9$       & $1{,}09$ \\
+        $12$      & $2{,}59$     & $-10$      & $0{,}74$ \\
+        $13$      & $2{,}24$     & $-11$      & $0{,}53$ \\
+        $14$      & $1{,}57$     & $-12$      & $0{,}33$ \\
+        $15$      & $1{,}05$     & $-13$      & $0{,}19$ \\
+        $16$      & $0{,}74$     & $-14$      & $0{,}07$ \\
+        $17$      & $0{,}48$     &            &        \\
+        \bottomrule
+    \end{tblr}
+\end{table}
+
+Die Messdaten sind in \autoref{fig:Mode_01} graphisch dargestellt. Nach Gleichung \ref{eqn:intensitaet10} sollte die Intensitätsverteilung die Form einer Gaußkurve haben. Dies wird mithilfe einer Ausgleichskurve überprüft. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{build/Mode_01.pdf}
+    \caption{Intensitätsverteilung der 01-Mode mit Ausgleichskurve.}
+    \label{fig:Mode_01}
+\end{figure}
+Aus der Ausgleichsrechnung ergeben sich die Werte 
+\begin{equation*}
+    I_{01} = (17{,}3682 \pm 0{,}4487) \, \unit{\mu\ampere} \,\, \text{und} \,\, w = (9{,}7969 \pm 0{,}1565) \, \unit{\milli\meter\squared}
+\end{equation*}
+mit einer Verschiebung der Kurve von $r_0 = (-2{,}9582 \pm 0{,}1126)\, \unit{\milli\meter}$ entlang der $r$ Achse.
+\FloatBarrier 
+%#I_01 = 17.3682 ± 0.4487 
+%#x_01 = -2.9582 ± 0.1126 
+%#w_01 =  9.7969 ± 0.1565 
+
+\subsection{Polarisation des Lasers}
+Zur Messung der Polarisation des Lasers wurde die Intensität nach einem verschieden eingestellten nach Polfilter gemessen. Die gemessene Intensität $I$ abhängig vom Polfilterwinkel $\theta$ sind in \autoref{tab:Polarisation} aufgelistet. 
+
+\begin{table}[h]
+    \centering
+    \caption{Intensität in Abhängigkeit vom Polfilterwinkel}
+    \label{tab:Polarisation}
+    \begin{tblr}{colspec= c c c c c c}
+        \toprule
+        $\theta / \, °$ & $I / \unit{\mu\ampere}$ & $\theta / \, °$ & $I / \unit{\mu\ampere}$ & $\theta / \, °$ & $I / \unit{\mu\ampere}$\\
+        \midrule
+        $0  $ & $0{,}09$ & $125$ & $3{,}23$    & $250$ & $4{,}98$ \\ 
+        $5  $ & $0{,}23$ & $130$ & $2{,}42$    & $255$ & $5{,}72$ \\ 
+        $10 $ & $0{,}45$ & $135$ & $1{,}96$    & $260$ & $5{,}92$ \\ 
+        $15 $ & $0{,}69$ & $140$ & $1{,}48$    & $265$ & $5{,}77$ \\ 
+        $20 $ & $0{,}92$ & $145$ & $1{,}03$    & $270$ & $5{,}71$ \\ 
+        $25 $ & $1{,}27$ & $150$ & $0{,}75$    & $275$ & $6{,}34$ \\ 
+        $30 $ & $1{,}74$ & $155$ & $0{,}36$    & $280$ & $5{,}58$ \\ 
+        $35 $ & $2{,}18$ & $160$ & $0{,}18$    & $285$ & $5{,}37$ \\ 
+        $40 $ & $2{,}45$ & $165$ & $0{,}04$    & $290$ & $5{,}18$ \\ 
+        $45 $ & $3{,}30$ & $170$ & $0{,}00485$ & $295$ & $4{,}79$ \\ 
+        $50 $ & $3{,}49$ & $175$ & $0{,}02747$ & $300$ & $3{,}97$ \\ 
+        $55 $ & $3{,}79$ & $180$ & $0{,}10924$ & $305$ & $3{,}46$ \\ 
+        $60 $ & $4{,}24$ & $185$ & $0{,}26$    & $310$ & $2{,}93$ \\ 
+        $65 $ & $4{,}72$ & $190$ & $0{,}43$    & $315$ & $2{,}25$ \\ 
+        $70 $ & $6{,}87$ & $195$ & $0{,}67$    & $320$ & $1{,}53$ \\ 
+        $75 $ & $5{,}83$ & $200$ & $0{,}98$    & $325$ & $1{,}12$ \\ 
+        $80 $ & $5{,}82$ & $205$ & $1{,}23$    & $330$ & $0{,}79$ \\ 
+        $85 $ & $6{,}21$ & $210$ & $1{,}68$    & $335$ & $0{,}43$ \\ 
+        $90 $ & $5{,}86$ & $215$ & $1{,}92$    & $340$ & $0{,}19$ \\ 
+        $95 $ & $5{,}57$ & $220$ & $2{,}35$    & $345$ & $0{,}05$ \\ 
+        $100$ & $6{,}26$ & $225$ & $2{,}85$    & $350$ & $0{,}003$ \\ 
+        $105$ & $5{,}64$ & $230$ & $3{,}39$    & $355$ & $0{,}26$ \\ 
+        $110$ & $5{,}06$ & $235$ & $3{,}68$    &       &        \\
+        $115$ & $4{,}29$ & $240$ & $4{,}05$    &       &        \\
+        $120$ & $3{,}96$ & $245$ & $4{,}56$    &       &        \\
+        \bottomrule
+    \end{tblr}
+\end{table}
+Das polarisierte Laserlicht sollte sich gemäß Gleichung \ref{eqn:malus} verhalten. Die Messwerte sind in \autoref{fig:Polarisation} graphisch zusammen mit einer Gleichung \ref{eqn:malus} folgenden Ausgleichskurve dargestellt. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{build/Polarisation.pdf}
+    \caption{Intensität des Lasers abhängig vom Polfilterwinkel mit Ausgleichskurve.}
+    \label{fig:Polarisation}
+\end{figure}
+Aus der Ausgleichsrechnung ergibt sich $I_0 = (5{,}7701 \pm 0{,}0705) \, \unit{\mu\ampere}$ und ein Offset des Winkels von $\theta_0 = 5{,}7701 \pm 0{,}0705$.
+\FloatBarrier 
+
+\subsection{Wellenlänge des Lasers}
+Zur Berechnung der Wellenlänge werden die Abstände der gemessenen Intensitätsmaxima nach einem Gitter verwendet. Der Abstand zwischen Schirm und Gitter beträgt $20 \, \unit{\centi\meter}$ und der Gitterabstand $10 \, \unit{\mu\meter}$. Die gemessene Intensität des gebeugten Laserlichts ist in \autoref{fig:Wellenlaenge} zu sehen. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{build/Wellenlaenge.pdf}
+    \caption{Intensität des gebeugten Laserlichts.}
+    \label{fig:Wellenlaenge}
+\end{figure}
+Mithilfe von Gleichung \ref{} kann die Wellenlänge zu $525 \pm 80 \, \unit{\nano\meter}$ berechnet werden. Die Dopplerverbreiterung ergibt sich bei einer Temperatur von $T = 293,15 \,\unit{\kelvin}$ nach Gleichung \ref{eqn:dopplerverbreiterung} zu $\Delta \nu_D = (1{,}56 \pm 0{,}23)\, \unit{\giga\hertz}$. Zusätzlich können mit den Frequenzabständen aus \autoref{tab:Multimoden} die Anzahl der zusätzlichen Resonatormoden, die durch die Dopplerverbreiterung entstehen, berechnet werden. Diese sind abhängig von der Resonatorlänge $L$ in \autoref{tab:Resonatormode} aufgeführt. 
+
+\begin{table}[h]
+    \centering
+    \caption{Anzahl der zusätzlichen Resonatormoden durch die Dopplerverbreiterung.}
+    \label{tab:Resonatormode}
+    \begin{tblr}{colspec= c c}
+        \toprule
+        $L/ \, \unit{\centi\meter}$ & $\Delta \nu_D / \Delta f $\\
+        \midrule
+        $76{,}1$ & $7{,}9 \pm 1{,}2$  \\
+        $92{,}6$ & $9{,}6 \pm 1{,}4$ \\
+        $109$ & $11{,}3 \pm 1{,}7$ \\
+        $160$ & $16{,}7 \pm 2{,}4$ \\
+        $205{,}3$ & $21{,}4 \pm 3{,}1$ \\
+        \bottomrule
+    \end{tblr}
+\end{table}
+
+
+%6.711742498286715e-05  * x +  -4.955055243754489e-05
+%m_err:  1.1360858481274218e-07  y_0_err:  1.5576815020525828e-05
 % \begin{figure}
 %   \centering
 %   \includegraphics{plot.pdf}

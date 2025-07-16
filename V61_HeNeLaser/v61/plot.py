@@ -74,7 +74,7 @@ x = np.linspace(75,210)
 params, covariance_matrix = np.polyfit(Laengen, Mittelwerte_plot, deg=1, cov=True)
 errors_Ausgleichsgerade = np.sqrt(np.diag(covariance_matrix))
 #print("Ausgleichsgerade: ", params[0], " * x + ", params[1]) # Ausgleichsgerade:  6.711742498286715e-05  * x +  -4.955055243754489e-05
-
+#print("m_err: ", errors_Ausgleichsgerade[0], " y_0_err: ", errors_Ausgleichsgerade[1]) # m_err:  1.1360858481274218e-07  y_0_err:  1.5576815020525828e-05
 
 fig, (ax1) = plt.subplots(1, 1, layout="constrained")
 plt.errorbar(Laengen, Mittelwerte_plot, yerr = Mittelwerte_plot_Fehler, xerr = Laengen_Fehler, fmt='o', alpha = 0.4, capsize = 3.3, color = "hotpink", label="Messwerte")
@@ -85,8 +85,8 @@ ax1.plot(
     linewidth=1,
     color="blueviolet",
 )
-ax1.set_xlabel("Laenge")
-ax1.set_ylabel("1/Frequenzen")
+ax1.set_xlabel(r"L / \text{cm}")
+ax1.set_ylabel(r"1 / $\Delta f$ / $\mu \text{s}$")
 ax1.legend(loc="best")
 
 fig.savefig("build/Frequenzspektrum.pdf")
@@ -166,11 +166,11 @@ ax1.plot(
 ax1.plot(
     x_plot_2,
     Gaus(x_plot_2,params2[0],params2[1],params2[2]),
-    label="Ausgelichskurve",
+    label="Ausgleichskurve",
     color="hotpink",
 )
-ax1.set_xlabel("x/mm")
-ax1.set_ylabel("I /muA")
+ax1.set_xlabel(r"r / \text{mm}")
+ax1.set_ylabel(r"I / $\mu\text{A}$")
 ax1.legend(loc="best")
 
 fig.savefig("build/Mode_00.pdf")
@@ -210,8 +210,8 @@ ax1.plot(
     label="Ausgleichskurve",
     color="hotpink",
 )
-ax1.set_xlabel("x/mm")
-ax1.set_ylabel("I /muA")
+ax1.set_xlabel(r"r / \text{mm}")
+ax1.set_ylabel(r"I / $\mu\text{A}$")
 ax1.legend(loc="best")
 
 fig.savefig("build/Mode_01.pdf")
@@ -264,14 +264,14 @@ ax1.plot(
     label="Messwerte",
     color="blueviolet",
 )
-ax1.set_xlabel("x/mm")
-ax1.set_ylabel("I /muA")
+ax1.set_xlabel(r"x / \text{mm}")
+ax1.set_ylabel(r"I / $\mu\text{A}$")
 ax1.legend(loc="best")
 fig.savefig("build/Wellenlaenge.pdf")
 
-d = 0.001 #in cm 10 mumeter (aus anderem Protokoll geklaut)
-L = 20 #in cmeter
-a_1 = 1.05 #in cm 10.5 mmeter
+d = ufloat(0.001,0.0001) #in cm 10 mumeter (aus anderem Protokoll geklaut)
+L = ufloat(20, 1) #in cmeter
+a_1 = ufloat(1.05,0.1) #in cm 10.5 mmeter
 a_2 = 1.05 #in cm 10.5 mmeter
 n = 1
 #-2              7.56
