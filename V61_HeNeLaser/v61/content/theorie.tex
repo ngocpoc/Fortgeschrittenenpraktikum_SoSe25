@@ -28,7 +28,7 @@ Daraus ergibt sich der Verstärkungsfaktor
 \begin{align}
     G_0(\nu, z) = \frac{I(\nu, z)}{I(\nu, z=0)}= \exp(-\alpha(\nu) z)\,. \label{eqn:Verstaerkungsfaktor}
 \end{align}
-Zusätzlich ist eine Besetzungsinversion in einem  Zwei-Niveau-System nicht erreichbar, da die Absorption und stimulierte Emission gleich wahrscheinlich ist. Daher werden mindestens Drei-Niveau-Systeme für Laser verwendet, um eine effektive Besetzungsinversion zu ermöglichen. Hierbei werden Elektronen auf ein höheres Energieniveau gepumpt und anschließend auf ein metastabiles Laserniveau überführt, welches eine vergleichsweise lange Lebensdauer besitzt, sodass mehr Teilchen im oberen als im unteren Niveau vorhanden sind. \cite{laserspektroskopie} \cite{laser}
+Zusätzlich ist eine Besetzungsinversion in einem Zwei-Niveau-System nicht erreichbar, da die Absorption und stimulierte Emission gleich wahrscheinlich ist. Daher werden mindestens Drei-Niveau-Systeme für Laser verwendet, um eine effektive Besetzungsinversion zu ermöglichen. Hierbei werden Elektronen auf ein höheres Energieniveau gepumpt und anschließend auf ein metastabiles Laserniveau überführt, welches eine vergleichsweise lange Lebensdauer besitzt, sodass mehr Teilchen im oberen als im unteren Niveau vorhanden sind. \cite{laserspektroskopie} \cite{laser}
 
 \subsection{Aufbau und Funktionsweise eines Lasers}
 Ein Laser besteht aus drei grundlegenden Komponenten: dem aktiven Medium, einer Energiepumpe und einem optischen Resonator.\\
@@ -61,6 +61,20 @@ Die Anregung erfolgt durch elektrische Gasentladung, wodurch Elektronen die Heli
 Dies sorgt für die Besetzungsinversion. 
 Der Übergang der entscheidend für die Wellenlänge ist von $3s_2$ in das kurzlebige $2p_4$ Niveau und entspricht der Wellenlänge $\lambda = \SI{633}{\nano\meter}$. \cite{laser} \cite{leifiLaser}
 
+\subsection{Beugung am Gitter}
+Wenn Lichtwellen auf einen Doppelspalt treffen interferieren sie konstruktiv miteinander, wenn der Gangunterschied $\Delta s = n \cdot\lambda ; \, n \in \mathbb{N}$ beträgt. Aus geometrischen Überlegungen folgt für den Gangunterschied ebenfalls $\Delta s = d \sin(\alpha)$. Aus beiden Gleichungen ergibt sich 
+\begin{equation*}
+    \alpha_{\text{max}} = \arcsin{\left(\frac{n \lambda}{d}\right)} \, .
+\end{equation*}
+$d$ ist dabei der Abstand zwischen den Spalten und $\alpha_{\text{max}}$ ist der Winkel ausgehend vom Gitter zwischen dem 0-ten Maximum und dem n-ten. 
+Aus derselben Geometrie ergibt sich ebenfalls 
+\begin{equation*}
+    \tan\left( \alpha_{\text{max}} \right) = \frac{a}{L} \, .
+\end{equation*}
+$a$ ist hier der Abstand zwischen den Maxima auf dem Schirm und $L$ ist der Abstand von Gitter und Schirm. Unter Verwendung der Kleinwinkelnäherung $\tan(\alpha) \approx \sin(\alpha)$ ergibt sich 
+\begin{equation}
+    \lambda = \frac{a \cdot d}{n \cdot L} \, . \label{eqn:Wellenlaenge_max}
+\end{equation}
 
 \subsection{Longitudinale und transversale Moden}
 In einem Laserresonator können sich nur bestimmte Frequenzen verstärken, bei denen sich eine stehende Welle ausbildet. 

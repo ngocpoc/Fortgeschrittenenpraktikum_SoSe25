@@ -7,6 +7,9 @@ from scipy.optimize import curve_fit
 from scipy.integrate import trapezoid
 import scipy.constants as const
 
+def rel_Abweichung(exp, theo):
+    return (np.abs(exp-theo)/(theo)*100) #ist schon in Prozent
+
 #Frequenzmessung; Abstand zwischen den Frequenzen alle Frequenzen in MHz!!!
 Frequenzen_1 = np.genfromtxt("Messwerte/Multimoden_1.txt", unpack=True)
 Fehler_1 = np.ones(len(Frequenzen_1))
@@ -90,7 +93,7 @@ ax1.set_ylabel(r"1 / $\Delta f$ / $\mu \text{s}$")
 ax1.legend(loc="best")
 
 fig.savefig("build/Frequenzspektrum.pdf")
-
+m_exp = params[0] * 10**(-4)
 #Ausgabe: 
 #1.Messung:
 #[199.0+/-1.4142135623730951 195.0+/-1.4142135623730951
@@ -312,9 +315,24 @@ print("delt_3",delt_3) #delt_3 11.342+/-0.013
 print("delt_4",delt_4) #delt_4 16.672+/-0.018
 print("delt_5",delt_5) #delt_5 21.396+/-0.030
 
-def rel_Abweichung(exp, theo):
-    return (np.abs(exp-theo)/(theo)*100) #ist schon in Prozent
 
+
+
+#Letztes Ding ausrechnen 
+c = 299792458 #m/s
+m_theo = 2/c
+
+Abweichung_m = rel_Abweichung(m_exp,m_theo) 
+print("Abweichung_m: ", Abweichung_m)
+
+Abweichung_lamda = rel_Abweichung(525,633) 
+print("Abweichung_lamda", Abweichung_lamda)
+
+Dopplerverbreiterung_theo = 1.5 #Gigahertz
+Dopplerverbreiterung_exp = 1.56 #GHz
+
+Dopplerverbreiterung_Abweichung = rel_Abweichung(Dopplerverbreiterung_exp,Dopplerverbreiterung_theo) 
+print("Dopplerverbreiterung_Abweichung: ", Dopplerverbreiterung_Abweichung)
 # x = np.linspace(0, 10, 1000)
 # y = x ** np.sin(x)
 
