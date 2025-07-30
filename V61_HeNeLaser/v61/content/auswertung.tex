@@ -1,7 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Stabilitätsbedingung und das Frequenzspektrum}
-Für diesen Versuch werden zwei Spiegel mit Krümmungsradius von $1{,}4 \, \unit{\meter}$ verwendet. Der Laser ist nach Formel \ref{eqn:maximaleResonatorlaenge} demnach bis auf eine Länge von $2{,}8 \, \unit{\meter}$ stabil. Mithilfe der Versuchsapperatur lässt sich diese Länge nicht erreichen. Der Laser konnte auf der maximal einstellbaren Länge von $2{,}05 \, \unit{\meter}$ stabilisiert werden. Aus praktikabilitäts Gründen werden neben der Stabilitätsbedingung parallel die Frequenzabstände der longitudinalen Moden gemessen. Die aus den Messdaten ermittelten, normierten Frequenzabstände $\Delta f$, die Leistung des Lasers $P$ und die Länge des Resonators $L$ sind in /autoref{tab:Multimoden} aufgeführt.
+Für diesen Versuch werden zwei Spiegel mit Krümmungsradius von $1{,}4 \, \unit{\meter}$ verwendet. Der Laser ist nach Formel \ref{eqn:maximaleResonatorlaenge} demnach bis auf eine Länge von $2{,}8 \, \unit{\meter}$ stabil. Mithilfe der Versuchsapperatur lässt sich diese Länge nicht erreichen. Der Laser konnte auf der maximal einstellbaren Länge von $2{,}05 \, \unit{\meter}$ stabilisiert werden. Aus praktikabilitäts Gründen werden neben der Stabilitätsbedingung parallel die Frequenzabstände der longitudinalen Moden gemessen. Die aus den Messdaten ermittelten, normierten Frequenzabstände $\Delta f$, die Leistung des Lasers $P$ und die Länge des Resonators $L$ sind in \autoref{tab:Multimoden} aufgeführt.
 \begin{table}[h]
     \centering
     \caption{Normierte Frequenzabstände der longitudinalen Moden bei verschiedenen Resonatorlängen.}
@@ -34,6 +34,26 @@ Aus der Ausgleichsrechnung ergeben sich die Werte
 \begin{equation*}
     m = (6,7117 \pm 0,0136) \cdot 10^{-5} \, \frac{\unit{\mu\second}}{\unit{\centi\meter}}\,\, \text{und} \,\, y_0 = (-4.96 \pm 1,56)  \cdot 10^{-5} \, \unit{\mu\second}\, .
 \end{equation*}
+
+Die Dopplerverbreiterung ergibt sich bei einer Temperatur von $T = 293,15 \,\unit{\kelvin}$ nach Gleichung \ref{eqn:dopplerverbreiterung} zu $\Delta \nu_D = (1{,}56 \pm 0{,}23)\, \unit{\giga\hertz}$. Zusätzlich können mit den Frequenzabständen aus \autoref{tab:Multimoden} die Anzahl der zusätzlichen Resonatormoden, die durch die Dopplerverbreiterung entstehen, berechnet werden. Diese sind abhängig von der Resonatorlänge $L$ in \autoref{tab:Resonatormode} aufgeführt. 
+
+\begin{table}[h]
+    \centering
+    \caption{Anzahl der zusätzlichen Resonatormoden durch die Dopplerverbreiterung.}
+    \label{tab:Resonatormode}
+    \begin{tblr}{colspec= c c}
+        \toprule
+        $L/ \, \unit{\centi\meter}$ & $\Delta \nu_D / \Delta f $\\
+        \midrule
+        $76{,}1$ & $7{,}9 \pm 1{,}2$  \\
+        $92{,}6$ & $9{,}6 \pm 1{,}4$ \\
+        $109$ & $11{,}3 \pm 1{,}7$ \\
+        $160$ & $16{,}7 \pm 2{,}4$ \\
+        $205{,}3$ & $21{,}4 \pm 3{,}1$ \\
+        \bottomrule
+    \end{tblr}
+\end{table}
+
 \FloatBarrier 
 
 \subsection{Moden des Lasers}
@@ -192,24 +212,9 @@ Zur Berechnung der Wellenlänge werden die Abstände der gemessenen Intensitäts
     \caption{Intensität des gebeugten Laserlichts.}
     \label{fig:Wellenlaenge}
 \end{figure}
-Mithilfe von Gleichung \ref{eqn:Wellenlaenge_max} kann die Wellenlänge zu $(525 \pm 80) \, \unit{\nano\meter}$ berechnet werden. Die Dopplerverbreiterung ergibt sich bei einer Temperatur von $T = 293,15 \,\unit{\kelvin}$ nach Gleichung \ref{eqn:dopplerverbreiterung} zu $\Delta \nu_D = (1{,}56 \pm 0{,}23)\, \unit{\giga\hertz}$. Zusätzlich können mit den Frequenzabständen aus \autoref{tab:Multimoden} die Anzahl der zusätzlichen Resonatormoden, die durch die Dopplerverbreiterung entstehen, berechnet werden. Diese sind abhängig von der Resonatorlänge $L$ in \autoref{tab:Resonatormode} aufgeführt. 
+Mithilfe von Gleichung \ref{eqn:Wellenlaenge_max} kann die Wellenlänge mit Verwendung der Kleinwinkelnäherung zu $(525 \pm 80) \, \unit{\nano\meter}$ berechnet werden. Ohne Kleinwinkelnäherung berechnet sich die Wellenlänge mithilfe von Gleichung \ref{eqn:Wellenlaenge_genau} zu $(524 \pm 77) \, \unit{\nano\meter}$. 
 
-\begin{table}[h]
-    \centering
-    \caption{Anzahl der zusätzlichen Resonatormoden durch die Dopplerverbreiterung.}
-    \label{tab:Resonatormode}
-    \begin{tblr}{colspec= c c}
-        \toprule
-        $L/ \, \unit{\centi\meter}$ & $\Delta \nu_D / \Delta f $\\
-        \midrule
-        $76{,}1$ & $7{,}9 \pm 1{,}2$  \\
-        $92{,}6$ & $9{,}6 \pm 1{,}4$ \\
-        $109$ & $11{,}3 \pm 1{,}7$ \\
-        $160$ & $16{,}7 \pm 2{,}4$ \\
-        $205{,}3$ & $21{,}4 \pm 3{,}1$ \\
-        \bottomrule
-    \end{tblr}
-\end{table}
+
 
 
 %6.711742498286715e-05  * x +  -4.955055243754489e-05

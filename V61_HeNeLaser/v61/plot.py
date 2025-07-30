@@ -6,6 +6,7 @@ import uncertainties.unumpy as unp
 from scipy.optimize import curve_fit
 from scipy.integrate import trapezoid
 import scipy.constants as const
+from uncertainties.umath import *
 
 def rel_Abweichung(exp, theo):
     return (np.abs(exp-theo)/(theo)*100) #ist schon in Prozent
@@ -274,6 +275,7 @@ fig.savefig("build/Wellenlaenge.pdf")
 
 d = ufloat(0.001,0.0001) #in cm 10 mumeter (aus anderem Protokoll geklaut)
 L = ufloat(20, 1) #in cmeter
+L_kein_Fehler = 20
 a_1 = ufloat(1.05,0.1) #in cm 10.5 mmeter
 a_2 = 1.05 #in cm 10.5 mmeter
 n = 1
@@ -283,6 +285,14 @@ n = 1
 lamda_1 = (a_1*d)/(n * L)
 lamda_2 = (a_2*d)/(n * L)
 print("lamda", lamda_1) # lamda = 5.2500000000000006e-05 cm 10^-2 nanometer 10^-9 --> 525 nm 
+#lamda ohne Kleinwinkelnäherung 
+lamda_genau = d * unp.sin(unp.arctan(a_1/L))
+print("lamda_genau: ", unp.nominal_values(lamda_genau), "+-", unp.std_devs(lamda_genau))
+
+#ittelwerte_plot = np.array([unp.nominal_values(Diff_F_fuer_plot_1), unp.nominal_values(Diff_F_fuer_plot_2), unp.nominal_values(Diff_F_fuer_plot_3), unp.nominal_values(Diff_F_fuer_plot_4), unp.nominal_values(Diff_F_fuer_plot_5)])
+
+#Laengen_Fehler = np.array([unp.std_devs(Laenge_1), unp.std_devs(Laenge_2), unp.std_devs(Laenge_3), unp.std_devs(Laenge_4), unp.std_devs(Laenge_5)])
+
 
 #Verbreiterung der Linienbreite 
 temp = 293.15 #in Kelvin, = 20 °C 
@@ -293,8 +303,12 @@ delf_0 = 1/lamda_0 * np.sqrt((8 * k_b * temp * np.log(2))/(masse_Ne))
 print("delf_0", delf_0) #delf_0 = 1292881445.4254675 Hz = 1.2928814454254675 GHz
 #eigener Wert
 lamda_1 = lamda_1 * 10**(-2) #jetzt in m
+lamda_genau = lamda_genau * 10**(-2) #jetzt in m
 delf_1 = 1/lamda_1 * np.sqrt((8 * k_b * temp * np.log(2))/(masse_Ne))
 print("delf_1", delf_1) #delf_1 1558845628.4844205 = 1.5588456284844205 GHz
+
+delf_genau = 1/lamda_genau * np.sqrt((8 * k_b * temp * np.log(2))/(masse_Ne))
+print("delf_genau", delf_genau) 
 
 #delf / delta f 
 #Differenz_Frequenzen_1_Mittel 197.50+/-0.24 MHz
